@@ -1,0 +1,43 @@
+'Distant Worlds Character Names - 1.9.5.0
+
+'Multiple two-line sections containing character names for randomly-generated characters
+'Within each two-line race family section: first line = first names, second line = last names
+'There should be a two-line section for every race family defined in the raceFamilies.txt file
+'The two-line sections will be assigned as character names for the corresponding race family (i.e. should be in the same order)
+
+
+'HUMANOID
+Donato, Gudan, Juran, Lorien, Matthia, Paedri, Than, Yuri, Kevian, Laurus, Caran, Keryn, Thassun, Kasto, Derras, Loras, Mishku, Obidar, Indo, Gerrin, Luc, San, Dak, Kor, Tiko, Cobi, Peet, Yan, Basant, Hugo, Esari
+Ikkuros, Nothris, Hassari, Walkin, Mankara, Jaksun, Undulian, Dobachi, Trebulo, Tarfan, Callosk, Lukadi, Bendu, Kesky, Berallia, Obarria, Nesalio, Xanaria, Allaria, Dokari, Marteri, Okkoros, Zoberia, Zotri, Kalan, Redan
+
+'URSIDIAN
+Lebon, Arridan, Essaf, Jundo, Randul, Kupi, Gordas, Kodias, Yuros, Ubi, Yusan, Gudan, Thassun, Derras, Mishku, Gerrin, Jarus, Bam, Ko, Yok, Bant, Garuk, Koti, Coz, Mak, Arramy, Klopis, Col, Usu, Eda, Het, Yuros, Copian, Kupi
+Atthanchi, Kodansta, Saxxul, Vuulior, Xatara, Napulon, Orridan, Mekorta, Icarri, Jaxsta, Halan, Bechido, Dokari, Ulari, Haachut, Nissuri, Assari, Metrii, Eksari, Atsios, Suppari, Serraby, Arridan, Idantia, Glapir, Lobas, Profarian, Lincarz
+
+'RODENT
+Darrat, Kibul, Ruty, Zephry, Kweeki, Chorpi, Jindak, Repta, Wunta, Zacha, Dekshi, Sawa, Sunja, Wudri, Tek, Wia, Lerz, Faz, Rek, Iko, Yaka, Asan, Wozi, Dex, Karg, Asunka, Jundo, Randul, Edi, Arl, Wek, Oro, Lashar, Nashan
+Uktab, Woppit, Owak, Ebarrik, Okel, Okari, Odechy, Gachuz, Qytian, Larrant, Noskri, Raktan, Hanari, Diitak, Oseri, Machka, Fossit, Shokia, Varqi, Losit, Xetry, Tasran, Ixito, Echigo, Poldan, Wradu, Sartora, Nassiki, Yablik, Urtion
+
+'REPTILIAN
+Balluk, Doktan, Kutar, Yurkan, Yentor, Maztar, Danpo, Jattub, Cwedo, Sarriq, Bakra, Xadry, Gartra, Zekan, Zhatar, Wokor, Haki, Gar, Kuut, Mok, Uza, Vok, Yaz, Raak, Zeek, Dekshi, Bherat, Ghoran, Wunta, Zacha, Sabri, Ebari, Suntaj, Fhasha, Yepta, Yudar, Gobar, 
+Bhulkadin, Zhukziban, Rustov, Jandirrosk, Makarius, Daghrun, Takruan, Halskut, Gepkiy, Hakhra, Jukelos, Yemodo, Yskllor, Kazzdi, Erakto, Makkatar, Akshat, Ghazzik, Argria, Tzarak, Hudall, Fushti, Taghran, Ruuntul, Kawass, Pazdaris, Frokaal, Shiddai, Cutsan
+
+'INSECTOID
+Qarg, Cwedo, Rardi, Falok, Jedok, Mavoq, Buzdi, Tubek, Vallu, Bhalod, Gwudo, Jovuk, Vakuz, Terak, Wokku, Bakra, Bhenta, Suutan, Xadry, Ishmat, Gex, Kaz, Zok, Yorg, Krebo, Udriul, Xha, Pok, Jaka, Erut, Mek, Azdun, Dyr, Nerg, Seg
+Boshak, Teklor, Zaddaty, Rakkarid, Rokaas, Kuutsian, Mokkodis, Narrit, Menkar, Exotun, Summorak, Puksha, Tobbat, Hezzok, Hektor, Vretok, Roxilli, Varkiy, Jattub, Sarriq, Pruggu, Prokari, Callax, Fimto, Tannax, Yurkan, Koomiel, Yhekhri, Dhziry, Mhegrhi
+
+'AMPHIBIAN
+Equia, Senaris, Udy, Olbar, Cudas, Chozul, Wesda, Nachis, Secho, Sorrit, Uki, Raqi, Ebo, Yorpa, Jukri, Ossan, Gyut, Lutar, Xu, Aki, Vos, Xo, Xa, Osu, Wod
+Wassoga, Qendo, Lapuri, Serafu, Paklidu, Unkaro, Opanko, Corras, Zabros, Ebuta, Wodos, Gokaal, Thanda, Matado, Edari, Nobriy, Possari, Haksur, Assari, Banasa
+
+'MACHINE
+K4, P2, R5, M2, A7, E1, 011, G6
+X9, D2, S3, F3, Z5, B4, L2, 110
+
+'AVIAN
+Errek, Mil'ta, Heffish, Lursor, Wersit, Gerrita, Pekeek, Nellot, Adgee, Eemal, Ketrall, Queroc, Vollow, Cobin, Mereet, Jubbit, Selesh, Phereen, Pollow, Kesp, Oofrit, Bakaw, Mitaah, Raak, Zeek, Dekshi, Flep, Gesseck, Wunta, Zacha, Sabri, Ebari, Suntaj, Fhashah, Yeptep, Yudari, Gobett, 
+Bhulkadin, Zhukziban, Rustov, Jandirrosk, Makarius, Daghrun, Takruan, Halskut, Gepkiy, Hakhra, Jukelos, Yemodo, Yskllor, Kazzdi, Erakto, Makkatar, Akshat, Ghazzik, Argria, Tzarak, Hudall, Fushti, Taghran, Ruuntul, Kawass, Pazdaris, Frokaal, Shiddai, Cutsan
+
+'SILICOID
+Andesite, Aplite, Basalt, Boninite, Crust, Dolerite, Fledspar, Granite, Granophyre, Mica, Norite, Obsidian, Ore, Pumice, Quartz, Scoria, Slate, Taconite, Variolite, Crystal, Gravel, Boulder
+Arkose, Breccia, Chalk, Chert, Coal, Coquina, Diatomite, Flint, Garnet, Gritstone, Lignite, Limestone, Mantle, Marble, Mudstone, Oolite, Shale, Siltstone, Skarn, Shard, Facet, Fractal, Fault

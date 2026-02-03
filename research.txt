@@ -1,0 +1,2665 @@
+﻿'Distant Worlds Research - 1.9.5.10
+
+'Multiple labelled lines of information per research project as follows:
+'PROJECT: core project information - THIS LINE IS REQUIRED
+'COMPONENTS: components that are unlocked by the research project - THIS LINE IS OPTIONAL
+'COMPONENT IMPROVEMENTS: improvements to existing components - THIS LINE IS OPTIONAL
+'FIGHTERS: new fighter types - THIS LINE IS OPTIONAL
+'FACILITY: planetary facility or wonder - THIS LINE IS OPTIONAL
+'ABILITIES: new abilities, e.g. ship/base construction size increase, new ship types that can be built, troop improvements, etc - THIS LINE IS OPTIONAL
+'PLAGUE CHANGE: change of values for plague defined in plagues.txt, e.g. reduced lethality of plague. THIS LINE IS OPTIONAL
+'ALLOWED RACES: filter project to specific alien races, only the named races can research the project. If no races defined then all races can research - THIS LINE IS OPTIONAL
+'PARENTS: parent research projects that lead to this project, i.e. the path to this project - THIS LINE IS REQUIRED
+
+'the above lines are explained in more detail below:
+
+'PROJECT line - list of comma-separated values as follows:
+' - Project ID: unique numeric value identifying the project
+' - Name: text of project name
+' - Tech Level: how advanced the project is, which determines the default research cost of the project. This corresponds to the 'column' that this project is displayed at in the tech tree, tech level 0 is at far left, tech level 7 is at far right. Each single additional tech level doubles the default research cost of the project.
+' - Row: the vertical position of the project in the tech tree, starting at 1 (top)
+' - Industry: 0=Weapons, 1=Energy, 2=HighTech
+' - Category: 0=Armor, 1=AssaultPod, 2=Computer, 3=Construction, 4=EnergyCollector, 5=Engine, 6=Extractor, 7=Fighter, 8=Habitation, 9=HyperDisrupt, 10=HyperDrive, 11=Labs, 12=Manufacturer, 13=Reactor, 14=Sensor, 15=ShieldRecharge, 16=Shields, 17=Storage, 18=WeaponArea, 19=WeaponBeam, 20=WeaponGravity, 21=WeaponIon, 22=WeaponPointDefense, 23=WeaponSuperArea, 24=WeaponSuperBeam, 25=WeaponTorpedo, 26=WeaponSuperTorpedo
+' - Special Function Code: 0=NONE, 1=PreWarp tech that is already researched when starting game as PreWarp empire, 2=primitive hyperdrive tech (warp bubble) that must be unlocked before can be researched, 3=superweapon, 4=initial colonization tech, 5=starts game locked (must be unlocked by game event before can be researched)
+' - Base Cost Multiplier Override: multiplier factor for modifying the default research cost of the project. Project cost is related to Tech Level - each single additional tech level doubles the default research cost of the project. Base Cost Multiplier Override can be used to make projects more or less expensive than normal.
+
+'COMPONENTS line:
+'- list of comma-separated ComponentId values. The ComponentIds must match a component from the components.txt file. You can include a maximum of 4 components in a single research project
+
+'COMPONENT IMPROVEMENTS line - multiple component improvements, each one comprised of comma-separated values as follows:
+' - ComponentId: componentId of the component that this improvement is for. This should match a component from the components.txt file
+' - Tech Level: the relative tech level of the component improvement. This should match the Tech Level of the research project itself (Tech Level in PROJECT line)
+' - Value1: improved value for component Value1. For a list of meanings for Values1-7 for each component type, please see the section 'Meanings of Value1-7 for component types' in the header of the components.txt file
+' - Value2: improved value for component Value2. For a list of meanings for Values1-7 for each component type, please see the section 'Meanings of Value1-7 for component types' in the header of the components.txt file
+' - Value3: improved value for component Value3. For a list of meanings for Values1-7 for each component type, please see the section 'Meanings of Value1-7 for component types' in the header of the components.txt file
+' - Value4: improved value for component Value4. For a list of meanings for Values1-7 for each component type, please see the section 'Meanings of Value1-7 for component types' in the header of the components.txt file
+' - Value5: improved value for component Value5. For a list of meanings for Values1-7 for each component type, please see the section 'Meanings of Value1-7 for component types' in the header of the components.txt file
+' - Value6: improved value for component Value6. For a list of meanings for Values1-7 for each component type, please see the section 'Meanings of Value1-7 for component types' in the header of the components.txt file
+' - Value7: improved value for component Value7. For a list of meanings for Values1-7 for each component type, please see the section 'Meanings of Value1-7 for component types' in the header of the components.txt file
+
+'FIGHTERS line:
+' - list of comma-separated FighterId values. Each FighterId must match a fighter from the fighters.txt file. You can include a maximum of 2 fighters in a single research project
+
+'FACILITY line:
+' - a single PlanetaryFacilityId value. The PlanetaryFacilityId must match a planetary facility or wonder from the facilities.txt file. You can only have a single planetary facility or wonder in a single research project
+
+'ABILITIES line - single research ability comprised of comma-separated values as follows:
+' - Name: text of ability name
+' - Type: 0=Ship Boarding, 1=Colonize New Planet Type, 2=Increased Construction Size, 3=Enable New Ship Type, 4=Population Growth Rate at planet type, 5=Troops
+' - Level: relative level of ability when compared to other abilities of the same type, i.e. the highest ability will be used
+' - Value: ability value specific to ability type. Detailed meanings for each ability type explained below:
+' -     when Type is 0 (Ship Boarding): value greater than zero defines percentage bonus to boarding attack strength (e.g. 25 means +25% bonus when boarding enemy ships), value less than zero defines percentage bonus to boarding defense strength (e.g. -25 means +25% bonus defending against enemy boarding)
+' -     when Type is 1 (Colonize New Planet Type): 1=Continental, 2=Marshy Swamp, 3=Ocean, 4=Desert, 5=Ice, 6=Volcanic
+' -     when Type is 2 (Increased Construction Size): maximum size ship that can be built (e.g. size 300). Maximum construction size for Bases not at colonies is always 3 times larger. Bases at colonies have no construction size limit
+' -     when Type is 3 (Enable New Ship Type): Value is UNUSED
+' -     when Type is 4 (Population Growth Rate at planet type): 1=Continental, 2=Marshy Swamp, 3=Ocean, 4=Desert, 5=Ice, 6=Volcanic
+' -     when Type is 5 (Troops): for all troop types when value is zero then means Enable new Troop Type, for Infantry, Armored and Special Forces troop types value greater than zero means percentage bonus to attack strength (e.g. 25 means +25% attack strength), values less than zero means percentage bonus to defense strength (e.g. -25 means +25% defense strength). For Planetary Defense troop type value greater than zero defines additional percentage bonus to damage amount against invading troops, value greater than zero defines additional percentage bonus to intercept chance against invading troops
+' - Related Object Index: extra sub type for some ability types as explained further below:
+' -     when Type is 3 (Enable New Ship Type): 0=Carrier, 1=Resupply Ship
+' -     when Type is 5 (Troops): 0=ALL Troop Types, 1=Infantry troop type, 2=Armored troop type, 3=Planetary Defense troop type, 4=Special Forces troop type
+
+'PLAGUE CHANGE line - changes to values of single plague from plagues.txt file. Comprised of comma-separated values as follows:
+' - ID: numeric ID value of plague. Must match a plague defined in plagues.txt file
+' - Description: textual description of this plague change
+' - MortalityRate: rate of population loss caused by plague, measured in population lost per second. Should be in range between 1 and 100000000
+' - InfectionChance: numeric value that determines chance of plague spreading to other nearby colonies. Higher values means higher chance of spreading. Should be in range of 0 to 1000
+' - Duration: typical duration of plague at a colony, measured in seconds. Thus a value of 300 means 6 months of game time. Should be in range of 1 to 1200
+' - ExceptionMortalityRate: rate of population loss caused by plague for Exception Race in plagues.txt file, measured in population lost per second. Should be in range between 1 and 100000000
+' - ExceptionInfectionChance: numeric value that determines chance of plague spreading to other nearby colonies for Exception Race in plagues.txt file. Higher values means higher chance of spreading. Should be in range of 0 to 1000
+' - ExceptionDuration: typical duration of plague at a colony for Exception Race in plagues.txt file, measured in seconds. Thus a value of 300 means 6 months of game time. Should be in range of 1 to 1200
+
+'ALLOWED RACES line - filter project to specific alien races, only the named races can research the project. If no races defined then all races can research the project
+' - comma-separated list of race names that are allowed to research this project. Each race name must exactly match a race found in the races folder
+
+'PARENTS line - list of multiple parent research projects, each one comprised of comma-separated values as follows:
+' - Parent Project Id: ProjectId value indicating parent research project. Must match a project in this research.txt file
+' - Required Parent: Y/N value indicating whether must first research this parent project (Y) or is optional path (N)
+
+
+PROJECT			;0, Wave Weapons, 2, 1, 		0, 19, 0, 2.8,
+COMPONENTS		;4
+PARENTS			;6, N
+
+PROJECT			;1, Enhanced Wave Weapons, 4, 1, 		0, 19, 0, 8.0,
+COMPONENT IMPROVEMENTS	;4, 4, 18, 380, 24, 1200, 3, 1400, 0,
+PARENTS			;0, N
+
+PROJECT			;2, Advanced Wave Weapons, 6, 1, 		0, 19, 0, 14.7,
+COMPONENT IMPROVEMENTS	;4, 6, 24, 470, 24, 1200, 3, 1400, 0,
+PARENTS			;1, N
+
+PROJECT			;3, Long Range Lasers, 3, 2, 		0, 19, 0, 5.2,
+COMPONENTS		;1
+PARENTS			;7, N
+
+PROJECT			;4, Advanced Laser Focussing, 4, 2, 		0, 19, 0, 8.0,
+COMPONENT IMPROVEMENTS	;1, 4, 9, 390, 20, 1200, 1, 1500, 0,
+PARENTS			;3, N
+
+PROJECT			;5, High Intensity Lasers, 6, 2, 		0, 19, 0, 14.7,
+COMPONENT IMPROVEMENTS	;1, 6, 12, 480, 20, 1200, 1, 1500, 0,
+PARENTS			;4, N
+
+PROJECT			;6, Enhanced Beam Weapons, 1, 3, 		0, 19, 0, 0.0,
+COMPONENT IMPROVEMENTS	;126, 1, 5, 160, 12, 1200, 1, 1240, 0,
+PARENTS			;367, N
+
+PROJECT			;7, Maxos Blasters, 2, 3, 		0, 19, 0, 2.8,
+COMPONENTS		;0
+PARENTS			;6, N
+
+PROJECT			;8, Advanced Blasters, 4, 3, 		0, 19, 0, 8.0,
+COMPONENT IMPROVEMENTS	;0, 4, 8, 260, 10, 1200, 1, 1240, 0,
+PARENTS			;484, N
+
+PROJECT			;9, Advanced Beams, 5, 3, 		0, 19, 0, 11.2,
+COMPONENTS		;3
+PARENTS			;4, Y, 13, Y
+
+PROJECT			;10, Beam Intensification, 6, 3, 		0, 19, 0, 14.7,
+COMPONENT IMPROVEMENTS	;3, 6, 24, 470, 28, 1200, 4, 1400, 0,
+PARENTS			;9, N
+
+PROJECT			;11, Beam Superflow, 7, 3, 		0, 19, 0, 18.5,
+COMPONENT IMPROVEMENTS	;3, 7, 29, 560, 28, 1200, 4, 1400, 0,
+PARENTS			;10, N
+
+PROJECT			;12, High Power Blasters, 3, 4, 		0, 19, 0, 5.2,
+COMPONENTS		;2
+PARENTS			;7, N
+
+PROJECT			;13, Synchronized Energy Output, 4, 4, 		0, 19, 0, 8.0,
+COMPONENT IMPROVEMENTS	;2, 4, 18, 260, 38, 1200, 4, 1600, 0,
+PARENTS			;12, N
+
+PROJECT			;14, Devastating Energy Release, 6, 4, 		0, 19, 0, 14.7,
+COMPONENT IMPROVEMENTS	;2, 6, 22, 310, 38, 1200, 4, 1600, 0,
+PARENTS			;13, N
+
+PROJECT			;15, Ion Weapons, 2, 9, 		0, 21, 0, 2.8,
+COMPONENTS		;15
+PARENTS			;6, N
+
+PROJECT			;16, EMP Defenses, 3, 10, 		0, 21, 0, 5.2,
+COMPONENTS		;17
+PARENTS			;15, N
+
+PROJECT			;17, Improved Ion Weapons, 4, 9, 		0, 21, 0, 8.0,
+COMPONENT IMPROVEMENTS	;15, 4, 30, 340, 80, 280, 5, 3300, 0,
+PARENTS			;504, N
+
+PROJECT			;18, Improved EMP Defenses, 5, 10, 		0, 21, 0, 11.2,
+COMPONENT IMPROVEMENTS	;17, 5, 28, 0, 0, 0, 0, 0, 0,
+PARENTS			;506, N
+
+PROJECT			;19, EMP Blasting, 4, 11, 		0, 21, 0, 8.0,
+COMPONENTS		;16
+PARENTS			;504, Y, 24, Y
+
+PROJECT			;20, Advanced EMP Blasting, 6, 11, 		0, 21, 0, 14.7,
+COMPONENT IMPROVEMENTS	;16, 6, 30, 270, 125, 150, 7, 6600, 0,
+PARENTS			;19, N
+
+PROJECT			;21, Planetary Ion Cannon, 4, 12, 		0, 21, 0, 8.0,
+FACILITY		;3
+PARENTS			;16, Y, 504, Y
+
+PROJECT			;22, Area Weapons, 1, 13, 		0, 18, 0, 0.0,
+COMPONENTS		;19
+
+PROJECT			;23, Enhanced Area Weapons, 2, 13, 		0, 18, 0, 2.8,
+COMPONENT IMPROVEMENTS	;19, 2, 42, 280, 54, 140, 13, 8200, 0,
+PARENTS			;22, N
+
+PROJECT			;24, Advanced Area Weapons, 3, 13, 		0, 18, 0, 5.2,
+COMPONENTS		;21
+PARENTS			;23, N
+
+PROJECT			;25, Devastating Area Effects, 4, 13, 		0, 18, 0, 8.0,
+COMPONENT IMPROVEMENTS	;21, 4, 120, 340, 90, 165, 30, 9000, 0,
+PARENTS			;24, N
+
+PROJECT			;26, Optimized Blast Wave, 6, 13, 		0, 18, 0, 14.7,
+COMPONENT IMPROVEMENTS	;21, 6, 200, 380, 90, 195, 37, 9000, 0,
+PARENTS			;25, N
+
+PROJECT			;27, Devastating Plasma Charge, 2, 18, 		0, 25, 0, 2.8,
+COMPONENTS		;9
+PARENTS			;33, N
+
+PROJECT			;28, Plasma Focussing, 4, 18, 		0, 25, 0, 8.0,
+COMPONENT IMPROVEMENTS	;9, 4, 46, 380, 52, 82, 10, 2300, 8,
+PARENTS			;27, N
+
+PROJECT			;29, Resonant Energy Pulsing, 6, 18, 		0, 25, 0, 14.7,
+COMPONENT IMPROVEMENTS	;9, 6, 60, 510, 52, 98, 10, 2200, 12,
+PARENTS			;28, N
+
+PROJECT			;30, Fast Energy Propulsion, 4, 19, 		0, 25, 0, 8.0,
+COMPONENTS		;6
+PARENTS			;35, N
+
+PROJECT			;31, Total Energy Acceleration, 5, 19, 		0, 25, 0, 11.2,
+COMPONENT IMPROVEMENTS	;6, 5, 22, 800, 44, 160, 2, 3200, 0,
+PARENTS			;30, N
+
+PROJECT			;32, Smooth Energy Streams, 6, 19, 		0, 25, 0, 14.7,
+COMPONENT IMPROVEMENTS	;6, 6, 28, 900, 44, 200, 2, 3200, 0,
+PARENTS			;31, N
+
+PROJECT			;33, Energy Torpedo Weapons, 1, 20, 		0, 25, 0, 0.0,
+COMPONENTS		;5
+
+PROJECT			;34, Enhanced Torpedoes, 2, 20, 		0, 25, 0, 2.8,
+COMPONENT IMPROVEMENTS	;5, 2, 16, 400, 30, 72, 3, 3400, 0,
+PARENTS			;33, N
+
+PROJECT			;35, Advanced Torpedoes, 3, 20, 		0, 25, 0, 5.2,
+COMPONENT IMPROVEMENTS	;5, 3, 18, 500, 30, 86, 3, 3200, 0,
+PARENTS			;34, N
+
+PROJECT			;36, Controlled Plasma Experiments, 4, 20, 		0, 25, 0, 8.0,
+COMPONENTS		;8
+PARENTS			;35, N
+
+PROJECT			;37, Focused Plasma Containment, 5, 20, 		0, 25, 0, 11.2,
+COMPONENT IMPROVEMENTS	;8, 5, 25, 650, 50, 125, 3, 3300, 0,
+PARENTS			;36, N
+
+PROJECT			;38, Advanced Plasma Insight, 6, 20, 		0, 25, 0, 14.7,
+COMPONENT IMPROVEMENTS	;8, 6, 30, 750, 50, 150, 3, 3200, 0,
+PARENTS			;37, N
+
+PROJECT			;39, High Energy Cohesion, 4, 21, 		0, 25, 0, 8.0,
+COMPONENTS		;7
+PARENTS			;35, N
+
+PROJECT			;40, High Power Discharges, 5, 21, 		0, 25, 0, 11.2,
+COMPONENT IMPROVEMENTS	;7, 5, 32, 540, 60, 110, 4, 3800, 0,
+PARENTS			;39, N
+
+PROJECT			;41, Extreme Energy Vortexes, 6, 21, 		0, 25, 0, 14.7,
+COMPONENT IMPROVEMENTS	;7, 6, 40, 650, 60, 125, 4, 3800, 0,
+PARENTS			;40, N
+
+PROJECT			;42, Planetary Extermination I, 7, 36, 		0, 25, 0, 18.5,
+COMPONENTS		;12
+PARENTS			;525, N
+
+PROJECT			;43, Planetary Extermination II, 8, 36, 		0, 25, 0, 22.6,
+COMPONENT IMPROVEMENTS	;12, 8, 0, 320, 44, 72, 13, 6700, 20,
+PARENTS			;42, N
+
+PROJECT			;44, Planetary Extermination III, 9, 36, 		0, 25, 0, 27.0,
+COMPONENT IMPROVEMENTS	;12, 9, 0, 380, 44, 86, 13, 6700, 30,
+PARENTS			;43, N
+
+PROJECT			;45, Planetary Bombardment I, 3, 36, 		0, 25, 0, 5.2,
+COMPONENTS		;11
+
+PROJECT			;46, Planetary Bombardment II, 4, 36, 		0, 25, 0, 8.0,
+COMPONENT IMPROVEMENTS	;11, 4, 0, 300, 15, 60, 0, 5500, 6,
+PARENTS			;45, N
+
+PROJECT			;47, Planetary Bombardment III, 5, 36, 		0, 25, 0, 11.2,
+COMPONENT IMPROVEMENTS	;11, 5, 0, 400, 15, 70, 0, 5000, 8,
+PARENTS			;46, N
+
+PROJECT			;48, Enhanced Type I Missiles, 1, 33, 		0, 25, 0, 0.0,
+COMPONENT IMPROVEMENTS	;128, 1, 6, 1000, 20, 125, 0, 2500, 0,
+PARENTS			;369, N
+
+PROJECT			;49, Enhanced Type II Missiles, 3, 33, 		0, 25, 0, 5.2,
+COMPONENT IMPROVEMENTS	;10, 3, 10, 1000, 20, 175, 0, 2500, 0,
+PARENTS			;485, N
+
+PROJECT			;50, Advanced Type II Missiles, 4, 33, 		0, 25, 0, 8.0,
+COMPONENT IMPROVEMENTS	;10, 4, 12, 1000, 20, 200, 0, 2500, 0,
+PARENTS			;49, N
+
+PROJECT			;51, Point Defense Weapons, 1, 37, 		0, 22, 0, 0.0,
+COMPONENTS		;13
+
+PROJECT			;52, Enhanced Point Defense, 2, 37, 		0, 22, 0, 2.8,
+COMPONENT IMPROVEMENTS	;13, 2, 6, 170, 4, 470, 1, 540, 0,
+PARENTS			;51, N
+
+PROJECT			;53, Advanced Point Defense, 3, 37, 		0, 22, 0, 5.2,
+COMPONENT IMPROVEMENTS	;13, 3, 8, 200, 4, 510, 1, 540, 0,
+PARENTS			;52, N
+
+PROJECT			;54, DualPhase Point Defense, 4, 37, 		0, 22, 0, 8.0,
+COMPONENTS		;14
+PARENTS			;53, N
+
+PROJECT			;55, MultiPhase Point Defense, 5, 37, 		0, 22, 0, 11.2,
+COMPONENT IMPROVEMENTS	;14, 5, 12, 225, 6, 600, 1, 480, 0,
+PARENTS			;54, N
+
+PROJECT			;56, Terminal Point Defense, 7, 37, 		0, 22, 0, 18.5,
+COMPONENT IMPROVEMENTS	;14, 6, 15, 275, 6, 660, 1, 480, 0,
+PARENTS			;55, N
+
+PROJECT			;57, Hangar Bay, 1, 25, 		0, 3, 0, 0.0,
+COMPONENTS		;26, 179
+FIGHTERS		;0, 6
+
+PROJECT			;58, Medium Torpedo Bombers, 3, 27, 		0, 7, 0, 5.2,
+FIGHTERS		;8
+PARENTS			;554, N
+
+PROJECT			;59, Heavy Torpedo Bombers, 4, 27, 		0, 7, 0, 8.0,
+FIGHTERS		;9
+PARENTS			;60, Y, 58, Y
+
+PROJECT			;60, Advanced Hangar Bay, 3, 25, 		0, 3, 0, 5.2,
+COMPONENTS		;27, 180
+PARENTS			;57, N
+
+PROJECT			;61, Torpedo Strike Bombers, 5, 27, 		0, 7, 0, 11.2,
+FIGHTERS		;10
+PARENTS			;59, N
+
+PROJECT			;62, Torpedo Assault Bombers, 6, 27, 		0, 7, 0, 14.7,
+FIGHTERS		;11
+PARENTS			;439, Y, 61, Y
+
+PROJECT			;63, Fast Interceptors, 3, 26, 		0, 7, 0, 5.2,
+FIGHTERS		;2
+PARENTS			;553, N
+
+PROJECT			;64, Tactical Interceptors, 4, 26, 		0, 7, 0, 8.0,
+FIGHTERS		;3
+PARENTS			;60, Y, 63, Y
+
+PROJECT			;65, Advanced Fighters, 5, 26, 		0, 7, 0, 11.2,
+FIGHTERS		;4
+PARENTS			;64, N
+
+PROJECT			;66, Superiority Star Fighters, 6, 26, 		0, 7, 0, 14.7,
+FIGHTERS		;5
+PARENTS			;439, Y, 65, Y
+
+PROJECT			;67, Armor Plating, 1, 46, 		0, 0, 0, 0.0,
+COMPONENTS		;28
+PARENTS			;317, N
+
+PROJECT			;68, High Density Alloys, 4, 46, 		0, 0, 0, 8.0,
+COMPONENTS		;29
+PARENTS			;472, N
+
+PROJECT			;69, Ablative Metals, 5, 46, 		0, 0, 0, 11.2,
+COMPONENTS		;30
+PARENTS			;68, N
+
+PROJECT			;70, Indestructible Compounds, 7, 46, 		0, 0, 0, 18.5,
+COMPONENTS		;31
+PARENTS			;69, N
+
+PROJECT			;71, Fusion Physics, 4, 2, 		1, 13, 0, 8.0,
+COMPONENTS		;54
+PARENTS			;75, N
+
+PROJECT			;72, Advanced Fusion Physics, 5, 2, 		1, 13, 0, 11.2,
+COMPONENT IMPROVEMENTS	;54, 5, 150, 300, 1050, 8, 0, 0, 0,
+PARENTS			;71, N
+
+PROJECT			;73, Fusion Cycle Secrets, 6, 2, 		1, 13, 0, 14.7,
+COMPONENT IMPROVEMENTS	;54, 6, 175, 350, 1050, 8, 0, 0, 0,
+PARENTS			;72, N
+
+PROJECT			;74, Advanced Nuclear Fission, 2, 3, 		1, 13, 0, 2.8,
+COMPONENTS		;53
+PARENTS			;465, N
+
+PROJECT			;75, Nuclear Supercharging, 3, 3, 		1, 13, 0, 5.2,
+COMPONENT IMPROVEMENTS	;53, 3, 100, 150, 600, 18, 0, 0, 0,
+PARENTS			;74, N
+
+PROJECT			;76, Mini-Reactors, 4, 3, 		1, 13, 0, 8.0,
+COMPONENTS      ;185, 186
+PARENTS			;75, N
+
+PROJECT			;77, Fusion Balance, 6, 3, 		1, 13, 0, 14.7,
+COMPONENTS		;56
+PARENTS			;72, Y, 81, Y
+
+PROJECT			;78, HyperFusion Intensification, 7, 3, 		1, 13, 0, 18.5,
+COMPONENT IMPROVEMENTS	;56, 7, 250, 450, 1540, 8, 0, 0, 0,
+PARENTS			;77, N
+
+PROJECT			;79, Advanced Fusion Balance, 8, 3, 		1, 13, 0, 22.6,
+COMPONENT IMPROVEMENTS	;56, 8, 275, 500, 1755, 8, 0, 0, 0,
+PARENTS			;78, N
+
+PROJECT			;80, Quantum Exploitation, 4, 4, 		1, 13, 0, 8.0,
+COMPONENTS		;55
+PARENTS			;75, N
+
+PROJECT			;81, Quantum MicroUtilization, 5, 4, 		1, 13, 0, 11.2,
+COMPONENT IMPROVEMENTS	;55, 5, 170, 225, 900, 18, 0, 0, 0,
+PARENTS			;80, N
+
+PROJECT			;82, Quantum Mastery, 6, 4, 		1, 13, 0, 14.7,
+COMPONENT IMPROVEMENTS	;55, 6, 200, 250, 1000, 18, 0, 0, 0,
+PARENTS			;81, N
+
+PROJECT			;83, Fusion Ignition, 2, 1, 		1, 13, 0, 2.8,
+COMPONENTS		;57
+PARENTS			;465, N
+
+PROJECT			;84, Intense Fusion Reactions, 4, 1, 		1, 13, 0, 8.0,
+COMPONENT IMPROVEMENTS	;57, 4, 170, 300, 940, 4, 0, 0, 0,
+PARENTS			;83, N
+
+PROJECT			;85, Zero Fusion Threshold, 6, 1, 		1, 13, 0, 14.7,
+COMPONENT IMPROVEMENTS	;57, 6, 220, 400, 750, 4, 0, 0, 0,
+PARENTS			;84, N
+
+PROJECT			;86, UltraFast Shield Recharging, 2, 6, 		1, 16, 0, 2.8,
+COMPONENTS		;36
+PARENTS			;95, N
+
+PROJECT			;87, Capacitor Overloading, 4, 6, 		1, 16, 0, 8.0,
+COMPONENT IMPROVEMENTS	;36, 4, 300, 15, 0, 0, 0, 0, 0,
+PARENTS			;86, N
+
+PROJECT			;88, Pure Energy Discharge, 6, 6, 		1, 16, 0, 14.7,
+COMPONENT IMPROVEMENTS	;36, 6, 450, 20, 0, 0, 0, 0, 0,
+PARENTS			;87, N
+
+PROJECT			;89, Talassos Shields, 3, 7, 		1, 16, 0, 5.2,
+COMPONENTS		;33
+PARENTS			;96, N
+
+PROJECT			;90, High Energy Capacitors, 4, 7, 		1, 16, 0, 8.0,
+COMPONENT IMPROVEMENTS	;33, 4, 175, 15, 0, 0, 0, 0, 0,
+PARENTS			;89, N
+
+PROJECT			;91, MultiPhase Capacitors, 5, 7, 		1, 16, 0, 11.2,
+COMPONENT IMPROVEMENTS	;33, 5, 200, 20, 0, 0, 0, 0, 0,
+PARENTS			;90, N
+
+PROJECT			;92, Deucalios Shields, 3, 11, 		1, 16, 0, 5.2,
+COMPONENTS		;34
+PARENTS			;96, N
+
+PROJECT			;93, High Storage Capacitors, 4, 11, 		1, 16, 0, 8.0,
+COMPONENT IMPROVEMENTS	;34, 4, 250, 4, 0, 0, 0, 0, 0,
+PARENTS			;92, N
+
+PROJECT			;94, Dense Energy Banks, 5, 11, 		1, 16, 0, 11.2,
+COMPONENT IMPROVEMENTS	;34, 5, 300, 5, 0, 0, 0, 0, 0,
+PARENTS			;93, N
+
+PROJECT			;95, Shields, 1, 9, 		1, 16, 0, 0.0,
+COMPONENTS		;32
+
+PROJECT			;96, Enhanced Shields, 2, 9, 		1, 16, 0, 2.8,
+COMPONENT IMPROVEMENTS	;32, 2, 125, 4, 0, 0, 0, 0, 0,
+PARENTS			;95, N
+
+PROJECT			;97, Shield Reinforcement, 3, 9, 		1, 16, 0, 5.2,
+COMPONENT IMPROVEMENTS	;32, 3, 150, 5, 0, 0, 0, 0, 0,
+PARENTS			;96, N
+
+PROJECT			;98, Meridian Shields, 5, 9, 		1, 16, 0, 11.2,
+COMPONENTS		;35
+PARENTS			;90, Y, 93, Y
+
+PROJECT			;99, Shield Multipliers, 6, 9, 		1, 16, 0, 14.7,
+COMPONENT IMPROVEMENTS	;35, 6, 325, 20, 0, 0, 0, 0, 0,
+PARENTS			;98, N
+
+PROJECT			;100, Exponential Shield Effects, 7, 9, 		1, 16, 0, 18.5,
+COMPONENT IMPROVEMENTS	;35, 7, 400, 25, 0, 0, 0, 0, 0,
+PARENTS			;99, N
+
+PROJECT			;101, System Shield Recharging, 6, 8, 		1, 15, 0, 14.7,
+COMPONENTS		;37
+PARENTS			;87, N, 98, N, 610, N, 611, N
+
+PROJECT			;102, System Recharge Power, 7, 8, 		1, 15, 0, 18.5,
+COMPONENT IMPROVEMENTS	;37, 7, 3000, 1500, 1000, 0, 0, 0, 0,
+PARENTS			;101, N
+
+PROJECT			;103, Massive Shield Projection, 6, 10, 		1, 16, 0, 14.7,
+FACILITY		;4
+PARENTS			;87, N, 91, N, 98, N, 94, N
+
+PROJECT			;104, Robotic Defenses, 2, 33, 		1, 3, 0, 2.8,
+FACILITY		;1
+PARENTS			;115, N
+
+PROJECT			;105, Space Construction, 1, 31, 		1, 3, 0, 0.0,
+COMPONENT IMPROVEMENTS	;94, 1, 200, 0, 0, 0, 0, 0, 0,
+ABILITIES		;Increased Construction Size, 2, 1, 500, 0
+PARENTS			;362, N
+
+PROJECT			;106, Enhanced Construction, 2, 31, 		1, 3, 0, 2.8,
+COMPONENT IMPROVEMENTS	;62, 2, 30000, 0, 0, 0, 0, 0, 0,	63, 2, 30000, 0, 0, 0, 0, 0, 0,		64, 2, 30000, 0, 0, 0, 0, 0, 0,
+PARENTS			;105, N
+
+PROJECT			;107, Component PreFabrication, 3, 31, 		1, 3, 0, 5.2,
+COMPONENT IMPROVEMENTS	;94, 3, 300, 0, 0, 0, 0, 0, 0,
+ABILITIES		;Increased Construction Size, 2, 3, 800, 0,	Dedicated Carriers, 3, 3, 0, 0,	Resupply Ships, 3, 3, 0, 1
+PARENTS			;106, N
+
+PROJECT			;108, Large-Scale Construction, 4, 31, 		1, 3, 0, 8.0,
+COMPONENT IMPROVEMENTS	;62, 4, 40000, 0, 0, 0, 0, 0, 0,	63, 4, 40000, 0, 0, 0, 0, 0, 0,		64, 4, 40000, 0, 0, 0, 0, 0, 0,
+PARENTS			;107, N
+
+PROJECT			;109, Rapid Assembly, 5, 31, 		1, 3, 0, 11.2,
+COMPONENT IMPROVEMENTS	;94, 5, 400, 0, 0, 0, 0, 0, 0,
+ABILITIES		;Increased Construction Size, 2, 5, 1200, 0
+PARENTS			;108, N
+
+PROJECT			;110, Mega-Scale Construction, 6, 31, 		1, 3, 0, 14.7,
+COMPONENT IMPROVEMENTS	;62, 6, 50000, 0, 0, 0, 0, 0, 0,	63, 6, 50000, 0, 0, 0, 0, 0, 0,		64, 6, 50000, 0, 0, 0, 0, 0, 0,
+PARENTS			;109, N
+
+PROJECT			;111, Automated Manufacturing, 7, 31, 		1, 3, 0, 18.5,
+COMPONENT IMPROVEMENTS	;94, 7, 500, 0, 0, 0, 0, 0, 0,
+ABILITIES		;Increased Maximum Construction Size, 2, 7, 1600, 0
+PARENTS			;110, N
+
+PROJECT			;112, Colossal Construction, 8, 31, 		1, 3, 0, 22.6,
+COMPONENT IMPROVEMENTS	;94, 8, 600, 0, 0, 0, 0, 0, 0,		62, 8, 60000, 0, 0, 0, 0, 0, 0,		63, 8, 60000, 0, 0, 0, 0, 0, 0,		64, 8, 60000, 0, 0, 0, 0, 0, 0,
+ABILITIES		;Increased Maximum Construction Size, 2, 8, 2000, 0
+PARENTS			;111, N
+
+PROJECT			;113, Swift Robotic Repairs, 3, 33, 		1, 3, 0, 5.2,
+COMPONENTS		;97
+PARENTS			;116, N
+
+PROJECT			;114, Advanced Robotic Repairs, 5, 33, 		1, 3, 0, 11.2,
+COMPONENT IMPROVEMENTS	;97, 5, 750, 2, 0, 0, 0, 0, 0,
+PARENTS			;113, N
+
+PROJECT			;115, Damage Control, 1, 32, 		1, 3, 0, 0.0,
+COMPONENTS		;95
+PARENTS			;362, N
+
+PROJECT			;116, Enhanced Damage Control, 2, 32, 		1, 3, 0, 2.8,
+COMPONENT IMPROVEMENTS	;95, 2, 200, 45, 0, 0, 0, 0, 0,
+PARENTS			;115, N
+
+PROJECT			;117, Robotic Repairs, 5, 32, 		1, 3, 0, 11.2,
+COMPONENTS		;96
+PARENTS			;488, N
+
+PROJECT			;118, Enhanced Robotic Repairs, 6, 32, 		1, 3, 0, 14.7,
+COMPONENT IMPROVEMENTS	;96, 6, 600, 3, 0, 0, 0, 0, 0,
+PARENTS			;117, N
+
+PROJECT			;119, Mining, 0, 27, 		1, 6, 1, 0.0,
+COMPONENTS		;59, 60, 61
+
+PROJECT			;120, Fast Mining, 2, 27, 		1, 6, 0, 2.8,
+COMPONENT IMPROVEMENTS	;59, 2, 4, 12, 0, 0, 0, 0, 0,		61, 2, 4, 8, 0, 0, 0, 0, 0,
+PARENTS			;119, N
+
+PROJECT			;121, Self-Optimizing Extractors, 4, 27, 		1, 6, 0, 8.0,
+COMPONENT IMPROVEMENTS	;59, 4, 5, 15, 0, 0, 0, 0, 0,		61, 4, 5, 10, 0, 0, 0, 0, 0,
+PARENTS			;120, N
+
+PROJECT			;122, High Power Extractors, 6, 27, 		1, 6, 0, 14.7,
+COMPONENT IMPROVEMENTS	;59, 6, 6, 18, 0, 0, 0, 0, 0,		61, 6, 6, 12, 0, 0, 0, 0, 0,
+PARENTS			;121, N
+
+PROJECT			;123, Energy Collection, 1, 29, 		1, 4, 0, 0.0,
+COMPONENTS		;58
+
+PROJECT			;124, Enhanced Energy Collection, 2, 29, 		1, 4, 0, 2.8,
+COMPONENT IMPROVEMENTS	;58, 2, 36, 0, 0, 0, 0, 0, 0,
+PARENTS			;123, N
+
+PROJECT			;125, High Power Receptors, 4, 29, 		1, 4, 0, 8.0,
+COMPONENT IMPROVEMENTS	;58, 4, 60, 0, 0, 0, 0, 0, 0,
+PARENTS			;550, N
+
+PROJECT			;126, Total Energy Absorption, 6, 29, 		1, 4, 0, 14.7,
+COMPONENT IMPROVEMENTS	;58, 6, 90, 0, 0, 0, 0, 0, 0,
+PARENTS			;424, N
+
+PROJECT			;127, Ultra Efficient Engines, 3, 20, 		1, 5, 0, 5.2,
+COMPONENTS		;42
+PARENTS			;478, N
+
+PROJECT			;128, Lossless Energy Conversion, 5, 20, 		1, 5, 0, 11.2,
+COMPONENT IMPROVEMENTS	;42, 5, 5250, 4, 3000, 1, 0, 0, 0,
+PARENTS			;127, N
+
+PROJECT			;129, Energy Overloading, 7, 20, 		1, 5, 0, 18.5,
+COMPONENT IMPROVEMENTS	;42, 7, 10500, 5, 5250, 2, 0, 0, 0,
+PARENTS			;128, N
+
+PROJECT			;130, Efficient Energy Conversion, 4, 21, 		1, 5, 0, 8.0,
+COMPONENTS		;39
+PARENTS			;134, N
+
+PROJECT			;131, Pure Energy Conversion, 5, 21, 		1, 5, 0, 11.2,
+COMPONENT IMPROVEMENTS	;39, 5, 4500, 4, 2250, 1, 0, 0, 0,
+PARENTS			;130, N
+
+PROJECT			;132, Optimized Engine Efficiency, 7, 21, 		1, 5, 0, 18.5,
+COMPONENT IMPROVEMENTS	;39, 7, 7500, 5, 4500, 1, 0, 0, 0,
+PARENTS			;131, N
+
+PROJECT			;133, Proton Ionization, 2, 22, 		1, 5, 0, 2.8,
+COMPONENTS		;38
+PARENTS			;477, N
+
+PROJECT			;134, Enhanced Proton Ionization, 3, 22, 		1, 5, 0, 5.2,
+COMPONENT IMPROVEMENTS	;38, 3, 2700, 5, 1500, 2, 0, 0, 0,
+PARENTS			;133, N
+
+PROJECT			;135, Advanced Proton Ionization, 4, 22, 		1, 5, 0, 8.0,
+COMPONENT IMPROVEMENTS	;38, 4, 3600, 6, 2250, 3, 0, 0, 0,
+PARENTS			;134, N
+
+PROJECT			;136, Advanced Engines, 6, 22, 		1, 5, 0, 14.7,
+COMPONENTS		;41
+PARENTS			;131, Y, 140, Y
+
+PROJECT			;137, Harmonized Thrust, 7, 22, 		1, 5, 0, 18.5,
+COMPONENT IMPROVEMENTS	;41, 7, 9000, 7, 4500, 4, 0, 0, 0,
+PARENTS			;136, N
+
+PROJECT			;138, Resonant Thrust Output, 8, 22, 		1, 5, 0, 22.6,
+COMPONENT IMPROVEMENTS	;41, 8, 12000, 8, 6000, 5, 0, 0, 0,
+PARENTS			;137, N
+
+PROJECT			;139, High Volume Thrust, 4, 23, 		1, 5, 0, 8.0,
+COMPONENTS		;40
+PARENTS			;134, N
+
+PROJECT			;140, Maximized Thrust Output, 5, 23, 		1, 5, 0, 11.2,
+COMPONENT IMPROVEMENTS	;40, 5, 6000, 10, 2625, 4, 0, 0, 0,
+PARENTS			;139, N
+
+PROJECT			;141, Surplus Thrust Overload, 7, 23, 		1, 5, 0, 18.5,
+COMPONENT IMPROVEMENTS	;40, 7, 12000, 11, 5250, 5, 0, 0, 0,
+PARENTS			;140, N
+
+PROJECT			;142, Very High Thrust Engines, 3, 24, 		1, 5, 0, 5.2,
+COMPONENTS		;43
+PARENTS			;478, N
+
+PROJECT			;143, Synchronized Thrust, 5, 24, 		1, 5, 0, 11.2,
+COMPONENT IMPROVEMENTS	;43, 5, 7500, 9, 3750, 5, 0, 0, 0,
+PARENTS			;142, N
+
+PROJECT			;144, Intense Thrust Output, 7, 24, 		1, 5, 0, 18.5,
+COMPONENT IMPROVEMENTS	;43, 7, 15000, 11, 7500, 6, 0, 0, 0,
+PARENTS			;143, N
+
+PROJECT			;145, Thrust Vector, 2, 25, 		1, 5, 0, 2.8,
+COMPONENTS		;44
+PARENTS			;479, N
+
+PROJECT			;146, Improved Maneuvering, 3, 25, 		1, 5, 0, 5.2,
+COMPONENT IMPROVEMENTS	;44, 3, 9, 1, 0, 0, 0, 0, 0,
+PARENTS			;145, N
+
+PROJECT			;147, Coordinated Maneuvering, 4, 25, 		1, 5, 0, 8.0,
+COMPONENT IMPROVEMENTS	;44, 4, 11, 1, 0, 0, 0, 0, 0,
+PARENTS			;146, N
+
+PROJECT			;148, High Speed Turning, 5, 25, 		1, 5, 0, 11.2,
+COMPONENTS		;45
+PARENTS			;135, Y, 147, Y
+
+PROJECT			;149, Advanced Maneuvering, 6, 25, 		1, 5, 0, 14.7,
+COMPONENT IMPROVEMENTS	;45, 6, 17, 1, 0, 0, 0, 0, 0,
+PARENTS			;148, N
+
+PROJECT			;150, Ultimate Maneuvering, 7, 25, 		1, 5, 0, 18.5,
+COMPONENT IMPROVEMENTS	;45, 7, 20, 1, 0, 0, 0, 0, 0,
+PARENTS			;149, N
+
+PROJECT			;151, Accelerated Maneuvering, 2, 26, 		1, 5, 0, 2.8,
+COMPONENTS		;46
+PARENTS			;479, N
+
+PROJECT			;152, Swift Maneuvering, 4, 26, 		1, 5, 0, 8.0,
+COMPONENT IMPROVEMENTS	;46, 4, 16, 1, 0, 0, 0, 0, 0,
+PARENTS			;151, N
+
+PROJECT			;153, Directional Vectoring, 6, 26, 		1, 5, 0, 14.7,
+COMPONENT IMPROVEMENTS	;46, 6, 20, 1, 0, 0, 0, 0, 0,
+PARENTS			;152, N
+
+PROJECT			;154, Pulse Jump Theory, 2, 12, 		1, 10, 0, 2.8,
+COMPONENTS		;52
+PARENTS			;166, N
+
+PROJECT			;155, Enhanced Jump Techniques, 3, 12, 		1, 10, 0, 5.2,
+COMPONENT IMPROVEMENTS	;52, 3, 7000, 85, 18, 19, 20, 0, 0,
+PARENTS			;154, N
+
+PROJECT			;156, Improved Jump Techniques, 4, 12, 		1, 10, 0, 8.0,
+COMPONENT IMPROVEMENTS	;52, 4, 10000, 90, 15, 18, 20, 0, 0,
+PARENTS			;155, N
+
+PROJECT			;157, Quick HyperDrives, 4, 13, 		1, 10, 0, 8.0,
+COMPONENTS		;48
+PARENTS			;501, N
+
+PROJECT			;158, Enhanced Kaldos Drive, 5, 13, 		1, 10, 0, 11.2,
+COMPONENT IMPROVEMENTS	;48, 5, 7000, 180, 8, 16, 20, 0, 0,
+PARENTS			;157, N
+
+PROJECT			;159, Improved Kaldos Drive, 6, 13, 		1, 10, 0, 14.7,
+COMPONENT IMPROVEMENTS	;48, 6, 10000, 200, 6, 15, 20, 0, 0,
+PARENTS			;158, N
+
+PROJECT			;160, Fast HyperDrives, 4, 14, 		1, 10, 0, 8.0,
+COMPONENTS		;49
+PARENTS			;501, N
+
+PROJECT			;161, Enhanced Phoenix Drive, 5, 14, 		1, 10, 0, 11.2,
+COMPONENT IMPROVEMENTS	;49, 5, 10000, 180, 35, 16, 20, 0, 0,
+PARENTS			;160, N
+
+PROJECT			;162, Improved Phoenix Drive, 6, 14, 		1, 10, 0, 14.7,
+COMPONENT IMPROVEMENTS	;49, 6, 15000, 200, 40, 15, 20, 0, 0,
+PARENTS			;161, N
+
+PROJECT			;163, Efficient HyperDrives, 4, 15, 		1, 10, 0, 8.0,
+COMPONENTS		;50
+PARENTS			;501, N
+
+PROJECT			;164, Enhanced Calista-Dal Drive, 5, 15, 		1, 10, 0, 11.2,
+COMPONENT IMPROVEMENTS	;50, 5, 8000, 80, 18, 9, 20, 0, 0,
+PARENTS			;163, N
+
+PROJECT			;165, Improved Calista-Dal Drive, 6, 15, 		1, 10, 0, 14.7,
+COMPONENT IMPROVEMENTS	;50, 6, 12000, 70, 16, 8, 20, 0, 0,
+PARENTS			;164, N
+
+PROJECT			;166, Stable Warp Fields, 1, 16, 		1, 10, 0, 2.0,
+COMPONENT IMPROVEMENTS	;125, 1, 2500, 90, 50, 20, 20, 0, 0,
+PARENTS			;363, N
+
+PROJECT			;167, Hyperdrive Technology, 2, 16, 		1, 10, 0, 2.8,
+COMPONENTS 		;47
+PARENTS			;166, N
+
+PROJECT			;168, Optimized Gerax Drive, 4, 16, 		1, 10, 0, 8.0,
+COMPONENT IMPROVEMENTS	;47, 4, 5000, 140, 35, 17, 20, 0, 0,
+PARENTS			;501, N
+
+PROJECT			;169, Advanced HyperDrives, 9, 16, 		1, 10, 0, 27.0,
+COMPONENTS		;51
+PARENTS			;396, N, 398, N, 400, N, 502, N
+
+PROJECT			;170, Hyperspace PathSlicing, 10, 16, 		1, 10, 0, 31.6,
+COMPONENT IMPROVEMENTS	;51, 10, 45000, 200, 15, 11, 20, 0, 0,
+PARENTS			;169, N
+
+PROJECT			;171, Unified HyperDrive Theory, 11, 16, 		1, 10, 0, 36.5,
+COMPONENT IMPROVEMENTS	;51, 11, 60000, 250, 15, 10, 20, 0, 0,
+PARENTS			;423, Y, 170, Y
+
+PROJECT			;172, Hyperjump Inhibiting, 3, 18, 		1, 9, 0, 5.2,
+COMPONENTS		;18
+PARENTS			;167, N
+
+PROJECT			;173, Advanced Jump Stalling, 4, 18, 		1, 9, 0, 8.0,
+COMPONENT IMPROVEMENTS	;18, 4, 0, 800, 3, 0, 0, 0, 0,
+PARENTS			;172, N
+
+PROJECT			;174, Refined Hyperjump Theory, 5, 18, 		1, 9, 0, 11.2,
+COMPONENTS		;20
+PARENTS			;173, Y, 168, Y
+
+PROJECT			;175, Long Range Jump Blocking, 6, 18, 		1, 9, 0, 14.7,
+COMPONENT IMPROVEMENTS	;20, 6, 0, 1500, 3, 0, 0, 0, 0,
+PARENTS			;174, N
+
+PROJECT			;176, Hyperjump Disruption, 4, 19, 		1, 9, 0, 8.0,
+COMPONENTS		;22
+PARENTS			;501, N
+
+PROJECT			;177, Advanced Jump Disruption, 5, 19, 		1, 9, 0, 11.2,
+COMPONENT IMPROVEMENTS	;22, 5, 0, 7500, 0, 0, 0, 0, 0,
+PARENTS			;176, N
+
+PROJECT			;178, Basic ShadowGhost, 2, 6, 		2, 2, 0, 2.8,
+COMPONENTS		;87
+PARENTS			;182, N
+ALLOWED RACES	;Kiadian, Amonkrie
+
+PROJECT			;179, Enhanced ShadowGhost, 3, 6, 		2, 2, 0, 5.2,
+COMPONENT IMPROVEMENTS	;87, 3, 35, 0, 0, 0, 0, 0, 0,
+PARENTS			;178, N
+ALLOWED RACES	;Kiadian, Amonkrie
+
+PROJECT			;180, Advanced ShadowGhost, 4, 6, 		2, 2, 0, 8.0,
+COMPONENT IMPROVEMENTS	;87, 4, 50, 0, 0, 0, 0, 0, 0,
+PARENTS			;179, N
+ALLOWED RACES	;Kiadian, Amonkrie
+
+PROJECT			;181, Optimized ShadowGhost, 6, 6, 		2, 2, 0, 14.7,
+COMPONENT IMPROVEMENTS	;87, 6, 60, 0, 0, 0, 0, 0, 0,
+PARENTS			;180, N
+ALLOWED RACES	;Kiadian, Amonkrie
+
+PROJECT			;182, Countermeasures, 1, 4, 		2, 2, 0, 0.0,
+COMPONENTS		;84
+
+PROJECT			;183, Enhanced ECM, 2, 4, 		2, 2, 0, 2.8,
+COMPONENT IMPROVEMENTS	;84, 2, 10, 0, 0, 0, 0, 0, 0,
+PARENTS			;182, N
+
+PROJECT			;184, Fleet Countermeasures, 5, 5, 		2, 2, 0, 11.2,
+COMPONENTS		;90
+PARENTS			;185, N, 180, N
+
+PROJECT			;185, Advanced ECM, 4, 4, 		2, 2, 0, 8.0,
+COMPONENT IMPROVEMENTS	;84, 4, 30, 0, 0, 0, 0, 0, 0,
+PARENTS			;405, N
+
+PROJECT			;186, Enhanced Fleet ECM, 6, 5, 		2, 2, 0, 14.7,
+COMPONENT IMPROVEMENTS	;90, 6, 0, 25, 0, 0, 0, 0, 0,
+PARENTS			;184, N
+
+PROJECT			;187, Optimal ECM, 6, 4, 		2, 2, 0, 14.7,
+COMPONENT IMPROVEMENTS	;84, 6, 40, 0, 0, 0, 0, 0, 0,
+PARENTS			;185, N
+
+PROJECT			;188, Target Tracking, 1, 3, 		2, 2, 0, 0.0,
+COMPONENTS		;83
+
+PROJECT			;189, Enhanced Targeting, 2, 3, 		2, 2, 0, 2.8,
+COMPONENT IMPROVEMENTS	;83, 2, 10, 0, 0, 0, 0, 0, 0,
+PARENTS			;188, N
+
+PROJECT			;190, Fleet Targeting, 5, 2, 		2, 2, 0, 11.2,
+COMPONENTS		;89
+PARENTS			;196, N, 191, N
+
+PROJECT			;191, Advanced Targeting, 4, 3, 		2, 2, 0, 8.0,
+COMPONENT IMPROVEMENTS	;83, 4, 30, 0, 0, 0, 0, 0, 0,
+PARENTS			;406, N
+
+PROJECT			;192, Enhanced Fleet Targeting, 6, 2, 		2, 2, 0, 14.7,
+COMPONENT IMPROVEMENTS	;89, 6, 0, 25, 0, 0, 0, 0, 0,
+PARENTS			;190, N
+
+PROJECT			;193, Optimal Targeting, 6, 3, 		2, 2, 0, 14.7,
+COMPONENT IMPROVEMENTS	;83, 6, 40, 0, 0, 0, 0, 0, 0,
+PARENTS			;191, N
+
+PROJECT			;194, Basic Raptor AI, 2, 1, 		2, 2, 0, 2.8,
+COMPONENTS		;88
+PARENTS			;188, N
+ALLOWED RACES	;Ugnari, Abbidon
+
+PROJECT			;195, Enhanced Raptor AI, 3, 1, 		2, 2, 0, 5.2,
+COMPONENT IMPROVEMENTS	;88, 3, 35, 0, 0, 0, 0, 0, 0,
+PARENTS			;194, N
+ALLOWED RACES	;Ugnari, Abbidon
+
+PROJECT			;196, Advanced Raptor AI, 4, 1, 		2, 2, 0, 8.0,
+COMPONENT IMPROVEMENTS	;88, 4, 50, 0, 0, 0, 0, 0, 0,
+PARENTS			;195, N
+ALLOWED RACES	;Ugnari, Abbidon
+
+PROJECT			;197, Optimized Raptor AI, 6, 1, 		2, 2, 0, 14.7,
+COMPONENT IMPROVEMENTS	;88, 6, 60, 0, 0, 0, 0, 0, 0,
+PARENTS			;196, N
+ALLOWED RACES	;Ugnari, Abbidon
+
+PROJECT			;198, Long Range Scanners, 2, 12, 		2, 14, 0, 2.8,
+COMPONENTS		;78
+PARENTS			;204, N, 212, N
+
+PROJECT			;199, Enhanced Scanners, 3, 12, 		2, 14, 0, 5.2,
+COMPONENT IMPROVEMENTS	;78, 3, 500000, 0, 0, 0, 0, 0, 0,
+PARENTS			;198, N
+
+PROJECT			;200, Unified Scanning Theory, 4, 11, 		2, 14, 0, 8.0,
+COMPONENT IMPROVEMENTS	;75, 4, 50000, 0, 0, 0, 0, 0, 0, 77, 4, 15000, 0, 0, 0, 0, 0, 0, 78, 4, 750000, 0, 0, 0, 0, 0, 0,
+PARENTS			;206, Y, 199, Y, 413, Y
+
+PROJECT			;201, Deep Space Arrays, 5, 12, 		2, 14, 0, 11.2,
+COMPONENTS		;79
+PARENTS			;200, N
+
+PROJECT			;202, Enhanced Arrays, 6, 12, 		2, 14, 0, 14.7,
+COMPONENT IMPROVEMENTS	;79, 6, 1300000, 0, 0, 0, 0, 0, 0,
+PARENTS			;201, N
+
+PROJECT			;203, Advanced Arrays, 7, 12, 		2, 14, 0, 18.5,
+COMPONENT IMPROVEMENTS	;79, 7, 1600000, 0, 0, 0, 0, 0, 0,
+PARENTS			;202, N
+
+PROJECT			;204, Enhanced Sensors, 1, 10, 		2, 14, 0, 0.0,
+COMPONENT IMPROVEMENTS	;75, 1, 15000, 0, 0, 0, 0, 0, 0,
+PARENTS			;366, N
+
+PROJECT			;205, Improved Sensors, 2, 10, 		2, 14, 0, 2.8,
+COMPONENT IMPROVEMENTS	;75, 2, 25000, 0, 0, 0, 0, 0, 0,
+PARENTS			;204, N
+
+PROJECT			;206, Advanced Sensors, 3, 10, 		2, 14, 0, 5.2,
+COMPONENT IMPROVEMENTS	;75, 3, 35000, 0, 0, 0, 0, 0, 0,
+PARENTS			;205, N
+
+PROJECT			;207, Stealth, 6, 7, 		2, 14, 0, 14.7,
+COMPONENTS		;82
+PARENTS			;184, Y, 215, Y
+
+PROJECT			;208, Ship Tracking, 5, 10, 		2, 14, 0, 11.2,
+COMPONENTS		;76
+PARENTS			;200, N
+
+PROJECT			;209, Enhanced Ship Tracking, 6, 10, 		2, 14, 0, 14.7,
+COMPONENT IMPROVEMENTS	;76, 6, 100000, 10, 0, 0, 0, 0, 0,
+PARENTS			;208, N
+
+PROJECT			;210, Advanced Ship Tracking, 7, 10, 		2, 14, 0, 18.5,
+COMPONENT IMPROVEMENTS	;76, 7, 150000, 20, 0, 0, 0, 0, 0,
+PARENTS			;209, N
+
+PROJECT			;211, Advanced Stealth, 9, 7, 		2, 14, 0, 27.0,
+COMPONENT IMPROVEMENTS	;82, 9, 2000, 0, 0, 0, 0, 0, 0,
+PARENTS			;407, Y, 415, Y
+
+PROJECT			;212, Enhanced Planet Surveying, 1, 13, 		2, 14, 0, 0.0,
+COMPONENT IMPROVEMENTS	;77, 1, 2000, 0, 0, 0, 0, 0, 0,
+PARENTS			;366, N
+
+PROJECT			;213, Improved Planet Surveying, 2, 13, 		2, 14, 0, 2.8,
+COMPONENT IMPROVEMENTS	;77, 2, 5000, 0, 0, 0, 0, 0, 0,
+PARENTS			;212, N
+
+PROJECT			;214, Ship Scanning, 3, 9, 		2, 14, 0, 5.2,
+COMPONENTS		;80
+FACILITY		;28
+PARENTS			;205, N
+
+PROJECT			;215, Scanner Jamming, 4, 8, 		2, 14, 0, 8.0,
+COMPONENTS		;81
+PARENTS			;214, N
+
+PROJECT			;216, Enhanced Ship Scanning, 5, 9, 		2, 14, 0, 11.2,
+COMPONENT IMPROVEMENTS	;80, 5, 700, 20, 0, 0, 0, 0, 0,
+PARENTS			;200, N
+
+PROJECT			;217, Advanced Jamming, 6, 8, 		2, 14, 0, 14.7,
+COMPONENT IMPROVEMENTS	;81, 6, 0, 20, 0, 0, 0, 0, 0,
+PARENTS			;215, Y, 216, Y
+
+PROJECT			;218, Advanced Ship Scanning, 7, 9, 		2, 14, 0, 18.5,
+COMPONENT IMPROVEMENTS	;80, 7, 1200, 30, 0, 0, 0, 0, 0,
+PARENTS			;216, N
+
+PROJECT			;219, Colonization, 1, 18, 		2, 8, 0, 8.0,
+COMPONENTS		;102
+
+PROJECT			;220, Marshy Swamp Colonization, 3, 16, 		2, 8, 4, 5.2,
+ABILITIES		;Colonize Marshy Swamp planets, 1, 2, 2, 0
+PARENTS			;219, N
+
+PROJECT			;221, Ocean Colonization, 3, 17, 		2, 8, 0, 5.2,
+ABILITIES		;Colonize Ocean planets, 1, 3, 3, 0
+PARENTS			;219, N
+
+PROJECT			;222, Ice Colonization, 3, 20, 		2, 8, 0, 5.2,
+ABILITIES		;Colonize Ice planets, 1, 5, 5, 0
+PARENTS			;219, N
+
+PROJECT			;223, Advanced Colonization, 5, 22, 		2, 8, 0, 11.2,
+COMPONENTS		;104
+PARENTS			;409, Y, 233, Y, 237, Y
+
+PROJECT			;224, Continental Colonization, 3, 15, 		2, 8, 0, 5.2,
+ABILITIES		;Colonize Continental planets, 1, 1, 1, 0
+PARENTS			;219, N
+
+PROJECT			;225, Desert Colonization, 3, 19, 		2, 8, 0, 5.2,
+ABILITIES		;Colonize Desert planets, 1, 4, 4, 0
+PARENTS			;219, N
+
+PROJECT			;226, Volcanic Colonization, 3, 21, 		2, 8, 0, 5.2,
+ABILITIES		;Colonize Volcanic planets, 1, 6, 6, 0
+PARENTS			;219, N
+
+PROJECT			;227, Personnel Transit Systems, 1, 23, 		2, 17, 0, 0.0,
+COMPONENTS		;70, 72
+
+PROJECT			;228, Enhanced Personnel Transit, 2, 23, 		2, 17, 0, 2.8,
+COMPONENT IMPROVEMENTS	;70, 2, 200, 0, 0, 0, 0, 0, 0,		72, 2, 1600000, 0, 0, 0, 0, 0, 0,
+PARENTS			;227, N
+
+PROJECT			;229, Starship Troop Quarters, 3, 24, 		2, 17, 0, 5.2,
+COMPONENTS		;71
+PARENTS			;228, N
+
+PROJECT			;230, Ultimate Troop Quarters, 5, 24, 		2, 17, 0, 11.2,
+COMPONENT IMPROVEMENTS	;71, 5, 500, 0, 0, 0, 0, 0, 0,
+PARENTS			;231, N
+
+PROJECT			;231, Advanced Troop Quarters, 4, 24, 		2, 17, 0, 8.0,
+COMPONENT IMPROVEMENTS	;71, 4, 400, 0, 0, 0, 0, 0, 0,
+PARENTS			;229, N
+
+PROJECT			;232, Advanced Passenger Quarters, 3, 23, 		2, 17, 0, 5.2,
+COMPONENTS		;73
+PARENTS			;228, N
+
+PROJECT			;233, Luxury Passenger Quarters, 4, 23, 		2, 17, 0, 8.0,
+COMPONENT IMPROVEMENTS	;73, 4, 3600000, 0, 0, 0, 0, 0, 0,
+PARENTS			;232, N
+
+PROJECT			;234, Solid Fuel Storage, 3, 27, 		2, 17, 0, 5.2,
+COMPONENTS		;67
+PARENTS			;456, N
+
+PROJECT			;235, Basic Storage and Payloads, 0, 25, 		2, 17, 0, 0.0,
+COMPONENTS		;123, 124
+
+PROJECT			;236, Standard Cargo Storage, 3, 25, 		2, 17, 0, 5.2,
+COMPONENTS 		;68
+PARENTS			;456, N
+
+PROJECT			;237, Improved Cargo Storage, 4, 25, 		2, 17, 0, 8.0,
+COMPONENT IMPROVEMENTS	;68, 4, 1300, 0, 0, 0, 0, 0, 0,
+PARENTS			;236, N
+
+PROJECT			;238, Standard Fuel Storage, 3, 26, 		2, 17, 0, 5.2,
+COMPONENTS 		;65
+PARENTS			;456, N
+
+PROJECT			;239, Advanced Cargo Storage, 5, 25, 		2, 17, 0, 11.2,
+COMPONENTS		;69
+PARENTS			;237, N
+
+PROJECT			;240, Optimized Cargo Storage, 6, 25, 		2, 17, 0, 14.7,
+COMPONENT IMPROVEMENTS	;69, 6, 1800, 0, 0, 0, 0, 0, 0,
+PARENTS			;239, N
+
+PROJECT			;241, Docking Bay, 0, 30, 		2, 17, 1, 0.0,
+COMPONENTS		;74
+
+PROJECT			;242, Coordinated Docking, 3, 30, 		2, 17, 0, 5.2,
+COMPONENT IMPROVEMENTS	;74, 3, 220, 0, 0, 0, 0, 0, 0,
+PARENTS			;438, N
+
+PROJECT			;243, High Volume Cargo Transfer, 5, 30, 		2, 17, 0, 11.2,
+COMPONENT IMPROVEMENTS	;74, 5, 300, 0, 0, 0, 0, 0, 0,
+PARENTS			;242, N
+
+PROJECT			;244, Automated Cargo Conveyers, 7, 30, 		2, 17, 0, 18.5,
+COMPONENT IMPROVEMENTS	;74, 7, 400, 0, 0, 0, 0, 0, 0,
+PARENTS			;243, N
+
+PROJECT			;245, Enhanced Hab Module, 1, 28, 		2, 8, 0, 0.0,
+COMPONENT IMPROVEMENTS	;99, 1, 80, 0, 0, 0, 0, 0, 0,
+PARENTS			;365, N
+
+PROJECT			;246, Improved Hab Module, 3, 28, 		2, 8, 0, 5.2,
+COMPONENT IMPROVEMENTS	;99, 3, 90, 0, 0, 0, 0, 0, 0,
+PARENTS			;456, Y, 245, Y
+
+PROJECT			;247, Advanced Hab Module, 4, 28, 		2, 8, 0, 8.0,
+COMPONENT IMPROVEMENTS	;99, 4, 100, 0, 0, 0, 0, 0, 0,
+PARENTS			;246, N
+
+PROJECT			;248, Optimized Hab Module, 6, 28, 		2, 8, 0, 14.7,
+COMPONENTS		;169
+PARENTS			;239, Y, 247, Y
+
+PROJECT			;249, Medical Systems, 1, 33, 		2, 8, 0, 0.0,
+COMPONENTS		;100
+
+PROJECT			;250, Advanced Medicine, 3, 33, 		2, 8, 0, 5.2,
+COMPONENT IMPROVEMENTS	;100, 3, 150, 0, 0, 0, 0, 0, 0,
+PARENTS			;457, N
+
+PROJECT			;251, Genetic Replication, 5, 32, 		2, 8, 0, 11.2,
+FACILITY		;2
+PARENTS			;433, N
+
+PROJECT			;252, Genetic Rewiring, 6, 33, 		2, 8, 0, 14.7,
+COMPONENT IMPROVEMENTS	;100, 6, 400, 0, 0, 0, 0, 0, 0,
+PARENTS			;434, N
+
+PROJECT			;253, Entertainment Systems, 1, 34, 		2, 8, 0, 0.0,
+COMPONENTS		;101
+
+PROJECT			;254, Holographic Entertainment, 3, 34, 		2, 8, 0, 5.2,
+COMPONENT IMPROVEMENTS	;101, 3, 150, 0, 0, 0, 0, 0, 0,
+PARENTS			;458, N
+
+PROJECT			;255, Virtual Reality, 5, 34, 		2, 8, 0, 11.2,
+COMPONENT IMPROVEMENTS	;101, 5, 200, 0, 0, 0, 0, 0, 0,
+PARENTS			;435, N
+
+PROJECT			;256, Total Immersion Recreation, 6, 34, 		2, 8, 0, 14.7,
+COMPONENT IMPROVEMENTS	;101, 6, 300, 0, 0, 0, 0, 0, 0,
+PARENTS			;255, N
+
+PROJECT			;257, Research Laboratories, 0, 39, 		2, 11, 0, 0.0,
+COMPONENTS		;91, 92, 93
+
+PROJECT			;258, Energy Research: Phase I, 1, 38, 		2, 11, 0, 0.0,
+COMPONENT IMPROVEMENTS	;92, 1, 15000, 0, 0, 0, 0, 0, 0,
+PARENTS			;257, N
+
+PROJECT			;259, Energy Research: Phase II, 2, 38, 		2, 11, 0, 2.8,
+COMPONENT IMPROVEMENTS	;92, 2, 20000, 0, 0, 0, 0, 0, 0,
+PARENTS			;258, N
+
+PROJECT			;260, Integrated Research, 6, 38, 		2, 11, 0, 14.7,
+COMPONENT IMPROVEMENTS	;91, 6, 35000, 0, 0, 0, 0, 0, 0,		92, 6, 35000, 0, 0, 0, 0, 0, 0,		93, 6, 35000, 0, 0, 0, 0, 0, 0,
+PARENTS			;445, Y, 430, Y, 449, Y
+
+PROJECT			;261, Space Command, 0, 43, 		2, 2, 1, 0.0,
+COMPONENTS		;85
+
+PROJECT			;262, Enhanced Command, 1, 43, 		2, 2, 0, 0.0,
+COMPONENT IMPROVEMENTS	;85, 1, 10, 0, 0, 0, 0, 0, 0,
+PARENTS			;261, N
+
+PROJECT			;263, Planetary Governance, 2, 42, 		2, 2, 0, 2.8,
+FACILITY		;5
+PARENTS			;262, N
+
+PROJECT			;264, Officer Training, 3, 43, 		2, 2, 0, 5.2,
+FACILITY		;30
+PARENTS			;451, N
+
+PROJECT			;265, Regional Governance, 4, 42, 		2, 2, 0, 8.0,
+FACILITY		;6
+PARENTS			;263, N
+
+PROJECT			;266, Advanced Command, 6, 43, 		2, 2, 0, 14.7,
+COMPONENT IMPROVEMENTS	;85, 6, 60, 0, 0, 0, 0, 0, 0,
+PARENTS			;452, N
+
+PROJECT			;267, Galactic Governance, 6, 42, 		2, 2, 0, 14.7,
+FACILITY		;7
+PARENTS			;265, N
+
+PROJECT			;268, Space Commerce, 0, 44, 		2, 2, 1, 0.0,
+COMPONENTS		;86
+
+PROJECT			;269, Enhanced Commerce, 1, 44, 		2, 2, 0, 0.0,
+COMPONENT IMPROVEMENTS	;86, 1, 100, 0, 0, 0, 0, 0, 0,
+PARENTS			;268, N
+
+PROJECT			;270, Efficient Transactions, 4, 44, 		2, 2, 0, 8.0,
+COMPONENT IMPROVEMENTS	;86, 4, 250, 0, 0, 0, 0, 0, 0,
+PARENTS			;426, N
+
+PROJECT			;271, Advanced Commerce, 5, 44, 		2, 2, 0, 11.2,
+COMPONENT IMPROVEMENTS	;86, 5, 300, 0, 0, 0, 0, 0, 0,
+PARENTS			;270, N
+
+PROJECT			;272, Super Beam Weapons, 9, 4, 		0, 19, 0, 27.0,
+COMPONENTS		;23
+PARENTS			;595, N, 11, N, 303, N, 606, N, 607, N, 608, N
+
+PROJECT			;273, Planetary Destruction, 10, 4, 		0, 19, 0, 31.6,
+COMPONENTS		;25
+PARENTS			;272, N
+ALLOWED RACES	;Shakturi, Boskara, Gizurean, Dhayut, Sluken, Phaerax, Keskudon, Yl'ta
+
+PROJECT			;274, Super Area Weapons, 8, 13, 		0, 23, 0, 22.6,
+COMPONENTS		;24
+PARENTS			;26, N
+
+PROJECT			;275, Fortified Bunkers, 3, 53, 		0, 0, 0, 5.2,
+FACILITY		;8
+PARENTS			;336, N
+
+PROJECT			;276, Tactical Missile Bombers, 3, 28, 		0, 7, 0, 5.2,
+FIGHTERS		;13
+PARENTS			;555, N
+
+PROJECT			;277, Advanced Missile Bombers, 4, 28, 		0, 7, 0, 8.0,
+FIGHTERS		;14
+PARENTS			;60, Y, 276, Y
+
+PROJECT			;278, Missile Strike Bombers, 5, 28, 		0, 7, 0, 11.2,
+FIGHTERS		;15
+PARENTS			;277, N
+
+PROJECT			;279, Missile Assault Bombers, 6, 28, 		0, 7, 0, 14.7,
+FIGHTERS		;16
+PARENTS			;439, Y, 278, Y
+
+PROJECT			;280, Accelerated Construction, 3, 30, 		1, 3, 0, 5.2,
+FACILITY		;10
+PARENTS			;106, N
+
+PROJECT			;281, Merkidor Planetary Fortress, 5, 53, 		0, 0, 0, 11.2,
+FACILITY		;11
+PARENTS			;275, N
+
+PROJECT			;282, Networked Entertainment, 4, 35, 		2, 8, 0, 8.0,
+FACILITY		;12
+PARENTS			;254, N, 628, N
+
+PROJECT			;283, Open Trade Network, 4, 45, 		2, 2, 0, 8.0,
+FACILITY		;13
+PARENTS			;426, N, 389, N
+
+PROJECT			;284, Biological Workshops, 4, 32, 		2, 8, 0, 8.0,
+FACILITY		;14
+PARENTS			;583, N, 250, N
+
+PROJECT			;285, Casidor Weapons Project, 4, 36, 		2, 11, 0, 8.0,
+FACILITY		;19
+PARENTS			;444, Y, 345, Y
+
+PROJECT			;286, Hive Colonies, 7, 20, 		2, 8, 0, 18.5,
+FACILITY		;21
+PARENTS			;377, N
+
+PROJECT			;287, Archival Facilities, 7, 25, 		2, 17, 0, 18.5,
+FACILITY		;22
+PARENTS			;240, N
+
+PROJECT			;288, Magma Harnessing, 7, 21, 		2, 8, 0, 18.5,
+FACILITY		;23
+PARENTS			;377, N
+
+PROJECT			;289, Submerged Forcefields, 7, 10, 		1, 16, 0, 18.5,
+FACILITY		;24
+PARENTS			;99, N
+
+PROJECT			;290, Phased Beams, 3, 5, 		0, 19, 0, 5.2,
+COMPONENTS		;106
+PARENTS			;7, N
+
+PROJECT			;291, Phaser Intensification, 4, 5, 		0, 19, 0, 8.0,
+COMPONENT IMPROVEMENTS	;106, 4, 14, 220, 34, 1200, 0, 2100, 0,
+PARENTS			;290, N
+
+PROJECT			;292, Phaser Optimization, 6, 5, 		0, 19, 0, 14.7,
+COMPONENT IMPROVEMENTS	;106, 6, 19, 280, 36, 1200, 0, 2100, 0,
+PARENTS			;291, N
+
+PROJECT			;293, Faster Projectile Weapons, 1, 39, 		0, 19, 0, 0.0,
+COMPONENT IMPROVEMENTS	;127, 1, 4, 300, 8, 300, 0, 425, 0,
+PARENTS			;368, N
+
+PROJECT			;294, Light Rail Guns, 2, 39, 		0, 19, 0, 2.8,
+COMPONENTS		;107
+PARENTS			;293, N
+
+PROJECT			;295, Improved Light Rail Guns, 3, 39, 		0, 19, 0, 5.2,
+COMPONENT IMPROVEMENTS	;107, 3, 5, 450, 10, 400, 0, 375, 0,
+PARENTS			;294, N
+
+PROJECT			;296, Advanced Light Rail Guns, 4, 39, 		0, 19, 0, 8.0,
+COMPONENT IMPROVEMENTS	;107, 4, 5, 450, 10, 450, 0, 350, 0,
+PARENTS			;295, N
+
+PROJECT			;297, Assault Missiles, 5, 33, 		0, 25, 0, 11.2,
+COMPONENTS		;108
+PARENTS			;50, N
+
+PROJECT			;298, Energy to Fuel Converter, 5, 30, 		1, 4, 0, 11.2,
+COMPONENTS		;109
+PARENTS			;125, N
+
+PROJECT			;299, Improved Assault Missiles, 6, 33, 		0, 25, 0, 14.7,
+COMPONENT IMPROVEMENTS	;108, 6, 18, 1000, 38, 275, 0, 2500, 0,
+PARENTS			;297, N
+
+PROJECT			;300, Advanced Assault Missiles, 7, 33, 		0, 25, 0, 18.5,
+COMPONENT IMPROVEMENTS	;108, 7, 21, 1000, 38, 300, 0, 2500, 0,
+PARENTS			;299, N
+
+PROJECT			;301, Phaser Focusing, 4, 6, 		0, 19, 0, 8.0,
+COMPONENTS		;110
+PARENTS			;290, N
+
+PROJECT			;302, Advanced Phasers, 6, 6, 		0, 19, 0, 14.7,
+COMPONENT IMPROVEMENTS	;110, 6, 30, 400, 54, 1200, 0, 4000, 0,
+PARENTS			;301, N
+
+PROJECT			;303, Extreme Energy Beams, 7, 6, 		0, 19, 0, 18.5,
+COMPONENT IMPROVEMENTS	;110, 7, 38, 500, 58, 1200, 0, 4000, 0,
+PARENTS			;302, N
+
+PROJECT			;304, Heavy Rail Guns, 2, 40, 		0, 19, 0, 2.8,
+COMPONENTS		;111
+PARENTS			;293, N
+
+PROJECT			;305, Accelerated Projectiles, 3, 40, 		0, 19, 0, 5.2,
+COMPONENT IMPROVEMENTS	;111, 3, 15, 600, 14, 450, 0, 1125, 0,
+PARENTS			;304, N
+
+PROJECT			;306, Hyper-Accelerated Projectiles, 4, 40, 		0, 19, 0, 8.0,
+COMPONENT IMPROVEMENTS	;111, 4, 15, 600, 14, 500, 0, 1050, 0,
+PARENTS			;305, N
+
+PROJECT			;307, Super-Heavy Mass Drivers, 5, 40, 		0, 19, 0, 11.2,
+COMPONENTS		;112
+PARENTS			;306, N
+
+PROJECT			;308, Assault Mass Drivers, 6, 40, 		0, 19, 0, 14.7,
+COMPONENT IMPROVEMENTS	;112, 6, 24, 750, 22, 550, 0, 1350, 1,
+PARENTS			;307, N
+
+PROJECT			;309, Tractor Beams, 2, 16, 		0, 20, 0, 2.8,
+COMPONENTS		;113
+PARENTS			;346, N
+
+PROJECT			;310, High Power Tractor Beams, 4, 17, 		0, 20, 0, 8.0,
+COMPONENTS		;117
+PARENTS			;355, N
+
+PROJECT			;311, Gravity Densification, 5, 17, 		0, 20, 0, 11.2,
+COMPONENT IMPROVEMENTS	;117, 5, 20, 420, 34, 400, 2, 4000, 0,
+PARENTS			;310, N
+
+PROJECT			;312, Intense Gravitic Warping, 6, 17, 		0, 20, 0, 14.7,
+COMPONENT IMPROVEMENTS	;117, 6, 25, 440, 34, 400, 2, 4000, 0,
+PARENTS			;311, N
+
+PROJECT			;313, Ship Boarding, 2, 30, 		0, 1, 0, 2.8,
+COMPONENTS		;114
+
+PROJECT			;314, Improved Assault Techniques, 3, 30, 		0, 1, 0, 5.2,
+COMPONENT IMPROVEMENTS	;114, 3, 65, 180, 6, 60, 30, 120000, 0,
+PARENTS			;313, N
+
+PROJECT			;315, Heavy Ship Assault, 5, 30, 		0, 1, 0, 11.2,
+COMPONENT IMPROVEMENTS	;114, 5, 80, 220, 6, 80, 50, 120000, 0,
+PARENTS			;314, N
+
+PROJECT			;316, Advanced Ship Assault, 7, 30, 		0, 1, 0, 18.5,
+COMPONENT IMPROVEMENTS	;114, 7, 100, 270, 6, 100, 80, 120000, 0,
+PARENTS			;315, N
+
+PROJECT			;317, Ground Combat, 0, 46, 		0, 0, 1, 0.0,
+ABILITIES		;Enable Infantry, 5, 0, 0, 1
+
+PROJECT			;318, Armored Forces Project, 2, 45, 		0, 0, 0, 2.8,
+FACILITY		;27
+ABILITIES		;Enable Armored Forces, 5, 2, 0, 2
+PARENTS			;324, N, 67, N
+
+PROJECT			;319, Special Forces Project, 3, 41, 		0, 0, 0, 5.2,
+FACILITY		;31
+ABILITIES		;Enable Special Forces, 5, 3, 0, 4
+PARENTS			;324, N
+
+PROJECT			;320, Enhanced Armored Attack, 3, 44, 		0, 0, 0, 5.2,
+ABILITIES		;Improved Armor Attack, 5, 3, 25, 2
+PARENTS			;318, N
+
+PROJECT			;321, Enhanced Special Attack, 4, 41, 		0, 0, 0, 8.0,
+ABILITIES		;Improved Special Forces Attack, 5, 4, 25, 4
+PARENTS			;319, N
+
+PROJECT			;322, Enhanced Armored Defense, 3, 45, 		0, 0, 0, 5.2,
+ABILITIES		;Improved Armor Defense, 5, 3, -25, 2
+PARENTS			;318, N
+
+PROJECT			;323, Improved Armored Attack, 4, 44, 		0, 0, 0, 8.0,
+ABILITIES		;Improved Armor Attack, 5, 4, 50, 2
+PARENTS			;320, N
+
+PROJECT			;324, Colony Conquest Projects, 1, 43, 		0, 0, 0, 0.0,
+ABILITIES		;Improved Infantry Attack, 5, 1, 15, 1
+PARENTS			;317, N
+
+PROJECT			;325, Enhanced Special Defense, 4, 42, 		0, 0, 0, 8.0,
+ABILITIES		;Improved Special Forces Defense, 5, 4, -25, 4
+PARENTS			;319, N
+
+PROJECT			;326, Improved Special Attack, 5, 41, 		0, 0, 0, 11.2,
+ABILITIES		;Improved Special Forces Attack, 5, 5, 50, 4
+PARENTS			;321, N
+
+PROJECT			;327, Infantry Defense Project, 2, 49, 		0, 0, 0, 2.8,
+ABILITIES		;Improved Infantry Defense, 5, 2, -30, 1
+PARENTS			;330, N
+
+PROJECT			;328, Infantry Attack Project, 2, 43, 		0, 0, 0, 2.8,
+ABILITIES		;Improved Infantry Attack, 5, 2, 30, 1
+PARENTS			;324, N
+
+PROJECT			;329, Enhanced Infantry Defense, 3, 49, 		0, 0, 0, 5.2,
+ABILITIES		;Improved Infantry Defense, 5, 3, -45, 1
+PARENTS			;327, N
+
+PROJECT			;330, Colony Defense Projects, 1, 50, 		0, 0, 0, 0.0,
+ABILITIES		;Improved Infantry Defense, 5, 1, -15, 1
+PARENTS			;317, N
+
+PROJECT			;331, Enhanced Boarding Attack, 3, 29, 		0, 1, 0, 5.2,
+ABILITIES		;Improved Boarding Attack, 0, 3, 10, 0
+PARENTS			;313, N
+
+PROJECT			;332, Enhanced Boarding Defense, 3, 31, 		0, 1, 0, 5.2,
+ABILITIES		;Improved Boarding Defense, 0, 3, -10, 0
+PARENTS			;313, N
+
+PROJECT			;333, Improved Boarding Attack, 4, 29, 		0, 1, 0, 8.0,
+ABILITIES		;Improved Boarding Attack, 0, 4, 25, 0
+PARENTS			;331, N
+
+PROJECT			;334, Improved Boarding Defense, 4, 31, 		0, 1, 0, 8.0,
+ABILITIES		;Improved Boarding Defense, 0, 4, -25, 0
+PARENTS			;332, N
+
+PROJECT			;335, Advanced Boarding Attack, 6, 29, 		0, 1, 0, 14.7,
+ABILITIES		;Improved Boarding Attack, 0, 6, 50, 0
+PARENTS			;333, N
+
+PROJECT			;336, Planetary Defense Units, 2, 51, 		0, 0, 0, 2.8,
+ABILITIES		;Enable Planetary Defense, 5, 2, 0, 3
+PARENTS			;330, N
+
+PROJECT			;337, Defense Unit Accuracy I, 3, 51, 		0, 0, 0, 5.2,
+ABILITIES		;Improved Interception Accuracy, 5, 3, -10, 3
+PARENTS			;336, N
+
+PROJECT			;338, Defense Unit Accuracy II, 5, 51, 		0, 0, 0, 11.2,
+ABILITIES		;Improved Interception Accuracy, 5, 5, -20, 3
+PARENTS			;337, N
+
+PROJECT			;339, Defense Unit Accuracy III, 6, 51, 		0, 0, 0, 14.7,
+ABILITIES		;Improved Interception Accuracy, 5, 6, -30, 3
+PARENTS			;338, N
+
+PROJECT			;340, Defense Unit Accuracy IV, 7, 51, 		0, 0, 0, 18.5,
+ABILITIES		;Improved Interception Accuracy, 5, 7, -50, 3
+PARENTS			;339, N
+
+PROJECT			;341, Defense Unit Attack I, 3, 50, 		0, 0, 0, 5.2,
+ABILITIES		;Improved Interception Damage, 5, 3, 10, 3
+PARENTS			;336, N
+
+PROJECT			;342, Defense Unit Attack II, 5, 50, 		0, 0, 0, 11.2,
+ABILITIES		;Improved Interception Damage, 5, 5, 20, 3
+PARENTS			;341, N
+
+PROJECT			;343, Defense Unit Attack III, 6, 50, 		0, 0, 0, 14.7,
+ABILITIES		;Improved Interception Damage, 5, 6, 30, 3
+PARENTS			;342, N
+
+PROJECT			;344, Automated Deployment, 1, 52, 		0, 0, 0, 0.0,
+ABILITIES		;Lower Troop Maintenance, 5, 1, -15, 0
+PARENTS			;317, N
+
+PROJECT			;345, Structured Research, 3, 39, 		2, 11, 0, 5.2,
+FACILITY		;29
+PARENTS			;443, Y, 259, Y, 447, Y
+
+PROJECT			;346, Gravitic Weapons, 1, 15, 		0, 20, 0, 0.0,
+COMPONENTS		;115
+
+PROJECT			;347, Enhanced Gravitic Beams, 2, 15, 		0, 20, 0, 2.8,
+COMPONENT IMPROVEMENTS	;115, 2, 20, 200, 50, 400, 4, 7000, 0,
+PARENTS			;346, N
+
+PROJECT			;348, Gravitic Resonance, 3, 14, 		0, 20, 0, 5.2,
+COMPONENTS		;116
+PARENTS			;23, Y, 347, Y
+
+PROJECT			;349, Advanced Gravitic Resonance, 4, 14, 		0, 20, 0, 8.0,
+COMPONENT IMPROVEMENTS	;116, 4, 35, 280, 70, 400, 3, 7000, 0,
+PARENTS			;348, N
+
+PROJECT			;350, Superior Gravitic Resonance, 6, 14, 		0, 20, 0, 14.7,
+COMPONENT IMPROVEMENTS	;116, 6, 40, 320, 80, 400, 3, 7000, 0,
+PARENTS			;349, N
+
+PROJECT			;351, Advanced Gravitic Beams, 3, 15, 		0, 20, 0, 5.2,
+COMPONENT IMPROVEMENTS	;115, 3, 25, 240, 60, 400, 4, 7000, 0,
+PARENTS			;347, N
+
+PROJECT			;352, Gravitic Distortion Field, 5, 15, 		0, 20, 0, 11.2,
+COMPONENTS		;118
+PARENTS			;349, Y, 25, Y
+
+PROJECT			;353, Gravitic Distortion Zone, 6, 15, 		0, 20, 0, 14.7,
+COMPONENT IMPROVEMENTS	;118, 6, 55, 420, 120, 60, 280, 9000, 95,
+PARENTS			;352, N
+
+PROJECT			;354, Gravitic Singularity Creation, 8, 16, 		0, 20, 0, 22.6,
+COMPONENTS		;119
+'ALLOWED RACES	;Ackdarian, Atuuk, Boskara, Dhayut, Gizurean, Haakonish, Hiigaran, Human, Ikkuro, Ketarov, Kiadian, Mortalen, Naxxilian, Quameno, Securan, Shakturi,Shandar, Sluken, Teekan, Ugnari, Wekkarus, Zenox
+PARENTS			;350, Y, 353, Y
+
+PROJECT			;355, Improved Tractor Beams, 3, 16, 		0, 20, 0, 5.2,
+COMPONENT IMPROVEMENTS	;113, 3, 13, 390, 28, 900, 4, 4000, 0,
+PARENTS			;309, N
+
+PROJECT			;356, Extended Range Tractor Beams, 4, 16, 		0, 20, 0, 8.0,
+COMPONENT IMPROVEMENTS	;113, 4, 14, 480, 28, 1000, 4, 4000, 0,
+PARENTS			;355, N
+
+PROJECT			;357, Gravitic Stretching, 5, 16, 		0, 20, 0, 11.2,
+COMPONENT IMPROVEMENTS	;113, 5, 15, 600, 28, 1000, 4, 4000, 0,
+PARENTS			;356, N
+
+PROJECT			;358, Intense Gravitic Stretching, 6, 16, 		0, 20, 0, 14.7,
+COMPONENT IMPROVEMENTS	;113, 6, 16, 720, 28, 1000, 4, 4000, 0,
+PARENTS			;357, N
+
+PROJECT			;359, Space Reactors, 0, 3, 		1, 13, 0, 0.0,
+COMPONENTS		;120
+
+PROJECT			;360, Starship Engines, 0, 21, 		1, 5, 0, 0.0,
+COMPONENTS		;121
+
+PROJECT			;361, Starship Maneuvering, 0, 25, 		1, 5, 0, 0.0,
+COMPONENTS		;122
+
+PROJECT			;362, Orbital Assembly, 0, 31, 		1, 3, 0, 0.0,
+COMPONENTS		;94, 62, 63, 64
+ABILITIES		;Increased Construction Size, 2, 1, 250, 0
+
+PROJECT			;363, Warp Field Precursors, 0, 16, 		1, 10, 2, 2.0,
+COMPONENTS		;125
+
+PROJECT			;364, Enhanced Storage Systems, 1, 25, 		2, 17, 0, 0.0,
+COMPONENT IMPROVEMENTS	;123, 1, 65, 0, 0, 0, 0, 0, 0,		124, 1, 700, 0, 0, 0, 0, 0, 0,
+PARENTS			;235, N
+
+PROJECT			;365, Basic Crew Environment, 0, 28, 		2, 8, 0, 0.0,
+COMPONENTS		;98, 99
+
+PROJECT			;366, Basic Sensors, 0, 11, 		2, 14, 1, 0.0,
+COMPONENTS		;77, 75
+
+PROJECT			;367, Beam Weapons, 0, 3, 		0, 19, 0, 0.0,
+COMPONENTS		;126
+
+PROJECT			;368, Projectile Weapons, 0, 39, 		0, 19, 0, 0.0,
+COMPONENTS		;127
+
+PROJECT			;369, Type I Missiles, 0, 33, 		0, 25, 0, 0.0,
+COMPONENTS		;128
+
+PROJECT			;370, Enhanced Logistics, 2, 52, 		0, 0, 0, 2.8,
+ABILITIES		;Lower Troop Maintenance, 5, 2, -30, 0
+PARENTS			;344, N
+
+PROJECT			;371, Improved Logistics, 3, 52, 		0, 0, 0, 5.2,
+ABILITIES		;Lower Troop Maintenance, 5, 3, -45, 0
+PARENTS			;370, N
+
+PROJECT			;372, Continental Terraforming, 5, 15, 		2, 8, 0, 11.2,
+ABILITIES		;Continental colony growth rate doubled for non-native planets, 4, 4, 1, 0
+PARENTS			;224, Y, 410, Y
+
+PROJECT			;373, Marshy Swamp Terraforming, 5, 16, 		2, 8, 0, 11.2,
+ABILITIES		;Marshy Swamp colony growth rate doubled for non-native planets, 4, 3, 2, 0
+PARENTS			;220, Y, 410, Y
+
+PROJECT			;374, Ocean Terraforming, 5, 17, 		2, 8, 0, 11.2,
+ABILITIES		;Ocean colony growth rate doubled for non-native planets, 4, 5, 3, 0
+PARENTS			;221, Y, 410, Y
+
+PROJECT			;375, Ice Terraforming, 5, 20, 		2, 8, 0, 11.2,
+ABILITIES		;Ice colony growth rate doubled for non-native planets, 4, 6, 5, 0
+PARENTS			;410, Y, 222, Y
+
+PROJECT			;376, Desert Terraforming, 5, 19, 		2, 8, 0, 11.2,
+ABILITIES		;Desert colony growth rate doubled for non-native planets, 4, 5, 4, 0
+PARENTS			;410, Y, 225, Y
+
+PROJECT			;377, Volcanic Terraforming, 5, 21, 		2, 8, 0, 11.2,
+ABILITIES		;Volcanic colony growth rate doubled for non-native planets, 4, 6000000, 6, 0
+PARENTS			;410, Y, 226, Y
+
+PROJECT			;378, BioEngineering, 7, 33, 		2, 8, 0, 18.5,
+FACILITY		;33
+ALLOWED RACES	;Ackdarian, Atuuk, Haakonish, Hiigaran, Human, Ikkuro, Ketarov, Kiadian, Mortalen, Naxxilian, Quameno, Securan, Shandar, Teekan, Ugnari, Wekkarus, Zenox
+PARENTS			;252, N
+
+PROJECT			;379, Synthetic Viruses, 8, 33, 		2, 8, 0, 22.6,
+PLAGUE CHANGE	;4, Develop Xaraktor Virus,		2.52, 150, 300, 3.61, 240, 450,
+ALLOWED RACES	;Ackdarian, Atuuk, Haakonish, Hiigaran, Human, Ikkuro, Ketarov, Kiadian, Mortalen, Naxxilian, Quameno, Securan, Shandar, Teekan, Ugnari, Wekkarus, Zenox
+PARENTS			;378, Y, 260, Y
+
+PROJECT			;380, Targeted Viruses, 9, 33, 		2, 8, 0, 27.0,
+PLAGUE CHANGE	;4, Reduce Xaraktor Virus lethality to non-Shakturi,		1.65, 105, 240, 3.61, 240, 450,
+PARENTS			;379, Y
+
+PROJECT			;381, Viral MicroTargeting, 10, 33, 		2, 8, 0, 31.6,
+PLAGUE CHANGE	;4, Further reduces Xaraktor Virus lethality to non-Shakturi,		1.05, 75, 190, 3.61, 240, 450,
+PARENTS			;380, N
+
+PROJECT			;382, Xaraktor Vaccine, 11, 33, 		2, 8, 0, 36.5,
+PLAGUE CHANGE	;4, Provides near immunity to Xaraktor Virus for most non-Shakturi,		0.25, 30, 150, 3.61, 240, 450,
+PARENTS			;380, N
+
+PROJECT			;383, Machine Intelligence, 9, 28, 		1, 8, 0, 27.0,
+FACILITY		;34
+ALLOWED RACES	;Ackdarian, Atuuk, Haakonish, Hiigaran, Human, Ikkuro, Ketarov, Kiadian, Mortalen, Naxxilian, Quameno, Securan, Shandar, Teekan, Ugnari, Wekkarus, Zenox
+PARENTS			;111, N
+
+PROJECT			;384, Galactic Hegemony, 8, 42, 		2, 2, 0, 22.6,
+FACILITY		;35
+PARENTS			;267, Y, 266, Y
+
+PROJECT			;385, Sub-Space Shielding, 9, 9, 		1, 16, 0, 27.0,
+COMPONENTS		;146
+PARENTS			;100, N
+
+PROJECT			;386, Megatron Flux Skin, 8, 6, 		1, 16, 0, 22.6,
+COMPONENT IMPROVEMENTS	;36, 8, 600, 25, 0, 0, 0, 0, 0,
+PARENTS			;88, N
+
+PROJECT			;387, Warp Gate Precursors, 12, 16, 		1, 10, 0, 41.6,
+COMPONENTS		;170
+PARENTS			;171, Y, 383, Y
+
+PROJECT			;388, Ultimate Stealth, 10, 7, 		2, 14, 0, 31.6,
+COMPONENT IMPROVEMENTS	;82, 10, 6000, 0, 0, 0, 0, 0, 0,
+ALLOWED RACES	;Ketarov, Wekkarus
+PARENTS			;211, N
+
+PROJECT			;389, Teekan Trade Analytics, 3, 45, 		2, 2, 0, 8.0,
+COMPONENT IMPROVEMENTS	;86, 7, 600, 0, 0, 0, 0, 0, 0,
+ALLOWED RACES	;Teekan
+PARENTS			;425, N
+
+PROJECT			;390, Troop Desensitization Module, 6, 24, 		2, 17, 0, 14.7,
+COMPONENTS		;141
+ALLOWED RACES	;Boskara, Mortalen, Drushocka
+PARENTS			;230, N
+
+PROJECT			;391, Cloning, 7, 22, 		2, 8, 0, 18.5,
+COMPONENTS 		;174
+ALLOWED RACES	;Visareen, Gizurean, Securan
+PARENTS			;223, Y, 252, Y
+
+PROJECT			;392, Cryogenic Cloning, 8, 22, 		2, 8, 0, 22.6,
+COMPONENTS 		;139
+ALLOWED RACES	;Visareen, Gizurean, Securan
+PARENTS			;391, N
+
+PROJECT			;393, Ultimate Vectoring, 7, 26, 		1, 5, 0, 18.5,
+COMPONENT IMPROVEMENTS	;46, 7, 25, 1, 0, 0, 0, 0, 0,
+ALLOWED RACES	;Mortalen
+PARENTS			;153, N
+
+PROJECT			;394, Ultimate Robotic Repairs, 7, 33, 		1, 3, 0, 18.5,
+COMPONENT IMPROVEMENTS	;97, 7, 900, 1, 0, 0, 0, 0, 0,
+ALLOWED RACES	;Ikkuro
+PARENTS			;114, N
+
+PROJECT			;395, Advanced Kaldos Drive, 7, 13, 		1, 10, 0, 18.5,
+COMPONENT IMPROVEMENTS	;48, 7, 13000, 230, 4, 14, 20, 0, 0,
+PARENTS			;159, N
+
+PROJECT			;396, Optimized Kaldos Drive, 8, 13, 		1, 10, 0, 22.6,
+COMPONENT IMPROVEMENTS	;48, 8, 16000, 260, 2, 13, 20, 0, 0,
+PARENTS			;395, N
+
+PROJECT			;397, Advanced Phoenix Drive, 7, 14, 		1, 10, 0, 18.5,
+COMPONENT IMPROVEMENTS	;49, 7, 20000, 230, 45, 14, 20, 0, 0,
+PARENTS			;162, N
+
+PROJECT			;398, Optimized Phoenix Drive, 8, 14, 		1, 10, 0, 22.6,
+COMPONENT IMPROVEMENTS	;49, 8, 25000, 260, 50, 13, 20, 0, 0,
+PARENTS			;397, N
+
+PROJECT			;399, Advanced Calista-Dal Drive, 7, 15, 		1, 10, 0, 18.5,
+COMPONENT IMPROVEMENTS	;50, 7, 15000, 60, 14, 7, 20, 0, 0,
+PARENTS			;165, N
+
+PROJECT			;400, Optimized Calista-Dal Drive, 8, 15, 		1, 10, 0, 22.6,
+COMPONENT IMPROVEMENTS	;50, 8, 18000, 50, 12, 6, 20, 0, 0,
+PARENTS			;399, N
+
+PROJECT			;401, Transcendent Phoenix Drive, 9, 14, 		1, 10, 0, 27.0,
+COMPONENT IMPROVEMENTS	;49, 9, 35000, 300, 60, 12, 20, 0, 0,
+PARENTS			;398, N
+
+PROJECT			;402, Advanced Jump Techniques, 5, 12, 		1, 10, 0, 11.2,
+COMPONENT IMPROVEMENTS	;52, 5, 15000, 100, 12, 17, 20, 0, 0,
+PARENTS			;156, N
+
+PROJECT			;403, Optimized Jump Techniques, 6, 12, 		1, 10, 0, 14.7,
+COMPONENT IMPROVEMENTS	;52, 6, 20000, 120, 8, 16, 20, 0, 0,
+PARENTS			;402, N
+
+PROJECT			;404, Unified Pulse Jump Theory, 7, 12, 		1, 10, 0, 18.5,
+COMPONENT IMPROVEMENTS	;52, 7, 28000, 166, 6, 15, 20, 0, 0,
+PARENTS			;403, N
+
+PROJECT			;405, Improved ECM, 3, 4, 		2, 2, 0, 5.2,
+COMPONENT IMPROVEMENTS	;84, 3, 20, 0, 0, 0, 0, 0, 0,
+PARENTS			;183, N
+
+PROJECT			;406, Improved Targeting, 3, 3, 		2, 2, 0, 5.2,
+COMPONENT IMPROVEMENTS	;83, 3, 20, 0, 0, 0, 0, 0, 0,
+PARENTS			;189, N
+
+PROJECT			;407, Sub-Space Fleet ECM, 8, 5, 		2, 2, 0, 22.6,
+COMPONENT IMPROVEMENTS	;90, 8, 0, 50, 0, 0, 0, 0, 0,
+PARENTS			;186, N
+
+PROJECT			;408, Sub-Space Fleet Targeting, 8, 2, 		2, 2, 0, 22.6,
+COMPONENT IMPROVEMENTS	;89, 8, 0, 50, 0, 0, 0, 0, 0,
+PARENTS			;192, N
+
+PROJECT			;409, Enhanced Colonization, 3, 22, 		2, 8, 0, 5.2,
+COMPONENTS		;103
+PARENTS			;219, Y, 228, Y, 456, Y
+
+PROJECT			;410, Terraforming, 3, 18, 		2, 8, 0, 5.2,
+FACILITY		;9
+PARENTS			;219, N
+
+PROJECT			;411, Danuta Research Project, 4, 39, 		2, 11, 0, 8.0,
+FACILITY		;17
+PARENTS			;429, Y, 345, Y
+
+PROJECT			;412, Rusan Research Project, 4, 41, 		2, 11, 0, 8.0,
+FACILITY		;18
+PARENTS			;448, Y, 345, Y
+
+PROJECT			;413, Advanced Planet Surveying, 3, 13, 		2, 14, 0, 5.2,
+COMPONENT IMPROVEMENTS	;77, 3, 9000, 0, 0, 0, 0, 0, 0,
+PARENTS			;213, N
+
+PROJECT			;414, System Surveying, 5, 13, 		2, 14, 0, 11.2,
+COMPONENT IMPROVEMENTS	;77, 5, 25000, 0, 0, 0, 0, 0, 0,
+PARENTS			;200, N
+
+PROJECT			;415, Enhanced Stealth, 7, 7, 		2, 14, 0, 18.5,
+COMPONENT IMPROVEMENTS	;82, 7, 800, 0, 0, 0, 0, 0, 0,
+PARENTS			;207, N
+
+PROJECT			;416, Hyperspace Wake Theory, 8, 10, 		2, 14, 0, 22.6,
+COMPONENT IMPROVEMENTS	;76, 8, 200000, 100, 0, 0, 0, 0, 0,
+PARENTS			;210, N
+
+PROJECT			;417, Sub-Space Arrays, 8, 12, 		2, 14, 0, 22.6,
+COMPONENT IMPROVEMENTS	;79, 8, 2000000, 0, 0, 0, 0, 0, 0,
+PARENTS			;203, N
+
+PROJECT			;418, Sub-Space Ship Scanning, 8, 9, 		2, 14, 0, 22.6,
+COMPONENT IMPROVEMENTS	;80, 8, 5000, 40, 0, 0, 0, 0, 0,
+PARENTS			;218, N
+
+PROJECT			;419, Optimized Jamming, 8, 8, 		2, 14, 0, 22.6,
+COMPONENT IMPROVEMENTS	;81, 8, 0, 30, 0, 0, 0, 0, 0,
+PARENTS			;217, Y, 218, Y
+
+PROJECT			;420, Sub-Space Jump Blocking, 8, 18, 		1, 9, 0, 22.6,
+COMPONENT IMPROVEMENTS	;20, 8, 0, 3000, 3, 0, 0, 0, 0,
+PARENTS			;175, N
+
+PROJECT			;421, Sub-Space Jump Disruption, 7, 19, 		1, 9, 0, 18.5,
+COMPONENT IMPROVEMENTS	;22, 7, 0, 10000, 0, 0, 0, 0, 0,
+PARENTS			;177, N
+
+PROJECT			;422, Ultra Efficient Hyper Drives, 10, 14, 		1, 10, 0, 31.6,
+COMPONENTS		;165
+PARENTS			;551, N, 401, N, 552, N
+
+PROJECT			;423, Star Fusion Mastery, 9, 3, 		1, 13, 0, 27.0,
+COMPONENTS		;144
+'ALLOWED RACES	;Ackdarian, Atuuk, Boskara, Dhayut, Gizurean, Haakonish, Hiigaran, Human, Ikkuro, Ketarov, Kiadian, Mortalen, Naxxilian, Quameno, Securan, Shakturi,Shandar, Sluken, Teekan, Ugnari, Wekkarus, Zenox
+PARENTS			;467, N, 79, N, 594, N
+
+PROJECT			;424, Advanced Energy Collection, 5, 29, 		1, 4, 0, 11.2,
+COMPONENT IMPROVEMENTS	;58, 5, 75, 0, 0, 0, 0, 0, 0,
+PARENTS			;125, N
+
+PROJECT			;425, Cainzean Economics, 2, 44, 		2, 2, 0, 2.8,
+COMPONENT IMPROVEMENTS	;86, 2, 150, 0, 0, 0, 0, 0, 0,
+PARENTS			;269, N
+
+PROJECT			;426, Psycho-Mathematics, 3, 44, 		2, 2, 0, 5.2,
+COMPONENT IMPROVEMENTS	;86, 3, 200, 0, 0, 0, 0, 0, 0,
+PARENTS			;425, N
+
+PROJECT			;427, Unlimited Commerce, 6, 44, 		2, 2, 0, 14.7,
+COMPONENT IMPROVEMENTS	;86, 6, 400, 0, 0, 0, 0, 0, 0,
+PARENTS			;271, N
+
+PROJECT			;428, Trade Guilds, 6, 45, 		2, 2, 0, 14.7,
+FACILITY		;20
+PARENTS			;271, Y, 283, Y
+
+PROJECT			;429, Energy Research: Phase III, 3, 38, 		2, 11, 0, 5.2,
+COMPONENT IMPROVEMENTS	;92, 3, 25000, 0, 0, 0, 0, 0, 0,
+PARENTS			;259, N
+
+PROJECT			;430, Energy Research: Phase IV, 5, 38, 		2, 11, 0, 11.2,
+COMPONENT IMPROVEMENTS	;92, 5, 30000, 0, 0, 0, 0, 0, 0,
+PARENTS			;429, N
+
+PROJECT			;431, Passenger Mega-Complex, 6, 23, 		2, 17, 0, 14.7,
+COMPONENT IMPROVEMENTS	;73, 6, 5000000, 0, 0, 0, 0, 0, 0,
+PARENTS			;233, N
+
+PROJECT			;432, Advanced Fuel Storage, 5, 26, 		2, 17, 0, 11.2,
+COMPONENT IMPROVEMENTS	;65, 5, 150, 0, 0, 0, 0, 0, 0,
+PARENTS			;454, N
+
+PROJECT			;433, Holographic Medicine, 4, 33, 		2, 8, 0, 8.0,
+COMPONENT IMPROVEMENTS	;100, 4, 250, 0, 0, 0, 0, 0, 0,
+PARENTS			;250, N
+
+PROJECT			;434, DNA Rewriting, 5, 33, 		2, 8, 0, 11.2,
+COMPONENT IMPROVEMENTS	;100, 5, 300, 0, 0, 0, 0, 0, 0,
+PARENTS			;433, N
+
+PROJECT			;435, Media Control Theory, 4, 34, 		2, 8, 0, 8.0,
+COMPONENT IMPROVEMENTS	;101, 4, 175, 0, 0, 0, 0, 0, 0,
+PARENTS			;254, N
+
+PROJECT			;436, Distant Worlds 2 Announced, 7, 34, 		2, 8, 0, 18.5,
+COMPONENT IMPROVEMENTS	;101, 7, 400, 0, 0, 0, 0, 0, 0,
+PARENTS			;256, N
+
+PROJECT			;437, Holographic Universe, 6, 35, 		2, 8, 0, 14.7,
+FACILITY		;15
+PARENTS			;255, N
+
+PROJECT			;438, Enhanced Docking Bay, 1, 30, 		2, 17, 0, 0.0,
+COMPONENT IMPROVEMENTS	;74, 1, 175, 0, 0, 0, 0, 0, 0,
+PARENTS			;241, N
+
+PROJECT			;439, Ultimate Hangar Bay, 5, 25, 		0, 3, 0, 11.2,
+COMPONENTS		;166, 181
+PARENTS			;60, N
+
+PROJECT			;440, Quameno Research Labs, 7, 38, 		2, 11, 0, 18.5,
+COMPONENT IMPROVEMENTS	;91, 7, 40000, 0, 0, 0, 0, 0, 0,		92, 7, 40000, 0, 0, 0, 0, 0, 0,		93, 7, 40000, 0, 0, 0, 0, 0, 0,
+ALLOWED RACES	;Quameno
+PARENTS			;260, N
+
+PROJECT			;441, Planetary Annihilation, 10, 36, 		0, 25, 0, 31.6,
+COMPONENTS		;167
+PARENTS			;44, N
+
+PROJECT			;442, Weapons Research: Phase I, 1, 37, 		2, 11, 0, 0.0,
+COMPONENT IMPROVEMENTS	;91, 1, 15000, 0, 0, 0, 0, 0, 0,
+PARENTS			;257, N
+
+PROJECT			;443, Weapons Research: Phase II, 2, 37, 		2, 11, 0, 2.8,
+COMPONENT IMPROVEMENTS	;91, 2, 20000, 0, 0, 0, 0, 0, 0,
+PARENTS			;442, N
+
+PROJECT			;444, Weapons Research: Phase III, 3, 37, 		2, 11, 0, 5.2,
+COMPONENT IMPROVEMENTS	;91, 3, 25000, 0, 0, 0, 0, 0, 0,
+PARENTS			;443, N
+
+PROJECT			;445, Weapons Research: Phase IV, 5, 37, 		2, 11, 0, 11.2,
+COMPONENT IMPROVEMENTS	;91, 5, 30000, 0, 0, 0, 0, 0, 0,
+PARENTS			;444, N
+
+PROJECT			;446, HiTech Research: Phase I, 1, 40, 		2, 11, 0, 0.0,
+COMPONENT IMPROVEMENTS	;93, 1, 15000, 0, 0, 0, 0, 0, 0,
+PARENTS			;257, N
+
+PROJECT			;447, HiTech Research: Phase II, 2, 40, 		2, 11, 0, 2.8,
+COMPONENT IMPROVEMENTS	;93, 2, 20000, 0, 0, 0, 0, 0, 0,
+PARENTS			;446, N
+
+PROJECT			;448, HiTech Research: Phase III, 3, 40, 		2, 11, 0, 5.2,
+COMPONENT IMPROVEMENTS	;93, 3, 25000, 0, 0, 0, 0, 0, 0,
+PARENTS			;447, N
+
+PROJECT			;449, HiTech Research: Phase IV, 5, 40, 		2, 11, 0, 11.2,
+COMPONENT IMPROVEMENTS	;93, 5, 30000, 0, 0, 0, 0, 0, 0,
+PARENTS			;448, N
+
+PROJECT			;450, Optimized Solid Fuel Storage, 5, 27, 		2, 17, 0, 11.2,
+COMPONENT IMPROVEMENTS	;67, 5, 200, 0, 0, 0, 0, 0, 0,
+PARENTS			;234, N
+
+PROJECT			;451, Coordinated Command, 2, 43, 		2, 2, 0, 2.8,
+COMPONENT IMPROVEMENTS	;85, 2, 25, 0, 0, 0, 0, 0, 0,
+PARENTS			;262, N
+
+PROJECT			;452, Psycho-Mathematic-Command, 4, 43, 		2, 2, 0, 8.0,
+COMPONENT IMPROVEMENTS	;85, 4, 40, 0, 0, 0, 0, 0, 0,
+PARENTS			;264, Y, 426, Y
+
+PROJECT			;453, Total Command, 8, 43, 		2, 2, 0, 22.6,
+COMPONENT IMPROVEMENTS	;85, 8, 80, 0, 0, 0, 0, 0, 0,
+PARENTS			;266, N
+
+PROJECT			;454, Improved Fuel Storage, 4, 26, 		2, 17, 0, 8.0,
+COMPONENT IMPROVEMENTS	;65, 4, 125, 0, 0, 0, 0, 0, 0,
+PARENTS			;238, N
+
+PROJECT			;455, Optimized Fuel Storage, 7, 26, 		2, 17, 0, 18.5,
+COMPONENTS 		;66
+PARENTS			;432, N
+
+PROJECT			;456, Optimized Basic Storage, 2, 25, 		2, 17, 0, 2.8,
+COMPONENT IMPROVEMENTS	;123, 2, 75, 0, 0, 0, 0, 0, 0,		124, 2, 850, 0, 0, 0, 0, 0, 0,
+PARENTS			;364, N
+
+PROJECT			;457, Medical Robotics, 2, 33, 		2, 8, 0, 2.8,
+COMPONENT IMPROVEMENTS	;100, 2, 125, 0, 0, 0, 0, 0, 0,
+PARENTS			;249, N
+
+PROJECT			;458, Increased Leisure Time, 2, 34, 		2, 8, 0, 2.8,
+COMPONENT IMPROVEMENTS	;101, 2, 125, 0, 0, 0, 0, 0, 0,
+PARENTS			;253, N
+
+PROJECT			;459, Luxury Hab Module, 7, 28, 		2, 8, 0, 18.5,
+COMPONENT IMPROVEMENTS	;169, 7, 140, 0, 0, 0, 0, 0, 0,
+PARENTS			;248, N
+
+PROJECT			;460, Enhanced Life Support, 1, 29, 		2, 8, 0, 0.0,
+COMPONENT IMPROVEMENTS	;98, 1, 80, 0, 0, 0, 0, 0, 0,
+PARENTS			;365, N
+
+PROJECT			;461, Improved Life Support, 3, 29, 		2, 8, 0, 5.2,
+COMPONENT IMPROVEMENTS	;98, 3, 90, 0, 0, 0, 0, 0, 0,
+PARENTS			;460, N
+
+PROJECT			;462, Advanced Life Support, 4, 29, 		2, 8, 0, 8.0,
+COMPONENT IMPROVEMENTS	;98, 4, 100, 0, 0, 0, 0, 0, 0,
+PARENTS			;461, Y, 250, Y
+
+PROJECT			;463, Life Support Mk II, 6, 29, 		2, 8, 0, 14.7,
+COMPONENTS		;168
+PARENTS			;462, N
+
+PROJECT			;464, Full Life Support, 7, 29, 		2, 8, 0, 18.5,
+COMPONENT IMPROVEMENTS	;168, 7, 140, 0, 0, 0, 0, 0, 0,
+PARENTS			;463, N
+
+PROJECT			;465, Enhanced Space Reactor, 1, 3, 		1, 13, 0, 0.0,
+COMPONENT IMPROVEMENTS	;120, 1, 75, 110, 525, 18, 0, 0, 0,
+PARENTS			;359, N
+
+PROJECT			;466, Star Core Simulation, 8, 1, 		1, 13, 0, 22.6,
+COMPONENT IMPROVEMENTS	;57, 8, 300, 600, 1200, 4, 0, 0, 0,
+PARENTS			;85, N
+
+PROJECT			;467, Complete Hydrogen Fusion, 8, 2, 		1, 13, 0, 22.6,
+COMPONENT IMPROVEMENTS	;54, 8, 225, 450, 1125, 8, 0, 0, 0,
+PARENTS			;73, N
+
+PROJECT			;468, Enhanced Gas Extraction, 2, 28, 		1, 6, 0, 2.8,
+COMPONENT IMPROVEMENTS	;60, 2, 40, 120, 0, 0, 0, 0, 0,
+PARENTS			;119, N
+
+PROJECT			;469, Improved Gas Extraction, 4, 28, 		1, 6, 0, 8.0,
+COMPONENT IMPROVEMENTS	;60, 4, 50, 150, 0, 0, 0, 0, 0,
+PARENTS			;468, N
+
+PROJECT			;470, Advanced Gas Extraction, 6, 28, 		1, 6, 0, 14.7,
+COMPONENT IMPROVEMENTS	;60, 6, 60, 180, 0, 0, 0, 0, 0,
+PARENTS			;469, N
+
+PROJECT			;471, Optimized Gas Extraction, 7, 28, 		1, 6, 0, 18.5,
+COMPONENT IMPROVEMENTS	;60, 7, 75, 225, 0, 0, 0, 0, 0,
+PARENTS			;470, N
+
+PROJECT			;472, Heavy Armor Plating, 3, 46, 		0, 0, 0, 5.2,
+COMPONENTS		;171
+PARENTS			;486, N
+
+PROJECT			;473, Neutron Armor, 9, 46, 		0, 0, 0, 27.0,
+COMPONENTS		;172
+PARENTS			;70, N
+
+PROJECT			;474, Planet-busting Mass Driver, 8, 40, 		0, 19, 0, 22.6,
+COMPONENTS		;173
+PARENTS			;592, N, 593, N
+
+PROJECT			;475, Improved Infantry Defense, 4, 49, 		0, 0, 0, 8.0,
+ABILITIES		;Improved Infantry Defense, 5, 4, -60, 1
+PARENTS			;329, N
+
+PROJECT			;476, Improved Armored Defense, 4, 45, 		0, 0, 0, 8.0,
+ABILITIES		;Improved Armor Defense, 5, 4, -50, 2
+PARENTS			;322, N
+
+PROJECT			;477, Enhanced Starship Engines, 1, 21, 		1, 5, 0, 0.0,
+COMPONENT IMPROVEMENTS	;121, 1, 1200, 5, 975, 3, 0, 0, 0,
+PARENTS			;360, N
+
+PROJECT			;478, Optimized Starship Engines, 2, 21, 		1, 5, 0, 2.8,
+COMPONENT IMPROVEMENTS	;121, 2, 1500, 6, 1050, 4, 0, 0, 0,
+PARENTS			;477, N
+
+PROJECT			;479, Enhanced Maneuvering, 1, 25, 		1, 5, 0, 0.0,
+COMPONENT IMPROVEMENTS	;122, 1, 5, 1, 0, 0, 0, 0, 0,
+PARENTS			;361, N
+
+PROJECT			;480, Advanced Logistics, 5, 52, 		0, 0, 0, 11.2,
+ABILITIES		;Lower Troop Maintenance, 5, 5, -60, 0
+PARENTS			;371, N
+
+PROJECT			;481, Optimized Logistics, 7, 52, 		0, 0, 0, 18.5,
+ABILITIES		;Lower Troop Maintenance, 5, 7, -75, 0
+PARENTS			;480, N
+
+PROJECT			;482, Proximity Defence Rockets, 2, 35, 		0, 26, 0, 2.8,
+COMPONENTS		;140
+PARENTS			;369, N
+
+PROJECT			;483, Black Edition Bombers, 8, 26, 		0, 7, 0, 22.6,
+FIGHTERS		;19
+PARENTS			;279, N
+
+PROJECT			;484, Efficient Blasters, 3, 3, 		0, 19, 0, 5.2,
+COMPONENT IMPROVEMENTS	;0, 3, 7, 220, 10, 1200, 1, 1240, 0,
+PARENTS			;7, N
+
+PROJECT			;485, Type II Missiles, 2, 33, 		0, 25, 0, 2.8,
+COMPONENTS		;10
+PARENTS			;48, N
+
+PROJECT			;486, Reactive Armor Plating, 2, 46, 		0, 0, 0, 2.8,
+COMPONENT IMPROVEMENTS		;28, 2, 15, 3, 0, 0, 0, 0, 0,
+PARENTS			;67, N
+
+PROJECT			;487, Improved Damage Control, 3, 32, 		1, 3, 0, 5.2,
+COMPONENT IMPROVEMENTS	;95, 3, 300, 30, 0, 0, 0, 0, 0,
+PARENTS			;116, N
+
+PROJECT			;488, Advanced Damage Control, 4, 32, 		1, 3, 0, 8.0,
+COMPONENT IMPROVEMENTS	;95, 4, 400, 15, 0, 0, 0, 0, 0,
+PARENTS			;487, N
+
+PROJECT			;489, Boskaran Troop Logistics, 8, 52, 		0, 0, 0, 22.6,
+ABILITIES		;Lower Troop Maintenance, 5, 8, -90, 0
+ALLOWED RACES	;Boskara
+PARENTS			;481, N
+
+PROJECT			;490, Elite Troop Project, 5, 43, 		0, 0, 0,11.2,
+FACILITY		;0
+PARENTS			;528, N
+
+PROJECT			;491, Sub-Space Evasion, 8, 4, 		2, 2, 0, 22.6,
+COMPONENTS		;143
+PARENTS			;187, N, 181, N
+
+PROJECT			;492, Sub-Space Targeting, 8, 3, 		2, 2, 0, 22.6,
+COMPONENTS		;142
+PARENTS			;197, N, 193, N
+
+PROJECT			;493, Sub-Space Thrust Theory, 9, 22, 		1, 5, 0, 27.0,
+COMPONENTS		;145
+PARENTS			;129, N, 138, N, 144, N
+
+PROJECT			;494, Fully Automated Conveyers, 8, 30, 		2, 17, 0, 22.6,
+COMPONENT IMPROVEMENTS	;74, 8, 500, 0, 0, 0, 0, 0, 0,
+PARENTS			;244, N
+
+PROJECT			;495, Integrated Life Support, 8, 28, 		2, 8, 0, 22.6,
+COMPONENT IMPROVEMENTS	;168, 8, 200, 0, 0, 0, 0, 0, 0,		169, 8, 200, 0, 0, 0, 0, 0, 0,
+PARENTS			;459, Y, 464, Y
+
+PROJECT			;496, Elite Ship Marines, 9, 30, 		0, 1, 0, 27.0,
+ABILITIES		;Improved Boarding Attack, 0, 10, 100, 0
+PARENTS			;335, Y, 316, Y, 524, Y
+
+PROJECT			;497, Defense Unit Attack IV, 7, 50, 		0, 0, 0, 18.5,
+ABILITIES		;Improved Interception Damage, 5, 7, 50, 3
+PARENTS			;343, N
+
+PROJECT			;498, Fighter's Nemesis, 8, 38, 		0, 22, 0, 22.6,
+COMPONENTS		;147
+PARENTS			;56, N
+
+PROJECT			;499, Sub-Space Torpedo, 9, 20, 		0, 25, 0, 27.0,
+COMPONENTS		;148
+'ALLOWED RACES	;Ackdarian, Atuuk, Boskara, Dhayut, Gizurean, Haakonish, Hiigaran, Human, Ikkuro, Ketarov, Kiadian, Mortalen, Naxxilian, Quameno, Securan, Shakturi, Shandar, Sluken, Teekan, Ugnari, Wekkarus, Zenox
+PARENTS			;599, N, 585, N, 587, N, 589, N
+
+PROJECT			;500, Sub-System Area Shields, 9, 8, 		1, 15, 0, 27.0,
+COMPONENTS		;149
+PARENTS			;102, N
+
+PROJECT			;501, Enhanced Gerax Drive, 3, 16, 		1, 10, 0, 5.2,
+COMPONENT IMPROVEMENTS	;47, 3, 4250, 130, 40, 18, 20, 0, 0,
+PARENTS			;167, N
+
+PROJECT			;502, Shakturi Hyperdrive, 7, 16, 		1, 10, 0, 18.5,
+COMPONENTS		;150
+ALLOWED RACES	;Shakturi
+
+PROJECT			;503, Gravitic Torpedo, 10, 19, 		0, 25, 0, 31.6,
+COMPONENTS		;151
+PARENTS			;354, Y, 499, Y
+
+PROJECT			;504, Enhanced Ion Weapons, 3, 9, 		0, 21, 0, 5.2,
+COMPONENT IMPROVEMENTS	;15, 3, 24, 340, 80, 280, 5, 3300, 0,
+PARENTS			;15, N
+
+PROJECT			;505, Advanced Ion Weapons, 6, 9, 		0, 21, 0, 14.7,
+COMPONENT IMPROVEMENTS	;15, 6, 40, 340, 80, 280, 5, 3300, 0,
+PARENTS			;17, N
+
+PROJECT			;506, Enhanced EMP Defenses, 4, 10, 		0, 21, 0, 8.0,
+COMPONENT IMPROVEMENTS	;17, 4, 23, 0, 0, 0, 0, 0, 0,
+PARENTS			;16, N
+
+PROJECT			;507, Advanced EMP Defenses, 7, 10, 		0, 21, 0, 18.5,
+COMPONENT IMPROVEMENTS	;17, 7, 35, 0, 0, 0, 0, 0, 0,
+PARENTS			;18, N
+
+PROJECT			;508, Sub-Space Ion Cannon, 8, 9, 		0, 21, 0, 22.6,
+COMPONENTS		;152
+PARENTS			;505, N
+
+PROJECT			;509, Ion beam Disruptor, 8, 10, 		0, 21, 0, 22.6,
+COMPONENTS		;153
+PARENTS			;507, N
+
+PROJECT			;510, Optimized EMP Blasting, 7, 11, 		0, 21, 0, 18.5,
+COMPONENT IMPROVEMENTS	;16, 7, 40, 300, 125, 200, 7, 6600, 0,
+PARENTS			;20, Y, 26, Y
+
+PROJECT			;511, Caslon Missiles, 3, 34, 		0, 25, 0, 5.2,
+COMPONENTS		;154
+PARENTS			;485, N
+
+PROJECT			;512, Enhanced Caslon Missiles, 4, 34, 		0, 25, 0, 8.0,
+COMPONENT IMPROVEMENTS	;154, 4, 55, 625, 100, 175, 0, 10000, 2,
+PARENTS			;511, N
+
+PROJECT			;513, Anti-matter Missiles, 6, 34, 		0, 25, 0, 14.7,
+COMPONENTS		;155
+PARENTS			;526, N
+
+PROJECT			;514, Neutron Missiles, 9, 34, 		0, 25, 0, 27.0,
+COMPONENTS		;156
+PARENTS			;513, N
+
+PROJECT			;515, Galactic Colonization, 7, 18, 		2, 8, 0, 18.5,
+COMPONENTS		;157
+PARENTS			;372, Y, 373, Y, 374, Y, 375, Y, 376, Y, 377, Y, 223, Y
+
+PROJECT			;516, Master of the Environment, 8, 18, 		2, 8, 0, 22.6,
+FACILITY		;36
+'ALLOWED RACES	;Ackdarian, Atuuk, Boskara, Dhayut, Gizurean, Haakonish, Hiigaran, Human, Ikkuro, Ketarov, Kiadian, Mortalen, Naxxilian, Quameno, Securan, Shandar, Sluken, Teekan, Ugnari, Wekkarus, Zenox
+PARENTS			;515, N, 391, N
+
+PROJECT			;517, Koloros Medical Academy, 6, 32, 		2, 8, 0, 14.7,
+FACILITY		;16
+PARENTS			;434, N
+
+PROJECT			;518, Warp Gate Complete Theory, 13, 16, 		1, 10, 0, 46.9,
+COMPONENTS		;158
+PARENTS			;387, Y
+
+PROJECT			;519, Distant Worlds 2, 8, 34, 		2, 8, 0, 22.6,
+FACILITY		;37
+'ALLOWED RACES	;Ackdarian, Atuuk, Boskara, Dhayut, Gizurean, Haakonish, Hiigaran, Human, Ikkuro, Ketarov, Kiadian, Mortalen, Naxxilian, Quameno, Securan, Shandar, Sluken, Teekan, Ugnari, Wekkarus, Zenox
+PARENTS			;436, N
+
+PROJECT			;520, Galactic Capital, 8, 44, 		2, 2, 0, 22.6,
+FACILITY		;38
+'ALLOWED RACES	;Ackdarian, Atuuk, Boskara, Dhayut, Gizurean, Haakonish, Hiigaran, Human, Ikkuro, Ketarov, Kiadian, Mortalen, Naxxilian, Quameno, Securan, Shandar, Sluken, Teekan, Ugnari, Wekkarus, Zenox
+PARENTS			;267, Y, 427, Y
+
+PROJECT			;521, Tachyon Beam, 5, 7, 		0, 19, 0, 11.2,
+COMPONENTS		;159
+PARENTS			;8, N
+
+PROJECT			;522, Reflective Armor, 8, 47, 		0, 0, 0, 22.6,
+COMPONENTS		;160
+PARENTS			;70, N
+
+PROJECT			;523, Dwarf Fortress, 7, 53, 		0, 0, 0, 18.5,
+FACILITY		;39
+'ALLOWED RACES	;Ackdarian, Atuuk, Boskara, Dhayut, Gizurean, Haakonish, Hiigaran, Human, Ikkuro, Ketarov, Kiadian, Mortalen, Naxxilian, Quameno, Securan, Shandar, Sluken, Teekan, Ugnari, Wekkarus, Zenox
+PARENTS			;281, N
+
+PROJECT			;524, Advanced Boarding Defense, 6, 31, 		0, 1, 0, 14.7,
+ABILITIES		;Improved Boarding Defense, 0, 6, -50, 0
+PARENTS			;334, N
+
+PROJECT			;525, Planetary Bombardment IV, 6, 36, 		0, 25, 0, 14.7,
+COMPONENT IMPROVEMENTS	;11, 6, 0, 500, 15, 70, 0, 5000, 10,
+PARENTS			;47, N
+
+PROJECT			;526, Advanced Caslon Missiles, 5, 34, 		0, 25, 0, 11.2,
+COMPONENT IMPROVEMENTS	;154, 5, 65, 650, 100, 200, 0, 10000, 3,
+PARENTS			;512, N
+
+PROJECT			;527, Enhanced Infantry Attack, 3, 43, 		0, 0, 0, 5.2,
+ABILITIES		;Improved Infantry Attack, 5, 3, 45, 1
+PARENTS			;328, N
+
+PROJECT			;528, Improved Infantry Attack, 4, 43, 		0, 0, 0, 8.0,
+ABILITIES		;Improved Infantry Attack, 5, 4, 60, 1
+PARENTS			;527, N
+
+PROJECT			;529, Improved Special Defense, 5, 42, 		0, 0, 0, 11.2,
+ABILITIES		;Improved Special Forces Defense, 5, 5, -50, 4
+PARENTS			;325, N
+
+PROJECT			;530, Advanced Infantry Attack, 6, 43, 		0, 0, 0, 14.7,
+ABILITIES		;Improved Infantry Attack, 5, 6, 75, 1
+PARENTS			;490, N
+
+PROJECT			;531, Advanced Infantry Defense, 6, 49, 		0, 0, 0, 14.7,
+ABILITIES		;Improved Infantry Defense, 5, 6, -75, 1
+PARENTS			;475, N
+
+PROJECT			;532, Advanced Armored Attack, 6, 44, 		0, 0, 0, 14.7,
+ABILITIES		;Improved Armor Attack, 5, 6, 75, 2
+PARENTS			;323, N
+
+PROJECT			;533, Advanced Armored Defense, 6, 45, 		0, 0, 0, 14.7,
+ABILITIES		;Improved Armor Defense, 5, 6, -75, 2
+PARENTS			;476, N
+
+PROJECT			;534, Advanced Special Attack, 6, 41, 		0, 0, 0, 14.7,
+ABILITIES		;Improved Special Forces Attack, 5, 6, 75, 4
+PARENTS			;326, N
+
+PROJECT			;535, Advanced Special Defense, 6, 42, 		0, 0, 0, 14.7,
+ABILITIES		;Improved Special Forces Defense, 5, 6, -75, 4
+PARENTS			;529, N
+
+PROJECT			;536, Ultimate Infantry Attack, 8, 43, 		0, 0, 0, 22.6,
+ABILITIES		;Improved Infantry Attack, 5, 8, 100, 1
+PARENTS			;530, N
+
+PROJECT			;537, Ultimate Infantry Defense, 8, 49, 		0, 0, 0, 22.6,
+ABILITIES		;Improved Infantry Defense, 5, 8, -100, 1
+PARENTS			;531, N
+
+PROJECT			;538, Ultimate Armored Attack, 8, 44, 		0, 0, 0, 22.6,
+ABILITIES		;Improved Armor Attack, 5, 8, 100, 2
+PARENTS			;532, N
+
+PROJECT			;539, Ultimate Armored Defense, 8, 45, 		0, 0, 0, 22.6,
+ABILITIES		;Improved Armor Defense, 5, 8, -100, 2
+PARENTS			;533, N
+
+PROJECT			;540, Ultimate Special Attack, 8, 41, 		0, 0, 0, 22.6,
+ABILITIES		;Improved Special Forces Attack, 5, 8, 100, 4
+PARENTS			;534, N
+
+PROJECT			;541, Ultimate Special Defense, 8, 42, 		0, 0, 0, 22.6,
+ABILITIES		;Improved Special Forces Defense, 5, 8, -100, 4
+PARENTS			;535, N
+
+PROJECT			;542, Enhanced Tachyon Beam, 6, 7, 		0, 19, 0, 14.7,
+COMPONENT IMPROVEMENTS		;159, 6, 30, 400, 64, 1200, -4, 4000, 0,
+PARENTS			;521, N
+
+PROJECT			;543, Improved Tachyon Beam, 7, 7, 		0, 19, 0, 18.5,
+COMPONENT IMPROVEMENTS		;159, 7, 38, 500, 68, 1200, -6, 4000, 0,
+PARENTS			;542, N
+
+PROJECT			;544, Tachyon Devastator, 8, 7, 		0, 19, 0, 22.6,
+COMPONENTS		;161
+PARENTS			;543, N
+
+PROJECT			;545, Tachyon Torpedo, 10, 21, 		0, 25, 0, 31.6,
+COMPONENTS		;162
+PARENTS			;499, N
+
+PROJECT			;546, Rapid Shield Recharge, 6, 7, 		1, 16, 0, 14.7,
+COMPONENT IMPROVEMENTS	;33, 6, 250, 30, 0, 0, 0, 0, 0,
+PARENTS			;91, N
+
+PROJECT			;547, Hyper Shield Recharge, 8, 7, 		1, 16, 0, 22.6,
+COMPONENTS		;163
+PARENTS			;546, N
+
+PROJECT			;548, Ultra-Dense Energy Banks, 6, 11, 		1, 16, 0, 14.7,
+COMPONENT IMPROVEMENTS	;34, 6, 400, 6, 0, 0, 0, 0, 0,
+PARENTS			;94, N
+
+PROJECT			;549, Impenetrable Shields, 8, 11, 		1, 16, 0, 22.6,
+COMPONENTS		;164
+PARENTS			;548, N
+
+PROJECT			;550, Improved Energy Collection, 3, 29, 		1, 4, 0, 5.2,
+COMPONENT IMPROVEMENTS	;58, 3, 48, 0, 0, 0, 0, 0, 0,
+PARENTS			;124, N
+
+' MORDACHAI
+
+PROJECT			;551, Transcendent Kaldos Drive, 9, 13, 		1, 10, 0, 27.0,
+COMPONENT IMPROVEMENTS	;48, 9, 20000, 300, 1, 12, 20, 0, 0,
+PARENTS			;396, N
+
+PROJECT			;552, Transcendent Calista-Dal Drive, 9, 15, 		1, 10, 0, 27.0,
+COMPONENT IMPROVEMENTS	;50, 9, 22500, 40, 10, 5, 20, 0, 0,
+PARENTS			;400, N
+
+PROJECT			;553, Interceptors, 2, 26, 		0, 7, 0, 2.8,
+FIGHTERS		;1
+PARENTS			;57, Y
+
+PROJECT			;554, Light Torpedo Bombers, 2, 27, 		0, 7, 0, 2.8,
+FIGHTERS		;7
+PARENTS			;57, Y
+
+PROJECT			;555, Missile Bombers, 2, 28, 		0, 7, 0, 2.8,
+FIGHTERS		;12
+PARENTS			;57, Y
+
+PROJECT			;556, Natural Flight Integration, 1, 24, 		0, 3, 0, 0.0,
+COMPONENTS		;130, 182
+ALLOWED RACES	;Caleph, Yl'ta
+
+PROJECT			;557, Multi Dimension Maintenance, 3, 24, 		0, 3, 0, 5.2,
+COMPONENT IMPROVEMENTS	;130, 3, 80, 8, 0, 0, 0, 0, 0,			182, 3, 80, 8, 0, 0, 0, 0, 0,
+PARENTS			;556, N
+ALLOWED RACES	;Caleph, Yl'ta
+
+PROJECT			;558, Advanced Natural Flight, 5, 24, 		0, 3, 0, 11.2,
+COMPONENT IMPROVEMENTS	;130, 5, 100, 8, 0, 0, 0, 0, 0,			182, 5, 100, 8, 0, 0, 0, 0, 0,
+PARENTS			;557, N
+ALLOWED RACES	;Caleph, Yl'ta
+
+PROJECT			;559, Wyrm Fighters, 2, 22, 		0, 7, 0, 2.8,
+FIGHTERS		;20
+ALLOWED RACES	;Caleph, Yl'ta
+PARENTS			;556, Y
+
+PROJECT			;560, Wyrm Bombers, 2, 23, 		0, 7, 0, 2.8,
+FIGHTERS		;23
+ALLOWED RACES	;Caleph, Yl'ta
+PARENTS			;556, Y
+
+PROJECT			;561, Wyvern Interceptors, 4, 22, 		0, 7, 0, 8.0,
+FIGHTERS		;21
+ALLOWED RACES	;Caleph, Yl'ta
+PARENTS			;559, Y, 557, Y
+
+PROJECT			;562, Wyvern Assault Bombers, 4, 23, 		0, 7, 0, 8.0,
+FIGHTERS		;24
+ALLOWED RACES	;Caleph, Yl'ta
+PARENTS			;560, Y, 557, Y
+
+PROJECT			;563, Dragoon StarFighters, 6, 22, 		0, 7, 0, 14.7,
+FIGHTERS		;22
+ALLOWED RACES	;Caleph, Yl'ta
+PARENTS			;561, Y, 558, Y
+
+PROJECT			;564, Dragoon StarBombers, 6, 23, 		0, 7, 0, 14.7,
+FIGHTERS		;25
+ALLOWED RACES	;Caleph, Yl'ta
+PARENTS			;562, Y, 558, Y
+
+PROJECT			;565, Long Range Phaser, 2, 8, 		0, 19, 0, 2.8,
+COMPONENTS		;129
+PARENTS			;6, N
+
+PROJECT			;566, Phaser Concentration, 4, 8, 		0, 19, 0, 8.0,
+COMPONENT IMPROVEMENTS	;129, 4, 26, 370, 52, 1200, 0, 4000, 0,
+PARENTS			;565, N
+
+PROJECT			;567, Advanced Phaser Flow, 6, 8, 		0, 19, 0, 14.7,
+COMPONENT IMPROVEMENTS	;129, 6, 33, 480, 56, 1200, 0, 4100, 0,
+PARENTS			;566, N
+
+PROJECT			;568, Hammerhead Missiles, 2, 32, 		0, 25, 0, 2.8,
+COMPONENTS		;131
+PARENTS			;48, N
+ALLOWED RACES	;Paratis, Tarapin
+
+PROJECT			;569, Dual-Warhead Payload, 4, 32, 		0, 25, 0, 8.0,
+COMPONENT IMPROVEMENTS	;131, 4, 20, 800, 18, 120, 0, 2000, 0,
+PARENTS			;568, N
+ALLOWED RACES	;Paratis, Tarapin
+
+PROJECT			;570, Tri-Warhead Payload, 6, 32, 		0, 25, 0, 14.7,
+COMPONENT IMPROVEMENTS	;131, 6, 28, 800, 18, 140, 0, 2000, 0,
+PARENTS			;569, N
+ALLOWED RACES	;Paratis, Tarapin
+
+PROJECT			;571, Enhanced Fissile Exploitation, 2, 5, 		1, 13, 0, 2.8,
+COMPONENTS		;132
+PARENTS			;465, N
+
+PROJECT			;572, Advanced Fissile Exploitation, 3, 5, 		1, 13, 0, 5.2,
+COMPONENT IMPROVEMENTS	;132, 3, 155, 250, 730, 6, 0, 0, 0,
+PARENTS			;571, N
+
+PROJECT			;573, Maximum Fissile Exploitation, 4, 5, 		1, 13, 0, 8.0,
+COMPONENT IMPROVEMENTS	;132, 4, 175, 300, 800, 6, 0, 0, 0,
+PARENTS			;572, N
+
+PROJECT			;574, Hyper Space Denial, 3, 17, 		1, 9, 0, 5.2,
+COMPONENTS		;133
+PARENTS			;167, N
+
+PROJECT			;575, Extended Space Denial, 5, 17, 		1, 9, 0, 11.2,
+COMPONENT IMPROVEMENTS	;133, 5, 0, 10000, 0, 0, 0, 0, 0,
+PARENTS			;574, N
+
+PROJECT			;576, Masked Movement, 2, 11, 		2, 14, 0, 2.8,
+COMPONENTS		;134
+PARENTS			;366, N
+
+PROJECT			;577, Far Sight Discovery, 2, 14, 		2, 14, 0, 2.8,
+COMPONENTS		;138
+PARENTS			;204, N
+
+PROJECT			;578, Far Sight Training, 4, 14, 		2, 14, 0, 8.0,
+COMPONENT IMPROVEMENTS	;138, 4, 1400000, 0, 0, 0, 0, 0, 0,
+PARENTS			;577, N
+
+PROJECT			;579, Far Sight Mastery, 6, 14, 		2, 14, 0, 14.7,
+COMPONENT IMPROVEMENTS	;138, 6, 2000000, 0, 0, 0, 0, 0, 0,
+PARENTS			;578, N
+
+PROJECT			;580, Compacted Troop Transport, 2, 24, 		2, 17, 0, 2.8,
+COMPONENTS		;135
+PARENTS			;227, N
+ALLOWED RACES	;Ortain, Core
+
+PROJECT			;581, Self Righting Coupling, 2, 31, 		2, 17, 0, 2.8,
+COMPONENTS		;136
+PARENTS			;438, N
+
+PROJECT			;582, Advanced Self Righting, 4, 31, 		2, 17, 0, 8.0,
+COMPONENT IMPROVEMENTS	;136, 4, 420, 0, 0, 0, 0, 0, 0,
+PARENTS			;581, N
+
+PROJECT			;583, Host Healing Centers, 3, 32, 		2, 8, 0, 5.2,
+COMPONENTS		;137
+PARENTS			;457, N
+
+PROJECT			;584, X-Velocity Shard, 7, 19,	0, 25, 0, 18.5,
+COMPONENTS		;176
+PARENTS			;32, Y
+
+PROJECT			;585, Lossless Energy Streams, 8, 19,	0, 25, 0, 22.6,
+COMPONENT IMPROVEMENTS	;176, 8, 48, 1100, 48, 280, 1, 3200, 0,
+PARENTS			;584, N
+
+PROJECT			;586, X-Thunderbolt Torpedo, 7, 20, 		0, 25, 0, 18.5,
+COMPONENTS		;177
+PARENTS			;38, Y
+
+PROJECT			;587, Unstable Energy Vortexes, 8, 20, 		0, 25, 0, 22.6,
+COMPONENT IMPROVEMENTS	;177, 8, 50, 950, 52, 200, 2, 3100, 0,
+PARENTS			;586, N
+
+PROJECT			;588, X-Shockwave Torpedo, 7, 21, 		0, 25, 0, 18.5,
+COMPONENTS		;178
+PARENTS			;41, Y
+
+PROJECT			;589, Plasma Hardening, 8, 21, 		0, 25, 0, 22.6,
+COMPONENT IMPROVEMENTS	;178, 8, 60, 870, 64, 155, 3, 3500, 0,
+PARENTS			;588, N
+
+PROJECT			;590, Rapid-Fire Mass Drivers, 5, 39, 		0, 19, 0, 11.2,
+COMPONENTS		;175
+PARENTS			;296, N
+
+PROJECT			;591, Improved Mass Accelleration, 6, 39, 		0, 19, 0, 14.7,
+COMPONENT IMPROVEMENTS	;175, 6, 8, 600, 16, 500, 0, 450, 0,
+PARENTS			;590, N
+
+PROJECT			;592, Advanced Mass Acceleration, 7, 39, 		0, 19, 0, 18.5,
+COMPONENT IMPROVEMENTS	;175, 7, 8, 600, 16, 550, 0, 400, 0,
+PARENTS			;591, N
+
+PROJECT			;593, Heavy Assault Mass Drivers, 7, 40, 		0, 19, 0, 18.5,
+COMPONENT IMPROVEMENTS	;112, 7, 24, 750, 22, 600, 0, 1200, 1,
+PARENTS			;308, N
+
+PROJECT			;594, Quantum Enlightenment, 8, 4, 		1, 13, 0, 22.6,
+COMPONENT IMPROVEMENTS	;55, 8, 250, 300, 1200, 18, 0, 0, 0,
+PARENTS			;82, N
+
+PROJECT			;595, Experimental Wave Weapons, 7, 1, 		0, 19, 0, 18.5,
+COMPONENT IMPROVEMENTS	;4, 7, 30, 580, 24, 1200, 3, 1400, 0,
+PARENTS			;2, N
+
+PROJECT			;596, Experimental Phaser Flow, 8, 8, 		0, 19, 0, 22.6,
+COMPONENT IMPROVEMENTS	;129, 8, 42, 620, 60, 1200, 0, 4200, 0,
+PARENTS			;567, N
+
+PROJECT			;597, Omega StarBombers, 8, 25, 		0, 7, 0, 22.6,
+FIGHTERS		;18
+PARENTS			;564, N, 62, N
+
+PROJECT			;598, Alpha StarFighters, 8, 24, 		0, 7, 0, 22.6,
+FIGHTERS		;17
+PARENTS			;563, N, 66, N
+
+PROJECT			;599, N-Fold Energy Pulsing, 8, 18, 		0, 25, 0, 22.6,
+COMPONENT IMPROVEMENTS	;9, 8, 70, 605, 52, 116, 10, 2100, 16,
+PARENTS			;29, N
+
+PROJECT			;600, Fermionic Condensate Fuel Storage, 7, 27, 		2, 17, 0, 18.5,
+COMPONENT IMPROVEMENTS	;67, 7, 250, 0, 0, 0, 0, 0, 0,
+PARENTS			;450, N
+
+PROJECT			;601, Pulse Jump Duality Core, 8, 12, 		1, 10, 0, 22.6,
+COMPONENT IMPROVEMENTS	;52, 8, 40000, 175, 3, 14, 20, 0, 0,
+PARENTS			;404, N
+
+PROJECT			;602, Pulse Jump Trinary Core, 9, 12, 		1, 10, 0, 27,
+COMPONENT IMPROVEMENTS	;52, 9, 60000, 185, 1, 13, 20, 0, 0,
+PARENTS			;601, N
+
+PROJECT			;603, DualPhase Fissile Exploitation, 6, 5, 		1, 13, 0, 14.7,
+COMPONENT IMPROVEMENTS	;132, 6, 225, 400, 820, 6, 0, 0, 0,
+PARENTS			;573, N
+
+PROJECT			;604, TriPhase Fissile Exploitation, 8, 5, 		1, 13, 0, 22.6,
+COMPONENT IMPROVEMENTS	;132, 8, 275, 500, 850, 6, 0, 0, 0,
+PARENTS			;603, N
+
+PROJECT			;605, Extreme Space Denial, 7, 17, 		1, 9, 0, 18.5,
+COMPONENT IMPROVEMENTS	;133, 7, 0, 15000, 0, 0, 0, 0, 0,
+PARENTS			;575, N
+
+PROJECT			;606, Ultra-Intensity Lasers, 7, 2, 		0, 19, 0, 18.5,
+COMPONENT IMPROVEMENTS	;1, 6, 18, 600, 20, 1200, 1, 1500, 0,
+PARENTS			;5, N
+
+PROJECT			;607, Ultimate Beam Discharge, 7, 4, 		0, 19, 0, 18.5,
+COMPONENT IMPROVEMENTS	;2, 6, 25, 380, 38, 1200, 4, 1600, 0,
+PARENTS			;14, N
+
+PROJECT			;608, Phaser Gamma-Coils, 7, 5, 		0, 19, 0, 18.5,
+COMPONENT IMPROVEMENTS	;106, 6, 23, 360, 36, 1200, 0, 2100, 0,
+PARENTS			;292, N
+
+PROJECT			;609, Small Shield Recharger, 4, 9, 		1, 15, 0, 8.0,
+COMPONENTS		;183
+PARENTS			;97, N
+
+PROJECT			;610, Long Range Recharger, 5, 8, 		1, 15, 0, 11.2,
+COMPONENT IMPROVEMENTS	;183, 5, 500, 250, 250, 0, 0, 0, 0,
+PARENTS			;609, N
+
+PROJECT			;611, High Density Recharger, 5, 10, 		1, 15, 0, 11.2,
+COMPONENT IMPROVEMENTS	;183, 5, 250, 500, 250, 0, 0, 0, 0,
+PARENTS			;609, N
+
+PROJECT			;612, System Jump Disruption, 9, 19, 		1, 9, 0, 27,
+COMPONENT IMPROVEMENTS	;22, 9, 0, 15000, 0, 0, 0, 0, 0,
+PARENTS			;421, N
+
+PROJECT			;613, Ultimate Space Denial, 9, 17, 		1, 9, 0, 27,
+COMPONENT IMPROVEMENTS	;133, 9, 0, 20000, 0, 0, 0, 0, 0,
+PARENTS			;605, N
+
+PROJECT			;614, Small Energy Exchanger, 2, 30, 		1, 4, 0, 2.8,
+COMPONENTS		;184
+PARENTS			;123, N
+
+PROJECT			;615, Organic Armor, 1, 48, 		0, 0, 0, 0.0,
+COMPONENTS		;187
+PARENTS			;317, N
+ALLOWED RACES	;Atuuk, Jintus
+
+PROJECT			;616, Improved Organic Armor, 3, 48, 		0, 0, 0, 5.2,
+COMPONENT IMPROVEMENTS		;187, 3, 35, 10, 0, 0, 0, 0, 0,
+PARENTS			;615, N
+ALLOWED RACES	;Atuuk, Jintus
+
+PROJECT			;617, Enhanced Organic Armor, 5, 48, 		0, 0, 0, 11.2,
+COMPONENT IMPROVEMENTS		;187, 5, 50, 15, 0, 0, 0, 0, 0,
+PARENTS			;616, N
+ALLOWED RACES	;Atuuk, Jintus
+
+PROJECT			;618, Advanced Organic Armor, 7, 48, 		0, 0, 0, 18.5,
+COMPONENT IMPROVEMENTS		;187, 7, 75, 20, 0, 0, 0, 0, 0,
+PARENTS			;617, N
+ALLOWED RACES	;Atuuk, Jintus
+
+PROJECT			;619, Napoar Solar Cell, 4, 30, 		1, 4, 0, 8.0,
+COMPONENTS      ;188
+PARENTS			;550, N
+ALLOWED RACES	;Napoar
+
+PROJECT			;620, Crystaline Armor, 1, 47, 		0, 0, 0, 0.0,
+COMPONENTS		;189
+PARENTS			;317, N
+ALLOWED RACES	;Drushocka, Lemeresh
+
+PROJECT			;621, Improved Crystaline Armor, 3, 47, 		0, 0, 0, 5.2,
+COMPONENT IMPROVEMENTS		;189, 3, 10, 35, 0, 0, 0, 0, 0,
+PARENTS			;620, N
+ALLOWED RACES	;Drushocka, Lemeresh
+
+PROJECT			;622, Enhanced Crystaline Armor, 5, 47, 		0, 0, 0, 11.2,
+COMPONENT IMPROVEMENTS		;189, 5, 15, 50, 0, 0, 0, 0, 0,
+PARENTS			;621, N
+ALLOWED RACES	;Drushocka, Lemeresh
+
+PROJECT			;623, Advanced Crystaline Armor, 7, 47, 		0, 0, 0, 18.5,
+COMPONENT IMPROVEMENTS		;189, 7, 20, 75, 0, 0, 0, 0, 0,
+PARENTS			;622, N
+ALLOWED RACES	;Drushocka, Lemeresh
+
+PROJECT			;624, Guardian Point Defense, 1, 38, 		0, 22, 0, 0.0,
+COMPONENTS		;190
+ALLOWED RACES	;Human, Arm, XHuman
+
+PROJECT			;625, Guardian PD Mk2, 3, 38, 		0, 22, 0, 5.2,
+COMPONENT IMPROVEMENTS	;190, 3, 10, 225, 3, 550, 1, 425, 0,
+PARENTS			;624, N
+ALLOWED RACES	;Human, Arm, XHuman
+
+PROJECT			;626, Guardian PD Mk3, 5, 38, 		0, 22, 0, 11.2,
+COMPONENT IMPROVEMENTS	;190, 5, 15, 325, 3, 650, 1, 400, 0,
+PARENTS			;625, N
+ALLOWED RACES	;Human, Arm, XHuman
+
+PROJECT			;627, Guardian PD Mk4, 7, 38, 		0, 22, 0, 18.5,
+COMPONENT IMPROVEMENTS	;190, 7, 20, 425, 3, 750, 1, 350, 0,
+PARENTS			;626, N
+ALLOWED RACES	;Human, Arm, XHuman
+
+PROJECT			;628, AI Leisure Dome, 3, 35, 		2, 8, 0, 5.2,
+COMPONENTS		;191
+PARENTS			;458, N
+ALLOWED RACES	;Naxxilian, Shandar
+
+PROJECT			;629, Ketarov Krusher, 4, 15, 		0, 20, 0, 8.0,
+COMPONENTS		;192
+PARENTS			;351, N
+ALLOWED RACES	;Ketarov
+
+PROJECT			;630, Phaerax Plasma Bomb, 8, 37, 		0, 25, 0, 22.6,
+COMPONENTS		;193
+PARENTS			;42, N
+ALLOWED RACES	;Phaerax
+
+PROJECT			;631, Multi-Warhead Payload, 8, 32, 		0, 25, 0, 22.6,
+COMPONENT IMPROVEMENTS	;131, 8, 36, 850, 18, 150, 0, 2000, 0,
+PARENTS			;570, N
+ALLOWED RACES	;Paratis, Tarapin
+
+PROJECT			;632, Ultimate Assault Missiles, 9, 33, 		0, 25, 0, 27,
+COMPONENT IMPROVEMENTS	;108, 9, 36, 1000, 35, 300, 0, 2500, 0,
+PARENTS			;300, N
+
+PROJECT			;633, Improved Defence Rockets, 4, 35, 		0, 25, 0, 8.0,
+COMPONENT IMPROVEMENTS	;140, 4, 6, 260, 13, 120, 0, 950, 0,
+PARENTS			;482, N
+
+PROJECT			;634, Enhanced Defence Rockets, 6, 35, 		0, 25, 0, 14.7,
+COMPONENT IMPROVEMENTS	;140, 6, 8, 270, 14, 140, 0, 900, 0,
+PARENTS			;633, N
+
+PROJECT			;635, Advanced Defence Rockets, 8, 35, 		0, 25, 0, 22.6,
+COMPONENT IMPROVEMENTS	;140, 8, 10, 280, 15, 160, 0, 850, 0,
+PARENTS			;634, N
+
+PROJECT			;636, Ultimate Gravitic Resonance, 7, 14, 		0, 20, 0, 18.5,
+COMPONENT IMPROVEMENTS	;116, 7, 50, 340, 90, 400, 3, 7000, 0,
+PARENTS			;350, N
+
+PROJECT			;637, Beam Ultraflow, 8, 3, 		0, 19, 0, 22.6,
+COMPONENT IMPROVEMENTS	;3, 8, 38, 600, 30, 1200, 2, 1300, 0,
+PARENTS			;11, N

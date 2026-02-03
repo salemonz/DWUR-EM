@@ -1,0 +1,31 @@
+'Distant Worlds - dialogue - Version 1.9.5.10 - Modded by the Distant Worlds Mod Editor by Sabranan
+
+GREETING_INTRODUCTION	;Greetings to you outsider. We are the {0}.
+GREETING_FRIENDLY	;We are listening.
+GREETING_NEUTRAL	;You seek an audience?
+GREETING_ANGRY	;You are not welcome.
+OFFER_FREETRADE	;We feel that trade and industry are highly civilizing activities. Won't you accept a Free Trade Agreement with us?\n\nWhat do you say?
+FREETRADE_ACCEPT	;We happily accept a Free Trade Agreement!\n\nCome and swim with us!
+FREETRADE_REJECT	;No, a Free Trade Agreement does not suit us.
+CANCELTREATY	;It is time to cancel the {0} that we have with you.
+CANCELTREATY_RESPONSE_FRIENDLY	;We felt that this was a good treaty.
+CANCELTREATY_RESPONSE_NEUTRAL	;As you wish.
+CANCELTREATY_RESPONSE_ANGRY	;Yes, this treaty is a bad one.
+TREATY_PROPOSAL	;What new arrangement?
+TREATY_ACCEPTRESPONSE	;May this new treaty profit us both!
+TREATY_REJECTRESPONSE	;It was not to be.
+TRADESANCTIONS_IMPOSE	;\n\nThe time has come for Trade Sanctions against you.
+TRADESANCTIONS_IMPOSE_RESPONSE_ANGRY	;We are glad to be finished with your ways\n\nStay away.
+TRADESANCTIONS_IMPOSE_RESPONSE_NEUTRAL	;We survived before we met you.
+TRADESANCTIONS_IMPOSE_RESPONSE_SURPRISED	;We see no reason for this.\n\nWe will just have to adapt.
+TRADESANCTIONS_LIFT	;We have decided to end our Trade Sanctions against you.
+TRADESANCTIONS_LIFT_RESPONSE	;A welcome action from you.
+WAR_DECLARE	;We declare WAR on you!\n\nWe will end your reign.
+WAR_DECLARE_RESPONSE_EAGER	;We are a peaceful people, but we know how to defend ourselves.
+WAR_DECLARE_RESPONSE_NEUTRAL	;Your aggression made this path inevitable.\n\nWe are ready!
+WAR_DECLARE_RESPONSE_SURPRISED	;How shocking!
+WAR_END	;This war has become very dark, gaining nothing and destroying everything. We propose an end to it.\n\nWhat do you say?
+WAR_END_ACCEPT	;Yes, this war must end.\n\nOur forces are returning.
+WAR_END_REJECT	;End the war? No, this war cannot end.
+GIFT_GIVE	;We send you a gift of {0} credits
+GIFT_THANKS	;Thank you for your kind gift

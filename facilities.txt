@@ -1,0 +1,119 @@
+﻿'Distant Worlds Facilities - 1.9.5.10 (Research Unleashed by Osito)
+
+'each line defines a single planetary facility or wonder with comma-separated data, up to a maximum of 50 facilities (0-49)
+' - ID: numeric ID value of facility
+' - Name: text of facility name
+' - Type: numeric code specifying the type of facility as specified in the following list:
+'     0=TroopTrainingCenter
+'     1=RoboticTroopFoundry
+'     2=CloningFacility
+'     3=PlanetaryShield
+'     4=GiantIonCannon
+'     5=RegionalCapital
+'     6=FortifiedBunker
+'     7=TerraformingFacility
+'     8=WONDER
+'     9=PirateBase
+'     10=PirateFortress
+'     11=ArmoredFactory
+'     12=SpyAcademy
+'     13=ScienceAcademy
+'     14=NavalAcademy
+'     15=MilitaryAcademy
+'     16=PirateCriminalNetwork
+' - WonderType: numeric code specifying the type of wonder as specified in the following list (only relevant when Type=8 (Wonder)):
+'     0=NONE
+'     1=EmpirePopulationGrowth: boost population growth throughout entire empire
+'     2=EmpireHappiness: boost happiness throughout entire empire
+'     3=EmpireResearchWeapons: boost weapons research for empire
+'     4=EmpireResearchEnergy: boost energy research for empire
+'     5=EmpireResearchHighTech: boost hightech research for empire
+'     6=EmpireIncome: boost colony income throughout entire empire
+'     7=ColonyPopulationGrowth: boost population growth for single colony
+'     8=ColonyHappiness: boost happiness for single colony
+'     9=ColonyDefense: increase defensive bonus for single colony
+'     10=ColonyConstructionSpeed: increase ship and base construction speed for single colony
+'     11=ColonyIncome: boost income for single colony
+'     12=RaceAchievement: special race-specific wonder, usually tied to race victory conditions
+' - PictureRef: index value mapping to image used to display facility (images\environment\planetaryfacilities folder)
+' - BuildCost: cost to build facility at a colony
+' - MaintenanceCost: annual maintenance cost of facility
+' - Value1: numeric value with unique meaning for each facility type as detailed below
+' - Value2: numeric value with unique meaning for each facility type as detailed below
+' - Value3: numeric value with unique meaning for each facility type as detailed below
+'Meanings of Value1-3 for facility types:
+' - TroopTrainingCenter: Value1-3=UNUSED
+' - RoboticTroopFoundry: Value1-3=UNUSED
+' - CloningFacility: Value1-3=UNUSED
+' - PlanetaryShield: Value1-3=UNUSED
+' - GiantIonCannon: Value1=Component Id of ion cannon weapon component, Value2-3=UNUSED
+' - RegionalCapital: Value1-3=UNUSED
+' - FortifiedBunker: Value1=defensive bonus percentage, Value2-3=UNUSED
+' - TerraformingFacility: Value1=rate of planetary damage repair - 1000 means repair 100% of damage in one year (lower values mean slower rate of damage repair), Value2-3=UNUSED
+' - PirateBase: Value1=empire research bonus percentage, Value2=colony income bonus percentage, Value3=colony corruption increase percentage
+' - PirateFortress: Value1=empire research bonus percentage, Value2=colony income bonus percentage, Value3=colony corruption increase percentage
+' - ArmoredFactory: Value1-3=UNUSED
+' - MilitaryAcademy: Value1 means percentage value increase in appearance chance for troop generals, Value2-3=UNUSED
+' - SpyAcademy: Value1 means percentage value increase in appearance chance for spies, Value2-3=UNUSED
+' - NavalAcademy: Value1 means percentage value increase in appearance chance for fleet admirals, Value2-3=UNUSED
+' - ScienceAcademy: Value1 means percentage value increase in appearance chance for scientists, Value2-3=UNUSED
+' - PirateCriminalNetwork: Value1=empire research bonus percentage, Value2=UNUSED, Value3=colony corruption increase percentage
+' - WONDER EmpirePopulationGrowth: Value1=colony development bonus percentage, Value2=empire population growth bonus percentage, Value3=Colony Type where can be built: 0=ANY, 1=Continental, 2=MarshySwamp, 3=Desert, 4=Ocean, 5=Ice, 6=Volcanic
+' - WONDER EmpireHappiness: Value1=colony development bonus percentage, Value2=empire happiness bonus percentage, Value3=Colony Type where can be built: 0=ANY, 1=Continental, 2=MarshySwamp, 3=Desert, 4=Ocean, 5=Ice, 6=Volcanic
+' - WONDER EmpireResearchWeapons: Value1=colony development bonus percentage, Value2=weapons research bonus percentage, Value3=Colony Type where can be built: 0=ANY, 1=Continental, 2=MarshySwamp, 3=Desert, 4=Ocean, 5=Ice, 6=Volcanic
+' - WONDER EmpireResearchEnergy: Value1=colony development bonus percentage, Value2=energy research bonus percentage, Value3=Colony Type where can be built: 0=ANY, 1=Continental, 2=MarshySwamp, 3=Desert, 4=Ocean, 5=Ice, 6=Volcanic
+' - WONDER EmpireResearchHighTech: Value1=colony development bonus percentage, Value2=high-tech research bonus percentage, Value3=Colony Type where can be built: 0=ANY, 1=Continental, 2=MarshySwamp, 3=Desert, 4=Ocean, 5=Ice, 6=Volcanic
+' - WONDER EmpireIncome: Value1=colony development bonus percentage, Value2=empire income bonus percentage, Value3=Colony Type where can be built: 0=ANY, 1=Continental, 2=MarshySwamp, 3=Desert, 4=Ocean, 5=Ice, 6=Volcanic
+' - WONDER ColonyPopulationGrowth: Value1=colony development bonus percentage, Value2=colony population growth bonus percentage, Value3=Colony Type where can be built: 0=ANY, 1=Continental, 2=MarshySwamp, 3=Desert, 4=Ocean, 5=Ice, 6=Volcanic
+' - WONDER ColonyHappiness: Value1=colony development bonus percentage, Value2=colony happiness bonus percentage, Value3=Colony Type where can be built: 0=ANY, 1=Continental, 2=MarshySwamp, 3=Desert, 4=Ocean, 5=Ice, 6=Volcanic
+' - WONDER ColonyDefense: Value1=colony development bonus percentage, Value2=colony defensive bonus percentage, Value3=Colony Type where can be built: 0=ANY, 1=Continental, 2=MarshySwamp, 3=Desert, 4=Ocean, 5=Ice, 6=Volcanic
+' - WONDER ColonyConstructionSpeed: Value1=colony development bonus percentage, Value2=construction speed bonus percentage, Value3=Colony Type where can be built: 0=ANY, 1=Continental, 2=MarshySwamp, 3=Desert, 4=Ocean, 5=Ice, 6=Volcanic
+' - WONDER ColonyIncome: Value1=colony development bonus percentage, Value2=colony income bonus percentage, Value3=Colony Type where can be built: 0=ANY, 1=Continental, 2=MarshySwamp, 3=Desert, 4=Ocean, 5=Ice, 6=Volcanic
+' - WONDER RaceAchievement: Value1=colony development bonus percentage, Value2=Special Function Code (0 if unused), Value3=Colony Type where can be built: 0=ANY, 1=Continental, 2=MarshySwamp, 3=Desert, 4=Ocean, 5=Ice, 6=Volcanic
+'      Meaning of Value2 Special Function Code for WONDER RaceAchievement: 0=NONE, 1=Generate Ancient Guardians (Mechanoids) at colony that builds this wonder, 2=Giant Kaltor bio-engineering center, 3=Intergalactic gateway that regularly sends convoys of military and civilian ships towards the capital of the empire where the wonder is built
+
+' - Description: extended textual description of facility. Should be no longer than 200 characters
+
+0, Troop Academy, 0, 0, 0,						 10000.0,  200.0,   0,  0,  0,		Allows the training of elite troops at a colony, giving them 50% greater strength than normal
+1, Robotic Troop Foundry, 1, 0, 1,				 15000.0,  200.0,   0,  0,  0,		Manufactures robotic troops at a colony. Robotic troops are not especially strong, but can be manufactured quickly, and have one third the normal maintenance costs
+2, Troop Cloning Facility, 2, 0, 2,				 15000.0,  200.0,   0,  0,  0,		Produces clone troops at a colony. The strongest current troop in your empire is cloned
+3, Giant Ion Cannon, 4, 0, 3,					 15000.0,  200.0, 105,  0,  0,		Fires massive ionized blasts at nearby enemy ships, disabling their engines and weapons
+4, Planetary Shield, 3, 0, 4,					 20000.0,  200.0,  0,  0,  0,		Projects a defensive shield around a planet, protecting the colony from enemy bombardment
+5, Regional Capital, 5, 0, 5,					 20000.0,  200.0,   0,  0,  0,		Regional Capitals lower corruption in your nearby colonies, increasing revenue for your empire. This project allows you to build one additional regional capital in your empire
+6, Regional Capital, 5, 0, 6,					 20000.0,  200.0,   0,  0,  0,		Regional Capitals lower corruption in your nearby colonies, increasing revenue for your empire. This project allows you to build one additional regional capital in your empire
+7, Regional Capital, 5, 0, 7,					 20000.0,  200.0,   0,  0,  0,		Regional Capitals lower corruption in your nearby colonies, increasing revenue for your empire. This project allows you to build one additional regional capital in your empire
+8, Fortified Bunker, 6, 0, 8,					 10000.0,  200.0,  10,  0,  0,		Provides a defensive bonus for troops defending a colony. Their defensive strength is increased by the amount below when fending off invasions
+9, Terraforming Facility, 7, 0, 9,				 20000.0,  200.0, 200,  750,  51,		Repairs planetary damage to a colony, thus improving the quality and increasing the happiness and income of the colony. Although damage will naturally repair over time, the Terraforming Facility repairs damage much faster
+
+10, Bakuras Highspeed Shipyards, 8, 10, 10,		 50000.0, 1000.0,  20, 100,  0,		A massive array of orbital star-ship construction yards. Construction speed is increased for all ships and bases built at the colony with this wonder
+11, Merkidor Planetary Fortress, 8, 9, 11,		 50000.0, 1000.0,  20,  20,  0,		An impregnable stronghold with heavy defensive weaponry. Defense against invasion is increased for the colony with this wonder
+12, Holographic Network, 8, 8, 12,				 50000.0, 1000.0,  20, 100,  0,		A huge virtual reality system that presents highly immersive recreation. Happiness is increased for the colony with this wonder
+13, Traders Bazaar, 8, 11, 13,					 50000.0, 1000.0,  20,  30,  0,		A colossal marketplace connected by a maze of alleys and bridges. Income is increased for the colony with this wonder
+14, Advanced Medicomplex, 8, 7, 14,				 50000.0, 1000.0,  20, 100,  0,		The finest medical treatment is available at this facility. The population growth rate is increased for the colony with this wonder
+15, Holographic Universe, 8, 2, 15,				100000.0, 2000.0,  40,  30,  0,		An all-encompassing virtual reality world that can entertain an individual for weeks at a time. Increases the happiness for every colony in an empire
+16, Koloros Medical Academy, 8, 1, 16,			100000.0, 2000.0,  40,  30,  0,		Provides unequalled medical training to produce the best physicians in the galaxy. Increases the population growth rate for every colony in an empire
+17, Danuta Engineering Center, 8, 4, 17,		100000.0, 2000.0,  40,  50,  0,		Advanced facilities for studying the secrets of high-energy physics. Provides an Energy research bonus for the empire
+18, Rusan Technology Installation, 8, 5, 18,	100000.0, 2000.0,  40,  50,  0,		Center for advanced technology projects. Provides a HighTech research bonus for the empire
+19, Casidor Weapons Facility, 8, 3, 19,			100000.0, 2000.0,  40,  50,  0,		Center for development and testing of radical new weaponry. Provides a Weapons research bonus for the empire
+20, Trade Guild, 8, 6, 20,						100000.0, 2000.0,  40,  20,  0,		A vast hub of galactic commerce spread across hundreds of free-floating atmospheric platforms. Increases the income for every colony in an empire
+21, Universal Hive, 8, 12, 21,					100000.0, 2000.0,  50,   0,  0,		The ultimate expression of telepathic harmony, the Universal Hive is a crowning cultural achievement
+22, Galactic Archives, 8, 12, 22,				100000.0, 2000.0,  50,   0,  0,		Both a museum and a library, the Galactic Archives are a vast storehouse of all galactic history. Ancient records and artifacts from the remotest corners of the galaxy are stored here
+23, Lava Palace Resort, 8, 12, 23,				100000.0, 2000.0,  50,   0,  6,		An exquisite resort with shimmering lava lakes and millions of glittering gemstones. The Lava Palace Resort attracts visitors from all over the known galaxy
+24, Underwater Palace, 8, 12, 24,				100000.0, 2000.0,  50,   0,  4,		A spectacular underwater palace with thousands of pearl-encrusted spires. Vast vaults beneath the Underwater Palace also store an enormous wealth of precious crystals
+
+25, Hidden Pirate Base, 9, 0, 25,				 30000.0,      0,  50,  25, 10,		The Hidden Pirate Base is a secret base of operations for raiders, smugglers and criminals of all kinds. From here the local planetary crimelord directs his network of criminal enterprises, amassing income from various sources.\n\nThis planetary facility gives our pirate faction permanent control of the colony where it is built. It also increases the research output for our pirate faction
+26, Hidden Pirate Fortress, 10, 0, 26,			100000.0,      0, 100,  50, 20,		The Hidden Pirate Fortress is a large secret base of operations for raiders, smugglers and criminals of all kinds. From this enormous fortress the local planetary crimelord directs his network of criminal enterprises, amassing income from various sources.\n\nThis planetary facility gives our pirate faction permanent control of the colony where it is built. It also increases the research output for our pirate faction
+27, Armored Factory, 11, 0, 27,					 20000.0,  200.0,   0,   0,  0,		Allows the recruitment of Armored troop units at a colony. Armored troops have very high attack strength and are thus specialized at invading enemy colonies
+28, Spy Academy, 12, 0, 28,						 40000.0,  200.0,  30,   0,  0,		Increases the chance of new Intelligence Agents appearing in our empire
+29, Science Academy, 13, 0, 29,					 40000.0,  200.0,  30,   0,  0,		Increases the chance of new Scientists appearing in our empire
+30, Naval Academy, 14, 0, 30,					 40000.0,  200.0,  30,   0,  0,		Increases the chance of new Fleet Admirals appearing in our empire
+31, Military Academy, 15, 0, 31,				 30000.0,  200.0,  30,   0,  0,		Increases the chance of new Troop Generals appearing in our empire. Also allows recruitment of Special Forces troop units. Special Forces are specialized at taking out enemy defences prior to a colony invasion
+32, Criminal Network, 16, 0, 32,				200000.0,      0, 100,   0, 40,		The Criminal Network is a powerful criminal organization that allows a pirate faction to take full ownership of a colony, controlling it just like a standard empire. This means that the colony publicly identifies as belonging to us. We can then recruit troops here to invade other colonies. We can also build Colony Ships here to colonize other planets. And we can build Contruction Ships here too
+
+33, Bio-Engineering Facility, 8, 12, 33,		100000.0, 2000.0,  50,   2,  3,		Enables the development and breeding of Giant Kaltors, which can be used in spreading infectious bio-agents.
+34, Sentient Computer Core, 8, 12, 34,			200000.0, 2000.0,  50,   1,  0,		Leads to a new life-form of sentient computer code and machines. This wonder also provides a +75% bonus in high-tech research for your empire. Additionally, for each year this wonder remains standing, your empire will receive a 5% victory condition bonus.
+35, Strategic Command HQ, 8, 12, 35,		    200000.0, 2000.0,  50,   3,  0,		Provides a Strategic Command Headquarters for coordinating all military and private fleet operations. This operation will make available additional military and civilian ship resources to the empire. These resources will appear at the capital of the empire that built the wonder. 
+36, Galactic Colonization Centre, 8, 1, 36,		100000.0, 2000.0,  10,  50,  0,		Provides an integrated centre for planning your colonization on a galactic scale.  Increases the population growth rate for every colony in an empire.
+37, Distant Worlds 2, 8, 2, 37,					100000.0, 2000.0,  10,  50,  0,		Originally expected in the mid-21st century, this wonder of the Universe contains the long anticipated sequel to the greatest 4x game of all time, Distant Worlds. The release of Distant Worlds 2 increases the happiness for every colony in an empire.
+38, Galactic Capital, 8, 6, 38,					100000.0, 2000.0,  20,  50,  0,		Your expertise in trade and government has earned you the right to designate one of your planets the 'Galactic Capital'. Income is increased for the colony with this wonder
+39, Dwarf Fortress, 8, 9, 39,					 75000.0, 1500.0,   0,  50,  0,		Fearful of an alien invasion, an entire colony's population moves into heavily defended subterranean fortresses. Defense against invasion is increased for the colony with this wonder.

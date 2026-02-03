@@ -1,0 +1,225 @@
+'Distant Worlds - Characters - 1.9.0.0 - Modded by the Distant Worlds Mod Editor by Sabranan
+
+
+'Each character line below is comprised of comma-separated data as follows:
+' - Appearance order: order that this character appears in the game relative to other characters. A value of zero (0) means that the character is present at the start of the game
+' - Name: name of the character
+' - Role: the type of character, selected from one of the following values: 1=Faction Leader, 2=Ambassador, 3=Colony Governor, 4=Fleet Admiral, 5=Troop General, 6=Intelligence Agent, 7=Scientist, 8=Pirate Leader, 9=Ship Captain
+' - Picture filename: optional name of image file used to represent this character. Only PNG image files are supported. The filename should include the file type suffix (.png). The image file itself should be placed in the images\units\characters folder (or customization\THEMENAME\characterImages folder). If no image is specified then the appropriate race image will be used
+' - Race override: optional name of the race for this character, if different from the default race for the file. Name must match a race name found in the races folder
+
+'The following skills should be set between -100 and +100. Note that the character's role will determine which skills actually apply (e.g. only a Fleet Admiral can benefit from Ship Maneuvering skill)
+' 0=None, 1=Diplomacy, 2=ColonyIncome, 3=TradeIncome, 4=TourismIncome, 5=ColonyCorruption, 6=ColonyHappiness, 7=PopulationGrowth,
+' 8=MiningRate, 9=TroopRecruitment, 10=MilitaryShipConstructionSpeed, 11=CivilianShipConstructionSpeed, 12=ColonyShipConstructionSpeed, 
+' 13=FacilityConstructionSpeed, 14=ResearchWeapons, 15=ResearchEnergy, 16=ResearchHighTech, 17=Espionage, 18=CounterEspionage, 
+' 19=Sabotage, 20=Concealment, 21=PsyOps, 22=Assassination, 23=MilitaryShipMaintenance, 24=MilitaryBaseMaintenance, 25=CivilianShipMaintenance, 
+' 26=CivilianBaseMaintenance, 27=TroopMaintenance, 28=WarWeariness, 29=Targeting, 30=Countermeasures, 31=ShipManeuvering, 32=Fighters, 
+' 33=ShipEnergyUsage, 34=WeaponsDamage, 35=WeaponsRange, 36=ShieldRechargeRate, 37=DamageControl, 38=RepairBonus, 39=HyperjumpSpeed, 
+' 40=TroopGroundAttack, 41=TroopGroundDefense, 42=TroopExperienceGain, 43=TroopRecoveryRate, 44=TroopStrengthArmor, 45=TroopStrengthInfantry, 
+' 46=TroopStrengthSpecialForces, 47=TroopStrengthPlanetaryDefense, 48=SmugglingIncome, 49=SmugglingEvasion, 50=BoardingAssault
+' - Skill Type 1: 0=None, 1 to 50=specific skill type (see values above and Modding Guide), ?=select random skill appropriate for role
+' - Skill Level 1: -100 to +100, ?=select random skill level between 0 and 20
+' - Skill Type 2: 0=None, 1 to 50=specific skill type (see values above and Modding Guide), ?=select random skill appropriate for role
+' - Skill Level 2: -100 to +100, ?=select random skill level between 0 and 20
+' - Skill Type 3: 0=None, 1 to 50=specific skill type (see values above and Modding Guide), ?=select random skill appropriate for role
+' - Skill Level 3: -100 to +100, ?=select random skill level between 0 and 20
+' - Skill Type 4: 0=None, 1 to 50=specific skill type (see values above and Modding Guide), ?=select random skill appropriate for role
+' - Skill Level 4: -100 to +100, ?=select random skill level between 0 and 20
+
+'The following traits can be set for each character. Note that the character's role will determine which traits actually apply
+' - Trait Type 1,2,3: 0=None, 1 to 95=specific trait type (see values below and Modding Guide), ?=select random trait appropriate for role. NOTE: must not specify opposing positive and negative traits, e.g. Paranoid and Trusting
+' 0=None, 1=Paranoid, 2=Trusting, 3=PeaceThroughStrength, 4=Pacifist, 5=Expansionist, 6=Isolationist, 7=Diplomat, 8=Obnoxious, 9=Famous, 
+' 10=Disliked, 11=GoodAdministrator, 12=PoorAdministrator, 13=BeanCounter, 14=Generous, 15=Engineer, 16=Luddite, 17=FreeTrader, 18=Protectionist, 
+' 19=Environmentalist, 20=Industrialist, 21=InspiringPresence, 22=Demoralizing, 23=Organized, 24=Disorganized, 25=HealthOriented, 26=LaborOriented, 
+' 27=Spiritual, 28=Logical, 29=GoodStrategist, 30=PoorStrategist, 31=Uninhibited, 32=Measured, 33=Addict, 34=Sober, 35=Courageous, 36=Weak, 
+' 37=Tolerant, 38=Xenophobic, 39=EloquentSpeaker, 40=PoorSpeaker, 41=Corrupt, 42=Lawful, 43=Lazy, 44=Energetic, 45=Linguist, 46=TongueTied, 
+' 47=Technical, 48=NonTechnical, 49=GoodTactician, 50=PoorTactician, 51=StrongSpaceAttacker, 52=PoorSpaceAttacker, 53=StrongSpaceDefender, 
+' 54=PoorSpaceDefender, 55=Drunk, 56=ToughDiscpline, 57=LaxDiscipline, 58=LocalDefenseTactics, 59=PlanetarySupport, 60=GoodSpaceLogistician, 
+' 61=PoorSpaceLogistician, 62=NaturalSpaceLeader, 63=SkilledNavigator, 64=PoorNavigator, 65=StrongGroundAttacker, 66=PoorGroundAttacker, 
+' 67=StrongGroundDefender, 68=PoorGroundDefender, 69=GoodGroundLogistician, 70=PoorGroundLogistician, 71=NaturalGroundLeader, 72=GoodRecruiter, 
+' 73=PoorRecruiter, 74=CarefulAttacker, 75=RecklessAttacker, 76=DoubleAgent, 77=Creative, 78=Methodical, 79=ForeignSpy, 80=Patriot, 81=UltraGenius,
+' 82=Uninhibited (Intelligence Agent), 83=Measured (Intelligence Agent), 84=Addict (Intelligence Agent), 85=Sober (Intelligence Agent),
+' 86=Courageous (Intelligence Agent), 87=Weak (Intelligence Agent), 88=Tolerant (Intelligence Agent), 89=Xenophobic (Intelligence Agent),
+' 90=EloquentSpeaker (Intelligence Agent), 91=PoorSpeaker (Intelligence Agent), 92=Corrupt (Intelligence Agent), 93=Lawful (Intelligence Agent), 
+' 94=Smuggler, 95=BountyHunter
+
+?, Des Vondrame, 1, ackdarian-leader1.png, Ackdarian, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Kum Faluli, 1, ackdarian-leader2.png, Ackdarian, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Less Wonthussim, 1, ackdarian-leader3.png, Ackdarian, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Toss Gegreilas, 1, ackdarian-leader4.png, Ackdarian, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Shema Zhil, 1, ackdarian-leader1.png, Ackdarian, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Thianor Valnirol, 1, ackdarian-leader2.png, Ackdarian, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Ner Jis, 1, ackdarian-leader3.png, Ackdarian, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Tom Vogoras, 1, ackdarian-leader4.png, Ackdarian, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Lal Thirguli, 1, ackdarian-leader1.png, Ackdarian, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Thitarass Grunionlis, 1, ackdarian-leader2.png, Ackdarian, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Fil Fielvanthego, 1, ackdarian-leader3.png, Ackdarian, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Hen Cuntho, 1, ackdarian-leader4.png, Ackdarian, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Thugyulin Nain, 1, ackdarian-leader1.png, Ackdarian, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Urgan Gres, 1, ackdarian-leader2.png, Ackdarian, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Easasves Zhas, 1, ackdarian-leader3.png, Ackdarian, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Lul Zelli, 1, ackdarian-leader4.png, Ackdarian, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Kossuge Thorliollar, 1, ackdarian-leader1.png, Ackdarian, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Elshess Zevithuh, 1, ackdarian-leader2.png, Ackdarian, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Ardlesan Zhajasha, 1, ackdarian-leader3.png, Ackdarian, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Kelas Kijullu, 1, ackdarian-leader4.png, Ackdarian, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Than Kogelvra, 2, ackdarian-diplomat1.png, Ackdarian, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Dos Toghos, 2, ackdarian-diplomat2.png, Ackdarian, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Ivi Lah, 2, ackdarian-diplomat3.png, Ackdarian, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Vess Thogu, 2, ackdarian-diplomat4.png, Ackdarian, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Krestalim Kilesti, 2, ackdarian-diplomat1.png, Ackdarian, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Sion Zalhrerior, 2, ackdarian-diplomat2.png, Ackdarian, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Ceanur Shees, 2, ackdarian-diplomat3.png, Ackdarian, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Cen Huh, 2, ackdarian-diplomat4.png, Ackdarian, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Dum Thar, 2, ackdarian-diplomat1.png, Ackdarian, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Krass Thilshuh, 2, ackdarian-diplomat2.png, Ackdarian, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Naldlas Shojorein, 2, ackdarian-diplomat3.png, Ackdarian, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Nus Ulhnilvros, 2, ackdarian-diplomat4.png, Ackdarian, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Urduss Thioyainih, 2, ackdarian-diplomat1.png, Ackdarian, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Vahass Thikardlu, 2, ackdarian-diplomat2.png, Ackdarian, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Zimveal Vilunnor, 2, ackdarian-diplomat3.png, Ackdarian, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Yinyiss Zhas, 2, ackdarian-diplomat4.png, Ackdarian, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Yinyuss Zellvu, 2, ackdarian-diplomat1.png, Ackdarian, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Yiyolli Vomandlus, 2, ackdarian-diplomat2.png, Ackdarian, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Yognellucae Thul, 2, ackdarian-diplomat3.png, Ackdarian, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Dusadrashress Zalmaghel, 2, ackdarian-diplomat4.png, Ackdarian, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Digrusso Zheromnar, 3, ackdarian-diplomat1.png, Ackdarian, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Cuyago Wukoya, 3, ackdarian-diplomat2.png, Ackdarian, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Dorre Werossan, 3, ackdarian-diplomat3.png, Ackdarian, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Farvimennus Wam, 3, ackdarian-diplomat4.png, Ackdarian, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Handriehha Wiommaetle, 3, ackdarian-diplomat1.png, Ackdarian, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Hon Wahholi, 3, ackdarian-diplomat2.png, Ackdarian, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Kessar Wissirum, 3, ackdarian-diplomat3.png, Ackdarian, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Lama Wonthussim, 3, ackdarian-diplomat4.png, Ackdarian, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Meatar Waevomaem, 3, ackdarian-diplomat1.png, Ackdarian, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Nervi Udnuhhem, 3, ackdarian-diplomat2.png, Ackdarian, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Phensal Ullvulhrum, 3, ackdarian-diplomat3.png, Ackdarian, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Saandri Ullvulhrum, 3, ackdarian-diplomat4.png, Ackdarian, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Sulalna Umnae, 3, ackdarian-diplomat1.png, Ackdarian, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Taeliam Unserae, 3, ackdarian-diplomat2.png, Ackdarian, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Thightus Turaghae, 3, ackdarian-diplomat3.png, Ackdarian, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Vogigyahol Tas, 3, ackdarian-diplomat4.png, Ackdarian, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Zetes Toghos, 3, ackdarian-diplomat1.png, Ackdarian, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Zos Tihaghun, 3, ackdarian-diplomat2.png, Ackdarian, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Zusrurdrur Zhansimvel, 3, ackdarian-diplomat3.png, Ackdarian, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Yourso Zhotles, 3, ackdarian-diplomat4.png, Ackdarian, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Ardlesan Vomandlus, 4, ackdarian-admiral1.png, Ackdarian, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Cen Zallus, 4, ackdarian-admiral2.png, Ackdarian, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Fil Zevithuh, 4, ackdarian-admiral3.png, Ackdarian, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Geass Uranson, 4, ackdarian-admiral4.png, Ackdarian, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Hen Thave, 4, ackdarian-admiral1.png, Ackdarian, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Iglulal Thirguli, 4, ackdarian-admiral2.png, Ackdarian, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Kelas Felvon, 4, ackdarian-admiral3.png, Ackdarian, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Lal Iana, 4, ackdarian-admiral4.png, Ackdarian, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Mendrel Wukoya, 4, ackdarian-admiral1.png, Ackdarian, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Nus Wissirum, 4, ackdarian-admiral2.png, Ackdarian, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Ogum Ulhnilvros, 4, ackdarian-admiral3.png, Ackdarian, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Phoma Zhansimvel, 4, ackdarian-admiral4.png, Ackdarian, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Siesvar Zheromnar, 4, ackdarian-admiral1.png, Ackdarian, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Taeliam Werossan, 4, ackdarian-admiral2.png, Ackdarian, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Ulsam Thorliollar, 4, ackdarian-admiral3.png, Ackdarian, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Vess Valnirol, 4, ackdarian-admiral4.png, Ackdarian, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Zimveal Zhajasha, 4, ackdarian-admiral1.png, Ackdarian, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Adamnoh Shudrune, 4, ackdarian-admiral2.png, Ackdarian, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Bessiogreir Zallmaghel, 4, ackdarian-admiral3.png, Ackdarian, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Cimvommal Shon, 4, ackdarian-admiral4.png, Ackdarian, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Docluhhe Yammem, 5, ackdarian-general1.png, Ackdarian, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Eshnas Zhil, 5, ackdarian-general2.png, Ackdarian, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Foss Uranson, 5, ackdarian-general3.png, Ackdarian, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Gegreilas Thogu, 5, ackdarian-general4.png, Ackdarian, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Handriehha Valennen, 5, ackdarian-general1.png, Ackdarian, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Ihai Shees, 5, ackdarian-general2.png, Ackdarian, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Jiloro Thorliollar, 5, ackdarian-general3.png, Ackdarian, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Kijullu Yul, 5, ackdarian-general4.png, Ackdarian, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Lama Zellvu, 5, ackdarian-general1.png, Ackdarian, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Meyerve Zelmoruh, 5, ackdarian-general2.png, Ackdarian, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Nila Zhas, 5, ackdarian-general3.png, Ackdarian, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Olaohiehnu Wam, 5, ackdarian-general4.png, Ackdarian, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Phirracluh Zel, 5, ackdarian-general1.png, Ackdarian, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Saarnin Zinvuyo, 5, ackdarian-general2.png, Ackdarian, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Tannoyeh Yos, 5, ackdarian-general3.png, Ackdarian, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Umnae Wuhhaki, 5, ackdarian-general4.png, Ackdarian, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Vahinnolle Vilunnor, 5, ackdarian-general1.png, Ackdarian, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Wissirum Zalhrerior, 5, ackdarian-general2.png, Ackdarian, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Xes Zhel, 5, ackdarian-general3.png, Ackdarian, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Yinyiss Zhil, 5, ackdarian-general4.png, Ackdarian, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Yourso Zure, 6, ackdarian-spy1.png, Ackdarian, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Aadmogohhu Zhas, 6, ackdarian-spy2.png, Ackdarian, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Baoshrigi Thar, 6, ackdarian-spy3.png, Ackdarian, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Ceyago Zeis, 6, ackdarian-spy4.png, Ackdarian, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Dirir Zheromnar, 6, ackdarian-spy1.png, Ackdarian, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Eavodmi Wissirum, 6, ackdarian-spy2.png, Ackdarian, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Felvon Zhallmaghel, 6, ackdarian-spy3.png, Ackdarian, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Gein Thogu, 6, ackdarian-spy4.png, Ackdarian, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Hon Zhotles, 6, ackdarian-spy1.png, Ackdarian, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Iayenruss Zelmoruh, 6, ackdarian-spy2.png, Ackdarian, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Jese Zellvu, 6, ackdarian-spy3.png, Ackdarian, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Kilvakih Thirguli, 6, ackdarian-spy4.png, Ackdarian, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Lir Zinvuyo, 6, ackdarian-spy1.png, Ackdarian, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Miar Zinvuyo, 6, ackdarian-spy2.png, Ackdarian, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Nonloss Umnae, 6, ackdarian-spy3.png, Ackdarian, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Oldramih Valnirol, 6, ackdarian-spy4.png, Ackdarian, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Phohu Zhas, 6, ackdarian-spy1.png, Ackdarian, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Siseae Zheromnar, 6, ackdarian-spy2.png, Ackdarian, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Thilshuh Zallus, 6, ackdarian-spy3.png, Ackdarian, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Yinyuss Zelmoruh, 6, ackdarian-spy4.png, Ackdarian, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Ardlesan Unserae, 7, ackdarian-scientist1.png, Ackdarian, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Cem Ulhnilvros, 7, ackdarian-scientist2.png, Ackdarian, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Kum Vomandlus, 7, ackdarian-scientist3.png, Ackdarian, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Easasves Valnu, 7, ackdarian-scientist4.png, Ackdarian, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Fess Fendrehimrea, 7, ackdarian-scientist1.png, Ackdarian, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Hen Shon, 7, ackdarian-scientist2.png, Ackdarian, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Isavalvun Thogu, 7, ackdarian-scientist3.png, Ackdarian, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Kuyuye Thikardlu, 7, ackdarian-scientist4.png, Ackdarian, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Mendrel Umnae, 7, ackdarian-scientist1.png, Ackdarian, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Naldlas Wissirum, 7, ackdarian-scientist2.png, Ackdarian, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Ogum Zallus, 7, ackdarian-scientist3.png, Ackdarian, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Phaci Zhas, 7, ackdarian-scientist4.png, Ackdarian, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Saandri Zhil, 7, ackdarian-scientist1.png, Ackdarian, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Tul Zheromnar, 7, ackdarian-scientist2.png, Ackdarian, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Yemearre Zeis, 7, ackdarian-scientist3.png, Ackdarian, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Ameam Sheigloldol, 7, ackdarian-scientist4.png, Ackdarian, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Cioldrioghto Thave, 7, ackdarian-scientist1.png, Ackdarian, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Dos Shor, 7, ackdarian-scientist2.png, Ackdarian, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Evian Shes, 7, ackdarian-scientist3.png, Ackdarian, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Geaghtam Thul, 7, ackdarian-scientist4.png, Ackdarian, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Iglulal Thar, 8, ackdarian-pirate1.png, Ackdarian, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Kelas Zhajasha, 8, ackdarian-pirate2.png, Ackdarian, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Lal Wukoya, 8, ackdarian-pirate3.png, Ackdarian, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Nalvarlunes Zel, 8, ackdarian-pirate4.png, Ackdarian, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Onresreir Zinvuyo, 8, ackdarian-pirate1.png, Ackdarian, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Phaye Thar, 8, ackdarian-pirate2.png, Ackdarian, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Siesvar Yos, 8, ackdarian-pirate3.png, Ackdarian, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Taeliam Zillvu, 8, ackdarian-pirate4.png, Ackdarian, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Ugrol Zommosto, 8, ackdarian-pirate1.png, Ackdarian, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Veagiejil Zom, 8, ackdarian-pirate2.png, Ackdarian, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Annodo Ulhnilvros, 8, ackdarian-pirate3.png, Ackdarian, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Dorre Umnae, 8, ackdarian-pirate4.png, Ackdarian, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Faluli Thikardlu, 8, ackdarian-pirate1.png, Ackdarian, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Girrio Fendrehimrea, 8, ackdarian-pirate2.png, Ackdarian, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Jeyilur Vomandlus, 8, ackdarian-pirate3.png, Ackdarian, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Kossuge Thogu, 8, ackdarian-pirate4.png, Ackdarian, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Liecunnun Thave, 8, ackdarian-pirate1.png, Ackdarian, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Melhri Shes, 8, ackdarian-pirate2.png, Ackdarian, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Nenhelhroh Zallus, 8, ackdarian-pirate3.png, Ackdarian, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Olaohiehnu Zhas, 8, ackdarian-pirate4.png, Ackdarian, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Phoma Zhil, 9, ackdarian-pirate1.png, Ackdarian, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Sanyonho Zhel, 9, ackdarian-pirate2.png, Ackdarian, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Tannoyeh Zheromnar, 9, ackdarian-pirate3.png, Ackdarian, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Ummassocma Zeis, 9, ackdarian-pirate4.png, Ackdarian, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Yinyuss Shor, 9, ackdarian-pirate1.png, Ackdarian, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Aldru Thul, 9, ackdarian-pirate2.png, Ackdarian, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Ceanur Thar, 9, ackdarian-pirate3.png, Ackdarian, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Dum Umnae, 9, ackdarian-pirate4.png, Ackdarian, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Eardlios Fendrehimrea, 9, ackdarian-pirate1.png, Ackdarian, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Fellam Zinvuyo, 9, ackdarian-pirate2.png, Ackdarian, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Geass Yos, 9, ackdarian-pirate3.png, Ackdarian, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Hon Zillvu, 9, ackdarian-pirate4.png, Ackdarian, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Ilnegear Zommosto, 9, ackdarian-pirate1.png, Ackdarian, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Kessuge Zom, 9, ackdarian-pirate2.png, Ackdarian, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Landreteaghros Ulhnilvros, 9, ackdarian-pirate3.png, Ackdarian, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Meatar Thogu, 9, ackdarian-pirate4.png, Ackdarian, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Ner Thave, 9, ackdarian-pirate1.png, Ackdarian, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Nonloss Shes, 9, ackdarian-pirate2.png, Ackdarian, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Osuhum Zallus, 9, ackdarian-pirate3.png, Ackdarian, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Phunsunlah Zhil, 9, ackdarian-pirate4.png, Ackdarian, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?

@@ -1,0 +1,65 @@
+﻿'Distant Worlds Fighters - 1.9.5.10
+
+'each line defines a single fighter with comma-separated data, up to a maximum of 30 fighters (0-29)
+' - ID: numeric ID value of fighter
+' - Name: text of fighter name
+' - Type: 0=interceptor that primarily targets enemy fighters, 1=bomber that primarily targets enemy ships and bases
+' - TechLevel: numeric value that defines relative tech level of fighter. AI will always build the researched fighter or bomber with the highest tech level.
+' - EnergyCapacity: maximum stored energy capacity of reactor
+' - EnergyRechargeRate: energy output rate of reactor
+
+' - TopSpeed: top speed of fighter. Top speed is used when attacking, but otherwise fighter moves at half of top speed.
+' - TopSpeedEnergyConsumptionRate: energy consumption rate when travelling at top speed. Energy consumption at half speed is half of this value.
+' - AccelerationRate: rate of acceleration for fighter (speed increase per second). Valid range from 5 to 100.
+' - TurnRate: turn angle per second in radians. Valid range from 0.5 to 6.28
+' - EngineExhaustImageIndex: index value mapping to engine thrust image in folder images\effects\enginethrusters
+
+' - ShieldsCapacity: maximum shields capacity
+' - ShieldRechargeRate: rate of shield recharge per second
+' - DamageRepairRate: rate of damage repair per second. Value of 1 means can repair 10% of damage per second. Valid range from 0 to 10.
+' - CountermeasureModifier: percentage value of countermeasures bonus for avoiding enemy weapons fire. Valid range is from 0 to 99.
+' - TargettingModifier: percentage value of targeting bonus when attacking enemy targets. Valid range is from 0 to 99.
+
+' - WeaponType: 0=beam weapon, 1=torpedo weapon, 2=missile weapon
+' - WeaponImageIndex: index value mapping to weapons image as specified below:
+'     Beam weapons - beam weapon image index (images\effects\weapons folder)
+'     Torpedo or Missile weapons - torpedo weapon image index (images\effects\weapons folder)
+' - WeaponDamage: damage amount of weapon
+' - WeaponRange: range of weapon
+' - WeaponEnergyRequired: energy consumed when firing weapon
+' - WeaponSpeed: speed of weapon when travelling to target
+' - WeaponDamageLoss: damage loss per 100 units range
+' - WeaponFireRate: fire rate in milliseconds
+' - WeaponSoundEffectFilename: filename of sound effect used when weapon fires (sounds\effects folder)
+
+0, Standard Fighter,			0, 100000, 30, 8,	80, 10, 20, 0.6, 0,	7, 0.4,  0, 60, 30,	0, 0,  2, 140, 4, 350, 1, 700,		laser.wav
+1, Interceptor,				0, 150000, 30, 8,	105, 10, 36, 0.8, 0,	10, 0.5,  0, 80, 40,	0, 0,  3, 160, 4, 370, 1, 700,		laser.wav
+2, Fast Interceptor,			0, 300000, 35, 9,	120, 10, 42, 0.87, 1,	15, 0.6,  0, 83, 45,	0, 0,  4, 180, 4, 410, 1, 700,		laser.wav
+3, Tactical Interceptor, 		0, 600000, 40, 10,	135, 10, 48, 0.94, 2,	20, 0.75, 0, 86, 50,	0, 1, 5, 200, 4, 430, 1, 700,		laser2.wav
+4, Advanced Fighter, 			0, 900000, 45, 12,	150, 10, 54, 1.01, 2,	25, 1.0,  1, 89, 55,	0, 1,  6, 220, 4, 450, 1,  700,		laser2.wav
+5, Superiority Star-Fighter,		0, 1200000, 50, 14,	165, 10, 60, 1.08, 3,	30, 1.25, 1, 92, 60,	0, 3,  7, 240, 4, 480, 1,  700,		laser4.wav
+
+6, Standard Bomber,			1, 130000, 30, 10,	70, 10, 16, 0.5,  0,	7, 0.4,  0, 50, 30,	1, 0,  24, 220, 15,  130, 2, 2700,	torpedo_small.wav
+7, Torpedo Bomber,			1, 195000, 30, 10,	90, 10, 28, 0.7,  0,	10, 0.5,  0, 75, 40,	1, 0,  36, 280, 15,  140, 2, 2700,	torpedo_small.wav
+8, Medium Torpedo Bomber,		1, 390000, 35, 11,	100, 10, 35, 0.75, 1,	15, 0.6, 0, 77, 45,	1, 0, 42, 290, 15,  150, 2, 2700,	torpedo_small.wav
+9, Heavy Torpedo Bomber,		1, 750000, 40, 12,	110, 10, 40, 0.8,  2,	20, 0.75, 0, 79, 50,	1, 1, 48, 300, 15,  160, 2, 2700,	torpedo_medium.wav
+10, Topredo Strike Bomber, 		1, 1050000, 45, 14,	120, 10, 45, 0.85, 2,	25, 1.0, 1, 81, 55,	1, 1, 54, 320, 15,  170, 2, 2700,	torpedo_medium.wav
+11, Topredo Assault Bomber, 		1, 1350000, 50, 16,	130, 10, 50, 0.9,  3,	30, 1.25,  1, 83, 60,	1, 3, 66, 340, 15,  180, 2, 2700,	torpedo_large.wav
+
+12, Missile Bomber, 			1, 390000, 35, 11,	100, 10, 35, 0.75, 1,	15, 0.6,  0, 77, 45,	2, 6, 18, 460, 15, 230, 0, 2700,	missile_launch.wav
+13, Tactical Missile Bomber,		1, 750000, 40, 12,	110, 10, 40, 0.8, 2,	20, 0.75, 0, 79, 50,	2, 6, 21, 510, 15, 250, 0, 2700,	missile_launch.wav
+14, Advanced Missile Bomber, 		1, 1050000, 45, 14,	120, 10, 45, 0.8,  2,	25, 1.0,  1, 81, 55,	2, 7, 24, 560, 15, 270, 0, 2700,	missile_launch.wav
+15, Missile Strike Bomber, 		1, 1350000, 50, 16,	130, 10, 50, 0.9, 3,	30, 1.25, 1, 83, 60,	2, 7, 30, 620, 15, 290, 0, 2700,	missile_launch.wav
+16, Missile Assault Bomber,		1, 1650000, 55, 18,	135, 10, 50, 0.9,  3,	35, 1.5,  1, 85, 65,	2, 7, 33, 640, 15, 300, 0, 2700,	missile_launch.wav
+
+17, Alpha Star-Fighter,			0, 1485000, 60, 18,	195, 10, 72, 1.25, 3,	40, 1.75, 2, 98, 70,	0, 3,  7, 300,  4, 520, 2,  700,	laser4.wav
+18, Omega Star-Bomber,			1, 1485000, 60, 20,	140, 10, 55, 1.0,  3,	45, 2.0,  2, 91, 75,	1, 3, 29, 400, 15,  200, 1, 2700,	torpedo_large.wav
+19, "Black Edition" Star-Bomber,	1, 1485000, 55, 16,	145, 10, 55, 1.0,  3,	45, 2.0,  2, 91, 75,	2, 7, 37, 650,  15,  340, 0, 3600,	missile_launch.wav
+
+20, Wyrm Fighter, 			0, 315000, 35, 9,	120, 10, 42, 0.87, 1,	15, 0.6, 0, 83, 45,	0, 0, 4, 180, 4, 410, 1, 700,		laser.wav
+21, Wyvern Interceptor, 		0, 915000, 45, 12,	150, 10, 54, 1.01, 2,	25, 1.0, 1, 89, 55,	0, 1, 6, 220, 4, 450, 1, 700,		laser2.wav
+22, Dragoon Star-Fighter, 		0, 1275000, 50, 14,	172, 10, 60, 1.15, 3,	30, 1.25, 1, 92, 60,	0, 3, 8, 240, 4, 480, 1, 700,		laser4.wav
+
+23, Wyrm Bomber, 			1, 405000, 35, 11,	100, 10, 35, 0.75, 1,	15, 0.6, 0, 77, 45,	1, 0, 42, 290, 15, 150, 2, 2700,	torpedo_small.wav
+24, Wyvern Assault Bomber, 		1, 1065000, 45, 14,	120, 10, 45, 0.85, 2,	25, 1.0, 1, 81, 55,	1, 1, 54, 320, 15, 170, 2, 2700,	torpedo_medium.wav
+25, Dragoon Star-Bomber, 		1, 1425000, 50, 16,	130, 10, 50, 1.0, 3,	30, 1.25, 1, 83, 60,	1, 3, 75, 340, 15, 180, 2, 2700,	torpedo_large.wav

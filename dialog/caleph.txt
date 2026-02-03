@@ -1,0 +1,49 @@
+'Distant Worlds - dialogue - Version 1.9.5.10 - Modded by the Distant Worlds Mod Editor by Sabranan
+
+PIRATE_PROTECTIONPROPOSE	;Looking for some 'insurance' when travelling through all those dangerous, pirate-infested systems?\n\nOur fee for six months protection is shown below
+PIRATE_PROTECTIONPROPOSEINITIATE	;We think that you need some protection - otherwise who knows what could happen to all those defenseless ships of yours...\n\nWe can provide six months protection for the modest amount show below.\n\nA bargain, don't you think?
+PIRATE_PROTECTIONACCEPTRESPONSE	;A sensible decision.\n\nYour ships are safe inside our security zone for the next six months
+PIRATE_PROTECTIONREJECTRESPONSE	;Cutting costs on security is pure foolishness!\n\nPerhaps you need a demonstration of what a lack of security means for your ships...
+PIRATE_ATTACKOFFER_SINGLEEMPIRE	;You appear to detest the vile {0} just as much as we do. How would you like to eliminate several of their bases in our area?\n\nWe can make this happen for you. All we ask is a fair payment of {1} credits to cover our expenses.\n\nSend the money and we'll get things started...
+PIRATE_ATTACKCOMMENCE	;Your transfer has been validated.\n\nOur forces are on their way to targets in the {0}!
+PIRATE_ALLIANCEPROPOSE	;Our previous contract with you has now expired. You would be wise to upgrade to a permanent alliance with us.\n\nFor {0} credits per month we agree to protect your ships. Plus we'll also secretly attack your enemies - without you getting blamed for it.\n\nA mutually beneficial arrangement. Do you accept?
+PIRATE_ALLIANCEACCEPTRESPONSE	;A fine decision.\n\nConsider us your allies from now on.\n\nBut please excuse us, we have to go and raid your enemies now.
+PIRATE_ALLIANCEREJECTRESPONSE	;You seem to like learning things the hard way.\n\nBut we are patient teachers. Prepare to be educated...
+GREETING_INTRODUCTION	;Welcome visitor!\n\nWe are the proud and powerful Caleph of the {0}.\n\nOur mastery of flight is unmatched\n\nIs there something we can do for you?
+GREETING_FRIENDLY	;To what do we owe the pleasure of your company, friend?
+GREETING_NEUTRAL	;What should we discuss?
+GREETING_ANGRY	;Explain your presence before us
+OFFER_FREETRADE	;We would be honored if you would join us in a Free Trade Agreement.\n\nWhat do you say?
+FREETRADE_ACCEPT	;Your offer of a Free Trade Agreement makes good sense. We accept
+FREETRADE_REJECT	;We are sorry, but we cannot commit to a Free Trade Agreement at this time
+CANCELTREATY	;After careful thought, we regret that we can no longer hold to our {0} with you.\n\nThis treaty is cancelled
+CANCELTREATY_RESPONSE_FRIENDLY	;We are surprised and somewhat concerned by your irrational cancellation of this treaty.\n\nBut that is your choice
+CANCELTREATY_RESPONSE_NEUTRAL	;Unfortunate, now leave our presence
+CANCELTREATY_RESPONSE_ANGRY	;Do not underestimate what being our enemy would feel like
+TREATY_PROPOSAL	;What exactly are you proposing?
+TREATY_ACCEPTRESPONSE	;We are honored by your acceptance.\n\nMay this agreement be strong and profitable!
+TREATY_REJECTRESPONSE	;How disappointing...
+TRADESANCTIONS_IMPOSE	;You leave us no choice but to impose Trade Sanctions against you.\n\nWe hope that you will learn your place, but until that time all trade between our two empires is terminated
+TRADESANCTIONS_IMPOSE_RESPONSE_ANGRY	;Our suspicions have been confirmed, this will not be forgotten
+TRADESANCTIONS_IMPOSE_RESPONSE_NEUTRAL	;You should be careful not to take on more than you can handle...
+TRADESANCTIONS_IMPOSE_RESPONSE_SURPRISED	;We are deeply dismayed by your betrayal!\n\nAre you sure about this?
+TRADESANCTIONS_LIFT	;Our Trade Sanctions against you have been lifted.\n\nNormal trade will now resume between us
+TRADESANCTIONS_LIFT_RESPONSE	;We welcome a return to free and open trade with you
+WAR_DECLARE	;We can no longer tolerate your insolence. We formally declare WAR on your empire.\n\nYou will be shown why we are the masters of flight
+WAR_DECLARE_RESPONSE_EAGER	;You have lit the fire, but it is YOU that will be consumed by it!
+WAR_DECLARE_RESPONSE_NEUTRAL	;Your overconfidence is without basis - You underestimate our abilities
+WAR_DECLARE_RESPONSE_SURPRISED	;We are shocked by your dishonorable betrayal!\n\nWe will never forget this treachery!
+WAR_END	;This war continues without end.\n\nA ceasefire is in order, don't you agree?
+WAR_END_ACCEPT	;We agree to a ceasefire. Our forces are standing down at once
+WAR_END_REJECT	;No, this war will continue
+GIFT_GIVE	;We send you a gift of {0} credits.\n\nMay it help to foster good relations between our two majestic empires
+GIFT_THANKS	;Thank you for your gift. It was a kind gesture
+WARNING	;A warning for us? What is it?
+WARNING_INTELLIGENCEMISSIONS	;We are aware of your secret missions against us. Stop them at once or face the consequences!
+WARNING_INTELLIGENCEMISSIONS_RESPONSE_FRIENDLY	;Covert missions against our friends? That would be most unlikely.\n\nNonetheless we will investigate your allegations
+WARNING_INTELLIGENCEMISSIONS_RESPONSE_NEUTRAL	;Thank you for your warning
+WARNING_INTELLIGENCEMISSIONS_RESPONSE_ANGRY	;Covert missions against you?\n\nWhy would we want to do such a thing?\n\nPerhaps you should think about the answer to that question...
+WARNING_ATTACKS	;Your outrageous military attacks against us must stop at once!\n\nBe warned that we will defend our territory with deadly force!
+WARNING_ATTACKS_RESPONSE_FRIENDLY	;This news is deeply troubling! Please accept our sincere apologies.\n\nBe assured that we will deal with the renegade military commanders involved in these despicable acts
+WARNING_ATTACKS_RESPONSE_NEUTRAL	;We will investigate this matter and act appropriately
+WARNING_ATTACKS_RESPONSE_ANGRY	;With the forces of our two empires in such close proximity, accidents will sometimes happen.\n\nSo we suggest that you remove your forces.

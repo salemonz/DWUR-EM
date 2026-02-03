@@ -1,0 +1,53 @@
+'Distant Worlds - dialogue - Version 1.9.5.10 - Modded by the Distant Worlds Mod Editor by Sabranan
+
+PIRATE_PROTECTIONPROPOSE	;You want us to protect you? Good idea!\n\nFor fee shown below we can 'protect' all your ships in our region for six months.\n\nReady to pay?
+PIRATE_PROTECTIONPROPOSEINITIATE	;Galaxy is dangerous place, you know. Easy to get hurt.\n\nFor small fee we can protect all your ships in our region for six months.\n\nYou should pay up, hmmm?
+PIRATE_PROTECTIONACCEPTRESPONSE	;Your money looks real good!\n\nNo accidents for your ships till we spent all the money, ok?
+PIRATE_PROTECTIONREJECTRESPONSE	;No pay - no protection.\n\nVery simple, it is
+PIRATE_PROTECTIONALREADYPAID	;You crazy alien! You already paid!\n\nCome back later. We take more money then
+PIRATE_BUYINFO	;Here's all the secret stuff we know about.\n\nJust clicky-clicky on anything you want, ok?
+PIRATE_ATTACKOFFER_EMPIRES	;We send big bashing on anyone on the list.\n\nJust clicky-clicky who you want bashed, ok?
+PIRATE_ATTACKOFFER_SINGLEEMPIRE	;You not like {0}? We could stomp on them for you.\n\nDon't worry - we not tell anyone, ok?\n\nJust pay us {1} credits and we take care of everything.\n\nSound good?
+PIRATE_ATTACKCOMMENCE	;We got the money. {0} getting a bashing!\n\nBye
+PIRATE_ALLIANCEPROPOSE	;We spent all that money you gave us. How about permanent alliance with us now?\n\nGive us {0} credits every month and we protect your ships and attack your enemies, without you getting in trouble.\n\nGood deal, yes?
+PIRATE_ALLIANCEACCEPTRESPONSE	;You smarter than you look!\n\nWe friends forever now - just keep sending that money, ok.\n\nHave to go now - we bash all your enemies!
+PIRATE_ALLIANCEREJECTRESPONSE	;Silly alien!\n\nWe have to eat, you know. No pay, no help for you - got it?
+PIRATE_ALLIANCECANCELRESPONSE	;Very, very bad.\n\nWe need your money - if you not give it, then we just have to take it anyway.\n\nNot too late to change mind, ok?
+GREETING_INTRODUCTION	;Welcome strange one! We are the {0}.\n\nWe are impressed by power and strength.\n\nLets be friends, we could be unstoppable together!
+GREETING_FRIENDLY	;Welcome back! What did you want to talk about?
+GREETING_NEUTRAL	;We are listening
+GREETING_ANGRY	;We're not very happy with you. So tell us what you want, then leave!
+OFFER_FREETRADE	;How about accepting our offer of a Free Trade Agreement?\n\nIt would be a great deal for you! And I suppose we would benefit from it too...\n\nDo you accept?
+FREETRADE_ACCEPT	;It's a deal!\n\nWe acccept the Free Trade Agreement
+FREETRADE_REJECT	;No deal.\n\nWe are not interested in a Free Trade Agreement just now
+CANCELTREATY	;Our {0} with you is over.\n\nNo hard feelings, right? We can renegotiate later if you want
+CANCELTREATY_RESPONSE_FRIENDLY	;What's this about? We were great together...
+CANCELTREATY_RESPONSE_NEUTRAL	;Our deal is over?\n\nLets see who else wants to be our friends, your enemies perhaps?
+CANCELTREATY_RESPONSE_ANGRY	;You will regret this more than us
+TREATY_PROPOSAL	;What's the deal?
+TREATY_ACCEPTRESPONSE	;Celebration! We're partners now!
+TREATY_REJECTRESPONSE	;We are sad about this
+TRADESANCTIONS_IMPOSE	;You bet the wrong way this time: Trade Sanctions on you!\n\nWe're not trading with your empire again!
+TRADESANCTIONS_IMPOSE_RESPONSE_ANGRY	;Trade Sanctions?! This is how you treat us?\n\nIt will be you who is sorry.
+TRADESANCTIONS_IMPOSE_RESPONSE_NEUTRAL	;No trading with you?\n\nWe don't need your trade.
+TRADESANCTIONS_IMPOSE_RESPONSE_SURPRISED	;Where is your honor? We are hurt.
+TRADESANCTIONS_LIFT	;It's your lucky day: we're lifting our Trade Sanctions against you.\n\nWe will now resume trading with you. But no more funny business, we are friends now right?
+TRADESANCTIONS_LIFT_RESPONSE	;Hmm well don't try it again...
+WAR_DECLARE	;You insult us no more! We declare WAR on you!\n\nYou'll be sorry now!
+WAR_DECLARE_RESPONSE_EAGER	;You think you'll defeat us?! You're wrong.\n\nWe'll see what mess our friends make of you.
+WAR_DECLARE_RESPONSE_NEUTRAL	;Oh, lets see what our friends think of you doing this to us!
+WAR_DECLARE_RESPONSE_SURPRISED	;We thought you liked us?!\n\nYou can't do this! What did we do?
+WAR_END	;This war is not good for us. It should end.\n\nWhat do you say?
+WAR_END_ACCEPT	;Yes, we agree fighting is pointless
+WAR_END_REJECT	;No, we think we are on the winning side.\n\nSo we're not stopping now!
+GIFT_GIVE	;Here's a gift for you: {0} credits
+GIFT_THANKS	;Thanks for your gift!\n\nYou know, we really like money. And people who give us money
+WARNING	;What did we do wrong?
+WARNING_INTELLIGENCEMISSIONS	;Stop doing all those spy things on us!\n\nWe can see how devious you are. We will answer with force if you carry on!
+WARNING_INTELLIGENCEMISSIONS_RESPONSE_FRIENDLY	;Spy missions on you?\n\nYou must have gotten mixed up friend. That can't be us
+WARNING_INTELLIGENCEMISSIONS_RESPONSE_NEUTRAL	;Spy missions on you?\n\nYou must have gotten mixed up. That can't be us
+WARNING_INTELLIGENCEMISSIONS_RESPONSE_ANGRY	;Spy missions against you?\n\nWe wouldn't do it if you was friendly to us
+WARNING_ATTACKS	;Stop attacking our ships and bases!\n\nWe're warning you: keep this up and you'll be sorry!
+WARNING_ATTACKS_RESPONSE_FRIENDLY	;Attacks? What are you talking about?\n\nThat wasn't us, friend
+WARNING_ATTACKS_RESPONSE_NEUTRAL	;Attacks? What are you talking about?\n\nThat wasn't us
+WARNING_ATTACKS_RESPONSE_ANGRY	;Attacks on you?\n\nMaybe we did do it. But you deserved it anyway, so there!

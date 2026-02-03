@@ -1,0 +1,16 @@
+﻿'Distant Worlds Race Families - 1.9.5.0
+
+'each line defines a single race family type with comma-separated data, up to a maximum of 30 race families (0-29)
+' - ID: unique numeric value identifying the race family
+' - Name: text of the race family name
+' - Special Function Code: numeric value that defines any special consideration for race family: 0=NOTHING, 1=Shakturi Likes, 2=Shakturi Hates
+
+0, Humanoid, 2
+1, Ursidian, 0
+2, Insectoid, 1
+3, Reptilian, 0
+4, Amphibian, 0
+5, Rodent, 0
+6, Machine, 2
+7, Avian, 0
+8, Silicoid, 0

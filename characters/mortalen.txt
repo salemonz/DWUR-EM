@@ -1,0 +1,225 @@
+'Distant Worlds - Characters - 1.9.0.0 - Modded by the Distant Worlds Mod Editor by Sabranan
+
+
+'Each character line below is comprised of comma-separated data as follows:
+' - Appearance order: order that this character appears in the game relative to other characters. A value of zero (0) means that the character is present at the start of the game
+' - Name: name of the character
+' - Role: the type of character, selected from one of the following values: 1=Faction Leader, 2=Ambassador, 3=Colony Governor, 4=Fleet Admiral, 5=Troop General, 6=Intelligence Agent, 7=Scientist, 8=Pirate Leader, 9=Ship Captain
+' - Picture filename: optional name of image file used to represent this character. Only PNG image files are supported. The filename should include the file type suffix (.png). The image file itself should be placed in the images\units\characters folder (or customization\THEMENAME\characterImages folder). If no image is specified then the appropriate race image will be used
+' - Race override: optional name of the race for this character, if different from the default race for the file. Name must match a race name found in the races folder
+
+'The following skills should be set between -100 and +100. Note that the character's role will determine which skills actually apply (e.g. only a Fleet Admiral can benefit from Ship Maneuvering skill)
+' 0=None, 1=Diplomacy, 2=ColonyIncome, 3=TradeIncome, 4=TourismIncome, 5=ColonyCorruption, 6=ColonyHappiness, 7=PopulationGrowth,
+' 8=MiningRate, 9=TroopRecruitment, 10=MilitaryShipConstructionSpeed, 11=CivilianShipConstructionSpeed, 12=ColonyShipConstructionSpeed, 
+' 13=FacilityConstructionSpeed, 14=ResearchWeapons, 15=ResearchEnergy, 16=ResearchHighTech, 17=Espionage, 18=CounterEspionage, 
+' 19=Sabotage, 20=Concealment, 21=PsyOps, 22=Assassination, 23=MilitaryShipMaintenance, 24=MilitaryBaseMaintenance, 25=CivilianShipMaintenance, 
+' 26=CivilianBaseMaintenance, 27=TroopMaintenance, 28=WarWeariness, 29=Targeting, 30=Countermeasures, 31=ShipManeuvering, 32=Fighters, 
+' 33=ShipEnergyUsage, 34=WeaponsDamage, 35=WeaponsRange, 36=ShieldRechargeRate, 37=DamageControl, 38=RepairBonus, 39=HyperjumpSpeed, 
+' 40=TroopGroundAttack, 41=TroopGroundDefense, 42=TroopExperienceGain, 43=TroopRecoveryRate, 44=TroopStrengthArmor, 45=TroopStrengthInfantry, 
+' 46=TroopStrengthSpecialForces, 47=TroopStrengthPlanetaryDefense, 48=SmugglingIncome, 49=SmugglingEvasion, 50=BoardingAssault
+' - Skill Type 1: 0=None, 1 to 50=specific skill type (see values above and Modding Guide), ?=select random skill appropriate for role
+' - Skill Level 1: -100 to +100, ?=select random skill level between 0 and 20
+' - Skill Type 2: 0=None, 1 to 50=specific skill type (see values above and Modding Guide), ?=select random skill appropriate for role
+' - Skill Level 2: -100 to +100, ?=select random skill level between 0 and 20
+' - Skill Type 3: 0=None, 1 to 50=specific skill type (see values above and Modding Guide), ?=select random skill appropriate for role
+' - Skill Level 3: -100 to +100, ?=select random skill level between 0 and 20
+' - Skill Type 4: 0=None, 1 to 50=specific skill type (see values above and Modding Guide), ?=select random skill appropriate for role
+' - Skill Level 4: -100 to +100, ?=select random skill level between 0 and 20
+
+'The following traits can be set for each character. Note that the character's role will determine which traits actually apply
+' - Trait Type 1,2,3: 0=None, 1 to 95=specific trait type (see values below and Modding Guide), ?=select random trait appropriate for role. NOTE: must not specify opposing positive and negative traits, e.g. Paranoid and Trusting
+' 0=None, 1=Paranoid, 2=Trusting, 3=PeaceThroughStrength, 4=Pacifist, 5=Expansionist, 6=Isolationist, 7=Diplomat, 8=Obnoxious, 9=Famous, 
+' 10=Disliked, 11=GoodAdministrator, 12=PoorAdministrator, 13=BeanCounter, 14=Generous, 15=Engineer, 16=Luddite, 17=FreeTrader, 18=Protectionist, 
+' 19=Environmentalist, 20=Industrialist, 21=InspiringPresence, 22=Demoralizing, 23=Organized, 24=Disorganized, 25=HealthOriented, 26=LaborOriented, 
+' 27=Spiritual, 28=Logical, 29=GoodStrategist, 30=PoorStrategist, 31=Uninhibited, 32=Measured, 33=Addict, 34=Sober, 35=Courageous, 36=Weak, 
+' 37=Tolerant, 38=Xenophobic, 39=EloquentSpeaker, 40=PoorSpeaker, 41=Corrupt, 42=Lawful, 43=Lazy, 44=Energetic, 45=Linguist, 46=TongueTied, 
+' 47=Technical, 48=NonTechnical, 49=GoodTactician, 50=PoorTactician, 51=StrongSpaceAttacker, 52=PoorSpaceAttacker, 53=StrongSpaceDefender, 
+' 54=PoorSpaceDefender, 55=Drunk, 56=ToughDiscpline, 57=LaxDiscipline, 58=LocalDefenseTactics, 59=PlanetarySupport, 60=GoodSpaceLogistician, 
+' 61=PoorSpaceLogistician, 62=NaturalSpaceLeader, 63=SkilledNavigator, 64=PoorNavigator, 65=StrongGroundAttacker, 66=PoorGroundAttacker, 
+' 67=StrongGroundDefender, 68=PoorGroundDefender, 69=GoodGroundLogistician, 70=PoorGroundLogistician, 71=NaturalGroundLeader, 72=GoodRecruiter, 
+' 73=PoorRecruiter, 74=CarefulAttacker, 75=RecklessAttacker, 76=DoubleAgent, 77=Creative, 78=Methodical, 79=ForeignSpy, 80=Patriot, 81=UltraGenius,
+' 82=Uninhibited (Intelligence Agent), 83=Measured (Intelligence Agent), 84=Addict (Intelligence Agent), 85=Sober (Intelligence Agent),
+' 86=Courageous (Intelligence Agent), 87=Weak (Intelligence Agent), 88=Tolerant (Intelligence Agent), 89=Xenophobic (Intelligence Agent),
+' 90=EloquentSpeaker (Intelligence Agent), 91=PoorSpeaker (Intelligence Agent), 92=Corrupt (Intelligence Agent), 93=Lawful (Intelligence Agent), 
+' 94=Smuggler, 95=BountyHunter
+
+?, Enkugej Azrikus, 1, mortalen-leader1.png, Mortalen, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Chogrogihz Ezissi, 1, mortalen-leader2.png, Mortalen, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Khonna Chossavu, 1, mortalen-leader3.png, Mortalen, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Chiania Eshonu, 1, mortalen-leader4.png, Mortalen, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Khini Kherzos, 1, mortalen-leader1.png, Mortalen, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Ivomahs Nokigi, 1, mortalen-leader2.png, Mortalen, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Jasskeze Ozovia, 1, mortalen-leader3.png, Mortalen, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Chemazzush Uvoz, 1, mortalen-leader4.png, Mortalen, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Jhikkia Kshamvoshmosta, 1, mortalen-leader1.png, Mortalen, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Khegonush Kshakara, 1, mortalen-leader2.png, Mortalen, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Umokau Sarei, 1, mortalen-leader3.png, Mortalen, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Vomennu Kshira, 1, mortalen-leader4.png, Mortalen, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Azizrehs Zhounzi, 1, mortalen-leader1.png, Mortalen, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Enkugej Udikai, 1, mortalen-leader2.png, Mortalen, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Mgekkohz Eruh, 1, mortalen-leader3.png, Mortalen, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Ivomahs Szuzuze, 1, mortalen-leader4.png, Mortalen, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Jhahshan Jyakyarna, 1, mortalen-leader1.png, Mortalen, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Khegonush Vrartikha, 1, mortalen-leader2.png, Mortalen, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Chuarizgu Dhengavya, 1, mortalen-leader3.png, Mortalen, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Ginimoj Sharjeiskukh, 1, mortalen-leader4.png, Mortalen, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Jhoves Nattra, 2, mortalen-diplomat1.png, Mortalen, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Ghivuro Khedja, 2, mortalen-diplomat2.png, Mortalen, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Nragihz Szixsekho, 2, mortalen-diplomat3.png, Mortalen, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Khoni Kranma, 2, mortalen-diplomat4.png, Mortalen, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Mukino Kshaswapta, 2, mortalen-diplomat1.png, Mortalen, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Chogrogihz Vahirda, 2, mortalen-diplomat2.png, Mortalen, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Chuggas Kopta, 2, mortalen-diplomat3.png, Mortalen, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Jhiammarihz Ercikhi, 2, mortalen-diplomat4.png, Mortalen, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Khaniya Thixizs, 2, mortalen-diplomat1.png, Mortalen, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Ishgous Kshinta, 2, mortalen-diplomat2.png, Mortalen, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Jhegguj Shekka, 2, mortalen-diplomat3.png, Mortalen, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Kugishgahz Minapa, 2, mortalen-diplomat4.png, Mortalen, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Vomennu Kshira, 2, mortalen-diplomat1.png, Mortalen, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Izaruh Xezsekhe, 2, mortalen-diplomat2.png, Mortalen, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Chiania Udikai, 2, mortalen-diplomat3.png, Mortalen, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Mukino Srasta, 2, mortalen-diplomat4.png, Mortalen, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Jinnumahs Lapera, 2, mortalen-diplomat1.png, Mortalen, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Khive Zheikish, 2, mortalen-diplomat2.png, Mortalen, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Krumokais Hrulwingikhat, 2, mortalen-diplomat3.png, Mortalen, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Jezgaihs Ashu, 2, mortalen-diplomat4.png, Mortalen, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Ghemasso Kharmaja, 3, mortalen-diplomat1.png, Mortalen, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Naezzaenkaeh Jekha, 3, mortalen-diplomat2.png, Mortalen, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Chiania Zhierszethis, 3, mortalen-diplomat3.png, Mortalen, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Jhassho Dhuda, 3, mortalen-diplomat4.png, Mortalen, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Kavoumoj Vittomkhalwi, 3, mortalen-diplomat1.png, Mortalen, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Kugishgahz Szuka, 3, mortalen-diplomat2.png, Mortalen, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Khove Szizhi, 3, mortalen-diplomat3.png, Mortalen, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Zichozzo Xezsekhe, 3, mortalen-diplomat4.png, Mortalen, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Mgezu Eshonu, 3, mortalen-diplomat1.png, Mortalen, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Chiania Sustha, 3, mortalen-diplomat2.png, Mortalen, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Krekennon Khedja, 3, mortalen-diplomat3.png, Mortalen, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Mgezu Sezherkiess, 3, mortalen-diplomat4.png, Mortalen, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Ghavosshe Prikshidha, 3, mortalen-diplomat1.png, Mortalen, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Jhekke Chasalwa, 3, mortalen-diplomat2.png, Mortalen, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Ginimoj Vayami, 3, mortalen-diplomat3.png, Mortalen, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Chuaneshki Kshaswapta, 3, mortalen-diplomat4.png, Mortalen, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Krumokais Shekka, 3, mortalen-diplomat1.png, Mortalen, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Chiania Laaceeket, 3, mortalen-diplomat2.png, Mortalen, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Jasskeze Vittomkhalwi, 3, mortalen-diplomat3.png, Mortalen, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Khegonush Egerkora, 3, mortalen-diplomat4.png, Mortalen, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Egnuz Kherzos, 4, mortalen-admiral1.png, Mortalen, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Enkugej Eshonu, 4, mortalen-admiral2.png, Mortalen, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Ozellen Krekennon, 4, mortalen-admiral3.png, Mortalen, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Jhoves Ngizremmuaz, 4, mortalen-admiral4.png, Mortalen, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Travekkae Ngivhukaj, 4, mortalen-admiral1.png, Mortalen, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Ozuvish Kimezza, 4, mortalen-admiral2.png, Mortalen, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Kugishgahz Usskaih, 4, mortalen-admiral3.png, Mortalen, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Mukino Kozri, 4, mortalen-admiral4.png, Mortalen, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Khurgain Ahemas, 4, mortalen-admiral1.png, Mortalen, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Zhaurorzai Azkeh, 4, mortalen-admiral2.png, Mortalen, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Traroki Khiggoszan, 4, mortalen-admiral3.png, Mortalen, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Mouzaugaej Krevezuhz, 4, mortalen-admiral4.png, Mortalen, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Vovallihz Eruh, 4, mortalen-admiral1.png, Mortalen, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Umun Mgaumaro, 4, mortalen-admiral2.png, Mortalen, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Jizziagosh Mgerivohs, 4, mortalen-admiral3.png, Mortalen, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Jhahshan Nekemmush, 4, mortalen-admiral4.png, Mortalen, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Jinnumahs Nruhourgush, 4, mortalen-admiral1.png, Mortalen, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Jizren Khona, 4, mortalen-admiral2.png, Mortalen, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Vomennu Ozovia, 4, mortalen-admiral3.png, Mortalen, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Jhumakau Mgannammuj, 4, mortalen-admiral4.png, Mortalen, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Vuanzovhia Truggihjis, 5, mortalen-general1.png, Mortalen, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Jaskuviz Vittomkhalwi, 5, mortalen-general2.png, Mortalen, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Jhegguj Sustha, 5, mortalen-general3.png, Mortalen, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Khonnaemo Ezissi, 5, mortalen-general4.png, Mortalen, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Mraenehs Enkha, 5, mortalen-general1.png, Mortalen, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Ivomahs Mgisshivush, 5, mortalen-general2.png, Mortalen, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Khorezi Zenis, 5, mortalen-general3.png, Mortalen, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Trucholli Shisiesi, 5, mortalen-general4.png, Mortalen, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Kuaneshki Srasta, 5, mortalen-general1.png, Mortalen, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Ghivuro Kshakara, 5, mortalen-general2.png, Mortalen, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Chiania Lashtras, 5, mortalen-general3.png, Mortalen, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Vazzusskah Xetish, 5, mortalen-general4.png, Mortalen, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Zavai Thixiz, 5, mortalen-general1.png, Mortalen, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Jhassho Ithexeikh, 5, mortalen-general2.png, Mortalen, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Zhemasso Tavajat, 5, mortalen-general3.png, Mortalen, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Mromzushki Vrartikha, 5, mortalen-general4.png, Mortalen, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Inish Kshaswapta, 5, mortalen-general1.png, Mortalen, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Jizgauhjuz Udikai, 5, mortalen-general2.png, Mortalen, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Irdizin Szixsekho, 5, mortalen-general3.png, Mortalen, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Jizziagosh Azus, 5, mortalen-general4.png, Mortalen, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Guggeh Zhatha, 6, mortalen-spy1.png, Mortalen, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Ghurdu Sarei, 6, mortalen-spy2.png, Mortalen, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Ishgous Kopta, 6, mortalen-spy3.png, Mortalen, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Mgossuges Tida, 6, mortalen-spy4.png, Mortalen, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Ghoskallus Yecsolli, 6, mortalen-spy1.png, Mortalen, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Truzgiako Shisiesi, 6, mortalen-spy2.png, Mortalen, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Chimazzush Laaceeket, 6, mortalen-spy3.png, Mortalen, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Nremzigu Vrayasthamkhi, 6, mortalen-spy4.png, Mortalen, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Zhegush Vittomkhalwi, 6, mortalen-spy1.png, Mortalen, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Ghemasso Dhuda, 6, mortalen-spy2.png, Mortalen, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Vuanzovhia Kshaswapta, 6, mortalen-spy3.png, Mortalen, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Kugishgahz Sustha, 6, mortalen-spy4.png, Mortalen, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Chugrogihz Palwa, 6, mortalen-spy1.png, Mortalen, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Krannaemo Sharjeiskukh, 6, mortalen-spy2.png, Mortalen, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Khizzia Ashu, 6, mortalen-spy3.png, Mortalen, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Mgivan Ercikhi, 6, mortalen-spy4.png, Mortalen, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Inazu Jyortanji, 6, mortalen-spy1.png, Mortalen, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Nruzzonnahs Sezherkiess, 6, mortalen-spy2.png, Mortalen, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Ginimoj Jyakyarna, 6, mortalen-spy3.png, Mortalen, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Chogrogihz Dhilanshtri, 6, mortalen-spy4.png, Mortalen, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Chukaz Azus, 7, mortalen-scientist1.png, Mortalen, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Ivomahs Ezissi, 7, mortalen-scientist2.png, Mortalen, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Ginimoj Eshonu, 7, mortalen-scientist3.png, Mortalen, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Ghoskallus Krezora, 7, mortalen-scientist4.png, Mortalen, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Mukino Nimanu, 7, mortalen-scientist1.png, Mortalen, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Jeva Naggu, 7, mortalen-scientist2.png, Mortalen, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Khonna Ashu, 7, mortalen-scientist3.png, Mortalen, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Traroki Srasta, 7, mortalen-scientist4.png, Mortalen, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Kavoumoj Jyettuva, 7, mortalen-scientist1.png, Mortalen, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Mromzushki Xezsekhe, 7, mortalen-scientist2.png, Mortalen, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Jhumakau Iakemmo, 7, mortalen-scientist3.png, Mortalen, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Khegonush Kshaswapta, 7, mortalen-scientist4.png, Mortalen, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Kugishgahz Mgerivohs, 7, mortalen-scientist1.png, Mortalen, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Zhegush Zhounzi, 7, mortalen-scientist2.png, Mortalen, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Mouzaugaej Dhilanshtri, 7, mortalen-scientist3.png, Mortalen, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Nruzzonnahs Udikai, 7, mortalen-scientist4.png, Mortalen, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Khurge Kopta, 7, mortalen-scientist1.png, Mortalen, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Zrugnez Kshamvoshmosta, 7, mortalen-scientist2.png, Mortalen, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Irdizin Dhuda, 7, mortalen-scientist3.png, Mortalen, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Azizrehs Ercikhi, 7, mortalen-scientist4.png, Mortalen, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Vovhozi Sashasilwa, 8, mortalen-pirate1.png, Mortalen, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Jinnumahs Kshinta, 8, mortalen-pirate2.png, Mortalen, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Mgezu Enkha, 8, mortalen-pirate3.png, Mortalen, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Khovarih Osta, 8, mortalen-pirate4.png, Mortalen, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Mgekkouna Vashtha, 8, mortalen-pirate1.png, Mortalen, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Jhoves Szuka, 8, mortalen-pirate2.png, Mortalen, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Ghavi Aleirgi, 8, mortalen-pirate3.png, Mortalen, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Nuchesh Shekka, 8, mortalen-pirate4.png, Mortalen, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Khehi Josrashpa, 8, mortalen-pirate1.png, Mortalen, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Mromzushki Vrartikha, 8, mortalen-pirate2.png, Mortalen, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Zrasskej Krekennon, 8, mortalen-pirate3.png, Mortalen, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Zruzoukkash Vittomkhalwi, 8, mortalen-pirate4.png, Mortalen, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Iginnohs Sharjeiskukh, 8, mortalen-pirate1.png, Mortalen, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Ghivuro Truggihjis, 8, mortalen-pirate2.png, Mortalen, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Chiania Srasta, 8, mortalen-pirate3.png, Mortalen, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Nruhourgush Kshakara, 8, mortalen-pirate4.png, Mortalen, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Mgivan Shisiesi, 8, mortalen-pirate1.png, Mortalen, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Krezshe Laxexi, 8, mortalen-pirate2.png, Mortalen, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Vumuko Udikai, 8, mortalen-pirate3.png, Mortalen, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Ozellen Xetish, 8, mortalen-pirate4.png, Mortalen, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Jhahshan Krevezuhz, 9, mortalen-pirate1.png, Mortalen, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Iavishkash Tavajat, 9, mortalen-pirate2.png, Mortalen, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Jasskeze Dhuda, 9, mortalen-pirate3.png, Mortalen, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Krannaemo Szuka, 9, mortalen-pirate4.png, Mortalen, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Mgossuges Thixizs, 9, mortalen-pirate1.png, Mortalen, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Vahzaz Srapa, 9, mortalen-pirate2.png, Mortalen, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Nishgas Jekha, 9, mortalen-pirate3.png, Mortalen, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Egnuz Ale, 9, mortalen-pirate4.png, Mortalen, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Zoruvuh Lapera, 9, mortalen-pirate1.png, Mortalen, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Mraenehs Shekka, 9, mortalen-pirate2.png, Mortalen, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Umun Kshaswapta, 9, mortalen-pirate3.png, Mortalen, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Chugrogihz Vayami, 9, mortalen-pirate4.png, Mortalen, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Khini Kshira, 9, mortalen-pirate1.png, Mortalen, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Traskaz Kazsokuss, 9, mortalen-pirate2.png, Mortalen, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Krammin Khekhidoth, 9, mortalen-pirate3.png, Mortalen, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Krezshe Sustha, 9, mortalen-pirate4.png, Mortalen, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Mguguh Dhuda, 9, mortalen-pirate1.png, Mortalen, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Khonna Vittomkhalwi, 9, mortalen-pirate2.png, Mortalen, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Ngizremmuaz Szeecatre, 9, mortalen-pirate3.png, Mortalen, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Naezzaenkaeh Cotsiz, 9, mortalen-pirate4.png, Mortalen, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?

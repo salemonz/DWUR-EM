@@ -1,0 +1,225 @@
+'Distant Worlds - Characters - 1.9.0.0 - Modded by the Distant Worlds Mod Editor by Sabranan
+
+
+'Each character line below is comprised of comma-separated data as follows:
+' - Appearance order: order that this character appears in the game relative to other characters. A value of zero (0) means that the character is present at the start of the game
+' - Name: name of the character
+' - Role: the type of character, selected from one of the following values: 1=Faction Leader, 2=Ambassador, 3=Colony Governor, 4=Fleet Admiral, 5=Troop General, 6=Intelligence Agent, 7=Scientist, 8=Pirate Leader, 9=Ship Captain
+' - Picture filename: optional name of image file used to represent this character. Only PNG image files are supported. The filename should include the file type suffix (.png). The image file itself should be placed in the images\units\characters folder (or customization\THEMENAME\characterImages folder). If no image is specified then the appropriate race image will be used
+' - Race override: optional name of the race for this character, if different from the default race for the file. Name must match a race name found in the races folder
+
+'The following skills should be set between -100 and +100. Note that the character's role will determine which skills actually apply (e.g. only a Fleet Admiral can benefit from Ship Maneuvering skill)
+' 0=None, 1=Diplomacy, 2=ColonyIncome, 3=TradeIncome, 4=TourismIncome, 5=ColonyCorruption, 6=ColonyHappiness, 7=PopulationGrowth,
+' 8=MiningRate, 9=TroopRecruitment, 10=MilitaryShipConstructionSpeed, 11=CivilianShipConstructionSpeed, 12=ColonyShipConstructionSpeed, 
+' 13=FacilityConstructionSpeed, 14=ResearchWeapons, 15=ResearchEnergy, 16=ResearchHighTech, 17=Espionage, 18=CounterEspionage, 
+' 19=Sabotage, 20=Concealment, 21=PsyOps, 22=Assassination, 23=MilitaryShipMaintenance, 24=MilitaryBaseMaintenance, 25=CivilianShipMaintenance, 
+' 26=CivilianBaseMaintenance, 27=TroopMaintenance, 28=WarWeariness, 29=Targeting, 30=Countermeasures, 31=ShipManeuvering, 32=Fighters, 
+' 33=ShipEnergyUsage, 34=WeaponsDamage, 35=WeaponsRange, 36=ShieldRechargeRate, 37=DamageControl, 38=RepairBonus, 39=HyperjumpSpeed, 
+' 40=TroopGroundAttack, 41=TroopGroundDefense, 42=TroopExperienceGain, 43=TroopRecoveryRate, 44=TroopStrengthArmor, 45=TroopStrengthInfantry, 
+' 46=TroopStrengthSpecialForces, 47=TroopStrengthPlanetaryDefense, 48=SmugglingIncome, 49=SmugglingEvasion, 50=BoardingAssault
+' - Skill Type 1: 0=None, 1 to 50=specific skill type (see values above and Modding Guide), ?=select random skill appropriate for role
+' - Skill Level 1: -100 to +100, ?=select random skill level between 0 and 20
+' - Skill Type 2: 0=None, 1 to 50=specific skill type (see values above and Modding Guide), ?=select random skill appropriate for role
+' - Skill Level 2: -100 to +100, ?=select random skill level between 0 and 20
+' - Skill Type 3: 0=None, 1 to 50=specific skill type (see values above and Modding Guide), ?=select random skill appropriate for role
+' - Skill Level 3: -100 to +100, ?=select random skill level between 0 and 20
+' - Skill Type 4: 0=None, 1 to 50=specific skill type (see values above and Modding Guide), ?=select random skill appropriate for role
+' - Skill Level 4: -100 to +100, ?=select random skill level between 0 and 20
+
+'The following traits can be set for each character. Note that the character's role will determine which traits actually apply
+' - Trait Type 1,2,3: 0=None, 1 to 95=specific trait type (see values below and Modding Guide), ?=select random trait appropriate for role. NOTE: must not specify opposing positive and negative traits, e.g. Paranoid and Trusting
+' 0=None, 1=Paranoid, 2=Trusting, 3=PeaceThroughStrength, 4=Pacifist, 5=Expansionist, 6=Isolationist, 7=Diplomat, 8=Obnoxious, 9=Famous, 
+' 10=Disliked, 11=GoodAdministrator, 12=PoorAdministrator, 13=BeanCounter, 14=Generous, 15=Engineer, 16=Luddite, 17=FreeTrader, 18=Protectionist, 
+' 19=Environmentalist, 20=Industrialist, 21=InspiringPresence, 22=Demoralizing, 23=Organized, 24=Disorganized, 25=HealthOriented, 26=LaborOriented, 
+' 27=Spiritual, 28=Logical, 29=GoodStrategist, 30=PoorStrategist, 31=Uninhibited, 32=Measured, 33=Addict, 34=Sober, 35=Courageous, 36=Weak, 
+' 37=Tolerant, 38=Xenophobic, 39=EloquentSpeaker, 40=PoorSpeaker, 41=Corrupt, 42=Lawful, 43=Lazy, 44=Energetic, 45=Linguist, 46=TongueTied, 
+' 47=Technical, 48=NonTechnical, 49=GoodTactician, 50=PoorTactician, 51=StrongSpaceAttacker, 52=PoorSpaceAttacker, 53=StrongSpaceDefender, 
+' 54=PoorSpaceDefender, 55=Drunk, 56=ToughDiscpline, 57=LaxDiscipline, 58=LocalDefenseTactics, 59=PlanetarySupport, 60=GoodSpaceLogistician, 
+' 61=PoorSpaceLogistician, 62=NaturalSpaceLeader, 63=SkilledNavigator, 64=PoorNavigator, 65=StrongGroundAttacker, 66=PoorGroundAttacker, 
+' 67=StrongGroundDefender, 68=PoorGroundDefender, 69=GoodGroundLogistician, 70=PoorGroundLogistician, 71=NaturalGroundLeader, 72=GoodRecruiter, 
+' 73=PoorRecruiter, 74=CarefulAttacker, 75=RecklessAttacker, 76=DoubleAgent, 77=Creative, 78=Methodical, 79=ForeignSpy, 80=Patriot, 81=UltraGenius,
+' 82=Uninhibited (Intelligence Agent), 83=Measured (Intelligence Agent), 84=Addict (Intelligence Agent), 85=Sober (Intelligence Agent),
+' 86=Courageous (Intelligence Agent), 87=Weak (Intelligence Agent), 88=Tolerant (Intelligence Agent), 89=Xenophobic (Intelligence Agent),
+' 90=EloquentSpeaker (Intelligence Agent), 91=PoorSpeaker (Intelligence Agent), 92=Corrupt (Intelligence Agent), 93=Lawful (Intelligence Agent), 
+' 94=Smuggler, 95=BountyHunter
+
+?, Chukaz Azrikus, 1, keskudon-leader1.png, Keskudon, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Jhiammarihz Essahzun, 1, keskudon-leader2.png, Keskudon, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Jizziagosh Ghaugavoj, 1, keskudon-leader3.png, Keskudon, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Kavoumoj Khekhidoth, 1, keskudon-leader4.png, Keskudon, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Vahzaz Kshamvoshmosta, 1, keskudon-leader1.png, Keskudon, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Krannaemo Mgerivohs, 1, keskudon-leader2.png, Keskudon, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Ghurdu Mgaekouna, 1, keskudon-leader3.png, Keskudon, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Jhekke Mraenehs, 1, keskudon-leader4.png, Keskudon, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Inazu Mgaumaro, 1, keskudon-leader1.png, Keskudon, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Kranikun Krezora, 1, keskudon-leader2.png, Keskudon, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Khurgain Kshaswapta, 1, keskudon-leader3.png, Keskudon, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Egnuz Osta, 1, keskudon-leader4.png, Keskudon, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Jhahshan Chossavu, 1, keskudon-leader1.png, Keskudon, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Ghemasso Nekemmush, 1, keskudon-leader2.png, Keskudon, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Jhoves Kimezza, 1, keskudon-leader3.png, Keskudon, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Ivomahs Vrartikha, 1, keskudon-leader4.png, Keskudon, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Ghivuro Mrahisshun, 1, keskudon-leader1.png, Keskudon, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Ginimoj Udikai, 1, keskudon-leader2.png, Keskudon, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Naevesh Sharjeiskukh, 1, keskudon-leader3.png, Keskudon, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Mromzushki Srasta, 1, keskudon-leader4.png, Keskudon, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Khoni Mgannammuj, 2, keskudon-diplomat1.png, Keskudon, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Khazevia Krekennon, 2, keskudon-diplomat2.png, Keskudon, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Kuvurgain Ngivhukaj, 2, keskudon-diplomat3.png, Keskudon, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Ngaggroz Treheke, 2, keskudon-diplomat4.png, Keskudon, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Khive Krevezuhz, 2, keskudon-diplomat1.png, Keskudon, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Enkugej Vittomkhalwi, 2, keskudon-diplomat2.png, Keskudon, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Ushissa Lashstras, 2, keskudon-diplomat3.png, Keskudon, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Iavishkash Szixsekho, 2, keskudon-diplomat4.png, Keskudon, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Chardu Zhounzi, 2, keskudon-diplomat1.png, Keskudon, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Chogrogihz Vayami, 2, keskudon-diplomat2.png, Keskudon, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Gheskekke Vrartikha, 2, keskudon-diplomat3.png, Keskudon, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Jhegguj Kshakara, 2, keskudon-diplomat4.png, Keskudon, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Azizrehs Sarei, 2, keskudon-diplomat1.png, Keskudon, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Mukino Nattra, 2, keskudon-diplomat2.png, Keskudon, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Ghoskallus Kazsokuss, 2, keskudon-diplomat3.png, Keskudon, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Azizrehs Zhatha, 2, keskudon-diplomat4.png, Keskudon, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Jhikkia Kshinta, 2, keskudon-diplomat1.png, Keskudon, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Ghukih Ozovia, 2, keskudon-diplomat2.png, Keskudon, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Inish Khedja, 2, keskudon-diplomat3.png, Keskudon, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Eneguj Sustha, 2, keskudon-diplomat4.png, Keskudon, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Chiania Kshira, 3, keskudon-diplomat1.png, Keskudon, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Ghavosshe Shekka, 3, keskudon-diplomat2.png, Keskudon, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Chuggas Trigimu, 3, keskudon-diplomat3.png, Keskudon, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Ghurdu Mganizij, 3, keskudon-diplomat4.png, Keskudon, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Ugzaij Jyortanji, 3, keskudon-diplomat1.png, Keskudon, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Jhekke Kharmaja, 3, keskudon-diplomat2.png, Keskudon, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Jaranai Zhoveggoz, 3, keskudon-diplomat3.png, Keskudon, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Krarihs Dhuda, 3, keskudon-diplomat4.png, Keskudon, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Jasskeze Khogokkehz, 3, keskudon-diplomat1.png, Keskudon, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Ivomahs Enkha, 3, keskudon-diplomat2.png, Keskudon, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Chimazzush Sashasilwa, 3, keskudon-diplomat3.png, Keskudon, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Jhassho Dilo, 3, keskudon-diplomat4.png, Keskudon, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Ghukunu Khedja, 3, keskudon-diplomat1.png, Keskudon, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Mgivan Srasta, 3, keskudon-diplomat2.png, Keskudon, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Krammin Dhilanshtri, 3, keskudon-diplomat3.png, Keskudon, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Mukino Kharmaja, 3, keskudon-diplomat4.png, Keskudon, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Ghivuro Naggu, 3, keskudon-diplomat1.png, Keskudon, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Mgezzummoh Kshamvoshmosta, 3, keskudon-diplomat2.png, Keskudon, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Ghavosshe Hecze, 3, keskudon-diplomat3.png, Keskudon, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Chiania Hecze, 3, keskudon-diplomat4.png, Keskudon, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Azizrehs Azus, 4, keskudon-admiral1.png, Keskudon, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Chemazzush Krekennon, 4, keskudon-admiral2.png, Keskudon, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Chukaz Nruhourgush, 4, keskudon-admiral3.png, Keskudon, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Ginimoj Azkeh, 4, keskudon-admiral4.png, Keskudon, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Ivomahs Naggu, 4, keskudon-admiral1.png, Keskudon, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Mukino Zrauvovho, 4, keskudon-admiral2.png, Keskudon, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Ozellen Eshonu, 4, keskudon-admiral3.png, Keskudon, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Traskaz Krevezuhz, 4, keskudon-admiral4.png, Keskudon, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Chogrogihz Mgerivohs, 4, keskudon-admiral1.png, Keskudon, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Jhiammarihz Mrahisshun, 4, keskudon-admiral2.png, Keskudon, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Jhoves Khiha, 4, keskudon-admiral3.png, Keskudon, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Kavoumoj Usskaih, 4, keskudon-admiral4.png, Keskudon, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Krennoura Sarei, 4, keskudon-admiral1.png, Keskudon, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Kugishgahz Sharjeiskukh, 4, keskudon-admiral2.png, Keskudon, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Mahshu Shekka, 4, keskudon-admiral3.png, Keskudon, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Mimuzahs Mgannammuj, 4, keskudon-admiral4.png, Keskudon, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Mrasshaz Khedja, 4, keskudon-admiral1.png, Keskudon, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Naggovun Vayami, 4, keskudon-admiral2.png, Keskudon, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Nishgas Azus, 4, keskudon-admiral3.png, Keskudon, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Nuchesh Ashu, 4, keskudon-admiral4.png, Keskudon, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Truzgiako Ercikhi, 5, keskudon-general1.png, Keskudon, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Ugzaij Zhatha, 5, keskudon-general2.png, Keskudon, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Umun Enkha, 5, keskudon-general3.png, Keskudon, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Vahzaz Kshinta, 5, keskudon-general4.png, Keskudon, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Zavai Lashtras, 5, keskudon-general1.png, Keskudon, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Zhika Hecze, 5, keskudon-general2.png, Keskudon, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Zoros Hrulwingikhat, 5, keskudon-general3.png, Keskudon, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Aekkozua Kshakara, 5, keskudon-general4.png, Keskudon, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Aigoz Dhilanshtri, 5, keskudon-general1.png, Keskudon, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Araszihs Ixsu, 5, keskudon-general2.png, Keskudon, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Assiziz Kopta, 5, keskudon-general3.png, Keskudon, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Chiania Nattra, 5, keskudon-general4.png, Keskudon, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Chuarizgu Vrartikha, 5, keskudon-general1.png, Keskudon, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Gegongriz Prikshidha, 5, keskudon-general2.png, Keskudon, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Ghavosshe Vittomkhalwi, 5, keskudon-general3.png, Keskudon, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Ghevi Udikai, 5, keskudon-general4.png, Keskudon, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Guggeh Dhuda, 5, keskudon-general1.png, Keskudon, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Iavishkash Kshaswapta, 5, keskudon-general2.png, Keskudon, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Iginnohs Lapera, 5, keskudon-general3.png, Keskudon, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Ikehzij Eelsakzi, 5, keskudon-general4.png, Keskudon, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Inazu Ashadha, 6, keskudon-spy1.png, Keskudon, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Inish Tida, 6, keskudon-spy2.png, Keskudon, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Ishoh Kazsokuss, 6, keskudon-spy3.png, Keskudon, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Ivazzi Szixsekho, 6, keskudon-spy4.png, Keskudon, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Jamagzo Jyettuva, 6, keskudon-spy1.png, Keskudon, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Jaranai Jekha, 6, keskudon-spy2.png, Keskudon, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Jeze Curcitsha, 6, keskudon-spy3.png, Keskudon, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Jhahshan Zhoveggoz, 6, keskudon-spy4.png, Keskudon, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Jhassho Texzesh, 6, keskudon-spy1.png, Keskudon, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Jhekke Zheikish, 6, keskudon-spy2.png, Keskudon, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Jhigoro Sustha, 6, keskudon-spy3.png, Keskudon, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Jizziagosh Sezherkiess, 6, keskudon-spy4.png, Keskudon, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Khegonush Srasta, 6, keskudon-spy1.png, Keskudon, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Khihshe Sashasilwa, 6, keskudon-spy2.png, Keskudon, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Koniame Kshamvoshmosta, 6, keskudon-spy3.png, Keskudon, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Kranikun Zhierszethis, 6, keskudon-spy4.png, Keskudon, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Krushkaura Shekka, 6, keskudon-spy1.png, Keskudon, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Kuvurgain Vashtha, 6, keskudon-spy2.png, Keskudon, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Naezzaenkaeh Elhesh, 6, keskudon-spy3.png, Keskudon, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Nragihz Thixizs, 6, keskudon-spy4.png, Keskudon, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Amuzu Chossavu, 7, keskudon-scientist1.png, Keskudon, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Ergogron Mgerivohs, 7, keskudon-scientist2.png, Keskudon, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Izaruh Kherzos, 7, keskudon-scientist3.png, Keskudon, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Jeva Ngizremmuaz, 7, keskudon-scientist4.png, Keskudon, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Kavoumoj Ozovia, 7, keskudon-scientist1.png, Keskudon, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Mouzaugaej Truggihjis, 7, keskudon-scientist2.png, Keskudon, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Nazegij Usskaih, 7, keskudon-scientist3.png, Keskudon, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Inazu Kshaswapta, 7, keskudon-scientist4.png, Keskudon, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Koniame Khedja, 7, keskudon-scientist1.png, Keskudon, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Traskaz Kshakara, 7, keskudon-scientist2.png, Keskudon, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Ozellen Nattra, 7, keskudon-scientist3.png, Keskudon, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Umun Kharmaja, 7, keskudon-scientist4.png, Keskudon, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Voussa Icsar, 7, keskudon-scientist1.png, Keskudon, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Ashu Sezherkiess, 7, keskudon-scientist2.png, Keskudon, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Cothizs Hecze, 7, keskudon-scientist3.png, Keskudon, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Dudaxhezs Sustha, 7, keskudon-scientist4.png, Keskudon, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Elhesh Vayami, 7, keskudon-scientist1.png, Keskudon, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Kopta Vrartikha, 7, keskudon-scientist2.png, Keskudon, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Lapera Xezsekhe, 7, keskudon-scientist3.png, Keskudon, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Ninjas Zhatha, 7, keskudon-scientist4.png, Keskudon, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Prikshidha Zheikish, 8, keskudon-pirate1.png, Keskudon, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Shekka Zhierszethis, 8, keskudon-pirate2.png, Keskudon, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Tida Yecsolli, 8, keskudon-pirate3.png, Keskudon, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Ugzaij Dhuda, 8, keskudon-pirate4.png, Keskudon, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Enkugej Dhengavya, 8, keskudon-pirate1.png, Keskudon, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Guku Chadhas, 8, keskudon-pirate2.png, Keskudon, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Inish Achaes, 8, keskudon-pirate3.png, Keskudon, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Jimu Ahemas, 8, keskudon-pirate4.png, Keskudon, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Khurazi Eshonu, 8, keskudon-pirate1.png, Keskudon, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Mgezu Essahzun, 8, keskudon-pirate2.png, Keskudon, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Mrasshaz Ezaungrosh, 8, keskudon-pirate3.png, Keskudon, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Naevesh Gaerai, 8, keskudon-pirate4.png, Keskudon, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Nragahoj Ghakirdash, 8, keskudon-pirate1.png, Keskudon, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Nremzigu Ghaugavoj, 8, keskudon-pirate2.png, Keskudon, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Treki Ghavha, 8, keskudon-pirate3.png, Keskudon, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Vomennu Gheshgoun, 8, keskudon-pirate4.png, Keskudon, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Chemazzush Ghivuro, 8, keskudon-pirate1.png, Keskudon, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Khoni Ghukih, 8, keskudon-pirate2.png, Keskudon, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Mrisshe Ghukunu, 8, keskudon-pirate3.png, Keskudon, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Umokau Gimoha, 8, keskudon-pirate4.png, Keskudon, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Jingra Iakemmo, 9, keskudon-pirate1.png, Keskudon, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Mgekkouja Iggaire, 9, keskudon-pirate2.png, Keskudon, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Nishgas Ikhesh, 9, keskudon-pirate3.png, Keskudon, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Truzgiako Jazrumij, 9, keskudon-pirate4.png, Keskudon, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Zezzomauj Jhissej, 9, keskudon-pirate1.png, Keskudon, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Chuggas Jike, 9, keskudon-pirate2.png, Keskudon, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Ergogron Kimezza, 9, keskudon-pirate3.png, Keskudon, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Ivomahs Kingi, 9, keskudon-pirate4.png, Keskudon, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Mrallurohs Kozri, 9, keskudon-pirate1.png, Keskudon, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Noszuhs Krekennon, 9, keskudon-pirate2.png, Keskudon, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Traroki Krevezuhz, 9, keskudon-pirate3.png, Keskudon, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Vahzaz Krevua, 9, keskudon-pirate4.png, Keskudon, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Zizgauhjuz Krezora, 9, keskudon-pirate1.png, Keskudon, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Ghoskallus Krogesh, 9, keskudon-pirate2.png, Keskudon, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Mgivan Mazragi, 9, keskudon-pirate3.png, Keskudon, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Nragihz Mganizij, 9, keskudon-pirate4.png, Keskudon, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Uzevo Mgerivohs, 9, keskudon-pirate1.png, Keskudon, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Chogrogihz Mguamammuj, 9, keskudon-pirate2.png, Keskudon, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Ghivi Mgossuges, 9, keskudon-pirate3.png, Keskudon, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Mukino Mrasshaz, 9, keskudon-pirate4.png, Keskudon, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?

@@ -1,0 +1,40 @@
+'Distant Worlds - dialogue - Version 1.9.5.10 - Modded by the Distant Worlds Mod Editor by Sabranan
+
+GREETING_INTRODUCTION	;Welcome stranger!
+GREETING_FRIENDLY	;Welcome! What did you want?
+GREETING_NEUTRAL	;We are listening
+GREETING_ANGRY	;We're not happy with you. So tell us what you want.
+OFFER_FREETRADE	;Accept our offer of a Free Trade Agreement?\n\nIt would be a great deal!
+FREETRADE_ACCEPT	;It's a deal!\n\nWe acccept the Free Trade Agreement
+FREETRADE_REJECT	;No deal.\n\nWe are not interested in a Free Trade Agreement just now
+CANCELTREATY	;Our {0} with you is over.\n\nSorry, but maybe we can talk later.
+CANCELTREATY_RESPONSE_FRIENDLY	;No more treaty?!\n\nI thought we were friends?
+CANCELTREATY_RESPONSE_NEUTRAL	;You cancelled the agreement!\n\nHopefully we can renegociate later.
+CANCELTREATY_RESPONSE_ANGRY	;Whatever. Don't bother asking again.
+TREATY_PROPOSAL	;Proposal?
+TREATY_ACCEPTRESPONSE	;Partners! Wonderful!
+TREATY_REJECTRESPONSE	;This can't be good...
+TRADESANCTIONS_IMPOSE	;You deserve our sanctions on trade!\n\nWe're not trading with your empire!
+TRADESANCTIONS_IMPOSE_RESPONSE_ANGRY	;Trade Sanctions?! Not good!\n\nOur goods can go to other deserving aliens!
+TRADESANCTIONS_IMPOSE_RESPONSE_NEUTRAL	;No trading with you?\n\nThat's fine.
+TRADESANCTIONS_IMPOSE_RESPONSE_SURPRISED	;Keep your goods. We have other partners.
+TRADESANCTIONS_LIFT	;We're lifting our Trade Sanctions against you.\n\nWe will now resume trading with you.
+TRADESANCTIONS_LIFT_RESPONSE	;We do not need your trade...
+WAR_DECLARE	;Dishonest! We declare WAR on you!\n\nThe fleets are primed!
+WAR_DECLARE_RESPONSE_EAGER	;You can't defeat us!\n\nYou will pay!
+WAR_DECLARE_RESPONSE_NEUTRAL	;We're the hammer. You're the nail.
+WAR_DECLARE_RESPONSE_SURPRISED	;We thought you liked us?!\n\nYou can't do this!
+WAR_END	;This war is unprofitable. It should end.\n\nWhat do you say?
+WAR_END_ACCEPT	;Yes, we agree to end the war
+WAR_END_REJECT	;No, we're betting on winning this war.
+GIFT_GIVE	;Here's a gift for you: {0} credits
+GIFT_THANKS	;Thanks for your gift!
+WARNING	;What did we do wrong?
+WARNING_INTELLIGENCEMISSIONS	;Stop spying!\n\nWe can see how devious you are.
+WARNING_INTELLIGENCEMISSIONS_RESPONSE_FRIENDLY	;Spy missions on you?\n\nYou must have gotten mixed up.
+WARNING_INTELLIGENCEMISSIONS_RESPONSE_NEUTRAL	;Spy missions on you?\n\nYou must have gotten mixed up.
+WARNING_INTELLIGENCEMISSIONS_RESPONSE_ANGRY	;Spy missions against you?\n\nSo what if we did?
+WARNING_ATTACKS	;Stop attacking our ships and bases!\n\nWe're warning you!
+WARNING_ATTACKS_RESPONSE_FRIENDLY	;Attacks? What are you talking about?\n\nThat wasn't us.
+WARNING_ATTACKS_RESPONSE_NEUTRAL	;Attacks? What are you talking about?\n\nThat wasn't us.
+WARNING_ATTACKS_RESPONSE_ANGRY	;Attacks on you?\n\nMaybe...

@@ -1,0 +1,38 @@
+'Distant Worlds - dialogue - Version 1.9.5.10 - Modded by the Distant Worlds Mod Editor by Sabranan
+
+GREETING_INTRODUCTION	;Welcome other beings! We are the {0}.\n\nWe are striving to get rich finding the rare gems and minerals of this Galaxy.\n\nIf you want we will mine your resources for you?
+GREETING_FRIENDLY	;Welcome back! What did you want to talk about?
+GREETING_NEUTRAL	;We are listening
+GREETING_ANGRY	;We're not very happy with you. So tell us what you want, then leave!
+OFFER_FREETRADE	;You know something: what we need is a Free Trade Agreement. Our Empires could become amazing!\n\nWhat do you think?
+FREETRADE_ACCEPT	;It's a deal!\n\nWe acccept the Free Trade Agreement
+FREETRADE_REJECT	;No deal.\n\nWe are not interested in a Free Trade Agreement just now, maybe soon though
+CANCELTREATY	;Our {0} with you is over.\n\nNo hard feelings, right? We can renegotiate later if you want
+CANCELTREATY_RESPONSE_FRIENDLY	;No more treaty?!\n\nAren't we friends now? What did we do?
+CANCELTREATY_RESPONSE_NEUTRAL	;Hey, you broke the deal! That's not fair.\n\nWe'll just have to sell all these gems to someone else
+CANCELTREATY_RESPONSE_ANGRY	;We don't need your silly treaty anyway. So there
+TREATY_PROPOSAL	;What's the deal?
+TREATY_ACCEPTRESPONSE	;Celebration! We're partners now!
+TREATY_REJECTRESPONSE	;We are sad about this
+TRADESANCTIONS_IMPOSE	;You bet the wrong way this time: Trade Sanctions on you!\n\nWe're not trading with your empire again!
+TRADESANCTIONS_IMPOSE_RESPONSE_ANGRY	;Trade Sanctions?! You have really hurt us!\n\nWe'll get you, tricky alien!
+TRADESANCTIONS_IMPOSE_RESPONSE_NEUTRAL	;No trading with you?\n\nYour business deals were all bad anyway. We will sell for better prices elsewhere
+TRADESANCTIONS_IMPOSE_RESPONSE_SURPRISED	;Are you crazy? Well we will get rich anyway
+TRADESANCTIONS_LIFT	;It's your lucky day: we're lifting our Trade Sanctions against you.\n\nWe will now resume trading with you. But no more funny business, ok?
+TRADESANCTIONS_LIFT_RESPONSE	;Huh! Now you want all these great gems and metals we have...
+WAR_DECLARE	;You bad people! We declare WAR on you!\n\nYou'll be sorry now!
+WAR_DECLARE_RESPONSE_EAGER	;You think you'll defeat us?! You're wrong.\n\nWe know where to hurt you! You'll be sorry!
+WAR_DECLARE_RESPONSE_NEUTRAL	;We're ready for you. We'll punish you!
+WAR_DECLARE_RESPONSE_SURPRISED	;We thought you liked us?!\n\nYou can't do this! It's not allowed!
+WAR_END	;This war is unprofitable. It should end.\n\nWhat do you say?
+WAR_END_ACCEPT	;Yes, we agree to end the war
+WAR_END_REJECT	;No, we're betting on winning this war.\n\nSo we're not stopping now!
+GIFT_GIVE	;Here's a gift for you: {0} credits
+GIFT_THANKS	;Thanks for your gift!\n\nYou know, we really like money. And people who give us money
+WARNING	;A warning? We wonder what could this be about?
+WARNING_INTELLIGENCEMISSIONS_RESPONSE_FRIENDLY	;We understand your concern.\n\nWe'll make sure this doesn't happen again
+WARNING_INTELLIGENCEMISSIONS_RESPONSE_NEUTRAL	;Before responding we must check the details of this incident.\n\nWe'll get back to you, ok?
+WARNING_INTELLIGENCEMISSIONS_RESPONSE_ANGRY	;Now that you mention it: yes, we did order those missions against you.\n\nWhy? Because we really hate you, actually.\n\nAre we all clear on that?
+WARNING_ATTACKS_RESPONSE_FRIENDLY	;How awful. Please accept our apologies.\n\nGive us the details of the incident and we'll deal with the ship captain that did this
+WARNING_ATTACKS_RESPONSE_NEUTRAL	;Hmmm, not good. To get caught, that is.\n\nPlease accept our apologies
+WARNING_ATTACKS_RESPONSE_ANGRY	;We do remember ordering some attacks recently.\n\nBut we'd only ever do that to our enemies. So I guess that means you're our enemy?

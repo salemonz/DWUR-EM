@@ -1,0 +1,70 @@
+'Distant Worlds Design Template - 1.9.0.0 - Modded by the Distant Worlds Mod Editor by Sabranan
+
+
+'Specify amounts of each component type below. The amount should be a whole number greater than or equal to zero, and should be placed immediately after the semi-colon.
+'Note that it is not necessary to specify Command Center, Life Support or Hab Module components. A sufficient number of each of these components will automatically be added to all designs.
+'Also note that while Reactors and Energy Collectors can be specified here, an adequate amount of these components will always be added to meet the energy needs of the design.
+'Also, for ships you do not need to specify a HyperDrive - a single hyperdrive will always automatically be added to ship design templates.
+
+AreaShieldRecharge	;1
+Armor	;30
+AssaultPod	;0
+CargoBay	;0
+ColonizationModule	;0
+CombatTargettingSystem	;1
+CommerceCenter	;0
+ConstructionYard	;0
+CountermeasuresSystem	;1
+DamageControl	;1
+DockingBay	;0
+EnergyCollector	;2
+EnergyManufacturingPlant	;0
+EnergyResearchLab	;0
+EnergyToFuelConverter	;0
+Engine	;20
+FighterBay	;0
+FleetCountermeasuresSystem	;1
+FleetTargettingSystem	;1
+FuelCell	;12
+GasExtractor	;0
+GravityWellProjector	;0
+HighTechManufacturingPlant	;0
+HighTechResearchLab	;0
+HyperDeny	;1
+IonCannon	;0
+IonDefense	;1
+IonPulse	;0
+LongRangeScanner	;0
+LuxuryResourceExtractor	;0
+MedicalCenter	;1
+MiningEngine	;0
+PassengerCompartment	;0
+PointDefense	;5
+ProximityArray	;1
+Reactor	;2
+RecreationCenter	;0
+ResourceProfileSensor	;0
+ScannerJammer	;0
+Shields	;22
+StealthCloak	;0
+TraceScanner	;0
+TroopCompartment	;2
+VectoringEngine	;8
+WeaponArea	;0
+WeaponBeam	;0
+WeaponBombard	;3
+WeaponMissile	;0
+WeaponPhaser	;0
+WeaponRailGun	;0
+WeaponsManufacturingPlant	;0
+WeaponsResearchLab	;0
+WeaponSuperBeam	;1
+WeaponTorpedo	;25
+WeaponTractorBeam	;0
+WeaponGravitonBeam	;0
+WeaponAreaGravity	;0
+ImageScaling;Scaled 0.95
+TacticsWeaker; PointBlank
+TacticsStronger; PointBlank
+TacticsInvasion; InvadeImmediately
+FleeWhen; Never

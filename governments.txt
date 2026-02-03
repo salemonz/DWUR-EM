@@ -1,0 +1,46 @@
+﻿'Distant Worlds Governments - 1.9.5.0
+
+'each line defines a single government type with comma-separated data, up to a maximum of 30 governments (0-29)
+' - ID: unique numeric value identifying the government
+' - Name: text of the government name
+'---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+' - Corruption:										level of corruption,									1.0 = normal, less than 1.0 means lower, more than 1.0 means higher (range from 0 to 3.0)
+' - WarWeariness:									rate of increase for war weariness,						1.0 = normal, less than 1.0 means lower, more than 1.0 means higher (range from 0 to 3.0)
+' - MaintenanceCosts:								ship and base maintenance costs,						1.0 = normal, less than 1.0 means lower, more than 1.0 means higher (range from 0 to 3.0)
+' - ApprovalRating:									colony population approval,								1.0 = normal, less than 1.0 means lower, more than 1.0 means higher (range from 0 to 3.0)
+' - PopulationGrowth:								colony population growth rate,							1.0 = normal, less than 1.0 means lower, more than 1.0 means higher (range from 0 to 3.0)
+' - ResearchSpeed:									empire research speed,									1.0 = normal, less than 1.0 means lower, more than 1.0 means higher (range from 0 to 3.0)
+' - TroopRecruitment:								colony troop recruitment rate,							1.0 = normal, less than 1.0 means lower, more than 1.0 means higher (range from 0 to 3.0)
+' - IncomeBonus:									colony income,											1.0 = normal, less than 1.0 means lower, more than 1.0 means higher (range from 0 to 3.0)
+'---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+' - LeaderReplacementLikeliness:					likelihood of leader replacement,						1.0 = normal, less than 1.0 means lower, more than 1.0 means higher (range from 0 to 3.0)
+' - LeaderReplacementDisruptionLevel:				disruption level in empire when leader is replaced,		1.0 = normal, less than 1.0 means lower, more than 1.0 means higher (range from 0 to 3.0)
+' - LeaderReplacementBoost:							economic and happiness boost when leader is replaced,	1.0 = normal, less than 1.0 means lower, more than 1.0 means higher (range from 0 to 3.0)
+' - LeaderReplacementCharacterPool:					0=NONE,				1=Colony Governors,		2=Fleet Admirals & Troop Generals,	3=Scientists
+' - LeaderReplacementTypicalManner:					0=replacement,		1=coup d'état,			2=election
+'---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+' - Stability:										range from 0 to 3.0. 1.0=normal, less than 1.0=unstable,			more than 1.0=very stable (this refers to resistance to foreign-instigated revolutions)
+' - Population's Concern over Own Reputation:		range from 0 to 2.0. 1.0=normal, less than 1.0=unconcerned,			more than 1.0=very concerned
+' - Importance of Other Empire's Reputations:		range from 0 to 2.0. 1.0=normal, less than 1.0=less important,		more than 1.0=more important
+' - SpecialFunctionCode:							0=NONE,				1=nationalize private sector
+' - Availability:									0=all empires,		1=race-specific,		2=ancient guardians,				3=shakturi
+'---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+' - Empire Name Adjectives:							a list of 5 comma-separated adjectives that can be used to name an empire with this government (adjectives are prefixed at the start of the empire name)
+' - Empire Name Nouns:								a list of comma-separated nouns that can be used to name an empire with this government (nouns are suffixed at the end of the empire name)
+'---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+0,  Despotism,					1.1,  0.5,  0.65, 1.0,  1.3,  0.8,  1.3,  0.9,		0.1,   1.0, 0.0, 0, 1,		0.9, 1.0, 0.25, 0, 0,	Great, Grand, Supreme, First, Divine,						Empire, Dominion, Territory, Supremacy, Authority, Sovereignty, Axis
+1,  Feudalism,					1.0,  0.7,  0.7,  1.0,  1.2,  0.9,  1.4,  0.9,		0.15,  0.7, 0.0, 1, 1,		1.3, 1.0, 0.75, 0, 0,	Unified, Unwavering, Stalwart, Indomitable, ,				Combine, Hold, Freehold, Duchy, Fiefdom, Enclave, Confederacy, Council, Colonies, Alignment, League
+2,  Monarchy,					1.0,  0.6,  0.8,  1.0,  1.1,  1.0,  1.2,  0.9,		0.25,  0.4, 0.0, 1, 1,		1.2, 1.0, 1.0,  0, 0,	Imperial, Royal, Great, Supreme, ,							Empire, Dominion, Kingdom, Realm, Commonwealth, Domain, Dynasty
+3,  Republic,					0.85, 1.0,  0.9,  1.0,  1.0,  1.1,  1.1,  1.0,		0.5,   0.2, 1.0, 0, 2,		2.0, 1.0, 0.75, 0, 0,	Unified, Combined, Imperial, Great, ,						Empire, Republic, Alliance, Alligned Worlds, Federation, Confederation, Coalition
+4,  Democracy,					0.85, 1.2,  1.0,  1.2,  0.9,  1.2,  0.9,  1.0,		0.5,   0.1, 1.0, 0, 2,		1.8, 1.0, 0.75, 0, 0,	Free, United, Combined, Confederated, Grand,				Alliance, Worlds, Federation, Coalition, Colonies, Empire, Republic
+5,  Military Dictatorship,		1.0,  0.4,  0.85, 0.9,  1.1,  1.0,  1.5,  0.9,		0.125, 1.5, 0.0, 2, 1,		0.7, 1.0, 0.25, 0, 0,	Imperial, Great, Grand, , ,									Junta, Territory, Supremacy, Authority, Sovereignty, Potentate, Axis
+6,  Way of the Ancients,		0.8,  0.9,  0.7,  1.4,  1.1,  1.25, 1.0,  1.0,		0.5,   0.1, 1.0, 0, 2,		2.0, 2.0, 1.2,  0, 2,	, , , , ,									
+7,  Way of Darkness,			1.0,  0.3,  0.5,  1.1,  1.1,  1.15, 1.2,  0.9,		0.175, 0.2, 0.0, 2, 1,		1.6, 0.1, 0.25, 0, 3,	, , , , ,									
+8,  Technocracy,				0.85, 0.9,  0.8,  1.1,  1.0,  1.25, 0.9,  0.9,		0.15,  0.7, 0.0, 3, 0,		1.3, 1.0, 0.75, 0, 1,	Supreme, Ultimate, Foremost, Uber, ,						Meritocracy, Technocracy, Ascendancy, Superiority
+9,  Mercantile Guild,			1.0,  1.1,  0.7,  1.1,  1.0,  1.0,  0.9,  1.2,		0.5,   0.4, 1.0, 0, 2,		1.5, 1.0, 0.25, 0, 1,	Trans-Galaxtic, Galaxtic, Pan-Galaxtic, Inter-Galactic, ,	Syndicate, Consortium, Corporation, Industries, Guilds, Hegemony, Group
+10, Utopian Paradise,			1.0,  1.4,  1.2,  1.4,  1.0,  1.0,  0.6,  1.0,		0.5,   0.1, 1.5, 0, 2,		1.0, 1.0, 0.25, 0, 1,	Free, Organic, Harmonious, Enlightened, Egalitarian,		Utopia, Harmony, Paradise, Renaissance
+11, Hive Mind,					0.8,  0.5,  0.7,  1.2,  1.1,  1.0,  1.1,  0.9,		0.075, 2.0, 0.0, 0, 0,		2.2, 1.0, 1.0,  0, 1,	Great, Her Majesty's, The One True, His Eminence's, ,		Hive, Collective, Conformity, Consciousness
+12, Corporate Nationalism,		1.15, 0.8,  0.8,  1.1,  1.0,  0.9,  1.2,  1.0,		0.25,  0.8, 0.0, 1, 1,		1.0, 1.0, 1.0,  1, 1,	, , , , ,									
+13, Authoritarian Eugenics,		0.8,  0.7,  0.9,  1.3,  1.2,  1.3,  1.2,  0.9,		0.3,   0.5, 0.5, 0, 2,		2.0, 2.0, 2.0,  0, 1,	Great, Grand, United, , ,									Empire, Supremacy, Territory, Nation, Authority, Domain
+14, Way of Symbiosis,			1.0,  1.0,  0.9,  1.3,  0.9,  1.1,  1.0,  1.0,		0.5,   0.1, 1.0, 0, 0,		2.0, 2.0, 2.0,  0, 1,	Integrated, Symbotic, Unified, Hybridized, Organic,			Empire, Supremacy, Union, Peoples, Authority, Domain, Synthesis, Evolution, Host, Ascention
+15, Core Consciousness,         0.5, 0.85,  1.0,  2.0,  1.0,  1.0,  1.0,  0.9,        0,   3.0,   0, 0, 1,      3.0, 0, 0, 0, 1,        Great, Supreme, Ultimate, Imperial, Galactic,				Axis, Consciousness, Multiplex, Terminus					

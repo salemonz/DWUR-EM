@@ -1,0 +1,40 @@
+'Distant Worlds - dialogue - Version 1.9.5.10 - Modded by the Distant Worlds Mod Editor by Sabranan
+
+GREETING_INTRODUCTION	;Welcome! We are {0}.\n\nWe love fixing machines and hunting Bakdurs.\n\nWe not like baths or genocidal dictators
+GREETING_FRIENDLY	;Welcome our humble camp friend!\n\nWhat talk about?
+GREETING_NEUTRAL	;What we do for you?
+GREETING_ANGRY	;Not happy to see you, ok.\n\nSo make it quick
+OFFER_FREETRADE	;We make Free Trade Agreement with you! Good idea, hmmm?\n\nSay yes!
+FREETRADE_ACCEPT	;Yippeee for Free Trade Agreement! We accept!\n\nStay for party, yes?
+FREETRADE_REJECT	;No, not want your Free Trade Agreement. Its no good for us
+CANCELTREATY	;{0} with you is no good now. All finished
+CANCELTREATY_RESPONSE_FRIENDLY	;You stopped liking us? How we fix?\n\nWe even have bath if you want
+CANCELTREATY_RESPONSE_NEUTRAL	;Huh? You not like us now?\n\nOk then
+CANCELTREATY_RESPONSE_ANGRY	;No treaty now?\n\nWell we thought you looked funny anyway. You have no smell! And too clean
+TREATY_PROPOSAL	;Ohhh, treaty, treaty! So exciting!\n\nOk, we're listening now. Tell us plan
+TREATY_ACCEPTRESPONSE	;Yeehaa! New friend!\n\nYou have any broken junk you not want? We take it for you, yes?
+TREATY_REJECTRESPONSE	;Too bad. We had celebration all ready to go.\n\nBut not now
+TRADESANCTIONS_IMPOSE	;We not like you now. So doing Trade Sanctions on you!\n\nNo more Bakdur meat for you!
+TRADESANCTIONS_IMPOSE_RESPONSE_ANGRY	;Yiiiii! We very angry on you!\n\nBig trouble coming for you, no-smell people!
+TRADESANCTIONS_IMPOSE_RESPONSE_NEUTRAL	;Aaak! This not good. You not be fair with us!
+TRADESANCTIONS_IMPOSE_RESPONSE_SURPRISED	;You a big meanie! We kind to you, but you hard on us.\n\nNot make sense
+TRADESANCTIONS_LIFT	;We trade with you again now.\n\nNeed more broken junk, so send some to us, ok?
+TRADESANCTIONS_LIFT_RESPONSE	;You change mind all the time.\n\nBut we happy, trading is good
+WAR_DECLARE	;You make us super angry! We WAR on you!\n\nLook out: big hunting ships coming for you!
+WAR_DECLARE_RESPONSE_EAGER	;We happy to fight you! You too clean, have no smell!\n\nYou need hunting
+WAR_DECLARE_RESPONSE_NEUTRAL	;Ok then. We big bash-up on you now!
+WAR_DECLARE_RESPONSE_SURPRISED	;War you say? No good!\n\nNot make sense
+WAR_END	;War no good. We stop now.\n\nYou stop too?
+WAR_END_ACCEPT	;Ok, war finished.\n\nNearly Bakdur hunting season anyway
+WAR_END_REJECT	;You had enough fighting Bakdur breath?\n\nNot us! We hunt you some more!
+GIFT_GIVE	;Something for you: {0} credits.\n\nHave happy time, ok?
+GIFT_THANKS	;You give us gift! Thanks
+WARNING	;Warning us for what?
+WARNING_INTELLIGENCEMISSIONS	;You tricky snake! You doing secret scary things on us!\n\nNot happy with tricky stuff! Stop now, or else!
+WARNING_INTELLIGENCEMISSIONS_RESPONSE_FRIENDLY	;Missions? What are these?\n\nNo missions on you. You wrong
+WARNING_INTELLIGENCEMISSIONS_RESPONSE_NEUTRAL	;We check on missions. Not sure if we did
+WARNING_INTELLIGENCEMISSIONS_RESPONSE_ANGRY	;Yes, we send missions. We not like you - you not smell!\n\nWe send more missions if you keep scaring us
+WARNING_ATTACKS	;You crazy alien! Stop attacking us!\n\nWe hunt you if not stop!
+WARNING_ATTACKS_RESPONSE_FRIENDLY	;This very bad. We sorry.\n\nWe tell crazy ship captains to stop now
+WARNING_ATTACKS_RESPONSE_NEUTRAL	;That not good.\n\nWe look at things. Find out what happened, ok?
+WARNING_ATTACKS_RESPONSE_ANGRY	;Yes, we send attacks on you. Our ships hunting you because you mean.\n\nStop being crazy bad, then we stop attacks, ok?

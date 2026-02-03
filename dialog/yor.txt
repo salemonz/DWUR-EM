@@ -1,0 +1,47 @@
+'Distant Worlds - dialogue - Version 1.9.5.10 - Modded by the Distant Worlds Mod Editor by Sabranan
+
+PIRATE_PROTECTIONPROPOSE	;You are scared of our power? We can ensure the safety of all your ships while travelling through our area.\n\nThe price for six months protection is our best offer.
+PIRATE_PROTECTIONPROPOSEINITIATE	;It can be dangerous around these parts.\n\nYou are lucky, we can ensure your safety for the small sum below. This will last for six months.\n\nWhat do you say?
+PIRATE_PROTECTIONACCEPTRESPONSE	;A very wise choice!\n\nWe can guarantee that none of your ships will suffer any 'unfortunate accidents'.\n\nUntil our next fee is due anyway...
+PIRATE_PROTECTIONREJECTRESPONSE	;Most unwise. Without payment we cannot ensure your ships safety.\n\nMaybe you should reconsider?
+PIRATE_PROTECTIONALREADYPAID	;We admire your eagerness, but you have already paid us protection.\n\nCome back when your current protection period expires.\n\nWe will gladly accept further payment then
+PIRATE_ATTACKOFFER_SINGLEEMPIRE	;Are the {0} giving you strife? If you like, we could make life hard for them...\n\nWe would keep it a secret of course.\n\nAll that we ask for this service is a small payment of {1} credits.\n\nWhat do you say?
+PIRATE_ATTACKCOMMENCE	;An excellent way to spend your money!\n\nOur attacks on the {0} will begin at once!
+GREETING_INTRODUCTION	;We are the {0}.\n\nWe seek to spread throughout this Galaxy, do not get in our way with this.
+GREETING_FRIENDLY	;What scheme for conquest have you come to share with us, friend?
+GREETING_NEUTRAL	;Explain your presence before us.
+GREETING_ANGRY	;You come to speak with us, fools?\n\nWhat pacifying offer do you have for us?
+OFFER_FREETRADE	;Will you submit to a Free Trade Agreement with us?\n\nBoth of our economies will benefit greatly. And we can hold off using your planets for now.\n\nWhat do you say?
+FREETRADE_ACCEPT	;A Free Trade Agreement would be very useful. We accept.
+FREETRADE_REJECT	;No, we are not interested in a Free Trade Agreement.\n\nWe have other plans for you...
+CANCELTREATY	;Our {0} with you is now terminated.\n\nYou are beginning to be a pest...
+CANCELTREATY_RESPONSE_FRIENDLY	;We used to like you.\n\nBut perhaps we misjudged matters...
+CANCELTREATY_RESPONSE_NEUTRAL	;Very well then. Your insult has been noted
+CANCELTREATY_RESPONSE_ANGRY	;Good, good. This treaty was getting in the way of our plans anyway
+TREATY_PROPOSAL	;What exactly are you proposing?
+TREATY_ACCEPTRESPONSE	;Excellent!\n\nWe hope this will further our cause.
+TREATY_REJECTRESPONSE	;Hmmm...\n\nBecoming an obstacle for us is not in your interest.
+TRADESANCTIONS_IMPOSE	;We are sick of our economy benefiting you.\n\nWe are imposing Trade Sanctions on you!
+TRADESANCTIONS_IMPOSE_RESPONSE_ANGRY	;We seethe with fury at you!\n\nDo not think that you are strong enough to challenge us - you are not
+TRADESANCTIONS_IMPOSE_RESPONSE_NEUTRAL	;If we cared about this, we might be angry.\n\nBut we do not, so we are not
+TRADESANCTIONS_IMPOSE_RESPONSE_SURPRISED	;We admit that your action has surprised us.\n\nBut thank you for identifying yourself as an enemy for us.\n\nBe assured that we will deal with you when we are ready...
+TRADESANCTIONS_LIFT	;We're lifting our Trade Sanctions against you.\n\nYou appear to have become much less of a problem. Lesson learned for you.
+TRADESANCTIONS_LIFT_RESPONSE	;This seems to matter greatly to you.\n\nBut not to us.
+WAR_DECLARE	;You stand in our way: we declare WAR on you!\n\nYou will submit or die, you decide.
+WAR_DECLARE_RESPONSE_EAGER	;How convenient we were just about to declare war on you!\n\nAnd now you must die...
+WAR_DECLARE_RESPONSE_NEUTRAL	;How brave of you - daring to take us on!\n\nOf course, bravery and foolishness are closely related.\n\nVery closely, in this case
+WAR_DECLARE_RESPONSE_SURPRISED	;You are full of surprises!\n\nBut we always welcome a chance to rid ourselves of an obstacle.
+WAR_END	;It is time for this war to end. We will complete your assimilation later.\n\nWhat do you say?
+WAR_END_ACCEPT	;For once we agree with you - this war should end.\n\nOur forces are standing down
+WAR_END_REJECT	;When we feel you are out of our way, which isn't yet.\n\nThe war goes on.
+GIFT_GIVE	;We have a gift for you of {0} credits.\n\nRemember this.
+GIFT_THANKS	;Thank you for your gift.\n\nWe will see that it goes to good use...
+WARNING	;You want to warn us?\n\nGo ahead and waste your words on us.
+WARNING_INTELLIGENCEMISSIONS	;We know of your covert missions against us.\n\nBe warned that we can give you a lesson in treachery that you will never forget...\n\nStop your missions now, while you still can.
+WARNING_INTELLIGENCEMISSIONS_RESPONSE_FRIENDLY	;Convert missions against you? How shocking.
+WARNING_INTELLIGENCEMISSIONS_RESPONSE_NEUTRAL	;Don't worry. That's just our routine surveillance on your empire.\n\nNothing sinister to be concerned about
+WARNING_INTELLIGENCEMISSIONS_RESPONSE_ANGRY	;Convert missions? That would typically indicate preparations for war.\n\nBut surely that is not the case here. So don't worry about it...
+WARNING_ATTACKS	;Stop your blatant attacks on our ships and bases!\n\nThese actions put you on very dangerous ground. We warn you to stop now.
+WARNING_ATTACKS_RESPONSE_FRIENDLY	;Attacks on you? We are so upset about this.
+WARNING_ATTACKS_RESPONSE_NEUTRAL	;Attacks on YOU?!\n\nNo, no - our ships were defending themselves from attacks by your forces.\n\nPlease don't do that again.
+WARNING_ATTACKS_RESPONSE_ANGRY	;Attacks?\n\nHahaha. The worm wants us to remove the hook?\n\nRemove your presence before my amusement turns to wrath.

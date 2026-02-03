@@ -1,0 +1,225 @@
+'Distant Worlds - Characters - 1.9.0.0 - Modded by the Distant Worlds Mod Editor by Sabranan
+
+
+'Each character line below is comprised of comma-separated data as follows:
+' - Appearance order: order that this character appears in the game relative to other characters. A value of zero (0) means that the character is present at the start of the game
+' - Name: name of the character
+' - Role: the type of character, selected from one of the following values: 1=Faction Leader, 2=Ambassador, 3=Colony Governor, 4=Fleet Admiral, 5=Troop General, 6=Intelligence Agent, 7=Scientist, 8=Pirate Leader, 9=Ship Captain
+' - Picture filename: optional name of image file used to represent this character. Only PNG image files are supported. The filename should include the file type suffix (.png). The image file itself should be placed in the images\units\characters folder (or customization\THEMENAME\characterImages folder). If no image is specified then the appropriate race image will be used
+' - Race override: optional name of the race for this character, if different from the default race for the file. Name must match a race name found in the races folder
+
+'The following skills should be set between -100 and +100. Note that the character's role will determine which skills actually apply (e.g. only a Fleet Admiral can benefit from Ship Maneuvering skill)
+' 0=None, 1=Diplomacy, 2=ColonyIncome, 3=TradeIncome, 4=TourismIncome, 5=ColonyCorruption, 6=ColonyHappiness, 7=PopulationGrowth,
+' 8=MiningRate, 9=TroopRecruitment, 10=MilitaryShipConstructionSpeed, 11=CivilianShipConstructionSpeed, 12=ColonyShipConstructionSpeed, 
+' 13=FacilityConstructionSpeed, 14=ResearchWeapons, 15=ResearchEnergy, 16=ResearchHighTech, 17=Espionage, 18=CounterEspionage, 
+' 19=Sabotage, 20=Concealment, 21=PsyOps, 22=Assassination, 23=MilitaryShipMaintenance, 24=MilitaryBaseMaintenance, 25=CivilianShipMaintenance, 
+' 26=CivilianBaseMaintenance, 27=TroopMaintenance, 28=WarWeariness, 29=Targeting, 30=Countermeasures, 31=ShipManeuvering, 32=Fighters, 
+' 33=ShipEnergyUsage, 34=WeaponsDamage, 35=WeaponsRange, 36=ShieldRechargeRate, 37=DamageControl, 38=RepairBonus, 39=HyperjumpSpeed, 
+' 40=TroopGroundAttack, 41=TroopGroundDefense, 42=TroopExperienceGain, 43=TroopRecoveryRate, 44=TroopStrengthArmor, 45=TroopStrengthInfantry, 
+' 46=TroopStrengthSpecialForces, 47=TroopStrengthPlanetaryDefense, 48=SmugglingIncome, 49=SmugglingEvasion, 50=BoardingAssault
+' - Skill Type 1: 0=None, 1 to 50=specific skill type (see values above and Modding Guide), ?=select random skill appropriate for role
+' - Skill Level 1: -100 to +100, ?=select random skill level between 0 and 20
+' - Skill Type 2: 0=None, 1 to 50=specific skill type (see values above and Modding Guide), ?=select random skill appropriate for role
+' - Skill Level 2: -100 to +100, ?=select random skill level between 0 and 20
+' - Skill Type 3: 0=None, 1 to 50=specific skill type (see values above and Modding Guide), ?=select random skill appropriate for role
+' - Skill Level 3: -100 to +100, ?=select random skill level between 0 and 20
+' - Skill Type 4: 0=None, 1 to 50=specific skill type (see values above and Modding Guide), ?=select random skill appropriate for role
+' - Skill Level 4: -100 to +100, ?=select random skill level between 0 and 20
+
+'The following traits can be set for each character. Note that the character's role will determine which traits actually apply
+' - Trait Type 1,2,3: 0=None, 1 to 95=specific trait type (see values below and Modding Guide), ?=select random trait appropriate for role. NOTE: must not specify opposing positive and negative traits, e.g. Paranoid and Trusting
+' 0=None, 1=Paranoid, 2=Trusting, 3=PeaceThroughStrength, 4=Pacifist, 5=Expansionist, 6=Isolationist, 7=Diplomat, 8=Obnoxious, 9=Famous, 
+' 10=Disliked, 11=GoodAdministrator, 12=PoorAdministrator, 13=BeanCounter, 14=Generous, 15=Engineer, 16=Luddite, 17=FreeTrader, 18=Protectionist, 
+' 19=Environmentalist, 20=Industrialist, 21=InspiringPresence, 22=Demoralizing, 23=Organized, 24=Disorganized, 25=HealthOriented, 26=LaborOriented, 
+' 27=Spiritual, 28=Logical, 29=GoodStrategist, 30=PoorStrategist, 31=Uninhibited, 32=Measured, 33=Addict, 34=Sober, 35=Courageous, 36=Weak, 
+' 37=Tolerant, 38=Xenophobic, 39=EloquentSpeaker, 40=PoorSpeaker, 41=Corrupt, 42=Lawful, 43=Lazy, 44=Energetic, 45=Linguist, 46=TongueTied, 
+' 47=Technical, 48=NonTechnical, 49=GoodTactician, 50=PoorTactician, 51=StrongSpaceAttacker, 52=PoorSpaceAttacker, 53=StrongSpaceDefender, 
+' 54=PoorSpaceDefender, 55=Drunk, 56=ToughDiscpline, 57=LaxDiscipline, 58=LocalDefenseTactics, 59=PlanetarySupport, 60=GoodSpaceLogistician, 
+' 61=PoorSpaceLogistician, 62=NaturalSpaceLeader, 63=SkilledNavigator, 64=PoorNavigator, 65=StrongGroundAttacker, 66=PoorGroundAttacker, 
+' 67=StrongGroundDefender, 68=PoorGroundDefender, 69=GoodGroundLogistician, 70=PoorGroundLogistician, 71=NaturalGroundLeader, 72=GoodRecruiter, 
+' 73=PoorRecruiter, 74=CarefulAttacker, 75=RecklessAttacker, 76=DoubleAgent, 77=Creative, 78=Methodical, 79=ForeignSpy, 80=Patriot, 81=UltraGenius,
+' 82=Uninhibited (Intelligence Agent), 83=Measured (Intelligence Agent), 84=Addict (Intelligence Agent), 85=Sober (Intelligence Agent),
+' 86=Courageous (Intelligence Agent), 87=Weak (Intelligence Agent), 88=Tolerant (Intelligence Agent), 89=Xenophobic (Intelligence Agent),
+' 90=EloquentSpeaker (Intelligence Agent), 91=PoorSpeaker (Intelligence Agent), 92=Corrupt (Intelligence Agent), 93=Lawful (Intelligence Agent), 
+' 94=Smuggler, 95=BountyHunter
+
+?, Azzovej Khekhidoth, 1, haakonish-leader1.png, Haakonish, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Chukaz Sustha, 1, haakonish-leader2.png, Haakonish, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Voussa Kopta, 1, haakonish-leader3.png, Haakonish, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Traroki Srasta, 1, haakonish-leader4.png, Haakonish, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Jhoves Khedja, 1, haakonish-leader1.png, Haakonish, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Khive Minapa, 1, haakonish-leader2.png, Haakonish, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Khoni Ashadha, 1, haakonish-leader3.png, Haakonish, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Jhahshan Kharmaja, 1, haakonish-leader4.png, Haakonish, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Jhassho Kshamvoshmosta, 1, haakonish-leader1.png, Haakonish, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Jhumakau Laxexi, 1, haakonish-leader2.png, Haakonish, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Ngainnekuhs Icsar, 1, haakonish-leader3.png, Haakonish, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Ngazogre Okaca, 1, haakonish-leader4.png, Haakonish, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Nruzzonnahs Jekha, 1, haakonish-leader1.png, Haakonish, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Mrezshesh Szeecatre, 1, haakonish-leader2.png, Haakonish, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Inish Thixizs, 1, haakonish-leader3.png, Haakonish, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Izaruh Jyortanji, 1, haakonish-leader4.png, Haakonish, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Ivazzi Khugokkehz, 1, haakonish-leader1.png, Haakonish, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Ugzaij Sezherkiess, 1, haakonish-leader2.png, Haakonish, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Ussuashuh Sharjeiskukh, 1, haakonish-leader3.png, Haakonish, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Zakomau Ashu, 1, haakonish-leader4.png, Haakonish, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Kegizuj Kshinta, 2, haakonish-diplomat1.png, Haakonish, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Kuvurgain Lashtras, 2, haakonish-diplomat2.png, Haakonish, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Mavun Tavajat, 2, haakonish-diplomat3.png, Haakonish, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Mgezzummoh Sizhi, 2, haakonish-diplomat4.png, Haakonish, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Mukino Udikai, 2, haakonish-diplomat1.png, Haakonish, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Jinnumahs Udikai, 2, haakonish-diplomat2.png, Haakonish, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Nragahoj Hecze, 2, haakonish-diplomat3.png, Haakonish, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Nruzzonnahs Dhilanshtri, 2, haakonish-diplomat4.png, Haakonish, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Mgivan Vayami, 2, haakonish-diplomat1.png, Haakonish, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Egnuz Kranma, 2, haakonish-diplomat2.png, Haakonish, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Traskaz Shekka, 2, haakonish-diplomat3.png, Haakonish, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Megozaz Szixsekho, 2, haakonish-diplomat4.png, Haakonish, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Krekennon Szuzuze, 2, haakonish-diplomat1.png, Haakonish, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Khovarih Nattra, 2, haakonish-diplomat2.png, Haakonish, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Eneguj Ercikhi, 2, haakonish-diplomat3.png, Haakonish, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Krevezuhz Sarei, 2, haakonish-diplomat4.png, Haakonish, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Chimazzush Dhuda, 2, haakonish-diplomat1.png, Haakonish, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Iavishkash Xetish, 2, haakonish-diplomat2.png, Haakonish, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Mgiagunzaz Szuka, 2, haakonish-diplomat3.png, Haakonish, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Ivomahs Vittomkhalwi, 2, haakonish-diplomat4.png, Haakonish, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Jingra Zheikish, 3, haakonish-diplomat1.png, Haakonish, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Naevesh Ashu, 3, haakonish-diplomat2.png, Haakonish, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Ngazunua Vittomkhalwi, 3, haakonish-diplomat3.png, Haakonish, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Nishgas Kharmaja, 3, haakonish-diplomat4.png, Haakonish, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Ozuvish Xezsekhe, 3, haakonish-diplomat1.png, Haakonish, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Uzevo Vrartikha, 3, haakonish-diplomat2.png, Haakonish, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Mimuzahs Laxexi, 3, haakonish-diplomat3.png, Haakonish, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Vagugzush Udikai, 3, haakonish-diplomat4.png, Haakonish, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Mouzaugaej Sharjeiskukh, 3, haakonish-diplomat1.png, Haakonish, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Jhigguro Texzesh, 3, haakonish-diplomat2.png, Haakonish, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Inazu Kshaswapta, 3, haakonish-diplomat3.png, Haakonish, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Mgezu Lapera, 3, haakonish-diplomat4.png, Haakonish, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Nuchesh Khedja, 3, haakonish-diplomat1.png, Haakonish, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Chogrogihz Khedja, 3, haakonish-diplomat2.png, Haakonish, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Zrugnez Egerkora, 3, haakonish-diplomat3.png, Haakonish, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Chemazzush Tida, 3, haakonish-diplomat4.png, Haakonish, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Essoh Kazsokuss, 3, haakonish-diplomat1.png, Haakonish, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Mrallurohs Sashasilwa, 3, haakonish-diplomat2.png, Haakonish, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Chogrogihz Szixsekho, 3, haakonish-diplomat3.png, Haakonish, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Chiarizgu Kshakara, 3, haakonish-diplomat4.png, Haakonish, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Aegoza Azus, 4, haakonish-admiral1.png, Haakonish, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Ergogron Krevezuhz, 4, haakonish-admiral2.png, Haakonish, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Chiania Khedja, 4, haakonish-admiral3.png, Haakonish, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Khurgaini Azkeh, 4, haakonish-admiral4.png, Haakonish, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Iavishkash Kshaswapta, 4, haakonish-admiral1.png, Haakonish, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Nruzzonnahs Mrissohz, 4, haakonish-admiral2.png, Haakonish, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Essoh Dhengavya, 4, haakonish-admiral3.png, Haakonish, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Krennoura Kshakara, 4, haakonish-admiral4.png, Haakonish, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Kavoumoj Jekha, 4, haakonish-admiral1.png, Haakonish, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Jhahshan Vittomkhalwi, 4, haakonish-admiral2.png, Haakonish, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Chugrogihz Uvoz, 4, haakonish-admiral3.png, Haakonish, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Ukhas Tida, 4, haakonish-admiral4.png, Haakonish, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Ghurdu Srasta, 4, haakonish-admiral1.png, Haakonish, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Jasskeze Vrartikha, 4, haakonish-admiral2.png, Haakonish, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Ginimoj Dhuda, 4, haakonish-admiral3.png, Haakonish, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Krannaemo Enkha, 4, haakonish-admiral4.png, Haakonish, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Eneguj Sustha, 4, haakonish-admiral1.png, Haakonish, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Mgezzummoh Sharjeiskukh, 4, haakonish-admiral2.png, Haakonish, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Mgekasshoz Laaceeket, 4, haakonish-admiral3.png, Haakonish, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Mukino Shisiesi, 4, haakonish-admiral4.png, Haakonish, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Ivomahs Hrulwingikhat, 5, haakonish-general1.png, Haakonish, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Traroki Udikai, 5, haakonish-general2.png, Haakonish, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Krumokais Azus, 5, haakonish-general3.png, Haakonish, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Jhiammarihz Vashtha, 5, haakonish-general4.png, Haakonish, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Khovarih Shekka, 5, haakonish-general1.png, Haakonish, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Mgossuges Sarei, 5, haakonish-general2.png, Haakonish, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Mgiagunzaz Ithexeikh, 5, haakonish-general3.png, Haakonish, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Truzgiako Tavajat, 5, haakonish-general4.png, Haakonish, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Ghovero Jyakyarna, 5, haakonish-general1.png, Haakonish, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Mouzaugaej Okaca, 5, haakonish-general2.png, Haakonish, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Jhoves Eilsethaa, 5, haakonish-general3.png, Haakonish, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Nuchesh Khedja, 5, haakonish-general4.png, Haakonish, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Zrugnez Vayami, 5, haakonish-general1.png, Haakonish, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Inish Kshamvoshmosta, 5, haakonish-general2.png, Haakonish, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Khonas Kshinta, 5, haakonish-general3.png, Haakonish, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Khove Kopta, 5, haakonish-general4.png, Haakonish, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Mraenehs Egerkora, 5, haakonish-general1.png, Haakonish, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Mrallurohs Jyortanji, 5, haakonish-general2.png, Haakonish, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Mgivan Xetish, 5, haakonish-general3.png, Haakonish, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Nruzzonnahs Kshira, 5, haakonish-general4.png, Haakonish, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Megozaz Kazsokuss, 6, haakonish-spy1.png, Haakonish, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Vovallihz Palwa, 6, haakonish-spy2.png, Haakonish, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Mgezu Pasramvrarka, 6, haakonish-spy3.png, Haakonish, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Vovhozi Zhatha, 6, haakonish-spy4.png, Haakonish, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Jhahshan Ixsu, 6, haakonish-spy1.png, Haakonish, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Kugishgahz Vrartikha, 6, haakonish-spy2.png, Haakonish, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Zizgauhjuz Zhierszethis, 6, haakonish-spy3.png, Haakonish, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Chogrogihz Ercikhi, 6, haakonish-spy4.png, Haakonish, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Khegonush Zhoveggoz, 6, haakonish-spy1.png, Haakonish, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Trezigoun Udikai, 6, haakonish-spy2.png, Haakonish, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Azizrehs Kshamvoshmosta, 6, haakonish-spy3.png, Haakonish, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Khurgaini Dhilanshtri, 6, haakonish-spy4.png, Haakonish, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Zrugnez Laxexi, 6, haakonish-spy1.png, Haakonish, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Chuarizgu Kharmaja, 6, haakonish-spy2.png, Haakonish, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Ghavosshe Vayami, 6, haakonish-spy3.png, Haakonish, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Chuku Kshakara, 6, haakonish-spy4.png, Haakonish, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Kuvurgain Yecsolli, 6, haakonish-spy1.png, Haakonish, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Jhumakau Szeecatre, 6, haakonish-spy2.png, Haakonish, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Inazu Nattra, 6, haakonish-spy3.png, Haakonish, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Truzgiako Shekka, 6, haakonish-spy4.png, Haakonish, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Jeva Kherzos, 7, haakonish-scientist1.png, Haakonish, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Nrukaih Nimanu, 7, haakonish-scientist2.png, Haakonish, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Jhikkia Ezissi, 7, haakonish-scientist3.png, Haakonish, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Mromzushki Ngivhukaj, 7, haakonish-scientist4.png, Haakonish, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Jhekke Ahemas, 7, haakonish-scientist1.png, Haakonish, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Mgevan Chevirae, 7, haakonish-scientist2.png, Haakonish, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Ivazzi Ikhesh, 7, haakonish-scientist3.png, Haakonish, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Khive Sashasilwa, 7, haakonish-scientist4.png, Haakonish, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Kranikun Kshira, 7, haakonish-scientist1.png, Haakonish, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Mukino Kozri, 7, haakonish-scientist2.png, Haakonish, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Traskaz Krekennon, 7, haakonish-scientist3.png, Haakonish, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Uzevo Srasta, 7, haakonish-scientist4.png, Haakonish, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Kiruguh Tavajat, 7, haakonish-scientist1.png, Haakonish, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Nrahihz Nokigi, 7, haakonish-scientist2.png, Haakonish, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Ozellen Uzoru, 7, haakonish-scientist3.png, Haakonish, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Inish Eshonu, 7, haakonish-scientist4.png, Haakonish, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Mimze Vrartikha, 7, haakonish-scientist1.png, Haakonish, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Jasskeze Mganizij, 7, haakonish-scientist2.png, Haakonish, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Mgomammuj Khekhidoth, 7, haakonish-scientist3.png, Haakonish, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Jhiammarihz Mraenehs, 7, haakonish-scientist4.png, Haakonish, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Krammin Ithexeikh, 8, haakonish-pirate1.png, Haakonish, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Nishgas Nruhourgush, 8, haakonish-pirate2.png, Haakonish, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Azizrehs Tida, 8, haakonish-pirate3.png, Haakonish, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Eneguj Vahirda, 8, haakonish-pirate4.png, Haakonish, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Chiania Vayami, 8, haakonish-pirate1.png, Haakonish, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Truzgiako Sustha, 8, haakonish-pirate2.png, Haakonish, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Umokau Zheikish, 8, haakonish-pirate3.png, Haakonish, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Mriren Vittomkhalwi, 8, haakonish-pirate4.png, Haakonish, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Ngainnekuhs Sarei, 8, haakonish-pirate1.png, Haakonish, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Ghivuro Kshamvoshmosta, 8, haakonish-pirate2.png, Haakonish, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Nragahoj Hecze, 8, haakonish-pirate3.png, Haakonish, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Ozuvish Zhezami, 8, haakonish-pirate4.png, Haakonish, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Mromzushki Zrauvovho, 8, haakonish-pirate1.png, Haakonish, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Jhassho Dhilanshtri, 8, haakonish-pirate2.png, Haakonish, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Ghemasso Xezsekhe, 8, haakonish-pirate3.png, Haakonish, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Ghozshozes Szeecatre, 8, haakonish-pirate4.png, Haakonish, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Jhoves Kshaswapta, 8, haakonish-pirate1.png, Haakonish, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Ginimoj Kopta, 8, haakonish-pirate2.png, Haakonish, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Ghavosshe Kshakara, 8, haakonish-pirate3.png, Haakonish, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Mgossuges Shekka, 8, haakonish-pirate4.png, Haakonish, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Chukaz Enkha, 9, haakonish-pirate1.png, Haakonish, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Khegonush Zhatha, 9, haakonish-pirate2.png, Haakonish, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Khurge Elhesh, 9, haakonish-pirate3.png, Haakonish, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Ugzaij Jyettuva, 9, haakonish-pirate4.png, Haakonish, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Jhahshan Jyakyarna, 9, haakonish-pirate1.png, Haakonish, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Mgekkashoz Dhuda, 9, haakonish-pirate2.png, Haakonish, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Khona Dilo, 9, haakonish-pirate3.png, Haakonish, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Vomennu Zogmahz, 9, haakonish-pirate4.png, Haakonish, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Jizziagosh Lapera, 9, haakonish-pirate1.png, Haakonish, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Traroki Jekha, 9, haakonish-pirate2.png, Haakonish, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Khovarih Laxexi, 9, haakonish-pirate3.png, Haakonish, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Ozovia Udikai, 9, haakonish-pirate4.png, Haakonish, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Jhikkia Dhengavya, 9, haakonish-pirate1.png, Haakonish, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Iginnohs Athirshe, 9, haakonish-pirate2.png, Haakonish, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Nuchesh Szixsekho, 9, haakonish-pirate3.png, Haakonish, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Mgiagunzaz Prikshidha, 9, haakonish-pirate4.png, Haakonish, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Mraenehs Thixizs, 9, haakonish-pirate1.png, Haakonish, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Ngainnekuhs Vrayasthamkhi, 9, haakonish-pirate2.png, Haakonish, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Aigoz Sharjeiskukh, 9, haakonish-pirate3.png, Haakonish, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Egoru Kharmaja, 9, haakonish-pirate4.png, Haakonish, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?

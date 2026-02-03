@@ -1,0 +1,225 @@
+'Distant Worlds - Characters - 1.9.0.0 - Modded by the Distant Worlds Mod Editor by Sabranan
+
+
+'Each character line below is comprised of comma-separated data as follows:
+' - Appearance order: order that this character appears in the game relative to other characters. A value of zero (0) means that the character is present at the start of the game
+' - Name: name of the character
+' - Role: the type of character, selected from one of the following values: 1=Faction Leader, 2=Ambassador, 3=Colony Governor, 4=Fleet Admiral, 5=Troop General, 6=Intelligence Agent, 7=Scientist, 8=Pirate Leader, 9=Ship Captain
+' - Picture filename: optional name of image file used to represent this character. Only PNG image files are supported. The filename should include the file type suffix (.png). The image file itself should be placed in the images\units\characters folder (or customization\THEMENAME\characterImages folder). If no image is specified then the appropriate race image will be used
+' - Race override: optional name of the race for this character, if different from the default race for the file. Name must match a race name found in the races folder
+
+'The following skills should be set between -100 and +100. Note that the character's role will determine which skills actually apply (e.g. only a Fleet Admiral can benefit from Ship Maneuvering skill)
+' 0=None, 1=Diplomacy, 2=ColonyIncome, 3=TradeIncome, 4=TourismIncome, 5=ColonyCorruption, 6=ColonyHappiness, 7=PopulationGrowth,
+' 8=MiningRate, 9=TroopRecruitment, 10=MilitaryShipConstructionSpeed, 11=CivilianShipConstructionSpeed, 12=ColonyShipConstructionSpeed, 
+' 13=FacilityConstructionSpeed, 14=ResearchWeapons, 15=ResearchEnergy, 16=ResearchHighTech, 17=Espionage, 18=CounterEspionage, 
+' 19=Sabotage, 20=Concealment, 21=PsyOps, 22=Assassination, 23=MilitaryShipMaintenance, 24=MilitaryBaseMaintenance, 25=CivilianShipMaintenance, 
+' 26=CivilianBaseMaintenance, 27=TroopMaintenance, 28=WarWeariness, 29=Targeting, 30=Countermeasures, 31=ShipManeuvering, 32=Fighters, 
+' 33=ShipEnergyUsage, 34=WeaponsDamage, 35=WeaponsRange, 36=ShieldRechargeRate, 37=DamageControl, 38=RepairBonus, 39=HyperjumpSpeed, 
+' 40=TroopGroundAttack, 41=TroopGroundDefense, 42=TroopExperienceGain, 43=TroopRecoveryRate, 44=TroopStrengthArmor, 45=TroopStrengthInfantry, 
+' 46=TroopStrengthSpecialForces, 47=TroopStrengthPlanetaryDefense, 48=SmugglingIncome, 49=SmugglingEvasion, 50=BoardingAssault
+' - Skill Type 1: 0=None, 1 to 50=specific skill type (see values above and Modding Guide), ?=select random skill appropriate for role
+' - Skill Level 1: -100 to +100, ?=select random skill level between 0 and 20
+' - Skill Type 2: 0=None, 1 to 50=specific skill type (see values above and Modding Guide), ?=select random skill appropriate for role
+' - Skill Level 2: -100 to +100, ?=select random skill level between 0 and 20
+' - Skill Type 3: 0=None, 1 to 50=specific skill type (see values above and Modding Guide), ?=select random skill appropriate for role
+' - Skill Level 3: -100 to +100, ?=select random skill level between 0 and 20
+' - Skill Type 4: 0=None, 1 to 50=specific skill type (see values above and Modding Guide), ?=select random skill appropriate for role
+' - Skill Level 4: -100 to +100, ?=select random skill level between 0 and 20
+
+'The following traits can be set for each character. Note that the character's role will determine which traits actually apply
+' - Trait Type 1,2,3: 0=None, 1 to 95=specific trait type (see values below and Modding Guide), ?=select random trait appropriate for role. NOTE: must not specify opposing positive and negative traits, e.g. Paranoid and Trusting
+' 0=None, 1=Paranoid, 2=Trusting, 3=PeaceThroughStrength, 4=Pacifist, 5=Expansionist, 6=Isolationist, 7=Diplomat, 8=Obnoxious, 9=Famous, 
+' 10=Disliked, 11=GoodAdministrator, 12=PoorAdministrator, 13=BeanCounter, 14=Generous, 15=Engineer, 16=Luddite, 17=FreeTrader, 18=Protectionist, 
+' 19=Environmentalist, 20=Industrialist, 21=InspiringPresence, 22=Demoralizing, 23=Organized, 24=Disorganized, 25=HealthOriented, 26=LaborOriented, 
+' 27=Spiritual, 28=Logical, 29=GoodStrategist, 30=PoorStrategist, 31=Uninhibited, 32=Measured, 33=Addict, 34=Sober, 35=Courageous, 36=Weak, 
+' 37=Tolerant, 38=Xenophobic, 39=EloquentSpeaker, 40=PoorSpeaker, 41=Corrupt, 42=Lawful, 43=Lazy, 44=Energetic, 45=Linguist, 46=TongueTied, 
+' 47=Technical, 48=NonTechnical, 49=GoodTactician, 50=PoorTactician, 51=StrongSpaceAttacker, 52=PoorSpaceAttacker, 53=StrongSpaceDefender, 
+' 54=PoorSpaceDefender, 55=Drunk, 56=ToughDiscpline, 57=LaxDiscipline, 58=LocalDefenseTactics, 59=PlanetarySupport, 60=GoodSpaceLogistician, 
+' 61=PoorSpaceLogistician, 62=NaturalSpaceLeader, 63=SkilledNavigator, 64=PoorNavigator, 65=StrongGroundAttacker, 66=PoorGroundAttacker, 
+' 67=StrongGroundDefender, 68=PoorGroundDefender, 69=GoodGroundLogistician, 70=PoorGroundLogistician, 71=NaturalGroundLeader, 72=GoodRecruiter, 
+' 73=PoorRecruiter, 74=CarefulAttacker, 75=RecklessAttacker, 76=DoubleAgent, 77=Creative, 78=Methodical, 79=ForeignSpy, 80=Patriot, 81=UltraGenius,
+' 82=Uninhibited (Intelligence Agent), 83=Measured (Intelligence Agent), 84=Addict (Intelligence Agent), 85=Sober (Intelligence Agent),
+' 86=Courageous (Intelligence Agent), 87=Weak (Intelligence Agent), 88=Tolerant (Intelligence Agent), 89=Xenophobic (Intelligence Agent),
+' 90=EloquentSpeaker (Intelligence Agent), 91=PoorSpeaker (Intelligence Agent), 92=Corrupt (Intelligence Agent), 93=Lawful (Intelligence Agent), 
+' 94=Smuggler, 95=BountyHunter
+
+?, Bhalnus Armrolma, 1, drushocka-leader1.png, Drushocka, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Hjolkum Baergus, 1, drushocka-leader2.png, Drushocka, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Dolmek Daerduhm, 1, drushocka-leader3.png, Drushocka, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Thynur Bryr, 1, drushocka-leader4.png, Drushocka, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Hjalron Bryn, 1, drushocka-leader1.png, Drushocka, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Kramgus Bael, 1, drushocka-leader2.png, Drushocka, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Muirmur Baergus, 1, drushocka-leader3.png, Drushocka, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Armdir Brynn, 1, drushocka-leader4.png, Drushocka, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Daermus Daend, 1, drushocka-leader1.png, Drushocka, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Brumgar Bryl, 1, drushocka-leader2.png, Drushocka, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Thurdohr Armdeth, 1, drushocka-leader3.png, Drushocka, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Bromdek Bonsel, 1, drushocka-leader4.png, Drushocka, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Branlek Bryrtyn, 1, drushocka-leader1.png, Drushocka, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Theladin Balmin, 1, drushocka-leader2.png, Drushocka, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Muirbrek Barlynnir, 1, drushocka-leader3.png, Drushocka, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Bhalnik Bhargrus, 1, drushocka-leader4.png, Drushocka, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Bramrom Bril, 1, drushocka-leader1.png, Drushocka, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Kardram Brenn, 1, drushocka-leader2.png, Drushocka, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Tharmun Brenremmar, 1, drushocka-leader3.png, Drushocka, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Dolnir Belmun, 1, drushocka-leader4.png, Drushocka, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Ebbrek Brim, 2, drushocka-diplomat1.png, Drushocka, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Hjolgram Bryladir, 2, drushocka-diplomat2.png, Drushocka, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Magadin Brenle, 2, drushocka-diplomat3.png, Drushocka, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Bunman Belmun, 2, drushocka-diplomat4.png, Drushocka, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Thordir Bren, 2, drushocka-diplomat1.png, Drushocka, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Dulman Brennus, 2, drushocka-diplomat2.png, Drushocka, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Daermus Bryr, 2, drushocka-diplomat3.png, Drushocka, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Thelnom Balgadin, 2, drushocka-diplomat4.png, Drushocka, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Brandor Brynma, 2, drushocka-diplomat1.png, Drushocka, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Horgrim Baeram, 2, drushocka-diplomat2.png, Drushocka, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Melkuhm Bael, 2, drushocka-diplomat3.png, Drushocka, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Thardar Bharmundrum, 2, drushocka-diplomat4.png, Drushocka, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Horgurn Balnomdahr, 2, drushocka-diplomat1.png, Drushocka, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Theladin Brynma, 2, drushocka-diplomat2.png, Drushocka, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Tharmun Bryn, 2, drushocka-diplomat3.png, Drushocka, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Meltharn Bryr, 2, drushocka-diplomat4.png, Drushocka, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Thurdohr Brilkumgarn, 2, drushocka-diplomat1.png, Drushocka, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Dulman Baerdir, 2, drushocka-diplomat2.png, Drushocka, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Muirdahr Belmun, 2, drushocka-diplomat3.png, Drushocka, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Umdahr Bryl, 2, drushocka-diplomat4.png, Drushocka, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Theladin Belmun, 3, drushocka-diplomat1.png, Drushocka, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Bromdek Bael, 3, drushocka-diplomat2.png, Drushocka, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Bramduhr Bryr, 3, drushocka-diplomat3.png, Drushocka, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Thelnom Brulkumdel, 3, drushocka-diplomat4.png, Drushocka, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Hurgarn Balgadin, 3, drushocka-diplomat1.png, Drushocka, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Brumgran Brynn, 3, drushocka-diplomat2.png, Drushocka, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Muirgus Baergus, 3, drushocka-diplomat3.png, Drushocka, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Belmur Bryl, 3, drushocka-diplomat4.png, Drushocka, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Kromron Baergus, 3, drushocka-diplomat1.png, Drushocka, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Thordir Bryrtyn, 3, drushocka-diplomat2.png, Drushocka, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Tharmun Brynma, 3, drushocka-diplomat3.png, Drushocka, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Dulnir Balmin, 3, drushocka-diplomat4.png, Drushocka, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Thyladin Bryn, 3, drushocka-diplomat1.png, Drushocka, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Thordir Bryr, 3, drushocka-diplomat2.png, Drushocka, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Dolnir Brynma, 3, drushocka-diplomat3.png, Drushocka, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Melkuhm Balnomdahr, 3, drushocka-diplomat4.png, Drushocka, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Theladin Belmun, 3, drushocka-diplomat1.png, Drushocka, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Thyladin Brynn, 3, drushocka-diplomat2.png, Drushocka, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Dolmek Bryr, 3, drushocka-diplomat3.png, Drushocka, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Thyladin Baergus, 3, drushocka-diplomat4.png, Drushocka, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Balnum Armdan, 4, drushocka-admiral1.png, Drushocka, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Bramrim Gerdelmus, 4, drushocka-admiral2.png, Drushocka, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Hjolgram Brynn, 4, drushocka-admiral3.png, Drushocka, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Bhalron Nalgar, 4, drushocka-admiral4.png, Drushocka, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Theladin Thalkum, 4, drushocka-admiral1.png, Drushocka, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Thordir Gymdar, 4, drushocka-admiral2.png, Drushocka, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Bhargarn Baergus, 4, drushocka-admiral3.png, Drushocka, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Hurgarn Thartynnan, 4, drushocka-admiral4.png, Drushocka, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Hjulkum Bryr, 4, drushocka-admiral1.png, Drushocka, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Belrom Brynma, 4, drushocka-admiral2.png, Drushocka, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Daergus Baerdir, 4, drushocka-admiral3.png, Drushocka, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Belmur Branin, 4, drushocka-admiral4.png, Drushocka, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Muirdahr Tasthielmyl, 4, drushocka-admiral1.png, Drushocka, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Thelnom Daern, 4, drushocka-admiral2.png, Drushocka, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Tharmun Rotmerram, 4, drushocka-admiral3.png, Drushocka, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Thurdohr Thorn, 4, drushocka-admiral4.png, Drushocka, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Bromdek Niss, 4, drushocka-admiral1.png, Drushocka, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Bunman Gril, 4, drushocka-admiral2.png, Drushocka, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Bhalmand Kromnur, 4, drushocka-admiral3.png, Drushocka, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Thynur Brennus, 4, drushocka-admiral4.png, Drushocka, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Muirbrek Thalkum, 5, drushocka-general1.png, Drushocka, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Hjolmyr Daeram, 5, drushocka-general2.png, Drushocka, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Thordir Gemgarn, 5, drushocka-general3.png, Drushocka, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Umdahr Brenle, 5, drushocka-general4.png, Drushocka, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Melkuhm Lass, 5, drushocka-general1.png, Drushocka, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Theladin Thel, 5, drushocka-general2.png, Drushocka, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Horgrim Thargrun, 5, drushocka-general3.png, Drushocka, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Daergram Thelkohr, 5, drushocka-general4.png, Drushocka, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Melnar Germkam, 5, drushocka-general1.png, Drushocka, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Bromrom Thartynnan, 5, drushocka-general2.png, Drushocka, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Brandor Bryladir, 5, drushocka-general3.png, Drushocka, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Thelnom Naswael, 5, drushocka-general4.png, Drushocka, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Bunram Daerduhm, 5, drushocka-general1.png, Drushocka, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Thardram Baeram, 5, drushocka-general2.png, Drushocka, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Dolnir Gymra, 5, drushocka-general3.png, Drushocka, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Kardram Tharnur, 5, drushocka-general4.png, Drushocka, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Tharmun Thalgarn, 5, drushocka-general1.png, Drushocka, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Fargarn Thelkohr, 5, drushocka-general2.png, Drushocka, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Belmur Brynma, 5, drushocka-general3.png, Drushocka, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Hjulmek Branin, 5, drushocka-general4.png, Drushocka, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Hjolgram Thartynnan, 6, drushocka-spy1.png, Drushocka, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Muirdahr Hjulkohr, 6, drushocka-spy2.png, Drushocka, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Theladin Daern, 6, drushocka-spy3.png, Drushocka, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Belrom Thalkum, 6, drushocka-spy4.png, Drushocka, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Thordir Brennus, 6, drushocka-spy1.png, Drushocka, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Melkuhm Bryr, 6, drushocka-spy2.png, Drushocka, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Thelnom Tasssyl, 6, drushocka-spy3.png, Drushocka, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Horgrim Rotmerram, 6, drushocka-spy4.png, Drushocka, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Daergram Brynn, 6, drushocka-spy1.png, Drushocka, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Melnar Thargrun, 6, drushocka-spy2.png, Drushocka, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Bromrom Bryladir, 6, drushocka-spy3.png, Drushocka, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Brandor Thartynnan, 6, drushocka-spy4.png, Drushocka, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Tharmun Thelkohr, 6, drushocka-spy1.png, Drushocka, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Fargarn Germkam, 6, drushocka-spy2.png, Drushocka, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Belmur Branin, 6, drushocka-spy3.png, Drushocka, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Hjulmek Tharnur, 6, drushocka-spy4.png, Drushocka, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Hjolgram Brynma, 6, drushocka-spy1.png, Drushocka, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Muirdahr Thorn, 6, drushocka-spy2.png, Drushocka, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Theladin Naswael, 6, drushocka-spy3.png, Drushocka, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Thordir Thalkum, 6, drushocka-spy4.png, Drushocka, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Thelmand Dolgartyn, 7, drushocka-scientist1.png, Drushocka, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Theladin Dolgrom, 7, drushocka-scientist2.png, Drushocka, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Hjolgram Bryn, 7, drushocka-scientist3.png, Drushocka, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Bunman Bren, 7, drushocka-scientist4.png, Drushocka, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Melkuhm Belmun, 7, drushocka-scientist1.png, Drushocka, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Grilnar Germkam, 7, drushocka-scientist2.png, Drushocka, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Thynur Brenle, 7, drushocka-scientist3.png, Drushocka, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Thelnom Brennus, 7, drushocka-scientist4.png, Drushocka, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Thordir Bryr, 7, drushocka-scientist1.png, Drushocka, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Thurdohr Brynma, 7, drushocka-scientist2.png, Drushocka, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Dolnir Balnomdahr, 7, drushocka-scientist3.png, Drushocka, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Tharmun Bryladir, 7, drushocka-scientist4.png, Drushocka, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Daergus Gerdelmus, 7, drushocka-scientist1.png, Drushocka, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Muirbrek Bryl, 7, drushocka-scientist2.png, Drushocka, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Daergron Bryrtyn, 7, drushocka-scientist3.png, Drushocka, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Horgrim Grak, 7, drushocka-scientist4.png, Drushocka, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Hjolmyr Brynn, 7, drushocka-scientist1.png, Drushocka, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Belrom Baerdir, 7, drushocka-scientist2.png, Drushocka, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Brumgran Gergram, 7, drushocka-scientist3.png, Drushocka, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Belmur Daern, 7, drushocka-scientist4.png, Drushocka, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Thardar Gymdar, 8, drushocka-pirate1.png, Drushocka, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Thardrak Daeram, 8, drushocka-pirate2.png, Drushocka, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Branmmand Bryn, 8, drushocka-pirate3.png, Drushocka, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Theladin Germkam, 8, drushocka-pirate4.png, Drushocka, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Thelmand Dolgrom, 8, drushocka-pirate1.png, Drushocka, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Thardram Brim, 8, drushocka-pirate2.png, Drushocka, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Thordir Bryr, 8, drushocka-pirate3.png, Drushocka, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Kardram Bryl, 8, drushocka-pirate4.png, Drushocka, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Kargurn Gril, 8, drushocka-pirate1.png, Drushocka, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Horgurn Brom, 8, drushocka-pirate2.png, Drushocka, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Urmrak Bael, 8, drushocka-pirate3.png, Drushocka, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Daermus Brenle, 8, drushocka-pirate4.png, Drushocka, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Thurdohr Brynma, 8, drushocka-pirate1.png, Drushocka, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Grilnar Bryr, 8, drushocka-pirate2.png, Drushocka, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Melnar Belmun, 8, drushocka-pirate3.png, Drushocka, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Bromdek Gril, 8, drushocka-pirate4.png, Drushocka, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Theladin Brennus, 8, drushocka-pirate1.png, Drushocka, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Thelnom Brenle, 8, drushocka-pirate2.png, Drushocka, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Tharmun Bryladir, 8, drushocka-pirate3.png, Drushocka, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Thardar Germkam, 8, drushocka-pirate4.png, Drushocka, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Thardrak Daern, 9, drushocka-pirate1.png, Drushocka, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Brammand Gymdar, 9, drushocka-pirate2.png, Drushocka, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Hjulkum Bryn, 9, drushocka-pirate3.png, Drushocka, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Hjulnus Balmin, 9, drushocka-pirate4.png, Drushocka, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Thordir Bryrtyn, 9, drushocka-pirate1.png, Drushocka, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Grilnik Bryl, 9, drushocka-pirate2.png, Drushocka, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Hjolkum Daeram, 9, drushocka-pirate3.png, Drushocka, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Theladin Germkam, 9, drushocka-pirate4.png, Drushocka, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Thelmand Dolgartyn, 9, drushocka-pirate1.png, Drushocka, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Thardram Gergram, 9, drushocka-pirate2.png, Drushocka, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Thordir Bryr, 9, drushocka-pirate3.png, Drushocka, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Hjolmyr Brynn, 9, drushocka-pirate4.png, Drushocka, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Thelnom Brynma, 9, drushocka-pirate1.png, Drushocka, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Tharmun Belmun, 9, drushocka-pirate2.png, Drushocka, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Brumgran Bryn, 9, drushocka-pirate3.png, Drushocka, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Belrom Baergus, 9, drushocka-pirate4.png, Drushocka, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Melnar Germkam, 9, drushocka-pirate1.png, Drushocka, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Dolmek Bryladir, 9, drushocka-pirate2.png, Drushocka, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Thurdohr Bryl, 9, drushocka-pirate3.png, Drushocka, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Thylmund Belmun, 9, drushocka-pirate4.png, Drushocka, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?

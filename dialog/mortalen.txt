@@ -1,0 +1,49 @@
+'Distant Worlds - dialogue - Version 1.9.5.10 - Modded by the Distant Worlds Mod Editor by Sabranan
+
+PIRATE_PROTECTIONPROPOSE	;Looking for some 'insurance' when travelling through all those dangerous, pirate-infested systems?\n\nOur fee for six months protection is shown below
+PIRATE_PROTECTIONPROPOSEINITIATE	;We think that you need some protection - otherwise who knows what could happen to all those defenseless ships of yours...\n\nWe can provide six months protection for the modest amount show below.\n\nA bargain, don't you think?
+PIRATE_PROTECTIONACCEPTRESPONSE	;A sensible decision.\n\nYour ships are safe inside our security zone for the next six months
+PIRATE_PROTECTIONREJECTRESPONSE	;Cutting costs on security is pure foolishness!\n\nPerhaps you need a demonstration of what a lack of security means for your ships...
+PIRATE_ATTACKOFFER_SINGLEEMPIRE	;You appear to detest the vile {0} just as much as we do. How would you like to eliminate several of their bases in our area?\n\nWe can make this happen for you. All we ask is a fair payment of {1} credits to cover our expenses.\n\nSend the money and we'll get things started...
+PIRATE_ATTACKCOMMENCE	;Your transfer has been validated.\n\nOur forces are on their way to targets in the {0}!
+PIRATE_ALLIANCEPROPOSE	;Our previous contract with you has now expired. You would be wise to upgrade to a permanent alliance with us.\n\nFor {0} credits per month we agree to protect your ships. Plus we'll also secretly attack your enemies - without you getting blamed for it.\n\nA mutually beneficial arrangement. Do you accept?
+PIRATE_ALLIANCEACCEPTRESPONSE	;A fine decision.\n\nConsider us your allies from now on.\n\nBut please excuse us, we have to go and raid your enemies now.
+PIRATE_ALLIANCEREJECTRESPONSE	;You seem to like learning things the hard way.\n\nBut we are patient teachers. Prepare to be educated...
+GREETING_INTRODUCTION	;Greetings stranger. We are the {0}.\n\nStrength and honor - these things we respect. Weakness we despise
+GREETING_FRIENDLY	;Speak your mind with us friend
+GREETING_NEUTRAL	;What would you like to discuss?
+GREETING_ANGRY	;You again! What do you want this time?
+OFFER_FREETRADE	;Join with us in a Free Trade Agreement. The shared benefits would generate growth in both of our strong empires.\n\nWhat do you say?
+FREETRADE_ACCEPT	;The strong should join with each other to become stronger still. We gladly accept your offer of a Free Trade Agreement!
+FREETRADE_REJECT	;Sorry, your offer of a Free Trade Agreement does not interest us.\n\nYour weakness would only be a burden to us
+CANCELTREATY	;Our shared {0} no longer fulfills its purpose. We are ending this arrangement
+CANCELTREATY_RESPONSE_FRIENDLY	;We are surprised at your rashness, friend!\n\nAre you certain about this?
+CANCELTREATY_RESPONSE_NEUTRAL	;Your insult will be remembered. Repayment will come to you in due time...
+CANCELTREATY_RESPONSE_ANGRY	;We are glad to rid ourselves of your weak and timid civilization
+TREATY_PROPOSAL	;You propose a treaty? Let's hear what you have in mind
+TREATY_ACCEPTRESPONSE	;We are honored by your acceptance. May our two mighty empires grow even stronger!
+TREATY_REJECTRESPONSE	;We do not take insults like this lightly!\n\nYou should watch your back...
+TRADESANCTIONS_IMPOSE	;Your weakness invites aggression: we are imposing Trade Sanctions on you.\n\nMaybe pain will teach you some respect!
+TRADESANCTIONS_IMPOSE_RESPONSE_ANGRY	;We will not accept this criminal insult! Our vengeance will come when you least expect it...
+TRADESANCTIONS_IMPOSE_RESPONSE_NEUTRAL	;Do you mean to hurt us?\n\nTrade Sanctions are a tool for the weak! We are ready for much worse
+TRADESANCTIONS_IMPOSE_RESPONSE_SURPRISED	;We were not expecting this.\n\nAre you looking for a fight?
+TRADESANCTIONS_LIFT	;Our Trade Sanctions against you have served their purpose - we are now removing them.\n\nWe hope that you have learned some respect
+TRADESANCTIONS_LIFT_RESPONSE	;Very well, we also will resume trade with you
+WAR_DECLARE	;Your weak empire is ripe for conquest. We bring WAR to you!\n\nYour feeble, decaying civilization will be eliminated!
+WAR_DECLARE_RESPONSE_EAGER	;Your recklessness will be your end! You should only undertake battles that you can win.\n\nWe will inflict an overwhelming defeat on you
+WAR_DECLARE_RESPONSE_NEUTRAL	;We are ready to meet you in battle.\n\nVictory to the strong!
+WAR_DECLARE_RESPONSE_SURPRISED	;We have no desire to fight you.\n\nBut we will do what we must
+WAR_END	;We see no point in prolonging this war. We propose an immediate end to hostilities.\n\nWhat do you say?
+WAR_END_ACCEPT	;Agreed, this war should end. We are standing down our forces
+WAR_END_REJECT	;The weak crave peace. The strong press on to victory.\n\nOur war with you will continue
+GIFT_GIVE	;We offer you a gift of {0} credits.\n\nMay our empires work together in strength
+GIFT_THANKS	;Thanks you for your gift
+WARNING	;What is your problem?
+WARNING_INTELLIGENCEMISSIONS	;We detest your cowardly covert missions against us!\n\nStop your scheming interference, or else prepare for an open fight!
+WARNING_INTELLIGENCEMISSIONS_RESPONSE_FRIENDLY	;We are sorry. There must have been a mixup somewhere.\n\nWe will stop these missions immediately
+WARNING_INTELLIGENCEMISSIONS_RESPONSE_NEUTRAL	;Your complaint has been noted
+WARNING_INTELLIGENCEMISSIONS_RESPONSE_ANGRY	;Covert missions? You are surprised by this?\n\nWould you consider us to be your friends? Clearly we are not.\n\nThus, you should not expect us to be concerned with your warning
+WARNING_ATTACKS	;Your unprovoked attacks have been noted.\n\nIf you seek war, simply ask for it. We will be happy to oblige you
+WARNING_ATTACKS_RESPONSE_FRIENDLY	;Apologies. This was a mistake on our part.\n\nWe will punish the offending commander and ensure that it does not occur again
+WARNING_ATTACKS_RESPONSE_NEUTRAL	;We are not familiar with the details of this case.\n\nLet us investigate further
+WARNING_ATTACKS_RESPONSE_ANGRY	;Ship attacks?\n\nYes, that is what we do to our enemies. You would be one of those.\n\nAny more questions?

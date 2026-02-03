@@ -1,0 +1,46 @@
+'Distant Worlds - dialogue - Version 1.9.5.10 - Modded by the Distant Worlds Mod Editor by Sabranan
+
+PIRATE_PROTECTIONPROPOSE	;Protection for your ships? yes, we can provide that for you.\n\nFor the fee shown below we can 'protect' all of your ships as they travel through our territory. The protection period is six months.\n\nSound like a bargain to you?
+PIRATE_PROTECTIONPROPOSEINITIATE	;There are many hidden dangers lying in wait for your ships - pirates, for example!\n\nBut for a modest fee we can protect all of your ships travelling through our territory. The protection lasts for six months.\n\nA tempting offer, don't you agree?
+PIRATE_PROTECTIONACCEPTRESPONSE	;Excellent!\n\nWe will pass the word to our ships to stand down when they see any of your vessels.\n\nGood bye, until our next fee is due...
+PIRATE_PROTECTIONREJECTRESPONSE	;We wonder whether you're looking for trouble.\n\nMaybe you are...
+PIRATE_ATTACKOFFER_SINGLEEMPIRE	;You seem to be having difficulty with the {0}. That doesn't have to be a problem for you though - we can attack them for you!\n\nThis arrangement would be a secret just between ourselves. You wouldn't get any blame for the attacks.\n\nAll we need is a payment of {1} credits
+PIRATE_ATTACKCOMMENCE	;You just hired us!\n\nThe {0} won't know what hit them!
+GREETING_INTRODUCTION	;We are the {0}.\n\nWe hope you come to us with good intentions.\n\nWe expect you to behave better than your history tells us of you.
+GREETING_FRIENDLY	;Ahh, good to see you again!\n\nWhat's on your mind?
+GREETING_NEUTRAL	;What is it?
+GREETING_ANGRY	;We treat all guests well, even ones as morally bankrupt as you.\n\nSpeak!
+OFFER_FREETRADE	;Let us both benefit from a Free Trade Agreement. It's the right thing to do for all of our people.\n\nWhat do you think?
+FREETRADE_ACCEPT	;A Free Trade Agreement, now that will help everyone. We accept.\n\nWe hope to deal with you more in the future.
+FREETRADE_REJECT	;Ask us again another time.\n\nWe just can't consider that right now.
+CANCELTREATY	;We will have to end our {0} with you.\n\nOur people would not accept us mainting an agreement with an empire like yours.
+CANCELTREATY_RESPONSE_FRIENDLY	;How strange!\n\nWe thought we had a good thing there. You never can tell, I guess.
+CANCELTREATY_RESPONSE_NEUTRAL	;If you say so
+CANCELTREATY_RESPONSE_ANGRY	;Hmmm.\n\nWe should have expected this, you are predictable.
+TREATY_PROPOSAL	;A treaty? We certainly would like to hear your offer.
+TREATY_ACCEPTRESPONSE	;That's fantastic, we look forward to working with you.
+TREATY_REJECTRESPONSE	;Oh.\n\nWell we expected more, hopefully you will change your mind.
+TRADESANCTIONS_IMPOSE	;For now we cannot trade with you.\n\nWe would need to trust you a lot more.
+TRADESANCTIONS_IMPOSE_RESPONSE_ANGRY	;So dissapointing.\n\nLeave us, there is nothing more for us to talk about.
+TRADESANCTIONS_IMPOSE_RESPONSE_NEUTRAL	;This is not a good move.\n\nWe hope you reconsider where this is leading you.
+TRADESANCTIONS_IMPOSE_RESPONSE_SURPRISED	;To what end?\nI don't see where you are going with this, it is a bad move.
+TRADESANCTIONS_LIFT	;Our Trade Sanctions are lifted.\n\nLets maintain a better relationship in future.
+TRADESANCTIONS_LIFT_RESPONSE	;A good move!\n\nWe welcome a return to normal trade.
+WAR_DECLARE	;We can tolerate you no longer.\n\nPrepare for war, there is no other choice.
+WAR_DECLARE_RESPONSE_EAGER	;You only bring what was coming to you anyway.\n\nThis will be fast.
+WAR_DECLARE_RESPONSE_NEUTRAL	;You flare quicker than we expected.\n\nYou will learn to control yourself when you bow before us in defeat.
+WAR_DECLARE_RESPONSE_SURPRISED	;Why would you do this?\n\nThis is surprising, we are exceptionally hurt.
+WAR_END	;We have both paid enough.\n\nLet us end the hostilities?
+WAR_END_ACCEPT	;Yes, enough fighting.\n\nThis benefits noone.
+WAR_END_REJECT	;No, you do not deserve our mercy.
+GIFT_GIVE	;Please accept this as a token of friendship: {0} credits.
+GIFT_THANKS	;We appreciate your support, many thanks.
+WARNING	;A warning? We wonder what could this be about?
+WARNING_INTELLIGENCEMISSIONS	;It's time to stop those missions you're sending against us.\n\nYou have been warned.
+WARNING_INTELLIGENCEMISSIONS_RESPONSE_FRIENDLY	;We understand your concern.\n\nOur apologies. We'll make sure this doesn't happen again.
+WARNING_INTELLIGENCEMISSIONS_RESPONSE_NEUTRAL	;Before responding we must check the details of this incident.\n\nWe'll get back to you.
+WARNING_INTELLIGENCEMISSIONS_RESPONSE_ANGRY	;You hold us to this standard when you act the way you do?\n\nRemove yourself from our presence.
+WARNING_ATTACKS	;Stop your attacks on our ships right now!\n\nWe will not tolerate this.
+WARNING_ATTACKS_RESPONSE_FRIENDLY	;Please accept our apologies.\n\nGive us the details of the incident and we'll deal with the ship captain that did this.
+WARNING_ATTACKS_RESPONSE_NEUTRAL	;Give us the details of the incident and we'll deal with the ship captain that did this.
+WARNING_ATTACKS_RESPONSE_ANGRY	;We'll stop, sure, as soon as you start acting like an empire we shouldn't attack!

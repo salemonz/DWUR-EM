@@ -1,0 +1,225 @@
+'Distant Worlds - Characters - 1.9.0.0 - Modded by the Distant Worlds Mod Editor by Sabranan
+
+
+'Each character line below is comprised of comma-separated data as follows:
+' - Appearance order: order that this character appears in the game relative to other characters. A value of zero (0) means that the character is present at the start of the game
+' - Name: name of the character
+' - Role: the type of character, selected from one of the following values: 1=Faction Leader, 2=Ambassador, 3=Colony Governor, 4=Fleet Admiral, 5=Troop General, 6=Intelligence Agent, 7=Scientist, 8=Pirate Leader, 9=Ship Captain
+' - Picture filename: optional name of image file used to represent this character. Only PNG image files are supported. The filename should include the file type suffix (.png). The image file itself should be placed in the images\units\characters folder (or customization\THEMENAME\characterImages folder). If no image is specified then the appropriate race image will be used
+' - Race override: optional name of the race for this character, if different from the default race for the file. Name must match a race name found in the races folder
+
+'The following skills should be set between -100 and +100. Note that the character's role will determine which skills actually apply (e.g. only a Fleet Admiral can benefit from Ship Maneuvering skill)
+' 0=None, 1=Diplomacy, 2=ColonyIncome, 3=TradeIncome, 4=TourismIncome, 5=ColonyCorruption, 6=ColonyHappiness, 7=PopulationGrowth,
+' 8=MiningRate, 9=TroopRecruitment, 10=MilitaryShipConstructionSpeed, 11=CivilianShipConstructionSpeed, 12=ColonyShipConstructionSpeed, 
+' 13=FacilityConstructionSpeed, 14=ResearchWeapons, 15=ResearchEnergy, 16=ResearchHighTech, 17=Espionage, 18=CounterEspionage, 
+' 19=Sabotage, 20=Concealment, 21=PsyOps, 22=Assassination, 23=MilitaryShipMaintenance, 24=MilitaryBaseMaintenance, 25=CivilianShipMaintenance, 
+' 26=CivilianBaseMaintenance, 27=TroopMaintenance, 28=WarWeariness, 29=Targeting, 30=Countermeasures, 31=ShipManeuvering, 32=Fighters, 
+' 33=ShipEnergyUsage, 34=WeaponsDamage, 35=WeaponsRange, 36=ShieldRechargeRate, 37=DamageControl, 38=RepairBonus, 39=HyperjumpSpeed, 
+' 40=TroopGroundAttack, 41=TroopGroundDefense, 42=TroopExperienceGain, 43=TroopRecoveryRate, 44=TroopStrengthArmor, 45=TroopStrengthInfantry, 
+' 46=TroopStrengthSpecialForces, 47=TroopStrengthPlanetaryDefense, 48=SmugglingIncome, 49=SmugglingEvasion, 50=BoardingAssault
+' - Skill Type 1: 0=None, 1 to 50=specific skill type (see values above and Modding Guide), ?=select random skill appropriate for role
+' - Skill Level 1: -100 to +100, ?=select random skill level between 0 and 20
+' - Skill Type 2: 0=None, 1 to 50=specific skill type (see values above and Modding Guide), ?=select random skill appropriate for role
+' - Skill Level 2: -100 to +100, ?=select random skill level between 0 and 20
+' - Skill Type 3: 0=None, 1 to 50=specific skill type (see values above and Modding Guide), ?=select random skill appropriate for role
+' - Skill Level 3: -100 to +100, ?=select random skill level between 0 and 20
+' - Skill Type 4: 0=None, 1 to 50=specific skill type (see values above and Modding Guide), ?=select random skill appropriate for role
+' - Skill Level 4: -100 to +100, ?=select random skill level between 0 and 20
+
+'The following traits can be set for each character. Note that the character's role will determine which traits actually apply
+' - Trait Type 1,2,3: 0=None, 1 to 95=specific trait type (see values below and Modding Guide), ?=select random trait appropriate for role. NOTE: must not specify opposing positive and negative traits, e.g. Paranoid and Trusting
+' 0=None, 1=Paranoid, 2=Trusting, 3=PeaceThroughStrength, 4=Pacifist, 5=Expansionist, 6=Isolationist, 7=Diplomat, 8=Obnoxious, 9=Famous, 
+' 10=Disliked, 11=GoodAdministrator, 12=PoorAdministrator, 13=BeanCounter, 14=Generous, 15=Engineer, 16=Luddite, 17=FreeTrader, 18=Protectionist, 
+' 19=Environmentalist, 20=Industrialist, 21=InspiringPresence, 22=Demoralizing, 23=Organized, 24=Disorganized, 25=HealthOriented, 26=LaborOriented, 
+' 27=Spiritual, 28=Logical, 29=GoodStrategist, 30=PoorStrategist, 31=Uninhibited, 32=Measured, 33=Addict, 34=Sober, 35=Courageous, 36=Weak, 
+' 37=Tolerant, 38=Xenophobic, 39=EloquentSpeaker, 40=PoorSpeaker, 41=Corrupt, 42=Lawful, 43=Lazy, 44=Energetic, 45=Linguist, 46=TongueTied, 
+' 47=Technical, 48=NonTechnical, 49=GoodTactician, 50=PoorTactician, 51=StrongSpaceAttacker, 52=PoorSpaceAttacker, 53=StrongSpaceDefender, 
+' 54=PoorSpaceDefender, 55=Drunk, 56=ToughDiscpline, 57=LaxDiscipline, 58=LocalDefenseTactics, 59=PlanetarySupport, 60=GoodSpaceLogistician, 
+' 61=PoorSpaceLogistician, 62=NaturalSpaceLeader, 63=SkilledNavigator, 64=PoorNavigator, 65=StrongGroundAttacker, 66=PoorGroundAttacker, 
+' 67=StrongGroundDefender, 68=PoorGroundDefender, 69=GoodGroundLogistician, 70=PoorGroundLogistician, 71=NaturalGroundLeader, 72=GoodRecruiter, 
+' 73=PoorRecruiter, 74=CarefulAttacker, 75=RecklessAttacker, 76=DoubleAgent, 77=Creative, 78=Methodical, 79=ForeignSpy, 80=Patriot, 81=UltraGenius,
+' 82=Uninhibited (Intelligence Agent), 83=Measured (Intelligence Agent), 84=Addict (Intelligence Agent), 85=Sober (Intelligence Agent),
+' 86=Courageous (Intelligence Agent), 87=Weak (Intelligence Agent), 88=Tolerant (Intelligence Agent), 89=Xenophobic (Intelligence Agent),
+' 90=EloquentSpeaker (Intelligence Agent), 91=PoorSpeaker (Intelligence Agent), 92=Corrupt (Intelligence Agent), 93=Lawful (Intelligence Agent), 
+' 94=Smuggler, 95=BountyHunter
+
+?, Aokxi Butos, 1, tairoshan-leader1.png, Tairoshan, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Bhillujo Chuxiakex, 1, tairoshan-leader2.png, Tairoshan, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Chosk Butulzo, 1, tairoshan-leader3.png, Tairoshan, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Grazk Rhask, 1, tairoshan-leader4.png, Tairoshan, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Chagrukki Chuxithros, 1, tairoshan-leader1.png, Tairoshan, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Iltoccox Rurzusk, 1, tairoshan-leader2.png, Tairoshan, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Jax Ajaogu, 1, tairoshan-leader3.png, Tairoshan, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Trak Chathraxi, 1, tairoshan-leader4.png, Tairoshan, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Chisk Chuxiakex, 1, tairoshan-leader1.png, Tairoshan, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Bhamojo Bitersosk, 1, tairoshan-leader2.png, Tairoshan, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Thijaok Arqeroz, 1, tairoshan-leader3.png, Tairoshan, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Iccotu Chotexuxl, 1, tairoshan-leader4.png, Tairoshan, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Bhuushk Butaurzi, 1, tairoshan-leader1.png, Tairoshan, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Brokxausk Jathixl, 1, tairoshan-leader2.png, Tairoshan, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Thazk Chugexez, 1, tairoshan-leader3.png, Tairoshan, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Brothrika Ettoris, 1, tairoshan-leader4.png, Tairoshan, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Chozux Daez, 1, tairoshan-leader1.png, Tairoshan, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Druqoshrusz Thax, 1, tairoshan-leader2.png, Tairoshan, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Rhuthosz Thruklexl, 1, tairoshan-leader3.png, Tairoshan, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Bhujokzask Chuxithros, 1, tairoshan-leader4.png, Tairoshan, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Chokzakkoshk Shresk, 2, tairoshan-diplomat1.png, Tairoshan, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Occoursishk Shrirso, 2, tairoshan-diplomat2.png, Tairoshan, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Dramuaxl Bitersosk, 2, tairoshan-diplomat3.png, Tairoshan, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Giultu Rhos, 2, tairoshan-diplomat4.png, Tairoshan, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Aokxi Batalzouz, 2, tairoshan-diplomat1.png, Tairoshan, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Chuxl Rurzusk, 2, tairoshan-diplomat2.png, Tairoshan, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Trisk Chagrax, 2, tairoshan-diplomat3.png, Tairoshan, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Thruumask Thruklexl, 2, tairoshan-diplomat4.png, Tairoshan, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Brakax Chotexuxl, 2, tairoshan-diplomat1.png, Tairoshan, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Thijaok Rhask, 2, tairoshan-diplomat2.png, Tairoshan, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Brut Chathraxi, 2, tairoshan-diplomat3.png, Tairoshan, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Bhojaxok Uqathre, 2, tairoshan-diplomat4.png, Tairoshan, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Rorsik Bekzitex, 2, tairoshan-diplomat1.png, Tairoshan, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Autszochaz Uknuca, 2, tairoshan-diplomat2.png, Tairoshan, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Bhoaszaz Chuxithros, 2, tairoshan-diplomat3.png, Tairoshan, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Chuthrokkot Rax, 2, tairoshan-diplomat4.png, Tairoshan, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Draok Chothaxoaxl, 2, tairoshan-diplomat1.png, Tairoshan, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Brurzakoa Chuxiakex, 2, tairoshan-diplomat2.png, Tairoshan, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Chozux Rhask, 2, tairoshan-diplomat3.png, Tairoshan, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Rhos Rhask, 2, tairoshan-diplomat4.png, Tairoshan, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Grazk Rhiss, 3, tairoshan-diplomat1.png, Tairoshan, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Ikozk Thruklexl, 3, tairoshan-diplomat2.png, Tairoshan, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Thijaok Thruklexl, 3, tairoshan-diplomat3.png, Tairoshan, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Trak Chigexez, 3, tairoshan-diplomat4.png, Tairoshan, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Brakigo Shrirso, 3, tairoshan-diplomat1.png, Tairoshan, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Chagrukki Chathraxi, 3, tairoshan-diplomat2.png, Tairoshan, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Kaz Rhos, 3, tairoshan-diplomat3.png, Tairoshan, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Chosk Chuxiakex, 3, tairoshan-diplomat4.png, Tairoshan, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Bhazoxl Rhos, 3, tairoshan-diplomat1.png, Tairoshan, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Chosk Chuxithros, 3, tairoshan-diplomat2.png, Tairoshan, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Bhoaszaz Jikzaexl, 3, tairoshan-diplomat3.png, Tairoshan, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Jizittu Thurqis, 3, tairoshan-diplomat4.png, Tairoshan, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Aokxi Ukluru, 3, tairoshan-diplomat1.png, Tairoshan, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Bhillujo Rhos, 3, tairoshan-diplomat2.png, Tairoshan, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Druzk Thruklexl, 3, tairoshan-diplomat3.png, Tairoshan, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Chuthrokkot Rhos, 3, tairoshan-diplomat4.png, Tairoshan, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Brakax Thruklexl, 3, tairoshan-diplomat1.png, Tairoshan, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Thruumask Chigexez, 3, tairoshan-diplomat2.png, Tairoshan, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Chozux Rax, 3, tairoshan-diplomat3.png, Tairoshan, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Chosk Rhiss, 3, tairoshan-diplomat4.png, Tairoshan, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Chuushk Akexl, 4, tairoshan-admiral1.png, Tairoshan, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Bhillujo Attiaz, 4, tairoshan-admiral2.png, Tairoshan, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Chuthrokkot Bitersosk, 4, tairoshan-admiral3.png, Tairoshan, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Rhuthosz Arqeroz, 4, tairoshan-admiral4.png, Tairoshan, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Drat Oroatti, 4, tairoshan-admiral1.png, Tairoshan, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Chisk Rax, 4, tairoshan-admiral2.png, Tairoshan, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Ikozk Butulzo, 4, tairoshan-admiral3.png, Tairoshan, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Chozux Uzdoqosk, 4, tairoshan-admiral4.png, Tairoshan, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Thazk Iarzukoxl, 4, tairoshan-admiral1.png, Tairoshan, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Chuxl Butos, 4, tairoshan-admiral2.png, Tairoshan, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Chagrukki Chakloxoxl, 4, tairoshan-admiral3.png, Tairoshan, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Chokzakkoshk Rhos, 4, tairoshan-admiral4.png, Tairoshan, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Brothrika Rhask, 4, tairoshan-admiral1.png, Tairoshan, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Juzuxo Oss, 4, tairoshan-admiral2.png, Tairoshan, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Aokxi Batalzouz, 4, tairoshan-admiral3.png, Tairoshan, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Grazk Chuxithros, 4, tairoshan-admiral4.png, Tairoshan, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Chux Crichexus, 4, tairoshan-admiral1.png, Tairoshan, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Aqecask Besk, 4, tairoshan-admiral2.png, Tairoshan, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Brokxausk Thax, 4, tairoshan-admiral3.png, Tairoshan, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Thruumask Rhiss, 4, tairoshan-admiral4.png, Tairoshan, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Driqorqu Thurqis, 5, tairoshan-general1.png, Tairoshan, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Brikithozk Shresk, 5, tairoshan-general2.png, Tairoshan, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Icoanjux Thruklexl, 5, tairoshan-general3.png, Tairoshan, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Rurzusk Bitiklask, 5, tairoshan-general4.png, Tairoshan, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Bhatzik Uzdoqosk, 5, tairoshan-general1.png, Tairoshan, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Vaxl Rhex, 5, tairoshan-general2.png, Tairoshan, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Draok Chelzaoxix, 5, tairoshan-general3.png, Tairoshan, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Bhojasok Uzdoqosk, 5, tairoshan-general4.png, Tairoshan, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Traxlok Rax, 5, tairoshan-general1.png, Tairoshan, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Ruk Bekzitex, 5, tairoshan-general2.png, Tairoshan, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Brut Acaeroas, 5, tairoshan-general3.png, Tairoshan, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Trisk Qukuxl, 5, tairoshan-general4.png, Tairoshan, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Thijaok Jux, 5, tairoshan-general1.png, Tairoshan, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Chuthrokkot Jikzaexl, 5, tairoshan-general2.png, Tairoshan, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Krinu Chuss, 5, tairoshan-general3.png, Tairoshan, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Thazhuk Bitothle, 5, tairoshan-general4.png, Tairoshan, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Krox Bututtusk, 5, tairoshan-general1.png, Tairoshan, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Yorqoasz Orziaqes, 5, tairoshan-general2.png, Tairoshan, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Qegziss Chathraxi, 5, tairoshan-general3.png, Tairoshan, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Chuxiakex Ezdiju, 5, tairoshan-general4.png, Tairoshan, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Thruklexl Thrikex, 6, tairoshan-spy1.png, Tairoshan, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Giusz Threkae, 6, tairoshan-spy2.png, Tairoshan, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Ikozk Rax, 6, tairoshan-spy3.png, Tairoshan, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Brokxausk Rhos, 6, tairoshan-spy4.png, Tairoshan, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Choxuzdaexl Rhask, 6, tairoshan-spy1.png, Tairoshan, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Drimask Thurqis, 6, tairoshan-spy2.png, Tairoshan, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Chuthrokkot Batalzouz, 6, tairoshan-spy3.png, Tairoshan, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Grazk Rerte, 6, tairoshan-spy4.png, Tairoshan, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Aokxi Chigrax, 6, tairoshan-spy1.png, Tairoshan, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Chuushk Chuxiakex, 6, tairoshan-spy2.png, Tairoshan, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Chuthrokkot Thax, 6, tairoshan-spy3.png, Tairoshan, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Driknushk Chagrax, 6, tairoshan-spy4.png, Tairoshan, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Ruk Ettoris, 6, tairoshan-spy1.png, Tairoshan, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Vaxl Chuxithros, 6, tairoshan-spy2.png, Tairoshan, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Jax Sraoknisk, 6, tairoshan-spy3.png, Tairoshan, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Bhojasok Rurzusk, 6, tairoshan-spy4.png, Tairoshan, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Chozux Shrusk, 6, tairoshan-spy1.png, Tairoshan, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Thijaok Chus, 6, tairoshan-spy2.png, Tairoshan, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Thazhuk Shresk, 6, tairoshan-spy3.png, Tairoshan, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Thazuh Uzdoqosk, 6, tairoshan-spy4.png, Tairoshan, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Bhoaszaz Agrisk, 7, tairoshan-scientist1.png, Tairoshan, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Druzk Bitersosk, 7, tairoshan-scientist2.png, Tairoshan, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Chuthrokkot Bekzitex, 7, tairoshan-scientist3.png, Tairoshan, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Brokxausk Attiaz, 7, tairoshan-scientist4.png, Tairoshan, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Bruxl Chathraxi, 7, tairoshan-scientist1.png, Tairoshan, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Chagrukki Rax, 7, tairoshan-scientist2.png, Tairoshan, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Autszochaz Thax, 7, tairoshan-scientist3.png, Tairoshan, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Grazk Chakloxoxl, 7, tairoshan-scientist4.png, Tairoshan, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Aokxi Jethoxl, 7, tairoshan-scientist1.png, Tairoshan, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Draok Chuxiakex, 7, tairoshan-scientist2.png, Tairoshan, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Chisk Oroatti, 7, tairoshan-scientist3.png, Tairoshan, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Icoanjux Ettoris, 7, tairoshan-scientist4.png, Tairoshan, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Bhatzik Chuxithros, 7, tairoshan-scientist1.png, Tairoshan, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Chozux Thruklexl, 7, tairoshan-scientist2.png, Tairoshan, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Thruumask Oss, 7, tairoshan-scientist3.png, Tairoshan, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Trultoz Threkae, 7, tairoshan-scientist4.png, Tairoshan, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Chuthrokkot Rartiss, 7, tairoshan-scientist1.png, Tairoshan, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Icoanjux Oroatti, 7, tairoshan-scientist2.png, Tairoshan, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Chozux Uknuca, 7, tairoshan-scientist3.png, Tairoshan, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Trak Bitersosk, 7, tairoshan-scientist4.png, Tairoshan, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Brakax Ojalzou, 8, tairoshan-pirate1.png, Tairoshan, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Aokxi Shresk, 8, tairoshan-pirate2.png, Tairoshan, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Iccotu Qukuxl, 8, tairoshan-pirate3.png, Tairoshan, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Chuthrokkot Rhos, 8, tairoshan-pirate4.png, Tairoshan, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Draok Chigraxe, 8, tairoshan-pirate1.png, Tairoshan, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Thazk Butaurzi, 8, tairoshan-pirate2.png, Tairoshan, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Kaz Chathraxi, 8, tairoshan-pirate3.png, Tairoshan, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Chokzakkoshk Butos, 8, tairoshan-pirate4.png, Tairoshan, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Izzixl Rhos, 8, tairoshan-pirate1.png, Tairoshan, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Chozux Thax, 8, tairoshan-pirate2.png, Tairoshan, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Thijaok Rhos, 8, tairoshan-pirate3.png, Tairoshan, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Aokxi Jikzaexl, 8, tairoshan-pirate4.png, Tairoshan, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Bhoaszaz Iarzukoxl, 8, tairoshan-pirate1.png, Tairoshan, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Chozux Besk, 8, tairoshan-pirate2.png, Tairoshan, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Chuthrokkot Qarquxl, 8, tairoshan-pirate3.png, Tairoshan, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Brokxausk Oss, 8, tairoshan-pirate4.png, Tairoshan, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Brakax Oroatti, 8, tairoshan-pirate1.png, Tairoshan, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Chuthrokkot Rhiss, 8, tairoshan-pirate2.png, Tairoshan, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Draok Chakloxoxl, 8, tairoshan-pirate3.png, Tairoshan, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Chozux Chelzaoxix, 8, tairoshan-pirate4.png, Tairoshan, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Icoanjux Krask, 9, tairoshan-pirate1.png, Tairoshan, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Chisk Oroatti, 9, tairoshan-pirate2.png, Tairoshan, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Aokxi Chigexez, 9, tairoshan-pirate3.png, Tairoshan, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Icoanjux Egrujosk, 9, tairoshan-pirate4.png, Tairoshan, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Thaz Rhos, 9, tairoshan-pirate1.png, Tairoshan, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Chuthrokkot Rurzusk, 9, tairoshan-pirate2.png, Tairoshan, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Bhoaszaz Oroatti, 9, tairoshan-pirate3.png, Tairoshan, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Icoanjux Thurqis, 9, tairoshan-pirate4.png, Tairoshan, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Chozux Chuxiakex, 9, tairoshan-pirate1.png, Tairoshan, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Chokzakkoshk Butulzo, 9, tairoshan-pirate2.png, Tairoshan, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Aokxi Thax, 9, tairoshan-pirate3.png, Tairoshan, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Chisk Thruklexl, 9, tairoshan-pirate4.png, Tairoshan, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Brakax Butaurzi, 9, tairoshan-pirate1.png, Tairoshan, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Iltoccox Jethoxl, 9, tairoshan-pirate2.png, Tairoshan, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Chuthrokkot Rhask, 9, tairoshan-pirate3.png, Tairoshan, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Brokxausk Orziaqes, 9, tairoshan-pirate4.png, Tairoshan, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Brakax Thax, 9, tairoshan-pirate1.png, Tairoshan, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Icoanjux Oss, 9, tairoshan-pirate2.png, Tairoshan, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Chozux Ijaerze, 9, tairoshan-pirate3.png, Tairoshan, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Chagrukki Chuxithros, 9, tairoshan-pirate4.png, Tairoshan, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?

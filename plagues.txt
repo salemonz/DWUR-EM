@@ -1,0 +1,23 @@
+﻿'Distant Worlds Plagues - 1.9.5.10 (Research Unleashed by Osito)
+
+'each line defines a single plague with comma-separated data, up to a maximum of 50 plagues (0-49)
+' - ID: numeric ID value of plague
+' - Name: text of plague name
+' - PictureRef: index value mapping to image used to display plague (images\ui\plagues folder)
+' - MortalityRate: rate of population loss caused by plague, measured in proportion of population lost in a single year. Should be in range between 0.001 and 5.0
+' - InfectionChance: numeric value that determines chance of plague spreading to other nearby colonies. Higher values means higher chance of spreading. Should be in range of 0 to 1000
+' - Duration: typical duration of plague at a colony, measured in seconds. Thus a value of 300 means 6 months of game time. Should be in range of 1 to 1200
+' - NaturalOccurrenceLevel: numeric value that determines how often this plague naturally strikes at colonies compared to other plagues. Higher values means more frequent outbreaks. Value of zero means no natural occurrences. Should be between 0 and 10
+' - CanCompletelyEliminatePopulation: Y/N value indicating whether plague can completely eliminate the population at a colony. If set to N then population will not drop below 10 million at an infected colony
+' - ExceptionRaceName: name of race that has different values for mortality, infection and length. Should match a race in the races folder. Otherwise leave blank
+' - ExceptionMortalityRate: rate of population loss caused by plague for Exception Race above, measured in proportion of population lost in a single year. Should be in range between 0.001 and 5.0
+' - ExceptionInfectionChance: numeric value that determines chance of plague spreading to other nearby colonies for Exception Race above. Higher values means higher chance of spreading. Should be in range of 0 to 1000
+' - ExceptionDuration: typical duration of plague at a colony for Exception Race above, measured in seconds. Thus a value of 300 means 6 months of game time. Should be in range of 1 to 1200
+' - SpecialFunctionCode: 0=NONE, 1=Xaraktor virus (Researchable and Deployable)
+' - Description: extended textual description of plague. Should be no longer than 200 characters
+
+0, Hekretos Fever,					0, 0.06, 30, 150, 3, N,		, 0, 0, 0, 0,						Hekretos Fever is a deadly infection that attacks the internal organs, causing rapid degeneration and death. An outbreak of Hekretos Fever typically lasts about 3 months.
+1, Dekara Virus,					1, 0.09, 10, 300, 3, N,		, 0, 0, 0, 0,						Dekara Virus is a very painful disease that slowly cripples the central nervous system of any creature it infects, ultimately leading to death. An outbreak of Dekara Virus typically lasts about 6 months.
+2, Genetic Scrambling Syndrome,		2, 0.45, 85, 60, 2, N,		, 0, 0, 0, 0,						Genetic Scrambling Syndrome attacks the genetic code in all of the cells of an infected creature, wiping out any useful biological instructions. This leads to very rapid disintegration of the infected creature, finally breaking them down to a puddle of protein slime. An outbreak of Genetic Scrambling Syndrome typically lasts only one month. However it is highly infectious and thus can spread rapidly.
+3, Merturov Plague,					3, 0.27, 25, 180, 1, N,		, 0, 0, 0, 0,						Merturov Plague is the most deadly disease in the known galaxy. It swiftly eats the brain of the infected creature, progressively causing insanity, immobilization and eventual death. Merturov Plague is a highly resilient air-borne virus, and is thus very infectious. An outbreak of Merturov Plague typically lasts 4 months.
+4, Xaraktor Virus,					4, 2.52, 150, 300, 0, Y,	Shakturi, 3.61, 240, 450, 1,		Xaraktor Virus is an exceptionally deadly synthetic virus. It is primarily intended to target the genetic structure of the Shakturi species. However primitive variants of the virus are more indiscriminate, also proving rapidly fatal to most other species. Xaraktor Virus actively sabotages the genetic code of the infected host, reversing cell function so that the body produces toxic poisons.

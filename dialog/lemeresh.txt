@@ -1,0 +1,105 @@
+'Distant Worlds - dialogue - Version 1.9.5.10 - Modded by the Distant Worlds Mod Editor by Sabranan
+
+GREETING_INTRODUCTION	;...
+GREETING_FRIENDLY	;Make your thoughts clear
+GREETING_NEUTRAL	;...
+GREETING_ANGRY	;...
+OFFER_FREETRADE	;We suggest opening trade between our empires.\n\nAre you in agreement?
+OFFER_PROTECTORATE	;We believe your Empire serves a purpose, we will protect you from assault.\n\nAre you in a agreement?
+OFFER_MUTUALDEFENSE	;We believe your Empire serves a purpose, we will protect you from assault in a Mutual Defence Pact.\n\nAre you in a agreement?
+OFFER_DEAL	;Is this trade acceptable to you?
+OFFER_DEAL_RESPONSE	;What do you propose?
+OFFER_DEAL_TERRITORYMAP	;Let us share territory maps.
+OFFER_DEAL_GALAXYMAP	;Let us share galaxy maps.
+OFFER_DEAL_COMPONENT	;We are willing to sell you {0} for {1} credits.\n\nAre you in agreement?
+DEAL_BEGIN	;...
+DEAL_OFFER	;We have an offer.\n\nWe give you: {0}...\n\n...in exchange for: {1}
+DEAL_DEMAND	;We require you to hand over ownership of this:\n\n{1}
+DEAL_THREAT	;You will give us this:\n\n{1}\n\n...{0}
+DEAL_ACCEPT	;We accept
+DEAL_ACCEPTCOMPLAIN	;We will accept for now
+DEAL_IMPROVE	;It is of some interest, can you offer more?
+DEAL_REJECT	;We are afraid not
+DEAL_REJECTCOMPLAIN	;Unacceptable
+DEAL_REJECT_RESPONSE	;...
+DEAL_REJECTDEMAND_RESPONSE	;You were given a fair path and you have chosen badly
+DEAL_ACCEPT_RESPONSE	;Accepted
+MUTUALDEFENSE_ACCEPT	;An excellent outcome.
+MUTUALDEFENSE_REJECT	;We cannot offer our services in this.
+MUTUALDEFENSE_REQUESTHELP	;We are under attack from the {0}. Do you stand with us?
+MUTUALDEFENSE_HONORREQUESTHELP	;We stand alongside you - We have declared war on the {0}.
+MUTUALDEFENSE_HONORREQUESTHELP_RESPONSE	;We appreciate your loyalalty
+MUTUALDEFENSE_DECLINEREQUESTHELP	;We cannot help for now
+MUTUALDEFENSE_DECLINEREQUESTHELP_RESPONSE	;Unexpected...
+PROTECTORATE_ACCEPT	;We are honored
+PROTECTORATE_REJECT	;Not for now
+FREETRADE_ACCEPT	;We accept
+FREETRADE_REJECT	;We cannot accept
+CANCELTREATY	;The {0} is cancelled
+CANCELTREATY_RESPONSE_FRIENDLY	;Unexpected
+CANCELTREATY_RESPONSE_NEUTRAL	;...
+CANCELTREATY_RESPONSE_ANGRY	;...
+TREATY_PROPOSAL	;...
+TREATY_ACCEPTRESPONSE	;An excellent outcome.
+TREATY_REJECTRESPONSE	;...
+SUBJUGATION_RELEASE_RESPONSE	;Gratitude
+SUBJUGATIONDEMAND_ACCEPT_RESPONSE	;Be at peace now, and do not bite again
+WAR_END_ACCEPT_RESPONSE	;Very wise
+TRADESANCTIONS_IMPOSE	;Trade is terminated
+TRADESANCTIONS_IMPOSE_RESPONSE_ANGRY	;...
+TRADESANCTIONS_IMPOSE_RESPONSE_NEUTRAL	;...
+TRADESANCTIONS_IMPOSE_RESPONSE_SURPRISED	;Unexpected
+TRADESANCTIONS_LIFT	;Trade sanctions are now lifted
+TRADESANCTIONS_LIFT_RESPONSE	;Very well
+TRADESANCTIONS_REQUESTLIFTOTHER	;We advise you begin trade with {0}
+TRADESANCTIONS_REQUESTLIFTOTHER_ACCEPT	;We have resumed trade with the {0}
+TRADESANCTIONS_REQUESTLIFTOTHER_REJECT	;We cannot do this
+TRADESANCTIONS_REQUESTIMPOSEJOINT	;We advise you terminate trade with {0}
+TRADESANCTIONS_REQUESTIMPOSEJOINT_ACCEPT	;As requested, we have terminated trade with {0}
+TRADESANCTIONS_REQUESTIMPOSEJOINT_REJECT	;We see no need
+WAR_DECLARE	;We are now at war
+WAR_DECLARE_RESPONSE_EAGER	;Your time has come
+WAR_DECLARE_RESPONSE_NEUTRAL	;You have made a mistake
+WAR_DECLARE_RESPONSE_SURPRISED	;Unexpected
+WAR_DECLARE_REQUESTJOINT	;We advise that you declare war on {0}
+WAR_DECLARE_REQUESTJOINT_ACCEPT	;We are now at war with {0}
+WAR_DECLARE_REQUESTJOINT_REJECT	;Be gone
+WAR_END	;This war should end
+WAR_END_SUBJUGATIONDEMAND	;Our war will end if you will now accept our domination through Subjugation of your empire.
+WAR_END_SUBJUGATIONOFFER	;We offer our empire to be enslaved by you. Do you accept?
+WAR_END_ACCEPT	;We accept
+WAR_END_REJECT	;Not for now
+WAR_END_REQUESTOTHER	;We suggest you end your war with {0}
+WAR_END_REQUESTOTHER_ACCEPT	;We agree. Our war with {0} has ended
+WAR_END_REQUESTOTHER_REJECT	;We cannot stop, our war with {0} continues
+SUBJUGATIONDEMAND_ACCEPT	;We accept your status as our ruler
+SUBJUGATIONDEMAND_REJECT	;We cannot accept
+SUBJUGATIONOFFER_ACCEPT	;Excellent
+SUBJUGATIONOFFER_REJECT	;The war will continue
+SUBJUGATION_REQUESTRELEASE	;We advise you release us from slavery
+SUBJUGATION_RELEASE	;We set your Empire free. Be careful to choose the correct path
+SUBJUGATION_REFUSERELEASE	;This cannot be done
+GIFT_GIVE	;We give you {0} credits
+GIFT_THANKS	;We accept your gift
+GIFT_PROPOSE	;What do you offer us?
+WARNING	;...
+WARNING_INTELLIGENCEMISSIONS	;It is time for you to end your covert missions against us
+WARNING_INTELLIGENCEMISSIONS_RESPONSE_FRIENDLY	;We will see that this does not happen again
+WARNING_INTELLIGENCEMISSIONS_RESPONSE_NEUTRAL	;We will do what we can
+WARNING_INTELLIGENCEMISSIONS_RESPONSE_ANGRY	;...
+WARNING_ATTACKS	;We advise that you stop your attacks, we are unable to ignore this any longer
+WARNING_ATTACKS_RESPONSE_FRIENDLY	;We will ensure this does not happen again
+WARNING_ATTACKS_RESPONSE_NEUTRAL	;It will end
+WARNING_ATTACKS_RESPONSE_ANGRY	;...
+WARNING_REMOVEFORCESSYSTEM	;Remove your forces from the {0} system
+WARNING_REMOVEFORCESSYSTEM_RESPONSE_COMPLY	;We will not remove our ships from the {0} system.
+WARNING_REMOVEFORCESSYSTEM_RESPONSE_REFUSE	;Our ships are leaving the {0} system.
+WARNING_REMOVEFORCESSYSTEM_RESPONSE_NOFORCESPRESENT	;Our forces are not present in your territory.
+HISTORY_OFFER_LOCATIONHINT	;Our research has uncovered the location of important historical items.\n\nYou should be made aware
+HISTORY_LOCATIONHINT	;Our sources tell us about the {0}.\n\nImportant items can be found there.
+HISTORY_OFFER_STORYCLUE	;We have discovered something important that we think you should see for yourselves.\n\nYou should be made aware
+HISTORY_OFFER_STORYMESSAGE	;We have an important warning that you need to hear.\n\nYou should be made aware
+MININGRIGHTS_OFFER	;We offer your empire mining rights within our borders.\n\nYou may now construct mining stations in our territory.
+MININGRIGHTS_CANCEL	;Mining rights within our borders have been cancelled.\n\nYou must remove all of your mining stations within our territory.
+MILITARYREFUELING_OFFER	;We now allow your military ships to refuel at our colonies and space ports.
+MILITARYREFUELING_CANCEL	;Your military refueling rights have been cancelled.\n\nYour military ships may no longer refuel at our colonies and space ports.

@@ -1,0 +1,54 @@
+'Distant Worlds - dialogue - Version 1.9.5.10 - Modded by the Distant Worlds Mod Editor by Sabranan
+
+GREETING_INTRODUCTION	;Greetings! We are the {0}.\n\nWe search the Galaxy to discover it's wonders!
+GREETING_FRIENDLY	;Welcome friend. What brings you to us?
+GREETING_NEUTRAL	;You have something you'd like to talk about?
+GREETING_ANGRY	;Oh, it's YOU again. State your business quickly
+OFFER_FREETRADE	;Join us in a Free Trade Agreement!\n\nYes?
+OFFER_PROTECTORATE	;You need to join with a strong empire like ours in a Protectorate treaty. We could then protect you against any aggressors.\n\nSurely you agree?
+OFFER_MUTUALDEFENSE	;We admire your strength - we should join together in a Mutual Defense Pact. This would deter aggressors from taking our stuff.\n\nA wise plan, don't you think?
+OFFER_DEAL	;Does this trade appeal to you?
+DEAL_BEGIN	;What would you like?
+DEAL_DEMAND	;Give us this. Do not disappoint us, we need it.
+DEAL_ACCEPT	;We accept!
+DEAL_ACCEPTCOMPLAIN	;We will part with this for you
+DEAL_IMPROVE	;We were nearly interested, you cannot go higher?
+DEAL_REJECT	;I'm sorry but no.
+DEAL_REJECTCOMPLAIN	;You think we scare easily? We may accept a fair deal, but not threats
+MUTUALDEFENSE_ACCEPT	;Agreed, a Mutual Defense Pact makes good sense. Welcome to our new allies!
+MUTUALDEFENSE_REJECT	;No, a Mutual Defense Pact does not match with our plans at the moment
+MUTUALDEFENSE_REQUESTHELP	;Those sneaky rats, the {0}, are attacking us! We call on you to honor your treaty with us and declare war on them.\n\nAre you with us?
+MUTUALDEFENSE_HONORREQUESTHELP	;We will honor this agreement - we will exterminate the {0}!
+MUTUALDEFENSE_HONORREQUESTHELP_RESPONSE	;A test well met, ally!
+MUTUALDEFENSE_DECLINEREQUESTHELP	;We cannot help you against them.\n\nWe are sorry.
+MUTUALDEFENSE_DECLINEREQUESTHELP_RESPONSE	;We feel we know you better now.\n\nWe will not forget how you let us down.
+PROTECTORATE_ACCEPT	;We can see much benefit in becoming your Protectorate - we accept.
+FREETRADE_ACCEPT	;A Free Trade Agreement? Fantastic idea, we eagerly accept.
+CANCELTREATY	;We no longer find this {0} in our interests - we are cancelling it
+CANCELTREATY_RESPONSE_FRIENDLY	;How sad. Maybe you will reconsider at a later time
+CANCELTREATY_RESPONSE_NEUTRAL	;Alright then - it is over
+CANCELTREATY_RESPONSE_ANGRY	;Oh you didn't get our message? We were cancelling anyway.
+TREATY_PROPOSAL	;What do you have in mind?
+TREATY_ACCEPTRESPONSE	;A very smart decision - welcome to our alliance!
+TREATY_REJECTRESPONSE	;A poor choice.\n\nMaybe you will realize this later and reconsider...
+TRADESANCTIONS_IMPOSE	;It is past time we imposed Trade Sanctions!\n\nWe will no longer sponsor your belligerence - all trade between us is over
+TRADESANCTIONS_IMPOSE_RESPONSE_ANGRY	;Do you really think we care about losing your trade? It is nothing to us!
+TRADESANCTIONS_IMPOSE_RESPONSE_NEUTRAL	;Our suspicions are confirmed: you are totally untrustworthy
+TRADESANCTIONS_IMPOSE_RESPONSE_SURPRISED	;How criminal! How disturbing to betray your friends in this manner
+TRADESANCTIONS_LIFT	;Our Trade Sanctions against you are over. We will trade with you once again
+TRADESANCTIONS_LIFT_RESPONSE	;We are glad that you have become more reasonable. We welcome fair trade between us
+WAR_DECLARE	;Our preparations are complete - now it is time for WAR!\n\nWe await your pleas of surrender!
+WAR_DECLARE_RESPONSE_EAGER	;We knew it would come to this!\n\nYou face annihilation!
+WAR_DECLARE_RESPONSE_NEUTRAL	;We knew you were planning to betray us!\n\nNow you will see why you don't mess with us!
+WAR_DECLARE_RESPONSE_SURPRISED	;We had no idea you were so duplicitous!\n\nWe will give you war, if that is what you seek!
+WAR_END	;This war only weakens both of us. We propose an immediate end to the fighting
+WAR_END_ACCEPT	;Agreed. Let us end our war at once
+WAR_END_REJECT	;End the war? No, we are just getting started!
+GIFT_GIVE	;We offer you a gift of {0} credits.\n\nWe hope this support we offer doesn't get ignored.
+GIFT_THANKS	;We appreciate your gift.\n\nYou are the kind of neighbour we appreciate!
+WARNING	;What is it?
+WARNING_INTELLIGENCEMISSIONS	;We warn you not to attempt any further covert missions against us.\n\nYou don't want to make us your enemy.
+WARNING_INTELLIGENCEMISSIONS_RESPONSE_FRIENDLY	;We are not aware of any missions against you my friend, but we will investigate this situation at once
+WARNING_INTELLIGENCEMISSIONS_RESPONSE_NEUTRAL	;Surely you are mistaken? We have no knowledge of any missions against you
+WARNING_INTELLIGENCEMISSIONS_RESPONSE_ANGRY	;Hah!\n\nSure we'll stop...
+WARNING_ATTACKS	;We are angered by your ship attacks against us.\n\nStop them now, or face retaliation!

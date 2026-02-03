@@ -1,0 +1,363 @@
+﻿'Distant Worlds Components - 1.9.5.10 (Research Unleashed by Osito)
+
+'each line defines a single component with comma-separated data, up to a maximum of 170 components (0-169)
+' - ID: numeric ID value of component
+' - Name: text of component name
+' - PictureRef: index value mapping to image used to display component (images\ui\components folder)
+' - Special Image Index: index value mapping to special image set for component type, as specified below:
+'     EngineMainThrust - engine thrust image index (images\effects\Thruster - engines folder)
+'     Hyperdrive - hyperjump enter/exit animation image index (images\effects\hyperenter and images\effects\hyperexit folders)
+'     WeaponAreaDestruction - area weapon image index (images\effects\weapons folder)
+'     WeaponWeapon - beam weapon image index (images\effects\weapons folder)
+'     WeaponBombard Torpedo - - weapon image index (images\effects\weapons folder)
+'     WeaponIonCannon - beam weapon image index (images\effects\weapons folder)
+'     WeaponIonPulse - area weapon image index (images\effects\weapons folder)
+'     WeaponMissile - weapon image index (images\effects\weapons folder)
+'     WeaponPointDefense - beam weapon image index (images\effects\weapons folder)
+'     WeaponRailGun - beam weapon image index (images\effects\weapons folder)
+'     WeaponSuperArea - area weapon image index (images\effects\weapons folder)
+'     WeaponSuperWeapon - beam weapon image index (images\effects\weapons folder)
+'     WeaponTorpedo - weapon image index (images\effects\weapons folder)
+' - SoundEffectFilename: filename of sound effect used when weapon fired (applies only to weapon components)
+' - Type: numeric code specifying the type of component as specified in the following list (Category and Industry inferred from Type):
+'     0=AreaShieldRecharge
+'     1=Armor
+'     2=AssaultPod
+'     3=CargoBay
+'     4=ColonizationModule
+'     5=CommandCenter
+'     6=CommerceCenter
+'     7=ConstructionYard
+'     8=Countermeasures
+'     9=CountermeasuresFleet
+'     10=DamageControl
+'     11=DockingBay
+'     12=EnergyCollector
+'     13=EnergyToFuel
+'     14=EngineMainThrust
+'     15=EngineVectoring
+'     16=ExtractorGasExtractor
+'     17=ExtractorLuxury
+'     18=ExtractorMine
+'     19=FighterBay
+'     20=FuelCell
+'     21=HabModule
+'     22=HyperDeny
+'     23=HyperDrive
+'     24=HyperStop
+'     25=LifeSupport
+'     26=LongRangeScanner
+'     27=ManufacturerEnergyPlant
+'     28=ManufacturerHighTechPlant
+'     29=ManufacturerWeaponsPlant
+'     30=MedicalCenter
+'     31=PassengerCompartment
+'     32=ProximityArray
+'     33=Reactor
+'     34=RecreationCenter
+'     35=ResearchLabEnergy
+'     36=ResearchLabHighTech
+'     37=ResearchLabWeapons
+'     38=ResourceProfileSensor
+'     39=ScannerJammer
+'     40=Shields
+'     41=Stealth
+'     42=Targetting
+'     43=TargettingFleet
+'     44=TraceScanner
+'     45=TroopCompartment
+'     46=WeaponAreaDestruction
+'     47=WeaponAreaGravity
+'     48=WeaponBeam
+'     49=WeaponBombard
+'     50=WeaponGravityBeam
+'     51=WeaponIonCannon
+'     52=WeaponIonDefense
+'     53=WeaponIonPulse
+'     54=WeaponMissile
+'     55=WeaponPhaser
+'     56=WeaponPointDefense
+'     57=WeaponRailGun
+'     58=WeaponSuperArea
+'     59=WeaponSuperBeam
+'     60=WeaponTorpedo
+'     61=WeaponTractorBeam
+'     62=WeaponSuperTorpedo
+'     63=WeaponSuperMissile
+'     64=WeaponSuperRailGun
+'     65=WeaponSuperPhaser
+' - Size: numeric value of component size. The size of a ship or base is determined by the total size of all components in the ship or base.
+' - StaticEnergyUsed: static energy used by component per second
+' - Value1: numeric value with unique meaning for each component type as detailed below
+' - Value2: numeric value with unique meaning for each component type as detailed below
+' - Value3: numeric value with unique meaning for each component type as detailed below
+' - Value4: numeric value with unique meaning for each component type as detailed below
+' - Value5: numeric value with unique meaning for each component type as detailed below
+' - Value6: numeric value with unique meaning for each component type as detailed below
+' - Value7: numeric value with unique meaning for each component type as detailed below
+
+'Meanings of Value1-7 for component types:
+' - Area Shield Recharge: Value1=recharge range, Value2=maximum recharge amount, Value3=energy required for full recharge to maximum amount, Value4-7 unused
+' - Armor: Value1=rating, Value2=reactive rating, Value3-7 unused
+' - Assault Pod: Value1=Assault strength, Value2=Boarding range, Value3=energy consumed per launch, Value4=movement speed, Value5=shield penetration, Value6=launch rate in milliseconds, Value7 unused
+' - Cargo Bay: Value1=cargo storage capacity, Value2-7 unused
+' - Colonization Module: Value1=population amount for new colony in millions, Value2-7 unused
+' - Command Center: Value1=maintenance savings percentage, Value2-7 unused
+' - Commerce Center: Value1=Trade bonus percentage, Value2-7 unused
+' - Construction Yard: Value1=construction speed, Value2-7 unused
+' - Countermeasures: Value1=countermeasures bonus percentage, Value2-7 unused
+' - Damage Control: Value1=damage reduction percentage, Value2=seconds to repair one damaged component, Value3-7 unused
+' - Docking Bay: Value1=cargo throughput capacity, Value2-7 unused
+' - Energy Collector: Value1=energy collection rate, Value2-7 unused
+' - Energy To Fuel: Value1=fuel production rate, Value2-7 unused
+' - Main Thruster: Value1=maximum thrust, Value2=energy usage per second at maximum thrust, Value3=cruise thrust, Value4=energy usage per second at cruise thrust, Value5-7 unused
+' - Vectoring Thruster: Value1=thrust, Value2=energy usage per second, Value3-7 unused
+' - Extractors: Value1=extraction rate, Value2-7 unused
+' - Hangar Bay:
+'	Value1=fighter storage capacity,
+'	Value2=fighter repair rate (in percentage points per second, manufacture rate is half repair rate),
+'	Value3-7 unused
+' - Fleet Countermeasures: Value1=countermeasures bonus percentage for fleet, Value2-7 unused
+' - Fleet Targeting: Value1=targeting bonus percentage for fleet, Value2-7 unused
+' - Fuel Cell: Value1=fuel storage capacity, Value2-7 unused
+' - HyperStop / Gravity Well Projector: Value1=unused, Value2=hyper stopping range, Value3-7 unused
+' - Living Quarters: Value1=ship/base support size, Value2-7 unused
+' - Hyper Deny: Value1=unused, Value2=hyper deny range, Value3=energy used when operational, Value4-7 unused
+' - Hyper Drive: Value1=top speed, Value2=energy usage per second, Value3=typical jump initiation time in seconds, Value4=gravwell dividend divided by..., Value5=gravwell divisor, Value6-7 unused
+' - Ion Defense: Value1=ion defense strength, Value2-7 unused
+' - Life Support: Value1=ship/base support size, Value2-7 unused
+' - Long Range Scanner: Value1=scan range, Value2-7 unused
+' - Manufacturer: Value1=manufacturing speed, Value2-7 unused
+' - Medical Bay: Value1=effectiveness, Value2-7 unused
+' - Passenger Compartment: Value1=passenger capacity, Value2-7 unused
+' - Proximity Array: Value1=scan range, Value2=hyperjump tracking chance percentage, Value3-7 unused
+' - Reactor:
+'	Value1=energy output per second,
+'	Value2=energy storage capacity,
+'	Value3=fuel units required to charge to full capacity,
+'	Value4=fuel resource Id,
+'	Value5-7 unused
+' - Recreation Center: Value1=recreation value, Value2-7 unused
+' - Research Labs: Value1=research output, Value2-7 unused
+' - Resource Profile Sensor: Value1=scan range, Value2-7 unused
+' - Scanner Jammer: Value1=jamming power, Value2-7 unused
+' - Shields: Value1=maximum strength, Value2=recharge rate per second, Value3-7 unused
+' - Stealth: Value1=stealth rating, Value2-7 unused
+' - Targeting: Value1=targeting bonus percentage, Value2-7 unused
+' - Trace Scanner: Value1=scan range, Value2=scan power, Value3-7 unused
+' - Tractor Beam: Value1=pulling/pushing power, Value2=range, Value3=energy consumed per firing, Value4=projection speed, Value5=power loss per 100 units range, Value6=fire rate in milliseconds, Value7 unused
+' - Troop Transport: Value1=troop size capacity, Value2-7 unused
+' - Weapons: Value1=damage amount,
+'			 Value2=range
+'			 Value3=energy consumed per firing
+'			 Value4=movement speed
+'			 Value5=damage loss per 100 units range
+'			 Value6=fire rate in milliseconds
+'			 Value7=bombard damage amount
+' - Weapons - Area Gravity: Value1=damage amount, Value2=firing range (to epicenter), Value3=energy consumed per firing, Value4=expansion speed (Value2 / Value4 = firing duration), Value5=pull range from epicenter, Value6=fire rate in milliseconds, Value7=damage range from epicenter
+
+'Resources Required - list of up to 5 resources and their amounts required to manufacture the component
+' - Resource ID: Id value of required resource
+' - Amount: numeric amount of resource needed for manufacturing
+
+0, Weapon - Maxos Blaster, 0, 0, laser.wav,				48, 5, 0,		6, 190, 11, 1200, 1, 1240, 0,			1, 2, 4, 4, 14, 3,
+1, Weapon - Shatterforce Laser, 1, 1, laser2.wav,			48, 4, 0,		7, 320, 20, 1200, 1, 1500, 0,			0, 3, 6, 5, 15, 5,
+2, Weapon - Impact Assault Blaster, 2, 2, laser3.wav,			48, 5, 0,		12, 220, 38, 1200, 3, 1700, 0,			2, 3, 5, 4, 14, 5, 12, 4,
+3, Weapon - Titan Beam, 3, 3, laser4.wav,				48, 6, 0,		20, 390, 28, 1200, 4, 1400, 0,			3, 4, 7, 3, 15, 5, 12, 5,
+4, Weapon - PulseWave Cannon, 4, 7, laser4.wav,				48, 5, 0,		13, 310, 24, 1200, 3, 1400, 0,			3, 4, 7, 3, 15, 5, 12, 5,
+5, Weapon - Epsilon Torpedo, 5, 0, torpedo_small.wav,			60, 12, 0,		13, 300, 30, 60, 3, 3600, 0,			1, 2, 4, 4, 14, 3, 12, 7,
+6, Weapon - Velocity Shard Torpedo, 6, 1, torpedo_medium.wav,		60, 12, 0,		16, 700, 44, 120, 2, 3200, 0,			0, 2, 6, 4, 15, 5, 12, 9,
+7, Weapon - Shockwave Torpedo, 8, 3, torpedo_large.wav,			60, 12, 0,		24, 430, 60, 95, 4, 3800, 0,			2, 2, 5, 4, 14, 4, 12, 8,
+8, Weapon - Plasma Thunderbolt Torpedo, 7, 2, torpedo_medium.wav,	60, 12, 0,		20, 550, 50, 100, 3, 3400, 0,			3, 3, 7, 3, 15, 3, 12, 8,
+9, Weapon - Shaktur FireStorm Torpedo, 9, 3, torpedo_large.wav,		60, 12, 0,		30, 295, 52, 65, 10, 2900, 6,			3, 4, 7, 4, 15, 4, 12, 10,
+10, Weapon - Type II Missile, 10, 6, missile_launch.wav,		54, 8, 0,		8, 1000, 20, 150, 0, 2500, 0,			11, 3, 17, 2, 6, 5,
+11, Bombard - Nuclear Devastator, 11, 4, Torpedo_Large.wav,		49, 8, 0,		0, 210, 15, 50, 0, 6000, 3,				3, 4, 7, 4, 15, 4, 12, 10, 41, 5,
+12, Bombard - Nuclear Exterminator, 12, 5, Torpedo_Large.wav,		49, 14, 0,		0, 270, 44, 60, 13, 6700, 15,			3, 4, 7, 5, 15, 6, 12, 11, 41, 5,
+13, Defense - Defender AutoCannon, 13, 6, point_defense.wav,		56, 3, 0,		4, 140, 4, 430, 1, 540, 0,				1, 2, 8, 4, 13, 3, 15, 2,
+14, Defense - Terminator AutoCannon, 14, 6, point_defense.wav,		56, 3, 0,		10, 190, 6, 550, 1, 480, 0,				0, 2, 8, 4, 13, 4, 15, 3,
+15, Weapon - Ion Cannon, 15, 5, ion_bolt.wav,				51, 12, 0,		20, 260, 80, 230, 5, 3300, 0,			13, 6, 14, 4, 5, 5, 12, 2,
+16, Weapon - Ion Pulse Cannon, 16, 3, ion_blast.wav,			53, 20, 0,		24, 210, 125, 120, 7, 6600, 0,			13, 9, 14, 6, 5, 6, 12, 3,
+17, Defense - Ion Defense, 17, 0, ,					52, 2, 0,		18, 0, 0, 0, 0, 0, 0,					15, 5, 9, 6, 3, 4,
+18, HyperDeny - GW1000, 18, 0, ,					22, 12, 5,		0, 500, 2, 0, 0, 0, 0,					1, 3, 4, 6, 14, 3, 11, 2,
+19, Weapon - Intimidator Surgewave, 19, 0, AreaWeapon.wav,		46, 16, 0,		35, 220, 54, 120, 13, 8200, 0,			1, 4, 5, 7, 14, 5, 11, 3,
+20, HyperDeny - GW4000, 20, 0, ,					22, 14, 6,		0, 1200, 2, 0, 0, 0, 0,					0, 4, 5, 7, 15, 4, 11, 3,
+21, Weapon - Derasian Shockwave, 21, 2, AreaWeapon.wav,			46, 18, 0,		74, 300, 90, 150, 21, 9000, 0,			0, 5, 6, 7, 15, 5, 11, 4, 3, 2,
+22, HyperDeny - Gravity Well Projector, 22, 0, ,			24, 52, 1,		0, 3000, 0, 0, 0, 0, 0,				0, 28, 5, 50, 15, 22, 11, 24,
+23, Weapon - Death Ray, 23, 4, laser4.wav,				59, 140, 0,		3000, 1000, 400, 1200, 270, 8500, 0,	3, 180, 7, 120, 15, 190, 12, 110,
+24, Weapon - Devastator Pulse, 24, 1, AreaWeapon.wav,			58, 170, 0,		2000, 500, 400, 225, 135, 9000, 0,		3, 150, 7, 130, 15, 120, 11, 80,
+25, Weapon - Super Laser, 25, 4, laser4.wav,				59, 2000, 0,		40000, 700, 800, 1200, 380, 8500, 0,	3, 680, 7, 460, 15, 320, 12, 240,
+26, Hangar - Standard Assault Bay, 26, 0, ,				19, 50, 4,		40, 4, 0, 0, 0, 0, 0,					10, 20, 17, 7, 16, 4,
+27, Hangar - Advanced Assault Bay, 27, 0, ,				19, 45, 5,		60, 6, 0, 0, 0, 0, 0,					10, 16, 17, 5, 16, 3,
+28, Defense - Standard Armor, 28, 0, ,					1, 1, 0,		10, 0, 0, 0, 0, 0, 0,					10, 5,
+29, Defense - Enhanced Armor, 29, 0, ,					1, 1, 0,		25, 8, 0, 0, 0, 0, 0,					17, 1, 10, 4,
+30, Defense - Ablative Armor, 30, 0, ,					1, 1, 0,		30, 10, 0, 0, 0, 0, 0,					17, 1, 11, 3, 12, 2,
+31, Defense - Ultra-Dense Armor, 31, 0, ,				1, 1, 0,		40, 15, 0, 0, 0, 0, 0,					17, 1, 11, 4, 12, 3,
+32, Defense - Corvidian Shields, 32, 0, ,				40, 10, 0,		100, 3, 0, 0, 0, 0, 0,					4, 3, 14, 4, 13, 8,
+33, Defense - Talassos Shields, 33, 0, ,				40, 10, 0,		155, 10, 0, 0, 0, 0, 0,					5, 3, 14, 5, 13, 7,
+34, Defense - Deucalios Shields, 34, 0, ,				40, 10, 0,		200, 3, 0, 0, 0, 0, 0,					6, 4, 14, 4, 13, 8,
+35, Defense - Meridian Shields, 35, 0, ,				40, 10, 0,		250, 15, 0, 0, 0, 0, 0,					7, 4, 14, 5, 13, 9, 3, 3,
+36, Defense - Megatron Z4 Shields, 36, 0, ,				40, 10, 0,		150, 10, 0, 0, 0, 0, 0,					6, 4, 14, 4, 13, 8, 3, 3, 7, 2,
+37, Defense - Area Shield Recharge, 37, 0, ,				0, 100, 5,		1000, 1000, 1000, 0, 0, 0, 0,				4, 20, 14, 10, 13, 6, 3, 12, 12, 8,
+38, Movement - Proton Thruster, 38, 0, ,				14, 6, 0,		1800, 5, 1125, 2, 0, 0, 0,				17, 1, 10, 4,
+39, Movement - Quantum Thruster, 39, 1, ,				14, 6, 0,		3000, 3, 1875, 1, 0, 0, 0,				17, 2, 11, 3,
+40, Movement - Acceleros Thruster, 40, 2, ,				14, 6, 0,		4800, 8, 1875, 3, 0, 0, 0,				17, 2, 11, 3,
+41, Movement - Vortex Thruster, 41, 3, ,				14, 6, 0,		7500, 6, 3000, 3, 0, 0, 0,				17, 2, 11, 4,
+42, Movement - Turbo Thruster, 42, 5, ,					14, 6, 0,		3000, 3, 1800, 1, 0, 0, 0,				17, 1, 11, 3,
+43, Movement - StarBurner Thruster, 43, 4, ,				14, 6, 0,		3750, 7, 2250, 4, 0, 0, 0,				17, 2, 11, 3,
+44, Movement - Maneuver Jets, 44, 0, ,					15, 2, 0,		7, 1, 0, 0, 0, 0, 0,					17, 1, 10, 2,
+45, Movement - Multi-Vector Jets, 45, 0, ,				15, 2, 0,		15, 1, 0, 0, 0, 0, 0,					17, 1, 11, 3,
+46, Movement - Swift-Vector Jets, 46, 0, ,				15, 2, 0,		12, 1, 0, 0, 0, 0, 0,					17, 1, 11, 3,
+47, Movement - Gerax HyperDrive, 47, 0, ,				23, 11, 0,		3500, 110, 45, 19, 20, 0, 0,				17, 5, 4, 9, 10, 7,
+48, Movement - Kaldos HyperDrive, 48, 1, ,				23, 9, 0,		5000, 150, 10, 17, 20, 0, 0,				17, 4, 5, 9, 10, 8,
+49, Movement - Phoenix JumpDrive, 49, 2, ,				23, 9, 0,		7500, 150, 30, 17, 20, 0, 0,				17, 4, 6, 10, 12, 5, 10, 4,
+50, Movement - Calista-Dal HyperDrive, 50, 3, ,				23, 9, 0,		5000, 90, 20, 10, 20, 0, 0,				17, 5, 7, 7, 12, 5, 10, 6,
+51, Movement - Torrent Drive, 51, 3, ,					23, 9, 0,		30000, 150, 15, 12, 20, 0, 0,				17, 5, 7, 8, 12, 6, 10, 6,
+52, Movement - Dhayut Pulse Drive, 52, 2, ,				23, 8, 0,		5000, 90, 20, 20, 20, 0, 0,				17, 4, 7, 7, 12, 5, 10, 6,
+53, Power - Advanced Fission Reactor, 53, 0, ,				33, 20, 0,		85, 125, 562, 18, 0, 0, 0,				15, 6, 4, 9, 10, 5, 13, 4, 41, 5,
+54, Power - Fusion Reactor, 54, 0, ,					33, 18, 0,		120, 250, 1000, 8, 0, 0, 0,				15, 7, 5, 10, 10, 6, 41, 4,
+55, Power - Quantum Reactor, 55, 0, ,					33, 18, 0,		140, 200, 800, 18, 0, 0, 0,				15, 6, 6, 11, 10, 4, 17, 2, 41, 5,
+56, Power - HyperFusion Reactor, 56, 0, ,				33, 15, 0,		215, 350, 1310, 8, 0, 0, 0,			15, 8, 4, 12, 10, 6, 11, 4, 43, 5,
+57, Power - NovaCore Reactor, 57, 0, ,					33, 15, 0,		120, 250, 900, 4, 0, 0, 0,				15, 6, 6, 9, 10, 4, 11, 3, 7, 2,
+58, Power - Energy Collector, 58, 0, ,					12, 8, 0,		24, 0, 0, 0, 0, 0, 0,					16, 2, 9, 7, 14, 4, 12, 5,
+59, Mining - Mineral Extractor, 59, 0, ,				18, 14, 3,		3, 9, 0, 0, 0, 0, 0,					10, 5, 11, 5,
+60, Mining - Gas Extractor, 60, 0, ,					16, 16, 2,		30, 90, 0, 0, 0, 0, 0,					10, 4, 16, 3,
+61, Mining - Luxury Extractor, 61, 0, ,					17, 22, 3,		3, 6, 0, 0, 0, 0, 0,					10, 3, 11, 3,
+62, Construction - Weapons Plant, 62, 0, ,				29, 35, 2,		20000, 0, 0, 0, 0, 0, 0,				10, 3, 4, 4, 12, 4,
+63, Construction - Energy Plant, 63, 0, ,				27, 35, 2,		20000, 0, 0, 0, 0, 0, 0,				10, 3, 16, 3, 13, 4,
+64, Construction - HighTech Plant, 64, 0, ,				28, 28, 2,		20000, 0, 0, 0, 0, 0, 0,				10, 3, 9, 6,
+65, Power - Standard Fuel Cell, 65, 0, ,				20, 6, 0,		100, 0, 0, 0, 0, 0, 0,					10, 2, 16, 1,
+66, Power - Ultra-Dense Fuel Cell, 66, 0, ,				20, 6, 0,		200, 0, 0, 0, 0, 0, 0,					10, 3, 16, 2,
+67, Power - Solid-State Fuel Cell, 67, 0, ,				20, 6, 0,		150, 0, 0, 0, 0, 0, 0,					10, 3, 16, 2,
+68, Commerce - Standard Cargo Bay, 68, 0, ,				3, 8, 0,		1100, 0, 0, 0, 0, 0, 0,					10, 3, 16, 1,
+69, Commerce - Massive Cargo Bay, 69, 0, ,				3, 8, 0,		1500, 0, 0, 0, 0, 0, 0,					10, 4, 16, 2,
+70, Troops - Standard Transport, 70, 0, ,				45, 8, 0,		100, 0, 0, 0, 0, 0, 0,					10, 4, 16, 2,
+71, Troops - Huge Transport, 71, 0, ,					45, 8, 0,		300, 0, 0, 0, 0, 0, 0,					10, 5, 16, 3,
+72, Commerce - Standard Accomodations, 72, 0, ,				31, 10, 0,		1200000, 0, 0, 0, 0, 0, 0,				10, 4, 16, 2,
+73, Commerce - Deluxe Accomodations, 73, 0, ,				31, 10, 0,		2400000, 0, 0, 0, 0, 0, 0,				10, 5, 16, 3,
+74, Docking Bay - Standard, 74, 0, ,					11, 4, 0,		150, 0, 0, 0, 0, 0, 0,					10, 4,
+75, Sensors - Basic Proximity Array, 75, 0, ,				32, 3, 1,		8000, 0, 0, 0, 0, 0, 0,				9, 5, 14, 3,
+76, Sensors - Advanced Proximity Array, 76, 0, ,			32, 3, 1,		75000, 2, 0, 0, 0, 0, 0,				9, 5, 14, 3,
+77, Sensors - Resource Profile Sensor, 77, 0, ,				38, 2, 1,		500, 0, 0, 0, 0, 0, 0,					9, 6, 14, 4,
+78, Sensors - Long Range Scanner, 78, 0, ,				26, 72, 60,		300000, 0, 0, 0, 0, 0, 0,				9, 36, 15, 14,
+79, Sensors - Ultra Long Range Scanner, 79, 0, ,			26, 98, 110,		1000000, 0, 0, 0, 0, 0, 0,				9, 55, 15, 20,
+80, Sensors - Trace Scanner, 80, 0, ,					44, 2, 1,		500, 10, 0, 0, 0, 0, 0,					9, 4, 14, 3,
+81, Sensors - Scanner Jammer, 81, 0, ,					39, 2, 1,		0, 10, 0, 0, 0, 0, 0,					9, 4, 14, 3,
+82, Sensors - Stealth Cloak, 82, 0, ,					41, 60, 10,		500, 0, 0, 0, 0, 0, 0,					17, 5, 11, 3, 12, 6, 10, 7, 7, 8,
+83, ECCM - Targeting System, 83, 0, ,					42, 1, 1,		5, 0, 0, 0, 0, 0, 0,					9, 3, 14, 3, 16, 1,
+84, ECM - Countermeasures System, 84, 0, ,				8, 1, 1,		5, 0, 0, 0, 0, 0, 0,					9, 3, 14, 3, 16, 1,
+85, Crew - Command Center, 85, 0, ,					5, 2, 2,		0, 0, 0, 0, 0, 0, 0,					9, 5, 14, 4, 16, 2,
+86, Commerce - Duty-Free Trade Zone, 86, 0, ,				6, 10, 2,		50, 0, 0, 0, 0, 0, 0,					9, 7, 14, 5, 16, 3,
+87, ECM - ShadowGhost ECM, 87, 0, ,					8, 1, 1,		20, 0, 0, 0, 0, 0, 0,					9, 5, 14, 4, 16, 3,
+88, ECCM - Raptor Targeting System, 88, 0, ,				42, 1, 1,		20, 0, 0, 0, 0, 0, 0,					9, 5, 14, 4, 16, 3,
+89, ECCM - Fleet Targeting System, 89, 0, ,				43, 3, 5,		0, 10, 0, 0, 0, 0, 0,					9, 5, 14, 4, 16, 3,
+90, ECM - Fleet Countermeasures System, 90, 0, ,			9, 3, 5,		0, 10, 0, 0, 0, 0, 0,					9, 5, 14, 4, 16, 3,
+91, Research - Weapons Lab, 91, 0, ,					37, 20, 5,		10000, 0, 0, 0, 0, 0, 0,				16, 5, 14, 6, 9, 7,
+92, Research - Energy Lab, 92, 0, ,					35, 20, 5,		10000, 0, 0, 0, 0, 0, 0,				16, 5, 14, 6, 9, 7,
+93, Research - HighTech Lab, 93, 0, ,					36, 20, 5,		10000, 0, 0, 0, 0, 0, 0,				16, 5, 14, 6, 9, 8,
+94, Construction - Construction Yard, 94, 0, ,				7, 10, 2,		100, 60, 0, 0, 0, 0, 0,					10, 8, 17, 3,
+95, Repair - Damage Control, 95, 0, ,					10, 4, 1,		100, 60, 0, 0, 0, 0, 0,					10, 5, 17, 2,
+96, Repair - S2F4 RepairBot, 96, 0, ,					10, 3, 1,		500, 5, 0, 0, 0, 0, 0,					10, 6, 17, 1,
+97, Repair - S2F7 RepairBot, 97, 0, ,					10, 2, 1,		650, 4, 0, 0, 0, 0, 0,					10, 5, 17, 2,
+98, Crew - Life Support, 98, 0, ,					25, 1, 1,		60, 0, 0, 0, 0, 0, 0,					16, 1, 14, 2,
+99, Crew - Living Quarters, 99, 0, ,					21, 3, 1,		60, 0, 0, 0, 0, 0, 0,					10, 3, 16, 2,
+100, Troops - Standard Medical Bay, 100, 0, ,				30, 4, 3,		100, 0, 0, 0, 0, 0, 0,					10, 6, 16, 4, 11, 5,
+101, Commerce - Recreation Center, 101, 0, ,				34, 20, 15,		100, 0, 0, 0, 0, 0, 0,					10, 18, 16, 10,
+102, Colonization - Basic Module, 102, 0, ,				4, 300, 6,		50000000, 0, 0, 0, 0, 0, 0,				8, 400, 10, 180, 16, 100,
+103, Colonization - Enhanced Module, 103, 0, ,				4, 390, 7,		250000000, 0, 0, 0, 0, 0, 0,				8, 460, 10, 200, 16, 120,
+104, Colonization - Massive Module, 104, 0, ,				4, 440, 7,		500000000, 0, 0, 0, 0, 0, 0,			8, 520, 10, 230, 16, 130,
+'Giant Ion Cannon below is only intended for use as the weapon component of the Giant Ion Cannon planetary facility, and thus should not be placed on the tech tree
+105, Weapon - Giant Ion Cannon, 105, 5, ion_bolt.wav,			51, 200, 0,		220, 400, 0, 220, 4, 8000, 0,			13, 6, 14, 4, 5, 5, 12, 2,
+106, Weapon - Phaser Cannon, 106, 10, phaser.wav,			55, 7, 0,		9, 200, 32, 1200, 0, 2100, 0,			1, 3, 4, 6, 14, 4,
+107, Weapon - Light Rail Gun, 107, 8, railgun.wav,			57, 12, 0,		5, 450, 10,  350, 0,  400, 0,			1, 3, 8, 6, 13, 4, 15, 3,
+108, Weapon - Assault Missile, 108, 7, missile_launch_massive.wav,	54, 8, 0,		15, 1000, 38, 250, 0, 2500, 0,			11, 4, 17, 2, 6, 7,
+109, Power - Energy To Fuel Converter, 109, 0, ,			13, 250, 0,		50, 0, 0, 0, 0, 0, 0,					10, 74, 16, 48, 9, 28, 12, 37, 7, 42,
+110, Weapon - Phaser Lance, 110, 11, phaser.wav,			55, 7, 0,		24, 300, 50, 1200, 0, 4000, 0,			1, 3, 4, 7, 14, 5,
+111, Weapon - Heavy Rail Gun, 111, 8, railgun_heavy.wav,		57, 12, 0,		15, 600, 14, 400, 0, 1200, 0,			1, 4, 8, 8, 13, 4, 15, 4,
+112, Weapon - Heavy Mass Driver, 112, 8, railgun_heavy.wav,		57, 12, 0,		24, 750, 22, 500, 0, 1500, 1,			1, 5, 8, 10, 13, 5, 15, 5,
+113, Tractor Beam, 113, 12, tractorbeam.wav,				61, 10, 0,		10, 320, 28, 800, 5, 4000, 0,			13, 5, 15, 3, 6, 4, 12, 3,
+114, Troops - Boarding Pod, 114, 0, assaultpod.wav,			2, 4, 0,		50, 140, 6, 50, 20, 120000, 0,			10, 6, 16, 3, 17, 1, 11, 2,
+115, Weapon - Graviton Beam, 115, 9, gravitonbeam.wav,			50, 10, 0,		15, 150, 40, 400, 4, 7000, 0,			0, 3, 12, 2, 15, 2,
+116, Weapon - Resonant Graviton Beam, 116, 9, resonantgravitonbeam.wav,	50, 10, 0,		28, 240, 60, 400, 3, 7000, 0,			0, 4, 12, 3, 15, 4, 3, 2,
+117, Tractor Beam - High Power, 117, 12, highpowertractorbeam.wav,	61, 10, 0,		16, 400, 34, 400, 2, 4000, 0,			13, 6, 15, 4, 6, 5, 12, 4,
+118, Weapon - Graviton Pulse, 118, 0, areagravitonpulse.wav,		47, 20, 0,		40, 360, 100, 60, 240, 9000, 80,		0, 5, 6, 6, 15, 5, 11, 4, 3, 5,
+119, Weapon - Transient Singularity, 119, 0, areatransientsingularity.wav, 47, 25, 0,		100, 520, 200, 65, 350, 12000, 120,		0, 8, 6, 9, 15, 8, 11, 5, 3, 10,
+120, Power - Fission Reactor, 120, 0, ,					33, 22, 0,		60, 100, 450, 18, 0, 0, 0,				10, 5, 4, 7, 13, 3, 41, 5,
+121, Movement - Ion Thrusters, 121, 0, ,				14, 7, 0,		900, 4, 750, 2, 0, 0, 0,				17, 1, 10, 4,
+122, Movement - Directional Jets, 122, 0, ,				15, 2, 0,		3, 1, 0, 0, 0, 0, 0,					17, 1, 10, 2,
+123, Power - Small Fuel Cell, 123, 0, ,					20, 6, 0,		55, 0, 0, 0, 0, 0, 0,					10, 2, 16, 1,
+124, Commerce - Small Cargo Bay, 124, 0, ,				3, 8, 0,		550, 0, 0, 0, 0, 0, 0,					10, 3, 16, 1,
+125, Movement - Warp Bubble Generator, 125, 0, ,			23, 10, 0,		1250, 70, 60, 20, 20, 0, 0,				17, 4, 4, 7, 10, 5,
+126, Weapon - Pulse Blaster, 126, 0, laser.wav,				48, 4, 0,		4, 150, 13, 1200, 1, 1240, 0,			1, 2, 4, 3, 14, 3,
+127, Weapon - Basic Rail Gun, 127, 8, railgun.wav,			57, 6, 0,		4, 300, 8, 250, 0, 1750, 0,			1, 3, 8, 5, 13, 3, 15, 3,
+128, Weapon - Type I Missile, 128, 6, missile_launch.wav,		54, 8, 0,		4, 1000, 20, 100, 0, 2500, 0,			11, 3, 17, 1, 6, 4,
+129, Weapon - Stinger Beam, 129, 7, yorphaser.wav,			55, 8, 0, 		20, 260, 50, 1200, 0, 3900, 0,				1, 2, 4, 8, 14, 4,
+130, Hangar - Multi-Dimension Assault Bay, 166, 0, ,		19, 45, 5, 	60, 8, 0, 0, 0, 0, 0,	10, 20, 17, 7, 16, 4,
+131, Weapon - Hammerhead Missile, 131, 8, missile_launch_massive.wav, 54, 12, 0,	12, 800, 18, 100, 0, 2000, 0,			11, 3, 17, 2, 6, 9,
+132, Power - Fissile Exploitation Reactor, 132, 0, ,			33, 15, 0, 		135, 200, 650, 6, 0, 0, 0,			15, 6, 6, 11, 10, 4, 17, 2, 7, 2,
+133, HyperDeny - Space Denial 5000S, 133, 0, ,				24, 32, 1,		0, 5000, 0, 0, 0, 0, 0,				0, 28, 5, 50, 15, 22, 11, 24,
+134, Sensors - Disbelieve Mask, 134, 0, ,				41, 35, 12,		650, 0, 0, 0, 0, 0, 0,					17, 9, 11, 3, 12, 3, 10, 5, 7, 8,
+135, Troops - Compact Transport, 135, 0, ,				45, 6, 0,		600, 0, 0, 0, 0, 0, 0,					10, 5, 16, 4,
+136, Docking Bay - Rad Coupler, 136, 0, ,				11, 4, 0,		280, 0, 0, 0, 0, 0, 0,					10, 4,
+137, Troops - Lipid Host Medical Center, 137, 0, ,			30, 4, 2,		500, 0, 0, 0, 0, 0, 0,					10, 4, 16, 4, 11, 8,
+138, Sensors - Far Sight Center, 138, 0, ,				26, 72, 50,		800000, 0, 0, 0, 0, 0, 0,				9, 30, 15, 12,
+'Begin Research Unleashed...
+139, Colonization - Cryogenic Module, 139, 0, ,				4, 540, 7,		1500000000, 0, 0, 0, 0, 0, 0,			8, 520, 10, 230, 16, 130, 42, 40,
+140, Weapon - Proximity Rockets, 140, 9, missile_launch.wav,	54, 5, 0,		4, 250, 12, 100, 0, 1000, 0,		11, 2, 17, 1, 6, 2,
+141, Troops - Desensitization Transport Module, 141, 0, ,		45, 8, 0,		600, 0, 0, 0, 0, 0, 0,					10, 5, 16, 3, 17, 3,
+142, ECCM - Sub-Space Targeting System, 142, 0, ,			42, 1, 1,		75, 0, 0, 0, 0, 0, 0,					9, 3, 14, 3, 16, 1, 43, 4,
+143, ECM - Sub-Space Evasion System, 143, 0, ,				8, 1, 1,		75, 0, 0, 0, 0, 0, 0,					9, 3, 14, 3, 16, 1, 43, 3,
+144, Power - Helium Fusion Reactor, 144, 0, ,				33, 15, 0,		500, 1000, 3000, 4, 0, 0, 0,			15, 8, 4, 12, 10, 6, 11, 4, 18, 5,
+145, Movement - Micro HyperJump Thruster, 145, 3, ,			14, 6, 0,		30000, 6, 12000, 3, 0, 0, 0,				17, 2, 11, 4, 43, 5,
+146, Defense - Sub-Space Shields, 146, 0, ,				40, 10, 0,		500, 30, 0, 0, 0, 0, 0,					7, 4, 14, 5, 13, 9, 3, 3, 43, 4,
+147, Defense - Annihilator AutoCannon, 147, 6, point_defense.wav,	56, 3, 0,		18, 400, 6, 750, 1, 450, 0,				0, 2, 8, 4, 13, 4, 15, 3, 43, 3,
+148, Weapon - Sub-Space Torpedo, 148, 3, torpedo_large.wav,		60, 12, 0,		100, 750, 64, 900, 4, 2000, 0,			3, 3, 7, 3, 15, 3, 12, 8,
+149, Defense - Sub-Space Area Shield Recharger, 149, 0, ,		0, 100, 5,		5000, 2000, 1000, 0, 0, 0, 0,				4, 20, 14, 10, 13, 6, 43, 2, 12, 8,
+150, Movement - Shakturi Plasma Drive, 150, 3, ,			23, 9, 0,		30000, 200, 20, 13, 20, 0, 0,				17, 5, 7, 8, 12, 6, 10, 6, 41, 5,
+151, Weapon - Gravitic Torpedo, 151, 3, torpedo_large.wav,		60, 12, 0,		500, 800, 64, 1000, 4, 3500, 0,			3, 3, 7, 3, 15, 3, 12, 8,
+152, Weapon - Compact Sub-Space Ion Cannon, 152, 5, ion_bolt.wav,	51, 8, 0,		50, 360, 560, 230, 5, 3300, 0,			13, 6, 14, 4, 5, 5, 12, 2, 43, 5,
+153, Defense - Ion Beam Disruptor, 153, 0, ,				52, 2, 0,		60, 0, 0, 0, 0, 0, 0,					15, 5, 9, 6, 3, 4, 43, 6,
+154, Weapon - Caslon Missile, 154, 7, missile_launch_massive.wav,	54, 10, 0,		45, 600, 100, 150, 0, 10000, 1,		11, 4, 17, 2, 6, 7, 41, 5,
+155, Weapon - Anti-matter Missile, 155, 7, missile_launch_massive.wav,	54, 10, 0,		100, 700, 150, 250, 0, 10000, 4,	11, 4, 17, 2, 6, 7, 41, 5, 8, 5,
+156, Weapon - Neutron Missile, 156, 7, missile_launch_massive.wav,	54, 10, 0,		135, 700, 180, 300, 0, 10000, 6,	11, 4, 17, 2, 6, 7, 41, 5, 42, 3,
+157, Colonization - Huge Module, 157, 0, ,				4, 540, 7,		750000000, 0, 0, 0, 0, 0, 0,			8, 520, 10, 230, 16, 130, 42, 20,
+158, Movement - Warp Gate, 158, 3, ,					23, 9, 0,		400000, 700, 10, 12, 20, 0, 0,			17, 5, 7, 8, 12, 6, 10, 6, 43, 5,
+159, Weapon - Tachyon Beam, 159, 13, tachyon1.wav,			55, 7, 0,		27, 300, 60, 1200, -2, 4000, 0,			1, 2, 4, 4, 14, 3, 42, 3,
+160, Defense - Reflective Armor, 160, 0, ,				1, 1, 0,		30, 50, 0, 0, 0, 0, 0,					17, 1, 11, 4, 12, 3, 43, 5,
+161, Weapon - Tachyon Devastator, 159, 14, tachyon2.wav,		55, 7, 0,		46, 600, 70, 1200, -10, 4000, 0,			1, 2, 4, 4, 14, 3, 42, 3, 43, 5,
+162, Weapon - Tachyon Torpedo, 162, 3, torpedo_large.wav,		60, 12, 0,		200, 800, 64, 500, -25, 2000, 0,			3, 3, 7, 3, 15, 3, 12, 8, 43, 7,
+163, Defense - Talassos Mk II Shields, 163, 0, ,			40, 10, 0,		300, 40, 0, 0, 0, 0, 0,					5, 3, 14, 5, 13, 7, 43, 5,
+164, Defense - Deucalios Mk II Shields, 164, 0, ,			40, 10, 0,		500, 7, 0, 0, 0, 0, 0,					6, 4, 14, 4, 13, 8, 43, 5,
+'Moved conflicting block of components from 129..138 here...
+165, Movement - KCD Green FlashDrive, 165, 3, ,				23, 5, 0,		50000, 300, 1, 11, 20, 0, 0,				10, 5, 16, 3,
+166, Hangar - Ultimate Assault Bay, 130, 0, ,			19, 45, 6,	80, 8, 0, 0, 0, 0, 0,	10, 16, 17, 5, 16, 3,
+167, Bombard - Gravitic Annihilator, 167, 5, Torpedo_Large.wav,		49, 10, 0,		0, 600, 40, 100, 0, 7000, 100,		3, 4, 7, 5, 15, 6, 12, 11, 41, 5,
+168, Crew - Life Support Mk II, 168, 0, ,				25, 1, 1,		120, 0, 0, 0, 0, 0, 0,					16, 1, 14, 2,
+169, Crew - Optimized Living Quarters, 169, 0, ,			21, 1, 1,		120, 0, 0, 0, 0, 0, 0,				10, 3, 16, 2,
+170, Movement - Quasi-Warp Gate, 170, 3, ,				23, 9, 0,		150000, 700, 10, 15, 20, 0, 0,			17, 5, 7, 8, 12, 6, 10, 6, 43, 5,
+171, Defense - Heavy Armor, 171, 0, ,					1, 1, 0,		20, 5, 0, 0, 0, 0, 0,					10, 5, 11, 3,
+172, Defense - Neutron Armor, 172, 0, ,				1, 1, 0,		80, 30, 0, 0, 0, 0, 0,					17, 1, 11, 4, 12, 3, 42, 5,
+173, Weapon - B.F.G. Mass Driver, 173, 8, railgun_heavy.wav,		57, 12, 0,		70, 900, 63, 600, 0, 3000, 3,			1, 5, 8, 10, 13, 5, 15, 5, 11, 5,
+174, Colonization - Cloning Module, 174, 0, ,				4, 540, 7,		1000000000, 0, 0, 0, 0, 0, 0,			8, 520, 10, 230, 16, 130, 42, 30,
+175, Weapon - Light Mass Driver, 175, 0, railgun.wav,			57, 12, 0,		8, 600, 16, 450, 0, 500, 0,			1, 3, 8, 6, 13, 4, 15, 3,
+176, Weapon - X-Velocity Shard Torpedo, 176, 1, torpedo_medium.wav,	60, 12, 0,		38, 1000, 48, 240, 1, 3200, 0,			0, 2, 6, 4, 15, 5, 12, 9,
+177, Weapon - X-Plasma Thunderbolt Torpedo, 177, 2, torpedo_medium.wav,	60, 12, 0,		40, 850, 52, 175, 2, 3100, 0,			3, 3, 7, 3, 15, 3, 12, 8,
+178, Weapon - X-Shockwave Torpedo, 178, 3, torpedo_large.wav,		60, 12, 0,		50, 760, 64, 140, 3, 3500, 0,			2, 2, 5, 4, 14, 4, 12, 8,
+179, Hangar - Dedicated Fighter Bay, 26, 0, ,					19, 50, 4,		40, 4, 0, 0, 0, 0, 0,		10, 20, 17, 7, 16, 4,
+180, Hangar - Advanced Dedicated Fighter Bay, 27, 0, ,			19, 45, 5,		60, 6, 0, 0, 0, 0, 0,		10, 16, 17, 5, 16, 3,
+181, Hangar - Ultimate Dedicated Fighter Bay, 130, 0, ,			19, 45, 6,		80, 8, 0, 0, 0, 0, 0,		10, 16, 17, 5, 16, 3,
+182, Hangar - Multi-Dimension Dedicated Fighter Bay, 166, 0, ,	19, 45, 5, 		60, 8, 0, 0, 0, 0, 0,		10, 20, 17, 7, 16, 4,
+183, Defense - Ship Shield Recharge, 37, 0, ,				0, 25, 2,		250, 250, 250, 0, 0, 0, 0,				4, 10, 14, 5, 13, 3, 3, 6, 12, 4,
+184, Power - Energy To Fuel Converter, 184, 0, ,			13, 250, 0,		10, 0, 0, 0, 0, 0, 0,					10, 7, 16, 4, 9, 2, 12, 3, 7, 4,
+185, Power - Mini Quantum Reactor, 55, 0, ,				33, 6, 0,		43, 75, 280, 18, 0, 0, 0,				15, 2, 6, 4, 10, 2, 17, 1, 41, 2,
+186, Power - Mini Fusion Reactor, 54, 0, ,					   33, 6, 0,		43, 75, 280, 8, 0, 0, 0,				15, 2, 5, 4, 10, 2, 41, 3,
+187, Defense - Organic Armor, 179, 0, ,					1, 1, 0,		20, 5, 0, 0, 0, 0, 0,					17, 3, 16, 2,
+188, Power - Napoar Solar Cell, 58, 0, ,					12, 10, 0,		120, 0, 0, 0, 0, 0, 0,					16, 3, 9, 6, 14, 5, 12, 4,
+189, Defense - Crystaline Armor, 180, 0, ,					1, 1, 0,		5, 20, 0, 0, 0, 0, 0,					3, 2, 7, 2,
+190, Defense - Guardian APD, 13, 6, point_defense.wav,		56, 3, 0,		6, 175, 3, 500, 1, 450, 0,				1, 2, 8, 2, 13, 2, 15, 3,
+191, Commerce - AI Leisure Dome, 101, 0, ,				34, 25, 25,		500, 0, 0, 0, 0, 0, 0,					10, 10, 16, 10, 3, 5, 17, 5, 5, 5,
+192, Weapon - Ketarov Krusher, 118, 0, areagravitonpulse.wav,		47, 25, 0,		65, 500, 100, 100, 400, 7000, 120,		0, 6, 5, 8, 15, 4, 11, 4, 3, 3,
+193, Bombard - Plasmatic Liberator, 11, 4, Torpedo_Large.wav,		49, 10, 0,		0, 500, 20, 100, 0, 5000, 50,				3, 5, 7, 5, 15, 5, 11, 15, 41, 5,
+' 194, Hangar - Dedicated Bomber Bay, 26, 0, ,			19, 50, 4,	40, 4, 0, 0, 0, 0, 0,	10, 20, 17, 7, 16, 4,
+' 195, Hangar - Advanced Dedicated Bomber Bay, 27, 0, ,		19, 45, 5,	60, 7, 0, 0, 0, 0, 0,	10, 16, 17, 5, 16, 3,
+' 196, Hangar - Ultimate Dedicated Bomber Bay, 130, 0, ,		19, 45, 6,	80, 8, 0, 0, 0, 0, 0,	10, 16, 17, 5, 16, 3,
+' 197, Hangar - Multi-Dimension Dedicated Bomber Bay, 166, 0, ,	19, 45, 5, 	60, 8, 0, 0, 0, 0, 0,	10, 20, 17, 7, 16, 4,

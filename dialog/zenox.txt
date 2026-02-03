@@ -1,0 +1,43 @@
+'Distant Worlds - dialogue - Version 1.9.5.10 - Modded by the Distant Worlds Mod Editor by Sabranan
+
+GREETING_INTRODUCTION	;Greetings! The {0}, we are.\n\nMuch we have to tell, for those wise enough to listen.\n\nAre you wise?
+GREETING_FRIENDLY	;Pleased we are, to see you.\n\nHave time for a story, do you?
+GREETING_NEUTRAL	;Well, there you are. Come to speak with us, you have.\n\nTell us everything, take your time
+GREETING_ANGRY	;Hmmm, remember you, we do. Quite troublesome, you are.\n\nStill, listen to your voice, we do
+OFFER_FREETRADE	;After much careful thought, a Free Trade Agreement we are offering you. Consider your answer.\n\nAgree, do you?
+FREETRADE_ACCEPT	;A Free Trade Agreement with you, we accept.\n\nVery many benefits, we see from this
+FREETRADE_REJECT	;Reviewed your offer, we have. But not interested in a Free Trade Agreement, are we.\n\nToo hasty, to enter this now, we feel
+CANCELTREATY	;Thought a lot about our {0}, we have.\n\nTime to end this, we feel. Changed, things have
+CANCELTREATY_RESPONSE_FRIENDLY	;Unfortunate, this is. The treaty was good, we feel.\n\nBut now it is gone
+CANCELTREATY_RESPONSE_NEUTRAL	;Things come and things go. This we have seen before
+CANCELTREATY_RESPONSE_ANGRY	;This is for the best really.\n\nTrue to our feelings, this treaty no longer was
+TREATY_PROPOSAL	;A treaty, you say?\n\nHear your offer, we will. Consider our response, we will
+TREATY_ACCEPTRESPONSE	;An agreement, we have reached! Very fine, this is.\n\nA story, shall we share with you friend?
+TREATY_REJECTRESPONSE	;Most unsatisfying, this is. Hopeful of a better outcome, we were
+TRADESANCTIONS_IMPOSE	;Trade Sanctions on you. Yes, this is necessary.\n\nKeep trading with you, we will not
+TRADESANCTIONS_IMPOSE_RESPONSE_ANGRY	;Rash this is. Antagonistic too.\n\nA wise one, you are not
+TRADESANCTIONS_IMPOSE_RESPONSE_NEUTRAL	;Help matters, this will not.\n\nAchieve what, do you intend?
+TRADESANCTIONS_IMPOSE_RESPONSE_SURPRISED	;How rude!\n\nOver, our friendship is.\n\nShare our secrets with you, we will not
+TRADESANCTIONS_LIFT	;The Trade Sanctions against you, lift them we will.\n\nNot useful any more, are they.\n\nLearned something, we hope you have
+TRADESANCTIONS_LIFT_RESPONSE	;The right direction, you are heading. Beneficial, is trade together
+WAR_DECLARE	;Angered, we are! WAR on you, we begin.\n\nJustice, we will bring to you
+WAR_DECLARE_RESPONSE_EAGER	;War, we will give you!\n\nYour end, you will meet. A wise one, you are not
+WAR_DECLARE_RESPONSE_NEUTRAL	;Your aggression, end you it will.\n\nGrave error, you have made. Fight you, we will
+WAR_DECLARE_RESPONSE_SURPRISED	;Fighting, you enjoy?\n\nNothing joyful in war, there is. Nothing good in betrayal, there is
+WAR_END	;This war, long and tiresome, it is. Weary of it, are you not?\n\nEnd the war, you agree?
+WAR_END_ACCEPT	;Ending this war, we agree. Our fighting, we will stop
+WAR_END_REJECT	;Absolutely not!\n\nMercy for you - we have none! Annihilate you, we must
+GIFT_GIVE	;A gift we send: {0} credits. Friendship, we seek
+GIFT_THANKS	;Your gift, we thank you for!
+WARNING	;A warning, you have for us?
+WARNING_INTELLIGENCEMISSIONS	;A warning for you, we have: no more covert missions against us!\n\nAnnoyed, we are. Stop, you must
+WARNING_INTELLIGENCEMISSIONS_RESPONSE_FRIENDLY	;Aware of missions against you, we are not.\n\nMistaken, you may be?
+WARNING_INTELLIGENCEMISSIONS_RESPONSE_NEUTRAL	;Investigate your allegation, we will
+WARNING_INTELLIGENCEMISSIONS_RESPONSE_ANGRY	;Missions against you? Most definitely, yes!\n\nDislike you, we do. Change your ways, you should
+WARNING_ATTACKS	;Stop your attacks on us, you must! Warned, you have been.\n\nIntimidated, we are not. Respond, we will!
+WARNING_ATTACKS_RESPONSE_FRIENDLY	;A terrible misunderstanding, this is.\n\nReprimand our commanders, we will
+WARNING_ATTACKS_RESPONSE_NEUTRAL	;Aggression and violence, you say? Investigate these matters, we will
+WARNING_ATTACKS_RESPONSE_ANGRY	;Like you, we do not. Thus we attack you.\n\nStop attacking you, we will, only when you change your ways
+HISTORY_OFFER_LOCATIONHINT	;A secret place, we have located.\n\nHear more, you will?
+HISTORY_LOCATIONHINT	;Hurry you must, to the {0}.\n\nGreat secrets to be found, there are.
+HISTORY_OFFER_STORYCLUE	;Wise you are. A keeper of secrets, you can be.\n\nA story, we have for you. Hear it, you will?

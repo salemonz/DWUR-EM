@@ -1,0 +1,225 @@
+'Distant Worlds - Characters - 1.9.0.0 - Modded by the Distant Worlds Mod Editor by Sabranan
+
+
+'Each character line below is comprised of comma-separated data as follows:
+' - Appearance order: order that this character appears in the game relative to other characters. A value of zero (0) means that the character is present at the start of the game
+' - Name: name of the character
+' - Role: the type of character, selected from one of the following values: 1=Faction Leader, 2=Ambassador, 3=Colony Governor, 4=Fleet Admiral, 5=Troop General, 6=Intelligence Agent, 7=Scientist, 8=Pirate Leader, 9=Ship Captain
+' - Picture filename: optional name of image file used to represent this character. Only PNG image files are supported. The filename should include the file type suffix (.png). The image file itself should be placed in the images\units\characters folder (or customization\THEMENAME\characterImages folder). If no image is specified then the appropriate race image will be used
+' - Race override: optional name of the race for this character, if different from the default race for the file. Name must match a race name found in the races folder
+
+'The following skills should be set between -100 and +100. Note that the character's role will determine which skills actually apply (e.g. only a Fleet Admiral can benefit from Ship Maneuvering skill)
+' 0=None, 1=Diplomacy, 2=ColonyIncome, 3=TradeIncome, 4=TourismIncome, 5=ColonyCorruption, 6=ColonyHappiness, 7=PopulationGrowth,
+' 8=MiningRate, 9=TroopRecruitment, 10=MilitaryShipConstructionSpeed, 11=CivilianShipConstructionSpeed, 12=ColonyShipConstructionSpeed, 
+' 13=FacilityConstructionSpeed, 14=ResearchWeapons, 15=ResearchEnergy, 16=ResearchHighTech, 17=Espionage, 18=CounterEspionage, 
+' 19=Sabotage, 20=Concealment, 21=PsyOps, 22=Assassination, 23=MilitaryShipMaintenance, 24=MilitaryBaseMaintenance, 25=CivilianShipMaintenance, 
+' 26=CivilianBaseMaintenance, 27=TroopMaintenance, 28=WarWeariness, 29=Targeting, 30=Countermeasures, 31=ShipManeuvering, 32=Fighters, 
+' 33=ShipEnergyUsage, 34=WeaponsDamage, 35=WeaponsRange, 36=ShieldRechargeRate, 37=DamageControl, 38=RepairBonus, 39=HyperjumpSpeed, 
+' 40=TroopGroundAttack, 41=TroopGroundDefense, 42=TroopExperienceGain, 43=TroopRecoveryRate, 44=TroopStrengthArmor, 45=TroopStrengthInfantry, 
+' 46=TroopStrengthSpecialForces, 47=TroopStrengthPlanetaryDefense, 48=SmugglingIncome, 49=SmugglingEvasion, 50=BoardingAssault
+' - Skill Type 1: 0=None, 1 to 50=specific skill type (see values above and Modding Guide), ?=select random skill appropriate for role
+' - Skill Level 1: -100 to +100, ?=select random skill level between 0 and 20
+' - Skill Type 2: 0=None, 1 to 50=specific skill type (see values above and Modding Guide), ?=select random skill appropriate for role
+' - Skill Level 2: -100 to +100, ?=select random skill level between 0 and 20
+' - Skill Type 3: 0=None, 1 to 50=specific skill type (see values above and Modding Guide), ?=select random skill appropriate for role
+' - Skill Level 3: -100 to +100, ?=select random skill level between 0 and 20
+' - Skill Type 4: 0=None, 1 to 50=specific skill type (see values above and Modding Guide), ?=select random skill appropriate for role
+' - Skill Level 4: -100 to +100, ?=select random skill level between 0 and 20
+
+'The following traits can be set for each character. Note that the character's role will determine which traits actually apply
+' - Trait Type 1,2,3: 0=None, 1 to 95=specific trait type (see values below and Modding Guide), ?=select random trait appropriate for role. NOTE: must not specify opposing positive and negative traits, e.g. Paranoid and Trusting
+' 0=None, 1=Paranoid, 2=Trusting, 3=PeaceThroughStrength, 4=Pacifist, 5=Expansionist, 6=Isolationist, 7=Diplomat, 8=Obnoxious, 9=Famous, 
+' 10=Disliked, 11=GoodAdministrator, 12=PoorAdministrator, 13=BeanCounter, 14=Generous, 15=Engineer, 16=Luddite, 17=FreeTrader, 18=Protectionist, 
+' 19=Environmentalist, 20=Industrialist, 21=InspiringPresence, 22=Demoralizing, 23=Organized, 24=Disorganized, 25=HealthOriented, 26=LaborOriented, 
+' 27=Spiritual, 28=Logical, 29=GoodStrategist, 30=PoorStrategist, 31=Uninhibited, 32=Measured, 33=Addict, 34=Sober, 35=Courageous, 36=Weak, 
+' 37=Tolerant, 38=Xenophobic, 39=EloquentSpeaker, 40=PoorSpeaker, 41=Corrupt, 42=Lawful, 43=Lazy, 44=Energetic, 45=Linguist, 46=TongueTied, 
+' 47=Technical, 48=NonTechnical, 49=GoodTactician, 50=PoorTactician, 51=StrongSpaceAttacker, 52=PoorSpaceAttacker, 53=StrongSpaceDefender, 
+' 54=PoorSpaceDefender, 55=Drunk, 56=ToughDiscpline, 57=LaxDiscipline, 58=LocalDefenseTactics, 59=PlanetarySupport, 60=GoodSpaceLogistician, 
+' 61=PoorSpaceLogistician, 62=NaturalSpaceLeader, 63=SkilledNavigator, 64=PoorNavigator, 65=StrongGroundAttacker, 66=PoorGroundAttacker, 
+' 67=StrongGroundDefender, 68=PoorGroundDefender, 69=GoodGroundLogistician, 70=PoorGroundLogistician, 71=NaturalGroundLeader, 72=GoodRecruiter, 
+' 73=PoorRecruiter, 74=CarefulAttacker, 75=RecklessAttacker, 76=DoubleAgent, 77=Creative, 78=Methodical, 79=ForeignSpy, 80=Patriot, 81=UltraGenius,
+' 82=Uninhibited (Intelligence Agent), 83=Measured (Intelligence Agent), 84=Addict (Intelligence Agent), 85=Sober (Intelligence Agent),
+' 86=Courageous (Intelligence Agent), 87=Weak (Intelligence Agent), 88=Tolerant (Intelligence Agent), 89=Xenophobic (Intelligence Agent),
+' 90=EloquentSpeaker (Intelligence Agent), 91=PoorSpeaker (Intelligence Agent), 92=Corrupt (Intelligence Agent), 93=Lawful (Intelligence Agent), 
+' 94=Smuggler, 95=BountyHunter
+
+?, Azizrehs Azus, 1, amonkrie-leader1.png, Amonkrie, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Ezissi Mraenehs, 1, amonkrie-leader2.png, Amonkrie, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Chuggas Kromiavhuhs, 1, amonkrie-leader3.png, Amonkrie, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Naevesh Nokigi, 1, amonkrie-leader4.png, Amonkrie, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Jhassho Ngivhukaj, 1, amonkrie-leader1.png, Amonkrie, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Khonna Krekennon, 1, amonkrie-leader2.png, Amonkrie, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Jhikkia Krevezuhz, 1, amonkrie-leader3.png, Amonkrie, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Vovhozi Khugokkehz, 1, amonkrie-leader4.png, Amonkrie, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Travekkae Oskin, 1, amonkrie-leader1.png, Amonkrie, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Chogrogihz Usskaih, 1, amonkrie-leader2.png, Amonkrie, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Kavoumoj Ozovia, 1, amonkrie-leader3.png, Amonkrie, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Mgezu Zenis, 1, amonkrie-leader4.png, Amonkrie, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Gheskekke Uzoru, 1, amonkrie-leader1.png, Amonkrie, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Mruzoukkash Khedja, 1, amonkrie-leader2.png, Amonkrie, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Khihshe Trigimu, 1, amonkrie-leader3.png, Amonkrie, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Vomennu Tresshahz, 1, amonkrie-leader4.png, Amonkrie, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Ezaungrosh Dhuda, 1, amonkrie-leader1.png, Amonkrie, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Ishoh Jyakyarna, 1, amonkrie-leader2.png, Amonkrie, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Ugzaij Tavajat, 1, amonkrie-leader3.png, Amonkrie, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Essoh Dhengavya, 1, amonkrie-leader4.png, Amonkrie, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Inish Sustha, 2, amonkrie-diplomat1.png, Amonkrie, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Zhegush Vittomkhalwi, 2, amonkrie-diplomat2.png, Amonkrie, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Jhekke Sharjeiskukh, 2, amonkrie-diplomat3.png, Amonkrie, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Khurgesh Kshaswapta, 2, amonkrie-diplomat4.png, Amonkrie, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Ivomahs Nruhourgush, 2, amonkrie-diplomat1.png, Amonkrie, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Enkugej Kshamvoshmosta, 2, amonkrie-diplomat2.png, Amonkrie, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Mgezzummoh Srasta, 2, amonkrie-diplomat3.png, Amonkrie, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Iggirua Kopta, 2, amonkrie-diplomat4.png, Amonkrie, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Vovallihz Hrulwingikhat, 2, amonkrie-diplomat1.png, Amonkrie, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Krumokais Chasalwa, 2, amonkrie-diplomat2.png, Amonkrie, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Chimazzush Jyortanji, 2, amonkrie-diplomat3.png, Amonkrie, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Nishgas Szuka, 2, amonkrie-diplomat4.png, Amonkrie, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Jhiammarihz Szuzuze, 2, amonkrie-diplomat1.png, Amonkrie, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Traroki Kitess, 2, amonkrie-diplomat2.png, Amonkrie, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Krushkaura Sezherkiess, 2, amonkrie-diplomat3.png, Amonkrie, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Jeva Udikai, 2, amonkrie-diplomat4.png, Amonkrie, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Nukokkaz Shekka, 2, amonkrie-diplomat1.png, Amonkrie, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Mreza Jazrumij, 2, amonkrie-diplomat2.png, Amonkrie, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Mgossuges Cothizs, 2, amonkrie-diplomat3.png, Amonkrie, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Mgezu Kshakara, 2, amonkrie-diplomat4.png, Amonkrie, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Jhegguj Nattra, 3, amonkrie-diplomat1.png, Amonkrie, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Jizziagosh Vrartikha, 3, amonkrie-diplomat2.png, Amonkrie, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Zavai Thixizs, 3, amonkrie-diplomat3.png, Amonkrie, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Kuaneshki Khekhidoth, 3, amonkrie-diplomat4.png, Amonkrie, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Ghovero Sarei, 3, amonkrie-diplomat1.png, Amonkrie, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Inazu Xezsekhe, 3, amonkrie-diplomat2.png, Amonkrie, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Chemazzush Egerkora, 3, amonkrie-diplomat3.png, Amonkrie, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Naggovun Vayami, 3, amonkrie-diplomat4.png, Amonkrie, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Eneguj Ithexeikh, 3, amonkrie-diplomat1.png, Amonkrie, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Khihi Yecsolli, 3, amonkrie-diplomat2.png, Amonkrie, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Ghavi Kshinta, 3, amonkrie-diplomat3.png, Amonkrie, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Ginimoj Prikshidha, 3, amonkrie-diplomat4.png, Amonkrie, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Nragahoj Ashu, 3, amonkrie-diplomat1.png, Amonkrie, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Ugzaij Zheikish, 3, amonkrie-diplomat2.png, Amonkrie, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Egnuz Szixsekho, 3, amonkrie-diplomat3.png, Amonkrie, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Megozaz Ashadha, 3, amonkrie-diplomat4.png, Amonkrie, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Azizrehs Vahirda, 3, amonkrie-diplomat1.png, Amonkrie, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Khurazi Srapa, 3, amonkrie-diplomat2.png, Amonkrie, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Jeze Szecatre, 3, amonkrie-diplomat3.png, Amonkrie, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Khove Vrayasthamkhi, 3, amonkrie-diplomat4.png, Amonkrie, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Amuzu Achaes, 4, amonkrie-admiral1.png, Amonkrie, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Eneguj Ahemas, 4, amonkrie-admiral2.png, Amonkrie, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Jhiammarihz Azkeh, 4, amonkrie-admiral3.png, Amonkrie, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Ivazzi Azrikus, 4, amonkrie-admiral4.png, Amonkrie, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Mgezzummoh Azus, 4, amonkrie-admiral1.png, Amonkrie, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Ozellen Chazukahz, 4, amonkrie-admiral2.png, Amonkrie, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Ullihz Chevirae, 4, amonkrie-admiral3.png, Amonkrie, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Chogrogihz Chiganas, 4, amonkrie-admiral4.png, Amonkrie, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Jhassho Chizuva, 4, amonkrie-admiral1.png, Amonkrie, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Naevesh Chossavu, 4, amonkrie-admiral2.png, Amonkrie, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Chiania Chouhshake, 4, amonkrie-admiral3.png, Amonkrie, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Ghivhah Chushkimesh, 4, amonkrie-admiral4.png, Amonkrie, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Enkugej Egnohs, 4, amonkrie-admiral1.png, Amonkrie, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Chukkan Ekhoj, 4, amonkrie-admiral2.png, Amonkrie, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Kuvurgain Eshonu, 4, amonkrie-admiral3.png, Amonkrie, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Jizziagosh Essahzun, 4, amonkrie-admiral4.png, Amonkrie, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Jhahshan Ezaungrosh, 4, amonkrie-admiral1.png, Amonkrie, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Zhemasso Ezissi, 4, amonkrie-admiral2.png, Amonkrie, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Jhoves Gaerai, 4, amonkrie-admiral3.png, Amonkrie, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Jinnumahs Ghakirdash, 4, amonkrie-admiral4.png, Amonkrie, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Ishoh Ghaugavoj, 5, amonkrie-general1.png, Amonkrie, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Ghurdu Ghavha, 5, amonkrie-general2.png, Amonkrie, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Gegongriz Gheshgoun, 5, amonkrie-general3.png, Amonkrie, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Mgachauj Ghivuro, 5, amonkrie-general4.png, Amonkrie, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Ghoskallus Ghukih, 5, amonkrie-general1.png, Amonkrie, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Ginimoj Ghukunu, 5, amonkrie-general2.png, Amonkrie, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Kugishgahz Gimoha, 5, amonkrie-general3.png, Amonkrie, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Iavishkash Iakemmo, 5, amonkrie-general4.png, Amonkrie, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Mgezu Iggaire, 5, amonkrie-general1.png, Amonkrie, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Mukino Ikhesh, 5, amonkrie-general2.png, Amonkrie, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Chukaz Jazrumij, 5, amonkrie-general3.png, Amonkrie, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Zizren Jhissej, 5, amonkrie-general4.png, Amonkrie, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Khona Jike, 5, amonkrie-general1.png, Amonkrie, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Inish Khaeze, 5, amonkrie-general2.png, Amonkrie, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Krennoura Kherzos, 5, amonkrie-general3.png, Amonkrie, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Krezshe Khiggoszan, 5, amonkrie-general4.png, Amonkrie, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Mgekasshoz Kimezza, 5, amonkrie-general1.png, Amonkrie, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Chemazzush Kingi, 5, amonkrie-general2.png, Amonkrie, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Krushkaura Kozri, 5, amonkrie-general3.png, Amonkrie, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Mavhez Krekennon, 5, amonkrie-general4.png, Amonkrie, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Ghoskallus Krevezuhz, 6, amonkrie-spy1.png, Amonkrie, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Naggovun Krevua, 6, amonkrie-spy2.png, Amonkrie, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Chogrogihz Krezora, 6, amonkrie-spy3.png, Amonkrie, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Ghevi Krogesh, 6, amonkrie-spy4.png, Amonkrie, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Ghoskallus Kromiavhuhs, 6, amonkrie-spy1.png, Amonkrie, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Mgezzummoh Mazragi, 6, amonkrie-spy2.png, Amonkrie, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Mgivan Mgama, 6, amonkrie-spy3.png, Amonkrie, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Mgiagunzaz Mganizij, 6, amonkrie-spy4.png, Amonkrie, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Mgezu Mgannammuj, 6, amonkrie-spy1.png, Amonkrie, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Mimuzahs Mgerivohs, 6, amonkrie-spy2.png, Amonkrie, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Mgossuges Mguamammuj, 6, amonkrie-spy3.png, Amonkrie, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Mgonozauj Mguvenehz, 6, amonkrie-spy4.png, Amonkrie, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Mrezshesh Mimazzas, 6, amonkrie-spy1.png, Amonkrie, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Mrireh Momi, 6, amonkrie-spy2.png, Amonkrie, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Naevesh Mozgu, 6, amonkrie-spy3.png, Amonkrie, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Naezzaenkaeh Mraenehs, 6, amonkrie-spy4.png, Amonkrie, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Inazu Mralloz, 6, amonkrie-spy1.png, Amonkrie, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Ghurdu Mrissohz, 6, amonkrie-spy2.png, Amonkrie, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Ergogron Mrive, 6, amonkrie-spy3.png, Amonkrie, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Jiresso Mugullush, 6, amonkrie-spy4.png, Amonkrie, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Aezzu Ikhesh, 7, amonkrie-scientist1.png, Amonkrie, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Ahemas Dhengavya, 7, amonkrie-scientist2.png, Amonkrie, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Khurgainush Ezissi, 7, amonkrie-scientist3.png, Amonkrie, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Chassho Krekennon, 7, amonkrie-scientist4.png, Amonkrie, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Inish Uvoz, 7, amonkrie-scientist1.png, Amonkrie, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Ghukunu Khiha, 7, amonkrie-scientist2.png, Amonkrie, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Ozellen Nekemmush, 7, amonkrie-scientist3.png, Amonkrie, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Khove Elhesh, 7, amonkrie-scientist4.png, Amonkrie, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Traskaz Eilsethaa, 7, amonkrie-scientist1.png, Amonkrie, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Jasskeze Jyortanji, 7, amonkrie-scientist2.png, Amonkrie, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Khorazi Zhezami, 7, amonkrie-scientist3.png, Amonkrie, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Inazu Kopta, 7, amonkrie-scientist4.png, Amonkrie, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Nremzigu Ercikhi, 7, amonkrie-scientist1.png, Amonkrie, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Travekkae Khedja, 7, amonkrie-scientist2.png, Amonkrie, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Chukaz Sharjeiskukh, 7, amonkrie-scientist3.png, Amonkrie, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Mgekkia Vahirda, 7, amonkrie-scientist4.png, Amonkrie, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Megozaz Vayami, 7, amonkrie-scientist1.png, Amonkrie, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Nruzzonnahs Udikai, 7, amonkrie-scientist2.png, Amonkrie, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Jizziagosh Tavajat, 7, amonkrie-scientist3.png, Amonkrie, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Khuvosshi Sarei, 7, amonkrie-scientist4.png, Amonkrie, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Ghivuro Kshamvoshmosta, 8, amonkrie-pirate1.png, Amonkrie, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Ghoskallus Szuzuze, 8, amonkrie-pirate2.png, Amonkrie, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Traroki Ithexeikh, 8, amonkrie-pirate3.png, Amonkrie, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Azizrehs Kharmaja, 8, amonkrie-pirate4.png, Amonkrie, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Ngukokkaz Egerkora, 8, amonkrie-pirate1.png, Amonkrie, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Jhahshan Enkha, 8, amonkrie-pirate2.png, Amonkrie, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Azus Dhilanshtri, 8, amonkrie-pirate3.png, Amonkrie, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Jhiammarihz Kshaswapta, 8, amonkrie-pirate4.png, Amonkrie, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Chiania Laaceeket, 8, amonkrie-pirate1.png, Amonkrie, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Mgachauj Hramkhavuha, 8, amonkrie-pirate2.png, Amonkrie, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Ghurdu Echarez, 8, amonkrie-pirate3.png, Amonkrie, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Mrallurohs Lashtras, 8, amonkrie-pirate4.png, Amonkrie, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Ginimoj Sizhi, 8, amonkrie-pirate1.png, Amonkrie, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Vomennu Shekka, 8, amonkrie-pirate2.png, Amonkrie, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Khona Icsar, 8, amonkrie-pirate3.png, Amonkrie, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Mgossuges Szixsekho, 8, amonkrie-pirate4.png, Amonkrie, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Krannaemo Nattra, 8, amonkrie-pirate1.png, Amonkrie, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Chemazzush Tida, 8, amonkrie-pirate2.png, Amonkrie, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Trucholli Kshakara, 8, amonkrie-pirate3.png, Amonkrie, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Ghovero Jekha, 8, amonkrie-pirate4.png, Amonkrie, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Khumzumu Kshinta, 9, amonkrie-pirate1.png, Amonkrie, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Mgivan Okaca, 9, amonkrie-pirate2.png, Amonkrie, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Azrikus Khekhidoth, 9, amonkrie-pirate3.png, Amonkrie, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Krimogauhz Minapa, 9, amonkrie-pirate4.png, Amonkrie, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Nishgas Vittomkhalwi, 9, amonkrie-pirate1.png, Amonkrie, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Mrisshe Zhatha, 9, amonkrie-pirate2.png, Amonkrie, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Zizgauhjuz Zhierszethis, 9, amonkrie-pirate3.png, Amonkrie, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Nrahisshun Aleirgi, 9, amonkrie-pirate4.png, Amonkrie, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Kavoumoj Jyettuva, 9, amonkrie-pirate1.png, Amonkrie, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Mouzaugaej Ashu, 9, amonkrie-pirate2.png, Amonkrie, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Khegonush Palwa, 9, amonkrie-pirate3.png, Amonkrie, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Jhikkia Prikshidha, 9, amonkrie-pirate4.png, Amonkrie, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Ezissi Sustha, 9, amonkrie-pirate1.png, Amonkrie, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Ghaugavoj Khove, 9, amonkrie-pirate2.png, Amonkrie, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Megozaz Vrartikha, 9, amonkrie-pirate3.png, Amonkrie, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Trugozshaehs Udikai, 9, amonkrie-pirate4.png, Amonkrie, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Ghikkike Vayami, 9, amonkrie-pirate1.png, Amonkrie, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Eneguj Vrartikha, 9, amonkrie-pirate2.png, Amonkrie, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Mrive Xezsekhe, 9, amonkrie-pirate3.png, Amonkrie, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+?, Mukino Srasta, 9, amonkrie-pirate4.png, Amonkrie, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
