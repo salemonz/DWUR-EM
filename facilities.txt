@@ -117,3 +117,4 @@
 37, Distant Worlds 2, 8, 2, 37,					100000.0, 2000.0,  10,  50,  0,		Originally expected in the mid-21st century, this wonder of the Universe contains the long anticipated sequel to the greatest 4x game of all time, Distant Worlds. The release of Distant Worlds 2 increases the happiness for every colony in an empire.
 38, Galactic Capital, 8, 6, 38,					100000.0, 2000.0,  20,  50,  0,		Your expertise in trade and government has earned you the right to designate one of your planets the 'Galactic Capital'. Income is increased for the colony with this wonder
 39, Dwarf Fortress, 8, 9, 39,					 75000.0, 1500.0,   0,  50,  0,		Fearful of an alien invasion, an entire colony's population moves into heavily defended subterranean fortresses. Defense against invasion is increased for the colony with this wonder.
+40, Diplomatic Academy, 17, 0, 40,				 40000.0,  200.0,  30,   0,  0, 	Increases the chance of diplomats of appearing in our empire
