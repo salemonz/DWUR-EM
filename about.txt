@@ -1,6 +1,6 @@
-Distant Worlds Universe REFRESHED (DWUR)
-Version 1.1.2
+DWUR EM Version
 
 /========== About ==========\
-For years I have enjoyed Distant Worlds Universe. This mod compilation is my attempt to give back to the community by combining the best DWU gameplay and visual enhancements into one experience. It features completely redesigned aliens (all 45 races from Haree78's Extended Mod...whew!), all new shipsets, new planet graphics, new/refreshed sounds, new/refreshed UI elements and an integrated variety of the best DWU gameplay mods out there (IMO).
+!!! Alvek's Expansion Mod REQUIRED !!!
+Now that Distant Worlds Universe Refreshed is several years old, I am looking to revisit some of the assets and features. This new version of DWUR leans into the expanded capabilities of DWU from Alvek's Expansion Mod. Enjoy!
 -- Salemonz
