@@ -2663,3 +2663,7 @@ PARENTS			;350, N
 PROJECT			;637, Beam Ultraflow, 8, 3, 		0, 19, 0, 22.6,
 COMPONENT IMPROVEMENTS	;3, 8, 38, 600, 30, 1200, 2, 1300, 0,
 PARENTS			;11, N
+
+PROJECT			;638, Diplomatic Education, 3, 42, 		2, 2, 0, 5.2,
+FACILITY		;40
+PARENTS			;263, N
