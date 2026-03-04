@@ -1,4 +1,5 @@
 Name	;Dessen
+RaceType;1
 PictureIndex	;25
 RaceFamily	;4
 ReproductionRate	;1.15
