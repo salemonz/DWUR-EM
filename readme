@@ -4,17 +4,14 @@ Distant Worlds Universe REFRESHED EM Version (DWUR-EM)
 Now that Distant Worlds Universe Refreshed is several years old, I am looking to revisit some of the assets and features. This new version of DWUR leans into the expanded capabilities of DWU from Alvek's Expansion Mod. Enjoy!
 -- Salemonz
 
-v0.2.0 -- 06 Feb 2026 -- Initial alpha release
+v0.9.0 -- 04 Mar 2026 -- Initial beta release
 
-/========== What's Done So Far ==========\
+/========== What's New ==========\
 - Fixed the "overshadow" problem with planets and shadow textures being too large
 - Added the new facility "Diplomatic Center" to the game (per ExpansionMod). Diplomatic Center increases the chance for ambassadors to spawn in empire.
-- Re-worked several race portaits (ongoing)
-
-/========== What's Left To Do Before Release ==========\
-- Update the additional races flagged for re-done portaits (18 Total)
-- Redo HyperDeny graphic
-- Bring in DW2 component art
+- Re-worked many race portraits (25 races)...some to bring them in line with Distant Worlds 2 art direction...some because I wanted to.
+- Re-worked hyperdeny graphic for better visability
+- Re-worked some UI elements (character icons, mainly) for better visibility
 
 /========== Installation ==========\
 1. Download and install Alvek's Expansion Mod (EM) via his Github here: https://github.com/DW-UX/DistantWorldsExpanded. Please pay attention to the instructions (especially the need to unblock the .zip before opening) to correctly install EM.
