@@ -1167,7 +1167,7 @@ PARENTS			;595, N, 11, N, 303, N, 606, N, 607, N, 608, N
 PROJECT			;273, Planetary Destruction, 10, 4, 		0, 19, 0, 31.6,
 COMPONENTS		;25
 PARENTS			;272, N
-ALLOWED RACES	;Shakturi, Boskara, Gizurean, Dhayut, Sluken, Phaerax, Keskudon, Yl'ta
+ALLOWED RACES	;Shakturi, Boskara, Gizurean, Dhayut, Sluken, Phaerax, Keskudon, Ylta
 
 PROJECT			;274, Super Area Weapons, 8, 13, 		0, 23, 0, 22.6,
 COMPONENTS		;24
@@ -1490,7 +1490,7 @@ PARENTS			;352, N
 
 PROJECT			;354, Gravitic Singularity Creation, 8, 16, 		0, 20, 0, 22.6,
 COMPONENTS		;119
-'ALLOWED RACES	;Ackdarian, Atuuk, Boskara, Dhayut, Gizurean, Haakonish, Hiigaran, Human, Ikkuro, Ketarov, Kiadian, Mortalen, Naxxilian, Quameno, Securan, Shakturi,Shandar, Sluken, Teekan, Ugnari, Wekkarus, Zenox
+'ALLOWED RACES	;Ackdarian, Atuuk, Boskara, Dhayut, Gizurean, Haakonish, Zakkal, Human, Ikkuro, Ketarov, Kiadian, Mortalen, Naxxilian, Quameno, Securan, Shakturi, Shandar, Sluken, Teekan, Ugnari, Wekkarus, Zenox
 PARENTS			;350, Y, 353, Y
 
 PROJECT			;355, Improved Tractor Beams, 3, 16, 		0, 20, 0, 5.2,
@@ -1578,12 +1578,12 @@ PARENTS			;410, Y, 226, Y
 
 PROJECT			;378, BioEngineering, 7, 33, 		2, 8, 0, 18.5,
 FACILITY		;33
-ALLOWED RACES	;Ackdarian, Atuuk, Haakonish, Hiigaran, Human, Ikkuro, Ketarov, Kiadian, Mortalen, Naxxilian, Quameno, Securan, Shandar, Teekan, Ugnari, Wekkarus, Zenox
+ALLOWED RACES	;Ackdarian, Atuuk, Haakonish, Zakkal, Human, Ikkuro, Ketarov, Kiadian, Mortalen, Naxxilian, Quameno, Securan, Shandar, Teekan, Ugnari, Wekkarus, Zenox
 PARENTS			;252, N
 
 PROJECT			;379, Synthetic Viruses, 8, 33, 		2, 8, 0, 22.6,
 PLAGUE CHANGE	;4, Develop Xaraktor Virus,		2.52, 150, 300, 3.61, 240, 450,
-ALLOWED RACES	;Ackdarian, Atuuk, Haakonish, Hiigaran, Human, Ikkuro, Ketarov, Kiadian, Mortalen, Naxxilian, Quameno, Securan, Shandar, Teekan, Ugnari, Wekkarus, Zenox
+ALLOWED RACES	;Ackdarian, Atuuk, Haakonish, Zakkal, Human, Ikkuro, Ketarov, Kiadian, Mortalen, Naxxilian, Quameno, Securan, Shandar, Teekan, Ugnari, Wekkarus, Zenox
 PARENTS			;378, Y, 260, Y
 
 PROJECT			;380, Targeted Viruses, 9, 33, 		2, 8, 0, 27.0,
@@ -1600,7 +1600,7 @@ PARENTS			;380, N
 
 PROJECT			;383, Machine Intelligence, 9, 28, 		1, 8, 0, 27.0,
 FACILITY		;34
-ALLOWED RACES	;Ackdarian, Atuuk, Haakonish, Hiigaran, Human, Ikkuro, Ketarov, Kiadian, Mortalen, Naxxilian, Quameno, Securan, Shandar, Teekan, Ugnari, Wekkarus, Zenox
+ALLOWED RACES	;Ackdarian, Atuuk, Haakonish, Zakkal, Human, Ikkuro, Ketarov, Kiadian, Mortalen, Naxxilian, Quameno, Securan, Shandar, Teekan, Ugnari, Wekkarus, Zenox
 PARENTS			;111, N
 
 PROJECT			;384, Galactic Hegemony, 8, 42, 		2, 2, 0, 22.6,
@@ -1768,7 +1768,7 @@ PARENTS			;551, N, 401, N, 552, N
 
 PROJECT			;423, Star Fusion Mastery, 9, 3, 		1, 13, 0, 27.0,
 COMPONENTS		;144
-'ALLOWED RACES	;Ackdarian, Atuuk, Boskara, Dhayut, Gizurean, Haakonish, Hiigaran, Human, Ikkuro, Ketarov, Kiadian, Mortalen, Naxxilian, Quameno, Securan, Shakturi,Shandar, Sluken, Teekan, Ugnari, Wekkarus, Zenox
+'ALLOWED RACES	;Ackdarian, Atuuk, Boskara, Dhayut, Gizurean, Haakonish, Zakkal, Human, Ikkuro, Ketarov, Kiadian, Mortalen, Naxxilian, Quameno, Securan, Shakturi, Shandar, Sluken, Teekan, Ugnari, Wekkarus, Zenox
 PARENTS			;467, N, 79, N, 594, N
 
 PROJECT			;424, Advanced Energy Collection, 5, 29, 		1, 4, 0, 11.2,
@@ -2075,7 +2075,7 @@ PARENTS			;56, N
 
 PROJECT			;499, Sub-Space Torpedo, 9, 20, 		0, 25, 0, 27.0,
 COMPONENTS		;148
-'ALLOWED RACES	;Ackdarian, Atuuk, Boskara, Dhayut, Gizurean, Haakonish, Hiigaran, Human, Ikkuro, Ketarov, Kiadian, Mortalen, Naxxilian, Quameno, Securan, Shakturi, Shandar, Sluken, Teekan, Ugnari, Wekkarus, Zenox
+'ALLOWED RACES	;Ackdarian, Atuuk, Boskara, Dhayut, Gizurean, Haakonish, Zakkal, Human, Ikkuro, Ketarov, Kiadian, Mortalen, Naxxilian, Quameno, Securan, Shakturi, Shandar, Sluken, Teekan, Ugnari, Wekkarus, Zenox
 PARENTS			;599, N, 585, N, 587, N, 589, N
 
 PROJECT			;500, Sub-System Area Shields, 9, 8, 		1, 15, 0, 27.0,
@@ -2144,7 +2144,7 @@ PARENTS			;372, Y, 373, Y, 374, Y, 375, Y, 376, Y, 377, Y, 223, Y
 
 PROJECT			;516, Master of the Environment, 8, 18, 		2, 8, 0, 22.6,
 FACILITY		;36
-'ALLOWED RACES	;Ackdarian, Atuuk, Boskara, Dhayut, Gizurean, Haakonish, Hiigaran, Human, Ikkuro, Ketarov, Kiadian, Mortalen, Naxxilian, Quameno, Securan, Shandar, Sluken, Teekan, Ugnari, Wekkarus, Zenox
+'ALLOWED RACES	;Ackdarian, Atuuk, Boskara, Dhayut, Gizurean, Haakonish, Zakkal, Human, Ikkuro, Ketarov, Kiadian, Mortalen, Naxxilian, Quameno, Securan, Shandar, Sluken, Teekan, Ugnari, Wekkarus, Zenox
 PARENTS			;515, N, 391, N
 
 PROJECT			;517, Koloros Medical Academy, 6, 32, 		2, 8, 0, 14.7,
@@ -2157,12 +2157,12 @@ PARENTS			;387, Y
 
 PROJECT			;519, Distant Worlds 2, 8, 34, 		2, 8, 0, 22.6,
 FACILITY		;37
-'ALLOWED RACES	;Ackdarian, Atuuk, Boskara, Dhayut, Gizurean, Haakonish, Hiigaran, Human, Ikkuro, Ketarov, Kiadian, Mortalen, Naxxilian, Quameno, Securan, Shandar, Sluken, Teekan, Ugnari, Wekkarus, Zenox
+'ALLOWED RACES	;Ackdarian, Atuuk, Boskara, Dhayut, Gizurean, Haakonish, Zakkal, Human, Ikkuro, Ketarov, Kiadian, Mortalen, Naxxilian, Quameno, Securan, Shandar, Sluken, Teekan, Ugnari, Wekkarus, Zenox
 PARENTS			;436, N
 
 PROJECT			;520, Galactic Capital, 8, 44, 		2, 2, 0, 22.6,
 FACILITY		;38
-'ALLOWED RACES	;Ackdarian, Atuuk, Boskara, Dhayut, Gizurean, Haakonish, Hiigaran, Human, Ikkuro, Ketarov, Kiadian, Mortalen, Naxxilian, Quameno, Securan, Shandar, Sluken, Teekan, Ugnari, Wekkarus, Zenox
+'ALLOWED RACES	;Ackdarian, Atuuk, Boskara, Dhayut, Gizurean, Haakonish, Zakkal, Human, Ikkuro, Ketarov, Kiadian, Mortalen, Naxxilian, Quameno, Securan, Shandar, Sluken, Teekan, Ugnari, Wekkarus, Zenox
 PARENTS			;267, Y, 427, Y
 
 PROJECT			;521, Tachyon Beam, 5, 7, 		0, 19, 0, 11.2,
@@ -2175,7 +2175,7 @@ PARENTS			;70, N
 
 PROJECT			;523, Dwarf Fortress, 7, 53, 		0, 0, 0, 18.5,
 FACILITY		;39
-'ALLOWED RACES	;Ackdarian, Atuuk, Boskara, Dhayut, Gizurean, Haakonish, Hiigaran, Human, Ikkuro, Ketarov, Kiadian, Mortalen, Naxxilian, Quameno, Securan, Shandar, Sluken, Teekan, Ugnari, Wekkarus, Zenox
+'ALLOWED RACES	;Ackdarian, Atuuk, Boskara, Dhayut, Gizurean, Haakonish, Zakkal, Human, Ikkuro, Ketarov, Kiadian, Mortalen, Naxxilian, Quameno, Securan, Shandar, Sluken, Teekan, Ugnari, Wekkarus, Zenox
 PARENTS			;281, N
 
 PROJECT			;524, Advanced Boarding Defense, 6, 31, 		0, 1, 0, 14.7,
@@ -2310,46 +2310,46 @@ PARENTS			;57, Y
 
 PROJECT			;556, Natural Flight Integration, 1, 24, 		0, 3, 0, 0.0,
 COMPONENTS		;130, 182
-ALLOWED RACES	;Caleph, Yl'ta
+ALLOWED RACES	;Caleph, Ylta
 
 PROJECT			;557, Multi Dimension Maintenance, 3, 24, 		0, 3, 0, 5.2,
 COMPONENT IMPROVEMENTS	;130, 3, 80, 8, 0, 0, 0, 0, 0,			182, 3, 80, 8, 0, 0, 0, 0, 0,
 PARENTS			;556, N
-ALLOWED RACES	;Caleph, Yl'ta
+ALLOWED RACES	;Caleph, Ylta
 
 PROJECT			;558, Advanced Natural Flight, 5, 24, 		0, 3, 0, 11.2,
 COMPONENT IMPROVEMENTS	;130, 5, 100, 8, 0, 0, 0, 0, 0,			182, 5, 100, 8, 0, 0, 0, 0, 0,
 PARENTS			;557, N
-ALLOWED RACES	;Caleph, Yl'ta
+ALLOWED RACES	;Caleph, Ylta
 
 PROJECT			;559, Wyrm Fighters, 2, 22, 		0, 7, 0, 2.8,
 FIGHTERS		;20
-ALLOWED RACES	;Caleph, Yl'ta
+ALLOWED RACES	;Caleph, Ylta
 PARENTS			;556, Y
 
 PROJECT			;560, Wyrm Bombers, 2, 23, 		0, 7, 0, 2.8,
 FIGHTERS		;23
-ALLOWED RACES	;Caleph, Yl'ta
+ALLOWED RACES	;Caleph, Ylta
 PARENTS			;556, Y
 
 PROJECT			;561, Wyvern Interceptors, 4, 22, 		0, 7, 0, 8.0,
 FIGHTERS		;21
-ALLOWED RACES	;Caleph, Yl'ta
+ALLOWED RACES	;Caleph, Ylta
 PARENTS			;559, Y, 557, Y
 
 PROJECT			;562, Wyvern Assault Bombers, 4, 23, 		0, 7, 0, 8.0,
 FIGHTERS		;24
-ALLOWED RACES	;Caleph, Yl'ta
+ALLOWED RACES	;Caleph, Ylta
 PARENTS			;560, Y, 557, Y
 
 PROJECT			;563, Dragoon StarFighters, 6, 22, 		0, 7, 0, 14.7,
 FIGHTERS		;22
-ALLOWED RACES	;Caleph, Yl'ta
+ALLOWED RACES	;Caleph, Ylta
 PARENTS			;561, Y, 558, Y
 
 PROJECT			;564, Dragoon StarBombers, 6, 23, 		0, 7, 0, 14.7,
 FIGHTERS		;25
-ALLOWED RACES	;Caleph, Yl'ta
+ALLOWED RACES	;Caleph, Ylta
 PARENTS			;562, Y, 558, Y
 
 PROJECT			;565, Long Range Phaser, 2, 8, 		0, 19, 0, 2.8,
@@ -2418,7 +2418,7 @@ PARENTS			;578, N
 PROJECT			;580, Compacted Troop Transport, 2, 24, 		2, 17, 0, 2.8,
 COMPONENTS		;135
 PARENTS			;227, N
-ALLOWED RACES	;Ortain, Core
+ALLOWED RACES	;Ortain, Akhemal
 
 PROJECT			;581, Self Righting Coupling, 2, 31, 		2, 17, 0, 2.8,
 COMPONENTS		;136
@@ -2603,22 +2603,22 @@ ALLOWED RACES	;Drushocka, Lemeresh
 
 PROJECT			;624, Guardian Point Defense, 1, 38, 		0, 22, 0, 0.0,
 COMPONENTS		;190
-ALLOWED RACES	;Human, Arm, XHuman
+ALLOWED RACES	;Human, Khemal, XHuman
 
 PROJECT			;625, Guardian PD Mk2, 3, 38, 		0, 22, 0, 5.2,
 COMPONENT IMPROVEMENTS	;190, 3, 10, 225, 3, 550, 1, 425, 0,
 PARENTS			;624, N
-ALLOWED RACES	;Human, Arm, XHuman
+ALLOWED RACES	;Human, Khemal, XHuman
 
 PROJECT			;626, Guardian PD Mk3, 5, 38, 		0, 22, 0, 11.2,
 COMPONENT IMPROVEMENTS	;190, 5, 15, 325, 3, 650, 1, 400, 0,
 PARENTS			;625, N
-ALLOWED RACES	;Human, Arm, XHuman
+ALLOWED RACES	;Human, Khemal, XHuman
 
 PROJECT			;627, Guardian PD Mk4, 7, 38, 		0, 22, 0, 18.5,
 COMPONENT IMPROVEMENTS	;190, 7, 20, 425, 3, 750, 1, 350, 0,
 PARENTS			;626, N
-ALLOWED RACES	;Human, Arm, XHuman
+ALLOWED RACES	;Human, Khemal, XHuman
 
 PROJECT			;628, AI Leisure Dome, 3, 35, 		2, 8, 0, 5.2,
 COMPONENTS		;191
