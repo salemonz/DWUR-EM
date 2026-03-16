@@ -1,40 +1,40 @@
 'Distant Worlds - dialogue - Version 1.9.5.10 - Modded by the Distant Worlds Mod Editor by Sabranan
 
-GREETING_INTRODUCTION	;Welcome stranger!
-GREETING_FRIENDLY	;Welcome! What did you want?
-GREETING_NEUTRAL	;We are listening
-GREETING_ANGRY	;We're not happy with you. So tell us what you want.
-OFFER_FREETRADE	;Accept our offer of a Free Trade Agreement?\n\nIt would be a great deal!
-FREETRADE_ACCEPT	;It's a deal!\n\nWe acccept the Free Trade Agreement
-FREETRADE_REJECT	;No deal.\n\nWe are not interested in a Free Trade Agreement just now
-CANCELTREATY	;Our {0} with you is over.\n\nSorry, but maybe we can talk later.
-CANCELTREATY_RESPONSE_FRIENDLY	;No more treaty?!\n\nI thought we were friends?
-CANCELTREATY_RESPONSE_NEUTRAL	;You cancelled the agreement!\n\nHopefully we can renegociate later.
-CANCELTREATY_RESPONSE_ANGRY	;Whatever. Don't bother asking again.
-TREATY_PROPOSAL	;Proposal?
-TREATY_ACCEPTRESPONSE	;Partners! Wonderful!
-TREATY_REJECTRESPONSE	;This can't be good...
-TRADESANCTIONS_IMPOSE	;You deserve our sanctions on trade!\n\nWe're not trading with your empire!
-TRADESANCTIONS_IMPOSE_RESPONSE_ANGRY	;Trade Sanctions?! Not good!\n\nOur goods can go to other deserving aliens!
-TRADESANCTIONS_IMPOSE_RESPONSE_NEUTRAL	;No trading with you?\n\nThat's fine.
-TRADESANCTIONS_IMPOSE_RESPONSE_SURPRISED	;Keep your goods. We have other partners.
-TRADESANCTIONS_LIFT	;We're lifting our Trade Sanctions against you.\n\nWe will now resume trading with you.
-TRADESANCTIONS_LIFT_RESPONSE	;We do not need your trade...
-WAR_DECLARE	;Dishonest! We declare WAR on you!\n\nThe fleets are primed!
-WAR_DECLARE_RESPONSE_EAGER	;You can't defeat us!\n\nYou will pay!
-WAR_DECLARE_RESPONSE_NEUTRAL	;We're the hammer. You're the nail.
-WAR_DECLARE_RESPONSE_SURPRISED	;We thought you liked us?!\n\nYou can't do this!
-WAR_END	;This war is unprofitable. It should end.\n\nWhat do you say?
-WAR_END_ACCEPT	;Yes, we agree to end the war
-WAR_END_REJECT	;No, we're betting on winning this war.
-GIFT_GIVE	;Here's a gift for you: {0} credits
-GIFT_THANKS	;Thanks for your gift!
-WARNING	;What did we do wrong?
-WARNING_INTELLIGENCEMISSIONS	;Stop spying!\n\nWe can see how devious you are.
-WARNING_INTELLIGENCEMISSIONS_RESPONSE_FRIENDLY	;Spy missions on you?\n\nYou must have gotten mixed up.
-WARNING_INTELLIGENCEMISSIONS_RESPONSE_NEUTRAL	;Spy missions on you?\n\nYou must have gotten mixed up.
-WARNING_INTELLIGENCEMISSIONS_RESPONSE_ANGRY	;Spy missions against you?\n\nSo what if we did?
-WARNING_ATTACKS	;Stop attacking our ships and bases!\n\nWe're warning you!
-WARNING_ATTACKS_RESPONSE_FRIENDLY	;Attacks? What are you talking about?\n\nThat wasn't us.
-WARNING_ATTACKS_RESPONSE_NEUTRAL	;Attacks? What are you talking about?\n\nThat wasn't us.
-WARNING_ATTACKS_RESPONSE_ANGRY	;Attacks on you?\n\nMaybe...
+GREETING_INTRODUCTION	;We are the {0}.\n\nWe did not invite you. We do not welcome you.\n\nBut our governing councils require us to hear you out. Speak.
+GREETING_FRIENDLY	;You have been granted audience by all three governing clusters.\n\nThis is rare. Do not waste it. What do you want?
+GREETING_NEUTRAL	;State your business.\n\nThe Amonkrie have border patrols to coordinate.
+GREETING_ANGRY	;Your presence violates Amonkrie sovereign space in spirit, if not in fact.\n\nSay what you must and leave.
+OFFER_FREETRADE	;The economic council has proposed a Free Trade Agreement with your empire.\n\nThe security council opposes it. The diplomatic council is divided.\n\nBut the proposal stands. Do you accept?
+FREETRADE_ACCEPT	;The councils have approved Free Trade. Barely.\n\nDo not give our security cluster reason to reverse this decision.
+FREETRADE_REJECT	;No trade. The security council expected this.\n\nThe Amonkrie are self-sufficient beneath the ice. We do not need you.
+CANCELTREATY	;All three governing clusters have reached consensus: our {0} with you is terminated.\n\nThis is not a decision we reached lightly. But it is final.
+CANCELTREATY_RESPONSE_FRIENDLY	;Unexpected. The diplomatic cluster had assessed this arrangement as stable.\n\nClearly our threat models need revision.
+CANCELTREATY_RESPONSE_NEUTRAL	;The ice shifts. We accept this.
+CANCELTREATY_RESPONSE_ANGRY	;The security council always warned us about you.\n\nNow we see they were right.
+TREATY_PROPOSAL	;A treaty proposal. The councils will deliberate.\n\nPresent your terms. Every clause will be scrutinized.
+TREATY_ACCEPTRESPONSE	;All three clusters have voted in favor. A rare unity.\n\nDo not betray this trust. The Amonkrie do not offer it twice.
+TREATY_REJECTRESPONSE	;The councils have rejected your proposal.\n\nThe security cluster was particularly vocal in opposition.
+TRADESANCTIONS_IMPOSE	;By unanimous council decision, Trade Sanctions are imposed against you.\n\nThe Amonkrie withdraw behind our borders. You are no longer welcome.
+TRADESANCTIONS_IMPOSE_RESPONSE_ANGRY	;Sanctions? Against the Amonkrie?\n\nWe who live beneath kilometers of ice? Your economic pressure means nothing to us.
+TRADESANCTIONS_IMPOSE_RESPONSE_NEUTRAL	;We survived beneath the ice long before we knew you existed.\n\nYour sanctions are irrelevant.
+TRADESANCTIONS_IMPOSE_RESPONSE_SURPRISED	;Sanctions? The diplomatic cluster is puzzled.\n\nThe security cluster, however, is not. They warned us this would happen.
+TRADESANCTIONS_LIFT	;The councils have lifted Trade Sanctions.\n\nOur borders remain vigilant, but commerce may resume.
+TRADESANCTIONS_LIFT_RESPONSE	;Noted. The Amonkrie accept the resumption of trade.\n\nBut our counter-intelligence operations will continue regardless.
+WAR_DECLARE	;The councils are unified: WAR.\n\nThe Amonkrie emerge from beneath the ice with cold fury.\n\nYou violated our sovereignty. Now face the consequences.
+WAR_DECLARE_RESPONSE_EAGER	;You invade Amonkrie space?\n\nOur border defenses have been waiting for exactly this. Welcome to the cold.
+WAR_DECLARE_RESPONSE_NEUTRAL	;The security cluster warned us. We prepared accordingly.\n\nYou will find the Amonkrie ready.
+WAR_DECLARE_RESPONSE_SURPRISED	;War? The Amonkrie seek only to be left alone.\n\nWhy can the galaxy not simply respect our borders?
+WAR_END	;The councils have debated and reached consensus: this war should end.\n\nReturn to your borders, and we will return to ours.\n\nDo you agree?
+WAR_END_ACCEPT	;Agreed. The Amonkrie withdraw behind our borders.\n\nDo not cross them again.
+WAR_END_REJECT	;Then the ice will claim more of your ships.\n\nThe Amonkrie do not tire of defending our territory.
+GIFT_GIVE	;The Amonkrie send {0} credits.\n\nThis is not generosity. It is a calculated diplomatic investment approved by the economic council.
+GIFT_THANKS	;Your gift has been logged by the economic council.\n\nThe diplomatic cluster acknowledges the gesture.
+WARNING	;A warning? The security cluster is listening.\n\nProceed.
+WARNING_INTELLIGENCEMISSIONS	;Our counter-intelligence network has detected your agents inside our borders.\n\nThe Amonkrie invest more in counter-espionage than most races spend on their entire military.\n\nYour agents have been identified. Withdraw them.
+WARNING_INTELLIGENCEMISSIONS_RESPONSE_FRIENDLY	;Covert missions? The security cluster denies any knowledge.\n\nBut they deny knowledge of most things. We will investigate.
+WARNING_INTELLIGENCEMISSIONS_RESPONSE_NEUTRAL	;The security cluster will review this matter.
+WARNING_INTELLIGENCEMISSIONS_RESPONSE_ANGRY	;Of course we monitor your activities near our borders.\n\nThe Amonkrie survived by being vigilant. We will not apologize for it.
+WARNING_ATTACKS	;Your military incursions into Amonkrie space are an act of aggression.\n\nOur border defense forces are authorized to respond with lethal force.\n\nWithdraw now.
+WARNING_ATTACKS_RESPONSE_FRIENDLY	;Our patrols may have strayed beyond authorized boundaries.\n\nThe security cluster will review and correct this.
+WARNING_ATTACKS_RESPONSE_NEUTRAL	;We will investigate this border incident.
+WARNING_ATTACKS_RESPONSE_ANGRY	;Your forces were in Amonkrie space. They were treated as intruders.\n\nKeep your ships out of our territory and this will not happen again.

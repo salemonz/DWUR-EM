@@ -1,40 +1,40 @@
 'Distant Worlds - dialogue - Version 1.9.5.10 - Modded by the Distant Worlds Mod Editor by Sabranan
 
-GREETING_INTRODUCTION	;Good day. We are the {0}.\n\nOur culture is superior to all others.\n\nYou may admire our greatness and marvel at our achievements
-GREETING_FRIENDLY	;What trivial thought do you wish to share with us, friend?
-GREETING_NEUTRAL	;We are ready to hear your frivolous ideas.\n\nYou may now speak
-GREETING_ANGRY	;Say your silly speech quickly!
-OFFER_FREETRADE	;You would benefit greatly in a Free Trade Agreement with us! But best of all, we would make a lot of money too.\n\nWhat do you say?
-FREETRADE_ACCEPT	;A Free Trade Agreement is an excellent idea.\n\nWe forsee great profit - mostly for us!
-FREETRADE_REJECT	;Sorry, a Free Trade Agreement with you wouldn't be worth it.\n\nYou're just too poor
-CANCELTREATY	;This {0} is over. Goodbye
-CANCELTREATY_RESPONSE_FRIENDLY	;Well, that is... surprising. Err, will you reconsider?
-CANCELTREATY_RESPONSE_NEUTRAL	;No more treaty? How sad.\n\nOf course, on the bright side, we will be charging you a hefty cancellation fee
-CANCELTREATY_RESPONSE_ANGRY	;How outrageous! After all we have done for you, after listening to all your boring speeches, and most of all: after spending all that money!
-TREATY_PROPOSAL	;A treaty proposal! Tell us what it is!\n\nDoes it involve lots of money?
-TREATY_ACCEPTRESPONSE	;How glorious! We forsee this mutually beneficial relationship making us both very rich - especially us
-TREATY_REJECTRESPONSE	;You are rejecting our treaty offer?!\n\nThis cannot be right. Did you not understand our offer?
-TRADESANCTIONS_IMPOSE	;Effective immediately, we are imposing Trade Sanctions against you!\n\nLet's see how you survive without our trade!
-TRADESANCTIONS_IMPOSE_RESPONSE_ANGRY	;How dare you even consider terminating trade with us!\n\nIt is... simply, um, er... not fair!
-TRADESANCTIONS_IMPOSE_RESPONSE_NEUTRAL	;How foolish of you to think that Trade Sanctions will hurt us.\n\nGood riddance to your trade!
-TRADESANCTIONS_IMPOSE_RESPONSE_SURPRISED	;Trade Sanctions?! Don't you mean trade BONUSES? Surely you meant that...
-TRADESANCTIONS_LIFT	;We are ending our Trade Sanctions against you.\n\nAlthough we despise your inferior civilization, there is one thing that we like about you - your money
-TRADESANCTIONS_LIFT_RESPONSE	;Resuming trade is a wise decision.\n\nMoney is so much more important than anything else, don't you think?
-WAR_DECLARE	;It is our great pleasure to declare War on your primitive empire!
-WAR_DECLARE_RESPONSE_EAGER	;YOU attacking US?! We are laughing so hard that we cannot breathe.\n\nPrepare to taste defeat!
-WAR_DECLARE_RESPONSE_NEUTRAL	;How unfair. We hate wars - they're so expensive!
-WAR_DECLARE_RESPONSE_SURPRISED	;There must be some mistake! What did we do to offend you?! Aren't we friends any more?
-WAR_END	;We have spent enough on this war - let's end it now. Is it a deal?
-WAR_END_ACCEPT	;Agreed, we will end this war immediately - it has cost far too much already!
-WAR_END_REJECT	;No, this war should continue until either we win or you lose
-GIFT_GIVE	;We present you with a gift of {0} credits.\n\nDon't forget: for stingy misers like us to willingly part with this money means that we must really like you!
-GIFT_THANKS	;Thank you for your gift of distinction: money!\n\nNext time, we would be happy to accept even larger amounts. Just wanted to make sure you knew that...
-WARNING	;A warning for us?\n\nWell, don't keep us in suspense! Please share your concern
-WARNING_INTELLIGENCEMISSIONS	;We have uncovered your treacherous covert missions against us!\n\nStop them now you naughty alien, or we will get very angry and do something very scary!
-WARNING_INTELLIGENCEMISSIONS_RESPONSE_FRIENDLY	;This is news to us. We did not order these missions against you.\n\nWe will check things for you and get to the bottom of this situation
-WARNING_INTELLIGENCEMISSIONS_RESPONSE_NEUTRAL	;Covert missions?\n\nYou must be mistaken? Or possibly just paranoid?
-WARNING_INTELLIGENCEMISSIONS_RESPONSE_ANGRY	;Missions against you? No, we don't think this really happened.\n\nAnyway, we don't recall anything about these particular missions you're talking about here
-WARNING_ATTACKS	;Stop attacking our ships and bases!\n\nIf you don't stop we are going to call you rude names! Or even worse!
-WARNING_ATTACKS_RESPONSE_FRIENDLY	;Well, you know how it is: sometimes those starship commanders just get a bit excited!\n\nWe'll have a talk to them. It shouldn't happen again
-WARNING_ATTACKS_RESPONSE_NEUTRAL	;Do you expect some sort of compensation?\n\nIf so, then we know nothing about these missions...
-WARNING_ATTACKS_RESPONSE_ANGRY	;We tell you candidly: we are tired of your primitive species.\n\nTarget practice on your ships relieves some of our frustration
+GREETING_INTRODUCTION	;Good day! We are the {0}.\n\nOur Mercantile Guild welcomes profitable relationships with all civilizations.\n\nWe can already smell opportunity in this meeting.
+GREETING_FRIENDLY	;Our favorite customer returns!\n\nThe Guild has been projecting strong growth in our trade partnership. What can we negotiate today?
+GREETING_NEUTRAL	;The Haakonish Mercantile Guild acknowledges your presence.\n\nWhat is the nature of your business?
+GREETING_ANGRY	;We can smell trouble on you from three systems away.\n\nState your business and make it worth our time.
+OFFER_FREETRADE	;The Guild proposes a Free Trade Agreement!\n\nOur noses for profit are unmatched in the galaxy. Combined with your economy, the revenue potential is extraordinary.\n\nWhat do you say?
+FREETRADE_ACCEPT	;Magnificent! The Guild approves this Free Trade Agreement!\n\nOur accountants are already calculating the profits. They smell substantial!
+FREETRADE_REJECT	;You decline trade with the premier merchants of the galaxy?\n\nExtraordinary. Our noses detect a poor business sense.
+CANCELTREATY	;The Guild has audited our {0} with you and found it unprofitable.\n\nThe Haakonish do not maintain arrangements that generate losses. This is cancelled.
+CANCELTREATY_RESPONSE_FRIENDLY	;You cancel on the Haakonish? But the profit margins were excellent!\n\nOur auditors are bewildered.
+CANCELTREATY_RESPONSE_NEUTRAL	;The Guild notes your decision.\n\nBusiness relationships end. New ones begin. The cycle continues.
+CANCELTREATY_RESPONSE_ANGRY	;Good. Our Guild was already exploring more profitable partnerships.\n\nYour loss is quite literally someone else's gain.
+TREATY_PROPOSAL	;A treaty? The Guild is intrigued by any arrangement that generates value.\n\nPresent your proposal. Our negotiators are standing by.
+TREATY_ACCEPTRESPONSE	;The Guild is delighted! A profitable new partnership!\n\nWe will assign our best trade representatives to maximize the returns for both sides. Especially our side.
+TREATY_REJECTRESPONSE	;The Guild is not pleased.\n\nYou have passed on an opportunity that our projections indicate was quite lucrative.
+TRADESANCTIONS_IMPOSE	;The Haakonish Mercantile Guild declares Trade Sanctions against you.\n\nThis is the worst punishment we can imagine: losing access to the finest trade network in the galaxy.
+TRADESANCTIONS_IMPOSE_RESPONSE_ANGRY	;Sanctions against the Haakonish?!\n\nYou cut off the greatest merchants in the galaxy? The economic consequences for YOU will be severe!
+TRADESANCTIONS_IMPOSE_RESPONSE_NEUTRAL	;Our noses detect the stench of poor judgment in this decision.\n\nThe Guild will persevere through alternative markets.
+TRADESANCTIONS_IMPOSE_RESPONSE_SURPRISED	;Trade Sanctions? Against the Haakonish?!\n\nWe who bring prosperity wherever our merchant fleets travel?\n\nThis is an insult to commerce itself!
+TRADESANCTIONS_LIFT	;The Guild has lifted Trade Sanctions.\n\nOur markets are open to you again. Try not to take them for granted this time.
+TRADESANCTIONS_LIFT_RESPONSE	;The Guild welcomes the resumption of trade.\n\nOur noses can already smell the profits returning.
+WAR_DECLARE	;The Mercantile Guild has declared WAR!\n\nYou have threatened our commercial interests for the last time.\n\nOur graviton beams will ensure the cost of this war falls entirely on you!
+WAR_DECLARE_RESPONSE_EAGER	;War with the Haakonish? You think merchants cannot fight?\n\nOur Guild has defended its trade routes for millennia. Our graviton beams will crush your profit margins and your fleet!
+WAR_DECLARE_RESPONSE_NEUTRAL	;The Guild does not go to war lightly. Commerce is always preferable.\n\nBut when commercial interests are threatened, the Haakonish can be fierce.
+WAR_DECLARE_RESPONSE_SURPRISED	;War?! The Haakonish seek only trade and prosperity!\n\nThis is bad for business! Terrible for both our economies!\n\nThere must be another way!
+WAR_END	;This war is costing both of us a fortune. The Guild proposes a ceasefire.\n\nEvery day of conflict is lost revenue.\n\nSurely you see the logic?
+WAR_END_ACCEPT	;The Guild approves the ceasefire.\n\nTime to tally the losses and get back to making money.
+WAR_END_REJECT	;No peace? The economic damage you are inflicting on yourself is staggering.\n\nBut the Guild will press on until your treasury is as empty as your strategy.
+GIFT_GIVE	;The Guild presents {0} credits to your empire.\n\nConsider it a down payment on a profitable future relationship.\n\nFor stingy merchants like us to part with money, you know we must really value you!
+GIFT_THANKS	;A generous investment in our relationship!\n\nThe Guild appreciates customers who understand the value of goodwill.
+WARNING	;A warning? The Guild's noses are twitching.\n\nWhat have you detected?
+WARNING_INTELLIGENCEMISSIONS	;Our security division has detected your corporate espionage operations against us.\n\nThe Haakonish trade network spans the galaxy. We know everything that moves through it.\n\nCease your industrial espionage at once.
+WARNING_INTELLIGENCEMISSIONS_RESPONSE_FRIENDLY	;Corporate espionage? The Guild would never conduct such operations against a valued partner.\n\nWe will audit our intelligence division immediately.
+WARNING_INTELLIGENCEMISSIONS_RESPONSE_NEUTRAL	;The Guild will review its competitive intelligence operations.
+WARNING_INTELLIGENCEMISSIONS_RESPONSE_ANGRY	;Our trade network provides all the intelligence we need.\n\nWhen you stop threatening our commercial interests, we will stop monitoring yours.
+WARNING_ATTACKS	;Your attacks on Haakonish merchant vessels are an assault on galactic commerce!\n\nThe Guild will not tolerate disruption to our trade routes.\n\nCease immediately or face our graviton beams!
+WARNING_ATTACKS_RESPONSE_FRIENDLY	;This is a terrible misunderstanding. The Guild abhors violence against commercial shipping.\n\nWe will investigate and compensate for any losses.
+WARNING_ATTACKS_RESPONSE_NEUTRAL	;The Guild will investigate this incident.\n\nSuch disruptions to commerce are unacceptable.
+WARNING_ATTACKS_RESPONSE_ANGRY	;Your vessels were obstructing our trade routes.\n\nThe Haakonish protect their commercial interests. This should not surprise you.

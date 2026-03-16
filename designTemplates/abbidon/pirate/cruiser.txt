@@ -59,7 +59,7 @@ WeaponRailGun	;0
 WeaponsManufacturingPlant	;0
 WeaponsResearchLab	;0
 WeaponSuperBeam	;0
-WeaponTorpedo	;5
+WeaponTorpedo	;0
 WeaponTractorBeam	;2
 WeaponGravitonBeam	;0
 WeaponAreaGravity	;0

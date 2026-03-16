@@ -8,7 +8,7 @@
 
 AreaShieldRecharge	;0
 Armor	;20
-AssaultPod	;1
+AssaultPod	;3
 CargoBay	;0
 ColonizationModule	;0
 CombatTargettingSystem	;1

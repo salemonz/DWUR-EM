@@ -1,49 +1,49 @@
 'Distant Worlds - dialogue - Version 1.9.5.10 - Modded by the Distant Worlds Mod Editor by Sabranan
 
-PIRATE_PROTECTIONPROPOSE	;Looking for some 'insurance' when travelling through all those dangerous, pirate-infested systems?\n\nOur fee for six months protection is shown below
-PIRATE_PROTECTIONPROPOSEINITIATE	;We think that you need some protection - otherwise who knows what could happen to all those defenseless ships of yours...\n\nWe can provide six months protection for the modest amount show below.\n\nA bargain, don't you think?
-PIRATE_PROTECTIONACCEPTRESPONSE	;A sensible decision.\n\nYour ships are safe inside our security zone for the next six months
-PIRATE_PROTECTIONREJECTRESPONSE	;Cutting costs on security is pure foolishness!\n\nPerhaps you need a demonstration of what a lack of security means for your ships...
-PIRATE_ATTACKOFFER_SINGLEEMPIRE	;You appear to detest the vile {0} just as much as we do. How would you like to eliminate several of their bases in our area?\n\nWe can make this happen for you. All we ask is a fair payment of {1} credits to cover our expenses.\n\nSend the money and we'll get things started...
-PIRATE_ATTACKCOMMENCE	;Your transfer has been validated.\n\nOur forces are on their way to targets in the {0}!
-PIRATE_ALLIANCEPROPOSE	;Our previous contract with you has now expired. You would be wise to upgrade to a permanent alliance with us.\n\nFor {0} credits per month we agree to protect your ships. Plus we'll also secretly attack your enemies - without you getting blamed for it.\n\nA mutually beneficial arrangement. Do you accept?
-PIRATE_ALLIANCEACCEPTRESPONSE	;A fine decision.\n\nConsider us your allies from now on.\n\nBut please excuse us, we have to go and raid your enemies now.
-PIRATE_ALLIANCEREJECTRESPONSE	;You seem to like learning things the hard way.\n\nBut we are patient teachers. Prepare to be educated...
-GREETING_INTRODUCTION	;Welcome visitor!\n\nWe are the proud and powerful Caleph of the {0}.\n\nOur mastery of flight is unmatched\n\nIs there something we can do for you?
-GREETING_FRIENDLY	;To what do we owe the pleasure of your company, friend?
-GREETING_NEUTRAL	;What should we discuss?
-GREETING_ANGRY	;Explain your presence before us
-OFFER_FREETRADE	;We would be honored if you would join us in a Free Trade Agreement.\n\nWhat do you say?
-FREETRADE_ACCEPT	;Your offer of a Free Trade Agreement makes good sense. We accept
-FREETRADE_REJECT	;We are sorry, but we cannot commit to a Free Trade Agreement at this time
-CANCELTREATY	;After careful thought, we regret that we can no longer hold to our {0} with you.\n\nThis treaty is cancelled
-CANCELTREATY_RESPONSE_FRIENDLY	;We are surprised and somewhat concerned by your irrational cancellation of this treaty.\n\nBut that is your choice
-CANCELTREATY_RESPONSE_NEUTRAL	;Unfortunate, now leave our presence
-CANCELTREATY_RESPONSE_ANGRY	;Do not underestimate what being our enemy would feel like
-TREATY_PROPOSAL	;What exactly are you proposing?
-TREATY_ACCEPTRESPONSE	;We are honored by your acceptance.\n\nMay this agreement be strong and profitable!
-TREATY_REJECTRESPONSE	;How disappointing...
-TRADESANCTIONS_IMPOSE	;You leave us no choice but to impose Trade Sanctions against you.\n\nWe hope that you will learn your place, but until that time all trade between our two empires is terminated
-TRADESANCTIONS_IMPOSE_RESPONSE_ANGRY	;Our suspicions have been confirmed, this will not be forgotten
-TRADESANCTIONS_IMPOSE_RESPONSE_NEUTRAL	;You should be careful not to take on more than you can handle...
-TRADESANCTIONS_IMPOSE_RESPONSE_SURPRISED	;We are deeply dismayed by your betrayal!\n\nAre you sure about this?
-TRADESANCTIONS_LIFT	;Our Trade Sanctions against you have been lifted.\n\nNormal trade will now resume between us
-TRADESANCTIONS_LIFT_RESPONSE	;We welcome a return to free and open trade with you
-WAR_DECLARE	;We can no longer tolerate your insolence. We formally declare WAR on your empire.\n\nYou will be shown why we are the masters of flight
-WAR_DECLARE_RESPONSE_EAGER	;You have lit the fire, but it is YOU that will be consumed by it!
-WAR_DECLARE_RESPONSE_NEUTRAL	;Your overconfidence is without basis - You underestimate our abilities
-WAR_DECLARE_RESPONSE_SURPRISED	;We are shocked by your dishonorable betrayal!\n\nWe will never forget this treachery!
-WAR_END	;This war continues without end.\n\nA ceasefire is in order, don't you agree?
-WAR_END_ACCEPT	;We agree to a ceasefire. Our forces are standing down at once
-WAR_END_REJECT	;No, this war will continue
-GIFT_GIVE	;We send you a gift of {0} credits.\n\nMay it help to foster good relations between our two majestic empires
-GIFT_THANKS	;Thank you for your gift. It was a kind gesture
-WARNING	;A warning for us? What is it?
-WARNING_INTELLIGENCEMISSIONS	;We are aware of your secret missions against us. Stop them at once or face the consequences!
-WARNING_INTELLIGENCEMISSIONS_RESPONSE_FRIENDLY	;Covert missions against our friends? That would be most unlikely.\n\nNonetheless we will investigate your allegations
-WARNING_INTELLIGENCEMISSIONS_RESPONSE_NEUTRAL	;Thank you for your warning
-WARNING_INTELLIGENCEMISSIONS_RESPONSE_ANGRY	;Covert missions against you?\n\nWhy would we want to do such a thing?\n\nPerhaps you should think about the answer to that question...
-WARNING_ATTACKS	;Your outrageous military attacks against us must stop at once!\n\nBe warned that we will defend our territory with deadly force!
-WARNING_ATTACKS_RESPONSE_FRIENDLY	;This news is deeply troubling! Please accept our sincere apologies.\n\nBe assured that we will deal with the renegade military commanders involved in these despicable acts
-WARNING_ATTACKS_RESPONSE_NEUTRAL	;We will investigate this matter and act appropriately
-WARNING_ATTACKS_RESPONSE_ANGRY	;With the forces of our two empires in such close proximity, accidents will sometimes happen.\n\nSo we suggest that you remove your forces.
+PIRATE_PROTECTIONPROPOSE	;The skies above and the void beyond are our domain.\n\nFor the fee below, our fighter wings will ensure your ships pass through safely. Six months protection.
+PIRATE_PROTECTIONPROPOSEINITIATE	;Your ships fly slow and unprotected. In Caleph territory, that is an invitation for trouble.\n\nFor the modest fee shown below, our pilots will escort your vessels safely.\n\nA wise investment, would you not agree?
+PIRATE_PROTECTIONACCEPTRESPONSE	;A sound decision.\n\nOur fighter wings are notified. Your ships fly under our banner now.\n\nUntil the term expires, you are under the protection of the Caleph lords.
+PIRATE_PROTECTIONREJECTRESPONSE	;Unwise. Without the Caleph watching over you, your ships are flightless birds in a sky full of predators.
+PIRATE_ATTACKOFFER_SINGLEEMPIRE	;The {0} are circling your territory like scavengers. The Caleph can drive them off permanently.\n\nOur fighters are unmatched in the void. The arrangement stays between us.\n\nAll we require is {1} credits.\n\nDo we have your agreement?
+PIRATE_ATTACKCOMMENCE	;Payment confirmed. Our carriers are launching strike wings against the {0} as we speak.\n\nThey will not know what hit them from above.
+PIRATE_ALLIANCEPROPOSE	;Our contract has concluded. The Caleph lords propose an elevation: a permanent alliance.\n\nFor {0} credits per month, our fighter wings protect your ships and strike your enemies.\n\nA lord always protects those who serve with loyalty. Do you accept?
+PIRATE_ALLIANCEACCEPTRESPONSE	;The lords are pleased.\n\nYour ships are safe under our wing, and your enemies will taste our fire.\n\nIdentify your targets and we will descend upon them.
+PIRATE_ALLIANCEREJECTRESPONSE	;A disappointing answer.\n\nThe Caleph do not extend such offers lightly. Reconsider before the winds shift against you.
+GREETING_INTRODUCTION	;We are the proud Caleph of the {0}.\n\nWe have ruled the skies since before your ancestors could walk upright.\n\nWhat brings you before the lords?
+GREETING_FRIENDLY	;Welcome, honored friend.\n\nThe lords of the Caleph greet you warmly. What would you discuss?
+GREETING_NEUTRAL	;You seek audience with the Caleph.\n\nState your purpose.
+GREETING_ANGRY	;You dare approach the lords after your shameful conduct?\n\nSpeak quickly, ground-crawler.
+OFFER_FREETRADE	;The Caleph lords propose a Free Trade Agreement between our territories.\n\nFair commerce benefits all castes.\n\nDo you accept?
+FREETRADE_ACCEPT	;The lords accept your offer of Free Trade.\n\nMay it bring prosperity to both our peoples.
+FREETRADE_REJECT	;The lords have considered your offer and found it lacking.\n\nPerhaps when your empire is more established.
+CANCELTREATY	;The lords have deliberated and our {0} with you is dissolved.\n\nThe winds of politics shift. You should not be surprised.
+CANCELTREATY_RESPONSE_FRIENDLY	;This is unexpected. The Caleph valued this arrangement.\n\nBut we accept your decision, however poorly judged it may be.
+CANCELTREATY_RESPONSE_NEUTRAL	;So the lords have spoken.\n\nThe Caleph will soar on without your partnership.
+CANCELTREATY_RESPONSE_ANGRY	;Good. This treaty clipped our wings.\n\nNow the Caleph are free to fly where we please.
+TREATY_PROPOSAL	;A treaty with the Caleph lords?\n\nWe are intrigued. Present your terms with the proper respect.
+TREATY_ACCEPTRESPONSE	;The lords accept! A most auspicious agreement.\n\nYou now fly alongside the greatest pilots in the galaxy. Be worthy of this honor.
+TREATY_REJECTRESPONSE	;The lords are displeased.\n\nTo refuse a Caleph treaty is to refuse the sky itself. You may come to regret this.
+TRADESANCTIONS_IMPOSE	;By decree of the Caleph lords, all trade with your empire is terminated.\n\nYour conduct has been unworthy. Reflect on this.
+TRADESANCTIONS_IMPOSE_RESPONSE_ANGRY	;Sanctions? You clip our wings with commerce restrictions?\n\nThe Caleph are not grounded so easily. This insult will not be forgotten.
+TRADESANCTIONS_IMPOSE_RESPONSE_NEUTRAL	;The Caleph have weathered storms that would destroy lesser races.\n\nYour sanctions are a passing squall.
+TRADESANCTIONS_IMPOSE_RESPONSE_SURPRISED	;This is beneath you. The lords expected better judgment.\n\nWe will endure, but our opinion of your character has diminished.
+TRADESANCTIONS_LIFT	;The lords have lifted our Trade Sanctions against you.\n\nYou may resume commerce with the Caleph. Consider this a second chance.
+TRADESANCTIONS_LIFT_RESPONSE	;The skies clear at last.\n\nWe accept the resumption of trade. Let us move forward.
+WAR_DECLARE	;The Caleph lords proclaim WAR!\n\nOur carriers are launching! Our Wyrm fighters are swarming!\n\nYou will learn why the masters of flight are also the masters of war!
+WAR_DECLARE_RESPONSE_EAGER	;You challenge the lords of the sky? So be it!\n\nOur fighter wings are already in formation. You will be overwhelmed from every angle!
+WAR_DECLARE_RESPONSE_NEUTRAL	;The Caleph accept your declaration.\n\nWe have fought from the air since before your kind built ships. This war will be no different.
+WAR_DECLARE_RESPONSE_SURPRISED	;War? The lords did not anticipate this treachery.\n\nBut the Caleph are never caught on the ground. Our fighters are already launching.
+WAR_END	;The lords grow weary of this conflict. Even the sky must rest between storms.\n\nDo you agree to a ceasefire?
+WAR_END_ACCEPT	;Agreed. The lords command our forces to stand down.\n\nThis war is over. Let the winds carry the memory of it away.
+WAR_END_REJECT	;No! The lords have not finished with you yet!\n\nOur fighter wings will darken your skies until you submit!
+GIFT_GIVE	;The Caleph lords send {0} credits as a token of esteem.\n\nRespect between great empires must be cultivated.
+GIFT_THANKS	;Your gift honors the lords. The Caleph accept with gratitude.
+WARNING	;You have a warning for the Caleph lords?\n\nSpeak, but choose your words carefully.
+WARNING_INTELLIGENCEMISSIONS	;Our far-seeing sensors have detected your covert operations within our territory.\n\nThe Caleph see further than you imagine. Cease your missions, or face the wrath of the lords.
+WARNING_INTELLIGENCEMISSIONS_RESPONSE_FRIENDLY	;Missions against our friends? The lords would never authorize such dishonor.\n\nWe will investigate this matter personally.
+WARNING_INTELLIGENCEMISSIONS_RESPONSE_NEUTRAL	;The lords will review our intelligence activities.\n\nAdjustments may be warranted.
+WARNING_INTELLIGENCEMISSIONS_RESPONSE_ANGRY	;Our scouts observe everything beneath the sky. That includes your empire.\n\nThe Caleph do not apologize for vigilance.
+WARNING_ATTACKS	;Your attacks on Caleph forces are an outrage against the lords!\n\nCease immediately, or our fighter wings will descend upon your fleets like a storm!
+WARNING_ATTACKS_RESPONSE_FRIENDLY	;This is deeply troubling. The lords did not sanction this.\n\nThe responsible commanders will face the judgment of the caste council.
+WARNING_ATTACKS_RESPONSE_NEUTRAL	;We will investigate this incident.\n\nIf our pilots acted without orders, they will answer for it.
+WARNING_ATTACKS_RESPONSE_ANGRY	;Our fighters struck your ships because your presence in our skies was not tolerated.\n\nThe Caleph defend their territory. This should not surprise you.

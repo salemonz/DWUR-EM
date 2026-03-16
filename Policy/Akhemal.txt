@@ -93,9 +93,9 @@ ControlRestrictedResourcesPriority		;3
 ResearchIndustryFocus		;1
 ResearchPriority		;3
 TradePriority		;1
-AlliancePriority		;1
+AlliancePriority		;0.5
 SubjugationPriority		;3
-TourismPriority		;1
+TourismPriority		;0.5
 ExplorationPriority		;1
 WarWillingness		;3
 BreakTreatyWillingness		;3

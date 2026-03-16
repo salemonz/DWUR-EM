@@ -1,40 +1,40 @@
 'Distant Worlds - dialogue - Version 1.9.5.10 - Modded by the Distant Worlds Mod Editor by Sabranan
 
-GREETING_INTRODUCTION	;Welcome visitor!\n\nWe are the aware, we are the Entons of the {0}.\n\nIs there something we can do for you?
-GREETING_FRIENDLY	;To what do we owe the pleasure of your company, friend?
-GREETING_NEUTRAL	;What should we discuss?
-GREETING_ANGRY	;Explain your presence before us
-OFFER_FREETRADE	;We would be honored if you would join us in a Free Trade Agreement.\n\nWhat do you say?
-FREETRADE_ACCEPT	;Your offer of a Free Trade Agreement makes good sense. We accept
-FREETRADE_REJECT	;We are sorry, but we cannot commit to a Free Trade Agreement at this time
-CANCELTREATY	;After much careful deliberation, we have decided that we can no longer hold to our {0} with you.\n\nThis treaty is cancelled
-CANCELTREATY_RESPONSE_FRIENDLY	;We are surprised and somewhat concerned by your irrational cancellation of this treaty.\n\nBut that is your choice
-CANCELTREATY_RESPONSE_NEUTRAL	;We find your lack of commitment disturbing...
-CANCELTREATY_RESPONSE_ANGRY	;The cancellation of this treaty is more your loss than ours...
-TREATY_PROPOSAL	;What exactly are you proposing?
-TREATY_ACCEPTRESPONSE	;We are honored by your acceptance.\n\nMay this agreement be strong and profitable!
-TREATY_REJECTRESPONSE	;How disappointing...
-TRADESANCTIONS_IMPOSE	;You leave us no choice but to impose Trade Sanctions against you.\n\nWe hope that you will learn to be reasonable, but until that time all trade between our two empires is terminated
-TRADESANCTIONS_IMPOSE_RESPONSE_ANGRY	;Our suspicions have been confirmed: you act without honor
-TRADESANCTIONS_IMPOSE_RESPONSE_NEUTRAL	;You should be careful not to take on more than you can handle...
-TRADESANCTIONS_IMPOSE_RESPONSE_SURPRISED	;We are deeply dismayed by your betrayal!\n\nAre you sure about this?
-TRADESANCTIONS_LIFT	;Our Trade Sanctions against you have been lifted.\n\nNormal trade will now resume between us
-TRADESANCTIONS_LIFT_RESPONSE	;We welcome a return to free and open trade with you
-WAR_DECLARE	;We can no longer tolerate your cruel tyranny. We formally declare WAR on your evil empire.\n\nWe will end your criminal oppression!
-WAR_DECLARE_RESPONSE_EAGER	;You have lit the fire, but it is YOU that will be consumed by it!
-WAR_DECLARE_RESPONSE_NEUTRAL	;Your overconfidence is without basis - this will not end well for you
-WAR_DECLARE_RESPONSE_SURPRISED	;We are shocked by your dishonorable betrayal!\n\nWe will never forget this treachery!
-WAR_END	;This war continues without end.\n\nA ceasefire is in order, don't you agree?
-WAR_END_ACCEPT	;We agree to a ceasefire. Our forces are standing down at once
-WAR_END_REJECT	;No, this war will continue
-GIFT_GIVE	;We send you a gift of {0} credits.\n\nMay it help to foster good relations between our two great empires
-GIFT_THANKS	;Thank you for your gift. It was a kind gesture
-WARNING	;A warning for us? What is it?
-WARNING_INTELLIGENCEMISSIONS	;We are aware of your secret missions against us. Stop them at once or face the consequences!
-WARNING_INTELLIGENCEMISSIONS_RESPONSE_FRIENDLY	;Covert missions against our friends? That would be most unlikely.\n\nNonetheless we will investigate your allegations
-WARNING_INTELLIGENCEMISSIONS_RESPONSE_NEUTRAL	;Thank you for your warning
-WARNING_INTELLIGENCEMISSIONS_RESPONSE_ANGRY	;Covert missions against you?\n\nWhy would we want to do such a thing?\n\nPerhaps you should think about the answer to that question...
-WARNING_ATTACKS	;Your outrageous military attacks against us must stop at once!\n\nBe warned that we will defend our territory with deadly force!
-WARNING_ATTACKS_RESPONSE_FRIENDLY	;This news is deeply troubling! Please accept our sincere apologies.\n\nBe assured that we will deal with the renegade military commanders involved in these despicable acts
-WARNING_ATTACKS_RESPONSE_NEUTRAL	;We will investigate this matter and act appropriately
-WARNING_ATTACKS_RESPONSE_ANGRY	;With the forces of our two empires in such close proximity, accidents will sometimes happen.\n\nSo we suggest that you remove your forces.
+GREETING_INTRODUCTION	;We are the Enton of the {0}.\n\nWe have been watching you for some time.\n\nNow you wish to speak. Very well.
+GREETING_FRIENDLY	;We see you.\n\nYou have earned a measure of our attention. What do you require?
+GREETING_NEUTRAL	;You seek audience with the Enton.\n\nWe are listening. We are always listening.
+GREETING_ANGRY	;Your recent activities have not gone unobserved.\n\nSpeak carefully. The Enton see more than we reveal.
+OFFER_FREETRADE	;The Enton propose a Free Trade Agreement.\n\nCommerce provides useful data about your economy.\n\nDo you accept?
+FREETRADE_ACCEPT	;Accepted. The Enton will monitor the results.\n\nWe expect this arrangement to prove... informative.
+FREETRADE_REJECT	;No. The Enton have no pressing need for your trade.\n\nWe observe. We do not depend.
+CANCELTREATY	;The Enton have decided to end our {0} with you.\n\nThis decision was reached after prolonged observation. It is final.
+CANCELTREATY_RESPONSE_FRIENDLY	;Unexpected. Our analysis suggested this arrangement was stable.\n\nClearly we missed a variable.
+CANCELTREATY_RESPONSE_NEUTRAL	;Noted. The Enton will adjust accordingly.
+CANCELTREATY_RESPONSE_ANGRY	;We had already begun preparing for this eventuality.\n\nThe Enton are always prepared.
+TREATY_PROPOSAL	;You propose a treaty with the Enton.\n\nWe will study your terms with the care they deserve.
+TREATY_ACCEPTRESPONSE	;The Enton accept.\n\nWe do not enter agreements lightly. Neither should you.
+TREATY_REJECTRESPONSE	;The Enton decline.\n\nOur reasons are our own.
+TRADESANCTIONS_IMPOSE	;The Enton impose Trade Sanctions.\n\nWe withdraw into our preferred state: observation without entanglement.
+TRADESANCTIONS_IMPOSE_RESPONSE_ANGRY	;Sanctions? The Enton have always preferred solitude.\n\nYour attempt to isolate us merely returns us to our natural state.
+TRADESANCTIONS_IMPOSE_RESPONSE_NEUTRAL	;We have observed this possibility in your behavior patterns.\n\nThe Enton are prepared.
+TRADESANCTIONS_IMPOSE_RESPONSE_SURPRISED	;Surprising. Our models did not predict this.\n\nThe Enton will recalibrate.
+TRADESANCTIONS_LIFT	;Trade Sanctions are lifted.\n\nThe Enton have determined that continued isolation serves no purpose.
+TRADESANCTIONS_LIFT_RESPONSE	;Noted. The Enton accept the change.
+WAR_DECLARE	;The Enton have observed enough. WAR.\n\nOur Disbelieve Mask sensors have already mapped your fleet positions.\n\nYou cannot hide from us. We see everything.
+WAR_DECLARE_RESPONSE_EAGER	;You attack the Enton? We who observe from the shadows?\n\nOur graviton beams will find you. Our sensors miss nothing.
+WAR_DECLARE_RESPONSE_NEUTRAL	;The Enton accept your declaration.\n\nWe have been studying your military capabilities. We know your weaknesses.
+WAR_DECLARE_RESPONSE_SURPRISED	;War? Against the Enton?\n\nWe posed no threat. We simply watched.\n\nApparently that was enough to frighten you.
+WAR_END	;The Enton have gathered sufficient data from this conflict.\n\nWe propose an end to hostilities. Do you concur?
+WAR_END_ACCEPT	;The war ends. The Enton will withdraw to our preferred distance.\n\nWe will continue to observe. We always do.
+WAR_END_REJECT	;Then we continue.\n\nThe Enton do not reveal our full capabilities lightly. You have not yet seen what we are capable of.
+GIFT_GIVE	;The Enton transmit {0} credits.\n\nThis is a calculated gesture. Interpret it as you will.
+GIFT_THANKS	;Your gift is acknowledged.\n\nThe Enton file this gesture under our observations about your character.
+WARNING	;A warning for the Enton.\n\nWe are listening. We are always listening.
+WARNING_INTELLIGENCEMISSIONS	;We have detected your covert agents.\n\nThe Enton are specialists in stealth and observation. Did you really think you could operate undetected against us?\n\nCease immediately.
+WARNING_INTELLIGENCEMISSIONS_RESPONSE_FRIENDLY	;The Enton do not conduct covert operations against friends.\n\nOur observation is passive. There is a difference.
+WARNING_INTELLIGENCEMISSIONS_RESPONSE_NEUTRAL	;The Enton will review our surveillance protocols.
+WARNING_INTELLIGENCEMISSIONS_RESPONSE_ANGRY	;The Enton observe everything. This is not espionage. It is prudence.\n\nWhen you stop being worth watching, we will stop watching.
+WARNING_ATTACKS	;Your attacks on Enton forces are noted.\n\nWe prefer the shadows, but we are capable of striking from them.\n\nDo not force our hand.
+WARNING_ATTACKS_RESPONSE_FRIENDLY	;This was not sanctioned. The Enton will identify and correct the issue.
+WARNING_ATTACKS_RESPONSE_NEUTRAL	;We will investigate this matter quietly.
+WARNING_ATTACKS_RESPONSE_ANGRY	;Our forces engaged yours because our observation indicated a threat.\n\nThe Enton act on data, not emotion. The data was clear.

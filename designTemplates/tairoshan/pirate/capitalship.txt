@@ -8,7 +8,7 @@
 
 AreaShieldRecharge	;0
 Armor	;15
-AssaultPod	;4
+AssaultPod	;3
 CargoBay	;0
 ColonizationModule	;0
 CombatTargettingSystem	;1
@@ -22,7 +22,7 @@ EnergyManufacturingPlant	;0
 EnergyResearchLab	;0
 EnergyToFuelConverter	;0
 Engine	;15
-FighterBay	;0
+FighterBay	;2
 FleetCountermeasuresSystem	;1
 FleetTargettingSystem	;1
 FuelCell	;20
@@ -59,8 +59,8 @@ WeaponRailGun	;0
 WeaponsManufacturingPlant	;0
 WeaponsResearchLab	;0
 WeaponSuperBeam	;0
-WeaponTorpedo	;11
-WeaponTractorBeam	;0
+WeaponTorpedo	;8
+WeaponTractorBeam	;2
 WeaponGravitonBeam	;0
 WeaponAreaGravity	;0
 ImageScaling;Scaled 0.95

@@ -50,7 +50,7 @@ StealthCloak	;0
 TraceScanner	;1
 TroopCompartment	;0
 VectoringEngine	;4
-WeaponArea	;0
+WeaponArea	;1
 WeaponBeam	;16
 WeaponBombard	;0
 WeaponMissile	;0
@@ -59,7 +59,7 @@ WeaponRailGun	;0
 WeaponsManufacturingPlant	;0
 WeaponsResearchLab	;0
 WeaponSuperBeam	;0
-WeaponTorpedo	;8
+WeaponTorpedo	;0
 WeaponTractorBeam	;4
 WeaponGravitonBeam	;0
 WeaponAreaGravity	;0

@@ -1,53 +1,53 @@
 'Distant Worlds - dialogue - Version 1.9.5.10 - Modded by the Distant Worlds Mod Editor by Sabranan
 
-PIRATE_PROTECTIONPROPOSE	;You want us to protect you? Good idea!\n\nFor fee shown below we can 'protect' all your ships in our region for six months.\n\nReady to pay?
-PIRATE_PROTECTIONPROPOSEINITIATE	;Galaxy is dangerous place, you know. Easy to get hurt.\n\nFor small fee we can protect all your ships in our region for six months.\n\nYou should pay up, hmmm?
-PIRATE_PROTECTIONACCEPTRESPONSE	;Your money looks real good!\n\nNo accidents for your ships till we spent all the money, ok?
-PIRATE_PROTECTIONREJECTRESPONSE	;No pay - no protection.\n\nVery simple, it is
-PIRATE_PROTECTIONALREADYPAID	;You crazy alien! You already paid!\n\nCome back later. We take more money then
-PIRATE_BUYINFO	;Here's all the secret stuff we know about.\n\nJust clicky-clicky on anything you want, ok?
-PIRATE_ATTACKOFFER_EMPIRES	;We send big bashing on anyone on the list.\n\nJust clicky-clicky who you want bashed, ok?
-PIRATE_ATTACKOFFER_SINGLEEMPIRE	;You not like {0}? We could stomp on them for you.\n\nDon't worry - we not tell anyone, ok?\n\nJust pay us {1} credits and we take care of everything.\n\nSound good?
-PIRATE_ATTACKCOMMENCE	;We got the money. {0} getting a bashing!\n\nBye
-PIRATE_ALLIANCEPROPOSE	;We spent all that money you gave us. How about permanent alliance with us now?\n\nGive us {0} credits every month and we protect your ships and attack your enemies, without you getting in trouble.\n\nGood deal, yes?
-PIRATE_ALLIANCEACCEPTRESPONSE	;You smarter than you look!\n\nWe friends forever now - just keep sending that money, ok.\n\nHave to go now - we bash all your enemies!
-PIRATE_ALLIANCEREJECTRESPONSE	;Silly alien!\n\nWe have to eat, you know. No pay, no help for you - got it?
-PIRATE_ALLIANCECANCELRESPONSE	;Very, very bad.\n\nWe need your money - if you not give it, then we just have to take it anyway.\n\nNot too late to change mind, ok?
-GREETING_INTRODUCTION	;Welcome strange one! We are the {0}.\n\nWe are impressed by power and strength.\n\nLets be friends, we could be unstoppable together!
-GREETING_FRIENDLY	;Welcome back! What did you want to talk about?
-GREETING_NEUTRAL	;We are listening
-GREETING_ANGRY	;We're not very happy with you. So tell us what you want, then leave!
-OFFER_FREETRADE	;How about accepting our offer of a Free Trade Agreement?\n\nIt would be a great deal for you! And I suppose we would benefit from it too...\n\nDo you accept?
-FREETRADE_ACCEPT	;It's a deal!\n\nWe acccept the Free Trade Agreement
-FREETRADE_REJECT	;No deal.\n\nWe are not interested in a Free Trade Agreement just now
-CANCELTREATY	;Our {0} with you is over.\n\nNo hard feelings, right? We can renegotiate later if you want
-CANCELTREATY_RESPONSE_FRIENDLY	;What's this about? We were great together...
-CANCELTREATY_RESPONSE_NEUTRAL	;Our deal is over?\n\nLets see who else wants to be our friends, your enemies perhaps?
-CANCELTREATY_RESPONSE_ANGRY	;You will regret this more than us
-TREATY_PROPOSAL	;What's the deal?
-TREATY_ACCEPTRESPONSE	;Celebration! We're partners now!
-TREATY_REJECTRESPONSE	;We are sad about this
-TRADESANCTIONS_IMPOSE	;You bet the wrong way this time: Trade Sanctions on you!\n\nWe're not trading with your empire again!
-TRADESANCTIONS_IMPOSE_RESPONSE_ANGRY	;Trade Sanctions?! This is how you treat us?\n\nIt will be you who is sorry.
-TRADESANCTIONS_IMPOSE_RESPONSE_NEUTRAL	;No trading with you?\n\nWe don't need your trade.
-TRADESANCTIONS_IMPOSE_RESPONSE_SURPRISED	;Where is your honor? We are hurt.
-TRADESANCTIONS_LIFT	;It's your lucky day: we're lifting our Trade Sanctions against you.\n\nWe will now resume trading with you. But no more funny business, we are friends now right?
-TRADESANCTIONS_LIFT_RESPONSE	;Hmm well don't try it again...
-WAR_DECLARE	;You insult us no more! We declare WAR on you!\n\nYou'll be sorry now!
-WAR_DECLARE_RESPONSE_EAGER	;You think you'll defeat us?! You're wrong.\n\nWe'll see what mess our friends make of you.
-WAR_DECLARE_RESPONSE_NEUTRAL	;Oh, lets see what our friends think of you doing this to us!
-WAR_DECLARE_RESPONSE_SURPRISED	;We thought you liked us?!\n\nYou can't do this! What did we do?
-WAR_END	;This war is not good for us. It should end.\n\nWhat do you say?
-WAR_END_ACCEPT	;Yes, we agree fighting is pointless
-WAR_END_REJECT	;No, we think we are on the winning side.\n\nSo we're not stopping now!
-GIFT_GIVE	;Here's a gift for you: {0} credits
-GIFT_THANKS	;Thanks for your gift!\n\nYou know, we really like money. And people who give us money
-WARNING	;What did we do wrong?
-WARNING_INTELLIGENCEMISSIONS	;Stop doing all those spy things on us!\n\nWe can see how devious you are. We will answer with force if you carry on!
-WARNING_INTELLIGENCEMISSIONS_RESPONSE_FRIENDLY	;Spy missions on you?\n\nYou must have gotten mixed up friend. That can't be us
-WARNING_INTELLIGENCEMISSIONS_RESPONSE_NEUTRAL	;Spy missions on you?\n\nYou must have gotten mixed up. That can't be us
-WARNING_INTELLIGENCEMISSIONS_RESPONSE_ANGRY	;Spy missions against you?\n\nWe wouldn't do it if you was friendly to us
-WARNING_ATTACKS	;Stop attacking our ships and bases!\n\nWe're warning you: keep this up and you'll be sorry!
-WARNING_ATTACKS_RESPONSE_FRIENDLY	;Attacks? What are you talking about?\n\nThat wasn't us, friend
-WARNING_ATTACKS_RESPONSE_NEUTRAL	;Attacks? What are you talking about?\n\nThat wasn't us
-WARNING_ATTACKS_RESPONSE_ANGRY	;Attacks on you?\n\nMaybe we did do it. But you deserved it anyway, so there!
+PIRATE_PROTECTIONPROPOSE	;You look like you need strong friends watching out for you.\n\nLucky for you, the Jintus are very good at watching. For the fee below, six months protection.
+PIRATE_PROTECTIONPROPOSEINITIATE	;The galaxy is full of big scary things. Trust us, the Jintus know all about big scary things.\n\nFor the small fee shown below, we keep the scary things away from your ships.\n\nGood deal, right?
+PIRATE_PROTECTIONACCEPTRESPONSE	;Smart! Very smart!\n\nYour ships are under our protection now. No one messes with friends of the Jintus.\n\nWell, no one messes with them until the payment runs out.
+PIRATE_PROTECTIONREJECTRESPONSE	;Not smart. Not smart at all.\n\nBig scary things in the void do not care about your bravery. They care about whether you have friends.\n\nYou do not.
+PIRATE_PROTECTIONALREADYPAID	;You already paid, remember? Your ships are safe!\n\nCome back later when it expires. We always take more money.
+PIRATE_BUYINFO	;The Jintus know things. Many things. Information for sale, prices below.\n\nJust pick what you want, yes?
+PIRATE_ATTACKOFFER_EMPIRES	;Need someone bashed? The Jintus can arrange that.\n\nPick a target from the list. We handle the rest.
+PIRATE_ATTACKOFFER_SINGLEEMPIRE	;The {0} giving you trouble? The Jintus know exactly how to handle troublemakers.\n\nWe send our best hunters. Very quiet, very effective. Nobody knows you are involved.\n\nJust {1} credits and the problem goes away.\n\nDeal?
+PIRATE_ATTACKCOMMENCE	;Credits received! Our hunters are on their way to the {0}.\n\nThis is going to be fun!
+PIRATE_ALLIANCEPROPOSE	;Our old deal is finished. But the Jintus have something better in mind!\n\nFor {0} credits per month, we protect your ships AND attack your enemies. Nobody blames you for anything.\n\nThe perfect arrangement! What do you say?
+PIRATE_ALLIANCEACCEPTRESPONSE	;Wonderful! You are our best friend now!\n\nThe Jintus will keep your ships safe and make your enemies very, very sorry.\n\nJust tell us who to hunt!
+PIRATE_ALLIANCEREJECTRESPONSE	;You say no to the Jintus?\n\nBig mistake. Without our help, you are just prey wandering around without a pack.\n\nThink about that.
+PIRATE_ALLIANCECANCELRESPONSE	;You leave the pack? Very foolish!\n\nThe Jintus survive because we stick together. Alone, you are just a meal for something bigger.\n\nReconsider!
+GREETING_INTRODUCTION	;Welcome! We are the {0}!\n\nThe Jintus are always looking for strong, powerful friends.\n\nYou look strong! Are you? Let us be allies!
+GREETING_FRIENDLY	;Our favorite friend returns!\n\nWhat can the Jintus do for you today? Need us to talk to someone? Arrange something?
+GREETING_NEUTRAL	;We are listening.\n\nWhat do you need? The Jintus are very helpful, you know.
+GREETING_ANGRY	;You have been a bad friend to the Jintus.\n\nTalk fast, or we will find better allies to replace you!
+OFFER_FREETRADE	;The Jintus propose a Free Trade Agreement!\n\nYour economy is big and strong. Ours is... growing. Together we could be unstoppable!\n\nSay yes?
+FREETRADE_ACCEPT	;Free Trade? Yes, yes, yes!\n\nThe pack grows stronger with every new trade partner!
+FREETRADE_REJECT	;No? You do not want to trade with the Jintus?\n\nFine. We know other empires who would jump at this chance.
+CANCELTREATY	;Our {0} with you is over.\n\nNo hard feelings! The Jintus have found more... useful arrangements elsewhere.
+CANCELTREATY_RESPONSE_FRIENDLY	;You leave the pack? This hurts!\n\nWe thought we had something special.
+CANCELTREATY_RESPONSE_NEUTRAL	;Fine then.\n\nThe Jintus will find other allies. We always do.
+CANCELTREATY_RESPONSE_ANGRY	;You were never strong enough for us anyway.\n\nOur other allies will be very interested to hear about this.
+TREATY_PROPOSAL	;A treaty! The Jintus love treaties!\n\nTreaties mean alliances. Alliances mean we never have to fight alone.\n\nTell us everything!
+TREATY_ACCEPTRESPONSE	;Celebration! The pack grows!\n\nYou are officially our friend now. This means your enemies are our enemies too. Well, your enemies are our allies' enemies.\n\nYou understand.
+TREATY_REJECTRESPONSE	;You reject the Jintus?\n\nWe hope you know what you are doing. Being alone in this galaxy is dangerous.
+TRADESANCTIONS_IMPOSE	;We are cutting off all trade with you!\n\nThe Jintus do not need you. We have many, many other friends who are better than you.
+TRADESANCTIONS_IMPOSE_RESPONSE_ANGRY	;Sanctions on the Jintus?!\n\nDo you know how many allies we have? They will not be happy about this!
+TRADESANCTIONS_IMPOSE_RESPONSE_NEUTRAL	;Your sanctions do not scare the Jintus.\n\nWe have other trading partners. Better ones.
+TRADESANCTIONS_IMPOSE_RESPONSE_SURPRISED	;Wait, what? Sanctions? Against us?\n\nBut we were friends! The Jintus always treated you well!\n\nThis is very, very unfair.
+TRADESANCTIONS_LIFT	;Good news! We are lifting our Trade Sanctions against you.\n\nThe Jintus are forgiving. Let us be friends again!
+TRADESANCTIONS_LIFT_RESPONSE	;About time!\n\nThe Jintus were getting along fine without you, but trade is trade.
+WAR_DECLARE	;You insult the pack for the last time! The Jintus declare WAR!\n\nDo not worry about our size. Worry about the size of our friends!\n\nThey will be joining us shortly!
+WAR_DECLARE_RESPONSE_EAGER	;War? With the Jintus?\n\nYou clearly do not know who our allies are. When the pack fights, we fight together!\n\nYou are going to regret this!
+WAR_DECLARE_RESPONSE_NEUTRAL	;The pack accepts your challenge.\n\nWe have been hunting Terrellions ten times our size since before you had starships.\n\nYou are just another big target.
+WAR_DECLARE_RESPONSE_SURPRISED	;War?! Against us?!\n\nWe thought we were friends! The Jintus do not understand why you would do this!
+WAR_END	;This war is bad for the pack. Let us stop fighting and go back to hunting Terrellions.\n\nWhat do you say?
+WAR_END_ACCEPT	;Good! War over. The pack needs to recover.\n\nLet us go back to making deals and finding allies.
+WAR_END_REJECT	;No? You want more war?\n\nFine! The Jintus are small but we are relentless. And our allies are very, very large.
+GIFT_GIVE	;The Jintus send you {0} credits!\n\nStrong friends deserve gifts. This is how the pack shows appreciation.
+GIFT_THANKS	;A gift! For the Jintus! We love gifts!\n\nYou are a very good friend. The best kind of friend.
+WARNING	;A warning? For the Jintus?\n\nWhat did we do?
+WARNING_INTELLIGENCEMISSIONS	;We know about your spies sneaking around our caves!\n\nThe Jintus have very good noses. We can smell deception.\n\nStop it now, or our allies will hear about this!
+WARNING_INTELLIGENCEMISSIONS_RESPONSE_FRIENDLY	;Spy missions? The Jintus? No, no, no!\n\nThat must be someone else. We would never spy on a friend!
+WARNING_INTELLIGENCEMISSIONS_RESPONSE_NEUTRAL	;We will... look into this.\n\nThe Jintus have many operatives. Sometimes they get confused about who is a friend and who is not.
+WARNING_INTELLIGENCEMISSIONS_RESPONSE_ANGRY	;Yes, we spy on you. Because the Jintus do not trust you anymore.\n\nChange your behavior and maybe we will stop. Maybe.
+WARNING_ATTACKS	;You are attacking the Jintus?!\n\nDo you have any idea how many allies we have? They will all be very angry about this!\n\nStop immediately!
+WARNING_ATTACKS_RESPONSE_FRIENDLY	;Attacks? Us? That is impossible!\n\nThe Jintus are lovers, not fighters. Well, mostly. It must have been a mistake!
+WARNING_ATTACKS_RESPONSE_NEUTRAL	;We will check with our captains.\n\nSometimes the pack gets overeager during a hunt.
+WARNING_ATTACKS_RESPONSE_ANGRY	;Yes, we sent ships against you. What did you expect?\n\nThe Jintus may be small, but we never forget an insult. And we never fight alone.

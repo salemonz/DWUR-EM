@@ -93,11 +93,11 @@ ControlRestrictedResourcesPriority					;2
 ResearchIndustryFocus							;0
 ResearchPriority							;3
 TradePriority								;4
-AlliancePriority							;2
+AlliancePriority							;3
 SubjugationPriority							;2
-TourismPriority								;3
+TourismPriority								;4
 ExplorationPriority							;4
-WarWillingness								;2
+WarWillingness								;1
 BreakTreatyWillingness							;1
 InvasionOverkillFactor							;2
 ShipBattleCautionFactor							;2

@@ -1,40 +1,40 @@
 'Distant Worlds - dialogue - Version 1.9.5.10 - Modded by the Distant Worlds Mod Editor by Sabranan
 
-GREETING_INTRODUCTION	;We are the {0}.\n\nWe tolerate your pitiful presence.\n\nPlease do not speak unless we request your worthless opinion.
-GREETING_FRIENDLY	;How can we help you, our poor backwards friend?
-GREETING_NEUTRAL	;Do you have anything useful to say?
-GREETING_ANGRY	;Speak quickly, we have better things to do than listen to your dribble!
-OFFER_FREETRADE	;We are pleased to offer you unworthy dimwits a Free Trade Agreement with our wonderful empire!\n\nI know, you don't really deserve it, but superior beings like us sometimes feel like helping lesser ones like you.\n\nSo are you going to accept this magnificent offer or not?
-FREETRADE_ACCEPT	;We agree to support your needy empire with this 'Free Trade Agreement'
-FREETRADE_REJECT	;No, a Free Trade Agreement with an inferior species like you would never work
-CANCELTREATY	;We are cancelling our {0} with you - we tire of your stupidity!
-CANCELTREATY_RESPONSE_FRIENDLY	;Surely not! We considered you backward fools to be our friends - who can we insult and patronize now?
-CANCELTREATY_RESPONSE_NEUTRAL	;We are sure that this matters more to you than it does to us
-CANCELTREATY_RESPONSE_ANGRY	;Good - at last we have relief from your tedious nonsense!
-TREATY_PROPOSAL	;What is your primitive civilization offering us?
-TREATY_ACCEPTRESPONSE	;How fortunate for you to be our junior partner.\n\nIf you pay attention, even a fool like you may learn from our intense brilliance!
-TREATY_REJECTRESPONSE	;What a foolish lack of vision
-TRADESANCTIONS_IMPOSE	;We've had it with you! Trade Sanctions against you now!\n\nYou need to learn your place - well below us!
-TRADESANCTIONS_IMPOSE_RESPONSE_ANGRY	;Trade Sanctions?! You will pay for this insult, you slimy second-class species!
-TRADESANCTIONS_IMPOSE_RESPONSE_NEUTRAL	;Losing trade with you simpletons causes no harm to us!
-TRADESANCTIONS_IMPOSE_RESPONSE_SURPRISED	;Trade Sanctions?! You can't be serious?\n\nDon't you want to be our slaves, er, friends anymore?
-TRADESANCTIONS_LIFT	;Our Trade Sanctions against you have been lifted. You may again benefit from our superior trade
-TRADESANCTIONS_LIFT_RESPONSE	;You had Trade Sanctions against us? We hadn't noticed any loss
-WAR_DECLARE	;WAR!\n\nWe can no longer tolerate your inferiority. You will be cleansed from the galaxy
-WAR_DECLARE_RESPONSE_EAGER	;Fools, WE are the ones who will crush YOU! 
-WAR_DECLARE_RESPONSE_NEUTRAL	;War you have chosen. War you will get
-WAR_DECLARE_RESPONSE_SURPRISED	;You traitorous slime! You will pay for your treachery!
-WAR_END	;This war has gone on long enough - we propose an immediate ceasefire
-WAR_END_ACCEPT	;We agree - this war should end at once. We will withdraw our forces if you do the same
-WAR_END_REJECT	;No, we are committed to your destruction. You cannot escape your fate!
-GIFT_GIVE	;We give you {0} credits as a display of our benevolent superiority
-GIFT_THANKS	;Thank you. We appreciate the great sacrifice of your puny civilization in providing such a gift!
-WARNING	;Share your 'warning' with us.\n\nOur diplomats will be sure to file it appropriately in our archives
-WARNING_INTELLIGENCEMISSIONS	;We have detected your nefarious covert activities against us.\n\nStop them at once, or taste our terrible revenge on you!
-WARNING_INTELLIGENCEMISSIONS_RESPONSE_FRIENDLY	;Covert missions against you?\n\nWhy would we do that? We almost like you
-WARNING_INTELLIGENCEMISSIONS_RESPONSE_NEUTRAL	;We are not aware of this incident, but we can follow up for you.\n\nBut please try to understand our viewpoint. After all, we don't really care about your complaints
-WARNING_INTELLIGENCEMISSIONS_RESPONSE_ANGRY	;Covert missions? Certainly, we sent those missions.\n\nYou're just so untrustworthy that we need to keep tabs on you. Even a simpleton like you should understand this
-WARNING_ATTACKS	;Stop your attacks against our ships and bases!\n\nBe warned that we will retaliate - your puny forces do not intimidate us!
-WARNING_ATTACKS_RESPONSE_FRIENDLY	;Ship attacks? It is possible, yes.\n\nWe will check on this matter for you
-WARNING_ATTACKS_RESPONSE_NEUTRAL	;A fair point you make here.\n\nBut you see, sometimes our ship captains yearn for live target practice. Surely you understand their feelings?
-WARNING_ATTACKS_RESPONSE_ANGRY	;Ship attacks against you? Of course - we dislike you intensely!\n\nWe intend to send more too, so don't bother complaining about them
+GREETING_INTRODUCTION	;We are the {0}! Greatest swarm in galaxy!\n\nYou are soft and weak and probably taste bad.\n\nBut we let you speak anyway.
+GREETING_FRIENDLY	;Oh, it is you. The least stupid of the soft ones.\n\nWhat do you want?
+GREETING_NEUTRAL	;Talk fast. The swarm has better things to do than listen to non-insects.
+GREETING_ANGRY	;BUZZZZ! The swarm is angry with your ugly face!\n\nSpeak before we eat you!
+OFFER_FREETRADE	;The Hive Mind has decided to let you trade with the greatest civilization in the galaxy!\n\nFree Trade Agreement! You should be grateful.\n\nSay yes, or we change our mind!
+FREETRADE_ACCEPT	;Good, good! Free Trade with the greatest swarm there is.\n\nYou are lucky we even noticed you.
+FREETRADE_REJECT	;No trade? Stupid soft-body.\n\nThe swarm does not need you. We have four arms each! We do everything ourselves!
+CANCELTREATY	;BZZT! The {0} with you is finished!\n\nThe swarm tires of your inferior company!
+CANCELTREATY_RESPONSE_FRIENDLY	;You cancel on the greatest swarm in the galaxy?!\n\nYou are even stupider than we thought. And we thought you were very stupid.
+CANCELTREATY_RESPONSE_NEUTRAL	;The Hive Mind does not care about your treaty.\n\nWe have more legs than you have brain cells.
+CANCELTREATY_RESPONSE_ANGRY	;GOOD! The swarm celebrates! This treaty smelled of soft-body weakness!\n\nNow we are free to do what we do best!
+TREATY_PROPOSAL	;You want treaty with the mighty Gizurean swarm?\n\nThis is unusual. Most soft-bodies just run away.\n\nTell us your offer.
+TREATY_ACCEPTRESPONSE	;The Hive Mind approves! You are now junior partner to the greatest swarm in existence!\n\nTry to keep up. We know it is hard for soft-bodies.
+TREATY_REJECTRESPONSE	;BZZZT! The swarm rejects your pitiful offer!\n\nCome back when you have something worthy of our four-armed attention!
+TRADESANCTIONS_IMPOSE	;The Hive Mind declares Trade Sanctions on your worthless empire!\n\nNo more Gizurean goods for you! See how you survive without our superior products!
+TRADESANCTIONS_IMPOSE_RESPONSE_ANGRY	;You impose sanctions on the SWARM?!\n\nBZZZZZZ! We will devour your trade routes and bombard your pathetic colonies!
+TRADESANCTIONS_IMPOSE_RESPONSE_NEUTRAL	;The swarm does not trade with weaklings anyway.\n\nYour sanctions tickle us. We have four arms to scratch with!
+TRADESANCTIONS_IMPOSE_RESPONSE_SURPRISED	;Sanctions?! On the Gizurean?!\n\nBut we are the greatest! Why would you not want our wonderful goods?!\n\nYou are confused. Very confused.
+TRADESANCTIONS_LIFT	;The Hive Mind has decided you can trade with us again.\n\nYou should celebrate. The whole galaxy wants access to our superior economy.
+TRADESANCTIONS_LIFT_RESPONSE	;You figured out you cannot survive without us. Smart! Well, smart for a soft-body.
+WAR_DECLARE	;BZZZZZZ! The swarm descends upon you! WAR!\n\nOur beams will burn! Our bombs will flatten your ugly cities!\n\nThe Hive Mind hungers for your destruction!
+WAR_DECLARE_RESPONSE_EAGER	;WAR! The swarm has been WAITING for this!\n\nYour soft bodies will crumble under our bombardment! We are the greatest warriors in the galaxy!
+WAR_DECLARE_RESPONSE_NEUTRAL	;You attack the swarm? Foolish soft-body!\n\nWe breed faster than you can fight! For every one you destroy, ten more hatch!
+WAR_DECLARE_RESPONSE_SURPRISED	;You declare war on the GIZUREAN?!\n\nDo you know how many of us there are?! We cover entire planets!\n\nThis is the worst decision you ever made!
+WAR_END	;The Hive Mind has decided this war is boring now.\n\nWe have other tribes to insult and other empires to bombard.\n\nCeasefire?
+WAR_END_ACCEPT	;Fine, war is over.\n\nBut only because the swarm has better things to do. Not because you won. You did NOT win.
+WAR_END_REJECT	;NO! The swarm does not stop!\n\nWe will keep breeding, keep building, keep bombing until your ugly empire is dust!\n\nBZZZZZ!
+GIFT_GIVE	;The swarm sends you {0} credits.\n\nThis is very generous of us. The greatest swarm giving gifts to inferior soft-bodies. Remember this.
+GIFT_THANKS	;You give the mighty Gizurean a gift? Good!\n\nThis is the correct behavior. More gifts will keep us from bombing you. Maybe.
+WARNING	;A warning for the mighty Gizurean swarm?\n\nThis should be hilarious. Go ahead.
+WARNING_INTELLIGENCEMISSIONS	;BZZZT! The Hive Mind has detected your pathetic spies crawling through our territory!\n\nOur four-armed warriors are crushing them as we speak!\n\nSend more and we will eat them too!
+WARNING_INTELLIGENCEMISSIONS_RESPONSE_FRIENDLY	;Spies? The mighty Gizurean do not need spies!\n\nWe attack directly! Spying is for cowardly soft-bodies!
+WARNING_INTELLIGENCEMISSIONS_RESPONSE_NEUTRAL	;The Hive Mind will review this.\n\nSometimes individual drones get... confused about instructions.
+WARNING_INTELLIGENCEMISSIONS_RESPONSE_ANGRY	;Yes, the swarm sent agents into your territory!\n\nWe wanted to see how weak you really are. The answer? Very weak.\n\nVery, very weak.
+WARNING_ATTACKS	;BZZZZ! You dare attack the swarm?!\n\nOur numbers are ENDLESS! Our beams burn hot! Our bombs flatten ALL!\n\nStop now or the Hive Mind will devour your entire empire!
+WARNING_ATTACKS_RESPONSE_FRIENDLY	;Attacks? Some drones may have gotten overexcited.\n\nThe Hive Mind will recall them. Probably.
+WARNING_ATTACKS_RESPONSE_NEUTRAL	;Our drones attacked you? They probably mistook you for something important.\n\nWe will look into it.
+WARNING_ATTACKS_RESPONSE_ANGRY	;The swarm attacked your ships because they were ugly and in our way!\n\nThe Gizurean do not apologize! We are the greatest! BZZZZZ!

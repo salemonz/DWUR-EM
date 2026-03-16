@@ -98,7 +98,7 @@ SubjugationPriority		;1
 TourismPriority		;1
 ExplorationPriority		;3
 WarWillingness		;3
-BreakTreatyWillingness		;2
+BreakTreatyWillingness		;1
 InvasionOverkillFactor		;1.5
 ShipBattleCautionFactor		;1
 DefaultMilitaryFleeWhen		;4

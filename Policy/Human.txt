@@ -95,7 +95,7 @@ ResearchPriority							;3
 TradePriority								;4
 AlliancePriority							;2
 SubjugationPriority							;2
-TourismPriority								;2
+TourismPriority								;3
 ExplorationPriority							;4
 WarWillingness								;3
 BreakTreatyWillingness							;1

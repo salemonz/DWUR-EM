@@ -39,13 +39,13 @@ LuxuryResourceExtractor	;0
 MedicalCenter	;0
 MiningEngine	;0
 PassengerCompartment	;0
-PointDefense	;5
+PointDefense	;7
 ProximityArray	;1
 Reactor	;2
 RecreationCenter	;0
 ResourceProfileSensor	;0
 ScannerJammer	;0
-Shields	;20
+Shields	;18
 StealthCloak	;0
 TraceScanner	;0
 TroopCompartment	;2

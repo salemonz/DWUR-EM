@@ -59,7 +59,7 @@ IntelligenceAllowMissionStealTechData		;Y
 IntelligenceAllowMissionStealTerritoryMap		;Y
 IntelligenceAllowMissionAssassinateCharacter		;Y
 IntelligenceAllowMissionDestroyBase		;Y
-IntelligenceCounterIntelligenceProportion		;33
+IntelligenceCounterIntelligenceProportion		;50
 IntelligenceUseEspionageAgainstEmpireWhen		;2
 IntelligenceUseSabotageAgainstEmpireWhen		;1
 ResearchDesignAutoRetrofit		;Y
@@ -79,7 +79,7 @@ EngageInTourism		;N
 NewColonyPopulationPolicyYourRaceFamily		;0
 NewColonyPopulationPolicyAllRaces		;0
 ImplementEnslavementWithPenalColonies		;Y
-HomeworldDefensePriority		;2
+HomeworldDefensePriority		;3
 ProtectLeaderAtAllCosts		;N
 PrioritizeBuildWonderId		;10
 ColonizeContinentalPriority		;1
@@ -93,11 +93,11 @@ ControlRestrictedResourcesPriority		;2
 ResearchIndustryFocus		;3
 ResearchPriority		;3
 TradePriority		;1
-AlliancePriority		;1
+AlliancePriority		;0.5
 SubjugationPriority		;1
 TourismPriority		;1
 ExplorationPriority		;4
-WarWillingness		;1
+WarWillingness		;1.5
 BreakTreatyWillingness		;1
 InvasionOverkillFactor		;1
 ShipBattleCautionFactor		;1

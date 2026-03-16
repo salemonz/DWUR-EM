@@ -14,7 +14,7 @@ ColonizationModule	;0
 CombatTargettingSystem	;1
 CommerceCenter	;0
 ConstructionYard	;0
-CountermeasuresSystem	;1
+CountermeasuresSystem	;2
 DamageControl	;1
 DockingBay	;0
 EnergyCollector	;1

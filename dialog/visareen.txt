@@ -1,40 +1,40 @@
 'Distant Worlds - dialogue - Version 1.9.5.10 - Modded by the Distant Worlds Mod Editor by Sabranan
 
-GREETING_INTRODUCTION	;Greetings stranger. We are the {0}.\n\nStrength and honor - these things we respect.\n\nWhat would you like us to relay to our god?
-GREETING_FRIENDLY	;Speak your mind with us friend
-GREETING_NEUTRAL	;What would you like to discuss?
-GREETING_ANGRY	;You again! What do you want this time?
-OFFER_FREETRADE	;Join with us in a Free Trade Agreement. The shared benefits would generate growth in both of our strong empires.\n\nWhat do you say?
-FREETRADE_ACCEPT	;The strong should join with each other to become stronger still. We gladly accept your offer of a Free Trade Agreement!
-FREETRADE_REJECT	;Sorry, your offer of a Free Trade Agreement does not interest us.\n\nYour weakness would only be a burden to us
-CANCELTREATY	;Our shared {0} no longer fulfills its purpose. We are ending this arrangement
-CANCELTREATY_RESPONSE_FRIENDLY	;We are surprised at your rashness, friend!\n\nAre you certain about this?
-CANCELTREATY_RESPONSE_NEUTRAL	;Your insult will be remembered. Repayment will come to you in due time...
-CANCELTREATY_RESPONSE_ANGRY	;We are glad to rid ourselves of your weak and timid civilization
-TREATY_PROPOSAL	;You propose a treaty? Let's hear what you have in mind
-TREATY_ACCEPTRESPONSE	;We are honored by your acceptance. May our two mighty empires grow even stronger!
-TREATY_REJECTRESPONSE	;We do not take insults like this lightly!\n\nYou should watch your back...
-TRADESANCTIONS_IMPOSE	;Your weakness invites aggression: we are imposing Trade Sanctions on you.\n\nMaybe pain will teach you some respect!
-TRADESANCTIONS_IMPOSE_RESPONSE_ANGRY	;We will not accept this criminal insult! Our vengeance will come when you least expect it...
-TRADESANCTIONS_IMPOSE_RESPONSE_NEUTRAL	;Do you mean to hurt us?\n\nTrade Sanctions are a tool for the weak! We are ready for much worse
-TRADESANCTIONS_IMPOSE_RESPONSE_SURPRISED	;We were not expecting this.\n\nAre you looking for a fight?
-TRADESANCTIONS_LIFT	;Our Trade Sanctions against you have served their purpose - we are now removing them.\n\nWe hope that you have learned some respect
-TRADESANCTIONS_LIFT_RESPONSE	;Very well, we also will resume trade with you
-WAR_DECLARE	;Your weak empire is ripe for conquest. We bring WAR to you!\n\nYour feeble, decaying civilization will be eliminated!
-WAR_DECLARE_RESPONSE_EAGER	;Your recklessness will be your end! You should only undertake battles that you can win.\n\nWe will inflict an overwhelming defeat on you
-WAR_DECLARE_RESPONSE_NEUTRAL	;We are ready to meet you in battle.\n\nVictory to the strong!
-WAR_DECLARE_RESPONSE_SURPRISED	;We have no desire to fight you.\n\nBut we will do what we must
-WAR_END	;We see no point in prolonging this war. We propose an immediate end to hostilities.\n\nWhat do you say?
-WAR_END_ACCEPT	;Agreed, this war should end. We are standing down our forces
-WAR_END_REJECT	;The weak crave peace. The strong press on to victory.\n\nOur war with you will continue
-GIFT_GIVE	;We offer you a gift of {0} credits.\n\nMay our empires work together in strength
-GIFT_THANKS	;Thanks you for your gift
-WARNING	;What is your problem?
-WARNING_INTELLIGENCEMISSIONS	;We detest your cowardly covert missions against us!\n\nStop your scheming interference, or else prepare for an open fight!
-WARNING_INTELLIGENCEMISSIONS_RESPONSE_FRIENDLY	;We are sorry. There must have been a mixup somewhere.\n\nWe will stop these missions immediately
-WARNING_INTELLIGENCEMISSIONS_RESPONSE_NEUTRAL	;Your complaint has been noted
-WARNING_INTELLIGENCEMISSIONS_RESPONSE_ANGRY	;Covert missions? You are surprised by this?\n\nWould you consider us to be your friends? Clearly we are not.\n\nThus, you should not expect us to be concerned with your warning
-WARNING_ATTACKS	;Your unprovoked attacks have been noted.\n\nIf you seek war, simply ask for it. We will be happy to oblige you
-WARNING_ATTACKS_RESPONSE_FRIENDLY	;Apologies. This was a mistake on our part.\n\nWe will punish the offending commander and ensure that it does not occur again
-WARNING_ATTACKS_RESPONSE_NEUTRAL	;We are not familiar with the details of this case.\n\nLet us investigate further
-WARNING_ATTACKS_RESPONSE_ANGRY	;Ship attacks?\n\nYes, that is what we do to our enemies. You would be one of those.\n\nAny more questions?
+GREETING_INTRODUCTION	;We are the {0}.\n\nOur fleets stand ready. Our missiles gleam in formation.\n\nDo not mistake our display for aggression. It is devotion.\n\nWhat do you wish to relay to our sovereign?
+GREETING_FRIENDLY	;The sovereign acknowledges your loyalty.\n\nYou may speak freely in this audience.
+GREETING_NEUTRAL	;The Visareen receive you.\n\nState the purpose of your communication.
+GREETING_ANGRY	;The sovereign's patience with you wears thin.\n\nSpeak quickly.
+OFFER_FREETRADE	;The sovereign proposes a Free Trade Agreement.\n\nOur military displays attract visitors from across the galaxy. Your economy would benefit from the association.\n\nDo you accept?
+FREETRADE_ACCEPT	;Free Trade accepted. The sovereign is pleased.\n\nMay this arrangement bring prosperity befitting our grand military tradition.
+FREETRADE_REJECT	;The sovereign notes your refusal.\n\nFew decline the Visareen. Fewer do so twice.
+CANCELTREATY	;By decree of the sovereign, our {0} with you is dissolved.\n\nThe fleets will be repositioned accordingly.
+CANCELTREATY_RESPONSE_FRIENDLY	;The sovereign's will is not easily understood, but we accept this change.\n\nThe Visareen endure.
+CANCELTREATY_RESPONSE_NEUTRAL	;The sovereign has spoken.\n\nThe Visareen will adjust our fleet posture.
+CANCELTREATY_RESPONSE_ANGRY	;Good. Our fleets were wasted protecting a relationship that did not deserve them.
+TREATY_PROPOSAL	;You seek a treaty with the Visareen?\n\nThe sovereign will consider your proposal. Present it with the gravity it deserves.
+TREATY_ACCEPTRESPONSE	;The sovereign approves! This treaty is sealed.\n\nWe will deploy a ceremonial fleet formation in your honor. It will be magnificent.
+TREATY_REJECTRESPONSE	;The sovereign is displeased.\n\nOur missile fleets will be reminded of your name. For future reference.
+TRADESANCTIONS_IMPOSE	;By order of the sovereign, Trade Sanctions are imposed.\n\nOur economic might, like our military, exists to project the will of our leader.
+TRADESANCTIONS_IMPOSE_RESPONSE_ANGRY	;Sanctions against a race with the largest missile fleets in the sector?\n\nThe sovereign finds your boldness... reckless.
+TRADESANCTIONS_IMPOSE_RESPONSE_NEUTRAL	;Our fleets stand ready regardless of your economic games.\n\nThe Visareen serve the sovereign, not the marketplace.
+TRADESANCTIONS_IMPOSE_RESPONSE_SURPRISED	;The sovereign is puzzled.\n\nOur displays of strength were meant to inspire awe, not hostility.
+TRADESANCTIONS_LIFT	;The sovereign has decreed Trade Sanctions lifted.\n\nResume commerce with the Visareen. Consider it an honor.
+TRADESANCTIONS_LIFT_RESPONSE	;The Visareen accept the restoration of trade.\n\nOur military parades will resume their welcoming formations.
+WAR_DECLARE	;The sovereign has spoken: WAR.\n\nOur missile fleets, long held in reserve for display, now have a purpose beyond ceremony.\n\nYou will see why the galaxy admires our military.
+WAR_DECLARE_RESPONSE_EAGER	;You attack the Visareen?!\n\nOur fleets have trained for this moment their entire existence! Formation after formation, missile after missile!\n\nThe sovereign demands your defeat!
+WAR_DECLARE_RESPONSE_NEUTRAL	;The Visareen did not seek war.\n\nBut our military exists for more than parades. You will discover this.
+WAR_DECLARE_RESPONSE_SURPRISED	;War? Against the Visareen?\n\nOur fleets were meant for show, not bloodshed.\n\nBut if forced, they will serve the sovereign in battle as faithfully as in parade.
+WAR_END	;The sovereign grows weary of this conflict. Our fleets belong in formation, not in battle.\n\nWe propose peace. Do you agree?
+WAR_END_ACCEPT	;Peace. The sovereign is satisfied.\n\nOur fleets will return to their ceremonial duties. A much better use of their magnificence.
+WAR_END_REJECT	;The sovereign is disappointed.\n\nBut the Visareen will press on. Our fleets have more missiles than you have patience.
+GIFT_GIVE	;The sovereign presents {0} credits to your empire.\n\nConsider it recognition of your standing in the eyes of the Visareen.
+GIFT_THANKS	;The sovereign accepts your tribute with gracious dignity.\n\nSuch offerings are noted in our records.
+WARNING	;You have a message for the sovereign?\n\nSpeak. The Visareen are listening.
+WARNING_INTELLIGENCEMISSIONS	;The sovereign's intelligence corps has detected your covert operations.\n\nThe Visareen display their strength openly. We find your secrecy... distasteful.\n\nCease at once.
+WARNING_INTELLIGENCEMISSIONS_RESPONSE_FRIENDLY	;Covert operations? The Visareen do not hide in shadows.\n\nEverything we do is meant to be seen. This must be a misunderstanding.
+WARNING_INTELLIGENCEMISSIONS_RESPONSE_NEUTRAL	;The sovereign will review our intelligence activities.
+WARNING_INTELLIGENCEMISSIONS_RESPONSE_ANGRY	;Our surveillance is the sovereign's will.\n\nWhen the sovereign is satisfied with your conduct, the watching will end.
+WARNING_ATTACKS	;Your attacks on Visareen military assets are an insult to the sovereign!\n\nThose ships represent generations of martial tradition.\n\nCease immediately or face the full fury of our fleets!
+WARNING_ATTACKS_RESPONSE_FRIENDLY	;This is an outrage to our military honor. It should not have happened.\n\nThe responsible commanders will face the sovereign's judgment.
+WARNING_ATTACKS_RESPONSE_NEUTRAL	;The sovereign will investigate this incident.\n\nThe Visareen military does not act without orders.
+WARNING_ATTACKS_RESPONSE_ANGRY	;Our fleets acted in defense of the sovereign's interests.\n\nThe Visareen do not apologize for protecting what we hold sacred.

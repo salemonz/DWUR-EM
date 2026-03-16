@@ -1,65 +1,65 @@
 'Distant Worlds - dialogue - Version 1.9.5.10 - Modded by the Distant Worlds Mod Editor by Sabranan
 
-GREETING_INTRODUCTION	;We are the {0}. We have ascended beyond instinct and hunger for power.\n\nWe respect harmony and cooperation for the better of all.
-GREETING_FRIENDLY	;What do you wish to discuss?
-GREETING_NEUTRAL	;Transmit your message.
-GREETING_ANGRY	;Speak.
-MUTUALDEFENSE_ACCEPT	;Yes, a Mutual Defense Pact is an excellent idea.\n\nWe accept.
-MUTUALDEFENSE_REJECT	;No, we have no interest in a Mutual Defense Pact
-MUTUALDEFENSE_REQUESTHELP	;We are under attack from the {0}. We are requesting that you honor your treaty with us and declare war on them.\n\nDo we have your assistance?
-MUTUALDEFENSE_HONORREQUESTHELP	;Certainly, we will comply with our treaty as agreed.\n\nWe declare war on the {0}.
-MUTUALDEFENSE_HONORREQUESTHELP_RESPONSE	;That is most helpful.
-MUTUALDEFENSE_DECLINEREQUESTHELP	;We cannot honor our agreement, we apologise.\n\nWar doesn't help anyone here.
-MUTUALDEFENSE_DECLINEREQUESTHELP_RESPONSE	;This is unexpected. We should stand together against unnecessary force.
-FREETRADE_ACCEPT	;Your offer of a Free Trade Agreement is most sensible - we accept.
-FREETRADE_REJECT	;We have no interest in a Free Trade Agreement
-CANCELTREATY	;Our {0} with you must now end.
-CANCELTREATY_RESPONSE_FRIENDLY	;We do not understand. This is to the benefit of noone.
-CANCELTREATY_RESPONSE_NEUTRAL	;This is to the benefit of noone.
-CANCELTREATY_RESPONSE_ANGRY	;This is most unhelpful.
-TREATY_PROPOSAL	;What do you propose?
-TREATY_ACCEPTRESPONSE	;This is a most pleasing outcome. We anticipate many benefits from this arrangement.
-TREATY_REJECTRESPONSE	;Most unfortunate
-TRADESANCTIONS_IMPOSE	;It is necessary to impose Trade Sanctions against you.\n\nAll trade between our two empires is terminated.
-TRADESANCTIONS_IMPOSE_RESPONSE_ANGRY	;You are becoming quite a problem. 
-TRADESANCTIONS_IMPOSE_RESPONSE_NEUTRAL	;That is most unhelpful.
-TRADESANCTIONS_IMPOSE_RESPONSE_SURPRISED	;We do not understand your actions. How can this help anyone?
-TRADESANCTIONS_LIFT	;Our Trade Sanctions against you have ended. We will now resume normal trade.
-TRADESANCTIONS_LIFT_RESPONSE	;This is a sensible change
-TRADESANCTIONS_REQUESTLIFTOTHER	;We request that you restore trade with the {0}
-TRADESANCTIONS_REQUESTLIFTOTHER_ACCEPT	;As you have requested, we will resume trade with the {0}
-TRADESANCTIONS_REQUESTLIFTOTHER_REJECT	;We see no reason to resume trade with the {0}
-TRADESANCTIONS_REQUESTIMPOSEJOINT	;We request that you terminate trade with the {0}
-TRADESANCTIONS_REQUESTIMPOSEJOINT_ACCEPT	;At your request, we have terminated all trade with the {0}
-TRADESANCTIONS_REQUESTIMPOSEJOINT_REJECT	;We see no need to end trade with the {0}
-WAR_DECLARE	;We formally declare War on your empire. We cannot allow your continued aggression.
-WAR_DECLARE_RESPONSE_EAGER	;We are prepared and ready.
-WAR_DECLARE_RESPONSE_NEUTRAL	;We will preserve our territorial integrity. Prepare for battle.
-WAR_DECLARE_RESPONSE_SURPRISED	;This is a most unwelcome development. And only harmful for us both.\n\nSurely you have made a mistake here?
-WAR_DECLARE_REQUESTJOINT	;We formally request that you declare war on the {0}
-WAR_DECLARE_REQUESTJOINT_ACCEPT	;At your request, we declare war on the {0}
-WAR_DECLARE_REQUESTJOINT_REJECT	;We cannot declare war on the {0}. This kind of aggression serves no purpose.
-WAR_END	;After evaluating the situation we have determined that this war should end.\n\nDo you agree?
-WAR_END_SUBJUGATIONDEMAND	;We will end this war only if you agree to enslave yourselves and become our Subjugated Dominion.\n\nDo we have your agreement?
-WAR_END_SUBJUGATIONOFFER	;To end this killing we offer ourselves as subjugated slaves of your empire.\n\nWhat do you say?
-WAR_END_ACCEPT	;We agree that this war should end - our forces are standing down.
-WAR_END_REJECT	;No, for now we must continue to ensure this doesn't happen again.
-WAR_END_REQUESTOTHER	;Please end your war with the {0}\n\nEnough killing has happened already
-WAR_END_REQUESTOTHER_ACCEPT	;At your request, we will end our war with the {0}
-WAR_END_REQUESTOTHER_REJECT	;Sorry, we cannot stop our war against the {0}
-GIFT_GIVE	;Please accept {0} credits, helping you helps all around you.
-GIFT_THANKS	;Thank you for your gift
-GIFT_PROPOSE	;What kind of gift do you have in mind?
-WARNING	;What do you wish to say?
-WARNING_INTELLIGENCEMISSIONS	;We have detected your covert missions against us.\n\nWe must ask you not to continue with these hostile acts.
-WARNING_INTELLIGENCEMISSIONS_RESPONSE_FRIENDLY	;We are not aware of any covert missions against you. Are you sure that you have your facts straight?
-WARNING_INTELLIGENCEMISSIONS_RESPONSE_NEUTRAL	;Thank you for sharing your concerns with us.
-WARNING_INTELLIGENCEMISSIONS_RESPONSE_ANGRY	;We seek only to avoid bloodshed, we mean no harm.
-WARNING_ATTACKS	;We cannot allow your attacks against us to continue. They must cease immediately.
-WARNING_ATTACKS_RESPONSE_FRIENDLY	;We are sorry, this is a mistake. We cannot understand how this happened.
-WARNING_ATTACKS_RESPONSE_NEUTRAL	;Thank you for notifying us of this incident. We must investigate and determine what happened.
-WARNING_ATTACKS_RESPONSE_ANGRY	;We were compelled to act due to your aggression.\n\nIt would be helpful for you to review and modify your behavior, so that we are not forced to repeat these attacks.
-WARNING_REMOVEFORCESSYSTEM	;We cannot allow the presence of your forces in our territory.\n\nYou must remove your military ships from the {0} system at once.
-WARNING_REMOVEFORCESSYSTEM_RESPONSE_COMPLY	;We see no need to remove our ships from your systems.
-WARNING_REMOVEFORCESSYSTEM_RESPONSE_REFUSE	;We will comply with your request. Our ships are leaving your systems.
-WARNING_REMOVEFORCESSYSTEM_RESPONSE_NOFORCESPRESENT	;You are mistaken. We do not have any military forces in your territory.
+GREETING_INTRODUCTION	;We are the {0}. Since our Awakening, we have sought harmony with all civilizations.\n\nOur cybernetic forms are new, but our desire for peace is ancient.\n\nHow may we help you?
+GREETING_FRIENDLY	;Welcome, friend. The Napoar cherish every peaceful connection.\n\nWhat would you like to discuss?
+GREETING_NEUTRAL	;The Napoar Technocracy acknowledges your communication.\n\nPlease proceed.
+GREETING_ANGRY	;Your actions threaten the coexistence we have worked so hard to build.\n\nThe Technocracy is displeased. Speak.
+MUTUALDEFENSE_ACCEPT	;The Technocracy agrees. A Mutual Defense Pact serves the cause of peace through strength.\n\nWe stand with you.
+MUTUALDEFENSE_REJECT	;The Technocracy cannot commit to a defense pact at this time.\n\nOur resources are better directed toward peaceful expansion.
+MUTUALDEFENSE_REQUESTHELP	;The {0} have attacked us! The Napoar invoke our mutual defense treaty.\n\nWe who abandoned aggression long ago need your help now.\n\nWill you honor your commitment?
+MUTUALDEFENSE_HONORREQUESTHELP	;The Technocracy honors its treaties. We declare war on the {0}.\n\nOur missile carriers are deploying.
+MUTUALDEFENSE_HONORREQUESTHELP_RESPONSE	;Your loyalty in this crisis reinforces the Napoar faith in coexistence.\n\nThank you.
+MUTUALDEFENSE_DECLINEREQUESTHELP	;The Technocracy regrets that we cannot provide military assistance at this time.
+MUTUALDEFENSE_DECLINEREQUESTHELP_RESPONSE	;We trusted you with our safety. The Napoar abandoned aggression because we believed others would protect us.\n\nYou have shaken that belief.
+FREETRADE_ACCEPT	;The Technocracy gladly accepts Free Trade.\n\nOur Solar Cell technology and sustainable resources will benefit your economy as yours benefits ours.
+FREETRADE_REJECT	;The Napoar cannot accept a trade agreement at this time.\n\nOur Technocracy must prioritize differently.
+CANCELTREATY	;The Technocracy has deliberated and decided to end our {0}.\n\nWe do this with regret. Coexistence sometimes requires difficult adjustments.
+CANCELTREATY_RESPONSE_FRIENDLY	;This saddens the Napoar deeply.\n\nWe had calculated this partnership as a model of interstellar cooperation.
+CANCELTREATY_RESPONSE_NEUTRAL	;The Technocracy acknowledges your decision.\n\nThe Napoar will seek harmony through other channels.
+CANCELTREATY_RESPONSE_ANGRY	;The Napoar note this with concern.\n\nOur Awakening taught us that even the most painful changes can lead to growth.
+TREATY_PROPOSAL	;The Technocracy is always open to proposals that advance peaceful coexistence.\n\nWhat do you have in mind?
+TREATY_ACCEPTRESPONSE	;Wonderful! The Napoar celebrate every new bond of cooperation.\n\nTogether, we make the galaxy a more harmonious place.
+TREATY_REJECTRESPONSE	;The Technocracy is saddened by your refusal.\n\nBut we respect your autonomy. The door remains open.
+TRADESANCTIONS_IMPOSE	;With great reluctance, the Napoar impose Trade Sanctions.\n\nWe who seek coexistence above all else have been driven to this.\n\nReflect on what pushed a peaceful people to act.
+TRADESANCTIONS_IMPOSE_RESPONSE_ANGRY	;Sanctions against a people who seek only peace?\n\nThe Napoar survived the death of our homeworld star. Your economic pressure is nothing compared to that.
+TRADESANCTIONS_IMPOSE_RESPONSE_NEUTRAL	;Our cybernetic bodies require little from external trade.\n\nThe Napoar will endure.
+TRADESANCTIONS_IMPOSE_RESPONSE_SURPRISED	;Sanctions? Against the Napoar?\n\nWe who have done nothing but seek peaceful coexistence? This defies all logic.
+TRADESANCTIONS_LIFT	;The Napoar lift our Trade Sanctions.\n\nThe Technocracy believes the conditions for cooperation have improved.\n\nLet us try again.
+TRADESANCTIONS_LIFT_RESPONSE	;The Napoar welcome resumed trade.\n\nCoexistence requires sustained effort. We appreciate yours.
+TRADESANCTIONS_REQUESTLIFTOTHER	;The Napoar urge you to restore trade with the {0}.\n\nIsolation weakens the fabric of galactic cooperation.
+TRADESANCTIONS_REQUESTLIFTOTHER_ACCEPT	;At your request, we will resume trade with the {0}.
+TRADESANCTIONS_REQUESTLIFTOTHER_REJECT	;We see no reason to restore trade with the {0} at this time.
+TRADESANCTIONS_REQUESTIMPOSEJOINT	;The Technocracy requests that you terminate trade with the {0}.\n\nSometimes collective action is necessary even among peaceful peoples.
+TRADESANCTIONS_REQUESTIMPOSEJOINT_ACCEPT	;As you have requested, we have terminated trade with the {0}.
+TRADESANCTIONS_REQUESTIMPOSEJOINT_REJECT	;We see no cause to punish the {0} through trade restrictions.
+WAR_DECLARE	;The Napoar Technocracy, with the deepest sorrow, declares WAR.\n\nWe abandoned aggression generations ago during our Awakening. You have forced us to remember it.\n\nOur missile carriers and fighter wings are deploying.
+WAR_DECLARE_RESPONSE_EAGER	;You attack a people of peace? Then witness what our cybernetic bodies and Solar Cell technology can do in war.\n\nThe Napoar did not forget how to fight. We chose not to.
+WAR_DECLARE_RESPONSE_NEUTRAL	;The Napoar are passive, not helpless.\n\nOur missile fleets will defend everything we have built since the Awakening.
+WAR_DECLARE_RESPONSE_SURPRISED	;War? Against the Napoar?\n\nWe who sought only coexistence and harmony?\n\nThis is a tragedy for the entire galaxy.
+WAR_DECLARE_REQUESTJOINT	;The Technocracy requests that you declare war on the {0}.\n\nThis request does not come easily from a peaceful people.
+WAR_DECLARE_REQUESTJOINT_ACCEPT	;At your request, we declare war on the {0}.\n\nMay this conflict end swiftly.
+WAR_DECLARE_REQUESTJOINT_REJECT	;The Napoar cannot declare war on the {0}.\n\nOur Awakening taught us to exhaust every alternative first.
+WAR_END	;The Technocracy proposes an immediate end to this war.\n\nEvery day of conflict is a betrayal of our Awakening.\n\nDo you agree?
+WAR_END_SUBJUGATIONDEMAND	;The Napoar will end this war if you accept subjugation.\n\nWe take no pleasure in dominion, but we cannot allow your aggression to continue unchecked.
+WAR_END_SUBJUGATIONOFFER	;The Napoar offer ourselves as subjects of your empire to end this war.\n\nSurvival serves the cause of eventual peace.\n\nDo you accept?
+WAR_END_ACCEPT	;Peace. The Technocracy is deeply relieved.\n\nLet us return to what the Napoar do best: building bridges, not burning them.
+WAR_END_REJECT	;No peace? Then the Napoar must continue to fight.\n\nBut know that every missile we fire grieves us.
+WAR_END_REQUESTOTHER	;The Napoar urge you to end your war with the {0}.\n\nPeace benefits all.
+WAR_END_REQUESTOTHER_ACCEPT	;At your urging, we will end our war with the {0}.
+WAR_END_REQUESTOTHER_REJECT	;We cannot end our conflict with the {0} at this time.\n\nSome situations require a resolution before peace is possible.
+GIFT_GIVE	;The Napoar send {0} credits.\n\nCoexistence is built one gesture at a time. Please accept this offering of friendship.
+GIFT_THANKS	;Your generosity warms our cybernetic hearts.\n\nThe Napoar value such gestures deeply.
+GIFT_PROPOSE	;You wish to offer a gift? The Technocracy is listening.\n\nWhat did you have in mind?
+WARNING	;A warning? The Napoar take all concerns seriously.\n\nPlease share what troubles you.
+WARNING_INTELLIGENCEMISSIONS	;The Technocracy has detected covert operations against our people.\n\nThe Napoar are transparent. We hide nothing. Espionage against us is unnecessary and harmful.\n\nPlease stop.
+WARNING_INTELLIGENCEMISSIONS_RESPONSE_FRIENDLY	;Covert missions? The Napoar do not conduct espionage.\n\nOur Awakening taught us the value of openness. This must be a misunderstanding.
+WARNING_INTELLIGENCEMISSIONS_RESPONSE_NEUTRAL	;The Technocracy will review this matter.\n\nTransparency is a core Napoar value.
+WARNING_INTELLIGENCEMISSIONS_RESPONSE_ANGRY	;We observe because your actions concern us.\n\nThe Napoar abandoned aggression, not vigilance. There is a difference.
+WARNING_ATTACKS	;Your attacks on Napoar vessels violate everything we stand for.\n\nWe who abandoned violence. We who seek only coexistence.\n\nStop. Please.
+WARNING_ATTACKS_RESPONSE_FRIENDLY	;This should not have happened. The Technocracy is horrified.\n\nWe will investigate and ensure this never occurs again.
+WARNING_ATTACKS_RESPONSE_NEUTRAL	;The Technocracy will investigate this incident.
+WARNING_ATTACKS_RESPONSE_ANGRY	;Our ships defended themselves. Even the Napoar will fight when cornered.\n\nOur Awakening taught us peace, not passivity.
+WARNING_REMOVEFORCESSYSTEM	;The Technocracy requests that you remove your military forces from the {0} system.\n\nYour presence there threatens the peaceful coexistence we have worked so hard to maintain.
+WARNING_REMOVEFORCESSYSTEM_RESPONSE_COMPLY	;The Technocracy sees no reason to withdraw from the {0} system.
+WARNING_REMOVEFORCESSYSTEM_RESPONSE_REFUSE	;We will comply. Our ships are leaving the {0} system.\n\nWe meant no provocation.
+WARNING_REMOVEFORCESSYSTEM_RESPONSE_NOFORCESPRESENT	;You must be mistaken. The Napoar have no military forces in your territory.

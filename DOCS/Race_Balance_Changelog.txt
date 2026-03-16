@@ -1,0 +1,911 @@
+Distant Worlds Universe Refreshed — Race Balance Changelog
+==========================================================
+
+This update introduces the first pass of race balance changes for DWU 
+Refreshed. The goal is to ensure every race feels distinct and has a 
+clear identity rooted in its lore, with meaningful strengths and 
+weaknesses that make each one interesting to play or encounter.
+
+
+DRUSHOCKA
+---------
+The Drushocka were significantly overtuned relative to their place in 
+the galaxy. Their troop strength exceeded even the Shakturi, which 
+didn't match their lore as slow, rock-like creatures with a feudal 
+society. They remain tough and durable, but are no longer the single 
+strongest ground force in the game.
+
+  - Troop Strength: 170 → 130
+  - Satisfaction Modifier: 60% → 30%
+  - Troop Maintenance Savings: 50% → 20%
+
+
+AKHEMAL
+-------
+The Akhemal machine-consciousness drones were statistically comparable 
+to the galaxy's most powerful military races despite their lore 
+positioning as one side of a bitter civil war. Their bonuses have been 
+trimmed to better reflect a race consumed by an endless conflict rather 
+than one thriving because of it.
+
+  - Troop Strength: 150 → 120
+  - Ship Maintenance Savings: 20% → 10%
+  - Troop Maintenance Savings: 20% → 10%
+  - War Weariness Attenuation: 20% → 10%
+
+
+MORTALEN
+--------
+The Mortalen are described in lore as "almost certainly the best 
+fighters in the galaxy," yet several less warlike races had higher 
+troop strength. This has been corrected. The Mortalen now have ground 
+combat prowess that matches their fearsome reputation.
+
+  - Troop Strength: 135 → 150
+  - War Weariness Attenuation: 20% → 30%
+
+
+SLUKEN
+------
+As close relatives of the Boskara and one of the galaxy's more 
+dangerous insectoid races, the Sluken were underperforming. They now 
+have improved fleet sustainability and a modest espionage capability 
+reflecting their intelligent and aggressive nature.
+
+  - Troop Strength: 120 → 130
+  - Ship Maintenance Savings: 0% → 10%
+  - Espionage Bonus: 0% → 10%
+
+
+SECURAN
+-------
+The Securan previously shared an identical resource bonus profile with 
+the Banoserit, despite the two races having completely different 
+cultures. The Securan resource profile has been reworked to reflect 
+their performing arts, culinary traditions, and hospitable nature.
+
+  - Resource bonuses reworked with new resource types
+  - New bonuses emphasize happiness, income, and population growth
+
+
+PARATIS
+-------
+The Paratis previously shared an identical resource bonus profile with 
+the Ketarov. Their resources have been reworked to reflect their 
+aquatic nature, missile weapons expertise, and competitive culture.
+
+  - Resource bonuses reworked with new resource types
+  - New bonuses emphasize weapons research, troop strength, and morale
+
+
+ZAKKAL
+------
+The Zakkal were mechanically a near-clone of Humans, sharing the same 
+resource profile and having no unique technology. As engineered 
+Human/Securan hybrids who survived exile on a harsh desert world, they 
+deserved their own identity. The Zakkal now have a unique special 
+component, improved reproduction reflecting their hybrid vigor, and a 
+distinct economic profile.
+
+  - NEW: Adaptive Genetics Lab — a unique medical center component 
+    reflecting their engineered hybrid biology (replaces the obsolete 
+    Lipid Host Medical Center, which was a leftover from removed 
+    content)
+  - Reproduction Rate: 1.17 → 1.26
+  - Resource Extraction Bonus: 10% → 15%
+  - Resource bonuses reworked with unique desert-survival themed types
+  - New bonuses emphasize population growth, construction speed, and 
+    development
+
+
+DESSEN
+------
+The Dessen lost access to the Lipid Host Medical Center (which was 
+legacy content from a removed race and never fit the Dessen thematically). 
+To compensate, their espionage and trade bonuses have been increased to 
+better reflect their lore as subtle manipulators who draw other races 
+into their orbit.
+
+  - Espionage Bonus: 20% → 30%
+  - Trade Bonus: 0% → 15%
+  - Special Component removed (was legacy content from a previous race)
+
+
+ATUUK
+-----
+Despite being a primitive race that rarely achieves spaceflight, the 
+Atuuk had one of the highest satisfaction modifiers in the game. This 
+has been reduced. They retain the highest reproduction rate in the 
+galaxy (1.4) as their primary strength, but their colonies are no 
+longer unusually happy for a technologically stagnant society.
+
+  - Satisfaction Modifier: 40% → 20%
+
+
+ZENOX
+-----
+The ancient Zenox are keepers of galactic history and secret knowledge, 
+yet their research bonus was no higher than many younger, less 
+intellectually focused races. Their research capabilities have been 
+improved to better reflect their deep scholarly traditions.
+
+  - Research Bonus: 10% → 20%
+
+
+LEMERESH
+--------
+The mysterious Lemeresh are one of the galaxy's oldest and most 
+powerful civilizations, yet their stat bonuses were modest for a race 
+that "most fear will be unequalled in power." Their research 
+capabilities and societal stability have been improved.
+
+  - Research Bonus: 10% → 20%
+  - Satisfaction Modifier: 0% → 10%
+
+
+JINTUS
+------
+The Jintus had the second highest reproduction rate in the galaxy, 
+behind only the Atuuk — a race whose lore explicitly emphasizes rapid 
+breeding. While the Jintus are prolific pack-dwellers, their 
+reproduction has been brought in line with other high-growth races.
+
+  - Reproduction Rate: 1.37 → 1.30
+
+
+CALEPH
+------
+The Caleph's carrier fighter tree is their core identity, but their 
+base race stats were overtuned for Tier C. Ship maintenance savings 
+and war weariness attenuation rivaled Tier B and even approached 
+Tier S races, with no lore justification for exceptional fleet 
+sustainability or war tolerance. These have been trimmed while 
+preserving their carrier specialization.
+
+  - Ship Maintenance Savings: 30% → 15%
+  - War Weariness Attenuation: 30% → 10%
+
+
+KETAROV
+-------
+The Ketarov Krusher gravity weapon was dealing more than double the 
+DPS of the standard Graviton Pulse at significantly longer range, 
+despite unlocking at a lower tech level. The damage has been reduced 
+to keep it distinct from the generic gravity path without being 
+overwhelmingly superior.
+
+  - Ketarov Krusher Damage: 65 → 50
+
+
+AMONKRIE
+--------
+The Amonkrie previously had access to the ShadowGhost ECM line 
+alongside the Kiadian. However, stealth and electronic warfare do 
+not fit their lore as paranoid xenophobic isolationists. They have 
+been removed from the ShadowGhost tech tree and instead given a 
+modest espionage bonus representing their vigilant, suspicious 
+counter-intelligence culture.
+
+  - Removed: Access to ShadowGhost ECM research line (now Kiadian 
+    exclusive)
+  - Espionage Bonus: 0% → 15%
+
+
+PARATIS (continued)
+-------------------
+The Paratis retained a 50% espionage bonus from their old 
+Ketarov-clone profile, which did not match their reworked identity 
+as competitive aquatic missile warriors. This has been redistributed 
+into fleet sustainability stats that better support their naval 
+combat playstyle.
+
+  - Espionage Bonus: 50% → 0%
+  - War Weariness Attenuation: 0% → 15%
+  - Ship Maintenance Savings: 0% → 10%
+
+
+ZAKKAL (continued)
+------------------
+The Adaptive Genetics Lab's medical effectiveness was excessively 
+high at 5.5x the standard medical bay, available from tech level 3. 
+It has been reduced to 3.5x — still a meaningful advantage reflecting 
+hybrid vigor, but no longer a dominant outlier.
+
+  - Adaptive Genetics Lab Effectiveness: 550 → 350
+
+
+==========================================================
+GOVERNMENT CHANGES
+==========================================================
+
+Four new government types have been added to better represent 
+the political cultures of races that were poorly served by 
+existing options. Preferred starting governments have also been 
+assigned to several previously-unassigned races based on lore.
+
+
+NEW GOVERNMENT: WARRIOR MERITOCRACY (ID 16)
+--------------------------------------------
+Leadership is earned through combat prowess, honor, and martial 
+achievement. Designed for the Mortalen, whose warrior code and 
+tribal leadership traditions had no proper government to match. 
+Military Dictatorship was the closest existing option, but it 
+represents authoritarian military control — not an honor-based 
+meritocracy where leaders prove themselves through combat.
+
+  Strengths: Low war weariness, high troop recruitment, low 
+  maintenance, moderate approval
+  Weaknesses: Below-average research and income
+  Leadership: Rare succession via combat challenge (coup), 
+  drawn from military pool
+  Assigned to: Mortalen (special + preferred)
+
+
+NEW GOVERNMENT: THEOCRATIC OLIGARCHY (ID 17)
+----------------------------------------------
+A priestly ruling class governs through spiritual authority, 
+with material wealth seen as divine favor. Designed for the 
+Ylta, whose lore centers on spiritual awakening and 
+wealth-as-ascension — a poor fit for Technocracy, which 
+represents science-driven meritocracy.
+
+  Strengths: High approval, good income, strong stability
+  Weaknesses: Below-average research (dogma), above-average 
+  corruption (priestly tithes)
+  Leadership: Rare, low-disruption succession from governor 
+  pool (priestly administrators)
+  Assigned to: Ylta (special + preferred, replaces Technocracy)
+
+
+NEW GOVERNMENT: ARENA REPUBLIC (ID 18)
+----------------------------------------
+Governance through formalized competition — political power is 
+won through structured contests of strategy, debate, and 
+intrigue. Designed for the Paratis, whose elaborate "Game" of 
+political maneuvering and competitive social displays was a 
+direct contradiction of Hive Mind (total collectivism).
+
+  Strengths: Balanced stats, good war weariness resistance, 
+  low maintenance
+  Weaknesses: Low stability (constant power struggles), 
+  below-average troop recruitment
+  Leadership: Frequent, low-disruption elections (The Game 
+  determines winners)
+  Assigned to: Paratis (special + preferred, replaces Hive Mind)
+
+
+NEW GOVERNMENT: CYBERNETIC COLLECTIVE (ID 19)
+-----------------------------------------------
+A technologically-networked society where cybernetic implants 
+enable partial consciousness sharing while preserving individual 
+identity. Designed for the XHumans, who "embrace cybernetic 
+implantation" and are "much more collectivist" than Humans, but 
+retain individual personalities, relationships, and ambitions — 
+neither a hive nor a standard democracy.
+
+  Strengths: Good research, low corruption (networked 
+  transparency), solid approval, high stability
+  Weaknesses: Below-average troop recruitment and population 
+  growth
+  Leadership: Moderate succession via networked consensus 
+  (election)
+  Assigned to: XHumans (special + preferred)
+
+
+PREFERRED STARTING GOVERNMENT ASSIGNMENTS
+------------------------------------------
+The following races previously had no preferred starting 
+government (random assignment). They have been given starting 
+governments that match their lore:
+
+  - Mortalen → Warrior Meritocracy (honor-based combat culture)
+  - Dhayut → Military Dictatorship (aggressive, treacherous, 
+    ruthless arachnids)
+  - Kiadian → Republic (careful evaluators, honor code, loyal 
+    allies, checks and balances)
+  - Lemeresh → Monarchy (insular, centralized, powerful 
+    ancient civilization)
+  - Amonkrie → Republic (governing groups with checks and 
+    balances)
+  - Zakkal → Republic (friendly, communal, adapted through 
+    collective ingenuity)
+
+
+==========================================================
+EMPIRE POLICY CHANGES
+==========================================================
+
+A comprehensive pass across all 46 race policy files to ensure 
+AI behavior matches race lore and identity. Previously, 30+ 
+races shared near-identical behavioral profiles, meaning the 
+galaxy's fiercest warriors, shrewdest merchants, and most 
+reclusive scholars all played essentially the same way. This 
+pass introduces meaningful behavioral differentiation.
+
+
+TRADE PRIORITY REDISTRIBUTION
+------------------------------
+Previously 35 of 46 races had TradePriority=4, making trade 
+behavior indistinguishable across the galaxy. The new spread:
+
+  TradePriority 4 (9 races): Ackdarian, Dessen, Haakonish, 
+    Human, Napoar, Riktoh, Securan, Teekan, Ugnari
+  TradePriority 3 (17 races): Banoserit, Caleph, Enton, 
+    Jintus, Ketarov, Kiadian, Paratis, Quameno, Shandar, 
+    Tairoshan, Tarapin, Visareen, Wekkarus, XHuman, Ylta, 
+    Zakkal, Zenox
+  TradePriority 2 (14 races): Abbidon, Atuuk, Boskara, 
+    Dhayut, Drushocka, Ikkuro, Khemal, Lemeresh, Mortalen, 
+    Naxxilian, Ortain, Phaerax, Sluken, Yor
+  TradePriority 1 (6 races): Akhemal, Amonkrie, Gizurean, 
+    Keskudon, Mechanoid, Shakturi
+
+
+ATUUK (Policy)
+--------------
+The friendly, primitive Atuuk had war willingness equal to 
+Humans, aggressive bombardment settings, and a sophisticated 
+military apparatus. Their AI now reflects a primitive society 
+that avoids war and seeks protectors.
+
+  - War Willingness: 3 → 1
+  - Colony Bombardment: 1 → 3 (Never bombard)
+  - Counter-Intelligence: 50% → 25%
+  - Armor Recruitment: 1.5 → 0.5
+  - Special Forces Recruitment: 1.5 → 0.5
+  - Alliance Priority: 1 → 3
+  - Subjugation Priority: 2 → 1
+  - Exploration Priority: 4 → 2
+
+
+MORTALEN (Policy)
+-----------------
+The best warriors in the galaxy had an identical behavioral 
+profile to Humans. Their AI now fights more aggressively, 
+values martial culture over trade, and never retreats.
+
+  - War Willingness: 3 → 3.5
+  - Trade Priority: 4 → 2
+  - Subjugation Priority: 2 → 3
+  - Alliance Priority: 1 → 2
+  - Battle Caution: 2 → 1 (fearless)
+  - Fleet Flee When: 4 → 5 (never flee)
+  - Invasion Overkill: 2 → 2.5
+  - Troop Garrison Level: 0.5 → 1
+  - Tourism Priority: 2 → 1
+
+
+HAAKONISH (Policy)
+------------------
+The galaxy's master merchants (Mercantile Guild) had an 
+identical profile to warrior races. Their AI now prioritizes 
+trade alliances and tourism over military ambitions.
+
+  - War Willingness: 3 → 1.5
+  - Alliance Priority: 1 → 3
+  - Tourism Priority: 1 → 3
+  - Diplomacy Gift Amount: 10000 → 20000
+
+
+KIADIAN (Policy)
+----------------
+The cautious genius strategists with a legendary honor code 
+had a generic behavioral profile. Their AI now fights 
+carefully, forms strong alliances, and never breaks treaties.
+
+  - War Willingness: 3 → 2
+  - Battle Caution: 2 → 3
+  - Alliance Priority: 2 → 3
+  - Break Treaty Willingness: 1 → 0.5
+  - Trade Priority: 4 → 3
+  - Counter-Intelligence: 50% → 60%
+  - Tourism Priority: 1 → 2
+
+
+YLTA (Policy)
+-------------
+The aggressive wealth-seeking spiritualists had a completely 
+generic profile. Their AI now aggressively pursues resources 
+and is willing to betray allies for material gain.
+
+  - War Willingness: 3 → 3.5
+  - Subjugation Priority: 2 → 3
+  - Break Treaty Willingness: 1 → 2
+  - Trade Priority: 4 → 3
+  - Restricted Resources Priority: 2 → 3
+
+
+ZAKKAL (Policy)
+---------------
+The friendly communal survivors were identical to aggressive 
+empires. Their AI now strongly prioritizes alliances and 
+diplomacy, avoids war, and properly colonizes desert worlds.
+
+  - War Willingness: 3 → 1.5
+  - Alliance Priority: 2 → 4
+  - Break Treaty Willingness: 1 → 0.5
+  - Trade Priority: 4 → 3
+  - Colonize Desert Priority: 2 → 4
+  - Colonize Continental Priority: 4 → 3
+  - Diplomacy Gift Amount: 10000 → 15000
+
+
+PARATIS (Policy)
+----------------
+The competitive schemers were set as passive as Zenox 
+scholars. Their AI now reflects a culture of intrigue and 
+political maneuvering.
+
+  - War Willingness: 1 → 2.5
+  - Break Treaty Willingness: 1 → 2
+  - Espionage When: 2 → 1 (more proactive spying)
+  - Trade Priority: 4 → 3
+  - Counter-Intelligence: 25% → 20% (offense over defense)
+
+
+LEMERESH (Policy)
+-----------------
+The secretive ancient civilization had oddly high treaty-
+breaking willingness. Their AI now reflects a powerful but 
+insular civilization that protects its homeworld.
+
+  - Break Treaty Willingness: 2 → 1
+  - War Willingness: 1 → 2
+  - Homeland Defense Priority: 2 → 3
+  - Protect Leader At All Costs: N → Y
+
+
+DESSEN (Policy)
+---------------
+The subtle manipulators had harassment disabled, limiting 
+their shadow war capabilities. Their AI now conducts 
+harassment campaigns and invests heavily in counter-intel.
+
+  - War Harassment: N → Y
+  - Counter-Intelligence: 33% → 45%
+  - Alliance Priority: 2 → 3
+
+
+ADDITIONAL POLICY DIFFERENTIATION
+----------------------------------
+The following races received targeted behavioral tweaks to 
+better match their lore:
+
+  Amonkrie: WarWill 1→1.5, TradePri 1, AlliPri 0.5, 
+    CntrInt 50%, HomeDef 3 (xenophobic isolationists)
+  Ackdarian: WarWill 1, AlliPri 3, TourPri 3 
+    (peaceful, friendly shipbuilders)
+  Boskara: InvOverkill 3, TourPri 0.5, BrkTrty 2 
+    (relentless slavers)
+  Dhayut: BrkTrty 3, InvOverkill 2.5, AlliPri 0.5, 
+    TourPri 0.5 (treacherous aggressors)
+  Gizurean: AlliPri 0.5, TourPri 0.5, BrkTrty 2, 
+    ResPri 2 (aggressive, unintelligent)
+  Ikkuro: SubjPri 3, CaptureShip 3, AlliPri 1 
+    (boarding specialists)
+  Naxxilian: SubjPri 3, CaptureShip 2 
+    (phaser/assault aggressors)
+  Shandar: WarWill 1, ExplPri 2, TourPri 3 
+    (laid-back volcanic loungers)
+  Securan: WarWill 1, TourPri 4, AlliPri 3 
+    (hospitality and performing arts)
+  Phaerax: WarWill 3.5, TourPri 0.5 
+    (war-ready military culture)
+  Sluken: TourPri 0.5, BrkTrty 2, AlliPri 1 
+    (dangerous insectoid aggressors)
+  Yor: ExplPri 4, SubjPri 3, AlliPri 0.5, TourPri 0.5 
+    (expansionist swarm)
+  Zenox: WarWill 0.5, BtlCaut 3, TourPri 2 
+    (cautious scholars)
+  Quameno: WarWill 0.5, BtlCaut 3, ResPri 4, TourPri 2 
+    (brilliant but fragile scientists)
+  XHuman: WarWill 3.5, BrkTrty 2 
+    (aggressive collectivists)
+  Wekkarus: WarWill 1, AlliPri 1, HomeDef 3 
+    (peaceful isolationist tech builders)
+  Tairoshan: AlliPri 4, TourPri 3, GiftAmt 20000 
+    (peaceful diplomats)
+  Jintus: AlliPri 4, GiftAmt 15000 
+    (alliance manipulators)
+
+COLONIZATION PRIORITY FIXES
+----------------------------
+  - Banoserit: Continental 4→3, Desert 3→4 
+    (Desert native, was prioritizing wrong planet type)
+  - Zakkal: Continental 4→3, Desert 2→4 
+    (Desert native, was prioritizing wrong planet type)
+
+
+==========================================================
+DESIGN TEMPLATE CHANGES
+==========================================================
+
+A targeted pass across 14 races (33 template files) to ensure 
+ship designs reflect stated weapon preferences and racial 
+identity. Primary weapon types were already correct for most 
+races; these changes focus on reinforcing unique specializations 
+and breaking cookie-cutter loadouts where multiple races shared 
+identical templates despite different lore.
+
+
+KIADIAN — ECM Specialist Identity
+-----------------------------------
+The Kiadian's entire identity revolves around the ShadowGhost 
+ECM, yet their ship templates had exactly the same ECM count 
+(1) as every other race. All five military hull classes now 
+have increased CountermeasuresSystem (1→2), with capitals and 
+cruisers gaining ScannerJammer=1. Torpedo counts slightly 
+reduced to compensate for added ECM size.
+
+  - All military ships: CountermeasuresSystem 1 → 2
+  - Capital ship: ScannerJammer 0 → 1, Torpedo 20 → 18
+  - Cruiser: ScannerJammer 0 → 1, Torpedo 10 → 8
+
+
+SHAKTURI — Missile Support Added
+-----------------------------------
+The Shakturi policy file lists Missiles as a tech focus, but 
+zero Shakturi ship templates included any missile slots. 
+Missiles have been added to capital ships and cruisers, with 
+torpedo counts slightly reduced to maintain total size balance.
+
+  - Capital ship: Missile 0 → 5, Torpedo 24 → 20
+  - Cruiser: Missile 0 → 3, Torpedo 12 → 10
+
+
+CALEPH & YLTA — Fighter Supremacy
+------------------------------------
+These races share an exclusive fighter tech tree 
+(Wyrm→Wyvern→Dragoon) but their templates were only marginally 
+better than generic fighter-capable races. Carrier fighter bays 
+increased from 10 to 12, capital ships and cruisers carry more 
+fighters, and point defense increased to protect fighter wings.
+
+Caleph capital ships also shifted from torpedo-primary to 
+fighter-primary (Torpedo 10→6, FighterBay 4→5), reinforcing 
+their carrier identity.
+
+  - Both races: Carrier FighterBay 10 → 12, Carrier PD 5 → 7
+  - Both races: Capital FighterBay → 5, Capital PD → 6
+  - Both races: Cruiser FighterBay → 3
+  - Caleph capital: Torpedo 10 → 6 (fighter-primary shift)
+
+
+CALEPH/SECURAN/TAIROSHAN — Cookie-Cutter Broken
+--------------------------------------------------
+All three shared identical Torp=10/FighterBay=4 capital ships 
+despite very different identities. Now differentiated:
+
+  - Caleph: Fighter-primary (see above)
+  - Securan: Fewer weapons, more shields and PD (reluctant 
+    fighters). Capital Torp 10→7, FBay 4→3, Shields 15→20, 
+    PD 4→6. Cruiser Shields 10→14.
+  - Tairoshan: Defensive orientation. Capital PD 4→7, 
+    Shields 15→18.
+
+
+GIZUREAN/SLUKEN — Cookie-Cutter Broken
+-----------------------------------------
+Both shared identical Beam=50/Misl=5/Bomb=3 capital ships. 
+Now differentiated:
+
+  - Gizurean: Heavier bombardment (brute force aggressors). 
+    Capital Bomb 3→5, Beam 50→45. Cruiser Bomb 2→3.
+  - Sluken: Added ion support (intelligence advantage over 
+    Gizurean). Capital IonCannon 0→3, Beam 50→47. 
+    Cruiser IonCannon 0→2.
+
+
+RIKTOH — Missile Specialist Focus
+------------------------------------
+Shared identical loadout with Humans despite different 
+identity. Riktoh now leans more heavily into pure missiles 
+as mercantile missile traders.
+
+  - Capital: Beam 10→5, Missile 30→35
+  - Cruiser: Beam 6→3, Missile 12→15
+
+
+IKKURO/NAXXILIAN — Boarding vs Firepower
+------------------------------------------
+Both shared identical Phaser=35/AssaultPod=4 capital ships. 
+Now differentiated by emphasis:
+
+  - Ikkuro: More assault pods (boarding specialists). 
+    Capital Aslt 4→6, Phas 35→33. Cruiser Aslt 2→3. 
+    Destroyer Aslt 0→1.
+  - Naxxilian: More raw phaser firepower (direct aggressors). 
+    Capital Phas 35→40. Cruiser Phas 20→24.
+
+
+PHAERAX — Assault Pod Increase
+---------------------------------
+Had fewer assault pods (6 fleet total) than other boarding 
+races (8+) despite "Beams and Assault Pods" lore.
+
+  - Capital: AssaultPod 3 → 5
+  - Cruiser: AssaultPod 2 → 3
+
+
+ATUUK — Primitive Military Reduction
+---------------------------------------
+Tier D primitive bears had full-size railgun loadouts on 
+capital ships. Weapon counts and armor reduced to reflect 
+technological limitations.
+
+  - Capital: RailGun 22→15, Armor 40→30
+  - Cruiser: RailGun 15→10, Armor 30→25
+  - Destroyer: RailGun 8→5
+
+
+DESSEN — Shadow Warfare Enhancement
+--------------------------------------
+Already had StealthCloak=1 on capitals and cruisers (good). 
+Added ScannerJammer=1 to reinforce shadow warfare identity 
+alongside their espionage-focused policy changes.
+
+  - Capital: ScannerJammer 0 → 1
+  - Cruiser: ScannerJammer 0 → 1
+
+
+==========================================================
+PIRATE POLICY CHANGES
+==========================================================
+
+A full overhaul of all 46 pirate faction policy files. 
+Previously, 29 of 37 working pirate files shared identical 
+fleet compositions and nearly identical behavioral settings, 
+and 9 files were completely broken (all values empty). Pirate 
+factions now fall into four distinct archetypes based on 
+racial lore, with differentiated combat aggressiveness, fleet 
+composition, economic strategy, and tech focuses.
+
+
+TIER 1: BROKEN FILE REPAIRS
+-----------------------------
+Nine pirate policy files had all values blank (the game would 
+fall back to a generic DEFAULT template with zero tech 
+focuses). These have been fully rebuilt:
+
+  Akhemal, Amonkrie, Dessen, Drushocka, Khemal, Lemeresh, 
+  Napoar, Ortain, Zakkal
+
+
+TIER 2: TECH FOCUS CORRECTIONS
+---------------------------------
+Eleven pirate factions were researching weapons that didn't 
+match their race's actual weapon preferences. All pirate tech 
+focuses now align with the race's lore-stated weapons:
+
+  Jintus: Shields/DmgCtrl/Missiles → RailGuns/Armor/Shields
+  Keskudon: RailGuns/Shields → Torpedoes/Bombardment
+  Paratis: AreaWpn/Phasers → Missiles/Armor
+  Phaerax: Shields/Missiles → Beams/Assault
+  Riktoh: Beams/MainEng → Missiles/Shields
+  Tairoshan: DmgCtrl/Recreat → Torpedoes/Fighters
+  Tarapin: Medicine/Ion → Missiles/Fighters
+  Visareen: Phasers → Missiles
+  XHuman: RailGuns → GravBeam/GravArea
+  Ylta: GravBeam/Tractor → Beams/Fighters
+  Yor: MainEng → Phasers/Bombardment
+
+
+TIER 3: BEHAVIORAL ARCHETYPES
+--------------------------------
+All pirate factions have been assigned to one of four 
+behavioral archetypes based on racial lore:
+
+AGGRESSIVE RAIDERS (15 races)
+  Violent pirate factions that fight hard, capture ships 
+  aggressively, harass targets, and build larger fleets. They 
+  bid on attack missions but refuse smuggling contracts.
+
+  Profile: WarWill=2+, FleeWhen=4 (shields 20%), 
+  MilConstruction=High, CaptureShip=Always, Harass=Y, 
+  FleetSize=14, BiggerShips (Cap=10%, Cru=20%)
+
+  Races: Akhemal, Boskara, Dhayut, Drushocka, Gizurean, 
+  Keskudon, Mortalen, Naxxilian, Phaerax, Shakturi, Sluken, 
+  XHuman, Yor
+
+  Notable extras: Mortalen FleeWhen=5 (never), Dhayut 
+  BreakTreaty=3, Boskara/Keskudon/Akhemal enslave 
+  populations, Shakturi exterminate
+
+
+MERCENARY CONTRACTORS (11 races)
+  Balanced pirate factions that take attack and defense 
+  contracts, accept smuggling missions, and fight competently 
+  but disengage at moderate damage.
+
+  Profile: WarWill=1.5, FleeWhen=3 (shields 50%), 
+  MilConstruction=Normal, BidAttack=Y, BidDefend=Y, 
+  FleetSize=12, BalancedShips (Fri=24%, Des=18%)
+
+  Races: Amonkrie, Caleph, Human, Ikkuro, Khemal, Kiadian, 
+  Lemeresh, Ortain, Paratis, Ylta
+
+  Notable extras: Caleph/Ylta build more carriers, Ikkuro 
+  always captures ships (boarding specialists), Kiadian 
+  higher research priority, Lemeresh higher military 
+  construction (powerful ancients), Paratis BreakTreaty=2
+
+
+SMUGGLER NETWORKS (9 races)
+  Economically-focused pirate factions that avoid combat, 
+  invest heavily in smuggling infrastructure, and flee at the 
+  first sign of trouble. They accept defense contracts but not 
+  attack contracts.
+
+  Profile: WarWill=0.5, FleeWhen=2 (attacked), 
+  MilConstruction=None, SmuggleLevel=1.5 (high), 
+  TradePri=3, FleetSize=8, SmallShips (Fri=28%, Esc=22%)
+
+  Races: Banoserit, Dessen, Haakonish, Jintus, Ketarov, 
+  Riktoh, Tairoshan, Teekan, Ugnari
+
+  Notable extras: Dessen uses espionage/sabotage anytime 
+  (shadow ops), Riktoh TradePri=4 (most mercantile pirate), 
+  Tairoshan high diplomacy gifts (15000), Jintus/Tairoshan 
+  seek alliances
+
+
+OPPORTUNISTIC SCAVENGERS (15 races)
+  Timid pirate factions that flee early, operate tiny fleets 
+  of small ships, and grab whatever they can. They don't bid 
+  on missions and prefer to operate independently.
+
+  Profile: WarWill=0.5, FleeWhen=2 (attacked), 
+  MilConstruction=None, BidAttack=N, BidDefend=N, 
+  FleetSize=6, TinyShips (Fri=30%, Esc=25%, Cap=3%)
+
+  Races: Abbidon, Ackdarian, Atuuk, Enton, Mechanoid, 
+  Napoar, Quameno, Securan, Shandar, Tarapin, Visareen, 
+  Wekkarus, Zakkal, Zenox
+
+  Notable extras: Quameno ResearchPri=3 (even pirate 
+  Quameno prioritize science), Securan TourismPri=3 
+  (hospitality even as pirates), Zenox ResearchPri=2
+
+
+==========================================================
+PIRATE DESIGN TEMPLATE CHANGES
+==========================================================
+
+A full overhaul of pirate ship design templates across all 46 
+races (493 files affected). Previously, 12 races had no pirate 
+templates at all, and the remaining 34 races shared one of six 
+near-identical weapon loadouts with no secondary weapons, no 
+racial flavor, and no archetype differentiation.
+
+
+TIER 1: MISSING PIRATE TEMPLATES CREATED (12 races)
+------------------------------------------------------
+The following races had no pirate/ subfolder in their design 
+templates, forcing the game to fall back to empire templates 
+that weren't tuned for pirate gameplay. Full pirate template 
+sets (28 files each) have been created:
+
+  Banoserit (from Ugnari base), Dessen (from Dhayut), 
+  Enton (from Haakonish), Lemeresh (from Ikkuro), 
+  Mechanoid (from Gizurean), Napoar (from Mortalen), 
+  Ortain (from Jintus), Quameno (from Ketarov), 
+  Shakturi (from Boskara), Wekkarus (from Sluken), 
+  Zakkal (from Jintus), Zenox (from Kiadian)
+
+
+TIER 2: PRIMARY WEAPON FIX
+-----------------------------
+  - Amonkrie: Changed from Beams to Railguns+Missiles 
+    (matching lore and policy tech focus)
+
+
+TIER 3: WEAPON DIFFERENTIATION & SECONDARY WEAPONS
+-----------------------------------------------------
+All 46 pirate factions now have unique weapon loadouts on 
+capitalships, cruisers, destroyers, frigates, and escorts. 
+Each loadout includes the race's lore-appropriate primary 
+weapon, secondary weapons where lore specifies them, and 
+pirate-appropriate boarding equipment (assault pods and 
+tractor beams) scaled to the pirate archetype.
+
+Secondary weapons added where previously missing:
+  - Boskara/Keskudon/Gizurean/Sluken: Bombardment weapons
+  - Akhemal: Bombardment, Area, Ion support
+  - Drushocka: Area weapons, Ion cannons, Gravity Area
+  - XHuman: Gravity Area weapons
+  - Haakonish/Ketarov: Area weapons
+  - Abbidon: Area, Ion support
+  - Sluken: Ion cannons (intelligence edge)
+  - Teekan/Zenox: Ion cannon support
+  - Shakturi: Missile support (matching policy)
+
+Fighter bays added to capitalships for fighter races:
+  - Caleph, Ylta, Mortalen: FighterBay=3-4 on capitals
+  - Securan, Tairoshan, Shandar, Tarapin, Napoar, Zakkal: 
+    FighterBay=2 on capitals
+  - Tairoshan/Tarapin pirate carriers fixed (were 0 FBay)
+
+Archetype-scaled loadouts:
+  - Raiders (Boskara, Dhayut, etc): Heavier weapons, more 
+    assault pods (5-6), more tractor beams
+  - Mercenaries (Human, Kiadian, etc): Balanced loadouts, 
+    standard assault pods (4), tractor beams
+  - Smugglers (Haakonish, Dessen, etc): Lighter weapons, 
+    fewer assault pods (3), stealth on Dessen
+  - Scavengers (Atuuk, Zenox, etc): Lightest weapons, 
+    minimal assault pods (3), smallest ship counts
+
+Special pirate identity features:
+  - Kiadian pirates: ECM=2 + ScannerJammer=1 (ECM identity)
+  - Dessen pirates: StealthCloak=1 + ScannerJammer=1 
+    (shadow warfare)
+  - Ikkuro/Khemal pirates: Extra assault pods (boarding 
+    specialists)
+  - Phaerax pirates: 6 assault pods on capitalship 
+    (assault focus)
+  - Atuuk pirates: Reduced weapon counts (primitive)
+
+
+PIRATE DEFAULT PLAYSTYLE ALIGNMENT
+------------------------------------
+The game applies hardcoded behavioral modifiers to pirate 
+factions based on the PirateDefaultPlaystyle field in each 
+race file (0=Balanced, 1=Raider, 2=Mercenary, 3=Smuggler). 
+Twenty races had a playstyle setting that conflicted with 
+their pirate policy archetype, meaning the engine's built-in 
+modifiers were fighting the policy tuning. All 20 have been 
+aligned so the engine reinforces the intended behavior.
+
+Our SCAVENGER archetype maps to Balanced (0), as the game 
+has no dedicated Scavenger option.
+
+  Akhemal:    Mercenary → Raider
+  Atuuk:      Mercenary → Balanced
+  Banoserit:  Balanced  → Smuggler
+  Dessen:     Balanced  → Smuggler
+  Gizurean:   Mercenary → Raider
+  Human:      Balanced  → Mercenary
+  Ikkuro:     Balanced  → Mercenary
+  Jintus:     Mercenary → Smuggler
+  Khemal:     Balanced  → Mercenary
+  Kiadian:    Balanced  → Mercenary
+  Lemeresh:   Balanced  → Mercenary
+  Napoar:     Smuggler  → Balanced
+  Paratis:    Balanced  → Mercenary
+  Securan:    Smuggler  → Balanced
+  Shakturi:   Balanced  → Raider
+  Shandar:    Smuggler  → Balanced
+  Visareen:   Mercenary → Balanced
+  XHuman:     Balanced  → Raider
+  Ylta:       Smuggler  → Mercenary
+
+
+LEGENDARY PIRATE PLAYSTYLE & RAIDER FLEET ADJUSTMENT
+-------------------------------------------------------
+Three apex-tier races that can spawn as pirate factions 
+have been assigned the Legendary playstyle to create 
+elite-tier pirate threats:
+
+  Boskara:   Raider    → Legendary
+  Keskudon:  Raider    → Legendary
+  Mortalen:  Raider    → Legendary
+
+Their pirate policies have been adjusted to leverage 
+Legendary's all-rounder bonuses:
+  - All three: AcceptSmugglingMissions enabled (Legendary 
+    gives +50% smuggling income)
+  - All three: BidOnDefendMissions enabled (can do 
+    everything)
+  - Mortalen retains FleeWhen=5 (never retreat)
+
+Additionally, all 15 Raider-archetype pirates had their 
+FleetTypicalSize reduced from 14 to 12. This offsets the 
+Raider playstyle's +10% maintenance penalty on both state 
+and private ships, preventing economic collapse from 
+unsustainably large fleets. Affected races:
+
+  Akhemal, Boskara, Dhayut, Drushocka, Gizurean, 
+  Keskudon, Lemeresh, Mortalen, Naxxilian, Phaerax, 
+  Shakturi, Sluken, XHuman, Yor (Ylta already at 12)
+

@@ -94,7 +94,7 @@ ResearchIndustryFocus				;1
 ResearchPriority							;3
 TradePriority								;2
 AlliancePriority							;1
-SubjugationPriority							;2
+SubjugationPriority							;3
 TourismPriority								;1
 ExplorationPriority							;4
 WarWillingness								;3

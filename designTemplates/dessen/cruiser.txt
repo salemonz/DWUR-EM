@@ -44,7 +44,7 @@ ProximityArray	;1
 Reactor	;2
 RecreationCenter	;0
 ResourceProfileSensor	;0
-ScannerJammer	;0
+ScannerJammer	;1
 Shields	;8
 StealthCloak	;1
 TraceScanner	;0

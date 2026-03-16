@@ -92,7 +92,7 @@ ColonizeRuinsPriority							;2
 ControlRestrictedResourcesPriority					;2
 ResearchIndustryFocus							;0
 ResearchPriority							;3
-TradePriority								;4
+TradePriority								;3
 AlliancePriority							;2
 SubjugationPriority							;2
 TourismPriority								;2

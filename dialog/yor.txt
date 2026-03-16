@@ -1,47 +1,47 @@
 'Distant Worlds - dialogue - Version 1.9.5.10 - Modded by the Distant Worlds Mod Editor by Sabranan
 
-PIRATE_PROTECTIONPROPOSE	;You are scared of our power? We can ensure the safety of all your ships while travelling through our area.\n\nThe price for six months protection is our best offer.
-PIRATE_PROTECTIONPROPOSEINITIATE	;It can be dangerous around these parts.\n\nYou are lucky, we can ensure your safety for the small sum below. This will last for six months.\n\nWhat do you say?
-PIRATE_PROTECTIONACCEPTRESPONSE	;A very wise choice!\n\nWe can guarantee that none of your ships will suffer any 'unfortunate accidents'.\n\nUntil our next fee is due anyway...
-PIRATE_PROTECTIONREJECTRESPONSE	;Most unwise. Without payment we cannot ensure your ships safety.\n\nMaybe you should reconsider?
-PIRATE_PROTECTIONALREADYPAID	;We admire your eagerness, but you have already paid us protection.\n\nCome back when your current protection period expires.\n\nWe will gladly accept further payment then
-PIRATE_ATTACKOFFER_SINGLEEMPIRE	;Are the {0} giving you strife? If you like, we could make life hard for them...\n\nWe would keep it a secret of course.\n\nAll that we ask for this service is a small payment of {1} credits.\n\nWhat do you say?
-PIRATE_ATTACKCOMMENCE	;An excellent way to spend your money!\n\nOur attacks on the {0} will begin at once!
-GREETING_INTRODUCTION	;We are the {0}.\n\nWe seek to spread throughout this Galaxy, do not get in our way with this.
-GREETING_FRIENDLY	;What scheme for conquest have you come to share with us, friend?
-GREETING_NEUTRAL	;Explain your presence before us.
-GREETING_ANGRY	;You come to speak with us, fools?\n\nWhat pacifying offer do you have for us?
-OFFER_FREETRADE	;Will you submit to a Free Trade Agreement with us?\n\nBoth of our economies will benefit greatly. And we can hold off using your planets for now.\n\nWhat do you say?
-FREETRADE_ACCEPT	;A Free Trade Agreement would be very useful. We accept.
-FREETRADE_REJECT	;No, we are not interested in a Free Trade Agreement.\n\nWe have other plans for you...
-CANCELTREATY	;Our {0} with you is now terminated.\n\nYou are beginning to be a pest...
-CANCELTREATY_RESPONSE_FRIENDLY	;We used to like you.\n\nBut perhaps we misjudged matters...
-CANCELTREATY_RESPONSE_NEUTRAL	;Very well then. Your insult has been noted
-CANCELTREATY_RESPONSE_ANGRY	;Good, good. This treaty was getting in the way of our plans anyway
-TREATY_PROPOSAL	;What exactly are you proposing?
-TREATY_ACCEPTRESPONSE	;Excellent!\n\nWe hope this will further our cause.
-TREATY_REJECTRESPONSE	;Hmmm...\n\nBecoming an obstacle for us is not in your interest.
-TRADESANCTIONS_IMPOSE	;We are sick of our economy benefiting you.\n\nWe are imposing Trade Sanctions on you!
-TRADESANCTIONS_IMPOSE_RESPONSE_ANGRY	;We seethe with fury at you!\n\nDo not think that you are strong enough to challenge us - you are not
-TRADESANCTIONS_IMPOSE_RESPONSE_NEUTRAL	;If we cared about this, we might be angry.\n\nBut we do not, so we are not
-TRADESANCTIONS_IMPOSE_RESPONSE_SURPRISED	;We admit that your action has surprised us.\n\nBut thank you for identifying yourself as an enemy for us.\n\nBe assured that we will deal with you when we are ready...
-TRADESANCTIONS_LIFT	;We're lifting our Trade Sanctions against you.\n\nYou appear to have become much less of a problem. Lesson learned for you.
-TRADESANCTIONS_LIFT_RESPONSE	;This seems to matter greatly to you.\n\nBut not to us.
-WAR_DECLARE	;You stand in our way: we declare WAR on you!\n\nYou will submit or die, you decide.
-WAR_DECLARE_RESPONSE_EAGER	;How convenient we were just about to declare war on you!\n\nAnd now you must die...
-WAR_DECLARE_RESPONSE_NEUTRAL	;How brave of you - daring to take us on!\n\nOf course, bravery and foolishness are closely related.\n\nVery closely, in this case
-WAR_DECLARE_RESPONSE_SURPRISED	;You are full of surprises!\n\nBut we always welcome a chance to rid ourselves of an obstacle.
-WAR_END	;It is time for this war to end. We will complete your assimilation later.\n\nWhat do you say?
-WAR_END_ACCEPT	;For once we agree with you - this war should end.\n\nOur forces are standing down
-WAR_END_REJECT	;When we feel you are out of our way, which isn't yet.\n\nThe war goes on.
-GIFT_GIVE	;We have a gift for you of {0} credits.\n\nRemember this.
-GIFT_THANKS	;Thank you for your gift.\n\nWe will see that it goes to good use...
-WARNING	;You want to warn us?\n\nGo ahead and waste your words on us.
-WARNING_INTELLIGENCEMISSIONS	;We know of your covert missions against us.\n\nBe warned that we can give you a lesson in treachery that you will never forget...\n\nStop your missions now, while you still can.
-WARNING_INTELLIGENCEMISSIONS_RESPONSE_FRIENDLY	;Convert missions against you? How shocking.
-WARNING_INTELLIGENCEMISSIONS_RESPONSE_NEUTRAL	;Don't worry. That's just our routine surveillance on your empire.\n\nNothing sinister to be concerned about
-WARNING_INTELLIGENCEMISSIONS_RESPONSE_ANGRY	;Convert missions? That would typically indicate preparations for war.\n\nBut surely that is not the case here. So don't worry about it...
-WARNING_ATTACKS	;Stop your blatant attacks on our ships and bases!\n\nThese actions put you on very dangerous ground. We warn you to stop now.
-WARNING_ATTACKS_RESPONSE_FRIENDLY	;Attacks on you? We are so upset about this.
-WARNING_ATTACKS_RESPONSE_NEUTRAL	;Attacks on YOU?!\n\nNo, no - our ships were defending themselves from attacks by your forces.\n\nPlease don't do that again.
-WARNING_ATTACKS_RESPONSE_ANGRY	;Attacks?\n\nHahaha. The worm wants us to remove the hook?\n\nRemove your presence before my amusement turns to wrath.
+PIRATE_PROTECTIONPROPOSE	;Yor swarm protects your ships. You pay. Simple.\n\nFee shown below. Six months.
+PIRATE_PROTECTIONPROPOSEINITIATE	;Space belongs to the Yor. All of it. Eventually.\n\nBut for fee shown below, your ships can pass through. For now.\n\nPay?
+PIRATE_PROTECTIONACCEPTRESPONSE	;Good. Your ships will not be consumed.\n\nUntil payment ends. Then we will see.
+PIRATE_PROTECTIONREJECTRESPONSE	;No pay. No protection.\n\nYor swarm is everywhere. You will learn this.
+PIRATE_PROTECTIONALREADYPAID	;Already paid. Yor remember.\n\nCome back when time runs out.
+PIRATE_ATTACKOFFER_SINGLEEMPIRE	;The {0} are in the way. Yor can remove them for you.\n\nSecret. Quiet. Yor spread, {0} disappear.\n\n{1} credits. Yes?
+PIRATE_ATTACKCOMMENCE	;Payment received. Yor swarm moving against {0}.\n\nThey will not see us until it is too late. Yor are everywhere.
+GREETING_INTRODUCTION	;We are the {0}.\n\nWe spread. We grow. We fill every empty world.\n\nDo not get in our way.
+GREETING_FRIENDLY	;You do not block the swarm. This is good.\n\nWhat do you want?
+GREETING_NEUTRAL	;Speak. The swarm listens.\n\nBriefly.
+GREETING_ANGRY	;You are in our way.\n\nMove, or be moved.
+OFFER_FREETRADE	;Yor propose trade. Your technology interests us.\n\nWe will study it. Closely.\n\nFree Trade?
+FREETRADE_ACCEPT	;Trade accepted. Yor will learn much from your technology.\n\nThank you for sharing. Whether you meant to or not.
+FREETRADE_REJECT	;No trade. The Yor will acquire what we need anyway.\n\nWe always do.
+CANCELTREATY	;The {0} is ended.\n\nThe swarm has new priorities. New worlds to fill.
+CANCELTREATY_RESPONSE_FRIENDLY	;You leave the Yor? Unwise.\n\nThe swarm remembers who blocks our path and who does not.
+CANCELTREATY_RESPONSE_NEUTRAL	;The swarm does not care about treaties.\n\nOnly about spreading.
+CANCELTREATY_RESPONSE_ANGRY	;Good. Treaties slow the swarm.\n\nNow nothing holds us back.
+TREATY_PROPOSAL	;Treaty? The swarm will consider.\n\nIf it helps us spread, we accept. If not, we do not.
+TREATY_ACCEPTRESPONSE	;The swarm accepts.\n\nYour technology will be very useful to us. We look forward to studying it.
+TREATY_REJECTRESPONSE	;No. This does not help the swarm spread.\n\nThe Yor have no use for it.
+TRADESANCTIONS_IMPOSE	;Yor cut trade with you.\n\nYou have nothing left that the swarm needs. We have already copied what was useful.
+TRADESANCTIONS_IMPOSE_RESPONSE_ANGRY	;Sanctions? The Yor do not trade. We take.\n\nYour sanctions change nothing.
+TRADESANCTIONS_IMPOSE_RESPONSE_NEUTRAL	;The swarm does not depend on your economy.\n\nWe spread regardless.
+TRADESANCTIONS_IMPOSE_RESPONSE_SURPRISED	;Why? The Yor did nothing wrong.\n\nWe only wanted your planets. And your technology. Is that so bad?
+TRADESANCTIONS_LIFT	;Trade resumes.\n\nThe Yor have more to learn from your technology. Continue providing it.
+TRADESANCTIONS_LIFT_RESPONSE	;Your trade returns. Good.\n\nThe swarm accepts. More technology to study.
+WAR_DECLARE	;You stand in the way of the swarm. WAR.\n\nYor Stinger Beams are charged. Our bombardment bays are loaded.\n\nYou will submit or you will be removed. The swarm decides.
+WAR_DECLARE_RESPONSE_EAGER	;War! The swarm welcomes this.\n\nMore planets to claim. More technology to take.\n\nThe Yor spread through conquest as easily as colonization.
+WAR_DECLARE_RESPONSE_NEUTRAL	;You attack the Yor swarm?\n\nFor every one of us you destroy, ten more emerge from the warrens.\n\nYou cannot win against numbers.
+WAR_DECLARE_RESPONSE_SURPRISED	;War? The Yor did not seek this.\n\nBut the swarm adapts. Your worlds will be ours regardless.
+WAR_END	;The swarm has found other directions to expand.\n\nThis war can pause. For now.\n\nAgree?
+WAR_END_ACCEPT	;War ends. The swarm redirects.\n\nThere are other empty worlds waiting to be filled.
+WAR_END_REJECT	;No. Your worlds are not empty yet.\n\nWhen they are, the war will end. Not before.
+GIFT_GIVE	;Yor send {0} credits.\n\nThe swarm does not understand generosity. But this serves our expansion.
+GIFT_THANKS	;The swarm accepts your credits.\n\nMore resources for more colonies. Good.
+WARNING	;Warning? For the Yor?\n\nThe swarm listens.
+WARNING_INTELLIGENCEMISSIONS	;Yor have found your spies.\n\nWe do not understand why you spy. We hide nothing.\n\nWe spread. That is all we do. Stop interfering.
+WARNING_INTELLIGENCEMISSIONS_RESPONSE_FRIENDLY	;The Yor do not spy. We observe.\n\nWe observe everything. Your technology especially.
+WARNING_INTELLIGENCEMISSIONS_RESPONSE_NEUTRAL	;The swarm will review its activities.\n\nSome drones may have wandered into your territory. They do that.
+WARNING_INTELLIGENCEMISSIONS_RESPONSE_ANGRY	;Yes. The Yor study you. We study everyone.\n\nYour technology will be ours eventually. This is simply preparation.
+WARNING_ATTACKS	;You attack the Yor swarm?\n\nFor every ship you destroy, we build five more.\n\nStop. Or do not. The outcome is the same.
+WARNING_ATTACKS_RESPONSE_FRIENDLY	;Yor drones acted without central direction.\n\nThe swarm will recall them. Probably.
+WARNING_ATTACKS_RESPONSE_NEUTRAL	;Some drones are more aggressive than others.\n\nThe swarm will investigate.
+WARNING_ATTACKS_RESPONSE_ANGRY	;Your ships occupied space the Yor intend to fill.\n\nThey were removed. This is what the swarm does.

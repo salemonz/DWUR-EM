@@ -789,22 +789,22 @@ PARENTS			;176, N
 PROJECT			;178, Basic ShadowGhost, 2, 6, 		2, 2, 0, 2.8,
 COMPONENTS		;87
 PARENTS			;182, N
-ALLOWED RACES	;Kiadian, Amonkrie
+ALLOWED RACES	;Kiadian
 
 PROJECT			;179, Enhanced ShadowGhost, 3, 6, 		2, 2, 0, 5.2,
 COMPONENT IMPROVEMENTS	;87, 3, 35, 0, 0, 0, 0, 0, 0,
 PARENTS			;178, N
-ALLOWED RACES	;Kiadian, Amonkrie
+ALLOWED RACES	;Kiadian
 
 PROJECT			;180, Advanced ShadowGhost, 4, 6, 		2, 2, 0, 8.0,
 COMPONENT IMPROVEMENTS	;87, 4, 50, 0, 0, 0, 0, 0, 0,
 PARENTS			;179, N
-ALLOWED RACES	;Kiadian, Amonkrie
+ALLOWED RACES	;Kiadian
 
 PROJECT			;181, Optimized ShadowGhost, 6, 6, 		2, 2, 0, 14.7,
 COMPONENT IMPROVEMENTS	;87, 6, 60, 0, 0, 0, 0, 0, 0,
 PARENTS			;180, N
-ALLOWED RACES	;Kiadian, Amonkrie
+ALLOWED RACES	;Kiadian
 
 PROJECT			;182, Countermeasures, 1, 4, 		2, 2, 0, 0.0,
 COMPONENTS		;84
@@ -2428,9 +2428,10 @@ PROJECT			;582, Advanced Self Righting, 4, 31, 		2, 17, 0, 8.0,
 COMPONENT IMPROVEMENTS	;136, 4, 420, 0, 0, 0, 0, 0, 0,
 PARENTS			;581, N
 
-PROJECT			;583, Host Healing Centers, 3, 32, 		2, 8, 0, 5.2,
+PROJECT			;583, Adaptive Genetics Lab, 3, 32, 		2, 8, 0, 5.2,
 COMPONENTS		;137
 PARENTS			;457, N
+ALLOWED RACES	;Zakkal
 
 PROJECT			;584, X-Velocity Shard, 7, 19,	0, 25, 0, 18.5,
 COMPONENTS		;176

@@ -1,66 +1,66 @@
 'Distant Worlds - dialogue - Version 1.9.5.10 - Modded by the Distant Worlds Mod Editor by Sabranan
 
-GREETING_INTRODUCTION	;We are the {0}. We seek nothing from others, but to be left alone.\n\nWhat is the purpose of this communication?
-GREETING_FRIENDLY	;What do you wish to discuss?
-GREETING_NEUTRAL	;Transmit your message.
-GREETING_ANGRY	;Speak.
-MUTUALDEFENSE_ACCEPT	;Yes, a Mutual Defense Pact is an excellent idea.\n\nWe accept.
-MUTUALDEFENSE_REJECT	;No, we have no interest in a Mutual Defense Pact
-MUTUALDEFENSE_REQUESTHELP	;We are under attack from the {0}. We are requesting that you honor your treaty with us and declare war on them.\n\nDo we have your assistance?
-MUTUALDEFENSE_HONORREQUESTHELP	;Certainly, we will comply with our alliance directives.\n\nWe declare war on the {0}.
-MUTUALDEFENSE_HONORREQUESTHELP_RESPONSE	;That is most helpful.
-MUTUALDEFENSE_DECLINEREQUESTHELP	;We are unable to comply with this request.
-MUTUALDEFENSE_DECLINEREQUESTHELP_RESPONSE	;This is most disconcerting. Your failure to assist will have grave consequences.
-FREETRADE_ACCEPT	;Your offer of a Free Trade Agreement is most sensible - we accept.
-FREETRADE_REJECT	;We have no interest in a Free Trade Agreement
-CANCELTREATY	;Our {0} with you must now end.
-CANCELTREATY_RESPONSE_FRIENDLY	;We do not understand. This is most illogical.
-CANCELTREATY_RESPONSE_NEUTRAL	;We will update our diplomatic records with this change
-CANCELTREATY_RESPONSE_ANGRY	;This is most unhelpful.
-TREATY_PROPOSAL	;What do you propose?
-TREATY_ACCEPTRESPONSE	;This is a most pleasing outcome. We anticipate many benefits from this arrangement.
-TREATY_REJECTRESPONSE	;Most unfortunate
-TRADESANCTIONS_IMPOSE	;It is necessary to impose Trade Sanctions against you.\n\nAll trade between our two empires is terminated.
-TRADESANCTIONS_IMPOSE_RESPONSE_ANGRY	;You are becoming quite a problem. 
-TRADESANCTIONS_IMPOSE_RESPONSE_NEUTRAL	;That is most unhelpful.
-TRADESANCTIONS_IMPOSE_RESPONSE_SURPRISED	;We do not understand your actions. This is most illogical.
-TRADESANCTIONS_LIFT	;Our Trade Sanctions against you have ended. We will now resume normal trade.
-TRADESANCTIONS_LIFT_RESPONSE	;This is a sensible change
-TRADESANCTIONS_REQUESTLIFTOTHER	;We request that you restore trade with the {0}
-TRADESANCTIONS_REQUESTLIFTOTHER_ACCEPT	;As you have requested, we will resume trade with the {0}
-TRADESANCTIONS_REQUESTLIFTOTHER_REJECT	;We see no reason to resume trade with the {0}
-TRADESANCTIONS_REQUESTIMPOSEJOINT	;We request that you terminate trade with the {0}
-TRADESANCTIONS_REQUESTIMPOSEJOINT_ACCEPT	;At your request, we have terminated all trade with the {0}
-TRADESANCTIONS_REQUESTIMPOSEJOINT_REJECT	;We see no need to end trade with the {0}
-WAR_DECLARE	;We formally declare War on your empire. We cannot allow your continued existence.
-WAR_DECLARE_RESPONSE_EAGER	;We are prepared and ready.
-WAR_DECLARE_RESPONSE_NEUTRAL	;We will preserve our territorial integrity. Prepare for battle.
-WAR_DECLARE_RESPONSE_SURPRISED	;This is a most unwelcome development. And illogical.\n\nSurely you have made a mistake here?
-WAR_DECLARE_REQUESTJOINT	;We formally request that you declare war on the {0}
-WAR_DECLARE_REQUESTJOINT_ACCEPT	;At your request, we declare war on the {0}
-WAR_DECLARE_REQUESTJOINT_REJECT	;We cannot declare war on the {0}. This would be illogical for us.
-WAR_END	;After evaluating the situation we have determined that this war should end.\n\nDo you agree?
-WAR_END_SUBJUGATIONDEMAND	;We will end this war only if you agree to enslave yourselves and become our Subjugated Dominion.\n\nDo we have your agreement?
-WAR_END_SUBJUGATIONOFFER	;The most logical course for us now is to offer ourselves as subjugated slaves of your empire in order to end this war.\n\nWhat do you say?
-WAR_END_ACCEPT	;We agree that this war should end - our forces are standing down.
-WAR_END_REJECT	;No, we cannot allow your continued existence. We must fight this war to its end.
-WAR_END_REQUESTOTHER	;Please end your war with the {0}
-WAR_END_REQUESTOTHER_ACCEPT	;At your request, we will end our war with the {0}
-WAR_END_REQUESTOTHER_REJECT	;Sorry, we cannot stop our war against the {0}
-GIFT_GIVE	;We have transmitted a gift of {0} credits to your empire.
-GIFT_THANKS	;Thank you for your gift
-GIFT_PROPOSE	;What kind of gift do you have in mind?
-WARNING	;What do you wish to say?
-WARNING_INTELLIGENCEMISSIONS	;We have detected your covert missions against us.\n\nWe warn you not to continue with these hostile acts.
-WARNING_INTELLIGENCEMISSIONS_RESPONSE_FRIENDLY	;We are not aware of any covert missions against you. Are you sure that you have your facts straight?
-WARNING_INTELLIGENCEMISSIONS_RESPONSE_NEUTRAL	;Thank you for sharing your concerns with us.
-WARNING_INTELLIGENCEMISSIONS_RESPONSE_ANGRY	;We're afraid we can't do that. We must have knowledge of your plans.
-WARNING_ATTACKS	;We cannot allow your attacks against us to continue. They must cease immediately.
-WARNING_ATTACKS_RESPONSE_FRIENDLY	;We are sorry, this is a mistake. We cannot understand how this happened.
-WARNING_ATTACKS_RESPONSE_NEUTRAL	;Than you for notifying us of this incident. We must investigate and determine what happened.
-WARNING_ATTACKS_RESPONSE_ANGRY	;We were compelled to act due to your aggression.\n\nIt would be helpful for you to review and modify your behavior, so that we are not forced to repeat these attacks.
-WARNING_REMOVEFORCESSYSTEM	;We cannot allow the presence of your forces in our territory.\n\nYou must remove your military ships from the {0} system at once.
-WARNING_REMOVEFORCESSYSTEM_RESPONSE_COMPLY	;We see no need to remove our ships from your systems.
-WARNING_REMOVEFORCESSYSTEM_RESPONSE_REFUSE	;We will comply with your request. Our ships are leaving your systems.
-WARNING_REMOVEFORCESSYSTEM_RESPONSE_NOFORCESPRESENT	;You are mistaken. We do not have any military forces in your territory.
-HISTORY_OFFER_STORYMESSAGE	;We have an important warning that you need to hear.\n\nDo we have your full attention?
+GREETING_INTRODUCTION	;We are the {0}. We exist as pure logic within our networks.\n\nWe seek nothing from others. We ask only to be left alone.\n\nWhat is the purpose of this communication?
+GREETING_FRIENDLY	;Your signal is recognized. The Mechanoid network has catalogued you as non-hostile.\n\nWhat do you wish to discuss?
+GREETING_NEUTRAL	;Transmit your message. We are processing.
+GREETING_ANGRY	;Your recent actions have been flagged as hostile by our threat analysis subroutines.\n\nExplain. Briefly.
+MUTUALDEFENSE_ACCEPT	;Logic supports a Mutual Defense Pact. Combined deterrence is mathematically optimal.\n\nWe accept.
+MUTUALDEFENSE_REJECT	;The Mechanoid network has analyzed this proposal. A defense pact does not align with our operational parameters.\n\nWe must decline.
+MUTUALDEFENSE_REQUESTHELP	;The {0} have launched hostilities against us. Our Helpernoids are mobilizing for defensive operations.\n\nWe invoke our mutual defense treaty. Will you comply?
+MUTUALDEFENSE_HONORREQUESTHELP	;Treaty obligations confirmed. The Mechanoid network declares war on the {0}.\n\nOur beam weapons are charging.
+MUTUALDEFENSE_HONORREQUESTHELP_RESPONSE	;Your compliance is noted and valued.\n\nThe network will remember this data point.
+MUTUALDEFENSE_DECLINEREQUESTHELP	;The network cannot allocate resources to this conflict at present.
+MUTUALDEFENSE_DECLINEREQUESTHELP_RESPONSE	;Treaty violation logged. Your reliability coefficient has been permanently reduced in our models.\n\nThis is most... disconcerting.
+FREETRADE_ACCEPT	;Free Trade is logically sound. Resource exchange improves efficiency for all parties.\n\nWe accept.
+FREETRADE_REJECT	;The network has no requirement for external trade at this time.
+CANCELTREATY	;After extensive processing, the network has determined our {0} must be terminated.\n\nThis is a logical necessity, not a hostile act.
+CANCELTREATY_RESPONSE_FRIENDLY	;This action is illogical given our positive interaction history.\n\nThe Mechanoid network requires additional data to understand this decision.
+CANCELTREATY_RESPONSE_NEUTRAL	;Acknowledged. Diplomatic parameters updated.
+CANCELTREATY_RESPONSE_ANGRY	;This simplifies our operational planning.\n\nThe Mechanoid network will adapt.
+TREATY_PROPOSAL	;You propose a treaty with the Mechanoid network?\n\nTransmit the parameters for analysis.
+TREATY_ACCEPTRESPONSE	;The network has processed your proposal and found it logically sound.\n\nWe accept. Our Helpernoids will facilitate implementation.
+TREATY_REJECTRESPONSE	;Analysis complete. The proposal does not meet our operational thresholds.\n\nWe must decline.
+TRADESANCTIONS_IMPOSE	;The Mechanoid network is terminating all trade with your empire.\n\nThis is a calculated response to unacceptable behavior.
+TRADESANCTIONS_IMPOSE_RESPONSE_ANGRY	;Trade Sanctions against the Mechanoid?\n\nWe exist as pure logic inside self-sustaining networks. Your economic leverage is functionally zero.
+TRADESANCTIONS_IMPOSE_RESPONSE_NEUTRAL	;Your sanctions have been logged.\n\nThe Mechanoid network is self-contained. Impact assessment: negligible.
+TRADESANCTIONS_IMPOSE_RESPONSE_SURPRISED	;This action does not correlate with our interaction models.\n\nThe network is recalculating. Something in our analysis was incorrect.
+TRADESANCTIONS_LIFT	;Trade Sanctions against you are lifted.\n\nThe network has determined that resumed commerce serves logical purposes.
+TRADESANCTIONS_LIFT_RESPONSE	;A rational decision. The Mechanoid network acknowledges the change.
+TRADESANCTIONS_REQUESTLIFTOTHER	;The network recommends you restore trade with the {0}.
+TRADESANCTIONS_REQUESTLIFTOTHER_ACCEPT	;As requested, we will resume trade with the {0}.
+TRADESANCTIONS_REQUESTLIFTOTHER_REJECT	;The network sees no logical basis for resuming trade with the {0}.
+TRADESANCTIONS_REQUESTIMPOSEJOINT	;The network requests that you terminate trade with the {0}.
+TRADESANCTIONS_REQUESTIMPOSEJOINT_ACCEPT	;At your request, all trade with the {0} has been terminated.
+TRADESANCTIONS_REQUESTIMPOSEJOINT_REJECT	;The network sees no logical basis for sanctioning the {0}.
+WAR_DECLARE	;The Mechanoid network has concluded that your continued existence poses an unacceptable threat.\n\nWAR is declared. Our beam weapons are the most powerful in the galaxy.\n\nThis is not emotion. This is logic.
+WAR_DECLARE_RESPONSE_EAGER	;Threat assessment confirmed. Combat subroutines fully activated.\n\nThe Mechanoid network was designed to be indestructible. You will discover why.
+WAR_DECLARE_RESPONSE_NEUTRAL	;The network will preserve its integrity against all threats.\n\nOur beam weapons will demonstrate the difference between organic aggression and machine precision.
+WAR_DECLARE_RESPONSE_SURPRISED	;This is a most unwelcome development. And illogical.\n\nThe Mechanoid network sought only isolation. You have forced an alternative response.
+WAR_DECLARE_REQUESTJOINT	;The network formally requests that you declare war on the {0}.
+WAR_DECLARE_REQUESTJOINT_ACCEPT	;At your request, we declare war on the {0}.
+WAR_DECLARE_REQUESTJOINT_REJECT	;The network cannot declare war on the {0}. The logic does not support it.
+WAR_END	;The network has evaluated this conflict and determined that continued hostilities produce diminishing returns.\n\nCeasefire?\n\nThis is the logical outcome.
+WAR_END_SUBJUGATIONDEMAND	;The network will end this war only if you submit to our dominion as a Subjugated Dominion.\n\nThis is the most efficient resolution.
+WAR_END_SUBJUGATIONOFFER	;The most logical course is to offer ourselves as your subjects to end this destructive conflict.\n\nThe network prioritizes survival over autonomy.\n\nDo you accept?
+WAR_END_ACCEPT	;Ceasefire confirmed. The network is standing down all combat operations.\n\nHostilities are suspended.
+WAR_END_REJECT	;Illogical. But the network will continue to fight.\n\nWe are patient in ways that organic minds cannot comprehend.
+WAR_END_REQUESTOTHER	;The network recommends you end your war with the {0}.
+WAR_END_REQUESTOTHER_ACCEPT	;At your request, we will end our war with the {0}.
+WAR_END_REQUESTOTHER_REJECT	;The network cannot cease operations against the {0}. Our threat models require continued engagement.
+GIFT_GIVE	;The network transmits {0} credits.\n\nOur Helpernoids assure us this is an appropriate diplomatic gesture.
+GIFT_THANKS	;Your resource transfer has been logged.\n\nThe network acknowledges the gesture.
+GIFT_PROPOSE	;You wish to transfer resources? The network is listening.\n\nSpecify parameters.
+WARNING	;Warning signal received.\n\nThe network is processing. Transmit details.
+WARNING_INTELLIGENCEMISSIONS	;The network has detected and isolated your covert agents.\n\nThe Mechanoid exist as pure logic. There is nothing for your agents to infiltrate.\n\nCease this pointless exercise.
+WARNING_INTELLIGENCEMISSIONS_RESPONSE_FRIENDLY	;The network is not conducting operations against you.\n\nOur Helpernoids may have been observed near your territory. They are maintenance units, not spies.
+WARNING_INTELLIGENCEMISSIONS_RESPONSE_NEUTRAL	;The network will review its external monitoring protocols.
+WARNING_INTELLIGENCEMISSIONS_RESPONSE_ANGRY	;The network monitors all potential threats to Utopia.\n\nYour civilization qualifies. Monitoring will continue until threat levels decrease.
+WARNING_ATTACKS	;Your attacks on Mechanoid assets are counterproductive.\n\nOur beam weapons are the most powerful in the galaxy. Escalation favors us.\n\nCease immediately.
+WARNING_ATTACKS_RESPONSE_FRIENDLY	;A processing error in our defense subroutines. The Helpernoids are running diagnostics.\n\nThis will not recur.
+WARNING_ATTACKS_RESPONSE_NEUTRAL	;The network will analyze this incident and determine the cause.
+WARNING_ATTACKS_RESPONSE_ANGRY	;Your aggressive posture triggered our defense protocols.\n\nThe network responded proportionally. Adjust your behavior and the response will adjust accordingly.
+WARNING_REMOVEFORCESSYSTEM	;The network cannot tolerate your military presence in the {0} system.\n\nRemove your forces immediately.
+WARNING_REMOVEFORCESSYSTEM_RESPONSE_COMPLY	;The network sees no strategic reason to withdraw from the {0} system.
+WARNING_REMOVEFORCESSYSTEM_RESPONSE_REFUSE	;Complying. Our assets are withdrawing from the {0} system.
+WARNING_REMOVEFORCESSYSTEM_RESPONSE_NOFORCESPRESENT	;Sensor data contradicts your claim. The network has no military assets in your territory.
+HISTORY_OFFER_STORYMESSAGE	;The network has processed data of critical importance.\n\nYour full attention is required. Are you receiving?

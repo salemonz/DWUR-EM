@@ -1,54 +1,54 @@
 'Distant Worlds - dialogue - Version 1.9.5.10 - Modded by the Distant Worlds Mod Editor by Sabranan
 
-GREETING_INTRODUCTION	;Greetings! We are the {0}.\n\nWe search the Galaxy to discover it's wonders!
-GREETING_FRIENDLY	;Welcome friend. What brings you to us?
-GREETING_NEUTRAL	;You have something you'd like to talk about?
-GREETING_ANGRY	;Oh, it's YOU again. State your business quickly
-OFFER_FREETRADE	;Join us in a Free Trade Agreement!\n\nYes?
-OFFER_PROTECTORATE	;You need to join with a strong empire like ours in a Protectorate treaty. We could then protect you against any aggressors.\n\nSurely you agree?
-OFFER_MUTUALDEFENSE	;We admire your strength - we should join together in a Mutual Defense Pact. This would deter aggressors from taking our stuff.\n\nA wise plan, don't you think?
-OFFER_DEAL	;Does this trade appeal to you?
-DEAL_BEGIN	;What would you like?
-DEAL_DEMAND	;Give us this. Do not disappoint us, we need it.
-DEAL_ACCEPT	;We accept!
-DEAL_ACCEPTCOMPLAIN	;We will part with this for you
-DEAL_IMPROVE	;We were nearly interested, you cannot go higher?
-DEAL_REJECT	;I'm sorry but no.
-DEAL_REJECTCOMPLAIN	;You think we scare easily? We may accept a fair deal, but not threats
-MUTUALDEFENSE_ACCEPT	;Agreed, a Mutual Defense Pact makes good sense. Welcome to our new allies!
-MUTUALDEFENSE_REJECT	;No, a Mutual Defense Pact does not match with our plans at the moment
-MUTUALDEFENSE_REQUESTHELP	;Those sneaky rats, the {0}, are attacking us! We call on you to honor your treaty with us and declare war on them.\n\nAre you with us?
-MUTUALDEFENSE_HONORREQUESTHELP	;We will honor this agreement - we will exterminate the {0}!
-MUTUALDEFENSE_HONORREQUESTHELP_RESPONSE	;A test well met, ally!
-MUTUALDEFENSE_DECLINEREQUESTHELP	;We cannot help you against them.\n\nWe are sorry.
-MUTUALDEFENSE_DECLINEREQUESTHELP_RESPONSE	;We feel we know you better now.\n\nWe will not forget how you let us down.
-PROTECTORATE_ACCEPT	;We can see much benefit in becoming your Protectorate - we accept.
-FREETRADE_ACCEPT	;A Free Trade Agreement? Fantastic idea, we eagerly accept.
-CANCELTREATY	;We no longer find this {0} in our interests - we are cancelling it
-CANCELTREATY_RESPONSE_FRIENDLY	;How sad. Maybe you will reconsider at a later time
-CANCELTREATY_RESPONSE_NEUTRAL	;Alright then - it is over
-CANCELTREATY_RESPONSE_ANGRY	;Oh you didn't get our message? We were cancelling anyway.
-TREATY_PROPOSAL	;What do you have in mind?
-TREATY_ACCEPTRESPONSE	;A very smart decision - welcome to our alliance!
-TREATY_REJECTRESPONSE	;A poor choice.\n\nMaybe you will realize this later and reconsider...
-TRADESANCTIONS_IMPOSE	;It is past time we imposed Trade Sanctions!\n\nWe will no longer sponsor your belligerence - all trade between us is over
-TRADESANCTIONS_IMPOSE_RESPONSE_ANGRY	;Do you really think we care about losing your trade? It is nothing to us!
-TRADESANCTIONS_IMPOSE_RESPONSE_NEUTRAL	;Our suspicions are confirmed: you are totally untrustworthy
-TRADESANCTIONS_IMPOSE_RESPONSE_SURPRISED	;How criminal! How disturbing to betray your friends in this manner
-TRADESANCTIONS_LIFT	;Our Trade Sanctions against you are over. We will trade with you once again
-TRADESANCTIONS_LIFT_RESPONSE	;We are glad that you have become more reasonable. We welcome fair trade between us
-WAR_DECLARE	;Our preparations are complete - now it is time for WAR!\n\nWe await your pleas of surrender!
-WAR_DECLARE_RESPONSE_EAGER	;We knew it would come to this!\n\nYou face annihilation!
-WAR_DECLARE_RESPONSE_NEUTRAL	;We knew you were planning to betray us!\n\nNow you will see why you don't mess with us!
-WAR_DECLARE_RESPONSE_SURPRISED	;We had no idea you were so duplicitous!\n\nWe will give you war, if that is what you seek!
-WAR_END	;This war only weakens both of us. We propose an immediate end to the fighting
-WAR_END_ACCEPT	;Agreed. Let us end our war at once
-WAR_END_REJECT	;End the war? No, we are just getting started!
-GIFT_GIVE	;We offer you a gift of {0} credits.\n\nWe hope this support we offer doesn't get ignored.
-GIFT_THANKS	;We appreciate your gift.\n\nYou are the kind of neighbour we appreciate!
-WARNING	;What is it?
-WARNING_INTELLIGENCEMISSIONS	;We warn you not to attempt any further covert missions against us.\n\nYou don't want to make us your enemy.
-WARNING_INTELLIGENCEMISSIONS_RESPONSE_FRIENDLY	;We are not aware of any missions against you my friend, but we will investigate this situation at once
-WARNING_INTELLIGENCEMISSIONS_RESPONSE_NEUTRAL	;Surely you are mistaken? We have no knowledge of any missions against you
-WARNING_INTELLIGENCEMISSIONS_RESPONSE_ANGRY	;Hah!\n\nSure we'll stop...
-WARNING_ATTACKS	;We are angered by your ship attacks against us.\n\nStop them now, or face retaliation!
+GREETING_INTRODUCTION	;We are the {0}!\n\nThe Ylta serve the Divine Treasury. Through wealth, we ascend. Through strength, we claim what the heavens owe us.\n\nAre you worthy of our attention?
+GREETING_FRIENDLY	;The priests recognize your worth.\n\nYou have proven yourself a profitable ally. What offerings do you bring today?
+GREETING_NEUTRAL	;The Ylta Oligarchy acknowledges your presence.\n\nSpeak your business. Our time is valuable.
+GREETING_ANGRY	;The priests are displeased with you.\n\nYour recent conduct has diminished your standing in the eyes of the Divine Treasury.\n\nExplain yourself.
+OFFER_FREETRADE	;The Divine Treasury demands growth! A Free Trade Agreement would channel wealth to both our empires.\n\nThe priests have blessed this proposal. Do you accept the blessing?
+OFFER_PROTECTORATE	;The Oligarchy offers you the shelter of a Protectorate treaty.\n\nOur beam ships and fighters will guard your skies. In exchange, you tithe to the Divine Treasury.\n\nAccept?
+OFFER_MUTUALDEFENSE	;The priests have divined that a Mutual Defense Pact between our empires is the will of the heavens.\n\nCombined strength deters those who covet our treasuries.\n\nDo you agree?
+OFFER_DEAL	;The Oligarchy presents this trade for the Divine Treasury's enrichment.
+DEAL_BEGIN	;What offering do you propose? The priests evaluate all transactions.
+DEAL_DEMAND	;The Divine Treasury requires the following from you. This is not negotiable:\n\n{1}
+DEAL_ACCEPT	;The priests approve this transaction. The Divine Treasury is enriched.
+DEAL_ACCEPTCOMPLAIN	;The Oligarchy accepts, though the terms diminish our treasury. The priests are not pleased.
+DEAL_IMPROVE	;The offering is insufficient. The Divine Treasury demands more. Improve your terms.
+DEAL_REJECT	;The priests reject this offering. It does not serve the Divine Treasury.
+DEAL_REJECTCOMPLAIN	;Threats against the Ylta? The heavens themselves protect us.\n\nYour intimidation is meaningless.
+MUTUALDEFENSE_ACCEPT	;The priests bless this alliance! A Mutual Defense Pact strengthens the Divine Treasury's guardians.
+MUTUALDEFENSE_REJECT	;The Oligarchy cannot commit to this pact. The priests have not given their blessing.
+MUTUALDEFENSE_REQUESTHELP	;The {0} assault the chosen of the heavens! We invoke our sacred pact!\n\nDeclare war on the {0} and fulfill your divine obligation!
+MUTUALDEFENSE_HONORREQUESTHELP	;The priests command it! We declare war on the {0}!\n\nOur beam ships and fighters are launching!
+MUTUALDEFENSE_HONORREQUESTHELP_RESPONSE	;The heavens smile upon loyal allies. The Ylta are grateful.
+MUTUALDEFENSE_DECLINEREQUESTHELP	;The Oligarchy cannot enter this war. Our resources serve the Divine Treasury elsewhere.
+MUTUALDEFENSE_DECLINEREQUESTHELP_RESPONSE	;You break your sacred oath?!\n\nThe priests will record this betrayal. The heavens do not forget.
+PROTECTORATE_ACCEPT	;The Oligarchy accepts your protection. The Divine Treasury will grow under your shelter.
+FREETRADE_ACCEPT	;Free Trade! The Divine Treasury rejoices! The priests bless this arrangement!
+CANCELTREATY	;The Oligarchy, guided by the priests, has decided to end our {0}.\n\nThe Divine Treasury's interests have shifted.
+CANCELTREATY_RESPONSE_FRIENDLY	;The priests are troubled by this decision.\n\nYour departure leaves a gap in our spiritual economy.
+CANCELTREATY_RESPONSE_NEUTRAL	;The heavens provide and the heavens take away.\n\nThe Ylta endure.
+CANCELTREATY_RESPONSE_ANGRY	;Good! The priests declared this treaty spiritually bankrupt long ago.
+TREATY_PROPOSAL	;A treaty? The priests will examine your offering.\n\nPresent your terms for divine evaluation.
+TREATY_ACCEPTRESPONSE	;The priests have blessed this alliance! The Divine Treasury grows!\n\nMay our combined wealth and strength please the heavens!
+TREATY_REJECTRESPONSE	;The priests find your offering unworthy.\n\nReturn when you have something of greater spiritual value.
+TRADESANCTIONS_IMPOSE	;The Oligarchy imposes Trade Sanctions! The Divine Treasury closes its doors to you.\n\nYour spiritual deficit demanded this response.
+TRADESANCTIONS_IMPOSE_RESPONSE_ANGRY	;Sanctions against the chosen of the heavens?!\n\nThe Ylta possess wealth beyond your comprehension. Your petty embargo is an insult to the Divine Treasury!
+TRADESANCTIONS_IMPOSE_RESPONSE_NEUTRAL	;The Divine Treasury is self-sustaining.\n\nYour sanctions cannot diminish what the heavens provide.
+TRADESANCTIONS_IMPOSE_RESPONSE_SURPRISED	;The priests are puzzled.\n\nWe offered you access to the Divine Treasury's prosperity. Why would you reject such a blessing?
+TRADESANCTIONS_LIFT	;The Oligarchy lifts Trade Sanctions.\n\nThe priests have determined you are once again worthy of commerce with the Divine Treasury.
+TRADESANCTIONS_LIFT_RESPONSE	;The heavens are merciful.\n\nThe Ylta accept resumed trade.
+WAR_DECLARE	;The priests have spoken: Holy WAR!\n\nOur beam ships blaze with divine fire! Our fighters swarm like angels of wrath!\n\nThe Divine Treasury demands your submission!
+WAR_DECLARE_RESPONSE_EAGER	;You attack the chosen of the heavens?!\n\nOur carrier fleets are launching! Our beams burn with righteous fury!\n\nThe Divine Treasury will claim everything you own!
+WAR_DECLARE_RESPONSE_NEUTRAL	;The Ylta did not seek this, but the priests welcome it.\n\nWar is simply another path to the enrichment of the Divine Treasury.
+WAR_DECLARE_RESPONSE_SURPRISED	;War? Against the Ylta?\n\nThe priests are shocked. We offered you partnership in the Divine Treasury's blessings!\n\nYou will regret this spiritual error.
+WAR_END	;The priests have consulted the heavens. This war should end.\n\nThe Divine Treasury's resources are better spent on growth than destruction.\n\nDo you agree?
+WAR_END_ACCEPT	;Peace! The priests are satisfied.\n\nThe Divine Treasury will recover. It always does.
+WAR_END_REJECT	;Then the war continues! The Ylta fight until the heavens declare victory!\n\nOur beam ships and fighters await your pleas of surrender!
+GIFT_GIVE	;The Oligarchy, in its divine generosity, presents {0} credits.\n\nThis offering comes from the Divine Treasury itself. Remember this honor.
+GIFT_THANKS	;Your offering to the Ylta is accepted with spiritual gratitude.\n\nThe priests will record your generosity.
+WARNING	;A warning for the chosen of the heavens?\n\nThe priests will hear it.
+WARNING_INTELLIGENCEMISSIONS	;The priests have detected your covert intrusions into sacred Ylta territory!\n\nThe Divine Treasury's secrets are protected by the heavens themselves.\n\nCease your blasphemous espionage at once!
+WARNING_INTELLIGENCEMISSIONS_RESPONSE_FRIENDLY	;Covert missions against the Ylta? The priests deny any involvement.\n\nPerhaps the heavens sent observers. It was not us.
+WARNING_INTELLIGENCEMISSIONS_RESPONSE_NEUTRAL	;The Oligarchy will consult with the priests on this matter.
+WARNING_INTELLIGENCEMISSIONS_RESPONSE_ANGRY	;The Ylta observe all who might threaten the Divine Treasury.\n\nThis is our sacred duty. We will not apologize for it.
+WARNING_ATTACKS	;Your attacks on Ylta forces are an offense against the heavens!\n\nThe priests demand you cease immediately or face divine retribution!

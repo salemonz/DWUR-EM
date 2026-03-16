@@ -1,38 +1,38 @@
 'Distant Worlds - dialogue - Version 1.9.5.10 - Modded by the Distant Worlds Mod Editor by Sabranan
 
-GREETING_INTRODUCTION	;Welcome other beings! We are the {0}.\n\nWe are striving to get rich finding the rare gems and minerals of this Galaxy.\n\nIf you want we will mine your resources for you?
-GREETING_FRIENDLY	;Welcome back! What did you want to talk about?
-GREETING_NEUTRAL	;We are listening
-GREETING_ANGRY	;We're not very happy with you. So tell us what you want, then leave!
-OFFER_FREETRADE	;You know something: what we need is a Free Trade Agreement. Our Empires could become amazing!\n\nWhat do you think?
-FREETRADE_ACCEPT	;It's a deal!\n\nWe acccept the Free Trade Agreement
-FREETRADE_REJECT	;No deal.\n\nWe are not interested in a Free Trade Agreement just now, maybe soon though
-CANCELTREATY	;Our {0} with you is over.\n\nNo hard feelings, right? We can renegotiate later if you want
-CANCELTREATY_RESPONSE_FRIENDLY	;No more treaty?!\n\nAren't we friends now? What did we do?
-CANCELTREATY_RESPONSE_NEUTRAL	;Hey, you broke the deal! That's not fair.\n\nWe'll just have to sell all these gems to someone else
-CANCELTREATY_RESPONSE_ANGRY	;We don't need your silly treaty anyway. So there
-TREATY_PROPOSAL	;What's the deal?
-TREATY_ACCEPTRESPONSE	;Celebration! We're partners now!
-TREATY_REJECTRESPONSE	;We are sad about this
-TRADESANCTIONS_IMPOSE	;You bet the wrong way this time: Trade Sanctions on you!\n\nWe're not trading with your empire again!
-TRADESANCTIONS_IMPOSE_RESPONSE_ANGRY	;Trade Sanctions?! You have really hurt us!\n\nWe'll get you, tricky alien!
-TRADESANCTIONS_IMPOSE_RESPONSE_NEUTRAL	;No trading with you?\n\nYour business deals were all bad anyway. We will sell for better prices elsewhere
-TRADESANCTIONS_IMPOSE_RESPONSE_SURPRISED	;Are you crazy? Well we will get rich anyway
-TRADESANCTIONS_LIFT	;It's your lucky day: we're lifting our Trade Sanctions against you.\n\nWe will now resume trading with you. But no more funny business, ok?
-TRADESANCTIONS_LIFT_RESPONSE	;Huh! Now you want all these great gems and metals we have...
-WAR_DECLARE	;You bad people! We declare WAR on you!\n\nYou'll be sorry now!
-WAR_DECLARE_RESPONSE_EAGER	;You think you'll defeat us?! You're wrong.\n\nWe know where to hurt you! You'll be sorry!
-WAR_DECLARE_RESPONSE_NEUTRAL	;We're ready for you. We'll punish you!
-WAR_DECLARE_RESPONSE_SURPRISED	;We thought you liked us?!\n\nYou can't do this! It's not allowed!
-WAR_END	;This war is unprofitable. It should end.\n\nWhat do you say?
-WAR_END_ACCEPT	;Yes, we agree to end the war
-WAR_END_REJECT	;No, we're betting on winning this war.\n\nSo we're not stopping now!
-GIFT_GIVE	;Here's a gift for you: {0} credits
-GIFT_THANKS	;Thanks for your gift!\n\nYou know, we really like money. And people who give us money
-WARNING	;A warning? We wonder what could this be about?
-WARNING_INTELLIGENCEMISSIONS_RESPONSE_FRIENDLY	;We understand your concern.\n\nWe'll make sure this doesn't happen again
-WARNING_INTELLIGENCEMISSIONS_RESPONSE_NEUTRAL	;Before responding we must check the details of this incident.\n\nWe'll get back to you, ok?
-WARNING_INTELLIGENCEMISSIONS_RESPONSE_ANGRY	;Now that you mention it: yes, we did order those missions against you.\n\nWhy? Because we really hate you, actually.\n\nAre we all clear on that?
-WARNING_ATTACKS_RESPONSE_FRIENDLY	;How awful. Please accept our apologies.\n\nGive us the details of the incident and we'll deal with the ship captain that did this
-WARNING_ATTACKS_RESPONSE_NEUTRAL	;Hmmm, not good. To get caught, that is.\n\nPlease accept our apologies
-WARNING_ATTACKS_RESPONSE_ANGRY	;We do remember ordering some attacks recently.\n\nBut we'd only ever do that to our enemies. So I guess that means you're our enemy?
+GREETING_INTRODUCTION	;Welcome! We are the {0}!\n\nThe Riktoh are the richest, most prosperous race you will ever meet!\n\nHave you seen the size of our treasury? It is magnificent!
+GREETING_FRIENDLY	;Our wealthiest friend returns!\n\nDid you notice we renovated our embassy? Solid gold fixtures. Only the best!\n\nWhat brings you today?
+GREETING_NEUTRAL	;The Riktoh have time for profitable conversations.\n\nIs this one of those?
+GREETING_ANGRY	;You owe the Riktoh for your recent conduct.\n\nAnd the Riktoh always collect.
+OFFER_FREETRADE	;The Riktoh propose a Free Trade Agreement!\n\nOur mines produce the finest gems and minerals in the galaxy. Combined with your markets, the profits could be staggering!\n\nDo you want in?
+FREETRADE_ACCEPT	;Free Trade! Excellent! The Riktoh can already hear the credits rolling in!\n\nThis is going to make us VERY rich!
+FREETRADE_REJECT	;You decline trade with the wealthiest race in the sector?\n\nYour loss. Literally.
+CANCELTREATY	;The Riktoh have reviewed the balance sheet on our {0} with you.\n\nThe returns are insufficient. This arrangement is terminated.
+CANCELTREATY_RESPONSE_FRIENDLY	;You break a profitable partnership?\n\nThe Riktoh are baffled. Our accountants are crying.
+CANCELTREATY_RESPONSE_NEUTRAL	;The Riktoh will diversify our portfolio.\n\nYou were not our only investment.
+CANCELTREATY_RESPONSE_ANGRY	;Good. The Riktoh were overpaying for this relationship anyway.
+TREATY_PROPOSAL	;A deal? The Riktoh love deals!\n\nShow us the numbers. If they add up, we are in!
+TREATY_ACCEPTRESPONSE	;The Riktoh accept! A most profitable partnership!\n\nHave you seen our new fleet? Commissioned it last week. Very expensive. Very impressive.
+TREATY_REJECTRESPONSE	;The numbers do not add up.\n\nThe Riktoh never accept a bad deal.
+TRADESANCTIONS_IMPOSE	;The Riktoh are imposing Trade Sanctions!\n\nNo more access to our gems, our minerals, or our fabulous economy!\n\nYou will feel this in your treasury!
+TRADESANCTIONS_IMPOSE_RESPONSE_ANGRY	;Sanctions against the Riktoh?!\n\nWe have more wealth stockpiled than your entire GDP!\n\nYour sanctions are a rounding error!
+TRADESANCTIONS_IMPOSE_RESPONSE_NEUTRAL	;The Riktoh have reserves for days like this.\n\nLarge reserves. Very large.
+TRADESANCTIONS_IMPOSE_RESPONSE_SURPRISED	;Sanctions? Against the Riktoh?\n\nBut our trade made you so much money!\n\nThis is financially irrational!
+TRADESANCTIONS_LIFT	;Good news! The Riktoh are lifting Trade Sanctions!\n\nOur gem vaults are overflowing and we need buyers. Welcome back to prosperity!
+TRADESANCTIONS_LIFT_RESPONSE	;The Riktoh welcome the return of revenue.\n\nOur Space Denial systems will stand down. For now.
+WAR_DECLARE	;You bad people! We declare WAR on you!\n\nOur missile fleets and Space Denial systems will ensure you cannot escape, cannot hide, and cannot profit!\n\nYou are going to pay for this. In every sense of the word!
+WAR_DECLARE_RESPONSE_EAGER	;You attack the richest empire in the galaxy?!\n\nOur missiles are top of the line! Our Space Denial fields will trap your fleets!\n\nThis war will bankrupt you!
+WAR_DECLARE_RESPONSE_NEUTRAL	;War is expensive. For both of us.\n\nBut the Riktoh can afford it longer than you can.
+WAR_DECLARE_RESPONSE_SURPRISED	;War?! The Riktoh are traders, not warriors!\n\nWell, traders with a very large and very expensive missile fleet.\n\nYou will see just how expensive.
+WAR_END	;This war is destroying profit margins on both sides.\n\nThe Riktoh propose a ceasefire. War is bad for business.\n\nDeal?
+WAR_END_ACCEPT	;Deal! War is over!\n\nTime to count the losses and start making money again.
+WAR_END_REJECT	;No deal? Fine!\n\nThe Riktoh have deeper pockets than you. We will spend our way to victory!
+GIFT_GIVE	;The Riktoh present you with {0} credits!\n\nFor a race that hoards wealth like we do, this is an extraordinary gesture. Remember that.
+GIFT_THANKS	;A gift! The Riktoh appreciate financial gestures above all others.\n\nYou clearly understand what matters.
+WARNING	;A warning? The Riktoh are paying attention.
+WARNING_INTELLIGENCEMISSIONS_RESPONSE_FRIENDLY	;Spying on the Riktoh? Not us.\n\nWe would just buy whatever information we needed. Much more efficient.
+WARNING_INTELLIGENCEMISSIONS_RESPONSE_NEUTRAL	;We will review our operations and make adjustments.
+WARNING_INTELLIGENCEMISSIONS_RESPONSE_ANGRY	;The Riktoh investigate all threats to our wealth.\n\nYour empire qualifies. Stop being a threat and we stop investigating.
+WARNING_ATTACKS_RESPONSE_FRIENDLY	;This is a costly mistake. Literally.\n\nWe will compensate for damages and discipline the captains responsible.
+WARNING_ATTACKS_RESPONSE_NEUTRAL	;The Riktoh will investigate and assess the financial damage.
+WARNING_ATTACKS_RESPONSE_ANGRY	;Our ships defended Riktoh property. Property is sacred to us.\n\nStop threatening our assets and this will not happen again.

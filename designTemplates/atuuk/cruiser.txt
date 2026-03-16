@@ -7,7 +7,7 @@
 'Also, for ships you do not need to specify a HyperDrive - a single hyperdrive will always automatically be added to ship design templates.
 
 AreaShieldRecharge	;0
-Armor	;60
+Armor	;25
 AssaultPod	;0
 CargoBay	;0
 ColonizationModule	;0
@@ -55,7 +55,7 @@ WeaponBeam	;0
 WeaponBombard	;0
 WeaponMissile	;5
 WeaponPhaser	;0
-WeaponRailGun	;12
+WeaponRailGun	;10
 WeaponsManufacturingPlant	;0
 WeaponsResearchLab	;0
 WeaponSuperBeam	;0

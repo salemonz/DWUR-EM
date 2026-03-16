@@ -1,46 +1,46 @@
 'Distant Worlds - dialogue - Version 1.9.5.10 - Modded by the Distant Worlds Mod Editor by Sabranan
 
-PIRATE_PROTECTIONPROPOSE	;Protection for your ships? yes, we can provide that for you.\n\nFor the fee shown below we can 'protect' all of your ships as they travel through our territory. The protection period is six months.\n\nSound like a bargain to you?
-PIRATE_PROTECTIONPROPOSEINITIATE	;There are many hidden dangers lying in wait for your ships - pirates, for example!\n\nBut for a modest fee we can protect all of your ships travelling through our territory. The protection lasts for six months.\n\nA tempting offer, don't you agree?
-PIRATE_PROTECTIONACCEPTRESPONSE	;Excellent!\n\nWe will pass the word to our ships to stand down when they see any of your vessels.\n\nGood bye, until our next fee is due...
-PIRATE_PROTECTIONREJECTRESPONSE	;We wonder whether you're looking for trouble.\n\nMaybe you are...
-PIRATE_ATTACKOFFER_SINGLEEMPIRE	;You seem to be having difficulty with the {0}. That doesn't have to be a problem for you though - we can attack them for you!\n\nThis arrangement would be a secret just between ourselves. You wouldn't get any blame for the attacks.\n\nAll we need is a payment of {1} credits
-PIRATE_ATTACKCOMMENCE	;You just hired us!\n\nThe {0} won't know what hit them!
-GREETING_INTRODUCTION	;We are the {0}.\n\nWe hope you come to us with good intentions.\n\nWe expect you to behave better than your history tells us of you.
-GREETING_FRIENDLY	;Ahh, good to see you again!\n\nWhat's on your mind?
-GREETING_NEUTRAL	;What is it?
-GREETING_ANGRY	;We treat all guests well, even ones as morally bankrupt as you.\n\nSpeak!
-OFFER_FREETRADE	;Let us both benefit from a Free Trade Agreement. It's the right thing to do for all of our people.\n\nWhat do you think?
-FREETRADE_ACCEPT	;A Free Trade Agreement, now that will help everyone. We accept.\n\nWe hope to deal with you more in the future.
-FREETRADE_REJECT	;Ask us again another time.\n\nWe just can't consider that right now.
-CANCELTREATY	;We will have to end our {0} with you.\n\nOur people would not accept us mainting an agreement with an empire like yours.
-CANCELTREATY_RESPONSE_FRIENDLY	;How strange!\n\nWe thought we had a good thing there. You never can tell, I guess.
-CANCELTREATY_RESPONSE_NEUTRAL	;If you say so
-CANCELTREATY_RESPONSE_ANGRY	;Hmmm.\n\nWe should have expected this, you are predictable.
-TREATY_PROPOSAL	;A treaty? We certainly would like to hear your offer.
-TREATY_ACCEPTRESPONSE	;That's fantastic, we look forward to working with you.
-TREATY_REJECTRESPONSE	;Oh.\n\nWell we expected more, hopefully you will change your mind.
-TRADESANCTIONS_IMPOSE	;For now we cannot trade with you.\n\nWe would need to trust you a lot more.
-TRADESANCTIONS_IMPOSE_RESPONSE_ANGRY	;So dissapointing.\n\nLeave us, there is nothing more for us to talk about.
-TRADESANCTIONS_IMPOSE_RESPONSE_NEUTRAL	;This is not a good move.\n\nWe hope you reconsider where this is leading you.
-TRADESANCTIONS_IMPOSE_RESPONSE_SURPRISED	;To what end?\nI don't see where you are going with this, it is a bad move.
-TRADESANCTIONS_LIFT	;Our Trade Sanctions are lifted.\n\nLets maintain a better relationship in future.
-TRADESANCTIONS_LIFT_RESPONSE	;A good move!\n\nWe welcome a return to normal trade.
-WAR_DECLARE	;We can tolerate you no longer.\n\nPrepare for war, there is no other choice.
-WAR_DECLARE_RESPONSE_EAGER	;You only bring what was coming to you anyway.\n\nThis will be fast.
-WAR_DECLARE_RESPONSE_NEUTRAL	;You flare quicker than we expected.\n\nYou will learn to control yourself when you bow before us in defeat.
-WAR_DECLARE_RESPONSE_SURPRISED	;Why would you do this?\n\nThis is surprising, we are exceptionally hurt.
-WAR_END	;We have both paid enough.\n\nLet us end the hostilities?
-WAR_END_ACCEPT	;Yes, enough fighting.\n\nThis benefits noone.
-WAR_END_REJECT	;No, you do not deserve our mercy.
-GIFT_GIVE	;Please accept this as a token of friendship: {0} credits.
-GIFT_THANKS	;We appreciate your support, many thanks.
-WARNING	;A warning? We wonder what could this be about?
-WARNING_INTELLIGENCEMISSIONS	;It's time to stop those missions you're sending against us.\n\nYou have been warned.
-WARNING_INTELLIGENCEMISSIONS_RESPONSE_FRIENDLY	;We understand your concern.\n\nOur apologies. We'll make sure this doesn't happen again.
-WARNING_INTELLIGENCEMISSIONS_RESPONSE_NEUTRAL	;Before responding we must check the details of this incident.\n\nWe'll get back to you.
-WARNING_INTELLIGENCEMISSIONS_RESPONSE_ANGRY	;You hold us to this standard when you act the way you do?\n\nRemove yourself from our presence.
-WARNING_ATTACKS	;Stop your attacks on our ships right now!\n\nWe will not tolerate this.
-WARNING_ATTACKS_RESPONSE_FRIENDLY	;Please accept our apologies.\n\nGive us the details of the incident and we'll deal with the ship captain that did this.
-WARNING_ATTACKS_RESPONSE_NEUTRAL	;Give us the details of the incident and we'll deal with the ship captain that did this.
-WARNING_ATTACKS_RESPONSE_ANGRY	;We'll stop, sure, as soon as you start acting like an empire we shouldn't attack!
+PIRATE_PROTECTIONPROPOSE	;Even in the lawless void, there are those who uphold standards.\n\nFor the fee shown below, we offer six months of protection. Your ships will be safe under our watch.
+PIRATE_PROTECTIONPROPOSEINITIATE	;Our Far Sight sensors see dangers that others miss. We know what lurks in the void around you.\n\nFor the fee shown below, we ensure your ships avoid the worst of it.\n\nA wise choice for any empire of good standing. What do you say?
+PIRATE_PROTECTIONACCEPTRESPONSE	;A responsible decision.\n\nYour ships are now under Banoserit protection. We will uphold this agreement with the integrity our ancestors expect of us.
+PIRATE_PROTECTIONREJECTRESPONSE	;Regrettable. Those who refuse protection often come to need it most.\n\nWe hope your judgment improves.
+PIRATE_ATTACKOFFER_SINGLEEMPIRE	;The {0} have proven themselves to be of... questionable moral character. We share your concern.\n\nFor {1} credits, we can ensure their activities in this region are curtailed. Discreetly, of course.\n\nDo we have an arrangement?
+PIRATE_ATTACKCOMMENCE	;The arrangement is sealed. Our ships are moving against the {0}.\n\nJustice, even when applied quietly, is still justice.
+GREETING_INTRODUCTION	;We are the {0}.\n\nWe judge others by the full measure of their deeds and the deeds of their ancestors.\n\nWe hope your record is worthy of our attention.
+GREETING_FRIENDLY	;Welcome, friend. Your reputation precedes you, and it speaks well.\n\nHow may we be of service?
+GREETING_NEUTRAL	;We are listening.\n\nSpeak honestly. The Banoserit can see deception from a great distance.
+GREETING_ANGRY	;Your recent conduct has been deeply troubling.\n\nOur records of your transgressions are extensive. Explain yourself.
+OFFER_FREETRADE	;The Banoserit believe that honest commerce builds moral character.\n\nWe propose a Free Trade Agreement between our empires.\n\nDo you accept this opportunity to demonstrate good faith?
+FREETRADE_ACCEPT	;Free Trade with a race of good standing is always welcome.\n\nWe accept, and trust this arrangement will be honored.
+FREETRADE_REJECT	;We cannot commit to Free Trade at this time.\n\nYour recent history gives us pause. Perhaps when your record improves.
+CANCELTREATY	;After careful moral deliberation, the Banoserit must end our {0} with you.\n\nOur people would not accept us maintaining an agreement with an empire whose conduct has fallen below acceptable standards.
+CANCELTREATY_RESPONSE_FRIENDLY	;This wounds us deeply.\n\nWe believed our partnership reflected shared values. Apparently we were mistaken.
+CANCELTREATY_RESPONSE_NEUTRAL	;The Banoserit note your decision.\n\nWe will reflect on what this means for the future.
+CANCELTREATY_RESPONSE_ANGRY	;Your moral posturing does not impress us.\n\nThe sins of your own ancestors are well documented. Look to your own house before judging ours.
+TREATY_PROPOSAL	;A treaty? The Banoserit take such commitments very seriously.\n\nPresent your terms. We will evaluate them against our moral standards.
+TREATY_ACCEPTRESPONSE	;The Banoserit are pleased to accept.\n\nA bond between honorable empires strengthens the moral fabric of the galaxy. Welcome.
+TREATY_REJECTRESPONSE	;We must decline.\n\nOur standards are high, and this arrangement does not meet them. We bear you no ill will, but we cannot compromise our principles.
+TRADESANCTIONS_IMPOSE	;The Banoserit can no longer in good conscience trade with your empire.\n\nYour actions have placed you beneath our moral threshold. All commerce is terminated.
+TRADESANCTIONS_IMPOSE_RESPONSE_ANGRY	;You presume to judge the Banoserit?\n\nOur lineage is unblemished. Your accusations say more about your own moral failings than ours.
+TRADESANCTIONS_IMPOSE_RESPONSE_NEUTRAL	;We accept your decision, though we dispute the reasoning.\n\nThe Banoserit endure judgment with grace, even when it is unjust.
+TRADESANCTIONS_IMPOSE_RESPONSE_SURPRISED	;Sanctions? Against a race that holds itself to the highest moral standards?\n\nThis is unjust. Our ancestors weep at this treatment.
+TRADESANCTIONS_LIFT	;After review, the Banoserit have determined that you have shown sufficient moral improvement.\n\nTrade Sanctions are lifted. Do not make us reconsider.
+TRADESANCTIONS_LIFT_RESPONSE	;We welcome the end of this unpleasant episode.\n\nLet us move forward with renewed commitment to honest dealing.
+WAR_DECLARE	;The Banoserit can no longer tolerate your transgressions. We declare WAR.\n\nThis is not aggression. This is moral correction.\n\nYour civilization has failed the test of character, and we will hold you accountable.
+WAR_DECLARE_RESPONSE_EAGER	;You bring war to the Banoserit? Then you will face the judgment you deserve.\n\nOur Far Sight sensors tracked your preparations long ago. We are ready.
+WAR_DECLARE_RESPONSE_NEUTRAL	;The Banoserit did not seek this conflict.\n\nBut we will defend ourselves with the righteous resolve of a people who know they are in the right.
+WAR_DECLARE_RESPONSE_SURPRISED	;War? Against the Banoserit?\n\nWe who have held ourselves to the highest standards? This is a profound injustice.\n\nHistory will judge you harshly for this.
+WAR_END	;The Banoserit believe enough blood has been spilled to satisfy the scales of justice.\n\nWe propose an end to hostilities. Do you agree?
+WAR_END_ACCEPT	;Agreed. The war ends.\n\nLet this serve as a lesson that moral conduct matters. For both of us.
+WAR_END_REJECT	;No. Your moral debt has not been fully paid.\n\nThe Banoserit will continue until justice is served.
+GIFT_GIVE	;The Banoserit send you {0} credits as a gesture of good faith.\n\nReputation is built through consistent acts of virtue.
+GIFT_THANKS	;Your generosity is noted and appreciated.\n\nSuch gestures reflect well on your character.
+WARNING	;A warning? The Banoserit listen to all counsel.\n\nWhat troubles you?
+WARNING_INTELLIGENCEMISSIONS	;Our Far Sight sensors have detected your covert agents operating in our territory.\n\nThe Banoserit see further and more clearly than any race in the galaxy.\n\nCease your dishonorable activities at once.
+WARNING_INTELLIGENCEMISSIONS_RESPONSE_FRIENDLY	;Covert missions against you? The Banoserit would never sanction such dishonorable conduct.\n\nWe will investigate immediately and hold the responsible parties accountable.
+WARNING_INTELLIGENCEMISSIONS_RESPONSE_NEUTRAL	;We will review this matter carefully.\n\nThe Banoserit take allegations of dishonorable conduct very seriously.
+WARNING_INTELLIGENCEMISSIONS_RESPONSE_ANGRY	;Our observation of your empire is a moral necessity.\n\nYour conduct demands scrutiny. When you change your ways, our scrutiny will end.
+WARNING_ATTACKS	;Your attacks on Banoserit forces are a moral outrage.\n\nOur ancestors demand justice. Cease your aggression, or face the consequences of your sins.
+WARNING_ATTACKS_RESPONSE_FRIENDLY	;This is deeply shameful. The Banoserit do not condone unprovoked aggression.\n\nThe commanders responsible will face the full weight of our moral tribunal.
+WARNING_ATTACKS_RESPONSE_NEUTRAL	;We will investigate this incident with the thoroughness it deserves.\n\nIf our forces acted dishonorably, they will be judged.
+WARNING_ATTACKS_RESPONSE_ANGRY	;Our actions were a measured response to your own immoral conduct.\n\nThe Banoserit do not attack without cause. Examine your own behavior before accusing us.

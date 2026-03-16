@@ -51,9 +51,9 @@ TraceScanner	;1
 TroopCompartment	;1
 VectoringEngine	;10
 WeaponArea	;0
-WeaponBeam	;10
+WeaponBeam	;5
 WeaponBombard	;0
-WeaponMissile	;30
+WeaponMissile	;35
 WeaponPhaser	;0
 WeaponRailGun	;0
 WeaponsManufacturingPlant	;0

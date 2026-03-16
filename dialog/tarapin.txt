@@ -1,40 +1,40 @@
 'Distant Worlds - dialogue - Version 1.9.5.10 - Modded by the Distant Worlds Mod Editor by Sabranan
 
-GREETING_INTRODUCTION	;Greetings! We are the {0}.\n\nOur history is one of sorrow and slavery.\n\nWe are free now and we seek only a fair place in this Galaxy.
-GREETING_FRIENDLY	;A pleasure to see your face again, friend. What can we do for you?
-GREETING_NEUTRAL	;How can we help you?
-GREETING_ANGRY	;You try our patience. Make your point quickly.
-OFFER_FREETRADE	;We recommend a Free Trade Agreement between our empires.\n\nThis is the true path of our Empires for a strong friendship.
-FREETRADE_ACCEPT	;A grand idea! We accept your offer of a Free Trade Agreement.\n\nLong live our alliance!
-FREETRADE_REJECT	;No, we reject a Free Trade Agreement with you at this time.\n\nPossibly later though, we can't rule it out.
-CANCELTREATY	;We can no longer support our {0} with you. So we are ending this treaty now.\n\nWe wish you well
-CANCELTREATY_RESPONSE_FRIENDLY	;This is unexpected to us!\n\nWe don't really understand your actions here, but we respect your decision.
-CANCELTREATY_RESPONSE_NEUTRAL	;When treaties no longer work, we should face these issues openly.\n\nThank you for your honesty here.
-CANCELTREATY_RESPONSE_ANGRY	;We concur with your evaluation.\n\nThis treaty no longer meets our needs either. It is best to end it.
-TREATY_PROPOSAL	;What kind of change do you have in mind?
-TREATY_ACCEPTRESPONSE	;An excellent outcome! We rejoice with our new allies.\n\nWe shall defend each other's freedom.
-TREATY_REJECTRESPONSE	;Are you sure we cannot change your mind?\n\nMaybe you will reconsider it some time in the future
-TRADESANCTIONS_IMPOSE	;We do not undertake this course lightly, but we must now impose Trade Sanctions on you.\n\nWe hope that we do not need to take things further than this.
-TRADESANCTIONS_IMPOSE_RESPONSE_ANGRY	;We are angered by your hasty imposition of Trade Sanctions!\n\nWe will respond quickly to protect our interests.
-TRADESANCTIONS_IMPOSE_RESPONSE_NEUTRAL	;You seek to harm us huh? We do not forget so easily.
-TRADESANCTIONS_IMPOSE_RESPONSE_SURPRISED	;Your actions make no sense to us. We see no need for Trade Sanctions.
-TRADESANCTIONS_LIFT	;Our Trade Sanctions against you have served their purpose.\n\nWe are now lifting them.
-TRADESANCTIONS_LIFT_RESPONSE	;Very well. We will also resume trade with you.\n\nLets hope this brings a better future.
-WAR_DECLARE	;You leave us with no choice: we declare WAR on you!\n\nOur justice will be quick, decisive and permanent. Freedom for all Tarapins!
-WAR_DECLARE_RESPONSE_EAGER	;War on us? Huh! We will give you a lesson in war.\n\nWe do not fear you.
-WAR_DECLARE_RESPONSE_NEUTRAL	;You have chosen this course, and we will respond.\n\nPrepare your defenses!
-WAR_DECLARE_RESPONSE_SURPRISED	;Are you in the habit of attacking your friends? Your behaviour is very strange.\n\nBe warned that we will defend our freedom fiercely!
-WAR_END	;This war has continued long enough. We suggest a ceasefire is in order.\n\nDo you agree?
-WAR_END_ACCEPT	;Yes, no more lives need be lost.\n\nWe are pulling back our forces now.
-WAR_END_REJECT	;No, we intend to see this war to its finish.\n\nYour aggression has no place in this galaxy.
-GIFT_GIVE	;We offer you this gift of {0} credits.\n\nPlease accept it as a sign of our desire to be friends.
-GIFT_THANKS	;We thank you for your kind gift. Most appreciated.
-WARNING	;This sounds serious. Please explain the matter to us.
-WARNING_INTELLIGENCEMISSIONS	;We have intercepted your covert missions against us. This must stop now.\n\nYou have been warned!
-WARNING_INTELLIGENCEMISSIONS_RESPONSE_FRIENDLY	;Covert missions? Consider them finished.\n\nWe will not bother you again.
-WARNING_INTELLIGENCEMISSIONS_RESPONSE_NEUTRAL	;Yes, we understand. You are afraid of us because you don't know us.\n\nIs there anything else?
-WARNING_INTELLIGENCEMISSIONS_RESPONSE_ANGRY	;We have no idea what you're talking about.\n\nAnd we do not intend to discuss this matter any further.
-WARNING_ATTACKS	;We are very upset by your ship attacks against us.\n\nStop them at once, or we will take punitive action against you!
-WARNING_ATTACKS_RESPONSE_FRIENDLY	;We must apologize, friend. Our border sentries must have become overzealous.\n\nWe will correct this situation.
-WARNING_ATTACKS_RESPONSE_NEUTRAL	;We agree that this is unnecessary.\n\nWe will deal with the starship captains involved in this incident.
-WARNING_ATTACKS_RESPONSE_ANGRY	;Attacks on your ships?\n\nLet me be honest with you: we find your empire to be quite worrisome. I wouldn't be surprised if one of our starship captains got a little trigger-happy.\n\nMaybe you should sort out your own starship commanders first, before complaining to us.
+GREETING_INTRODUCTION	;Greetings, traveler. We are the {0}.\n\nOur history is one of chains and liberation. We were slaves once.\n\nNever again. What brings you to the free people?
+GREETING_FRIENDLY	;Welcome back, friend of the clans!\n\nThe Tarapin remember those who stood with us. What can we do for you?
+GREETING_NEUTRAL	;The Tarapin clans acknowledge your presence.\n\nSpeak freely. We value honesty above all.
+GREETING_ANGRY	;Your actions remind us of those who once held our chains.\n\nChoose your words carefully.
+OFFER_FREETRADE	;The Tarapin clans propose a Free Trade Agreement.\n\nFree commerce between free peoples. It is what we fought for.\n\nDo you accept?
+FREETRADE_ACCEPT	;Free Trade! The clans approve!\n\nFreedom and commerce go hand in hand. We welcome this partnership.
+FREETRADE_REJECT	;We understand. Not every arrangement suits every time.\n\nThe Tarapin are patient. We waited generations for freedom.
+CANCELTREATY	;The clans have deliberated. Our {0} with you must end.\n\nWe break no bond lightly, but this one no longer serves the free people.
+CANCELTREATY_RESPONSE_FRIENDLY	;This saddens the clans deeply.\n\nWe had hoped this bond would endure like our hard-won freedom.
+CANCELTREATY_RESPONSE_NEUTRAL	;The Tarapin accept change. We have survived worse.
+CANCELTREATY_RESPONSE_ANGRY	;Good. This arrangement was beginning to feel like a different kind of chain.
+TREATY_PROPOSAL	;A treaty? The Tarapin clans are listening.\n\nTell us your terms. We judge all agreements by one standard: does it preserve freedom?
+TREATY_ACCEPTRESPONSE	;The clans celebrate! A treaty between free peoples!\n\nWe shall defend each other's liberty with everything we have.
+TREATY_REJECTRESPONSE	;The clans have voted against this proposal.\n\nSomething about the terms did not feel... free enough.
+TRADESANCTIONS_IMPOSE	;The Tarapin clans impose Trade Sanctions against you.\n\nWe who were denied everything under Keskudon rule know the weight of deprivation.\n\nThis is a warning, not a punishment.
+TRADESANCTIONS_IMPOSE_RESPONSE_ANGRY	;Sanctions against the Tarapin?!\n\nWe who spent centuries in bondage? You think economic pressure frightens us?\n\nWe endured the Keskudons. We can endure you.
+TRADESANCTIONS_IMPOSE_RESPONSE_NEUTRAL	;The Tarapin survived slavery. Your sanctions are nothing.\n\nBut we note your hostility.
+TRADESANCTIONS_IMPOSE_RESPONSE_SURPRISED	;Trade Sanctions? Against a people who value freedom above all?\n\nWhat have the Tarapin done to deserve this restriction?
+TRADESANCTIONS_LIFT	;The clans have voted to lift Trade Sanctions.\n\nLet freedom flow between our peoples once more.
+TRADESANCTIONS_LIFT_RESPONSE	;The Tarapin welcome open trade.\n\nFreedom of commerce is a right, not a privilege.
+WAR_DECLARE	;The Tarapin clans have voted: WAR.\n\nWe fought the Keskudons for our freedom. We will fight you for it too.\n\nFreedom for all Tarapins!
+WAR_DECLARE_RESPONSE_EAGER	;You attack a people born in chains?\n\nThe Tarapin broke free from the Keskudons themselves. You are not half as frightening.\n\nFreedom!
+WAR_DECLARE_RESPONSE_NEUTRAL	;The Tarapin did not seek this war.\n\nBut we will defend our freedom with the same determination that won it in the first place.
+WAR_DECLARE_RESPONSE_SURPRISED	;War? Against the Tarapin?\n\nWe who seek only to live free? What did we do to provoke this?
+WAR_END	;This war threatens everything the Tarapin fought so hard to build.\n\nThe clans propose peace. Will you accept?
+WAR_END_ACCEPT	;Peace! The clans rejoice.\n\nLet us rebuild what war has torn down. Freedom is worth defending, and it is worth preserving.
+WAR_END_REJECT	;No peace? Then the Tarapin fight on.\n\nWe broke the chains of the Keskudons. We will break yours too.
+GIFT_GIVE	;The Tarapin clans send {0} credits as a gift.\n\nFreedom is priceless, but friendship has value too.
+GIFT_THANKS	;A gift from a friend! The clans are grateful.\n\nGenerosity between free peoples is the sweetest kind.
+WARNING	;A warning? The Tarapin clans are listening.\n\nWe have learned to take warnings seriously.
+WARNING_INTELLIGENCEMISSIONS	;The clans have detected your covert agents in our territory.\n\nThe Tarapin spent centuries under Keskudon surveillance. We know what being watched feels like.\n\nStop this at once.
+WARNING_INTELLIGENCEMISSIONS_RESPONSE_FRIENDLY	;Covert missions against the Tarapin? That was not authorized.\n\nWe will investigate and put a stop to it immediately.
+WARNING_INTELLIGENCEMISSIONS_RESPONSE_NEUTRAL	;The clans will look into this matter.
+WARNING_INTELLIGENCEMISSIONS_RESPONSE_ANGRY	;Yes, we observe you. Because your behavior reminds us of those who once enslaved us.\n\nChange your ways, and our vigilance will ease.
+WARNING_ATTACKS	;Your attacks on Tarapin ships are an assault on a free people!\n\nThe clans will not tolerate this. We fought too hard for our liberty to let anyone threaten it.\n\nStop now!
+WARNING_ATTACKS_RESPONSE_FRIENDLY	;This is terrible. The clans did not authorize any hostile action.\n\nWe will find out what happened and make it right.
+WARNING_ATTACKS_RESPONSE_NEUTRAL	;The clans will investigate this incident.
+WARNING_ATTACKS_RESPONSE_ANGRY	;Our ships defended Tarapin freedom. That is what they are for.\n\nStop threatening us, and they will have no reason to fire.

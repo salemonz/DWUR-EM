@@ -1,40 +1,40 @@
 'Distant Worlds - dialogue - Version 1.9.5.10 - Modded by the Distant Worlds Mod Editor by Sabranan
 
-GREETING_INTRODUCTION	;Welcome! We are {0}.\n\nWe love fixing machines and hunting Bakdurs.\n\nWe not like baths or genocidal dictators
-GREETING_FRIENDLY	;Welcome our humble camp friend!\n\nWhat talk about?
-GREETING_NEUTRAL	;What we do for you?
-GREETING_ANGRY	;Not happy to see you, ok.\n\nSo make it quick
-OFFER_FREETRADE	;We make Free Trade Agreement with you! Good idea, hmmm?\n\nSay yes!
-FREETRADE_ACCEPT	;Yippeee for Free Trade Agreement! We accept!\n\nStay for party, yes?
-FREETRADE_REJECT	;No, not want your Free Trade Agreement. Its no good for us
-CANCELTREATY	;{0} with you is no good now. All finished
-CANCELTREATY_RESPONSE_FRIENDLY	;You stopped liking us? How we fix?\n\nWe even have bath if you want
-CANCELTREATY_RESPONSE_NEUTRAL	;Huh? You not like us now?\n\nOk then
-CANCELTREATY_RESPONSE_ANGRY	;No treaty now?\n\nWell we thought you looked funny anyway. You have no smell! And too clean
-TREATY_PROPOSAL	;Ohhh, treaty, treaty! So exciting!\n\nOk, we're listening now. Tell us plan
-TREATY_ACCEPTRESPONSE	;Yeehaa! New friend!\n\nYou have any broken junk you not want? We take it for you, yes?
-TREATY_REJECTRESPONSE	;Too bad. We had celebration all ready to go.\n\nBut not now
-TRADESANCTIONS_IMPOSE	;We not like you now. So doing Trade Sanctions on you!\n\nNo more Bakdur meat for you!
-TRADESANCTIONS_IMPOSE_RESPONSE_ANGRY	;Yiiiii! We very angry on you!\n\nBig trouble coming for you, no-smell people!
-TRADESANCTIONS_IMPOSE_RESPONSE_NEUTRAL	;Aaak! This not good. You not be fair with us!
-TRADESANCTIONS_IMPOSE_RESPONSE_SURPRISED	;You a big meanie! We kind to you, but you hard on us.\n\nNot make sense
-TRADESANCTIONS_LIFT	;We trade with you again now.\n\nNeed more broken junk, so send some to us, ok?
-TRADESANCTIONS_LIFT_RESPONSE	;You change mind all the time.\n\nBut we happy, trading is good
-WAR_DECLARE	;You make us super angry! We WAR on you!\n\nLook out: big hunting ships coming for you!
-WAR_DECLARE_RESPONSE_EAGER	;We happy to fight you! You too clean, have no smell!\n\nYou need hunting
-WAR_DECLARE_RESPONSE_NEUTRAL	;Ok then. We big bash-up on you now!
-WAR_DECLARE_RESPONSE_SURPRISED	;War you say? No good!\n\nNot make sense
-WAR_END	;War no good. We stop now.\n\nYou stop too?
-WAR_END_ACCEPT	;Ok, war finished.\n\nNearly Bakdur hunting season anyway
-WAR_END_REJECT	;You had enough fighting Bakdur breath?\n\nNot us! We hunt you some more!
-GIFT_GIVE	;Something for you: {0} credits.\n\nHave happy time, ok?
-GIFT_THANKS	;You give us gift! Thanks
-WARNING	;Warning us for what?
-WARNING_INTELLIGENCEMISSIONS	;You tricky snake! You doing secret scary things on us!\n\nNot happy with tricky stuff! Stop now, or else!
-WARNING_INTELLIGENCEMISSIONS_RESPONSE_FRIENDLY	;Missions? What are these?\n\nNo missions on you. You wrong
-WARNING_INTELLIGENCEMISSIONS_RESPONSE_NEUTRAL	;We check on missions. Not sure if we did
-WARNING_INTELLIGENCEMISSIONS_RESPONSE_ANGRY	;Yes, we send missions. We not like you - you not smell!\n\nWe send more missions if you keep scaring us
-WARNING_ATTACKS	;You crazy alien! Stop attacking us!\n\nWe hunt you if not stop!
-WARNING_ATTACKS_RESPONSE_FRIENDLY	;This very bad. We sorry.\n\nWe tell crazy ship captains to stop now
-WARNING_ATTACKS_RESPONSE_NEUTRAL	;That not good.\n\nWe look at things. Find out what happened, ok?
-WARNING_ATTACKS_RESPONSE_ANGRY	;Yes, we send attacks on you. Our ships hunting you because you mean.\n\nStop being crazy bad, then we stop attacks, ok?
+GREETING_INTRODUCTION	;Welcome welcome! We are {0}.\n\nTeekan are best traders in galaxy! Also best Bakdur hunters. Also best junk fixers.\n\nWe not like baths though. Baths wash away good smell!
+GREETING_FRIENDLY	;Friend! Come sit at camp fire!\n\nWe got fresh Bakdur jerky and pile of broken machines to look through.\n\nWhat you want talk about?
+GREETING_NEUTRAL	;Mercantile Guild is open for business.\n\nWhat you need? We probably got it. Or we know where to find it.
+GREETING_ANGRY	;Three eyes watching you, and none of them happy.\n\nMake it quick.
+OFFER_FREETRADE	;Teekan Mercantile Guild propose Free Trade Agreement!\n\nWe got Bakdur meat, rare minerals, and best junk collection in the sector!\n\nYou want in, yes?
+FREETRADE_ACCEPT	;Yippeee! Free Trade! The Guild is very pleased!\n\nSend us all your broken stuff! We fix and sell back to you for profit. Everyone wins!
+FREETRADE_REJECT	;No trade? Hmm, your loss.\n\nTeekan goods sell themselves. Someone else buy what you not want.
+CANCELTREATY	;{0} with you not making profit anymore. Guild says time to end it.\n\nNothing personal. Just business.
+CANCELTREATY_RESPONSE_FRIENDLY	;You cancel on Teekan? But we had good thing!\n\nWe even let you use our three-eyed discount! You not find better deal!
+CANCELTREATY_RESPONSE_NEUTRAL	;Huh. Ok then.\n\nTeekan caravan moves on. Always more customers down the trail.
+CANCELTREATY_RESPONSE_ANGRY	;Good! Treaty was bad deal anyway. Guild knew it.\n\nYou smell too clean and your junk is boring.
+TREATY_PROPOSAL	;Ohhh, treaty talk! The Guild loves negotiating!\n\nAll three eyes are on you. Tell us terms!
+TREATY_ACCEPTRESPONSE	;Deal! NEW FRIEND!\n\nGuild is throwing market festival! You get first pick of our junk pile!\n\nAlso you want Bakdur jerky? We got plenty!
+TREATY_REJECTRESPONSE	;Aaak, no deal.\n\nGuild already had the celebration food ready. Now who eat all this Bakdur stew?
+TRADESANCTIONS_IMPOSE	;Mercantile Guild votes: Trade Sanctions on you!\n\nNo more Bakdur meat! No more rare minerals! No more beautiful junk!\n\nYou going to miss us!
+TRADESANCTIONS_IMPOSE_RESPONSE_ANGRY	;Yiiiii! Big trouble for you!\n\nThree-eyed Teekan never forget who mess with the Guild!
+TRADESANCTIONS_IMPOSE_RESPONSE_NEUTRAL	;Aaak! Not fair!\n\nBut Teekan always find new customers. Desert has many trails.
+TRADESANCTIONS_IMPOSE_RESPONSE_SURPRISED	;Why you do this? Teekan always gave you fair price!\n\nWell, mostly fair. Ok, Teekan price. But still!\n\nNot make sense!
+TRADESANCTIONS_LIFT	;Guild says Trade Sanctions over!\n\nWe trade again now. Got big pile of new junk to sell you. Very exciting!\n\nAlso Bakdur herds just came through. Fresh meat!
+TRADESANCTIONS_LIFT_RESPONSE	;About time! Teekan marketplace was getting dusty without your credits.\n\nBut we happy. Trading is what Teekan do best!
+WAR_DECLARE	;You make Mercantile Guild super angry! WAR!\n\nTeekan missiles coming for you! Also ion cannons! We take your stuff apart piece by piece!\n\nThen we fix it and sell it back!
+WAR_DECLARE_RESPONSE_EAGER	;You want fight Teekan? Three eyes say: bring it!\n\nWe hunt Bakdur across the desert for fun. You just another big slow target!
+WAR_DECLARE_RESPONSE_NEUTRAL	;Ok, war then.\n\nGuild not happy about this. War bad for business. But Teekan fight when we must!
+WAR_DECLARE_RESPONSE_SURPRISED	;War?! On the Teekan?!\n\nBut we just wanted to trade with you! And share Bakdur jerky!\n\nThis not make sense at all!
+WAR_END	;War is very bad for business. Guild losing credits every day.\n\nWe stop now, yes? Go back to trading?
+WAR_END_ACCEPT	;Ok, war done! Time to pack up camp and follow the Bakdur herds again.\n\nMuch better than fighting.
+WAR_END_REJECT	;Not done yet! Guild has accounts to settle!\n\nTeekan ion cannons still got plenty of charge. We keep hunting!
+GIFT_GIVE	;Teekan send you {0} credits!\n\nFriendship is best investment, Guild says. Better than junk. Well, almost better than junk.
+GIFT_THANKS	;Gift for Teekan! Three eyes tearing up!\n\nYou very generous! Guild remembers good customers.
+WARNING	;Warning? For Teekan?\n\nAll three eyes open. What is it?
+WARNING_INTELLIGENCEMISSIONS	;Teekan scouts spotted your sneaky agents near our camps!\n\nGuild not like sneaky types! Sneaky types bad for business!\n\nStop right now or Teekan get very cranky!
+WARNING_INTELLIGENCEMISSIONS_RESPONSE_FRIENDLY	;Missions on you? Not us!\n\nTeekan do business in the open. Three eyes see everything, no need for sneaking.
+WARNING_INTELLIGENCEMISSIONS_RESPONSE_NEUTRAL	;Hmm, Guild will check into this.\n\nSometimes our scouts get too curious poking through other people's junk piles.
+WARNING_INTELLIGENCEMISSIONS_RESPONSE_ANGRY	;Yes, Teekan sent scouts! Because you acting suspicious!\n\nWhen you stop being suspicious, we stop scouting. Simple as Bakdur tracking!
+WARNING_ATTACKS	;You attacking Teekan ships?!\n\nThose ships full of valuable junk! And Bakdur meat! And rare minerals!\n\nStop right now or Guild send whole caravan fleet after you!
+WARNING_ATTACKS_RESPONSE_FRIENDLY	;Oh no, this very bad. Some of our captains made big mistake.\n\nGuild will deal with them. Probably dock their Bakdur rations for a month.
+WARNING_ATTACKS_RESPONSE_NEUTRAL	;Hmm, not good. We check what happened.\n\nTeekan captains sometimes get too excited when they see interesting ships to take apart.
+WARNING_ATTACKS_RESPONSE_ANGRY	;Yes, Teekan ships attacked you. Because you been mean to the Guild!\n\nStop being mean, and we stop shooting. Fair deal, yes?

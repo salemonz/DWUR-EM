@@ -44,7 +44,7 @@ ConstructionSpaceportLargeColonyPopulationThreshold			;500
 ConstructionSpaceportMediumColonyPopulationThreshold		;250
 ConstructionSpaceportSmallColonyPopulationThreshold			;50
 ConstructionSpaceportMinimumDistance						;5
-DiplomacySendGiftsUpToAmount			;10000
+DiplomacySendGiftsUpToAmount			;15000
 DiplomacyTradeSanctionsUseBlockades		;N
 FleetMilitaryProportionForFleets					;75
 FleetStrikeForceTypicalSize						;5
@@ -95,7 +95,7 @@ ResearchPriority							;3
 TradePriority								;4
 AlliancePriority							;2
 SubjugationPriority							;1
-TourismPriority								;2
+TourismPriority								;3
 ExplorationPriority							;4
 WarWillingness								;1
 BreakTreatyWillingness							;1

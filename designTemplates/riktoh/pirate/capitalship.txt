@@ -8,7 +8,7 @@
 
 AreaShieldRecharge	;0
 Armor	;15
-AssaultPod	;4
+AssaultPod	;3
 CargoBay	;0
 ColonizationModule	;0
 CombatTargettingSystem	;1
@@ -60,7 +60,7 @@ WeaponsManufacturingPlant	;0
 WeaponsResearchLab	;0
 WeaponSuperBeam	;0
 WeaponTorpedo	;0
-WeaponTractorBeam	;0
+WeaponTractorBeam	;2
 WeaponGravitonBeam	;0
 WeaponAreaGravity	;0
 ImageScaling;Scaled 0.95

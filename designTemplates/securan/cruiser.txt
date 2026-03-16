@@ -45,7 +45,7 @@ Reactor	;2
 RecreationCenter	;0
 ResourceProfileSensor	;0
 ScannerJammer	;0
-Shields	;8
+Shields	;14
 StealthCloak	;0
 TraceScanner	;0
 TroopCompartment	;1

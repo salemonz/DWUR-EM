@@ -22,7 +22,7 @@ EnergyManufacturingPlant	;0
 EnergyResearchLab	;0
 EnergyToFuelConverter	;0
 Engine	;10
-FighterBay	;0
+FighterBay	;1
 FleetCountermeasuresSystem	;1
 FleetTargettingSystem	;1
 FuelCell	;14
@@ -60,7 +60,7 @@ WeaponsManufacturingPlant	;0
 WeaponsResearchLab	;0
 WeaponSuperBeam	;0
 WeaponTorpedo	;5
-WeaponTractorBeam	;0
+WeaponTractorBeam	;1
 WeaponGravitonBeam	;0
 WeaponAreaGravity	;
 ImageScaling;Scaled 0.75

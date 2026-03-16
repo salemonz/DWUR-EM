@@ -53,13 +53,13 @@ VectoringEngine	;8
 WeaponArea	;1
 WeaponBeam	;0
 WeaponBombard	;0
-WeaponMissile	;0
+WeaponMissile	;5
 WeaponPhaser	;0
 WeaponRailGun	;0
 WeaponsManufacturingPlant	;0
 WeaponsResearchLab	;0
 WeaponSuperBeam	;1
-WeaponTorpedo	;24
+WeaponTorpedo	;20
 WeaponTractorBeam	;0
 WeaponGravitonBeam	;0
 WeaponAreaGravity	;1

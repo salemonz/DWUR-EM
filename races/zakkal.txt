@@ -1,7 +1,7 @@
 Name	;Zakkal
 PictureIndex	;40
 RaceFamily	;0
-ReproductionRate	;1.17
+ReproductionRate	;1.26
 Intelligence	;105
 Aggression	;110
 Caution	;90
@@ -11,7 +11,7 @@ DesignsPictureFamilyIndex	;29
 DesignNamesIndex	;0
 ShipMaintenanceSavings	;10
 TroopMaintenanceSavings	;0
-ResourceExtractionBonus	;10
+ResourceExtractionBonus	;15
 WarWearinessAttenuation	;10
 SatisfactionModifier	;10
 ResearchBonus	;10
@@ -21,7 +21,7 @@ OverallShipDesignFocus	;0
 TechFocus1	;3
 TechFocus2	;9
 NativePlanetType	;2
-SpecialComponent	;-1
+SpecialComponent	;137
 WeaponsResearchProjectOrder	;67,293,51,57,22,346,324,330,344,486,294,52,553,554,23,309,328,318,327,336,370,472,295,53,60,24,355,319,320,329,371,275,68,296,54,64,59,25,356,69,590,55,439,357,480,591,66,62,26,358,70,592,56,481,474,498,598,597,274,473
 EnergyResearchProjectOrder	;123,95,105,363,166,465,477,479,115,106,167,501,96,74,133,145,116,107,172,89,163,75,92,487,108,280,134,164,146,173,90,93,488,165,71,130,109,98,103,399,131,117,110,99,400,101,72,552,111,100,422
 HighTechResearchProjectOrder	;212,227,364,249,253,262,269,219,245,460,188,182,204,198,456,425,228,225,446,258,442,457,458,189,183,236,238,426,224,250,213,205,199,451,406,405,206,214,413,284,191,185,200,283,220,190,184,237,454,201,410
@@ -57,15 +57,15 @@ TroopName	;Infantry Battalion
 TroopNameArmored	;Armored Division
 TroopNamePlanetaryDefense	;Security Force
 TroopNameSpecialForces	;Marine
-Resource1Type	;40
-Resource1Effect	;1
-Resource1Amount	;5
+Resource1Type	;35
+Resource1Effect	;8
+Resource1Amount	;10
 Resource1AppliesOnlyToSource	;N
-Resource2Type	;0
-Resource2Effect	;4
-Resource2Amount	;5
+Resource2Type	;22
+Resource2Effect	;3
+Resource2Amount	;10
 Resource2AppliesOnlyToSource	;N
-Resource3Type	;14
+Resource3Type	;1
 Resource3Effect	;2
 Resource3Amount	;5
 Resource3AppliesOnlyToSource	;N

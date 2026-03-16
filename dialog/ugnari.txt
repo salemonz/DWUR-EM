@@ -1,40 +1,40 @@
 'Distant Worlds - dialogue - Version 1.9.5.10 - Modded by the Distant Worlds Mod Editor by Sabranan
 
-GREETING_INTRODUCTION	;Welcome strange one! We are the {0}.\n\nWe love tinkering with new technology.\n\nPerhaps you've heard others say that we are greedy and dishonest, but don't believe those lies. We just like to make sure we get a good deal
-GREETING_FRIENDLY	;Welcome back! What did you want to talk about?
-GREETING_NEUTRAL	;We are listening
-GREETING_ANGRY	;We're not very happy with you. So tell us what you want, then leave!
-OFFER_FREETRADE	;How about accepting our offer of a Free Trade Agreement?\n\nIt would be a great deal for you! And I suppose we would benefit from it too...\n\nDo you accept?
-FREETRADE_ACCEPT	;It's a deal!\n\nWe acccept the Free Trade Agreement
-FREETRADE_REJECT	;No deal.\n\nWe are not interested in a Free Trade Agreement just now
-CANCELTREATY	;Our {0} with you is over.\n\nNo hard feelings, right? We can renegotiate later if you want
-CANCELTREATY_RESPONSE_FRIENDLY	;No more treaty?!\n\nAren't we friends now? Did we cheat too much?
-CANCELTREATY_RESPONSE_NEUTRAL	;Hey, you broke the deal! That's not fair.\n\nWe snuck a lot of devious fineprint into that treaty. That was hard work!
-CANCELTREATY_RESPONSE_ANGRY	;We don't need your silly treaty anyway. So there
-TREATY_PROPOSAL	;What's the deal?
-TREATY_ACCEPTRESPONSE	;Celebration! We're partners now!
-TREATY_REJECTRESPONSE	;We are sad about this
-TRADESANCTIONS_IMPOSE	;You bet the wrong way this time: Trade Sanctions on you!\n\nWe're not trading with your empire again!
-TRADESANCTIONS_IMPOSE_RESPONSE_ANGRY	;Trade Sanctions?! You are a big cheat!\n\nWe'll get you, tricky alien!
-TRADESANCTIONS_IMPOSE_RESPONSE_NEUTRAL	;No trading with you?\n\nYour business deals were all bad anyway. We don't need them
-TRADESANCTIONS_IMPOSE_RESPONSE_SURPRISED	;Keep your trade then. We don't care
-TRADESANCTIONS_LIFT	;It's your lucky day: we're lifting our Trade Sanctions against you.\n\nWe will now resume trading with you. But no more funny business, ok?
-TRADESANCTIONS_LIFT_RESPONSE	;Huh! We do not need your trade...
-WAR_DECLARE	;You cheating trickster! We declare WAR on you!\n\nYou'll be sorry now!
-WAR_DECLARE_RESPONSE_EAGER	;You think you'll defeat us?! You're wrong.\n\nWe're trickier than you are! You'll be sorry!
-WAR_DECLARE_RESPONSE_NEUTRAL	;We're ready for you. We'll punish you!
-WAR_DECLARE_RESPONSE_SURPRISED	;We thought you liked us?!\n\nYou can't do this! It's not allowed!
-WAR_END	;This war is unprofitable. It should end.\n\nWhat do you say?
-WAR_END_ACCEPT	;Yes, we agree to end the war
-WAR_END_REJECT	;No, we're betting on winning this war.\n\nSo we're not stopping now!
-GIFT_GIVE	;Here's a gift for you: {0} credits
-GIFT_THANKS	;Thanks for your gift!\n\nYou know, we really like money. And people who give us money
-WARNING	;What did we do wrong?
-WARNING_INTELLIGENCEMISSIONS	;Stop doing all those spy things on us!\n\nWe can see how devious you are. We're pretty devious ourselves, so we know what we're talking about.\n\nAnyway, don't do those things again, alright?
-WARNING_INTELLIGENCEMISSIONS_RESPONSE_FRIENDLY	;Spy missions on you?\n\nYou must have gotten mixed up friend. That can't be us
-WARNING_INTELLIGENCEMISSIONS_RESPONSE_NEUTRAL	;Spy missions on you?\n\nYou must have gotten mixed up. That can't be us
-WARNING_INTELLIGENCEMISSIONS_RESPONSE_ANGRY	;Spy missions against you?\n\nSo what if we did? You probably deserved it!
-WARNING_ATTACKS	;Stop attacking our ships and bases!\n\nWe're warning you: keep this up and you'll be sorry!
-WARNING_ATTACKS_RESPONSE_FRIENDLY	;Attacks? What are you talking about?\n\nThat wasn't us, friend
-WARNING_ATTACKS_RESPONSE_NEUTRAL	;Attacks? What are you talking about?\n\nThat wasn't us
-WARNING_ATTACKS_RESPONSE_ANGRY	;Attacks on you?\n\nMaybe we did do it. But you deserved it anyway, so there!
+GREETING_INTRODUCTION	;Hey hey! We are the {0}!\n\nThe Ugnari love a good deal, a clever trick, and a machine that does something it was never designed to do.\n\nSo what have you got for us?
+GREETING_FRIENDLY	;Our favorite business partner!\n\nPull up a chair, the card game is about to start. But first, what can the Ugnari do for you?
+GREETING_NEUTRAL	;The Ugnari are listening.\n\nMake it interesting.
+GREETING_ANGRY	;Last time we dealt with you, we got the short end of the stick.\n\nThis time, the Ugnari are paying attention.
+OFFER_FREETRADE	;The Ugnari propose a Free Trade Agreement!\n\nOur tinkerers have cooked up some fascinating gadgets. Your markets would love them.\n\nDeal?
+FREETRADE_ACCEPT	;Free Trade! The Ugnari accept!\n\nOur merchants are already calculating the angles. This is going to be profitable. For us, mainly.
+FREETRADE_REJECT	;No deal? Hmm, your loss.\n\nThe Ugnari always find a buyer for their inventions.
+CANCELTREATY	;The Ugnari have run the numbers, and our {0} with you is not paying off.\n\nTime to fold this hand.
+CANCELTREATY_RESPONSE_FRIENDLY	;You fold on us? That is a surprise.\n\nThe Ugnari thought we had a winning hand together.
+CANCELTREATY_RESPONSE_NEUTRAL	;Fair enough. The game changes.\n\nThe Ugnari always adapt.
+CANCELTREATY_RESPONSE_ANGRY	;Ha! We were about to fold first.\n\nThis treaty was costing us more than it was worth.
+TREATY_PROPOSAL	;A treaty? The Ugnari love a good deal!\n\nLay your cards on the table. What have you got?
+TREATY_ACCEPTRESPONSE	;Deal! The Ugnari shake on it!\n\nJust remember: the Ugnari always read the fine print. We wrote it, after all.
+TREATY_REJECTRESPONSE	;No deal? The Ugnari are disappointed.\n\nBut there is always another game.
+TRADESANCTIONS_IMPOSE	;The Ugnari are cutting you off! Trade Sanctions!\n\nNo more Ugnari gadgets, no more Ugnari tricks, no more Ugnari deals.\n\nLet us see how you manage without us.
+TRADESANCTIONS_IMPOSE_RESPONSE_ANGRY	;Sanctions against the Ugnari?!\n\nWe have backup deals with half the galaxy! Your sanctions are a minor inconvenience!
+TRADESANCTIONS_IMPOSE_RESPONSE_NEUTRAL	;The Ugnari always have a backup plan.\n\nYour sanctions sting, but we will manage.
+TRADESANCTIONS_IMPOSE_RESPONSE_SURPRISED	;Wait, what? Sanctions? On the Ugnari?\n\nBut we gave you a fair deal! Well, mostly fair. Ugnari fair.
+TRADESANCTIONS_LIFT	;The Ugnari are lifting Trade Sanctions.\n\nOur tinkerers have too many inventions sitting in warehouses. Time to sell!
+TRADESANCTIONS_LIFT_RESPONSE	;About time! The Ugnari marketplace was getting dusty without your credits.\n\nLet us get back to business.
+WAR_DECLARE	;The Ugnari declare WAR!\n\nOur Raptor Combat Targeting systems are locked on your fleet. Our phasers are charged.\n\nYou gambled against us and lost!
+WAR_DECLARE_RESPONSE_EAGER	;You bet against the Ugnari? Biggest mistake of your life!\n\nOur targeting systems never miss. The house always wins!
+WAR_DECLARE_RESPONSE_NEUTRAL	;The Ugnari did not want this fight.\n\nBut when the cards are dealt, you play the hand. And the Ugnari play to win.
+WAR_DECLARE_RESPONSE_SURPRISED	;War?! Against the Ugnari?!\n\nWe are tinkerers and traders, not warriors!\n\nOk, maybe a little bit warriors. But still!
+WAR_END	;This war is bad for business. The Ugnari propose we call it a draw.\n\nWhat do you say? Handshake and walk away?
+WAR_END_ACCEPT	;Deal! War is over.\n\nThe Ugnari are going back to what we do best: tinkering, gambling, and making money.
+WAR_END_REJECT	;You want to keep playing? Fine.\n\nBut the Ugnari always have one more trick up our sleeve. Always.
+GIFT_GIVE	;The Ugnari send you {0} credits.\n\nCall it an investment. The Ugnari always get a return on investment. Always.
+GIFT_THANKS	;A gift! The Ugnari love gifts!\n\nEspecially when they come with no strings attached. There are no strings, right?
+WARNING	;Warning? For the Ugnari?\n\nAlright, we are listening. But we are also shuffling the deck.
+WARNING_INTELLIGENCEMISSIONS	;The Ugnari have caught your spies poking around our workshops!\n\nOur inventions are proprietary! Hands off our intellectual property!\n\nStop it now or face the consequences!
+WARNING_INTELLIGENCEMISSIONS_RESPONSE_FRIENDLY	;Spying? On the Ugnari? That was not us.\n\nOur tinkerers were probably just examining your technology. Professionally.
+WARNING_INTELLIGENCEMISSIONS_RESPONSE_NEUTRAL	;We will check with our operatives.\n\nSometimes our agents get curious about interesting machinery.
+WARNING_INTELLIGENCEMISSIONS_RESPONSE_ANGRY	;Of course we were snooping. The Ugnari are curious by nature.\n\nStop making interesting technology and we will stop investigating it.
+WARNING_ATTACKS	;You are attacking Ugnari ships?!\n\nThose ships are full of expensive prototype equipment!\n\nStop now or the Ugnari will make you pay. Literally.
+WARNING_ATTACKS_RESPONSE_FRIENDLY	;This is bad business. Our captains made a terrible call.\n\nThe Ugnari will deal with them and compensate for any damages. Maybe.
+WARNING_ATTACKS_RESPONSE_NEUTRAL	;We will look into this. Something must have gone wrong.\n\nThe Ugnari prefer deals to battles.
+WARNING_ATTACKS_RESPONSE_ANGRY	;Our ships attacked yours because you were cheating at the game.\n\nThe Ugnari respect a good trick, but there are limits.

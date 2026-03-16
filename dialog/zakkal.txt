@@ -1,145 +1,145 @@
 'Distant Worlds - dialogue - Version 1.9.5.10 - Modded by the Distant Worlds Mod Editor by Sabranan
 
-INFO_NOFUNDS	;Looks like you don't have enough money to pay for this
-INFO_UNMETEMPIRE	;The new empire is called the {0}
-INFO_EXPLORATION	;We have given you maps of the {0} system in sector {1}
-INFO_INDEPENDENTCOLONY	;The independent colony is at the {0} 
-INFO_RUINS	;Our contacts tell us about some ancient ruins, the {0}, at the {1}.\n\nMaybe you will find something of value there...
-INFO_DEBRISFIELD	;We have heard rumors about a vast debris field of ship wrecks from an ancient battle in the {0} system in sector {1}.\n\nApparently many of the wrecks are salvageable. If you send a construction ship you should be able to recover some of them...
-INFO_PLANETDESTROYER	;We have heard rumors about a colossal abandoned construction project in the {0} system in sector {1}.\n\nWe are unsure what the project is for, but with the right equipment it could probably be completed...
-INFO_RESTRICTEDAREA	;We have heard rumors about a secret restricted area near the {0} system in sector {1}.\n\nApparently ships entering this area find that their hyperdrive becomes suddenly and mysteriously disabled. Many who enter are never heard from again...
-PIRATE_PROTECTIONPROPOSE	;You are wise to come to us for protection. For the entirely reasonable fee shown below we can ensure your safety throughout our domain.
-PIRATE_PROTECTIONPROPOSEINITIATE	;Who knows what hidden dangers await you when travelling through the lawless regions of space?\n\nFor the entirely reasonable fee shown below we can ensure your safety throughout our domain.\n\nWhat do you say?
-PIRATE_PROTECTIONACCEPTRESPONSE	;Excellent! We will ensure that your ships do not suffer any 'unfortunate accidents' until our next fee is due...
-PIRATE_PROTECTIONREJECTRESPONSE	;Too bad you're so cheap! Without payment we cannot guarantee your safety...
-PIRATE_PROTECTIONALREADYPAID	;You have already paid us protection.\n\nCome back when your current protection period expires. We will be happy to accept further payment then.
-PIRATE_BUYINFO	;We can supply you information on any of the items listed below for the prices indicated
-PIRATE_ATTACKOFFER_EMPIRES	;We would be willing to attack any of the empires listed below for the prices indicated
-PIRATE_ATTACKOFFER_SINGLEEMPIRE	;Seems like you're having trouble with the {0}. We would be very happy to attack their bases for you.\n\nOf course we would be very discreet about our arrangement - no one else would know.\n\nAll we ask for this service is a small payment of {1} credits. What do you say?
-PIRATE_ATTACKCOMMENCE	;Consider it money well spent. We will commence our attacks on the {0} immediately!
-PIRATE_ALLIANCEPROPOSE	;Your previous arrangement with us has now expired. Why not upgrade to a permanent alliance with us?\n\nFor the ongoing monthly fee of {0} credits, we could both protect your ships and also attack your enemies, while you keep your hands clean.\n\nWhat do you think?
-PIRATE_ALLIANCEACCEPT	;We accept your offer of an alliance
-PIRATE_ALLIANCEACCEPTRESPONSE	;An excellent decision!\n\nWe'll make sure that your ships are safe from our marauders. And we'll start targetting the assets of your enemies.\n\nLet us know if there's anyone you'd especially like us to attack
-PIRATE_ALLIANCEREJECT	;We reject your alliance offer
-PIRATE_ALLIANCEREJECTRESPONSE	;A poor choice.\n\nWe cannot help you without appropriate reimbursement.\n\nPiracy is an expensive business you know!
-PIRATE_ALLIANCECANCEL	;We wish to cancel this alliance
-PIRATE_ALLIANCECANCELRESPONSE	;A sad end to a most profitable relationship...\n\nRemember that without ongoing payment we cannot ensure the safety of your ships.\n\nMaybe you should reconsider?
-INFO_OFFER_UNMETEMPIRE	;Exchange with other civilizations is the key to growth and prosperity, don't you think?\n\nWe can put you in contact with another empire for {0} credits
-INFO_OFFER_INDEPENDENTCOLONY	;Wondering where to establish your next colony?\n\nWe can reveal the location of an independent colony for {0} credits
-INFO_OFFER_SYSTEMMAPS	;Knowing your surroundings is key to survival.\n\nWe have maps of an unexplored system that we are willing to sell to you for {0} credits
-INFO_OFFER_RUINS	;There are many valuable secrets hidden throughout the galaxy.\n\nWe have made an intriguing discovery that we would be happy to share with you for {0} credits.\n\nWhat do you say?
-INFO_OFFER_DEBRISFIELD	;There are many valuable secrets hidden throughout the galaxy.\n\nWe have made an intriguing discovery that we would be happy to share with you for {0} credits.\n\nWhat do you say?
-INFO_OFFER_RESTRICTEDAREA	;There are many valuable secrets hidden throughout the galaxy.\n\nWe have made an intriguing discovery that we would be happy to share with you for {0} credits.\n\nWhat do you say?
-INFO_OFFER_PLANETDESTROYER	;There are many valuable secrets hidden throughout the galaxy.\n\nWe have made an intriguing discovery that we would be happy to share with you for {0} credits.\n\nWhat do you say?
-GREETING_INTRODUCTION	;Greetings! We are the {0}
-GREETING_FRIENDLY	;Share your thoughts with us friend
-GREETING_NEUTRAL	;You wanted to speak with me?
-GREETING_ANGRY	;What do you want?
-OFFER_FREETRADE	;We urge you to join with our dynamic economy in a Free Trade Agreement!\n\nWhat do you say?
-OFFER_PROTECTORATE	;Our friends, we offer you refuge in a Protectorate treaty. Our mighty empire will defend you against any attackers.\n\nWhat do you think?
-OFFER_MUTUALDEFENSE	;Our good friends, we feel that it would be in both our best interests to form a Mutual Defense Pact.\n\nThis would discourage others from launching attacks against either of us.\n\nWhat do you think?
-OFFER_DEAL	;Would you accept this trade?
-OFFER_DEAL_RESPONSE	;What kind of deal are you offering?
-OFFER_DEAL_TERRITORYMAP	;Care to swap territory maps?
-OFFER_DEAL_GALAXYMAP	;Care to swap galaxy maps?
-OFFER_DEAL_COMPONENT	;Would you like to buy some technology from us?\n\nWe are willing to sell you {0} for {1} credits.\n\nWhat do you say?
-DEAL_BEGIN	;What do you propose?
-DEAL_OFFER	;Please consider this trade offer.\n\nWe give you: {0}...\n\n...in exchange for: {1}
-DEAL_DEMAND	;We require you to relinquish ownership of this:\n\n{1}
-DEAL_THREAT	;You must give us this:\n\n{1}\n\n...{0}
-DEAL_ACCEPT	;We accept your proposal
-DEAL_ACCEPTCOMPLAIN	;We accede to your outrageous demands, but under duress!
-DEAL_IMPROVE	;Your proposal is worthy of further consideration - can you improve your offer?
-DEAL_REJECT	;This proposal is not in our interests - no deal
-DEAL_REJECTCOMPLAIN	;Don't bully us! We are not scared of your threats!
-DEAL_REJECT_RESPONSE	;How disappointing...
-DEAL_REJECTDEMAND_RESPONSE	;How dare you reject our entirely reasonable ultimatum!\n\nThat's the last mistake you'll ever make!
-DEAL_ACCEPT_RESPONSE	;An excellent outcome!
-MUTUALDEFENSE_ACCEPT	;We agree, a Mutual Defense Pact with you would be highly beneficial.\n\nLong live our alliance!
-MUTUALDEFENSE_REJECT	;Thank you for your offer, but we do not desire a Mutual Defense Pact at this time
-MUTUALDEFENSE_REQUESTHELP	;We are under attack from the {0}! We call on you to honor your treaty with us and declare war on them.\n\nWill you stand with us?
-MUTUALDEFENSE_HONORREQUESTHELP	;We stand alongside our friends and allies - we declare war on the {0}!
-MUTUALDEFENSE_HONORREQUESTHELP_RESPONSE	;We deeply appreciate your loyal support friend!
-MUTUALDEFENSE_DECLINEREQUESTHELP	;Sorry but you're on your own...
-MUTUALDEFENSE_DECLINEREQUESTHELP_RESPONSE	;We will not forget the way you treacherously abandoned us!
-PROTECTORATE_ACCEPT	;We gratefully accept your offer of a Protectorate!
-PROTECTORATE_REJECT	;Sorry, but we do not want to be part of a Protectorate treaty at the moment
-FREETRADE_ACCEPT	;We gladly accept your offer of a Free Trade Agreement!
-FREETRADE_REJECT	;Sorry, but we are not interested in a Free Trade Agreement at this time
-CANCELTREATY	;We are cancelling our {0} with you
-CANCELTREATY_RESPONSE_FRIENDLY	;We are saddened that you have chosen to end this beneficial relationship
-CANCELTREATY_RESPONSE_NEUTRAL	;As you wish
-CANCELTREATY_RESPONSE_ANGRY	;We are glad to rid ourselves of this worthless treaty!
-TREATY_PROPOSAL	;What do you propose?
-TREATY_ACCEPTRESPONSE	;Excellent! We welcome our new allies
-TREATY_REJECTRESPONSE	;How disappointing...
-SUBJUGATION_RELEASE_RESPONSE	;Freedom at last!
-SUBJUGATIONDEMAND_ACCEPT_RESPONSE	;Welcome to our new slaves! Defeat is bitter, wouldn't you agree?
-WAR_END_ACCEPT_RESPONSE	;A wise choice
-TRADESANCTIONS_IMPOSE	;We are imposing Trade Sanctions against you. Effective immediately, all trade between our two empires is terminated!
-TRADESANCTIONS_IMPOSE_RESPONSE_ANGRY	;This is an outrage! You will pay for this perfidy!
-TRADESANCTIONS_IMPOSE_RESPONSE_NEUTRAL	;Fine then! This will hurt you more than us!
-TRADESANCTIONS_IMPOSE_RESPONSE_SURPRISED	;Trade Sanctions?! What did we do wrong? I thought we were friends!
-TRADESANCTIONS_LIFT	;We are lifting our Trade Sanctions against you. We will now resume normal trade
-TRADESANCTIONS_LIFT_RESPONSE	;Huh! We do not need your trade, ... but we accept this change
-TRADESANCTIONS_REQUESTLIFTOTHER	;We demand that you restore trade with the {0} at once!
-TRADESANCTIONS_REQUESTLIFTOTHER_ACCEPT	;As you have requested, we will resume trade with the {0}
-TRADESANCTIONS_REQUESTLIFTOTHER_REJECT	;We see no reason to resume trade with the {0}
-TRADESANCTIONS_REQUESTIMPOSEJOINT	;We request that you terminate trade with the {0}
-TRADESANCTIONS_REQUESTIMPOSEJOINT_ACCEPT	;At your request, we have terminated all trade with the {0}
-TRADESANCTIONS_REQUESTIMPOSEJOINT_REJECT	;We see no need to end trade with the {0}
-WAR_DECLARE	;We formally declare War on your worthless empire. Your colonies await liberation from your tyranny
-WAR_DECLARE_RESPONSE_EAGER	;We eagerly anticipate crushing your worthless empire to dust!
-WAR_DECLARE_RESPONSE_NEUTRAL	;So be it. Prepare your defenses!
-WAR_DECLARE_RESPONSE_SURPRISED	;There must be some mistake! What did we do to offend you?! Aren't we friends any more?
-WAR_DECLARE_REQUESTJOINT	;We formally request that you declare war on the {0}
-WAR_DECLARE_REQUESTJOINT_ACCEPT	;At your request, we declare war on the {0}
-WAR_DECLARE_REQUESTJOINT_REJECT	;We will not declare war on the {0}. Fight your own wars!
-WAR_END	;We propose an end to this pointless war.\n\nWhat do you say?
-WAR_END_SUBJUGATIONDEMAND	;We agree to end this war only if you agree to enslave yourselves and become our Subjugated Dominion.\n\nA small price to pay to spare your lives, don't you think?
-WAR_END_SUBJUGATIONOFFER	;We offer to subjugate ourselves as slaves of your mighty empire if you agree to end this destructive war against us.\n\nYour humble slaves await your reply - what do you say?
-WAR_END_ACCEPT	;We agree that this war should end - we will cease hostilities immediately
-WAR_END_REJECT	;No, we will fight on.
-WAR_END_REQUESTOTHER	;Please end your war with the {0}
-WAR_END_REQUESTOTHER_ACCEPT	;At your request, we will end our war with the {0}
-WAR_END_REQUESTOTHER_REJECT	;We will not stop our fight against the miserable {0}!
-SUBJUGATIONDEMAND_ACCEPT	;Yes, we accept defeat and acknowledge your status as our ruler
-SUBJUGATIONDEMAND_REJECT	;No, we will not accede to your outrageous demand for subjugation!
-SUBJUGATIONOFFER_ACCEPT	;Good, we accept your acknowledgement of defeat. We look forward to receiving our regular tribute from you.\n\nGo now, and try not to be such troublemakers!
-SUBJUGATIONOFFER_REJECT	;No, you must suffer further before this war will end
-SUBJUGATION_REQUESTRELEASE	;Our people chafe under your despotic rule! We beg you to release us from our slavery
-SUBJUGATION_RELEASE	;We set you free from your slavery. Use your freedom wisely
-SUBJUGATION_REFUSERELEASE	;No, you will remain our slaves. You make rather good slaves, don't you think?
-GIFT_GIVE	;Please accept this gift of {0} credits as a token of our goodwill
-GIFT_THANKS	;Thank you for your kind gift
-GIFT_PROPOSE	;What kind of gift do you have in mind?
-WARNING	;What is it?
-WARNING_INTELLIGENCEMISSIONS	;We warn you to end your treacherous covert missions against us immediately! We will not tolerate your continued meddling in our affairs!
-WARNING_INTELLIGENCEMISSIONS_RESPONSE_FRIENDLY	;We are not aware of any missions against you my friend, but we will investigate this situation at once
-WARNING_INTELLIGENCEMISSIONS_RESPONSE_NEUTRAL	;Be assured that we will investigate this incident
-WARNING_INTELLIGENCEMISSIONS_RESPONSE_ANGRY	;Covert missions? What missions? If there were any missions, we certainly wouldn't talk to you about them. But there are no missions anyway... So stop being so paranoid!
-WARNING_ATTACKS	;We serve official warning on you to cease all military attacks against us! Failure to stop will lead us to respond with overwhelming force!
-WARNING_ATTACKS_RESPONSE_FRIENDLY	;How terrible, please accept our sincere apologies for any overzealous actions of our military commanders
-WARNING_ATTACKS_RESPONSE_NEUTRAL	;We will investigate this incident and deal with the offending military commander
-WARNING_ATTACKS_RESPONSE_ANGRY	;Attacks? We wouldn't waste our time on attacks against such a pathetic empire like yours.
-WARNING_REMOVEFORCESSYSTEM	;We will not tolerate the presence of your forces in our territory.\n\nRemove your military ships from the {0} system at once!
-WARNING_REMOVEFORCESSYSTEM_RESPONSE_COMPLY	;We see no need to remove our ships from the {0} system.
-WARNING_REMOVEFORCESSYSTEM_RESPONSE_REFUSE	;We will comply with your request. Our ships are leaving the {0} system.
-WARNING_REMOVEFORCESSYSTEM_RESPONSE_NOFORCESPRESENT	;Surely you are mistaken? We do not have any military forces in your territory.
-HISTORY_OFFER_LOCATIONHINT	;Our research has uncovered the location of important historical items.\n\nWould you like to know more?
-HISTORY_LOCATIONHINT	;Our sources tell us about the {0}.\n\nImportant items can be found there.
-HISTORY_OFFER_STORYCLUE	;We have discovered something important that we think you should see for yourselves.\n\nDo we have your full attention?
-HISTORY_OFFER_STORYMESSAGE	;We have an important warning that you need to hear.\n\nDo we have your full attention?
-MININGRIGHTS_OFFER	;We are pleased to offer your empire mining rights within our borders.\n\nYou may now construct mining stations in our territory.
-MININGRIGHTS_CANCEL	;Your mining rights within our borders have been cancelled.\n\nYou must remove all of your mining stations within our territory!
-MILITARYREFUELING_OFFER	;We are pleased to allow your military ships to refuel at our colonies and space ports.\n\nWe hope that your fleets find this arrangement useful.
-MILITARYREFUELING_CANCEL	;Your military refueling rights have been cancelled.\n\nYour military ships may no longer refuel at our colonies and space ports.
-CANCELPIRATEPROTECTION	;We no longer want your 'protection'. Our arrangement with you is cancelled.
-CANCELPIRATEPROTECTIONPIRATE	;We no longer wish to protect you. Our protection arrangement with you is cancelled.
-PIRATE_PROTECTIONPROPOSE_OFFER_ACCEPT	;We accept your offer of protection. We agree to pay {0} credits per month to you.
-PIRATE_PROTECTIONPROPOSE_OFFER_REJECT	;We reject your offer of 'protection'.
-PIRATE_EXTORTPROTECTION	;Greetings to our victims! You may have noticed that we are about to attack you. But for the small price of {0} credits per month we could avoid this unnecessary violence.\n\nOf course, you really should have paid up sooner. Now that our attack is underway, we have no choice but to increase our prices.\n\nSo are you ready to pay up now?
-PIRATE_TRUCEPROPOSE	;You are wise to seek a truce with us. If you agree to a truce, we can ensure your safety throughout our domain.
-PIRATE_TRUCEPROPOSEINITIATE	;Who knows what hidden dangers await you when travelling through the lawless regions of space?\n\nBy agreeing to a truce we can ensure your safety throughout our domain.\n\nWhat do you say?
-PIRATE_TRUCEACCEPTRESPONSE	;Excellent! We will ensure that your ships do not suffer any 'unfortunate accidents' while our truce holds...
-PIRATE_TRUCEREJECTRESPONSE	;As you wish. But without a truce we cannot guarantee your safety...
+INFO_NOFUNDS	;It seems your coffers are as dry as our desert winds. You cannot afford this
+INFO_UNMETEMPIRE	;Fate brings new faces to the galaxy. The {0} have been discovered
+INFO_EXPLORATION	;We have shared maps of the {0} system in sector {1} with you.\n\nMay the knowledge serve you well on the long road ahead
+INFO_INDEPENDENTCOLONY	;An independent colony has been found at the {0}.\n\nPerhaps fate will draw them into our circle of friends
+INFO_RUINS	;Our scouts have discovered ancient ruins, the {0}, at the {1}.\n\nThe past has much to teach those willing to listen. Perhaps something of value waits there
+INFO_DEBRISFIELD	;We have learned of a great debris field from some ancient battle in the {0} system in sector {1}.\n\nEven in destruction, there is opportunity. A construction ship could salvage what remains
+INFO_PLANETDESTROYER	;Our people speak of an immense abandoned structure in the {0} system in sector {1}.\n\nWhatever its purpose, fate has preserved it for a reason. With the right resources, it could be completed
+INFO_RESTRICTEDAREA	;Travelers whisper of a strange zone near the {0} system in sector {1}.\n\nShips that enter find their hyperdrives failing. Many who venture in are never seen again. Fate is not kind to the reckless
+PIRATE_PROTECTIONPROPOSE	;The desert teaches that shelter has value. For the fee shown below, we offer you safe passage through our territory
+PIRATE_PROTECTIONPROPOSEINITIATE	;The void is as harsh and unforgiving as the deserts that raised us.\n\nFor the fee shown below, we can ensure your ships travel safely through our domain.\n\nWhat do you say?
+PIRATE_PROTECTIONACCEPTRESPONSE	;A wise choice, friend.\n\nYour ships will pass through our territory without harm. This we promise.\n\nWhen the term expires, we hope you will return to us
+PIRATE_PROTECTIONREJECTRESPONSE	;The desert does not care about pride.\n\nWithout our protection, we cannot guarantee your safety. Think on this
+PIRATE_PROTECTIONALREADYPAID	;You have already secured our protection, friend.\n\nReturn when the current arrangement ends. We will welcome you back
+PIRATE_BUYINFO	;Knowledge is survival. We can share what we know for the prices listed below
+PIRATE_ATTACKOFFER_EMPIRES	;Even those who prefer peace must sometimes act through others. We can engage any of the empires listed below for the prices indicated
+PIRATE_ATTACKOFFER_SINGLEEMPIRE	;The {0} seem to be troubling you. If fate wills it, we could intervene on your behalf.\n\nYour involvement would remain between us alone.\n\nOur fee for this service is {1} credits.\n\nWhat do you say?
+PIRATE_ATTACKCOMMENCE	;It is done. Our ships move against the {0}.\n\nMay fate guide this to a just outcome
+PIRATE_ALLIANCEPROPOSE	;Our previous arrangement has run its course. Perhaps it is time for something more lasting?\n\nFor {0} credits per month, we could protect your ships and strike at your enemies while your hands remain clean.\n\nWhat do you think?
+PIRATE_ALLIANCEACCEPT	;We accept your offer of alliance. Fate has drawn our paths together
+PIRATE_ALLIANCEACCEPTRESPONSE	;A fine decision.\n\nYour ships are safe with us, and your enemies will feel our presence.\n\nTell us if there is anyone you would especially like us to focus on
+PIRATE_ALLIANCEREJECT	;We must decline your alliance offer
+PIRATE_ALLIANCEREJECTRESPONSE	;A shame.\n\nThe desert is kinder to those who travel with companions.\n\nPerhaps you will reconsider in time
+PIRATE_ALLIANCECANCEL	;We wish to end this alliance
+PIRATE_ALLIANCECANCELRESPONSE	;All paths diverge eventually.\n\nBut remember, without our support your ships travel alone through dangerous space.\n\nThe offer remains open if you change your mind
+INFO_OFFER_UNMETEMPIRE	;New connections are the lifeblood of civilization.\n\nWe can introduce you to another empire for {0} credits
+INFO_OFFER_INDEPENDENTCOLONY	;Every colony is a seed waiting to grow.\n\nWe know the location of an independent colony we would share for {0} credits
+INFO_OFFER_SYSTEMMAPS	;The desert taught us that knowing the terrain is the difference between life and death.\n\nWe have maps of an unexplored system we would sell for {0} credits
+INFO_OFFER_RUINS	;The past speaks to those who search for it.\n\nWe have found something intriguing that we would share for {0} credits.\n\nInterested?
+INFO_OFFER_DEBRISFIELD	;Even wreckage holds lessons and treasure.\n\nWe have made a discovery worth {0} credits.\n\nWould you like to hear more?
+INFO_OFFER_RESTRICTEDAREA	;The galaxy holds many mysteries, some of them dangerous.\n\nWe have learned something worth {0} credits.\n\nShall we share it?
+INFO_OFFER_PLANETDESTROYER	;Fate sometimes preserves things for a reason.\n\nWe have discovered something remarkable, worth {0} credits.\n\nWhat do you say?
+GREETING_INTRODUCTION	;Welcome, stranger. We are the {0}.\n\nWe were exiled, abandoned, left to die in the desert. And yet here we are.\n\nFate works in mysterious ways, does it not?
+GREETING_FRIENDLY	;Welcome back, friend.\n\nThe sand remembers those who walk beside us. What brings you today?
+GREETING_NEUTRAL	;Greetings. The Zakkal are listening.\n\nWhat is on your mind?
+GREETING_ANGRY	;We bear few grudges, but you are testing that principle.\n\nSpeak your piece.
+OFFER_FREETRADE	;Trade is the bridge between peoples. We propose a Free Trade Agreement.\n\nOur Republic has voted in favor. What say you?
+OFFER_PROTECTORATE	;Friends, we see that your path through the stars has been difficult. We offer you the shelter of a Protectorate treaty.\n\nYou would not be the first to find safety in the company of the Zakkal.\n\nWhat do you think?
+OFFER_MUTUALDEFENSE	;Good friends, the desert taught us that survival favors those who watch each other's backs.\n\nWe propose a Mutual Defense Pact between our peoples.\n\nWhat do you think?
+OFFER_DEAL	;Would you consider this trade?
+OFFER_DEAL_RESPONSE	;What kind of arrangement do you have in mind?
+OFFER_DEAL_TERRITORYMAP	;Shall we exchange territory maps? Knowledge shared is knowledge doubled
+OFFER_DEAL_GALAXYMAP	;Shall we exchange galaxy maps? The more we know, the better we navigate the road ahead
+OFFER_DEAL_COMPONENT	;We are willing to share {0} with you for {1} credits.\n\nKnowledge should flow freely, but our Republic still has bills to pay.\n\nWhat do you say?
+DEAL_BEGIN	;We are open to proposals. What do you have in mind?
+DEAL_OFFER	;Our Republic proposes the following exchange.\n\nWe offer: {0}...\n\n...in return for: {1}
+DEAL_DEMAND	;We must ask you to provide the following:\n\n{1}
+DEAL_THREAT	;We require this from you:\n\n{1}\n\n...{0}
+DEAL_ACCEPT	;The Republic accepts. May this serve us both well
+DEAL_ACCEPTCOMPLAIN	;We accept, though the terms weigh heavily on us. Fate demands sacrifices
+DEAL_IMPROVE	;There is merit in your proposal, but it needs adjustment. Can you offer more?
+DEAL_REJECT	;We cannot accept these terms. The Republic has voted against this
+DEAL_REJECTCOMPLAIN	;Threats do not move us. We survived exile and the desert. We will survive this
+DEAL_REJECT_RESPONSE	;Disappointing, but the road ahead is long. Perhaps another time
+DEAL_REJECTDEMAND_RESPONSE	;You reject what was offered in good faith?\n\nThe Zakkal do not make demands lightly. Remember this
+DEAL_ACCEPT_RESPONSE	;A fair outcome. May it bring prosperity to both our peoples
+MUTUALDEFENSE_ACCEPT	;Yes, a Mutual Defense Pact is most welcome.\n\nThe Zakkal honor their commitments. You can count on us
+MUTUALDEFENSE_REJECT	;We appreciate the offer, friend, but the Republic cannot commit to this at present.\n\nPerhaps when the stars align differently
+MUTUALDEFENSE_REQUESTHELP	;The {0} have attacked us! We call on you to honor your pact with us and stand against them.\n\nWill you walk this road with us?
+MUTUALDEFENSE_HONORREQUESTHELP	;The Zakkal honor their word. Always.\n\nWe declare war on the {0} and stand with you
+MUTUALDEFENSE_HONORREQUESTHELP_RESPONSE	;Your loyalty means more than you know, friend. Thank you
+MUTUALDEFENSE_DECLINEREQUESTHELP	;We are sorry, but we cannot join this fight at this time
+MUTUALDEFENSE_DECLINEREQUESTHELP_RESPONSE	;We trusted you. The Zakkal do not forget broken promises, even if we forgive them
+PROTECTORATE_ACCEPT	;We gratefully accept your protection. Even the strong need shelter sometimes
+PROTECTORATE_REJECT	;We appreciate the thought, but the Zakkal have learned to stand on their own.\n\nWe must decline
+FREETRADE_ACCEPT	;Free Trade between our peoples? Gladly!\n\nMay commerce flow like water through the desert
+FREETRADE_REJECT	;We must decline the trade agreement for now.\n\nThe Republic's priorities lie elsewhere at the moment
+CANCELTREATY	;It saddens us, but the Republic has decided to end our {0}.\n\nAll things change with the shifting sands
+CANCELTREATY_RESPONSE_FRIENDLY	;This is a loss we feel deeply.\n\nWe had hoped this bond would endure longer
+CANCELTREATY_RESPONSE_NEUTRAL	;The sands shift beneath all of us.\n\nWe accept this change
+CANCELTREATY_RESPONSE_ANGRY	;Perhaps this was inevitable.\n\nFate closes one door and opens another
+TREATY_PROPOSAL	;The Republic is listening.\n\nWhat would you propose?
+TREATY_ACCEPTRESPONSE	;Wonderful! A new bond forged between our peoples.\n\nThe Zakkal celebrate this day
+TREATY_REJECTRESPONSE	;That is unfortunate.\n\nBut the offer was made in good faith, and we hold no grudge for its refusal
+SUBJUGATION_RELEASE_RESPONSE	;Freedom! Fate has not abandoned us after all.\n\nWe will use this second chance wisely
+SUBJUGATIONDEMAND_ACCEPT_RESPONSE	;You have chosen submission. There is no shame in survival.\n\nServe faithfully, and perhaps fate will turn the wheel again
+WAR_END_ACCEPT_RESPONSE	;Wisdom prevails. Let the healing begin
+TRADESANCTIONS_IMPOSE	;The Republic has voted to impose Trade Sanctions against you.\n\nThis was not an easy decision. But your actions have left us little choice
+TRADESANCTIONS_IMPOSE_RESPONSE_ANGRY	;Sanctions? Against a people who survived exile in the wastes?\n\nYou underestimate our resilience
+TRADESANCTIONS_IMPOSE_RESPONSE_NEUTRAL	;We have endured far worse than trade sanctions.\n\nBut we note your displeasure
+TRADESANCTIONS_IMPOSE_RESPONSE_SURPRISED	;This surprises us deeply.\n\nWe believed our friendship was stronger than this. What have we done to deserve such treatment?
+TRADESANCTIONS_LIFT	;The Republic has voted to lift our Trade Sanctions against you.\n\nLet this be a new beginning between us
+TRADESANCTIONS_LIFT_RESPONSE	;We welcome the return of trade.\n\nThe desert teaches patience, and patience has been rewarded
+TRADESANCTIONS_REQUESTLIFTOTHER	;We urge you to restore trade with the {0}.\n\nIsolation serves no one in the long run
+TRADESANCTIONS_REQUESTLIFTOTHER_ACCEPT	;At your request, we will resume trade with the {0}.\n\nYour counsel carries weight with us
+TRADESANCTIONS_REQUESTLIFTOTHER_REJECT	;We see no reason to resume trade with the {0} at this time
+TRADESANCTIONS_REQUESTIMPOSEJOINT	;We ask that you end your trade with the {0}.\n\nSometimes the community must act together
+TRADESANCTIONS_REQUESTIMPOSEJOINT_ACCEPT	;At your request, we have ended trade with the {0}
+TRADESANCTIONS_REQUESTIMPOSEJOINT_REJECT	;We see no cause to punish the {0} in this way. We must decline
+WAR_DECLARE	;The Republic has made the most difficult of decisions: we declare WAR on you.\n\nWe take no joy in this. But fate demands we defend our people
+WAR_DECLARE_RESPONSE_EAGER	;If war is what fate demands, then war you shall have.\n\nThe Zakkal did not survive the desert to fall to you
+WAR_DECLARE_RESPONSE_NEUTRAL	;War is a tragedy, not a triumph.\n\nBut we will defend ourselves with everything we have
+WAR_DECLARE_RESPONSE_SURPRISED	;War? Against the Zakkal?\n\nWe who seek only friendship and cooperation? What have we done to deserve this?
+WAR_DECLARE_REQUESTJOINT	;We ask that you declare war on the {0}.\n\nWe do not make this request lightly
+WAR_DECLARE_REQUESTJOINT_ACCEPT	;At your request, we declare war on the {0}.\n\nMay fate bring this conflict to a swift end
+WAR_DECLARE_REQUESTJOINT_REJECT	;We cannot declare war on the {0}.\n\nThe Zakkal do not start wars on behalf of others. This you must do alone
+WAR_END	;This war has gone on long enough. Too many have died on both sides.\n\nThe Republic proposes peace. Do you accept?
+WAR_END_SUBJUGATIONDEMAND	;We offer you a path out of this war: accept our dominion as a Subjugated Dominion.\n\nSurvival is not surrender. It is wisdom
+WAR_END_SUBJUGATIONOFFER	;We offer ourselves to your empire as a Subjugated Dominion to end this destructive war.\n\nThe Zakkal have survived exile before. We will survive this too.\n\nWhat do you say?
+WAR_END_ACCEPT	;Peace at last. The Republic stands down.\n\nLet the healing begin
+WAR_END_REJECT	;No, not yet.\n\nFate has not finished with this chapter. We will continue until the balance is restored
+WAR_END_REQUESTOTHER	;We ask you to make peace with the {0}.\n\nEnough blood has been spilled
+WAR_END_REQUESTOTHER_ACCEPT	;At your urging, we will end our war with the {0}.\n\nYour wisdom is appreciated
+WAR_END_REQUESTOTHER_REJECT	;We cannot stop our fight against the {0}.\n\nSome conflicts must run their course
+SUBJUGATIONDEMAND_ACCEPT	;We accept. The Zakkal have been cast down before and risen again.\n\nFate is patient, and so are we
+SUBJUGATIONDEMAND_REJECT	;No. We were exiled once and survived. We will not submit to chains again
+SUBJUGATIONOFFER_ACCEPT	;We accept your submission.\n\nServe honorably, and you will find the Zakkal are not cruel masters
+SUBJUGATIONOFFER_REJECT	;No, this war will continue.\n\nThe Republic has not yet exhausted its resolve
+SUBJUGATION_REQUESTRELEASE	;We have served faithfully. The desert calls us home.\n\nWe ask for our freedom
+SUBJUGATION_RELEASE	;You are free. Go with the blessings of the Zakkal.\n\nMay your path lead somewhere good
+SUBJUGATION_REFUSERELEASE	;Not yet. Your service has value to the Republic.\n\nPatience. Fate changes all things in time
+GIFT_GIVE	;The Republic sends you {0} credits as a gift.\n\nFriendship is the greatest currency. This is merely a token of it
+GIFT_THANKS	;Your generosity warms our hearts. Thank you, friend
+GIFT_PROPOSE	;A gift? The Zakkal are listening.\n\nWhat did you have in mind?
+WARNING	;You wish to warn us?\n\nThe Zakkal have weathered many storms. Speak your mind
+WARNING_INTELLIGENCEMISSIONS	;We have detected your covert operations against us.\n\nThis is not the behavior of a friend. Stop these missions at once, or we will be forced to reconsider our relationship
+WARNING_INTELLIGENCEMISSIONS_RESPONSE_FRIENDLY	;Missions against you? This must be a misunderstanding.\n\nWe will investigate immediately and put a stop to any rogue elements
+WARNING_INTELLIGENCEMISSIONS_RESPONSE_NEUTRAL	;We will look into this matter and take appropriate action
+WARNING_INTELLIGENCEMISSIONS_RESPONSE_ANGRY	;Yes, we watch you. Because trust must be verified.\n\nGive us reason to stop, and we will
+WARNING_ATTACKS	;Your military strikes against our people must stop.\n\nThe Zakkal are slow to anger, but we do not suffer aggression quietly
+WARNING_ATTACKS_RESPONSE_FRIENDLY	;This is deeply troubling. Please accept our sincere apologies.\n\nThe responsible commanders will answer for this
+WARNING_ATTACKS_RESPONSE_NEUTRAL	;We will investigate and ensure this does not happen again
+WARNING_ATTACKS_RESPONSE_ANGRY	;Our ships acted in defense of Zakkal interests.\n\nChange your behavior, and our ships will have no reason to act
+WARNING_REMOVEFORCESSYSTEM	;Your military presence in the {0} system is unwelcome.\n\nThe Republic asks that you withdraw your forces. Let us not turn a misunderstanding into a crisis
+WARNING_REMOVEFORCESSYSTEM_RESPONSE_COMPLY	;We see no reason to withdraw from the {0} system.\n\nOur ships remain where they are
+WARNING_REMOVEFORCESSYSTEM_RESPONSE_REFUSE	;We will comply with your request. Our ships are leaving the {0} system.\n\nWe meant no offense
+WARNING_REMOVEFORCESSYSTEM_RESPONSE_NOFORCESPRESENT	;You must be mistaken, friend. We have no military forces in your territory
+HISTORY_OFFER_LOCATIONHINT	;Our scholars have uncovered the location of something from the ancient past.\n\nWould you like to know more?
+HISTORY_LOCATIONHINT	;Our people speak of the {0}.\n\nItems of great importance can be found there. Fate may be guiding you to them
+HISTORY_OFFER_STORYCLUE	;We have discovered something remarkable that we believe you should see for yourself.\n\nWill you hear us out?
+HISTORY_OFFER_STORYMESSAGE	;The Republic has received an important warning that concerns us all.\n\nWill you listen?
+MININGRIGHTS_OFFER	;The Republic is pleased to offer you mining rights within our borders.\n\nYou may construct mining stations in our territory. May the resources serve you well
+MININGRIGHTS_CANCEL	;Mining rights within our territory have been revoked.\n\nPlease remove your mining stations. We are sorry it has come to this
+MILITARYREFUELING_OFFER	;Your military ships are welcome to refuel at our colonies and space ports.\n\nThe desert taught us the value of an oasis. Consider our ports yours
+MILITARYREFUELING_CANCEL	;Your military refueling rights have been cancelled.\n\nYour warships may no longer refuel at our facilities. We hope to restore this privilege in better times
+CANCELPIRATEPROTECTION	;We no longer require your protection. Our arrangement is ended
+CANCELPIRATEPROTECTIONPIRATE	;We are ending our protection of your ships. The arrangement is cancelled
+PIRATE_PROTECTIONPROPOSE_OFFER_ACCEPT	;We accept your offer of protection. We agree to pay {0} credits per month.\n\nShelter in the storm is always welcome
+PIRATE_PROTECTIONPROPOSE_OFFER_REJECT	;We decline your offer of protection.\n\nThe Zakkal have learned to fend for themselves
+PIRATE_EXTORTPROTECTION	;You may have noticed our ships approaching your territory. For {0} credits per month, this confrontation can be avoided.\n\nThe price has increased, given how far things have already progressed.\n\nWhat do you say?
+PIRATE_TRUCEPROPOSE	;A truce benefits all parties. We can ensure safe passage through our domain if you agree
+PIRATE_TRUCEPROPOSEINITIATE	;The void is dangerous enough without adding unnecessary enemies.\n\nA truce between us would ensure your ships travel safely through our territory.\n\nWhat do you say?
+PIRATE_TRUCEACCEPTRESPONSE	;Good. Your ships will pass unmolested while our truce holds.\n\nFate smiles on those who choose peace
+PIRATE_TRUCEREJECTRESPONSE	;As you wish. But without a truce, we cannot guarantee your safety.\n\nThe desert is unforgiving to those who refuse shelter

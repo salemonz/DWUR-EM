@@ -93,7 +93,7 @@ ControlRestrictedResourcesPriority					;2
 ResearchIndustryFocus				;3
 ResearchPriority							;3
 TradePriority								;4
-AlliancePriority							;2
+AlliancePriority							;3
 SubjugationPriority							;2
 TourismPriority								;2
 ExplorationPriority							;4

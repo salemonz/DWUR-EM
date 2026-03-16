@@ -59,7 +59,7 @@ IntelligenceAllowMissionStealTechData		;Y
 IntelligenceAllowMissionStealTerritoryMap	;Y
 IntelligenceAllowMissionAssassinateCharacter;Y
 IntelligenceAllowMissionDestroyBase			;Y
-IntelligenceCounterIntelligenceProportion	;33
+IntelligenceCounterIntelligenceProportion	;45
 IntelligenceUseEspionageAgainstEmpireWhen	;0
 IntelligenceUseSabotageAgainstEmpireWhen	;0
 ResearchDesignAutoRetrofit					;Y
@@ -73,7 +73,7 @@ ResearchDesignTechFocus6					;22
 ResearchDesignAutoUpgradeFighters			;Y
 WarAttacksAllowColonyBombardment			;3
 WarAttacksAllowPlanetDestroying				;3
-WarAttacksHarassEnemies						;N
+WarAttacksHarassEnemies						;Y
 TradeWithOtherEmpires						;Y
 EngageInTourism								;Y
 NewColonyPopulationPolicyYourRaceFamily		;0
@@ -93,7 +93,7 @@ ControlRestrictedResourcesPriority			;3
 ResearchIndustryFocus						;0
 ResearchPriority							;3
 TradePriority								;4
-AlliancePriority							;2
+AlliancePriority							;3
 SubjugationPriority							;1
 TourismPriority								;2
 ExplorationPriority							;4

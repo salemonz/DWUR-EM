@@ -1,49 +1,49 @@
 'Distant Worlds - dialogue - Version 1.9.5.10 - Modded by the Distant Worlds Mod Editor by Sabranan
 
-PIRATE_PROTECTIONPROPOSE	;Looking for some 'insurance' when travelling through all those dangerous, pirate-infested systems?\n\nOur fee for six months protection is shown below
-PIRATE_PROTECTIONPROPOSEINITIATE	;We think that you need some protection - otherwise who knows what could happen to all those defenseless ships of yours...\n\nWe can provide six months protection for the modest amount show below.\n\nA bargain, don't you think?
-PIRATE_PROTECTIONACCEPTRESPONSE	;A sensible decision.\n\nYour ships are safe inside our security zone for the next six months
-PIRATE_PROTECTIONREJECTRESPONSE	;Cutting costs on security is pure foolishness!\n\nPerhaps you need a demonstration of what a lack of security means for your ships...
-PIRATE_ATTACKOFFER_SINGLEEMPIRE	;You appear to detest the vile {0} just as much as we do. How would you like to eliminate several of their bases in our area?\n\nWe can make this happen for you. All we ask is a fair payment of {1} credits to cover our expenses.\n\nSend the money and we'll get things started...
-PIRATE_ATTACKCOMMENCE	;Your transfer has been validated.\n\nOur forces are on their way to targets in the {0}!
-PIRATE_ALLIANCEPROPOSE	;Our previous contract with you has now expired. You would be wise to upgrade to a permanent alliance with us.\n\nFor {0} credits per month we agree to protect your ships. Plus we'll also secretly attack your enemies - without you getting blamed for it.\n\nA mutually beneficial arrangement. Do you accept?
-PIRATE_ALLIANCEACCEPTRESPONSE	;A fine decision.\n\nConsider us your allies from now on.\n\nBut please excuse us, we have to go and raid your enemies now.
-PIRATE_ALLIANCEREJECTRESPONSE	;You seem to like learning things the hard way.\n\nBut we are patient teachers. Prepare to be educated...
-GREETING_INTRODUCTION	;Greetings stranger. We are the {0}.\n\nStrength and honor - these things we respect. Weakness we despise
-GREETING_FRIENDLY	;Speak your mind with us friend
-GREETING_NEUTRAL	;What would you like to discuss?
-GREETING_ANGRY	;You again! What do you want this time?
-OFFER_FREETRADE	;Join with us in a Free Trade Agreement. The shared benefits would generate growth in both of our strong empires.\n\nWhat do you say?
-FREETRADE_ACCEPT	;The strong should join with each other to become stronger still. We gladly accept your offer of a Free Trade Agreement!
-FREETRADE_REJECT	;Sorry, your offer of a Free Trade Agreement does not interest us.\n\nYour weakness would only be a burden to us
-CANCELTREATY	;Our shared {0} no longer fulfills its purpose. We are ending this arrangement
-CANCELTREATY_RESPONSE_FRIENDLY	;We are surprised at your rashness, friend!\n\nAre you certain about this?
-CANCELTREATY_RESPONSE_NEUTRAL	;Your insult will be remembered. Repayment will come to you in due time...
-CANCELTREATY_RESPONSE_ANGRY	;We are glad to rid ourselves of your weak and timid civilization
-TREATY_PROPOSAL	;You propose a treaty? Let's hear what you have in mind
-TREATY_ACCEPTRESPONSE	;We are honored by your acceptance. May our two mighty empires grow even stronger!
-TREATY_REJECTRESPONSE	;We do not take insults like this lightly!\n\nYou should watch your back...
-TRADESANCTIONS_IMPOSE	;Your weakness invites aggression: we are imposing Trade Sanctions on you.\n\nMaybe pain will teach you some respect!
-TRADESANCTIONS_IMPOSE_RESPONSE_ANGRY	;We will not accept this criminal insult! Our vengeance will come when you least expect it...
-TRADESANCTIONS_IMPOSE_RESPONSE_NEUTRAL	;Do you mean to hurt us?\n\nTrade Sanctions are a tool for the weak! We are ready for much worse
-TRADESANCTIONS_IMPOSE_RESPONSE_SURPRISED	;We were not expecting this.\n\nAre you looking for a fight?
-TRADESANCTIONS_LIFT	;Our Trade Sanctions against you have served their purpose - we are now removing them.\n\nWe hope that you have learned some respect
-TRADESANCTIONS_LIFT_RESPONSE	;Very well, we also will resume trade with you
-WAR_DECLARE	;Your weak empire is ripe for conquest. We bring WAR to you!\n\nYour feeble, decaying civilization will be eliminated!
-WAR_DECLARE_RESPONSE_EAGER	;Your recklessness will be your end! You should only undertake battles that you can win.\n\nWe will inflict an overwhelming defeat on you
-WAR_DECLARE_RESPONSE_NEUTRAL	;We are ready to meet you in battle.\n\nVictory to the strong!
-WAR_DECLARE_RESPONSE_SURPRISED	;We have no desire to fight you.\n\nBut we will do what we must
-WAR_END	;We see no point in prolonging this war. We propose an immediate end to hostilities.\n\nWhat do you say?
-WAR_END_ACCEPT	;Agreed, this war should end. We are standing down our forces
-WAR_END_REJECT	;The weak crave peace. The strong press on to victory.\n\nOur war with you will continue
-GIFT_GIVE	;We offer you a gift of {0} credits.\n\nMay our empires work together in strength
-GIFT_THANKS	;Thanks you for your gift
-WARNING	;What is your problem?
-WARNING_INTELLIGENCEMISSIONS	;We detest your cowardly covert missions against us!\n\nStop your scheming interference, or else prepare for an open fight!
-WARNING_INTELLIGENCEMISSIONS_RESPONSE_FRIENDLY	;We are sorry. There must have been a mixup somewhere.\n\nWe will stop these missions immediately
-WARNING_INTELLIGENCEMISSIONS_RESPONSE_NEUTRAL	;Your complaint has been noted
-WARNING_INTELLIGENCEMISSIONS_RESPONSE_ANGRY	;Covert missions? You are surprised by this?\n\nWould you consider us to be your friends? Clearly we are not.\n\nThus, you should not expect us to be concerned with your warning
-WARNING_ATTACKS	;Your unprovoked attacks have been noted.\n\nIf you seek war, simply ask for it. We will be happy to oblige you
-WARNING_ATTACKS_RESPONSE_FRIENDLY	;Apologies. This was a mistake on our part.\n\nWe will punish the offending commander and ensure that it does not occur again
-WARNING_ATTACKS_RESPONSE_NEUTRAL	;We are not familiar with the details of this case.\n\nLet us investigate further
-WARNING_ATTACKS_RESPONSE_ANGRY	;Ship attacks?\n\nYes, that is what we do to our enemies. You would be one of those.\n\nAny more questions?
+PIRATE_PROTECTIONPROPOSE	;Even the Mortalen recognize that not every ship can fight its own battles.\n\nFor the fee below, our warriors will shield your vessels. Six months protection.
+PIRATE_PROTECTIONPROPOSEINITIATE	;The void is full of predators. The Mortalen are the greatest of them.\n\nBetter to have us protecting you than hunting you. The fee is shown below.\n\nWhat say you?
+PIRATE_PROTECTIONACCEPTRESPONSE	;A wise decision.\n\nYour ships travel under the banner of Mortalen honor now.\n\nNo one will touch them while our pact holds.
+PIRATE_PROTECTIONREJECTRESPONSE	;Foolish. A warrior knows when to accept an alliance.\n\nYou have chosen to stand alone. We hope you can fight as well as you boast.
+PIRATE_ATTACKOFFER_SINGLEEMPIRE	;The {0} dishonor themselves with their aggression toward you. We would take great pleasure in punishing them.\n\nOur warriors need the exercise. All we ask is {1} credits.\n\nShall we unleash the hunt?
+PIRATE_ATTACKCOMMENCE	;Payment received. Our warships are already en route to {0} territory.\n\nThis will be a glorious hunt!
+PIRATE_ALLIANCEPROPOSE	;Our previous contract has ended. But the Mortalen propose something greater: a permanent alliance.\n\nFor {0} credits per month, our warriors will protect your ships and wage war on your enemies.\n\nHonor demands we offer this. Do you accept?
+PIRATE_ALLIANCEACCEPTRESPONSE	;You have earned our respect.\n\nYour enemies are now our prey. Name your targets and we will hunt them down.\n\nHonor to the strong!
+PIRATE_ALLIANCEREJECTRESPONSE	;A disappointing choice.\n\nWithout our alliance, you face the void alone. The Mortalen do not repeat offers.
+GREETING_INTRODUCTION	;We are the {0}.\n\nStrength. Honor. Victory. These are the only things that matter.\n\nHave you slain your Mortak yet?
+GREETING_FRIENDLY	;Well met, warrior!\n\nWhat brings you before the Meritocracy today?
+GREETING_NEUTRAL	;Speak. The Meritocracy has little patience for pleasantries.
+GREETING_ANGRY	;You dare approach us after your dishonorable conduct?\n\nChoose your words as carefully as a hunter chooses the moment to strike.
+OFFER_FREETRADE	;The Meritocracy proposes a Free Trade Agreement.\n\nStrong economies fuel strong militaries. This benefits us both.\n\nDo you accept?
+FREETRADE_ACCEPT	;Free Trade between warriors of equal standing? We accept with honor!
+FREETRADE_REJECT	;We see no value in trading with you.\n\nYour empire lacks the strength to be a worthy partner.
+CANCELTREATY	;The Meritocracy has judged our {0} no longer worthy of continuation.\n\nIt is ended. No dishonor is intended, but the decision is final.
+CANCELTREATY_RESPONSE_FRIENDLY	;You break this bond? Unexpected.\n\nThe Mortalen thought better of you.
+CANCELTREATY_RESPONSE_NEUTRAL	;So be it. Bonds of convenience dissolve when convenience ends.
+CANCELTREATY_RESPONSE_ANGRY	;We are glad to be free of you.\n\nThe weak make poor allies. We should have known this from the start.
+TREATY_PROPOSAL	;A treaty between warriors?\n\nThe Meritocracy listens. Present your terms with honor.
+TREATY_ACCEPTRESPONSE	;A bond between strong empires! The Meritocracy celebrates this day.\n\nFight alongside us, and we will never abandon you on the field.
+TREATY_REJECTRESPONSE	;You reject the hand of the Mortalen?\n\nThat is an insult we will remember.
+TRADESANCTIONS_IMPOSE	;The Meritocracy imposes Trade Sanctions against you.\n\nWeakness and dishonor must be punished. This is only the beginning.
+TRADESANCTIONS_IMPOSE_RESPONSE_ANGRY	;Sanctions? A coward's weapon!\n\nIf you have a grievance, meet us on the field of battle where honor can be decided properly!
+TRADESANCTIONS_IMPOSE_RESPONSE_NEUTRAL	;Trade sanctions are beneath warriors.\n\nBut the Mortalen endure far worse than this without flinching.
+TRADESANCTIONS_IMPOSE_RESPONSE_SURPRISED	;This was unexpected.\n\nAre you testing our resolve? The Mortalen do not break under economic pressure. We break the source of it.
+TRADESANCTIONS_LIFT	;The Meritocracy has lifted Trade Sanctions against you.\n\nYou have shown enough spine to warrant resumed trade.
+TRADESANCTIONS_LIFT_RESPONSE	;The sanctions meant nothing to us.\n\nBut we accept the resumption of trade. Even warriors need supplies.
+WAR_DECLARE	;The Meritocracy has spoken: WAR!\n\nOur Swift Vectors are racing toward your borders! Our fighters are launching!\n\nPrepare to face warriors who have never retreated and never will!
+WAR_DECLARE_RESPONSE_EAGER	;WAR! At last, a worthy challenge!\n\nThe Mortalen were born for battle! Your empire will learn what that means!
+WAR_DECLARE_RESPONSE_NEUTRAL	;So be it. The Mortalen welcome the chance to prove ourselves.\n\nVictory to the strong. And the strong are us.
+WAR_DECLARE_RESPONSE_SURPRISED	;War? We did not seek this.\n\nBut the Mortalen do not flee from any fight. You will discover why we are the galaxy's finest warriors.
+WAR_END	;This war has been a worthy contest. Both sides have proven their courage.\n\nThe Meritocracy proposes a ceasefire. What do you say?
+WAR_END_ACCEPT	;Agreed. The war ends with honor on both sides.\n\nOur forces stand down. For now.
+WAR_END_REJECT	;No! A Mortalen does not stop until the fight is finished!\n\nWe would rather die with honor than live with an unfinished battle!
+GIFT_GIVE	;The Meritocracy sends you {0} credits.\n\nStrength respects strength. This is our way of showing it.
+GIFT_THANKS	;Your gift honors us. The Mortalen accept with gratitude.\n\nGenerosity is a form of strength.
+WARNING	;You have a warning for the Mortalen?\n\nWarriors do not fear warnings. But speak.
+WARNING_INTELLIGENCEMISSIONS	;Covert missions? Against the Mortalen?\n\nSpying is a dishonorable act. If you wish to know something about us, ask to our face.\n\nCease this cowardice immediately.
+WARNING_INTELLIGENCEMISSIONS_RESPONSE_FRIENDLY	;Missions against you? If this happened, it was without the Meritocracy's approval.\n\nWe will hunt down whoever is responsible.
+WARNING_INTELLIGENCEMISSIONS_RESPONSE_NEUTRAL	;We will investigate this claim.\n\nIf our operatives acted without honor, they will answer for it.
+WARNING_INTELLIGENCEMISSIONS_RESPONSE_ANGRY	;We make no apologies.\n\nA warrior studies the enemy before the battle begins. You are the enemy.\n\nAct accordingly.
+WARNING_ATTACKS	;Your attacks on Mortalen forces are an act of war in all but name.\n\nThe Meritocracy demands you cease immediately.\n\nOr declare war openly, as warriors should.
+WARNING_ATTACKS_RESPONSE_FRIENDLY	;This is a disgrace. Our commanders acted without authority.\n\nThey will face the Meritocracy's judgment. You have our word.
+WARNING_ATTACKS_RESPONSE_NEUTRAL	;We will investigate and determine who ordered this.\n\nIf punishment is warranted, it will be swift.
+WARNING_ATTACKS_RESPONSE_ANGRY	;Our ships attacked yours because your behavior demanded a response.\n\nThe Mortalen do not apologize for defending their honor.

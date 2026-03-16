@@ -11,10 +11,10 @@ Friendliness	;87
 Loyalty	;100
 DesignsPictureFamilyIndex	;24
 DesignNamesIndex	;5
-ShipMaintenanceSavings	;30
+ShipMaintenanceSavings	;15
 TroopMaintenanceSavings	;0
 ResourceExtractionBonus	;0
-WarWearinessAttenuation	;30
+WarWearinessAttenuation	;10
 SatisfactionModifier	;0
 ResearchBonus	;0
 EspionageBonus	;0

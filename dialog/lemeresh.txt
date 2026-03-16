@@ -1,105 +1,105 @@
 'Distant Worlds - dialogue - Version 1.9.5.10 - Modded by the Distant Worlds Mod Editor by Sabranan
 
 GREETING_INTRODUCTION	;...
-GREETING_FRIENDLY	;Make your thoughts clear
+GREETING_FRIENDLY	;The deep acknowledges you. Speak
 GREETING_NEUTRAL	;...
-GREETING_ANGRY	;...
+GREETING_ANGRY	;...the currents darken around you
 OFFER_FREETRADE	;We suggest opening trade between our empires.\n\nAre you in agreement?
-OFFER_PROTECTORATE	;We believe your Empire serves a purpose, we will protect you from assault.\n\nAre you in a agreement?
-OFFER_MUTUALDEFENSE	;We believe your Empire serves a purpose, we will protect you from assault in a Mutual Defence Pact.\n\nAre you in a agreement?
-OFFER_DEAL	;Is this trade acceptable to you?
+OFFER_PROTECTORATE	;We believe your empire serves a purpose. We will protect you.\n\nAre you in agreement?
+OFFER_MUTUALDEFENSE	;A pact of mutual defense. The deep offers its strength.\n\nAre you in agreement?
+OFFER_DEAL	;Is this acceptable to you?
 OFFER_DEAL_RESPONSE	;What do you propose?
-OFFER_DEAL_TERRITORYMAP	;Let us share territory maps.
-OFFER_DEAL_GALAXYMAP	;Let us share galaxy maps.
-OFFER_DEAL_COMPONENT	;We are willing to sell you {0} for {1} credits.\n\nAre you in agreement?
+OFFER_DEAL_TERRITORYMAP	;Let us share territory maps
+OFFER_DEAL_GALAXYMAP	;Let us share galaxy maps
+OFFER_DEAL_COMPONENT	;We offer {0} for {1} credits.\n\nAgree?
 DEAL_BEGIN	;...
-DEAL_OFFER	;We have an offer.\n\nWe give you: {0}...\n\n...in exchange for: {1}
-DEAL_DEMAND	;We require you to hand over ownership of this:\n\n{1}
-DEAL_THREAT	;You will give us this:\n\n{1}\n\n...{0}
-DEAL_ACCEPT	;We accept
-DEAL_ACCEPTCOMPLAIN	;We will accept for now
-DEAL_IMPROVE	;It is of some interest, can you offer more?
-DEAL_REJECT	;We are afraid not
-DEAL_REJECTCOMPLAIN	;Unacceptable
+DEAL_OFFER	;We offer: {0}...\n\n...in exchange for: {1}
+DEAL_DEMAND	;We require this:\n\n{1}
+DEAL_THREAT	;You will provide this:\n\n{1}\n\n...{0}
+DEAL_ACCEPT	;Accepted
+DEAL_ACCEPTCOMPLAIN	;...we accept. For now
+DEAL_IMPROVE	;Insufficient. Offer more
+DEAL_REJECT	;No
+DEAL_REJECTCOMPLAIN	;...do not test us
 DEAL_REJECT_RESPONSE	;...
-DEAL_REJECTDEMAND_RESPONSE	;You were given a fair path and you have chosen badly
-DEAL_ACCEPT_RESPONSE	;Accepted
-MUTUALDEFENSE_ACCEPT	;An excellent outcome.
-MUTUALDEFENSE_REJECT	;We cannot offer our services in this.
-MUTUALDEFENSE_REQUESTHELP	;We are under attack from the {0}. Do you stand with us?
-MUTUALDEFENSE_HONORREQUESTHELP	;We stand alongside you - We have declared war on the {0}.
-MUTUALDEFENSE_HONORREQUESTHELP_RESPONSE	;We appreciate your loyalalty
-MUTUALDEFENSE_DECLINEREQUESTHELP	;We cannot help for now
-MUTUALDEFENSE_DECLINEREQUESTHELP_RESPONSE	;Unexpected...
-PROTECTORATE_ACCEPT	;We are honored
-PROTECTORATE_REJECT	;Not for now
-FREETRADE_ACCEPT	;We accept
-FREETRADE_REJECT	;We cannot accept
-CANCELTREATY	;The {0} is cancelled
-CANCELTREATY_RESPONSE_FRIENDLY	;Unexpected
+DEAL_REJECTDEMAND_RESPONSE	;You chose poorly. The deep remembers
+DEAL_ACCEPT_RESPONSE	;Acceptable
+MUTUALDEFENSE_ACCEPT	;The deep stands with you
+MUTUALDEFENSE_REJECT	;We cannot offer this
+MUTUALDEFENSE_REQUESTHELP	;The {0} have disturbed our waters. Stand with us
+MUTUALDEFENSE_HONORREQUESTHELP	;We honor our word. War on the {0}
+MUTUALDEFENSE_HONORREQUESTHELP_RESPONSE	;...noted
+MUTUALDEFENSE_DECLINEREQUESTHELP	;We cannot act at this time
+MUTUALDEFENSE_DECLINEREQUESTHELP_RESPONSE	;...the deep does not forget broken promises
+PROTECTORATE_ACCEPT	;We accept your shelter
+PROTECTORATE_REJECT	;The Lemeresh shelter no one but our sovereign. We decline
+FREETRADE_ACCEPT	;Accepted
+FREETRADE_REJECT	;We have no need of your commerce
+CANCELTREATY	;The {0} is ended. The currents have shifted
+CANCELTREATY_RESPONSE_FRIENDLY	;...unexpected
 CANCELTREATY_RESPONSE_NEUTRAL	;...
-CANCELTREATY_RESPONSE_ANGRY	;...
-TREATY_PROPOSAL	;...
-TREATY_ACCEPTRESPONSE	;An excellent outcome.
-TREATY_REJECTRESPONSE	;...
-SUBJUGATION_RELEASE_RESPONSE	;Gratitude
-SUBJUGATIONDEMAND_ACCEPT_RESPONSE	;Be at peace now, and do not bite again
-WAR_END_ACCEPT_RESPONSE	;Very wise
-TRADESANCTIONS_IMPOSE	;Trade is terminated
-TRADESANCTIONS_IMPOSE_RESPONSE_ANGRY	;...
-TRADESANCTIONS_IMPOSE_RESPONSE_NEUTRAL	;...
-TRADESANCTIONS_IMPOSE_RESPONSE_SURPRISED	;Unexpected
-TRADESANCTIONS_LIFT	;Trade sanctions are now lifted
-TRADESANCTIONS_LIFT_RESPONSE	;Very well
-TRADESANCTIONS_REQUESTLIFTOTHER	;We advise you begin trade with {0}
-TRADESANCTIONS_REQUESTLIFTOTHER_ACCEPT	;We have resumed trade with the {0}
+CANCELTREATY_RESPONSE_ANGRY	;...good
+TREATY_PROPOSAL	;...speak
+TREATY_ACCEPTRESPONSE	;The deep approves
+TREATY_REJECTRESPONSE	;...no
+SUBJUGATION_RELEASE_RESPONSE	;The deep breathes freely once more
+SUBJUGATIONDEMAND_ACCEPT_RESPONSE	;Be still now. Do not disturb the waters again
+WAR_END_ACCEPT_RESPONSE	;...wise
+TRADESANCTIONS_IMPOSE	;Trade is severed. The deep withdraws
+TRADESANCTIONS_IMPOSE_RESPONSE_ANGRY	;...the Lemeresh existed before your civilization was born. Your sanctions are meaningless
+TRADESANCTIONS_IMPOSE_RESPONSE_NEUTRAL	;...the deep provides
+TRADESANCTIONS_IMPOSE_RESPONSE_SURPRISED	;...unexpected
+TRADESANCTIONS_LIFT	;Trade may resume. The waters calm
+TRADESANCTIONS_LIFT_RESPONSE	;...noted
+TRADESANCTIONS_REQUESTLIFTOTHER	;We advise you resume trade with the {0}
+TRADESANCTIONS_REQUESTLIFTOTHER_ACCEPT	;Trade with the {0} has resumed
 TRADESANCTIONS_REQUESTLIFTOTHER_REJECT	;We cannot do this
-TRADESANCTIONS_REQUESTIMPOSEJOINT	;We advise you terminate trade with {0}
-TRADESANCTIONS_REQUESTIMPOSEJOINT_ACCEPT	;As requested, we have terminated trade with {0}
+TRADESANCTIONS_REQUESTIMPOSEJOINT	;We advise you sever trade with the {0}
+TRADESANCTIONS_REQUESTIMPOSEJOINT_ACCEPT	;Trade with the {0} is terminated
 TRADESANCTIONS_REQUESTIMPOSEJOINT_REJECT	;We see no need
-WAR_DECLARE	;We are now at war
-WAR_DECLARE_RESPONSE_EAGER	;Your time has come
-WAR_DECLARE_RESPONSE_NEUTRAL	;You have made a mistake
-WAR_DECLARE_RESPONSE_SURPRISED	;Unexpected
-WAR_DECLARE_REQUESTJOINT	;We advise that you declare war on {0}
-WAR_DECLARE_REQUESTJOINT_ACCEPT	;We are now at war with {0}
-WAR_DECLARE_REQUESTJOINT_REJECT	;Be gone
+WAR_DECLARE	;...the deep rises.\n\nWar
+WAR_DECLARE_RESPONSE_EAGER	;...your time has come
+WAR_DECLARE_RESPONSE_NEUTRAL	;You disturb waters older than your species.\n\nA mistake
+WAR_DECLARE_RESPONSE_SURPRISED	;...unexpected
+WAR_DECLARE_REQUESTJOINT	;We advise you declare war on the {0}
+WAR_DECLARE_REQUESTJOINT_ACCEPT	;War on the {0}. It is done
+WAR_DECLARE_REQUESTJOINT_REJECT	;...leave us
 WAR_END	;This war should end
-WAR_END_SUBJUGATIONDEMAND	;Our war will end if you will now accept our domination through Subjugation of your empire.
-WAR_END_SUBJUGATIONOFFER	;We offer our empire to be enslaved by you. Do you accept?
-WAR_END_ACCEPT	;We accept
-WAR_END_REJECT	;Not for now
-WAR_END_REQUESTOTHER	;We suggest you end your war with {0}
-WAR_END_REQUESTOTHER_ACCEPT	;We agree. Our war with {0} has ended
-WAR_END_REQUESTOTHER_REJECT	;We cannot stop, our war with {0} continues
-SUBJUGATIONDEMAND_ACCEPT	;We accept your status as our ruler
-SUBJUGATIONDEMAND_REJECT	;We cannot accept
-SUBJUGATIONOFFER_ACCEPT	;Excellent
-SUBJUGATIONOFFER_REJECT	;The war will continue
-SUBJUGATION_REQUESTRELEASE	;We advise you release us from slavery
-SUBJUGATION_RELEASE	;We set your Empire free. Be careful to choose the correct path
-SUBJUGATION_REFUSERELEASE	;This cannot be done
-GIFT_GIVE	;We give you {0} credits
-GIFT_THANKS	;We accept your gift
-GIFT_PROPOSE	;What do you offer us?
+WAR_END_SUBJUGATIONDEMAND	;Submit to us. The war ends when you kneel before the deep
+WAR_END_SUBJUGATIONOFFER	;We offer ourselves to end this war.\n\nThe deep bends before it breaks
+WAR_END_ACCEPT	;...so be it
+WAR_END_REJECT	;Not yet. The waters are still troubled
+WAR_END_REQUESTOTHER	;We suggest you end your war with the {0}
+WAR_END_REQUESTOTHER_ACCEPT	;Our war with the {0} is ended
+WAR_END_REQUESTOTHER_REJECT	;We cannot stop. The war with the {0} continues
+SUBJUGATIONDEMAND_ACCEPT	;...we accept
+SUBJUGATIONDEMAND_REJECT	;The Lemeresh do not kneel. The deep does not submit
+SUBJUGATIONOFFER_ACCEPT	;Your submission is accepted. The deep claims you
+SUBJUGATIONOFFER_REJECT	;...no. The war continues
+SUBJUGATION_REQUESTRELEASE	;We have served long enough. Release us to the deep
+SUBJUGATION_RELEASE	;You are free. Choose a better path
+SUBJUGATION_REFUSERELEASE	;No. Your service to us continues. The deep is patient
+GIFT_GIVE	;We send {0} credits from the deep
+GIFT_THANKS	;...your gift is acknowledged
+GIFT_PROPOSE	;What do you offer?
 WARNING	;...
-WARNING_INTELLIGENCEMISSIONS	;It is time for you to end your covert missions against us
-WARNING_INTELLIGENCEMISSIONS_RESPONSE_FRIENDLY	;We will see that this does not happen again
-WARNING_INTELLIGENCEMISSIONS_RESPONSE_NEUTRAL	;We will do what we can
+WARNING_INTELLIGENCEMISSIONS	;Your agents have entered our waters.\n\nThe deep sees everything beneath its surface.\n\nWithdraw them
+WARNING_INTELLIGENCEMISSIONS_RESPONSE_FRIENDLY	;We will ensure this does not happen again
+WARNING_INTELLIGENCEMISSIONS_RESPONSE_NEUTRAL	;...we will consider this
 WARNING_INTELLIGENCEMISSIONS_RESPONSE_ANGRY	;...
-WARNING_ATTACKS	;We advise that you stop your attacks, we are unable to ignore this any longer
-WARNING_ATTACKS_RESPONSE_FRIENDLY	;We will ensure this does not happen again
-WARNING_ATTACKS_RESPONSE_NEUTRAL	;It will end
+WARNING_ATTACKS	;Your attacks disturb the deep.\n\nCease. The Lemeresh do not warn twice
+WARNING_ATTACKS_RESPONSE_FRIENDLY	;This will not happen again
+WARNING_ATTACKS_RESPONSE_NEUTRAL	;...it will end
 WARNING_ATTACKS_RESPONSE_ANGRY	;...
-WARNING_REMOVEFORCESSYSTEM	;Remove your forces from the {0} system
-WARNING_REMOVEFORCESSYSTEM_RESPONSE_COMPLY	;We will not remove our ships from the {0} system.
-WARNING_REMOVEFORCESSYSTEM_RESPONSE_REFUSE	;Our ships are leaving the {0} system.
-WARNING_REMOVEFORCESSYSTEM_RESPONSE_NOFORCESPRESENT	;Our forces are not present in your territory.
-HISTORY_OFFER_LOCATIONHINT	;Our research has uncovered the location of important historical items.\n\nYou should be made aware
-HISTORY_LOCATIONHINT	;Our sources tell us about the {0}.\n\nImportant items can be found there.
-HISTORY_OFFER_STORYCLUE	;We have discovered something important that we think you should see for yourselves.\n\nYou should be made aware
-HISTORY_OFFER_STORYMESSAGE	;We have an important warning that you need to hear.\n\nYou should be made aware
-MININGRIGHTS_OFFER	;We offer your empire mining rights within our borders.\n\nYou may now construct mining stations in our territory.
-MININGRIGHTS_CANCEL	;Mining rights within our borders have been cancelled.\n\nYou must remove all of your mining stations within our territory.
-MILITARYREFUELING_OFFER	;We now allow your military ships to refuel at our colonies and space ports.
-MILITARYREFUELING_CANCEL	;Your military refueling rights have been cancelled.\n\nYour military ships may no longer refuel at our colonies and space ports.
+WARNING_REMOVEFORCESSYSTEM	;Remove your forces from the {0} system.\n\nThese waters are ours
+WARNING_REMOVEFORCESSYSTEM_RESPONSE_COMPLY	;Our ships remain in the {0} system
+WARNING_REMOVEFORCESSYSTEM_RESPONSE_REFUSE	;Our ships are leaving the {0} system
+WARNING_REMOVEFORCESSYSTEM_RESPONSE_NOFORCESPRESENT	;We have no forces in your territory
+HISTORY_OFFER_LOCATIONHINT	;The deep has revealed something ancient.\n\nYou should know of it
+HISTORY_LOCATIONHINT	;The {0}.\n\nImportant things are found there. Go
+HISTORY_OFFER_STORYCLUE	;We have found something you must see.\n\nListen
+HISTORY_OFFER_STORYMESSAGE	;A warning from the deep.\n\nYou must hear this
+MININGRIGHTS_OFFER	;We permit your mining operations within our borders.\n\nConstruct your stations
+MININGRIGHTS_CANCEL	;Mining rights revoked.\n\nRemove your stations from our waters
+MILITARYREFUELING_OFFER	;Your military ships may refuel at our colonies.\n\nA rare privilege from the deep
+MILITARYREFUELING_CANCEL	;Refueling rights cancelled.\n\nYour warships are no longer welcome

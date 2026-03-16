@@ -11,13 +11,13 @@ Friendliness	;100
 Loyalty	;100
 DesignsPictureFamilyIndex	;14
 DesignNamesIndex	;3
-ShipMaintenanceSavings	;0
+ShipMaintenanceSavings	;10
 TroopMaintenanceSavings	;0
 ResourceExtractionBonus	;0
-WarWearinessAttenuation	;0
+WarWearinessAttenuation	;15
 SatisfactionModifier	;0
 ResearchBonus	;0
-EspionageBonus	;50
+EspionageBonus	;0
 TradeBonus	;10
 OverallShipDesignFocus	;2
 TechFocus1	;6
@@ -59,15 +59,15 @@ TroopName	;Paratis Battle Cell
 TroopNameArmored	;Paratis Intruder Force
 TroopNamePlanetaryDefense	;Paratis Defense Unit
 TroopNameSpecialForces	;Paratis Sabotage Team
-Resource1Type	;23
-Resource1Effect	;1
+Resource1Type	;6
+Resource1Effect	;5
 Resource1Amount	;5
 Resource1AppliesOnlyToSource	;N
-Resource2Type	;17
-Resource2Effect	;11
+Resource2Type	;13
+Resource2Effect	;4
 Resource2Amount	;5
 Resource2AppliesOnlyToSource	;N
-Resource3Type	;27
+Resource3Type	;38
 Resource3Effect	;1
 Resource3Amount	;5
 Resource3AppliesOnlyToSource	;N
@@ -133,6 +133,6 @@ TourismIncomeFactor	;1
 FreeTradeIncomeFactor	;1.1
 MigrationFactor	;1.15
 TroopRegenerationFactor	;1.0
-PirateDefaultPlaystyle	;0
+PirateDefaultPlaystyle	;2
 DesignsPictureFamilyIndexPirates	;47
 ImmuneToPlagues	;N

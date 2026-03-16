@@ -17,7 +17,7 @@ ResourceExtractionBonus	;10
 WarWearinessAttenuation	;0
 SatisfactionModifier	;0
 ResearchBonus	;20
-EspionageBonus	;0
+EspionageBonus	;15
 TradeBonus	;0
 OverallShipDesignFocus	;0
 TechFocus1	;3

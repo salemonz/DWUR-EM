@@ -59,7 +59,7 @@ IntelligenceAllowMissionStealTechData		;Y
 IntelligenceAllowMissionStealTerritoryMap	;Y
 IntelligenceAllowMissionAssassinateCharacter	;Y
 IntelligenceAllowMissionDestroyBase		;Y
-IntelligenceCounterIntelligenceProportion	;50
+IntelligenceCounterIntelligenceProportion	;25
 IntelligenceUseEspionageAgainstEmpireWhen	;2
 IntelligenceUseSabotageAgainstEmpireWhen	;1
 ResearchDesignAutoRetrofit			;Y
@@ -71,7 +71,7 @@ ResearchDesignTechFocus4						;17
 ResearchDesignTechFocus5						;19
 ResearchDesignTechFocus6						;20
 ResearchDesignAutoUpgradeFighters		;Y
-WarAttacksAllowColonyBombardment		;1
+WarAttacksAllowColonyBombardment		;3
 WarAttacksAllowPlanetDestroying			;2
 WarAttacksHarassEnemies				;Y
 TradeWithOtherEmpires				;Y
@@ -92,12 +92,12 @@ ColonizeRuinsPriority							;2
 ControlRestrictedResourcesPriority					;2
 ResearchIndustryFocus							;0
 ResearchPriority							;3
-TradePriority								;4
-AlliancePriority							;1
-SubjugationPriority							;2
+TradePriority								;2
+AlliancePriority							;3
+SubjugationPriority							;1
 TourismPriority								;2
-ExplorationPriority							;4
-WarWillingness								;3
+ExplorationPriority							;2
+WarWillingness								;1
 BreakTreatyWillingness							;1
 InvasionOverkillFactor							;2
 ShipBattleCautionFactor							;2
@@ -151,9 +151,9 @@ CaptureEnlistBase				;0
 UpgradeEnlistedMilitaryShips			;Y
 UpgradeEnlistedCivilianShips			;Y
 TroopRecruitInfantryLevel						;1
-TroopRecruitArmorLevel							;1.5
+TroopRecruitArmorLevel							;0.5
 TroopRecruitArtilleryLevel			;0.5
-TroopRecruitSpecialForcesLevel			;1.5
+TroopRecruitSpecialForcesLevel			;0.5
 TroopUseDefaultTransportLoadout						;N
 TroopDefaultTransportLoadoutInfantry		;0.7
 TroopDefaultTransportLoadoutArmor		;0.2

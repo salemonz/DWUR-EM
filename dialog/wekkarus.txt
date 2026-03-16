@@ -1,31 +1,31 @@
 'Distant Worlds - dialogue - Version 1.9.5.10 - Modded by the Distant Worlds Mod Editor by Sabranan
 
-GREETING_INTRODUCTION	;Greetings to you outsider. We are the {0}.\n\nWe prefer to keep to ourselves, living peacefully in our deep undersea metropolises.
-GREETING_FRIENDLY	;We are listening, friend
-GREETING_NEUTRAL	;You seek an audience with us?
-GREETING_ANGRY	;You are not welcome here.\n\nSpeak quickly
-OFFER_FREETRADE	;We feel that trade and industry are highly civilizing activities. Won't you accept a Free Trade Agreement with us?\n\nWhat do you say?
-FREETRADE_ACCEPT	;We happily accept a Free Trade Agreement!\n\nLong live our alliance!
-FREETRADE_REJECT	;No, a Free Trade Agreement does not suit us.\n\nSorry about that
-CANCELTREATY	;It is time to cancel the {0} that we have with you. We do not want it any more.
-CANCELTREATY_RESPONSE_FRIENDLY	;How sad. We felt that this was a good treaty.
-CANCELTREATY_RESPONSE_NEUTRAL	;As you wish. We cannot keep it, if you do not want it
-CANCELTREATY_RESPONSE_ANGRY	;Yes, this treaty is a bad one.\n\nWe are wary of you. A deadly Darkhul, you are
-TREATY_PROPOSAL	;What new arrangement do you seek?
-TREATY_ACCEPTRESPONSE	;May this new treaty profit us both! Welcome friends
-TREATY_REJECTRESPONSE	;It was not to be. We cannot compel you
-TRADESANCTIONS_IMPOSE	;By the claws of the Darkhul, you are a tricky one!\n\nThe time has come for Trade Sanctions against you. We will not trade with you any more
-TRADESANCTIONS_IMPOSE_RESPONSE_ANGRY	;Dealing with you is like handling a poisonous deep-sea anemone! We are glad to be finished with your tricky ways\n\nStay away from us now
-TRADESANCTIONS_IMPOSE_RESPONSE_NEUTRAL	;We survived before we met you. We will survive now
-TRADESANCTIONS_IMPOSE_RESPONSE_SURPRISED	;How unexpected! We see no reason for this.\n\nWe will just have to adapt I suppose
-TRADESANCTIONS_LIFT	;We have decided to end our Trade Sanctions against you. We trade with you once more.\n\nBe warned that our eyes remain watchful for any trickiness from you though
-TRADESANCTIONS_LIFT_RESPONSE	;A welcome action from you. Trade leads to peace
-WAR_DECLARE	;You are a raging Darkhul that must be caged! We declare WAR on you!\n\nWe will end your reign of terror
-WAR_DECLARE_RESPONSE_EAGER	;We are a peaceful people, but we know how to defend our homes!\n\nWe will fight hard
-WAR_DECLARE_RESPONSE_NEUTRAL	;Your aggression made this path inevitable.\n\nWe are ready for you!
-WAR_DECLARE_RESPONSE_SURPRISED	;How shocking! You are a deadly Darkhul, sneaking up from behind.\n\nWe will put you back in your cage!
-WAR_END	;This war has become very dark, gaining nothing and destroying everything. We propose an end to it.\n\nWhat do you say?
-WAR_END_ACCEPT	;Yes, this war must end.\n\nOur forces are returning home now
-WAR_END_REJECT	;End the war? No, this war cannot end while you are still free
-GIFT_GIVE	;We send you a gift of {0} credits
-GIFT_THANKS	;Thank you for your kind gift
+GREETING_INTRODUCTION	;We are the {0}.\n\nThe Wekkarus prefer the deep silence of our undersea cities.\n\nYou have disturbed that silence. State your purpose.
+GREETING_FRIENDLY	;The deep currents bring you back to us.\n\nYou are among the few outsiders we tolerate. What do you need?
+GREETING_NEUTRAL	;The Wekkarus acknowledge your signal.\n\nSpeak.
+GREETING_ANGRY	;Your presence agitates the waters around our cities.\n\nSay what you must and withdraw.
+OFFER_FREETRADE	;The Wekkarus rarely engage in commerce with surface-dwellers.\n\nBut a Free Trade Agreement may serve our mutual needs.\n\nDo you accept?
+FREETRADE_ACCEPT	;Free Trade accepted.\n\nOur PulseWave technology and force-field components may interest your engineers.
+FREETRADE_REJECT	;The deep provides everything we need.\n\nWe have no interest in your trade.
+CANCELTREATY	;The Wekkarus have decided to end our {0} with you.\n\nWe are withdrawing into deeper waters.
+CANCELTREATY_RESPONSE_FRIENDLY	;You retreat from us? We thought the bond was sound.\n\nThe Wekkarus are difficult to understand, but we accept this.
+CANCELTREATY_RESPONSE_NEUTRAL	;The deep reclaims what the surface provided.\n\nSo be it.
+CANCELTREATY_RESPONSE_ANGRY	;Good. We prefer isolation to obligations with surface-dwellers.
+TREATY_PROPOSAL	;A treaty with the Wekkarus?\n\nWe do not bind ourselves lightly. Present your terms.
+TREATY_ACCEPTRESPONSE	;The Wekkarus accept this arrangement.\n\nDo not give us cause to withdraw. We will not surface again.
+TREATY_REJECTRESPONSE	;The deep does not agree to these terms.\n\nWe cannot accept.
+TRADESANCTIONS_IMPOSE	;The Wekkarus sever all trade.\n\nOur force-field technology and PulseWave components are no longer available to you.
+TRADESANCTIONS_IMPOSE_RESPONSE_ANGRY	;Sanctions against the Wekkarus?\n\nWe built civilizations beneath the waves before you could build boats.\n\nYour sanctions are irrelevant to the deep.
+TRADESANCTIONS_IMPOSE_RESPONSE_NEUTRAL	;The Wekkarus have always been self-sufficient.\n\nYour sanctions change nothing beneath the waves.
+TRADESANCTIONS_IMPOSE_RESPONSE_SURPRISED	;Sanctions? But the Wekkarus have caused no offense.\n\nWe keep to ourselves. What more do you want from us?
+TRADESANCTIONS_LIFT	;Trade Sanctions are ended.\n\nThe Wekkarus will surface briefly for commerce.
+TRADESANCTIONS_LIFT_RESPONSE	;Noted. We accept the return of trade.
+WAR_DECLARE	;The Wekkarus emerge from the deep for WAR.\n\nOur PulseWave weapons and force-field generators were built to defend our oceans.\n\nNow they will be used against you.
+WAR_DECLARE_RESPONSE_EAGER	;You disturb the deep?\n\nOur homeworld defenses are the strongest in the galaxy. Come and test them.
+WAR_DECLARE_RESPONSE_NEUTRAL	;The Wekkarus did not want this.\n\nBut our force-fields will hold and our PulseWave beams will strike true.
+WAR_DECLARE_RESPONSE_SURPRISED	;War? Against a race that only wanted to be left alone?\n\nThe deep will remember this transgression.
+WAR_END	;This war has troubled the deep waters long enough.\n\nThe Wekkarus wish to return to silence. Do you agree?
+WAR_END_ACCEPT	;Peace. The Wekkarus descend once more.\n\nDo not call us to the surface again for such reasons.
+WAR_END_REJECT	;Then the deep will claim more of your ships.\n\nThe Wekkarus defend their oceans without mercy.
+GIFT_GIVE	;The Wekkarus send {0} credits from the deep.\n\nThis is a rare gesture from a race that values isolation above gold.
+GIFT_THANKS	;Your gift reaches us in the deep.\n\nThe Wekkarus are grateful for this kindness.

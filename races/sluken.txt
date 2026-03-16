@@ -11,13 +11,13 @@ Friendliness	;85
 Loyalty	;82
 DesignsPictureFamilyIndex	;38
 DesignNamesIndex	;3
-ShipMaintenanceSavings	;0
+ShipMaintenanceSavings	;10
 TroopMaintenanceSavings	;20
 ResourceExtractionBonus	;0
 WarWearinessAttenuation	;30
 SatisfactionModifier	;0
 ResearchBonus	;0
-EspionageBonus	;0
+EspionageBonus	;10
 TradeBonus	;0
 OverallShipDesignFocus	;2
 TechFocus1	;1
@@ -54,7 +54,7 @@ DefaultPrimaryColor	;15
 DefaultSecondaryColor	;8
 DefaultFlagDesign	;17
 HomeSystemName	;Slukis
-TroopStrength	;120
+TroopStrength	;130
 TroopName	;Sluken Terminator
 TroopNameArmored	;Sluken Heavy Terminator
 TroopNamePlanetaryDefense	;Sluken Repulser

@@ -3,7 +3,7 @@
 Name	;Jintus
 PictureIndex	;29
 RaceFamily	;5
-ReproductionRate	;1.37
+ReproductionRate	;1.30
 Intelligence	;60
 Aggression	;130
 Caution	;80
@@ -133,6 +133,6 @@ TourismIncomeFactor	;1.1
 FreeTradeIncomeFactor	;1.15
 MigrationFactor	;1.1
 TroopRegenerationFactor	;1
-PirateDefaultPlaystyle	;2
+PirateDefaultPlaystyle	;3
 DesignsPictureFamilyIndexPirates	;47
 ImmuneToPlagues	;N

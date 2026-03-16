@@ -16,7 +16,7 @@ TroopMaintenanceSavings	;0
 ResourceExtractionBonus	;0
 WarWearinessAttenuation	;0
 SatisfactionModifier	;20
-ResearchBonus	;10
+ResearchBonus	;20
 EspionageBonus	;0
 TradeBonus	;10
 OverallShipDesignFocus	;3

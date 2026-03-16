@@ -52,7 +52,7 @@ TroopCompartment	;1
 VectoringEngine	;6
 WeaponArea	;0
 WeaponBeam	;25
-WeaponBombard	;2
+WeaponBombard	;3
 WeaponMissile	;5
 WeaponPhaser	;0
 WeaponRailGun	;0

@@ -60,7 +60,7 @@ WeaponsManufacturingPlant	;0
 WeaponsResearchLab	;0
 WeaponSuperBeam	;0
 WeaponTorpedo	;0
-WeaponTractorBeam	;0
-WeaponGravitonBeam	;9
-WeaponAreaGravity	;0
+WeaponTractorBeam	;3
+WeaponGravitonBeam	;10
+WeaponAreaGravity	;2
 ImageScaling;Scaled 0.95

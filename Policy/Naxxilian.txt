@@ -92,9 +92,9 @@ ColonizeRuinsPriority							;2
 ControlRestrictedResourcesPriority					;2
 ResearchIndustryFocus							;0
 ResearchPriority							;3
-TradePriority								;4
+TradePriority								;2
 AlliancePriority							;1
-SubjugationPriority							;2
+SubjugationPriority							;3
 TourismPriority								;3
 ExplorationPriority							;4
 WarWillingness								;3.5
@@ -131,7 +131,7 @@ DesignUpgradeGasMiningShip			;Y
 DesignUpgradeMiningShip				;Y
 DesignUpgradeGasMiningStation			;Y
 DesignUpgradeMiningStation			;Y
-CaptureTargetConditionShip			;3
+CaptureTargetConditionShip			;2
 CaptureTargetConditionBase			;4
 OfferPirateAttackMissions			;2
 BidOnPirateAttackMissions			;N

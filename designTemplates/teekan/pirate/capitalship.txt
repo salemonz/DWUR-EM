@@ -8,7 +8,7 @@
 
 AreaShieldRecharge	;0
 Armor	;15
-AssaultPod	;4
+AssaultPod	;3
 CargoBay	;0
 ColonizationModule	;0
 CombatTargettingSystem	;1
@@ -31,7 +31,7 @@ GravityWellProjector	;0
 HighTechManufacturingPlant	;0
 HighTechResearchLab	;0
 HyperDeny	;1
-IonCannon	;0
+IonCannon	;2
 IonDefense	;1
 IonPulse	;0
 LongRangeScanner	;0
@@ -53,14 +53,14 @@ VectoringEngine	;5
 WeaponArea	;0
 WeaponBeam	;0
 WeaponBombard	;0
-WeaponMissile	;18
+WeaponMissile	;16
 WeaponPhaser	;0
 WeaponRailGun	;0
 WeaponsManufacturingPlant	;0
 WeaponsResearchLab	;0
 WeaponSuperBeam	;0
 WeaponTorpedo	;0
-WeaponTractorBeam	;0
+WeaponTractorBeam	;2
 WeaponGravitonBeam	;0
 WeaponAreaGravity	;0
 ImageScaling;Scaled 0.95

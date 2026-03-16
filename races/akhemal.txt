@@ -9,10 +9,10 @@ Friendliness	;50
 Loyalty	;50
 DesignsPictureFamilyIndex	;18
 DesignNamesIndex	;6
-ShipMaintenanceSavings	;20
-TroopMaintenanceSavings	;20
+ShipMaintenanceSavings	;10
+TroopMaintenanceSavings	;10
 ResourceExtractionBonus	;0
-WarWearinessAttenuation	;20
+WarWearinessAttenuation	;10
 SatisfactionModifier	;0
 ResearchBonus	;0
 EspionageBonus	;0
@@ -52,7 +52,7 @@ DefaultPrimaryColor	;11
 DefaultSecondaryColor	;9
 DefaultFlagDesign	;44
 HomeSystemName	;Core Prime
-TroopStrength	;150
+TroopStrength	;120
 TroopName	;Core A.K.
 TroopNameArmored	;Core Goliath
 TroopNamePlanetaryDefense	;Core Slasher
@@ -131,6 +131,6 @@ TourismIncomeFactor	;0.5
 FreeTradeIncomeFactor	;0.5
 MigrationFactor	;0.5
 TroopRegenerationFactor	;1.5
-PirateDefaultPlaystyle	;2
+PirateDefaultPlaystyle	;1
 DesignsPictureFamilyIndexPirates	;47
 ImmuneToPlagues	;Y

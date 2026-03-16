@@ -92,13 +92,13 @@ ColonizeRuinsPriority							;2
 ControlRestrictedResourcesPriority					;2
 ResearchIndustryFocus							;1
 ResearchPriority							;3
-TradePriority								;4
+TradePriority								;2
 AlliancePriority							;1
 SubjugationPriority							;2
-TourismPriority								;1
+TourismPriority								;0.5
 ExplorationPriority							;4
 WarWillingness								;3
-BreakTreatyWillingness							;1
+BreakTreatyWillingness							;2
 InvasionOverkillFactor							;2
 ShipBattleCautionFactor							;2
 DefaultMilitaryFleeWhen							;5

@@ -8,7 +8,7 @@
 
 AreaShieldRecharge	;0
 Armor	;6
-AssaultPod	;1
+AssaultPod	;3
 CargoBay	;0
 ColonizationModule	;0
 CombatTargettingSystem	;1
@@ -52,7 +52,7 @@ TroopCompartment	;0
 VectoringEngine	;4
 WeaponArea	;0
 WeaponBeam	;0
-WeaponBombard	;0
+WeaponBombard	;1
 WeaponMissile	;0
 WeaponPhaser	;0
 WeaponRailGun	;0

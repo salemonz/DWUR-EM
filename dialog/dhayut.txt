@@ -1,46 +1,46 @@
 'Distant Worlds - dialogue - Version 1.9.5.10 - Modded by the Distant Worlds Mod Editor by Sabranan
 
-PIRATE_PROTECTIONPROPOSE	;Looking for protection?\n\nFor the small fee shown below we can 'protect' all your ships in our region for six months
-PIRATE_PROTECTIONPROPOSEINITIATE	;The galaxy can be a dark and dangerous place. Without proper protection you could get hurt.\n\nWe can ensure that no harm comes to any of your ships while trading in our territory.\n\nThe fee for six months protection is shown below
-PIRATE_PROTECTIONACCEPTRESPONSE	;You have made a good choice!\n\nYou have six months of trouble-free trading for all your ships
-PIRATE_PROTECTIONREJECTRESPONSE	;If you don't pay, scary things could happen.\n\nThat would be sad
-PIRATE_ATTACKOFFER_SINGLEEMPIRE	;You aren't getting along very well with the {0}. We could help you with this problem by inflicting painful losses on the {0}.\n\nThey won't know what hit them!\n\nJust pay us {1} credits and let us take care of things for you.\n\nIs it a deal?
-PIRATE_ATTACKCOMMENCE	;Money transfer received.\n\nOur attacks on the {0} are beginning immediately!
-GREETING_INTRODUCTION	;We are the {0}.\n\nWe fear no one. We defend our territory with courage.\n\nDo not provoke us
-GREETING_FRIENDLY	;Speak your mind with us, ally
-GREETING_NEUTRAL	;You have something to say?
-GREETING_ANGRY	;Speak quickly, your mere presence angers us!
-OFFER_FREETRADE	;We offer you a Free Trade Agreement. The profits could be enormous!\n\nDo you accept?
-FREETRADE_ACCEPT	;This Free Trade Agreement sounds very profitable! We accept!
-FREETRADE_REJECT	;We do not want a Free Trade Agreement with you. You are too weak to benefit us
-CANCELTREATY	;This {0} no longer works for us. We are cancelling it
-CANCELTREATY_RESPONSE_FRIENDLY	;How unfortunate.\n\nWe valued this treaty. It seems that you did not
-CANCELTREATY_RESPONSE_NEUTRAL	;Fine, then. This treaty is finished
-CANCELTREATY_RESPONSE_ANGRY	;Ha ha! Is this meant to scare us? We can teach you real fear.\n\nDo not push us!
-TREATY_PROPOSAL	;State your offer. We are listening
-TREATY_ACCEPTRESPONSE	;Good, good. Welcome to our new allies!
-TREATY_REJECTRESPONSE	;That is your choice. However it is a poor choice
-TRADESANCTIONS_IMPOSE	;Now you will feel our anger! We are terminating all trade between our two empires immediately.\n\nLet's see how much you enjoy Trade Sanctions!
-TRADESANCTIONS_IMPOSE_RESPONSE_ANGRY	;How dare you cut us off like this!\n\nYou will feel our fury! We will not accept this!
-TRADESANCTIONS_IMPOSE_RESPONSE_NEUTRAL	;Save your annoying speeches for someone else.\n\nWe do not fear the loss of your trade. We are strong
-TRADESANCTIONS_IMPOSE_RESPONSE_SURPRISED	;Trade Sanctions?! Are you sure about this?\n\nMaybe you should reconsider this foolish move...
-TRADESANCTIONS_LIFT	;Our Trade Sanctions against you have ended. We are resuming normal trade.\n\nDo not anger us again
-TRADESANCTIONS_LIFT_RESPONSE	;You may do as you wish. Your actions make no difference to us
-WAR_DECLARE	;You provoke us too far - our rage overflows!\n\nWAR on your pathetic empire! We will bring you to your end
-WAR_DECLARE_RESPONSE_EAGER	;We welcome war with you! Now we can wipe you from the galaxy!
-WAR_DECLARE_RESPONSE_NEUTRAL	;This will not end well for you.\n\nPrepare your defenses - you will need them!
-WAR_DECLARE_RESPONSE_SURPRISED	;We did not expect such betrayal from you.\n\nBut now you have set your destiny: we will terminate your worthless civilization
-WAR_END	;Our anger is quenched. Now it is time for this war to end.\n\nWhat do you say?
-WAR_END_ACCEPT	;Yes, we agree to end this war. For now, at least...
-WAR_END_REJECT	;No, we are enjoying this war far too much to want to end it!
-GIFT_GIVE	;We give you {0} credits. Aren't we generous!
-GIFT_THANKS	;A gift? For us? How wonderful! Thank you
-WARNING	;What is this warning?
-WARNING_INTELLIGENCEMISSIONS	;Your covert missions greatly anger us!\n\nStop them right now, or experience our painful response!
-WARNING_INTELLIGENCEMISSIONS_RESPONSE_FRIENDLY	;We don't know of any missions against you, friend.\n\nBut then we don't always know everything that goes on in our vast empire.\n\nWe'll look into this matter for you
-WARNING_INTELLIGENCEMISSIONS_RESPONSE_NEUTRAL	;We will investigate your allegations
-WARNING_INTELLIGENCEMISSIONS_RESPONSE_ANGRY	;Covert missions? Yes, we just don't like you.\n\nYou can expect more of them, and hopefully you won't detect the next ones...
-WARNING_ATTACKS	;Why are you attacking our ships?!\n\nStop it! We are angry, angry, ANGRY!
-WARNING_ATTACKS_RESPONSE_FRIENDLY	;Our apologies: some of our starship captains must have gotten a little carried away.\n\nWe'll see that it doesn't occur again
-WARNING_ATTACKS_RESPONSE_NEUTRAL	;That is most troublesome. We will investigate this matter
-WARNING_ATTACKS_RESPONSE_ANGRY	;Attacks? Well, yes we sent those attacks.\n\nYou are surprised by this? Do you think we like you or something?
+PIRATE_PROTECTIONPROPOSE	;The void is full of things with fangs. Ours included.\n\nFor the fee shown below, we will retract ours. Six months protection.
+PIRATE_PROTECTIONPROPOSEINITIATE	;Your ships look fragile. Vulnerable. Like prey caught in a web.\n\nFor the modest fee below, we can ensure nothing... unpleasant happens to them.\n\nWhat do you say?
+PIRATE_PROTECTIONACCEPTRESPONSE	;Smart. Very smart.\n\nYour ships will pass unmolested. Until the next payment is due, of course.
+PIRATE_PROTECTIONREJECTRESPONSE	;Foolish. Without our protection, your ships are just meat in the web.\n\nDon't say we didn't warn you.
+PIRATE_ATTACKOFFER_SINGLEEMPIRE	;The {0} are irritating you? We know the feeling.\n\nFor {1} credits, we will make them suffer. Quietly, of course.\n\nInterested?
+PIRATE_ATTACKCOMMENCE	;Payment received. Our raiders are already moving against the {0}.\n\nThis will be... satisfying.
+GREETING_INTRODUCTION	;We are the {0}.\n\nWe take what we want. We break what we choose.\n\nDo not provoke the frenzy.
+GREETING_FRIENDLY	;You live. That means we still find you useful.\n\nSpeak, ally.
+GREETING_NEUTRAL	;Talk. And be quick about it.
+GREETING_ANGRY	;You dare show yourself to us?\n\nOur fangs itch at the sight of you. Speak before we lose control.
+OFFER_FREETRADE	;The Dhayut propose a Free Trade Agreement.\n\nYour economy interests us. For the moment.\n\nDo you accept?
+FREETRADE_ACCEPT	;Free Trade? Yes, this serves us well. We accept.\n\nFor as long as it suits us.
+FREETRADE_REJECT	;Your trade is not worth our time.\n\nWe will take what we need by other means.
+CANCELTREATY	;This {0} is finished. We have found a better arrangement elsewhere.\n\nDo not act surprised. You knew what we are.
+CANCELTREATY_RESPONSE_FRIENDLY	;You betray us? How very... Dhayut of you.\n\nWe should have known better.
+CANCELTREATY_RESPONSE_NEUTRAL	;Typical. The Dhayut break another agreement.\n\nWe are not surprised.
+CANCELTREATY_RESPONSE_ANGRY	;Good riddance. This treaty was a web we were happy to escape.
+TREATY_PROPOSAL	;A treaty?\n\nWe are listening. But know that our commitments last only as long as they benefit us.
+TREATY_ACCEPTRESPONSE	;Excellent. New allies to stand behind when the fighting starts.\n\nWelcome to our web.
+TREATY_REJECTRESPONSE	;Your loss.\n\nThe Dhayut do not offer twice.
+TRADESANCTIONS_IMPOSE	;We are severing all trade with your pathetic empire.\n\nThis is just the beginning. The frenzy is building.
+TRADESANCTIONS_IMPOSE_RESPONSE_ANGRY	;You provoke the Dhayut with sanctions?\n\nWhen we are in frenzy, we do not distinguish between trade partners and prey!
+TRADESANCTIONS_IMPOSE_RESPONSE_NEUTRAL	;Your sanctions are an inconvenience, nothing more.\n\nThe Dhayut have survived on stolen goods before. We will again.
+TRADESANCTIONS_IMPOSE_RESPONSE_SURPRISED	;Sanctions? Against us?\n\nPerhaps you have forgotten how quickly the Dhayut turn on those who provoke them.
+TRADESANCTIONS_LIFT	;Trade Sanctions are lifted.\n\nYou have been sufficiently... disciplined. Do not make us repeat the lesson.
+TRADESANCTIONS_LIFT_RESPONSE	;Your sanctions were a minor irritation.\n\nBut we accept the resumption of trade. Our needs are practical, even if our methods are not.
+WAR_DECLARE	;Our rage has reached the breaking point! WAR!\n\nOur VelocityDrives are spooling! Our railguns are loaded!\n\nBy the time you read this, our ships are already en route!
+WAR_DECLARE_RESPONSE_EAGER	;WAR! Finally!\n\nThe frenzy takes us and we welcome it! You will be torn apart!
+WAR_DECLARE_RESPONSE_NEUTRAL	;You attack the Dhayut? Bold.\n\nBut the bold and the foolish share the same graves.
+WAR_DECLARE_RESPONSE_SURPRISED	;You betray us?\n\nIronic. Usually it is the Dhayut who strike first.\n\nNo matter. You will learn why others fear our frenzy.
+WAR_END	;The frenzy has passed. For now.\n\nWe propose an end to hostilities. Do you agree?
+WAR_END_ACCEPT	;Yes, we accept the ceasefire.\n\nBut do not mistake our agreement for permanence. Nothing with the Dhayut is permanent.
+WAR_END_REJECT	;No! The frenzy still burns!\n\nWe will not stop until your empire is stripped bare and your people serve us in chains!
+GIFT_GIVE	;We send you {0} credits.\n\nDo not read too much into this. It is a transaction, not a friendship.
+GIFT_THANKS	;A gift? We accept.\n\nThe Dhayut always accept what is offered freely. It saves us the trouble of taking it.
+WARNING	;A warning? For the Dhayut?\n\nThis should be entertaining.
+WARNING_INTELLIGENCEMISSIONS	;We have caught your spies crawling through our webs.\n\nThe next ones we catch will not be returned alive.\n\nCease your missions immediately.
+WARNING_INTELLIGENCEMISSIONS_RESPONSE_FRIENDLY	;Spy missions? Not us.\n\nBut if we were spying on you, you would never have detected it.\n\nSo clearly it was someone else.
+WARNING_INTELLIGENCEMISSIONS_RESPONSE_NEUTRAL	;We will... look into this matter.\n\nNo promises.
+WARNING_INTELLIGENCEMISSIONS_RESPONSE_ANGRY	;Yes, we spy on you. We spy on everyone.\n\nTrust is for races too weak to gather intelligence. The Dhayut trust nothing and no one.
+WARNING_ATTACKS	;Your attacks on our forces are pushing us toward the frenzy.\n\nYou do not want to see us in frenzy.\n\nStop now.
+WARNING_ATTACKS_RESPONSE_FRIENDLY	;Attacks? A miscommunication.\n\nOur ships can be overeager. We will rein them in.
+WARNING_ATTACKS_RESPONSE_NEUTRAL	;We will investigate.\n\nOur commanders sometimes act on instinct. It is in our nature.
+WARNING_ATTACKS_RESPONSE_ANGRY	;Your ships were in our hunting grounds.\n\nThe Dhayut do not apologize for striking at what wanders into the web.

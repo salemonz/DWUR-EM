@@ -16,13 +16,13 @@ ResourceExtractionBonus	;10
 WarWearinessAttenuation	;0
 SatisfactionModifier	;10
 ResearchBonus	;20
-EspionageBonus	;20
-TradeBonus	;0
+EspionageBonus	;30
+TradeBonus	;15
 OverallShipDesignFocus	;0
 TechFocus1	;3
 TechFocus2	;22
 NativePlanetType	;3
-SpecialComponent	;137
+SpecialComponent	;-1
 WeaponsResearchProjectOrder	;67,293,51,22,304,52,15,23,324,330,344,486,305,53,24,504,16,318,328,327,336,370,306,54,25,17,506,21,19,319,527,320,472,322,329,371,275,341,337,307,68,55,18,480,528,69,490,308,26,505,20,56,70,481,593,507,510,498,274,508,509,473
 EnergyResearchProjectOrder	;123,95,105,363,166,465,477,479,115,106,167,501,96,74,124,133,145,116,107,172,163,89,75,487,108,164,90,71,173,488,109,134,165,146,91,72,117,110,399,130,546,400,101,103,552,131,174,111,547,422
 HighTechResearchProjectOrder	;212,204,227,364,249,253,188,182,219,198,446,258,442,457,458,205,213,245,460,221,189,183,199,206,413,214,583,228,406,405,220,215,191,185,200,236,238,232,190,184,284,207,237,454,224,410,201
@@ -132,6 +132,6 @@ TourismIncomeFactor	;0.8
 FreeTradeIncomeFactor	;1
 MigrationFactor	;1.5
 TroopRegenerationFactor	;1.0
-PirateDefaultPlaystyle	;0
+PirateDefaultPlaystyle	;3
 DesignsPictureFamilyIndexPirates	;49
 ImmuneToPlagues	;N

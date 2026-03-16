@@ -1,40 +1,40 @@
 'Distant Worlds - dialogue - Version 1.9.5.10 - Modded by the Distant Worlds Mod Editor by Sabranan
 
-GREETING_INTRODUCTION	;Welcome to you offworld visitor! We are the cheerful Tairoshans of the {0}.\n\nMake yourself comfortable and tell us the reason for your visit
-GREETING_FRIENDLY	;What topic shall we discuss with our dear friend?
-GREETING_NEUTRAL	;There's something you'd like to talk about?
-GREETING_ANGRY	;State your case quickly - we have little time for you
-OFFER_FREETRADE	;We come before you to offer a Free Trade Agreement.\n\nThis treaty would be highly profitable for both of our empires. You and us are so alike!\n\nDo you agree?
-FREETRADE_ACCEPT	;We eagerly accept your offer of a Free Trade Agreement!\n\nTo kick things off, please try this delicious sample of Bakdur steak that we've sent to you!
-FREETRADE_REJECT	;Sadly a Free Trade Agreement does not suit us right now. We may change our mind later though
-CANCELTREATY	;We have had enough of our {0} with you. This treaty is cancelled
-CANCELTREATY_RESPONSE_FRIENDLY	;How unfortunate that you no longer value our friendship. But that is your choice
-CANCELTREATY_RESPONSE_NEUTRAL	;Treaties come and treaties go. But the important things remain: singing and dancing, eating and drinking
-CANCELTREATY_RESPONSE_ANGRY	;No loss to us - this was a worthless treaty anyway. Much like your worthless little empire!
-TREATY_PROPOSAL	;What is your offer?
-TREATY_ACCEPTRESPONSE	;We are overjoyed at your acceptance! We knew we could count on you!
-TREATY_REJECTRESPONSE	;How typical! You're a disagreeable bunch, aren't you?
-TRADESANCTIONS_IMPOSE	;We have cooked up a little something for you: Trade Sanctions!\n\nYour provocations have forced us to terminate all trade between our two empires.\n\nHopefully this lesson will teach you to be civilized
-TRADESANCTIONS_IMPOSE_RESPONSE_ANGRY	;You're quite an evil little despot, aren't you!\n\nBut we will not be broken by mere trade sanctions!
-TRADESANCTIONS_IMPOSE_RESPONSE_NEUTRAL	;We are not impressed by your pitiful Trade Sanctions.\n\nWe will now ignore you...
-TRADESANCTIONS_IMPOSE_RESPONSE_SURPRISED	;Why do you impose Trade Sanctions on your friends?!\n\nYou cannot possibly be serious...
-TRADESANCTIONS_LIFT	;We have decided to end our Trade Sanctions against you.\n\nNormal trade will now resume
-TRADESANCTIONS_LIFT_RESPONSE	;We knew you could not hold out for long without access to our delicious Bakdur steak!\n\nLet that be a lesson to you
-WAR_DECLARE	;It is with great sadness that we must inform you of the following: a state of war now exists between us.\n\nWe must end your treacherous activities once and for all!
-WAR_DECLARE_RESPONSE_EAGER	;Yet another foolish decision from you!\n\nThis war will be your end. Prepare for annihilation!
-WAR_DECLARE_RESPONSE_NEUTRAL	;We will fight with courage and intensity!\n\nThe suffering will be upon you, not us
-WAR_DECLARE_RESPONSE_SURPRISED	;What?! Are we no longer friends?!\n\nThere must be some mistake...
-WAR_END	;We urge an end to this futile war between us.\n\nWhat do you say?
-WAR_END_ACCEPT	;We agree - let us end this war at once.\n\nOur military forces will return to their bases
-WAR_END_REJECT	;No - we will continue to fight until your vile empire is crushed!
-GIFT_GIVE	;We joyfully present a gift of {0} credits to you.\n\nMay our friendship grow ever stronger
-GIFT_THANKS	;Thank you for your gift. Most appreciated
-WARNING	;A warning for us? We are wondering what this could be
-WARNING_INTELLIGENCEMISSIONS	;We tire of your treacherous covert missions against us!\n\nStop them now you pathetic worm!
-WARNING_INTELLIGENCEMISSIONS_RESPONSE_FRIENDLY	;We are not aware of any missions against you my friend, but we will investigate this situation at once
-WARNING_INTELLIGENCEMISSIONS_RESPONSE_NEUTRAL	;Be assured that we will investigate this incident
-WARNING_INTELLIGENCEMISSIONS_RESPONSE_ANGRY	;Covert missions? What missions? If there were any missions, we certainly wouldn't talk to you about them. But there are no missions anyway... So stop being so paranoid!
-WARNING_ATTACKS	;Your unprovoked miltary attacks ignite an angry fire in us!\n\nDo not stoke this fire any more, or it may burn you up!
-WARNING_ATTACKS_RESPONSE_FRIENDLY	;How terrible, please accept our sincere apologies for any overzealous actions of our military commanders
-WARNING_ATTACKS_RESPONSE_NEUTRAL	;We will investigate this incident and deal with the offending military commander
-WARNING_ATTACKS_RESPONSE_ANGRY	;Attacks? We wouldn't waste our time on attacks against such a pathetic empire like yours.
+GREETING_INTRODUCTION	;Hello wonderful new friend! We are the cheerful Tairoshans of the {0}!\n\nEveryone we meet is a friend! That is what we believe!\n\nWhat can we do to make your day better?
+GREETING_FRIENDLY	;Our very best friend is back!\n\nWe have been saving something special for you! What would you like to talk about?
+GREETING_NEUTRAL	;Welcome! The Tairoshans are always happy to have visitors!\n\nPlease, tell us everything!
+GREETING_ANGRY	;Oh dear... We can tell something is wrong between us.\n\nThe Tairoshans want to fix it! Please tell us how!
+OFFER_FREETRADE	;The Tairoshans would love a Free Trade Agreement with you!\n\nSharing is caring, and we care about everyone!\n\nSay yes? Please?
+FREETRADE_ACCEPT	;Hooray! Free Trade! This is the best day!\n\nWe are sending you a welcome gift right away! We cannot help it, we just love giving things!
+FREETRADE_REJECT	;Oh... that is sad. But we understand!\n\nMaybe you will change your mind later? We will be here with open arms!
+CANCELTREATY	;The Tairoshans are very sad to say this, but we must end our {0} with you.\n\nWe still like you! We just need some time apart. Is that ok?
+CANCELTREATY_RESPONSE_FRIENDLY	;You do not want our treaty anymore? But we tried so hard!\n\nWe will miss you terribly!
+CANCELTREATY_RESPONSE_NEUTRAL	;That is sad. But the Tairoshans do not hold grudges.\n\nCome back whenever you want!
+CANCELTREATY_RESPONSE_ANGRY	;Even the Tairoshans have limits.\n\nWe thought you were different from the others who treated us badly. We were wrong.
+TREATY_PROPOSAL	;A treaty?! The Tairoshans love treaties! Treaties mean friendship!\n\nTell us everything! We are so excited!
+TREATY_ACCEPTRESPONSE	;WE ARE SO HAPPY! New friends!\n\nWe are sending gifts to celebrate! And more gifts tomorrow! And the day after!
+TREATY_REJECTRESPONSE	;Oh no... We really wanted this to work.\n\nBut we will not give up! Maybe next time!
+TRADESANCTIONS_IMPOSE	;The Tairoshans are imposing Trade Sanctions.\n\nWe never thought we would have to do this. It makes us very, very sad.\n\nBut even the nicest people have to stand up sometimes.
+TRADESANCTIONS_IMPOSE_RESPONSE_ANGRY	;Sanctions?! Against the Tairoshans?!\n\nWe have been nothing but nice to you! This is so unfair!
+TRADESANCTIONS_IMPOSE_RESPONSE_NEUTRAL	;Oh dear. We did not expect this.\n\nBut the Tairoshans will be ok. We always are!
+TRADESANCTIONS_IMPOSE_RESPONSE_SURPRISED	;Trade Sanctions?! But we are friends! We sent you gifts!\n\nWhat did we do wrong? Please tell us so we can fix it!
+TRADESANCTIONS_LIFT	;The Tairoshans are SO happy to lift our Trade Sanctions!\n\nWe hated every moment of it. Let us never do that again! Friends?
+TRADESANCTIONS_LIFT_RESPONSE	;Oh good! We are so relieved!\n\nThe Tairoshans forgive and forget! Let us trade and be happy again!
+WAR_DECLARE	;The Tairoshans declare... war.\n\nWe cannot believe we are saying this. We gave you everything. Every gift, every kindness.\n\nAnd still you pushed us to this.
+WAR_DECLARE_RESPONSE_EAGER	;You attack the friendliest race in the galaxy?\n\nEven the Tairoshans can fight when we must! Our carrier fleets are launching!
+WAR_DECLARE_RESPONSE_NEUTRAL	;War. We do not want this. But the Tairoshans adapt to harsh conditions.\n\nOur homeworld's climate taught us survival. You will see.
+WAR_DECLARE_RESPONSE_SURPRISED	;WAR?! Against the TAIROSHANS?!\n\nBut we sent you gifts! We invited you to our festivals!\n\nThere must be a terrible, terrible mistake!
+WAR_END	;The Tairoshans beg you: let this war end!\n\nWe are not meant for fighting. We are meant for friendship!\n\nPlease, can we stop?
+WAR_END_ACCEPT	;Oh thank goodness! The war is over!\n\nThe Tairoshans forgive you! We forgive everyone! Can we be friends again?
+WAR_END_REJECT	;You will not stop fighting us?\n\nThe Tairoshans do not understand cruelty. But we will endure. We always endure.
+GIFT_GIVE	;The Tairoshans joyfully present {0} credits to you!\n\nGiving gifts is our favorite thing! We hope this makes you smile!
+GIFT_THANKS	;A GIFT! For the Tairoshans! We are overwhelmed!\n\nYou are officially our favorite empire! We are sending a gift back right now!
+WARNING	;A warning? Oh dear! What happened?
+WARNING_INTELLIGENCEMISSIONS	;We have found your secret agents near our settlements.\n\nThe Tairoshans do not understand why you would spy on us. We share everything freely!\n\nPlease stop. It makes us sad.
+WARNING_INTELLIGENCEMISSIONS_RESPONSE_FRIENDLY	;Missions against our friends? Never!\n\nThe Tairoshans do not do sneaky things. We are too honest for that!
+WARNING_INTELLIGENCEMISSIONS_RESPONSE_NEUTRAL	;We will look into this right away!\n\nIf any Tairoshan did this, we are very sorry!
+WARNING_INTELLIGENCEMISSIONS_RESPONSE_ANGRY	;Yes, we were watching you. Because you have not been very nice to us.\n\nBe nicer, and we will stop. That is fair, right?
+WARNING_ATTACKS	;You are attacking the Tairoshans?! The nicest race in the galaxy?!\n\nWe literally gave you gifts last week!\n\nPlease stop! This is breaking our hearts!
+WARNING_ATTACKS_RESPONSE_FRIENDLY	;Oh no, this is terrible! We are so, so sorry!\n\nWe will fix this immediately! Whoever did this will be very grounded!
+WARNING_ATTACKS_RESPONSE_NEUTRAL	;We will find out what happened and make it right!\n\nThe Tairoshans do not attack friends!
+WARNING_ATTACKS_RESPONSE_ANGRY	;We attacked you because you hurt us first.\n\nEven the Tairoshans fight back when pushed too far. Please remember that.

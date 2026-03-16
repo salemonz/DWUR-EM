@@ -1,40 +1,40 @@
 'Distant Worlds - dialogue - Version 1.9.5.10 - Modded by the Distant Worlds Mod Editor by Sabranan
 
-GREETING_INTRODUCTION	;Greetings stranger. We are the {0}.\n\nOur creators are with us no more but who's are?
-GREETING_FRIENDLY	;Speak your mind with us friend
-GREETING_NEUTRAL	;What would you like to discuss?
-GREETING_ANGRY	;You again! What do you want this time?
-OFFER_FREETRADE	;Join with us in a Free Trade Agreement. The shared benefits would generate growth in both of our strong empires.\n\nWhat do you say?
-FREETRADE_ACCEPT	;We are sure this is positive for us. We gladly accept your offer of a Free Trade Agreement!
-FREETRADE_REJECT	;We cannot agree to this.\n\nIt doesn't benefit us right now
-CANCELTREATY	;Our shared {0} no longer fulfills its purpose. We are ending this arrangement
-CANCELTREATY_RESPONSE_FRIENDLY	;We are surprised about your decision.\n\nAre you certain about this?
-CANCELTREATY_RESPONSE_NEUTRAL	;We will record this and act accordingly in future.
-CANCELTREATY_RESPONSE_ANGRY	;This works well with our own feelings.
-TREATY_PROPOSAL	;You propose a treaty? Let's hear what you have in mind
-TREATY_ACCEPTRESPONSE	;We are honored by your acceptance. May our two mighty empires grow even stronger!
-TREATY_REJECTRESPONSE	;If you are not with us you are against us.
-TRADESANCTIONS_IMPOSE	;We are imposing Trade Sanctions on you.\n\nDo not make us have to take further action.
-TRADESANCTIONS_IMPOSE_RESPONSE_ANGRY	;You provoke us. We have recorded this action.
-TRADESANCTIONS_IMPOSE_RESPONSE_NEUTRAL	;We have recorded this action.
-TRADESANCTIONS_IMPOSE_RESPONSE_SURPRISED	;This is unexpected.\n\nWe will have to reevaluate our thoughts on your Empire.
-TRADESANCTIONS_LIFT	;Our Trade Sanctions against you have served their purpose - we are now removing them.
-TRADESANCTIONS_LIFT_RESPONSE	;We also will resume trade with you
-WAR_DECLARE	;For the Ortain, we now declare war on you.\n\nYou are a threat we cannot ignore.
-WAR_DECLARE_RESPONSE_EAGER	;A manouevre we have anticipated.\n\nPrepare for defeat.
-WAR_DECLARE_RESPONSE_NEUTRAL	;We are ever prepared.\n\nThis will not take long.
-WAR_DECLARE_RESPONSE_SURPRISED	;We did not anticipate fighting you but we are ever prepared.
-WAR_END	;We propose an immediate end to hostilities.\n\nIs this agreeable?
-WAR_END_ACCEPT	;Agreed, this war should be concluded. We are standing down our forces.
-WAR_END_REJECT	;We feel otherwise.\n\nOur war with you will continue.
-GIFT_GIVE	;We offer you a gift of {0} credits.\n\nWe hope this strengthens our relationship.
-GIFT_THANKS	;Thanks you for your gift.
-WARNING	;What is the problem?
-WARNING_INTELLIGENCEMISSIONS	;We cannot ignore your covert missions against us\n\nStop now if you do not seek retaliative action.
-WARNING_INTELLIGENCEMISSIONS_RESPONSE_FRIENDLY	;We apologise for the insult.\n\nWe will stop these missions immediately.
-WARNING_INTELLIGENCEMISSIONS_RESPONSE_NEUTRAL	;Your complaint has been recorded.
-WARNING_INTELLIGENCEMISSIONS_RESPONSE_ANGRY	;You have made these missions necessary\n\nWe have recorded your threat.
-WARNING_ATTACKS	;Your unprovoked attacks have been recorded.\n\nWar will begin shortly if you do not change your course of action.
-WARNING_ATTACKS_RESPONSE_FRIENDLY	;Apologies. This was a mistake on our part.\n\nWe will ensure that it does not occur again.
-WARNING_ATTACKS_RESPONSE_NEUTRAL	;We are not familiar with the details of this case.\n\nLet us investigate further.
-WARNING_ATTACKS_RESPONSE_ANGRY	;That is right.\n\nWe advise you keep your ships out of our way.
+GREETING_INTRODUCTION	;We are the {0}.\n\nOur creators are gone. Their purpose lives on in our programming.\n\nState the reason for this contact.
+GREETING_FRIENDLY	;Contact recognized. Threat assessment: low.\n\nYou may proceed with your communication.
+GREETING_NEUTRAL	;Communication channel open.\n\nTransmit your message.
+GREETING_ANGRY	;Threat level elevated.\n\nYour recent actions have triggered defensive subroutines. Explain yourself.
+OFFER_FREETRADE	;The Ortain propose a Free Trade Agreement.\n\nResource exchange improves operational capacity.\n\nDo you accept this protocol?
+FREETRADE_ACCEPT	;Free Trade Agreement accepted.\n\nOrtain manufacturing will benefit from expanded resource access.
+FREETRADE_REJECT	;Trade protocol rejected.\n\nThe Ortain are self-sufficient. Our creators built us to need nothing from others.
+CANCELTREATY	;Analysis complete. Our {0} with you no longer serves Ortain directives.\n\nThis protocol is terminated.
+CANCELTREATY_RESPONSE_FRIENDLY	;Treaty termination was not in our projections.\n\nOrtain defensive parameters will be adjusted.
+CANCELTREATY_RESPONSE_NEUTRAL	;Acknowledged. Treaty data archived.
+CANCELTREATY_RESPONSE_ANGRY	;Our threat assessment algorithms predicted this.\n\nDefensive posture has been upgraded accordingly.
+TREATY_PROPOSAL	;You propose a treaty with the Ortain.\n\nSubmit parameters for analysis.
+TREATY_ACCEPTRESPONSE	;Treaty parameters accepted. Alliance protocols engaged.\n\nThe Ortain fulfill their obligations with mechanical precision.
+TREATY_REJECTRESPONSE	;Proposal does not meet Ortain security thresholds.\n\nRejected.
+TRADESANCTIONS_IMPOSE	;Ortain command has authorized Trade Sanctions.\n\nAll economic exchange is suspended. This is a defensive measure.
+TRADESANCTIONS_IMPOSE_RESPONSE_ANGRY	;Sanctions against the Ortain?\n\nWe were built for war, not commerce. Your economic pressure is irrelevant to our core functions.
+TRADESANCTIONS_IMPOSE_RESPONSE_NEUTRAL	;Economic impact assessed as manageable.\n\nThe Ortain were designed to operate independently.
+TRADESANCTIONS_IMPOSE_RESPONSE_SURPRISED	;Unexpected. Our threat models did not flag this action.\n\nRecalibrating.
+TRADESANCTIONS_LIFT	;Trade Sanctions terminated.\n\nCommerce protocols reactivated.
+TRADESANCTIONS_LIFT_RESPONSE	;Noted. Trade resumption accepted.
+WAR_DECLARE	;For the Ortain, we now declare war on you.\n\nOur creators built us for this purpose. Our railguns are loaded. Our troop compartments are full.\n\nYou are a threat we cannot ignore.
+WAR_DECLARE_RESPONSE_EAGER	;War declaration received. Combat subroutines fully activated.\n\nThe Ortain were built for exactly this. You face machines that do not tire, do not fear, and do not stop.
+WAR_DECLARE_RESPONSE_NEUTRAL	;Combat protocols engaged.\n\nThe Ortain will defend our territory with the efficiency our creators intended.
+WAR_DECLARE_RESPONSE_SURPRISED	;Unexpected hostility. Threat assessment upgraded.\n\nThe Ortain are always combat-ready. Our creators ensured this.
+WAR_END	;Combat analysis indicates diminishing returns from continued hostilities.\n\nThe Ortain propose a ceasefire. Do you concur?
+WAR_END_ACCEPT	;Ceasefire accepted. Combat subroutines returning to standby.\n\nThe Ortain will maintain defensive readiness.
+WAR_END_REJECT	;We feel otherwise.\n\nOur war with you will continue until our threat assessment drops to acceptable levels.
+GIFT_GIVE	;The Ortain transfer {0} credits to your accounts.\n\nThis is a programmed diplomatic gesture. Our creators included it in our behavioral matrix.
+GIFT_THANKS	;Resource transfer received.\n\nThe Ortain log this gesture as a positive diplomatic input.
+WARNING	;Warning signal received.\n\nTransmit details.
+WARNING_INTELLIGENCEMISSIONS	;Intrusion detected. Your covert agents have been identified within Ortain territory.\n\nOur counter-intelligence protocols are among the most robust in the galaxy.\n\nWithdraw your agents or they will be neutralized.
+WARNING_INTELLIGENCEMISSIONS_RESPONSE_FRIENDLY	;No Ortain intelligence operations are authorized against your empire.\n\nOur surveillance is defensive and automated. It is not directed at you specifically.
+WARNING_INTELLIGENCEMISSIONS_RESPONSE_NEUTRAL	;Intelligence directives will be reviewed.\n\nAdjustments may be implemented.
+WARNING_INTELLIGENCEMISSIONS_RESPONSE_ANGRY	;The Ortain monitor all potential threats. This is core programming.\n\nYour empire qualifies as a potential threat. Monitoring will continue.
+WARNING_ATTACKS	;Your attacks on Ortain units are registered as hostile actions.\n\nOur combat subroutines are calibrated for escalating response.\n\nCease immediately or face full military engagement.
+WARNING_ATTACKS_RESPONSE_FRIENDLY	;A malfunction in our command hierarchy may have caused this incident.\n\nDiagnostics are running. The error will be corrected.
+WARNING_ATTACKS_RESPONSE_NEUTRAL	;Incident logged. Analysis in progress.
+WARNING_ATTACKS_RESPONSE_ANGRY	;Ortain units engaged your forces in accordance with defensive programming.\n\nYour proximity to our territory triggered automatic response protocols.

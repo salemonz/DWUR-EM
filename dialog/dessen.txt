@@ -1,40 +1,40 @@
 'Distant Worlds - dialogue - Version 1.9.5.10 - Modded by the Distant Worlds Mod Editor by Sabranan
 
-GREETING_INTRODUCTION	;Greetings! We are the {0}.\n\nWe seek to improve you all.\n\nIt is a fine age we live in
-GREETING_FRIENDLY	;A pleasure to see your face again, friend. What can we do for you?
-GREETING_NEUTRAL	;How can we help you?
-GREETING_ANGRY	;You try our patience. Make your point quickly
-OFFER_FREETRADE	;We recommend a Free Trade Agreement between our empires.\n\nAre you tempted?
-FREETRADE_ACCEPT	;A grand idea! We accept your offer of a Free Trade Agreement.\n\nLong live our alliance!
-FREETRADE_REJECT	;No, we reject a Free Trade Agreement with you at this time.\n\nPossibly later though, we'll have to see about that
-CANCELTREATY	;We can no longer support our {0} with you. So we are ending this treaty now.\n\nWe wish you well
-CANCELTREATY_RESPONSE_FRIENDLY	;This is unexpected to us!\n\nWe don't really understand your actions here, but we respect your decision
-CANCELTREATY_RESPONSE_NEUTRAL	;When treaties no longer work, we should face these issues openly.\n\nThank you for your honesty here
-CANCELTREATY_RESPONSE_ANGRY	;We concur with your evaluation.\n\nThis treaty no longer meets our needs either. It is best to end it
-TREATY_PROPOSAL	;What kind of change do you have in mind?
-TREATY_ACCEPTRESPONSE	;An excellent outcome! We rejoice with our new allies.\n\nTwo is always better than one!
-TREATY_REJECTRESPONSE	;Are you sure we cannot change your mind?\n\nMaybe you will reconsider it some time in the future
-TRADESANCTIONS_IMPOSE	;We do not undertake this course lightly, but we must now impose Trade Sanctions on you.\n\nWe hope that we do not need to take things further than this
-TRADESANCTIONS_IMPOSE_RESPONSE_ANGRY	;We are angered by your hasty imposition of Trade Sanctions!\n\nWe will respond quickly to protect our interests
-TRADESANCTIONS_IMPOSE_RESPONSE_NEUTRAL	;You like playing tough, huh? We can do that too, you know
-TRADESANCTIONS_IMPOSE_RESPONSE_SURPRISED	;Your actions make no sense to us. We see no need for Trade Sanctions
-TRADESANCTIONS_LIFT	;Our Trade Sanctions against you have served their purpose.\n\nWe are now lifting them
-TRADESANCTIONS_LIFT_RESPONSE	;Very well. We will also resume trade with you.\n\nTwo is always better than one
-WAR_DECLARE	;You leave us with no choice: we declare WAR on you!\n\nOur justice will be quick, decisive and permanent
-WAR_DECLARE_RESPONSE_EAGER	;War on us? Huh! We will give you a lesson in war.\n\nWe do not fear you
-WAR_DECLARE_RESPONSE_NEUTRAL	;You have chosen this course, and we will respond.\n\nPrepare your defenses!
-WAR_DECLARE_RESPONSE_SURPRISED	;Are you in the habit of attacking your friends? Your behaviour is very strange.\n\nBe warned that we will defend ourselves!
-WAR_END	;This war has continued long enough. We suggest a ceasefire is in order.\n\nDo you agree?
-WAR_END_ACCEPT	;Yes, a ceasefire would be agreeable.\n\nWe are pulling back our forces now
-WAR_END_REJECT	;No, we intend to see this war to its finish.\n\nYour aggression has no place in this galaxy
-GIFT_GIVE	;We offer you this gift of {0} credits.\n\nPerhaps you could spend some of it on our fine Ucantium pearls?
-GIFT_THANKS	;We thank you for your kind gift. Most appreciated
-WARNING	;This sounds serious. Please explain the matter to us
-WARNING_INTELLIGENCEMISSIONS	;We have intercepted your covert missions against us. This must stop now.\n\nYou have been warned!
-WARNING_INTELLIGENCEMISSIONS_RESPONSE_FRIENDLY	;Covert missions? Consider them finished.\n\nWe will not bother you again
-WARNING_INTELLIGENCEMISSIONS_RESPONSE_NEUTRAL	;Yes, we understand. We will ensure that we don't get caught again.\n\nIs there anything else?
-WARNING_INTELLIGENCEMISSIONS_RESPONSE_ANGRY	;We have no idea what you're talking about.\n\nAnd we do not intend to discuss this matter any further
-WARNING_ATTACKS	;We are very upset by your ship attacks against us.\n\nStop them at once, or we will take punitive action against you!
-WARNING_ATTACKS_RESPONSE_FRIENDLY	;We must apologize, friend. Our border sentries must have become overzealous.\n\nWe will correct this situation
-WARNING_ATTACKS_RESPONSE_NEUTRAL	;We agree that this is most unhelpful.\n\nWe will deal with the starship captains involved in this incident
-WARNING_ATTACKS_RESPONSE_ANGRY	;Attacks on your ships?\n\nLet me be honest with you: we find your empire to be quite worrisome. I wouldn't be surprised if one of our starship captains got a little trigger-happy.\n\nMaybe you should sort out your own starship commanders first, before complaining to us
+GREETING_INTRODUCTION	;Welcome! We are the {0}.\n\nThe Dessen believe that true strength lies in cooperation. We adapt to serve the needs of all.\n\nHow may we be of... assistance?
+GREETING_FRIENDLY	;Our dearest partner returns.\n\nWe have been thinking about how to make our relationship even more... beneficial. For both of us, of course.\n\nWhat is on your mind?
+GREETING_NEUTRAL	;You have our full attention.\n\nThe Dessen are always eager to understand what others need.
+GREETING_ANGRY	;We sense tension between us.\n\nThe Dessen are skilled at resolving such difficulties. Tell us what troubles you.
+OFFER_FREETRADE	;The Dessen propose a Free Trade Agreement.\n\nOur Way of Symbiosis teaches that intertwined economies create bonds deeper than any treaty.\n\nShall we grow together?
+FREETRADE_ACCEPT	;Excellent. Free Trade draws our peoples closer together.\n\nThe Dessen look forward to learning everything about your markets. Everything.
+FREETRADE_REJECT	;A pity. The Dessen are most effective when closely connected to our partners.\n\nPerhaps you will reconsider when you see the benefits others enjoy.
+CANCELTREATY	;After careful reflection, the Dessen must end our {0} with you.\n\nWe adapt to new circumstances. This is simply one of those times.
+CANCELTREATY_RESPONSE_FRIENDLY	;You withdraw from us? How unexpected.\n\nThe Dessen had invested considerably in this relationship. We will... adjust.
+CANCELTREATY_RESPONSE_NEUTRAL	;We note your decision.\n\nThe Dessen will find other partnerships to cultivate.
+CANCELTREATY_RESPONSE_ANGRY	;Interesting. The treaty was already serving our purposes more than you realized.\n\nBut no matter. We have other arrangements in progress.
+TREATY_PROPOSAL	;A treaty? The Dessen are always open to new connections.\n\nPresent your terms. We will find a way to make this work for everyone.
+TREATY_ACCEPTRESPONSE	;Wonderful. A new bond between our peoples.\n\nThe Dessen excel at making partnerships... indispensable. You will see.
+TREATY_REJECTRESPONSE	;Disappointing. The Dessen had such plans for our collaboration.\n\nBut we are patient. Opportunities arise again.
+TRADESANCTIONS_IMPOSE	;The Dessen regretfully impose Trade Sanctions.\n\nSometimes withdrawal is the most effective form of influence. You will notice our absence.
+TRADESANCTIONS_IMPOSE_RESPONSE_ANGRY	;Sanctions? Against the Dessen?\n\nWe have connections you cannot even see. Your sanctions are an inconvenience, nothing more.
+TRADESANCTIONS_IMPOSE_RESPONSE_NEUTRAL	;The Dessen have many partners. Your sanctions affect us less than you imagine.
+TRADESANCTIONS_IMPOSE_RESPONSE_SURPRISED	;How peculiar. We thought our relationship was progressing nicely.\n\nPerhaps we misjudged your... susceptibility to our cooperation.
+TRADESANCTIONS_LIFT	;The Dessen are lifting Trade Sanctions.\n\nWe believe the conditions for renewed cooperation have been met.
+TRADESANCTIONS_LIFT_RESPONSE	;Welcome back into our orbit.\n\nThe Dessen have missed your participation in our network.
+WAR_DECLARE	;The Dessen declare WAR. Not from rage, but from necessity.\n\nOur stealth ships are already in position. Our agents are already inside your borders.\n\nYou will not see us coming.
+WAR_DECLARE_RESPONSE_EAGER	;You attack the Dessen? How bold.\n\nBut we have been watching you for longer than you know.\n\nOur jammers are active. Your sensors will find nothing but ghosts.
+WAR_DECLARE_RESPONSE_NEUTRAL	;The Dessen prefer the shadows to the battlefield.\n\nBut we are capable of both. You will find that out.
+WAR_DECLARE_RESPONSE_SURPRISED	;War? Against the Dessen?\n\nWe who sought only to cooperate? To help?\n\nPerhaps our methods were misunderstood.
+WAR_END	;This war serves neither of us. The Dessen propose an end to hostilities.\n\nWe are far more useful to you as a partner than as an enemy.\n\nDo you agree?
+WAR_END_ACCEPT	;Peace. The Dessen welcome it.\n\nLet us return to what we do best: building connections.
+WAR_END_REJECT	;Then the shadows deepen.\n\nThe Dessen do not fight like others. We erode from within.\n\nYou have been warned.
+GIFT_GIVE	;The Dessen send {0} credits.\n\nA small gesture, but the Dessen understand that generosity builds dependence. And dependence is a kind of bond.
+GIFT_THANKS	;Your gift is received with gratitude.\n\nThe Dessen always remember those who invest in our relationship.
+WARNING	;A warning? The Dessen are listening.\n\nWe always listen.
+WARNING_INTELLIGENCEMISSIONS	;We have detected your intelligence operations against us.\n\nThe Dessen respect good espionage — we practice it constantly ourselves.\n\nBut against us? That is a different matter. Cease at once.
+WARNING_INTELLIGENCEMISSIONS_RESPONSE_FRIENDLY	;Covert missions? The Dessen would never be so clumsy.\n\nIf we were observing you, you would not have noticed. Clearly this is someone else.
+WARNING_INTELLIGENCEMISSIONS_RESPONSE_NEUTRAL	;We will review our intelligence activities.\n\nThe Dessen are always willing to... recalibrate.
+WARNING_INTELLIGENCEMISSIONS_RESPONSE_ANGRY	;Yes, the Dessen observe you. We observe everyone.\n\nInformation is the foundation of cooperation. Surely you understand.
+WARNING_ATTACKS	;Your attacks on Dessen assets are counterproductive.\n\nWe are far more dangerous as an enemy than you realize.\n\nOur ships carry cloaking devices for a reason. Stop now.
+WARNING_ATTACKS_RESPONSE_FRIENDLY	;How unfortunate. This was not sanctioned by our leadership.\n\nThe responsible parties will be identified and dealt with quietly.
+WARNING_ATTACKS_RESPONSE_NEUTRAL	;We will investigate this matter.\n\nThe Dessen prefer precision over recklessness.
+WARNING_ATTACKS_RESPONSE_ANGRY	;Our ships acted because your behavior necessitated a response.\n\nYou did not see them coming. You will not see them next time either.

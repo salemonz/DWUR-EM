@@ -14,7 +14,7 @@ ColonizationModule	;0
 CombatTargettingSystem	;1
 CommerceCenter	;0
 ConstructionYard	;0
-CountermeasuresSystem	;1
+CountermeasuresSystem	;2
 DamageControl	;1
 DockingBay	;0
 EnergyCollector	;2
@@ -44,7 +44,7 @@ ProximityArray	;1
 Reactor	;1
 RecreationCenter	;0
 ResourceProfileSensor	;0
-ScannerJammer	;0
+ScannerJammer	;1
 Shields	;6
 StealthCloak	;0
 TraceScanner	;0
@@ -54,13 +54,13 @@ WeaponArea	;0
 WeaponBeam	;0
 WeaponBombard	;0
 WeaponMissile	;0
-WeaponPhaser	;0
+WeaponPhaser	;2
 WeaponRailGun	;0
 WeaponsManufacturingPlant	;0
 WeaponsResearchLab	;0
 WeaponSuperBeam	;0
-WeaponTorpedo	;5
-WeaponTractorBeam	;0
+WeaponTorpedo	;7
+WeaponTractorBeam	;1
 WeaponGravitonBeam	;0
 WeaponAreaGravity	;
 ImageScaling;Scaled 0.75

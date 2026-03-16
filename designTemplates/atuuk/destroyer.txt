@@ -55,7 +55,7 @@ WeaponBeam	;0
 WeaponBombard	;0
 WeaponMissile	;3
 WeaponPhaser	;0
-WeaponRailGun	;8
+WeaponRailGun	;5
 WeaponsManufacturingPlant	;0
 WeaponsResearchLab	;0
 WeaponSuperBeam	;0

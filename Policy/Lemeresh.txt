@@ -79,8 +79,8 @@ EngageInTourism					;N
 NewColonyPopulationPolicyYourRaceFamily		;0
 NewColonyPopulationPolicyAllRaces		;2
 ImplementEnslavementWithPenalColonies		;Y
-HomeworldDefensePriority						;2
-ProtectLeaderAtAllCosts				;N
+HomeworldDefensePriority						;3
+ProtectLeaderAtAllCosts				;Y
 PrioritizeBuildWonderId							;18
 ColonizeContinentalPriority			;1
 ColonizeMarshySwampPriority						;3
@@ -97,10 +97,10 @@ AlliancePriority							;1
 SubjugationPriority							;2
 TourismPriority								;1
 ExplorationPriority							;4
-WarWillingness								;1
-BreakTreatyWillingness							;2
+WarWillingness								;2
+BreakTreatyWillingness							;1
 InvasionOverkillFactor							;2
-ShipBattleCautionFactor							;3
+ShipBattleCautionFactor							;2
 DefaultMilitaryFleeWhen							;4
 DesignUpgradeEscort				;Y
 DesignUpgradeFrigate				;Y

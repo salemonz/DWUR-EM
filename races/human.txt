@@ -133,6 +133,6 @@ TourismIncomeFactor	;1.0
 FreeTradeIncomeFactor	;1.0
 MigrationFactor	;1.0
 TroopRegenerationFactor	;1.0
-PirateDefaultPlaystyle	;0
+PirateDefaultPlaystyle	;2
 DesignsPictureFamilyIndexPirates	;49
 ImmuneToPlagues	;N

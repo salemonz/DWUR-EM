@@ -1,31 +1,31 @@
 'Distant Worlds - dialogue - Version 1.9.5.10 - Modded by the Distant Worlds Mod Editor by Sabranan
 
-GREETING_INTRODUCTION	;Greetings to you outsider. We are the {0}.
-GREETING_FRIENDLY	;We are listening.
-GREETING_NEUTRAL	;You seek an audience?
-GREETING_ANGRY	;You are not welcome.
-OFFER_FREETRADE	;We feel that trade and industry are highly civilizing activities. Won't you accept a Free Trade Agreement with us?\n\nWhat do you say?
-FREETRADE_ACCEPT	;We happily accept a Free Trade Agreement!\n\nCome and swim with us!
-FREETRADE_REJECT	;No, a Free Trade Agreement does not suit us.
-CANCELTREATY	;It is time to cancel the {0} that we have with you.
-CANCELTREATY_RESPONSE_FRIENDLY	;We felt that this was a good treaty.
-CANCELTREATY_RESPONSE_NEUTRAL	;As you wish.
-CANCELTREATY_RESPONSE_ANGRY	;Yes, this treaty is a bad one.
-TREATY_PROPOSAL	;What new arrangement?
-TREATY_ACCEPTRESPONSE	;May this new treaty profit us both!
-TREATY_REJECTRESPONSE	;It was not to be.
-TRADESANCTIONS_IMPOSE	;\n\nThe time has come for Trade Sanctions against you.
-TRADESANCTIONS_IMPOSE_RESPONSE_ANGRY	;We are glad to be finished with your ways\n\nStay away.
-TRADESANCTIONS_IMPOSE_RESPONSE_NEUTRAL	;We survived before we met you.
-TRADESANCTIONS_IMPOSE_RESPONSE_SURPRISED	;We see no reason for this.\n\nWe will just have to adapt.
-TRADESANCTIONS_LIFT	;We have decided to end our Trade Sanctions against you.
-TRADESANCTIONS_LIFT_RESPONSE	;A welcome action from you.
-WAR_DECLARE	;We declare WAR on you!\n\nWe will end your reign.
-WAR_DECLARE_RESPONSE_EAGER	;We are a peaceful people, but we know how to defend ourselves.
-WAR_DECLARE_RESPONSE_NEUTRAL	;Your aggression made this path inevitable.\n\nWe are ready!
-WAR_DECLARE_RESPONSE_SURPRISED	;How shocking!
-WAR_END	;This war has become very dark, gaining nothing and destroying everything. We propose an end to it.\n\nWhat do you say?
-WAR_END_ACCEPT	;Yes, this war must end.\n\nOur forces are returning.
-WAR_END_REJECT	;End the war? No, this war cannot end.
-GIFT_GIVE	;We send you a gift of {0} credits
-GIFT_THANKS	;Thank you for your kind gift
+GREETING_INTRODUCTION	;We are the {0}.\n\nWe came from the deep waters. The asteroid drove us to the stars.\n\nWe are still learning why the surface-dwellers care so much about... all of this.
+GREETING_FRIENDLY	;The currents bring you back to us.\n\nWe sense your presence, even if we cannot see you clearly. What do you wish to discuss?
+GREETING_NEUTRAL	;Our radar pulses detect your approach.\n\nYou wish to speak? We will try to pay attention.
+GREETING_ANGRY	;Our skin darkens at your presence.\n\nThe waters between us have turned cold. Speak, if you must.
+OFFER_FREETRADE	;The Abbidon have little interest in material trade. But our elders say it is necessary for survival among the stars.\n\nA Free Trade Agreement, then?\n\nWe suppose this is what surface-dwellers do.
+FREETRADE_ACCEPT	;Free Trade. Yes, this seems... practical.\n\nWe accept. Perhaps your goods will inspire new water patterns.
+FREETRADE_REJECT	;No. The Abbidon have no need for your commerce.\n\nWe have the ocean. That is enough.
+CANCELTREATY	;The {0} between us must end.\n\nLike a tide, it came. Like a tide, it recedes.
+CANCELTREATY_RESPONSE_FRIENDLY	;This saddens us, in the way a disrupted current saddens.\n\nBriefly, and then the waters settle.
+CANCELTREATY_RESPONSE_NEUTRAL	;The waters shift. We accept this.
+CANCELTREATY_RESPONSE_ANGRY	;Our skin flushes with relief.\n\nThis arrangement disturbed the patterns. Now they may flow freely again.
+TREATY_PROPOSAL	;A treaty?\n\nThe Abbidon will listen. We find that surface-dweller arrangements are... complicated. But we will try.
+TREATY_ACCEPTRESPONSE	;We accept this arrangement.\n\nOur skin brightens. That is a good sign. Even we are not always sure what our colors mean.
+TREATY_REJECTRESPONSE	;We cannot accept.\n\nThe patterns do not align. Perhaps the currents will shift in time.
+TRADESANCTIONS_IMPOSE	;The Abbidon withdraw from trade with you.\n\nWe did not enjoy it much to begin with.
+TRADESANCTIONS_IMPOSE_RESPONSE_ANGRY	;You sever trade with us? We who barely cared about trade in the first place?\n\nThis is meaningless to the deep waters. But we note your hostility.
+TRADESANCTIONS_IMPOSE_RESPONSE_NEUTRAL	;We survived beneath the waves long before we knew you existed.\n\nYour sanctions are a ripple on a vast ocean.
+TRADESANCTIONS_IMPOSE_RESPONSE_SURPRISED	;Sanctions? Against the Abbidon?\n\nWe did not think we mattered enough to anyone to warrant such attention.\n\nHow curious.
+TRADESANCTIONS_LIFT	;Trade Sanctions are ended.\n\nThe waters calm between us once more.
+TRADESANCTIONS_LIFT_RESPONSE	;We accept this change.\n\nThe ocean does not hold grudges. Neither do the Abbidon.
+WAR_DECLARE	;The Abbidon declare WAR.\n\nWe did not want this. We never want this.\n\nBut the asteroid taught us that survival sometimes demands action.
+WAR_DECLARE_RESPONSE_EAGER	;You bring war to the deep?\n\nThe Abbidon have survived catastrophe before. Our area denial weapons will remind you that the ocean strikes from every direction.
+WAR_DECLARE_RESPONSE_NEUTRAL	;War.\n\nThe Abbidon do not understand your need for violence.\n\nBut we will defend what little we have.
+WAR_DECLARE_RESPONSE_SURPRISED	;War? With the Abbidon?\n\nWe are artists. We make water patterns.\n\nWhy would you wage war on artists?
+WAR_END	;This war disturbs the deep waters. It disrupts the patterns.\n\nThe Abbidon wish it to end.\n\nDo you?
+WAR_END_ACCEPT	;The war ends. The waters still.\n\nWe return to the deep. There is art to create.
+WAR_END_REJECT	;No.\n\nThe asteroid taught us one thing: sometimes the only way forward is through the destruction.\n\nWe continue.
+GIFT_GIVE	;The Abbidon send {0} credits.\n\nWe do not fully understand the value surface-dwellers place on currency. But we are told this gesture carries meaning.
+GIFT_THANKS	;A gift. Our skin brightens.\n\nThank you. This is... kind.

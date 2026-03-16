@@ -1,46 +1,46 @@
 'Distant Worlds - dialogue - Version 1.9.5.10 - Modded by the Distant Worlds Mod Editor by Sabranan
 
-PIRATE_PROTECTIONPROPOSE	;Protection for your ships? yes, we can provide that for you.\n\nFor the fee shown below we can 'protect' all of your ships as they travel through our territory. The protection period is six months.\n\nSound like a bargain to you?
-PIRATE_PROTECTIONPROPOSEINITIATE	;There are many hidden dangers lying in wait for your ships - pirates, for example!\n\nBut for a modest fee we can protect all of your ships travelling through our territory. The protection lasts for six months.\n\nA tempting offer, don't you agree?
-PIRATE_PROTECTIONACCEPTRESPONSE	;Excellent!\n\nWe will pass the word to our ships to stand down when they see any of your vessels.\n\nGood bye, until our next fee is due...
-PIRATE_PROTECTIONREJECTRESPONSE	;We wonder whether you're looking for trouble.\n\nMaybe you are...
-PIRATE_ATTACKOFFER_SINGLEEMPIRE	;You seem to be having difficulty with the {0}. That doesn't have to be a problem for you though - we can attack them for you!\n\nThis arrangement would be a secret just between ourselves. You wouldn't get any blame for the attacks.\n\nAll we need is a payment of {1} credits
-PIRATE_ATTACKCOMMENCE	;You just hired us!\n\nThe {0} won't know what hit them!
-GREETING_INTRODUCTION	;We are the {0}.\n\nWe look after nature, and it looks after us.\n\nWe hope for peace, but we do not fear battle.
-GREETING_FRIENDLY	;Ahh, good to see you again!\n\nWhat's on your mind?
-GREETING_NEUTRAL	;What is it?
-GREETING_ANGRY	;Grrr, you dare to come before us! This had better be good.\n\nSpeak!
-OFFER_FREETRADE	;You know something: what we need is a Free Trade Agreement. It would be a really great thing.\n\nWhat do you think?
-FREETRADE_ACCEPT	;A Free Trade Agreement, now that's a great idea! We accept.\n\nWe can already think of the ways we're going to spend all that extra money!
-FREETRADE_REJECT	;Well, no actually. We don't think a Free Trade Agreement would be a good idea.\n\nNot with you anyway
-CANCELTREATY	;That {0} we had with you? It's done: over, finished, kaput.\n\nIt just didn't work out
-CANCELTREATY_RESPONSE_FRIENDLY	;Well, darn!\n\nWe thought we had a good thing there. You never can tell, I guess
-CANCELTREATY_RESPONSE_NEUTRAL	;If you say so
-CANCELTREATY_RESPONSE_ANGRY	;Oh yeah?! Well we never liked you anyway.\n\nSo there
-TREATY_PROPOSAL	;A treaty?! We love treaties!\n\nTell us more
-TREATY_ACCEPTRESPONSE	;I'm so excited! New friends means a big celebration.\n\nCome visit us in our tree villages and we'll prepare a feast you won't forget!
-TREATY_REJECTRESPONSE	;Hmmm, that's not what I was wanting to hear.\n\nYou sure know how to kill the party
-TRADESANCTIONS_IMPOSE	;You know what you have now: Trade Sanctions!\n\nYou've really earned this. We've had enough of your backstabbing
-TRADESANCTIONS_IMPOSE_RESPONSE_ANGRY	;You can't imagine how angry we are right now!\n\nIndescribably angry! Furiously outraged! Even quite upset
-TRADESANCTIONS_IMPOSE_RESPONSE_NEUTRAL	;That's just what we expected from you.\n\nNo more herbal soup for you!
-TRADESANCTIONS_IMPOSE_RESPONSE_SURPRISED	;Well, you're a real piece of work! Imagine: slapping trade sanctions on us, your friends!\n\nDon't speak with us again
-TRADESANCTIONS_LIFT	;Trade Sanctions over.\n\nThey're pretty boring actually. We much prefer free and open trade
-TRADESANCTIONS_LIFT_RESPONSE	;Now you're making sense for a change.\n\nWe welcome a return to normal trade
-WAR_DECLARE	;You have gone too far this time: WAR on your scrawny empire!\n\nWe'll make you beg for mercy, then show you none!
-WAR_DECLARE_RESPONSE_EAGER	;BRING, IT, ON! We'll bury you!
-WAR_DECLARE_RESPONSE_NEUTRAL	;Temper, temper! This is the last mistake you'll ever make
-WAR_DECLARE_RESPONSE_SURPRISED	;Surely not!\n\nWe thought we were friends? Looks like we were wrong
-WAR_END	;We liked this war to begin with, but now it's no fun any more.\n\nShall we call it a day? What do you say?
-WAR_END_ACCEPT	;Yes, enough fighting for today.\n\nWe can carry on again later if we feel like it
-WAR_END_REJECT	;No, this war is way too much fun to stop!\n\nSurely you're not bored already?
-GIFT_GIVE	;We got something for you: {0} credits! Do you like it?
-GIFT_THANKS	;Wow! A gift for us! Thanks!
-WARNING	;A warning? We wonder what could this be about?
-WARNING_INTELLIGENCEMISSIONS	;Hey, we know about all those covert missions you're sending against us.\n\nAnd we're pretty mad about them!\n\nSo knock it off right now, ok?
-WARNING_INTELLIGENCEMISSIONS_RESPONSE_FRIENDLY	;We understand your concern.\n\nWe'll make sure this doesn't happen again
-WARNING_INTELLIGENCEMISSIONS_RESPONSE_NEUTRAL	;Before responding we must check the details of this incident.\n\nWe'll get back to you, ok?
-WARNING_INTELLIGENCEMISSIONS_RESPONSE_ANGRY	;Now that you mention it: yes, we did order those missions against you.\n\nWhy? Because we really hate you, actually.\n\nAre we all clear on that?
-WARNING_ATTACKS	;Stop your attacks on our ships right now!\n\nOur patience is really wearing thin - we're warning you!
-WARNING_ATTACKS_RESPONSE_FRIENDLY	;How awful. Please accept our apologies.\n\nGive us the details of the incident and we'll deal with the ship captain that did this
-WARNING_ATTACKS_RESPONSE_NEUTRAL	;Hmmm, not good. To get caught, that is.\n\nPlease accept our apologies
-WARNING_ATTACKS_RESPONSE_ANGRY	;We do remember ordering some attacks recently.\n\nBut we'd only ever do that to our enemies. So I guess that means you're our enemy?
+PIRATE_PROTECTIONPROPOSE	;Your ships look like they could use a good mechanic. And some protection.\n\nFor the fee below, we guarantee both. Six months, no questions asked.
+PIRATE_PROTECTIONPROPOSEINITIATE	;The void breaks ships down faster than anything. Lucky for you, the Ikkuro know how to keep things running.\n\nFor the fee shown below, your ships will be protected in our territory.\n\nInterested?
+PIRATE_PROTECTIONACCEPTRESPONSE	;Good choice!\n\nWe will keep your ships safe and in good repair.\n\nCome back when the term expires. We will be here.
+PIRATE_PROTECTIONREJECTRESPONSE	;Your loss. When your engines fail in deep space, do not come looking for us.\n\nActually, we might come looking for you. And the fee will be much higher.
+PIRATE_ATTACKOFFER_SINGLEEMPIRE	;The {0} bothering you? We have been looking at their ship designs with great interest.\n\nFor {1} credits, our boarding teams will pay them a visit. Very discreet.\n\nWant to authorize the operation?
+PIRATE_ATTACKCOMMENCE	;Payment confirmed! Our boarding parties are eager for some new ships to tinker with.\n\nThe {0} will not know what grabbed them!
+GREETING_INTRODUCTION	;We are the {0}.\n\nWe build things, we fix things, and when necessary, we take things apart.\n\nWe hope for friendship, but we are ready for anything.
+GREETING_FRIENDLY	;Welcome back, friend!\n\nCome up to the canopy. We have fresh herbs and good company.\n\nWhat is on your mind?
+GREETING_NEUTRAL	;Hmm? You want to talk?\n\nAlright, we are listening.
+GREETING_ANGRY	;You again. Our ears are flat and our fur is bristling.\n\nMake this quick before our temper gets the better of us.
+OFFER_FREETRADE	;The Ikkuro propose a Free Trade Agreement.\n\nWe have repair parts and herbal medicines. You have things we want to take apart and study.\n\nSound fair?
+FREETRADE_ACCEPT	;Free Trade? Excellent! We accept!\n\nWe cannot wait to get our hands on your technology. In a friendly way, of course.
+FREETRADE_REJECT	;No deal.\n\nYour goods are not worth our time. Come back with something more interesting.
+CANCELTREATY	;The {0} between us is over.\n\nWe tried to make it work, but some things cannot be repaired.
+CANCELTREATY_RESPONSE_FRIENDLY	;That is a shame. We thought this was a solid partnership.\n\nApparently we misread the schematics.
+CANCELTREATY_RESPONSE_NEUTRAL	;If you say so. The Ikkuro will find other partners.
+CANCELTREATY_RESPONSE_ANGRY	;Fine! We never liked the arrangement anyway.\n\nOur boarding parties have been idle too long.
+TREATY_PROPOSAL	;A treaty?\n\nThe Ikkuro are interested. Let us hear the specifications.
+TREATY_ACCEPTRESPONSE	;Wonderful! New friends!\n\nCome visit our tree villages sometime. We will show you our workshops. You will be amazed.
+TREATY_REJECTRESPONSE	;Disappointing.\n\nWe put a lot of effort into this proposal. Guess we will have to recalibrate.
+TRADESANCTIONS_IMPOSE	;We are cutting off trade with you.\n\nNo more RepairBots. No more herbal medicines. No more Ikkuro engineering.\n\nGood luck maintaining your fleet without us.
+TRADESANCTIONS_IMPOSE_RESPONSE_ANGRY	;Sanctions?! Now you have really made us angry!\n\nThe Ikkuro have a temper, and you just lit the fuse!
+TRADESANCTIONS_IMPOSE_RESPONSE_NEUTRAL	;We will manage without your trade.\n\nThe Ikkuro are resourceful. We can fix anything, including this situation.
+TRADESANCTIONS_IMPOSE_RESPONSE_SURPRISED	;Sanctions? Against the Ikkuro?\n\nWe thought we were friends! What did our mechanics ever do to you?
+TRADESANCTIONS_LIFT	;Trade Sanctions are lifted.\n\nOur workshops are open again. Try not to give us a reason to close them.
+TRADESANCTIONS_LIFT_RESPONSE	;About time.\n\nWe welcome the return of trade. Our engineers have been getting restless.
+WAR_DECLARE	;You have pushed the Ikkuro too far! WAR!\n\nOur phasers are charged and our boarding pods are loaded!\n\nWe are coming for your ships, and when we take them, we will make them better than you ever could!
+WAR_DECLARE_RESPONSE_EAGER	;WAR! Good!\n\nOur mechanics have been studying your ship designs for months. Now we will study them up close!\n\nFrom the inside!
+WAR_DECLARE_RESPONSE_NEUTRAL	;You want war with the Ikkuro?\n\nWe build ships, we repair ships, and we capture ships. You should have thought about that.
+WAR_DECLARE_RESPONSE_SURPRISED	;War? This is not what we wanted.\n\nBut the Ikkuro do not back down. Our boarding teams are suiting up as we speak.
+WAR_END	;The Ikkuro are tired of fighting. We would rather be building.\n\nShall we end this war? What do you say?
+WAR_END_ACCEPT	;Agreed. War is over.\n\nTime to get back to the workshop. There are things to fix.
+WAR_END_REJECT	;No! We have captured too many of your ships to stop now!\n\nOur mechanics are having the time of their lives with your technology!
+GIFT_GIVE	;The Ikkuro send you {0} credits.\n\nFriendship is worth more than credits, but credits help.
+GIFT_THANKS	;A gift! For us? Thank you!\n\nThe Ikkuro appreciate generosity. Come visit our canopy sometime.
+WARNING	;A warning?\n\nOur ears are very good. We are listening.
+WARNING_INTELLIGENCEMISSIONS	;We have detected your covert operations against us.\n\nOur ears can pinpoint a whisper in the dark, remember? You were not as stealthy as you thought.\n\nStop now.
+WARNING_INTELLIGENCEMISSIONS_RESPONSE_FRIENDLY	;Missions against you? That was not authorized.\n\nWe will find out who did this and deal with them. You have our word.
+WARNING_INTELLIGENCEMISSIONS_RESPONSE_NEUTRAL	;We will look into this.\n\nSometimes our scouts get overly curious. Occupational hazard of being mechanics.
+WARNING_INTELLIGENCEMISSIONS_RESPONSE_ANGRY	;Yes, we sent agents. Because you gave us reason not to trust you.\n\nFix the problem, and we will stop looking for it.
+WARNING_ATTACKS	;Your attacks on Ikkuro ships and stations must stop!\n\nDo not mistake our love of machines for a lack of fighting spirit. We are primates with very strong arms.
+WARNING_ATTACKS_RESPONSE_FRIENDLY	;This is terrible. Our commanders acted without orders.\n\nWe will discipline them personally. Ikkuro style.
+WARNING_ATTACKS_RESPONSE_NEUTRAL	;We will check the incident logs.\n\nIf our ships were involved, there will be consequences.
+WARNING_ATTACKS_RESPONSE_ANGRY	;Our ships engaged yours because your forces were threatening our territory.\n\nThe Ikkuro protect what is ours. That includes every bolt and rivet.

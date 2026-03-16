@@ -12,10 +12,10 @@ Loyalty	;95
 DesignsPictureFamilyIndex	;19
 DesignNamesIndex	;3
 ShipMaintenanceSavings	;0
-TroopMaintenanceSavings	;50
+TroopMaintenanceSavings	;20
 ResourceExtractionBonus	;0
 WarWearinessAttenuation	;0
-SatisfactionModifier	;60
+SatisfactionModifier	;30
 ResearchBonus	;0
 EspionageBonus	;0
 TradeBonus	;0
@@ -54,7 +54,7 @@ DefaultPrimaryColor	;6
 DefaultSecondaryColor	;8
 DefaultFlagDesign	;46
 HomeSystemName	;Drushocka
-TroopStrength	;170
+TroopStrength	;130
 TroopName	;Drushocka Roller
 TroopNameArmored	;Drushocka Crusher
 TroopNamePlanetaryDefense	;Drushocka Granite

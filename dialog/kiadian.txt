@@ -1,40 +1,40 @@
 'Distant Worlds - dialogue - Version 1.9.5.10 - Modded by the Distant Worlds Mod Editor by Sabranan
 
-GREETING_INTRODUCTION	;Welcome visitor!\n\nWe are the proud and sensible Kiadians of the {0}.\n\nIs there something we can do for you?
-GREETING_FRIENDLY	;To what do we owe the pleasure of your company, friend?
-GREETING_NEUTRAL	;What should we discuss?
-GREETING_ANGRY	;Explain your presence before us
-OFFER_FREETRADE	;We would be honored if you would join us in a Free Trade Agreement.\n\nWhat do you say?
-FREETRADE_ACCEPT	;Your offer of a Free Trade Agreement makes good sense. We accept
-FREETRADE_REJECT	;We are sorry, but we cannot commit to a Free Trade Agreement at this time
-CANCELTREATY	;After much careful deliberation, we have decided that we can no longer hold to our {0} with you.\n\nThis treaty is cancelled
-CANCELTREATY_RESPONSE_FRIENDLY	;We are surprised and somewhat concerned by your irrational cancellation of this treaty.\n\nBut that is your choice
-CANCELTREATY_RESPONSE_NEUTRAL	;We find your lack of commitment disturbing...
-CANCELTREATY_RESPONSE_ANGRY	;The cancellation of this treaty is more your loss than ours...
-TREATY_PROPOSAL	;What exactly are you proposing?
-TREATY_ACCEPTRESPONSE	;We are honored by your acceptance.\n\nMay this agreement be strong and profitable!
-TREATY_REJECTRESPONSE	;How disappointing...
-TRADESANCTIONS_IMPOSE	;You leave us no choice but to impose Trade Sanctions against you.\n\nWe hope that you will learn to be reasonable, but until that time all trade between our two empires is terminated
-TRADESANCTIONS_IMPOSE_RESPONSE_ANGRY	;Our suspicions have been confirmed: you act without honor
-TRADESANCTIONS_IMPOSE_RESPONSE_NEUTRAL	;You should be careful not to take on more than you can handle...
-TRADESANCTIONS_IMPOSE_RESPONSE_SURPRISED	;We are deeply dismayed by your betrayal!\n\nAre you sure about this?
-TRADESANCTIONS_LIFT	;Our Trade Sanctions against you have been lifted.\n\nNormal trade will now resume between us
-TRADESANCTIONS_LIFT_RESPONSE	;We welcome a return to free and open trade with you
-WAR_DECLARE	;We can no longer tolerate your cruel tyranny. We formally declare WAR on your evil empire.\n\nWe will end your criminal oppression!
-WAR_DECLARE_RESPONSE_EAGER	;You have lit the fire, but it is YOU that will be consumed by it!
-WAR_DECLARE_RESPONSE_NEUTRAL	;Your overconfidence is without basis - this will not end well for you
-WAR_DECLARE_RESPONSE_SURPRISED	;We are shocked by your dishonorable betrayal!\n\nWe will never forget this treachery!
-WAR_END	;This war continues without end.\n\nA ceasefire is in order, don't you agree?
-WAR_END_ACCEPT	;We agree to a ceasefire. Our forces are standing down at once
-WAR_END_REJECT	;No, this war will continue
-GIFT_GIVE	;We send you a gift of {0} credits.\n\nMay it help to foster good relations between our two great empires
-GIFT_THANKS	;Thank you for your gift. It was a kind gesture
-WARNING	;A warning for us? What is it?
-WARNING_INTELLIGENCEMISSIONS	;We are aware of your secret missions against us. Stop them at once or face the consequences!
-WARNING_INTELLIGENCEMISSIONS_RESPONSE_FRIENDLY	;Covert missions against our friends? That would be most unlikely.\n\nNonetheless we will investigate your allegations
-WARNING_INTELLIGENCEMISSIONS_RESPONSE_NEUTRAL	;Thank you for your warning
-WARNING_INTELLIGENCEMISSIONS_RESPONSE_ANGRY	;Covert missions against you?\n\nWhy would we want to do such a thing?\n\nPerhaps you should think about the answer to that question...
-WARNING_ATTACKS	;Your outrageous military attacks against us must stop at once!\n\nBe warned that we will defend our territory with deadly force!
-WARNING_ATTACKS_RESPONSE_FRIENDLY	;This news is deeply troubling! Please accept our sincere apologies.\n\nBe assured that we will deal with the renegade military commanders involved in these despicable acts
-WARNING_ATTACKS_RESPONSE_NEUTRAL	;We will investigate this matter and act appropriately
-WARNING_ATTACKS_RESPONSE_ANGRY	;With the forces of our two empires in such close proximity, accidents will sometimes happen.\n\nSo we suggest that you remove your forces.
+GREETING_INTRODUCTION	;Welcome. We are the Kiadian of the {0}.\n\nWe value wisdom, honor, and the careful study of consequences.\n\nHow may we assist you?
+GREETING_FRIENDLY	;A pleasure to see you again, friend.\n\nWhat would you like to discuss? We always have time for thoughtful conversation.
+GREETING_NEUTRAL	;You have our attention.\n\nPresent your thoughts clearly. We appreciate precision.
+GREETING_ANGRY	;Your recent conduct has been... mathematically suboptimal for our relationship.\n\nSpeak carefully.
+OFFER_FREETRADE	;After considerable deliberation, the Republic proposes a Free Trade Agreement.\n\nOur analysts project mutual economic benefit with a high confidence interval.\n\nDo you accept?
+FREETRADE_ACCEPT	;The Republic accepts your Free Trade offer.\n\nA sound arrangement, by our calculations.
+FREETRADE_REJECT	;We have reviewed the proposal thoroughly and cannot accept at this time.\n\nThe variables do not favor it. Perhaps conditions will change.
+CANCELTREATY	;The Republic has reached this decision after exhaustive deliberation. Our {0} with you must end.\n\nWe do not take this lightly. A Kiadian never breaks their word without grave cause.
+CANCELTREATY_RESPONSE_FRIENDLY	;This is deeply troubling.\n\nWe had calculated this partnership as highly stable. Our models require revision.
+CANCELTREATY_RESPONSE_NEUTRAL	;We note your decision with concern.\n\nThe consequences of this action have been projected. We hope you have projected them as well.
+CANCELTREATY_RESPONSE_ANGRY	;Your lack of commitment confirms a pattern our analysts have been tracking.\n\nWe will plan accordingly.
+TREATY_PROPOSAL	;A treaty proposal? The Republic is intrigued.\n\nPresent the full terms. We will evaluate every variable before responding.
+TREATY_ACCEPTRESPONSE	;After careful review, the Republic is honored to accept.\n\nKnow that a Kiadian commitment is absolute. We will uphold this agreement unto death if necessary.
+TREATY_REJECTRESPONSE	;We must decline.\n\nOur strategic models indicate this arrangement carries unacceptable risk. We hope you understand.
+TRADESANCTIONS_IMPOSE	;The Republic has determined that Trade Sanctions are necessary.\n\nThis decision was not reached impulsively. Every alternative was exhaustively modeled.\n\nAll trade is terminated.
+TRADESANCTIONS_IMPOSE_RESPONSE_ANGRY	;Sanctions? Against the Kiadian?\n\nYou act without honor. Our ShadowGhosts see further than your ambitions reach.
+TRADESANCTIONS_IMPOSE_RESPONSE_NEUTRAL	;We have contingency models for this scenario.\n\nYour sanctions will cause discomfort, not defeat.
+TRADESANCTIONS_IMPOSE_RESPONSE_SURPRISED	;This outcome was not in our projections.\n\nWe thought honor bound us together. It seems we were mistaken about your values.
+TRADESANCTIONS_LIFT	;After thorough review, the Republic lifts its Trade Sanctions against you.\n\nWe believe the conditions that prompted them have been addressed.
+TRADESANCTIONS_LIFT_RESPONSE	;We welcome the return of open trade.\n\nWe hope this marks the beginning of a more rational relationship.
+WAR_DECLARE	;The Republic has exhausted every alternative. WAR is the only remaining variable.\n\nWe take no pleasure in this declaration, but the Kiadian fight with the same conviction we bring to everything.\n\nWe will not stop until the equation is balanced.
+WAR_DECLARE_RESPONSE_EAGER	;If you calculated that the Kiadian would fold, you have made a critical error.\n\nOur countermeasures are already deployed. Your targeting solutions will fail.
+WAR_DECLARE_RESPONSE_NEUTRAL	;We accept your declaration.\n\nThe Kiadian have faced impossible odds before. We have a tradition of defying them.
+WAR_DECLARE_RESPONSE_SURPRISED	;War? This was not among our projected outcomes.\n\nBut the Kiadian do not flee from any challenge. We will fight with every resource available to us.
+WAR_END	;Our strategic models indicate that continued hostilities serve neither empire.\n\nThe Republic proposes an immediate ceasefire. Do you concur?
+WAR_END_ACCEPT	;Agreed. The Republic stands down.\n\nThis was a worthy challenge. We respect a formidable opponent.
+WAR_END_REJECT	;No. The Republic has committed to this course.\n\nThe Kiadian do not abandon a fight, even one they did not start. We will see this through.
+GIFT_GIVE	;The Republic sends you {0} credits.\n\nStrong relationships require investment. This is ours.
+GIFT_THANKS	;Your gift is appreciated. Generosity speaks well of your character.\n\nThe Republic values such gestures.
+WARNING	;A warning? The Kiadian take all intelligence seriously.\n\nPlease proceed.
+WARNING_INTELLIGENCEMISSIONS	;Our counter-intelligence has identified your covert operations within our territory.\n\nThe Republic considers espionage dishonorable. Cease immediately, or we will deploy countermeasures that will make your efforts futile.
+WARNING_INTELLIGENCEMISSIONS_RESPONSE_FRIENDLY	;Covert operations against a friend? The Kiadian would never authorize such dishonor.\n\nWe will investigate this thoroughly and discipline anyone acting without authority.
+WARNING_INTELLIGENCEMISSIONS_RESPONSE_NEUTRAL	;We will review our intelligence activities and make appropriate adjustments.\n\nThe Republic values honor in all its dealings.
+WARNING_INTELLIGENCEMISSIONS_RESPONSE_ANGRY	;Our intelligence operations are a calculated response to your threatening posture.\n\nChange the variables, and our response will change with them.
+WARNING_ATTACKS	;Your military attacks against Kiadian forces are unacceptable.\n\nThe Republic demands you cease immediately. We have modeled every escalation scenario.\n\nNone of them end well for you.
+WARNING_ATTACKS_RESPONSE_FRIENDLY	;This is deeply concerning. The Republic did not authorize any hostile action against you.\n\nWe will identify and punish the commanders responsible. You have our word, and the word of a Kiadian is absolute.
+WARNING_ATTACKS_RESPONSE_NEUTRAL	;We will investigate this incident thoroughly.\n\nIf our forces acted improperly, corrective measures will follow.
+WARNING_ATTACKS_RESPONSE_ANGRY	;Our military actions were a calculated response to your provocations.\n\nAdjust your behavior, and the Republic will adjust its force posture accordingly.

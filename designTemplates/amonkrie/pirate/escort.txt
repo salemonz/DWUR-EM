@@ -51,11 +51,11 @@ TraceScanner	;0
 TroopCompartment	;0
 VectoringEngine	;2
 WeaponArea	;0
-WeaponBeam	;4
+WeaponBeam	;0
 WeaponBombard	;0
 WeaponMissile	;0
 WeaponPhaser	;0
-WeaponRailGun	;0
+WeaponRailGun	;4
 WeaponsManufacturingPlant	;0
 WeaponsResearchLab	;0
 WeaponSuperBeam	;0

@@ -54,7 +54,7 @@ WeaponArea	;0
 WeaponBeam	;0
 WeaponBombard	;0
 WeaponMissile	;0
-WeaponPhaser	;6
+WeaponPhaser	;5
 WeaponRailGun	;0
 WeaponsManufacturingPlant	;0
 WeaponsResearchLab	;0

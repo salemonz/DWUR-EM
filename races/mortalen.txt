@@ -14,7 +14,7 @@ DesignNamesIndex	;5
 ShipMaintenanceSavings	;10
 TroopMaintenanceSavings	;20
 ResourceExtractionBonus	;0
-WarWearinessAttenuation	;20
+WarWearinessAttenuation	;30
 SatisfactionModifier	;0
 ResearchBonus	;0
 EspionageBonus	;0
@@ -54,7 +54,7 @@ DefaultPrimaryColor	;11
 DefaultSecondaryColor	;14
 DefaultFlagDesign	;12
 HomeSystemName	;Mortalu
-TroopStrength	;135
+TroopStrength	;150
 TroopName	;Mortalen Conqueror
 TroopNameArmored	;Mortalen Armored Conqueror
 TroopNamePlanetaryDefense	;Mortalen Repulser Unit
@@ -133,6 +133,6 @@ TourismIncomeFactor	;0.9
 FreeTradeIncomeFactor	;1.0
 MigrationFactor	;0.8
 TroopRegenerationFactor	;1.05
-PirateDefaultPlaystyle	;2
+PirateDefaultPlaystyle	;4
 DesignsPictureFamilyIndexPirates	;48
 ImmuneToPlagues	;N

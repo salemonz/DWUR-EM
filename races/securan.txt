@@ -59,16 +59,16 @@ TroopName	;Securan Assassin
 TroopNameArmored	;Securan Mechanized Force
 TroopNamePlanetaryDefense	;Securan Repulser Force
 TroopNameSpecialForces	;Securan Sniper Team
-Resource1Type	;26
+Resource1Type	;19
 Resource1Effect	;1
-Resource1Amount	;5
+Resource1Amount	;10
 Resource1AppliesOnlyToSource	;N
-Resource2Type	;34
-Resource2Effect	;8
+Resource2Type	;30
+Resource2Effect	;10
 Resource2Amount	;5
 Resource2AppliesOnlyToSource	;N
-Resource3Type	;2
-Resource3Effect	;2
+Resource3Type	;8
+Resource3Effect	;8
 Resource3Amount	;5
 Resource3AppliesOnlyToSource	;N
 Condition1Type	;43
@@ -133,6 +133,6 @@ TourismIncomeFactor	;1.3
 FreeTradeIncomeFactor	;1.0
 MigrationFactor	;1.1
 TroopRegenerationFactor	;0.9
-PirateDefaultPlaystyle	;3
+PirateDefaultPlaystyle	;0
 DesignsPictureFamilyIndexPirates	;49
 ImmuneToPlagues	;N

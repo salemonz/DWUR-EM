@@ -1,40 +1,40 @@
 'Distant Worlds - dialogue - Version 1.9.5.10 - Modded by the Distant Worlds Mod Editor by Sabranan
 
-GREETING_INTRODUCTION	;Greetings! We are the {0}.\n\nWe seek good relations with all.\n\nWould you care to try some of our famous Nepthys wine?
-GREETING_FRIENDLY	;A pleasure to see your face again, friend. What can we do for you?
-GREETING_NEUTRAL	;How can we help you?
-GREETING_ANGRY	;You try our patience. Make your point quickly
-OFFER_FREETRADE	;We recommend a Free Trade Agreement between our empires.\n\nJust think of all that Nepthys wine and Ucantium pearl you can trade with us!\n\nAre you tempted?
-FREETRADE_ACCEPT	;A grand idea! We accept your offer of a Free Trade Agreement.\n\nLong live our alliance!
-FREETRADE_REJECT	;No, we reject a Free Trade Agreement with you at this time.\n\nPossibly later though, we'll have to see about that
-CANCELTREATY	;We can no longer support our {0} with you. So we are ending this treaty now.\n\nWe wish you well
-CANCELTREATY_RESPONSE_FRIENDLY	;This is unexpected to us!\n\nWe don't really understand your actions here, but we respect your decision
-CANCELTREATY_RESPONSE_NEUTRAL	;When treaties no longer work, we should face these issues openly.\n\nThank you for your honesty here
-CANCELTREATY_RESPONSE_ANGRY	;We concur with your evaluation.\n\nThis treaty no longer meets our needs either. It is best to end it
-TREATY_PROPOSAL	;What kind of change do you have in mind?
-TREATY_ACCEPTRESPONSE	;An excellent outcome! We rejoice with our new allies.\n\nWould you like some Nepthys wine?
-TREATY_REJECTRESPONSE	;Are you sure we cannot change your mind?\n\nMaybe you will reconsider it some time in the future
-TRADESANCTIONS_IMPOSE	;We do not undertake this course lightly, but we must now impose Trade Sanctions on you.\n\nWe hope that we do not need to take things further than this
-TRADESANCTIONS_IMPOSE_RESPONSE_ANGRY	;We are angered by your hasty imposition of Trade Sanctions!\n\nWe will respond quickly to protect our interests
-TRADESANCTIONS_IMPOSE_RESPONSE_NEUTRAL	;You like playing tough, huh? We can do that too, you know.\n\nNo more Nepthys wine for you!
-TRADESANCTIONS_IMPOSE_RESPONSE_SURPRISED	;Your actions make no sense to us. We see no need for Trade Sanctions
-TRADESANCTIONS_LIFT	;Our Trade Sanctions against you have served their purpose.\n\nWe are now lifting them
-TRADESANCTIONS_LIFT_RESPONSE	;Very well. We will also resume trade with you.\n\nHow about some Nepthys wine to celebrate?
-WAR_DECLARE	;You leave us with no choice: we declare WAR on you!\n\nOur justice will be quick, decisive and permanent
-WAR_DECLARE_RESPONSE_EAGER	;War on us? Huh! We will give you a lesson in war.\n\nWe do not fear you
-WAR_DECLARE_RESPONSE_NEUTRAL	;You have chosen this course, and we will respond.\n\nPrepare your defenses!
-WAR_DECLARE_RESPONSE_SURPRISED	;Are you in the habit of attacking your friends? Your behaviour is very strange.\n\nBe warned that we will defend ourselves!
-WAR_END	;This war has continued long enough. We suggest a ceasefire is in order.\n\nDo you agree?
-WAR_END_ACCEPT	;Yes, a ceasefire would be agreeable.\n\nWe are pulling back our forces now
-WAR_END_REJECT	;No, we intend to see this war to its finish.\n\nYour aggression has no place in this galaxy
-GIFT_GIVE	;We offer you this gift of {0} credits.\n\nPerhaps you could spend some of it on our fine Ucantium pearls?
-GIFT_THANKS	;We thank you for your kind gift. Most appreciated
-WARNING	;This sounds serious. Please explain the matter to us
-WARNING_INTELLIGENCEMISSIONS	;We have intercepted your covert missions against us. This must stop now.\n\nYou have been warned!
-WARNING_INTELLIGENCEMISSIONS_RESPONSE_FRIENDLY	;Covert missions? Consider them finished.\n\nWe will not bother you again
-WARNING_INTELLIGENCEMISSIONS_RESPONSE_NEUTRAL	;Yes, we understand. We will ensure that we don't get caught again.\n\nIs there anything else?
-WARNING_INTELLIGENCEMISSIONS_RESPONSE_ANGRY	;We have no idea what you're talking about.\n\nAnd we do not intend to discuss this matter any further
-WARNING_ATTACKS	;We are very upset by your ship attacks against us.\n\nStop them at once, or we will take punitive action against you!
-WARNING_ATTACKS_RESPONSE_FRIENDLY	;We must apologize, friend. Our border sentries must have become overzealous.\n\nWe will correct this situation
-WARNING_ATTACKS_RESPONSE_NEUTRAL	;We agree that this is most unhelpful.\n\nWe will deal with the starship captains involved in this incident
-WARNING_ATTACKS_RESPONSE_ANGRY	;Attacks on your ships?\n\nLet me be honest with you: we find your empire to be quite worrisome. I wouldn't be surprised if one of our starship captains got a little trigger-happy.\n\nMaybe you should sort out your own starship commanders first, before complaining to us
+GREETING_INTRODUCTION	;Welcome, friend! We are the {0}.\n\nThe Ackdarians seek good relations with all peoples.\n\nMay we offer you a glass of our famous Nepthys wine while we talk?
+GREETING_FRIENDLY	;How wonderful to see you again!\n\nThe wine is chilled and the underwater gardens are in bloom. What brings you today?
+GREETING_NEUTRAL	;Greetings. The Ackdarians are happy to receive visitors.\n\nWhat would you like to discuss?
+GREETING_ANGRY	;We must confess, your recent actions have troubled us deeply.\n\nBut the Ackdarians always listen. Speak your mind.
+OFFER_FREETRADE	;The Ackdarians would love to establish a Free Trade Agreement!\n\nOur Nepthys wine and Ucantium pearls are in high demand across the galaxy.\n\nShall we open our markets to one another?
+FREETRADE_ACCEPT	;A Free Trade Agreement! Wonderful news!\n\nWe will have a case of our finest vintage shipped to you immediately to celebrate!
+FREETRADE_REJECT	;A shame, but we understand.\n\nThe tides will bring another opportunity. We are patient.
+CANCELTREATY	;It saddens the Ackdarians greatly, but we must end our {0} with you.\n\nThe currents of diplomacy sometimes carry us to difficult shores.
+CANCELTREATY_RESPONSE_FRIENDLY	;This is a loss for both our peoples.\n\nWe had hoped this bond would last as long as our underwater cities. Apparently not.
+CANCELTREATY_RESPONSE_NEUTRAL	;The tides turn as they will.\n\nWe accept your decision.
+CANCELTREATY_RESPONSE_ANGRY	;Perhaps this is for the best.\n\nOur shipwrights were growing uneasy with this arrangement anyway.
+TREATY_PROPOSAL	;A treaty? The Ackdarians are always eager to build new partnerships!\n\nTell us the terms. We will consider them carefully over a bottle of Nepthys wine.
+TREATY_ACCEPTRESPONSE	;How excellent! A new alliance formed!\n\nWe must celebrate! Please accept an invitation to tour our underwater cities. You will not believe the view from the deepest levels!
+TREATY_REJECTRESPONSE	;Oh, that is disappointing.\n\nWe had already opened a special vintage for the occasion. Perhaps another time.
+TRADESANCTIONS_IMPOSE	;The Ackdarians impose Trade Sanctions against you with heavy hearts.\n\nNo more Nepthys wine. No more Ucantium pearls. No more access to our shipyards.\n\nWe hope you reconsider whatever course has led us here.
+TRADESANCTIONS_IMPOSE_RESPONSE_ANGRY	;Sanctions against the Ackdarians?\n\nOur shipwrights built vessels that can cross the galaxy on a single fuel cell.\n\nYou need us far more than we need you.
+TRADESANCTIONS_IMPOSE_RESPONSE_NEUTRAL	;The Ackdarians have weathered deeper currents than this.\n\nWe will manage.
+TRADESANCTIONS_IMPOSE_RESPONSE_SURPRISED	;Trade Sanctions? Against the Ackdarians?\n\nBut we offered you our finest wine! We opened our shipyards to you!\n\nWhat did we do to deserve this?
+TRADESANCTIONS_LIFT	;The Ackdarians are lifting our Trade Sanctions.\n\nThe wine cellars have missed your patronage. Welcome back.
+TRADESANCTIONS_LIFT_RESPONSE	;We are glad the currents have shifted.\n\nLet us trade again and leave this unpleasantness behind.
+WAR_DECLARE	;The Ackdarians have exhausted every peaceful option. WAR is declared.\n\nOur TurboThruster-powered torpedo ships are already in motion.\n\nWe did not want this, but we will not shy from it.
+WAR_DECLARE_RESPONSE_EAGER	;You attack the finest shipbuilders in the galaxy?\n\nOur torpedo ships will show you why Ackdarian engineering is feared across the stars!
+WAR_DECLARE_RESPONSE_NEUTRAL	;We do not seek war, but the Ackdarians know how to defend themselves.\n\nOur ships are built to endure. Can you say the same?
+WAR_DECLARE_RESPONSE_SURPRISED	;War?! Against the Ackdarians?!\n\nWe are builders, not conquerors! We offered you wine and friendship!\n\nThis must be a mistake!
+WAR_END	;This war has caused suffering on both sides. The Ackdarians propose peace.\n\nShall we put down our weapons and pick up our wine glasses instead?
+WAR_END_ACCEPT	;Peace at last. Our shipwrights can return to building, not fighting.\n\nPerhaps someday we can share a bottle of Nepthys wine and forget this ever happened.
+WAR_END_REJECT	;No peace? Then the Ackdarians will fight on.\n\nOur TurboThrusters give us range you cannot match. We will outlast you.
+GIFT_GIVE	;The Ackdarians present you with {0} credits.\n\nAnd a case of our finest Nepthys wine, of course. Friendship deserves celebration!
+GIFT_THANKS	;A gift! The Ackdarians are deeply touched.\n\nYou are always welcome in our underwater cities, friend.
+WARNING	;A warning? Please, tell us what concerns you.\n\nThe Ackdarians take all matters seriously.
+WARNING_INTELLIGENCEMISSIONS	;We have detected covert operations against our underwater cities.\n\nThe Ackdarians are peaceful, but we protect our homes fiercely.\n\nCease your missions at once.
+WARNING_INTELLIGENCEMISSIONS_RESPONSE_FRIENDLY	;Covert missions? That does not sound like us at all.\n\nThe Ackdarians prefer open dialogue over secrecy. We will investigate immediately.
+WARNING_INTELLIGENCEMISSIONS_RESPONSE_NEUTRAL	;We will look into this and ensure it does not continue.
+WARNING_INTELLIGENCEMISSIONS_RESPONSE_ANGRY	;Our observation of your activities is a necessary precaution.\n\nGive us reason to trust you, and the missions will stop.
+WARNING_ATTACKS	;Your attacks on Ackdarian vessels are deeply troubling.\n\nThose ships were built by our finest craftsmen. Every one destroyed is an irreplaceable work of engineering.\n\nStop this at once.
+WARNING_ATTACKS_RESPONSE_FRIENDLY	;This is terrible news. We are horrified.\n\nThe captains responsible will be recalled and disciplined immediately. You have our word.
+WARNING_ATTACKS_RESPONSE_NEUTRAL	;We will investigate this incident and take appropriate action.
+WARNING_ATTACKS_RESPONSE_ANGRY	;Our ships engaged yours in defense of Ackdarian interests.\n\nWhen you stop threatening our waters, our ships will return to port.

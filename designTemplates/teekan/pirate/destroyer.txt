@@ -53,7 +53,7 @@ VectoringEngine	;4
 WeaponArea	;0
 WeaponBeam	;0
 WeaponBombard	;0
-WeaponMissile	;7
+WeaponMissile	;6
 WeaponPhaser	;0
 WeaponRailGun	;0
 WeaponsManufacturingPlant	;0

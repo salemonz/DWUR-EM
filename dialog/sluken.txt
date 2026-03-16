@@ -1,47 +1,47 @@
 'Distant Worlds - dialogue - Version 1.9.5.10 - Modded by the Distant Worlds Mod Editor by Sabranan
 
-PIRATE_PROTECTIONPROPOSE	;You seek protection? We can ensure the safety of all your ships while travelling through our area.\n\nThe price for six months protection is shown below
-PIRATE_PROTECTIONPROPOSEINITIATE	;Space is a cold and dangerous place.\n\nBut we can ensure the safety of all your ships while travelling through our area.\n\nThe price for six months of protection is shown below.\n\nWhat do you say?
-PIRATE_PROTECTIONACCEPTRESPONSE	;A very wise choice!\n\nWe can guarantee that none of your ships will suffer any 'unfortunate accidents'.\n\nAt least, not until our next fee is due anyway...
-PIRATE_PROTECTIONREJECTRESPONSE	;Most unwise. Without payment we cannot ensure your ships safety.\n\nMaybe you should reconsider?
-PIRATE_PROTECTIONALREADYPAID	;We admire your eagerness, but you have already paid us protection.\n\nCome back when your current protection period expires.\n\nWe will gladly accept further payment then
-PIRATE_ATTACKOFFER_SINGLEEMPIRE	;Are the {0} giving you strife? If you like, we could 'take care' of them for you...\n\nWe would keep it a secret of course, so don't worry about the {0} finding out about our arrangement.\n\nAll that we ask for this service is a small payment of {1} credits.\n\nWhat do you say?
-PIRATE_ATTACKCOMMENCE	;An excellent way to spend your money!\n\nOur attacks on the {0} will begin at once!
-GREETING_INTRODUCTION	;We are the {0}.\n\nWe seek total dominance over all.\n\nWill you bow before us, or must you be conquered?
-GREETING_FRIENDLY	;What scheme for conquest have you come to share with us, friend?
-GREETING_NEUTRAL	;Explain your presence before us
-GREETING_ANGRY	;You come to speak with us, enemy?\n\nWhat pacifying offer do you have for us?
-OFFER_FREETRADE	;Will you submit to a Free Trade Agreement with us?\n\nBoth of our economies will benefit greatly. And we can also size you up for later conquest.\n\nWhat do you say?
-FREETRADE_ACCEPT	;A Free Trade Agreement would be very useful. We accept
-FREETRADE_REJECT	;No, we are not interested in a Free Trade Agreement.\n\nWe have other plans for you...
-CANCELTREATY	;Our {0} with you is now terminated.\n\n"Terminated" - how we love that word! It has such a ring to it, don't you think?
-CANCELTREATY_RESPONSE_FRIENDLY	;We used to like you.\n\nBut perhaps we misjudged matters...
-CANCELTREATY_RESPONSE_NEUTRAL	;Very well then. Your insult has been noted
-CANCELTREATY_RESPONSE_ANGRY	;Good, good. This treaty was getting in the way of our plans anyway
-TREATY_PROPOSAL	;What exactly are you proposing?
-TREATY_ACCEPTRESPONSE	;Excellent!\n\nWe hope that you are compliant and submissive allies. Are you?
-TREATY_REJECTRESPONSE	;How independent of you.\n\nThat is not a trait that we like
-TRADESANCTIONS_IMPOSE	;The time has arrived to soften you up: we are imposing Trade Sanctions on you!\n\nDo not bother replying
-TRADESANCTIONS_IMPOSE_RESPONSE_ANGRY	;We seethe with fury at you!\n\nDo not think that you are strong enough to challenge us - you are not
-TRADESANCTIONS_IMPOSE_RESPONSE_NEUTRAL	;If we cared about this, we might be angry.\n\nBut we do not, so we are not
-TRADESANCTIONS_IMPOSE_RESPONSE_SURPRISED	;We admit that your action has surprised us.\n\nBut thank you for identifying yourself as an enemy for us.\n\nBe assured that we will deal with you when we are ready...
-TRADESANCTIONS_LIFT	;We're lifting our Trade Sanctions against you.\n\nYou appear to have become much more compliant. Lesson learned for you
-TRADESANCTIONS_LIFT_RESPONSE	;This seems to matter greatly to you.\n\nBut not to us
-WAR_DECLARE	;Your turn has come to be assimilated into our mighty empire: we declare WAR on you!\n\nYour conquest will be swift and total.\n\nPlease do not beg for mercy - we have none
-WAR_DECLARE_RESPONSE_EAGER	;How ironic - we were just about to declare war on you! So convenient.\n\nAnd now you must die...
-WAR_DECLARE_RESPONSE_NEUTRAL	;How brave of you - daring to take us on!\n\nOf course, bravery and foolishness are closely related.\n\nVery closely, in this case
-WAR_DECLARE_RESPONSE_SURPRISED	;You are full of surprises!\n\nBut we always welcome a good fight.\n\nSo victory to the strong! - that's us, of course
-WAR_END	;It is time for this war to end. We will complete your assimilation later.\n\nWhat do you say?
-WAR_END_ACCEPT	;For once we agree with you - this war should end.\n\nOur forces are standing down
-WAR_END_REJECT	;End the war?!\n\nOnly the weak crave relief from their losses. The strong press forward with conquest. You are the weak, and we are the strong.\n\nThis war is not over yet
-GIFT_GIVE	;We have a gift for you of {0} credits.\n\nIt is not in our nature to be so kind.\n\nSo you would be wise to see this as a cynical ploy
-GIFT_THANKS	;Thank you for your gift.\n\nIt reminds us of a conquered enemy paying tribute to us
-WARNING	;You want to warn us?\n\nGo ahead and waste your words on us
-WARNING_INTELLIGENCEMISSIONS	;We know of your covert missions against us.\n\nBe warned that we can give you a lesson in treachery that you will never forget...\n\nStop your missions now, while you still can
-WARNING_INTELLIGENCEMISSIONS_RESPONSE_FRIENDLY	;Convert missions against you? How shocking
-WARNING_INTELLIGENCEMISSIONS_RESPONSE_NEUTRAL	;Don't worry. That's just our routine surveillance on your empire.\n\nNothing sinister to be concerned about
-WARNING_INTELLIGENCEMISSIONS_RESPONSE_ANGRY	;Convert missions? That would typically indicate preparations for war.\n\nBut surely that is not the case here. So don't worry about it...
-WARNING_ATTACKS	;Stop your blatant attacks on our ships and bases!\n\nThese actions put you on very dangerous ground. We warn you to stop now
-WARNING_ATTACKS_RESPONSE_FRIENDLY	;Attacks on you? We are so upset about this
-WARNING_ATTACKS_RESPONSE_NEUTRAL	;Attacks on YOU?!\n\nNo, no - our ships were defending themselves from attacks by your forces.\n\nPlease don't do that again
-WARNING_ATTACKS_RESPONSE_ANGRY	;Attacks?\n\nYes, we are softening you up prior to launching an all-out assault.\n\nAnything else you'd like to discuss?
+PIRATE_PROTECTIONPROPOSE	;You seek protection from death? We understand this fear, even if we do not share it.\n\nThe price for six months protection is shown below
+PIRATE_PROTECTIONPROPOSEINITIATE	;Death lurks in every corner of the void. We know its ways intimately.\n\nFor the fee shown below, we will ensure it does not find you.\n\nWhat do you say?
+PIRATE_PROTECTIONACCEPTRESPONSE	;A sensible arrangement.\n\nDeath will not visit your ships while our pact holds.\n\nWhen it expires, however... that is another matter.
+PIRATE_PROTECTIONREJECTRESPONSE	;You refuse our protection? How bold.\n\nWe hope you are prepared for what the void has in store for you.
+PIRATE_PROTECTIONALREADYPAID	;You have already purchased your reprieve from us.\n\nReturn when the current term expires.\n\nDeath is patient. So are we.
+PIRATE_ATTACKOFFER_SINGLEEMPIRE	;The {0} trouble you? We would be delighted to study them... up close.\n\nYour involvement would remain our secret, of course.\n\nAll we require is {1} credits for this service.\n\nDo we have an arrangement?
+PIRATE_ATTACKCOMMENCE	;A worthy investment.\n\nOur ships move against the {0} now. We anticipate the encounter with great interest.
+GREETING_INTRODUCTION	;We are the {0}.\n\nWe study the boundary between life and death. All things cross it eventually.\n\nWhat brings you to our attention?
+GREETING_FRIENDLY	;Welcome. The Hive Mind recognizes you as a friend.\n\nWhat would you discuss?
+GREETING_NEUTRAL	;You have our attention. Be precise.
+GREETING_ANGRY	;The Hive Mind stirs with displeasure at your presence.\n\nSpeak quickly.
+OFFER_FREETRADE	;The Hive Mind proposes a Free Trade Agreement.\n\nYour resources interest us. Certain biological materials in particular.\n\nDo you agree?
+FREETRADE_ACCEPT	;Free Trade serves the needs of the Hive Mind. We accept.
+FREETRADE_REJECT	;We have no interest in trading with you.\n\nWhat we need, we will acquire by other means.
+CANCELTREATY	;The {0} between us is terminated.\n\nAll things end. This is simply ending sooner than most.
+CANCELTREATY_RESPONSE_FRIENDLY	;Unfortunate. We had found this arrangement... useful.\n\nBut the Hive Mind will adapt.
+CANCELTREATY_RESPONSE_NEUTRAL	;So noted. The Hive Mind has already adjusted its calculations.
+CANCELTREATY_RESPONSE_ANGRY	;Good. This formality was a hindrance.\n\nNow we may pursue our true interests unencumbered.
+TREATY_PROPOSAL	;The Hive Mind is listening.\n\nPresent your proposal.
+TREATY_ACCEPTRESPONSE	;The Hive Mind is satisfied with this arrangement.\n\nWe look forward to a productive relationship. In every sense of the word.
+TREATY_REJECTRESPONSE	;The Hive Mind has rejected your proposal.\n\nDo not take it personally. We reject most things.
+TRADESANCTIONS_IMPOSE	;The Hive Mind has decided: all trade between our empires is severed.\n\nConsider it the first incision.
+TRADESANCTIONS_IMPOSE_RESPONSE_ANGRY	;You attempt to starve the Hive Mind?\n\nWe have fed on worse things than economic hardship. You will regret this provocation.
+TRADESANCTIONS_IMPOSE_RESPONSE_NEUTRAL	;The Hive Mind notes your sanctions with clinical indifference.\n\nWe are self-sufficient in ways you cannot imagine.
+TRADESANCTIONS_IMPOSE_RESPONSE_SURPRISED	;Sanctions? Against us?\n\nThe Hive Mind did not anticipate this response. We will study your reasoning with great interest.
+TRADESANCTIONS_LIFT	;Trade sanctions against you are lifted.\n\nThe Hive Mind sees continued value in your commerce. For now.
+TRADESANCTIONS_LIFT_RESPONSE	;Your sanctions were an irritant, nothing more.\n\nBut we welcome the resumption of trade. Certain materials are difficult to acquire through raiding alone.
+WAR_DECLARE	;The Hive Mind has reached consensus: WAR.\n\nWe will study your civilization's death throes with the reverence they deserve.
+WAR_DECLARE_RESPONSE_EAGER	;War! The Hive Mind welcomes this.\n\nWe have already catalogued your fleet compositions. Your weaknesses are known to us.
+WAR_DECLARE_RESPONSE_NEUTRAL	;The Hive Mind acknowledges your declaration.\n\nOur StarBurners are already accelerating toward your borders.\n\nYou will find us swift and thorough.
+WAR_DECLARE_RESPONSE_SURPRISED	;An unexpected development.\n\nBut the Hive Mind adapts quickly. You will discover that the Sluken are not easily surprised twice.
+WAR_END	;The Hive Mind has determined that this war has run its course.\n\nThere is no shame in a strategic pause. Do you agree?
+WAR_END_ACCEPT	;The Hive Mind concurs. Hostilities will cease.\n\nWe have collected enough specimens for now.
+WAR_END_REJECT	;No. The Hive Mind hungers for a conclusion.\n\nYour empire's final moments are sacred to us. We will not be denied them.
+GIFT_GIVE	;The Hive Mind transmits {0} credits to you.\n\nConsider it a gesture of our appreciation. The living have so few uses for currency after death.
+GIFT_THANKS	;Your gift is acknowledged by the Hive Mind.\n\nGenerosity from the living always carries interesting implications.
+WARNING	;You have a warning for the Hive Mind?\n\nWe are listening. Briefly.
+WARNING_INTELLIGENCEMISSIONS	;The Hive Mind has detected your covert agents within our territory.\n\nSeveral have already been... incorporated.\n\nWithdraw the rest, or they will share the same fate.
+WARNING_INTELLIGENCEMISSIONS_RESPONSE_FRIENDLY	;Covert missions? The Hive Mind has no knowledge of such operations.\n\nPerhaps your own internal security requires examination.
+WARNING_INTELLIGENCEMISSIONS_RESPONSE_NEUTRAL	;The Hive Mind will review its intelligence activities.\n\nWe make no promises.
+WARNING_INTELLIGENCEMISSIONS_RESPONSE_ANGRY	;Our agents are merely observing the fragile biology of your species.\n\nPurely academic interest, we assure you.\n\nMostly.
+WARNING_ATTACKS	;You will cease your attacks on Sluken assets immediately.\n\nThe Hive Mind has a long memory and an exacting sense of reciprocity.
+WARNING_ATTACKS_RESPONSE_FRIENDLY	;The Hive Mind is disturbed by these reports.\n\nWe will identify the responsible commanders and deal with them... personally.
+WARNING_ATTACKS_RESPONSE_NEUTRAL	;An unfortunate incident. The Hive Mind will investigate.\n\nOur forces can be overzealous in their enthusiasm.
+WARNING_ATTACKS_RESPONSE_ANGRY	;Yes, our ships engaged yours.\n\nThe Hive Mind wished to test your combat responses. The data has been most illuminating.\n\nShall we collect more?

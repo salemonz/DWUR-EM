@@ -15,8 +15,8 @@ ShipMaintenanceSavings	;0
 TroopMaintenanceSavings	;0
 ResourceExtractionBonus	;0
 WarWearinessAttenuation	;20
-SatisfactionModifier	;0
-ResearchBonus	;10
+SatisfactionModifier	;10
+ResearchBonus	;20
 EspionageBonus	;20
 TradeBonus	;0
 OverallShipDesignFocus	;2
@@ -133,6 +133,6 @@ TourismIncomeFactor	;1.0
 FreeTradeIncomeFactor	;1.05
 MigrationFactor	;1.0
 TroopRegenerationFactor	;1.0
-PirateDefaultPlaystyle	;0
+PirateDefaultPlaystyle	;2
 DesignsPictureFamilyIndexPirates	;48
 ImmuneToPlagues	;N

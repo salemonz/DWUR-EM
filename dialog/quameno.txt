@@ -1,40 +1,40 @@
 'Distant Worlds - dialogue - Version 1.9.5.10 - Modded by the Distant Worlds Mod Editor by Sabranan
 
-GREETING_INTRODUCTION	;We are the {0}.\n\nWe seek understanding of all in the galaxy, including your unique empire.\n\nPlease, tell us about yourselves
-GREETING_FRIENDLY	;Our good friends, what is it that you wish to discuss with us?
-GREETING_NEUTRAL	;Is there anything that we can do for you?
-GREETING_ANGRY	;You test our patience.\n\nState your business quickly
-OFFER_FREETRADE	;We would be honored if you would accept a Free Trade Agreement with us. We feel certain that this arrangement would be mutually advantageous.\n\nWhat do you say?
-FREETRADE_ACCEPT	;A Free Trade Agreement with you? We eagerly accept!\n\nWe will leave our ambassadors to work out the details of the treaty for us
-FREETRADE_REJECT	;We are sorry, but a Free Trade Agreement with you would not be suitable for us right now.\n\nMaybe we should revisit this topic at a later time
-CANCELTREATY	;This {0} is no longer in our best interests. We are cancelling this arrangement
-CANCELTREATY_RESPONSE_FRIENDLY	;This disappoints us. We felt that this treaty was most worthwhile.\n\nBut we respect your decision to end it
-CANCELTREATY_RESPONSE_NEUTRAL	;How unfortunate.\n\nBut it is good to speak openly with each other in these important matters
-CANCELTREATY_RESPONSE_ANGRY	;You feelings match ours - we no longer want this treaty either.\n\nIt is best for it to end
-TREATY_PROPOSAL	;A treaty proposal? We are eager to hear your idea
-TREATY_ACCEPTRESPONSE	;We are most pleased at your acceptance, our new ally.\n\nFeel free to share your thoughts with us at any time
-TREATY_REJECTRESPONSE	;Perhaps another time you will feel differently
-TRADESANCTIONS_IMPOSE	;We feel compelled to impose Trade Sanctions against your empire. All trade between our two empires has ended.\n\nWe trust that we will not need to take any further punitive measures against you - but that will be up to you
-TRADESANCTIONS_IMPOSE_RESPONSE_ANGRY	;Trade Sanctions cut both ways, you know.\n\nYou should be careful not to take on more than you can handle...
-TRADESANCTIONS_IMPOSE_RESPONSE_NEUTRAL	;This action is most unhelpful. We urge you to reconsider this course
-TRADESANCTIONS_IMPOSE_RESPONSE_SURPRISED	;This is most unsettling. We do not understand your actions here
-TRADESANCTIONS_LIFT	;Our Trade Sanctions against you have ended.\n\nWe hope for continued improvement in our relationship
-TRADESANCTIONS_LIFT_RESPONSE	;This is a welcome development. Trade can increase mutual understanding between our peoples
-WAR_DECLARE	;We formally notify you that a state of war now exists between us.\n\nYou leave us no choice but to meet you in battle
-WAR_DECLARE_RESPONSE_EAGER	;It is not often that we seek war. But in your case we welcome it.\n\nWe anticipate your swift defeat
-WAR_DECLARE_RESPONSE_NEUTRAL	;We may be peaceful, but we are also prepared.\n\nIf you seek war, we will give it to you
-WAR_DECLARE_RESPONSE_SURPRISED	;We do not understand your aggression.\n\nWe will defend ourselves, but we implore you to think again
-WAR_END	;This destructive conflict achieves nothing - we propose an immediate end to the war.\n\nWhat do you say?
-WAR_END_ACCEPT	;Yes, this war serves no purpose. We are ordering our forces to stop fighting
-WAR_END_REJECT	;It is too late for peace now.\n\nThis war will continue until you are defeated
-GIFT_GIVE	;We present you with a gift of {0} credits.\n\nMay this gesture build a stronger bond between our peoples
-GIFT_THANKS	;You kind gift was most appreciated. Thank you!
-WARNING	;Share your concerns with us
-WARNING_INTELLIGENCEMISSIONS	;Your reckless covert missions against us are most destabilising.\n\nStop these missions at once! Our internal affairs are none of your concern
-WARNING_INTELLIGENCEMISSIONS_RESPONSE_FRIENDLY	;We have not heard of any covert missions against you.\n\nPerhaps you are mistaken?
-WARNING_INTELLIGENCEMISSIONS_RESPONSE_NEUTRAL	;Covert missions, you say? Let us look into the matter.\n\nThank you for raising this issue with us
-WARNING_INTELLIGENCEMISSIONS_RESPONSE_ANGRY	;You have detected covert missions against you?\n\nIf we may speak frankly with you: we feel threatened by you. You are irrational and unpredictable. We feel that we must keep a close eye on you.\n\nSurely you understand our situation?
-WARNING_ATTACKS	;We are deeply concerned over your unprovoked attacks on our ships and bases.\n\nCease these military operations this instant, or face devastating retaliation!
-WARNING_ATTACKS_RESPONSE_FRIENDLY	;Oh dear, it seems that some of our commanders have become a little too enthusiastic in defending our borders.\n\nPlease accept our apologies
-WARNING_ATTACKS_RESPONSE_NEUTRAL	;Attacks? Most unfortunate.\n\nWe will launch a study to explore your allegations
-WARNING_ATTACKS_RESPONSE_ANGRY	;Yes, we are aware of the attacks. We always send attacks against empires that threaten us.\n\nSurely you understand this concept?
+GREETING_INTRODUCTION	;We are the {0}.\n\nThe Quameno seek to understand the fundamental nature of the galaxy itself.\n\nTell us about your civilization. Every data point enriches our models.
+GREETING_FRIENDLY	;Ah, a welcome visitor!\n\nOur latest research has yielded fascinating results. Would you like to hear about them? No?\n\nWell, what brings you here?
+GREETING_NEUTRAL	;You have the attention of the Quameno Technocracy.\n\nWhat is the subject of this communication?
+GREETING_ANGRY	;Your recent actions have disrupted several of our research programs.\n\nThe Technocracy is... displeased. State your purpose.
+OFFER_FREETRADE	;The Technocracy proposes a Free Trade Agreement.\n\nAccess to diverse resources improves our experimental capabilities. And we suppose your economy benefits too.\n\nDo you accept?
+FREETRADE_ACCEPT	;Excellent! Free Trade will provide access to research materials we have been lacking.\n\nThe scientific benefits alone justify this arrangement.
+FREETRADE_REJECT	;A pity. The Quameno had identified several promising research avenues that required your resources.\n\nWe will find alternative sources.
+CANCELTREATY	;The Technocracy has concluded that our {0} with you no longer serves the advancement of knowledge.\n\nIt is cancelled.
+CANCELTREATY_RESPONSE_FRIENDLY	;This is unfortunate. Our collaborative research projects will suffer.\n\nScience should transcend politics.
+CANCELTREATY_RESPONSE_NEUTRAL	;Noted. The Quameno will redirect our research partnerships elsewhere.
+CANCELTREATY_RESPONSE_ANGRY	;The Quameno have long suspected this outcome.\n\nOur predictive models were, once again, correct.
+TREATY_PROPOSAL	;A treaty? The Technocracy welcomes arrangements that facilitate knowledge exchange.\n\nPresent your proposal for peer review.
+TREATY_ACCEPTRESPONSE	;The Technocracy approves! A new research partnership!\n\nWe have already identified seventeen joint projects that could advance both our civilizations. Shall we begin immediately?
+TREATY_REJECTRESPONSE	;The Technocracy is disappointed.\n\nThe potential for collaborative research was considerable. A wasted opportunity.
+TRADESANCTIONS_IMPOSE	;The Quameno Technocracy imposes Trade Sanctions.\n\nWe did not reach this conclusion lightly — considerable data analysis preceded this decision.
+TRADESANCTIONS_IMPOSE_RESPONSE_ANGRY	;Sanctions against the galaxy's foremost scientists?\n\nYour NovaCore reactors will break down without our expertise. Your research will stagnate.\n\nYou need us more than we need you.
+TRADESANCTIONS_IMPOSE_RESPONSE_NEUTRAL	;The Quameno are self-sufficient in matters of intellect.\n\nYour sanctions affect our material supply, not our capacity for discovery.
+TRADESANCTIONS_IMPOSE_RESPONSE_SURPRISED	;Sanctions? The Quameno posed no threat to anyone.\n\nWe were simply conducting research. What offense could knowledge have given you?
+TRADESANCTIONS_LIFT	;The Technocracy has lifted Trade Sanctions.\n\nResumed commerce will benefit our research programs. Pragmatism outweighs pride.
+TRADESANCTIONS_LIFT_RESPONSE	;The Quameno welcome the return of trade.\n\nSeveral experiments were delayed by material shortages. No more.
+WAR_DECLARE	;The Quameno Technocracy formally declares WAR.\n\nWe take no pleasure in this. War destroys knowledge, infrastructure, and lives.\n\nBut you have left us no alternative.
+WAR_DECLARE_RESPONSE_EAGER	;You attack the Quameno? The galaxy's most advanced scientists?\n\nOur graviton beams harness forces you do not even understand yet.\n\nThis will be educational. For you.
+WAR_DECLARE_RESPONSE_NEUTRAL	;The Quameno are peaceful, not helpless.\n\nOur NovaCore reactors power weapons systems beyond your current comprehension.
+WAR_DECLARE_RESPONSE_SURPRISED	;War? Against the Quameno?\n\nWe who sought only to expand the boundaries of knowledge?\n\nThis is profoundly irrational.
+WAR_END	;The Technocracy has calculated that this war destroys more knowledge than it preserves.\n\nWe propose an immediate ceasefire. Science demands it.\n\nDo you agree?
+WAR_END_ACCEPT	;Peace. The Quameno return to our laboratories with relief.\n\nThere is so much work to be done that does not involve destruction.
+WAR_END_REJECT	;Your commitment to violence over reason is... statistically anomalous.\n\nBut the Quameno will continue to defend ourselves with the full weight of our technology.
+GIFT_GIVE	;The Technocracy transmits {0} credits.\n\nConsider it a research grant in diplomatic stability.
+GIFT_THANKS	;Your gift is appreciated by the Technocracy.\n\nSuch gestures fund the kind of goodwill that makes research collaboration possible.
+WARNING	;A warning for the Quameno?\n\nThe Technocracy is listening. Present your data.
+WARNING_INTELLIGENCEMISSIONS	;Our sensor arrays have detected your covert research into our technology.\n\nThe Quameno share knowledge freely with partners. Stealing it is unnecessary and insulting.\n\nCease your operations.
+WARNING_INTELLIGENCEMISSIONS_RESPONSE_FRIENDLY	;Espionage against the Quameno? We publish our research openly.\n\nThere is no need to steal what we would share willingly. This must be a misunderstanding.
+WARNING_INTELLIGENCEMISSIONS_RESPONSE_NEUTRAL	;The Technocracy will review its intelligence programs.\n\nPerhaps some overeager researchers overstepped their mandate.
+WARNING_INTELLIGENCEMISSIONS_RESPONSE_ANGRY	;We study everything. That includes your civilization.\n\nIt is not espionage. It is research. The Quameno see no difference.
+WARNING_ATTACKS	;Your attacks on Quameno vessels have destroyed irreplaceable research data.\n\nThe Technocracy will not tolerate the destruction of knowledge.\n\nStop immediately.
+WARNING_ATTACKS_RESPONSE_FRIENDLY	;This is deeply troubling. Research vessels should never be targets.\n\nWe will investigate and ensure our ships were not misidentified as threats.
+WARNING_ATTACKS_RESPONSE_NEUTRAL	;The Technocracy will analyze this incident and determine the appropriate response.
+WARNING_ATTACKS_RESPONSE_ANGRY	;Our vessels engaged yours to protect research installations of immense value.\n\nThe knowledge stored there is worth more than your entire fleet.
