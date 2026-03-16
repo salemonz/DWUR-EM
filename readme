@@ -28,3 +28,12 @@ v0.9.0 -- 04 Mar 2026 -- Initial beta release
 9. Exit the game and restart (even though the game loads the files after clicking "Activate Theme", it only partially loads...I don't know why DW:U is like this...I'm not a developer :D You need to exit the game and restart after activating the theme.)
 10. You'll know the mod is fully activated by seeing the custom DWUR background.
 11. Enjoy!
+
+/========== How to restore "Vanilla" balance ==========\
+DWUR-EM has implemented a comprehensive balance pass across all 46 races. Policies, race stats, component access, ship templates, even dialog has all been edited and/or changed to make every race in DWUR feel distinct.
+
+If you do NOT like these changes, you can restore the "vanilla" balance of old versions of DWUR.
+
+1. Go to the \Docs folder within the mod files.
+2. Open the "DWUR RESTORE VANILLA BALANCE" archive file.
+3. Save the included files into your mod base folder (not the game folder...your mod folder). Overwrite when asked.
