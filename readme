@@ -17,13 +17,14 @@ v0.9.0 -- 04 Mar 2026 -- Initial beta release
 
 /========== Installation ==========\
 1. Download and install Alvek's Expansion Mod (EM) via his Github here: https://github.com/DW-UX/DistantWorldsExpanded. Please pay attention to the instructions (especially the need to unblock the .zip before opening) to correctly install EM.
-2. Download DWUR from https://gitlab.com/dw2-refreshed-mods/dwur-em-version.
-3. Create a directory for the mod within your Distant Worlds: Universe folder's CUSTOMIZATION directory...you can call this whatever you'd like.
-4. Unpack the downloaded DWUR archive into the directory you created in step 3.
-5. Launch the game.
-6. Go to "Change Theme"
-7. Pick the name of the directory you created in step 3 and click Activate Theme.
+2. Download DWUR from https://github.com/salemonz/DWUR-EM.
+3. Go to your Distant Worlds: Universe game folder. Then the \CUSTOMIZATION directory.
+4. Create a directory for the mod within the CUSTOMIZATION directory...you can call this whatever you'd like. This will be where you expand the mod's files.
+5. Unpack the downloaded DWUR archive into the directory you created in step 4.
+6. Launch the game.
+7. Go to "Change Theme"
+8. Pick the name of the directory you created in step 3 and click Activate Theme.
 (The game might hang for up to a minute while everything loads)
-8. Exit the game and restart (even though the game loads the files after clicking "Activate Theme", it only partially loads...I don't know why DW:U is like this...I'm not a developer :D You need to exit the game and restart after activating the theme.)
-9. You'll know the mod is fully activated by seeing the custom DWUR background and hearing the music (if you have your music volume turned on)
+9. Exit the game and restart (even though the game loads the files after clicking "Activate Theme", it only partially loads...I don't know why DW:U is like this...I'm not a developer :D You need to exit the game and restart after activating the theme.)
+10. You'll know the mod is fully activated by seeing the custom DWUR background.
 10. Enjoy!
