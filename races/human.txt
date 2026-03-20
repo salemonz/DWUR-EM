@@ -9,7 +9,7 @@ Aggression	;100
 Caution	;100
 Friendliness	;100
 Loyalty	;100
-DesignsPictureFamilyIndex	;32
+DesignsPictureFamilyIndex	;6
 DesignNamesIndex	;0
 ShipMaintenanceSavings	;0
 TroopMaintenanceSavings	;0
