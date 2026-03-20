@@ -1,4 +1,4 @@
-﻿'Distant Worlds Research - 1.9.5.10
+'Distant Worlds Research - 1.9.5.10
 
 'Multiple labelled lines of information per research project as follows:
 'PROJECT: core project information - THIS LINE IS REQUIRED
@@ -266,7 +266,7 @@ COMPONENT IMPROVEMENTS	;11, 5, 0, 400, 15, 70, 0, 5000, 8,
 PARENTS			;46, N
 
 PROJECT			;48, Enhanced Type I Missiles, 1, 33, 		0, 25, 0, 0.0,
-COMPONENT IMPROVEMENTS	;128, 1, 6, 1000, 20, 125, 0, 2500, 0,
+COMPONENT IMPROVEMENTS	;128, 1, 8, 1000, 20, 125, 0, 2500, 0,
 PARENTS			;369, N
 
 PROJECT			;49, Enhanced Type II Missiles, 3, 33, 		0, 25, 0, 5.2,
@@ -549,7 +549,7 @@ COMPONENTS		;96
 PARENTS			;488, N
 
 PROJECT			;118, Enhanced Robotic Repairs, 6, 32, 		1, 3, 0, 14.7,
-COMPONENT IMPROVEMENTS	;96, 6, 600, 3, 0, 0, 0, 0, 0,
+COMPONENT IMPROVEMENTS	;96, 6, 1000, 6, 0, 0, 0, 0, 0,
 PARENTS			;117, N
 
 PROJECT			;119, Mining, 0, 27, 		1, 6, 1, 0.0,
@@ -671,11 +671,11 @@ COMPONENTS		;45
 PARENTS			;135, Y, 147, Y
 
 PROJECT			;149, Advanced Maneuvering, 6, 25, 		1, 5, 0, 14.7,
-COMPONENT IMPROVEMENTS	;45, 6, 17, 1, 0, 0, 0, 0, 0,
+COMPONENT IMPROVEMENTS	;45, 6, 22, 1, 0, 0, 0, 0, 0,
 PARENTS			;148, N
 
 PROJECT			;150, Ultimate Maneuvering, 7, 25, 		1, 5, 0, 18.5,
-COMPONENT IMPROVEMENTS	;45, 7, 20, 1, 0, 0, 0, 0, 0,
+COMPONENT IMPROVEMENTS	;45, 7, 28, 1, 0, 0, 0, 0, 0,
 PARENTS			;149, N
 
 PROJECT			;151, Accelerated Maneuvering, 2, 26, 		1, 5, 0, 2.8,
@@ -719,11 +719,11 @@ COMPONENTS		;49
 PARENTS			;501, N
 
 PROJECT			;161, Enhanced Phoenix Drive, 5, 14, 		1, 10, 0, 11.2,
-COMPONENT IMPROVEMENTS	;49, 5, 10000, 180, 35, 16, 20, 0, 0,
+COMPONENT IMPROVEMENTS	;49, 5, 10000, 180, 25, 16, 20, 0, 0,
 PARENTS			;160, N
 
 PROJECT			;162, Improved Phoenix Drive, 6, 14, 		1, 10, 0, 14.7,
-COMPONENT IMPROVEMENTS	;49, 6, 15000, 200, 40, 15, 20, 0, 0,
+COMPONENT IMPROVEMENTS	;49, 6, 15000, 200, 20, 15, 20, 0, 0,
 PARENTS			;161, N
 
 PROJECT			;163, Efficient HyperDrives, 4, 15, 		1, 10, 0, 8.0,
@@ -1254,11 +1254,11 @@ COMPONENTS		;107
 PARENTS			;293, N
 
 PROJECT			;295, Improved Light Rail Guns, 3, 39, 		0, 19, 0, 5.2,
-COMPONENT IMPROVEMENTS	;107, 3, 5, 450, 10, 400, 0, 375, 0,
+COMPONENT IMPROVEMENTS	;107, 3, 5, 450, 6, 400, 0, 375, 0,
 PARENTS			;294, N
 
 PROJECT			;296, Advanced Light Rail Guns, 4, 39, 		0, 19, 0, 8.0,
-COMPONENT IMPROVEMENTS	;107, 4, 5, 450, 10, 450, 0, 350, 0,
+COMPONENT IMPROVEMENTS	;107, 4, 5, 450, 6, 450, 0, 350, 0,
 PARENTS			;295, N
 
 PROJECT			;297, Assault Missiles, 5, 33, 		0, 25, 0, 11.2,
@@ -1612,7 +1612,7 @@ COMPONENTS		;146
 PARENTS			;100, N
 
 PROJECT			;386, Megatron Flux Skin, 8, 6, 		1, 16, 0, 22.6,
-COMPONENT IMPROVEMENTS	;36, 8, 600, 25, 0, 0, 0, 0, 0,
+COMPONENT IMPROVEMENTS	;36, 8, 500, 22, 0, 0, 0, 0, 0,
 PARENTS			;88, N
 
 PROJECT			;387, Warp Gate Precursors, 12, 16, 		1, 10, 0, 41.6,
@@ -1663,11 +1663,11 @@ COMPONENT IMPROVEMENTS	;48, 8, 16000, 260, 2, 13, 20, 0, 0,
 PARENTS			;395, N
 
 PROJECT			;397, Advanced Phoenix Drive, 7, 14, 		1, 10, 0, 18.5,
-COMPONENT IMPROVEMENTS	;49, 7, 20000, 230, 45, 14, 20, 0, 0,
+COMPONENT IMPROVEMENTS	;49, 7, 20000, 230, 15, 14, 20, 0, 0,
 PARENTS			;162, N
 
 PROJECT			;398, Optimized Phoenix Drive, 8, 14, 		1, 10, 0, 22.6,
-COMPONENT IMPROVEMENTS	;49, 8, 25000, 260, 50, 13, 20, 0, 0,
+COMPONENT IMPROVEMENTS	;49, 8, 25000, 260, 10, 13, 20, 0, 0,
 PARENTS			;397, N
 
 PROJECT			;399, Advanced Calista-Dal Drive, 7, 15, 		1, 10, 0, 18.5,
@@ -1679,7 +1679,7 @@ COMPONENT IMPROVEMENTS	;50, 8, 18000, 50, 12, 6, 20, 0, 0,
 PARENTS			;399, N
 
 PROJECT			;401, Transcendent Phoenix Drive, 9, 14, 		1, 10, 0, 27.0,
-COMPONENT IMPROVEMENTS	;49, 9, 35000, 300, 60, 12, 20, 0, 0,
+COMPONENT IMPROVEMENTS	;49, 9, 35000, 300, 5, 12, 20, 0, 0,
 PARENTS			;398, N
 
 PROJECT			;402, Advanced Jump Techniques, 5, 12, 		1, 10, 0, 11.2,
@@ -2127,7 +2127,7 @@ COMPONENTS		;154
 PARENTS			;485, N
 
 PROJECT			;512, Enhanced Caslon Missiles, 4, 34, 		0, 25, 0, 8.0,
-COMPONENT IMPROVEMENTS	;154, 4, 55, 625, 100, 175, 0, 10000, 2,
+COMPONENT IMPROVEMENTS	;154, 4, 55, 625, 100, 175, 0, 8000, 2,
 PARENTS			;511, N
 
 PROJECT			;513, Anti-matter Missiles, 6, 34, 		0, 25, 0, 14.7,
@@ -2187,7 +2187,7 @@ COMPONENT IMPROVEMENTS	;11, 6, 0, 500, 15, 70, 0, 5000, 10,
 PARENTS			;47, N
 
 PROJECT			;526, Advanced Caslon Missiles, 5, 34, 		0, 25, 0, 11.2,
-COMPONENT IMPROVEMENTS	;154, 5, 65, 650, 100, 200, 0, 10000, 3,
+COMPONENT IMPROVEMENTS	;154, 5, 65, 650, 100, 200, 0, 8000, 3,
 PARENTS			;512, N
 
 PROJECT			;527, Enhanced Infantry Attack, 3, 43, 		0, 0, 0, 5.2,
@@ -2617,7 +2617,7 @@ PARENTS			;625, N
 ALLOWED RACES	;Human, Khemal, XHuman
 
 PROJECT			;627, Guardian PD Mk4, 7, 38, 		0, 22, 0, 18.5,
-COMPONENT IMPROVEMENTS	;190, 7, 20, 425, 3, 750, 1, 350, 0,
+COMPONENT IMPROVEMENTS	;190, 7, 18, 400, 3, 725, 1, 400, 0,
 PARENTS			;626, N
 ALLOWED RACES	;Human, Khemal, XHuman
 

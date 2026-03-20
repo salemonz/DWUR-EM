@@ -1,4 +1,4 @@
-﻿'Distant Worlds Components - 1.9.5.10 (Research Unleashed by Osito)
+'Distant Worlds Components - 1.9.5.10 (Research Unleashed by Osito)
 
 'each line defines a single component with comma-separated data, up to a maximum of 170 components (0-169)
 ' - ID: numeric ID value of component
@@ -256,7 +256,7 @@
 93, Research - HighTech Lab, 93, 0, ,					36, 20, 5,		10000, 0, 0, 0, 0, 0, 0,				16, 5, 14, 6, 9, 8,
 94, Construction - Construction Yard, 94, 0, ,				7, 10, 2,		100, 60, 0, 0, 0, 0, 0,					10, 8, 17, 3,
 95, Repair - Damage Control, 95, 0, ,					10, 4, 1,		100, 60, 0, 0, 0, 0, 0,					10, 5, 17, 2,
-96, Repair - S2F4 RepairBot, 96, 0, ,					10, 3, 1,		500, 5, 0, 0, 0, 0, 0,					10, 6, 17, 1,
+96, Repair - S2F4 RepairBot, 96, 0, ,					10, 3, 1,		700, 8, 0, 0, 0, 0, 0,					10, 6, 17, 1,
 97, Repair - S2F7 RepairBot, 97, 0, ,					10, 2, 1,		650, 4, 0, 0, 0, 0, 0,					10, 5, 17, 2,
 98, Crew - Life Support, 98, 0, ,					25, 1, 1,		60, 0, 0, 0, 0, 0, 0,					16, 1, 14, 2,
 99, Crew - Living Quarters, 99, 0, ,					21, 3, 1,		60, 0, 0, 0, 0, 0, 0,					10, 3, 16, 2,
@@ -268,7 +268,7 @@
 'Giant Ion Cannon below is only intended for use as the weapon component of the Giant Ion Cannon planetary facility, and thus should not be placed on the tech tree
 105, Weapon - Giant Ion Cannon, 105, 5, ion_bolt.wav,			51, 200, 0,		220, 400, 0, 220, 4, 8000, 0,			13, 6, 14, 4, 5, 5, 12, 2,
 106, Weapon - Phaser Cannon, 106, 10, phaser.wav,			55, 7, 0,		9, 200, 32, 1200, 0, 2100, 0,			1, 3, 4, 6, 14, 4,
-107, Weapon - Light Rail Gun, 107, 8, railgun.wav,			57, 12, 0,		5, 450, 10,  350, 0,  400, 0,			1, 3, 8, 6, 13, 4, 15, 3,
+107, Weapon - Light Rail Gun, 107, 8, railgun.wav,			57, 12, 0,		5, 450, 6,  350, 0,  400, 0,			1, 3, 8, 6, 13, 4, 15, 3,
 108, Weapon - Assault Missile, 108, 7, missile_launch_massive.wav,	54, 8, 0,		15, 1000, 38, 250, 0, 2500, 0,			11, 4, 17, 2, 6, 7,
 109, Power - Energy To Fuel Converter, 109, 0, ,			13, 250, 0,		50, 0, 0, 0, 0, 0, 0,					10, 74, 16, 48, 9, 28, 12, 37, 7, 42,
 110, Weapon - Phaser Lance, 110, 11, phaser.wav,			55, 7, 0,		24, 300, 50, 1200, 0, 4000, 0,			1, 3, 4, 7, 14, 5,
@@ -310,13 +310,13 @@
 145, Movement - Micro HyperJump Thruster, 145, 3, ,			14, 6, 0,		30000, 6, 12000, 3, 0, 0, 0,				17, 2, 11, 4, 43, 5,
 146, Defense - Sub-Space Shields, 146, 0, ,				40, 10, 0,		500, 30, 0, 0, 0, 0, 0,					7, 4, 14, 5, 13, 9, 3, 3, 43, 4,
 147, Defense - Annihilator AutoCannon, 147, 6, point_defense.wav,	56, 3, 0,		18, 400, 6, 750, 1, 450, 0,				0, 2, 8, 4, 13, 4, 15, 3, 43, 3,
-148, Weapon - Sub-Space Torpedo, 148, 3, torpedo_large.wav,		60, 12, 0,		100, 750, 64, 900, 4, 2000, 0,			3, 3, 7, 3, 15, 3, 12, 8,
+148, Weapon - Sub-Space Torpedo, 148, 3, torpedo_large.wav,		60, 12, 0,		75, 750, 64, 900, 4, 2000, 0,			3, 3, 7, 3, 15, 3, 12, 8,
 149, Defense - Sub-Space Area Shield Recharger, 149, 0, ,		0, 100, 5,		5000, 2000, 1000, 0, 0, 0, 0,				4, 20, 14, 10, 13, 6, 43, 2, 12, 8,
 150, Movement - Shakturi Plasma Drive, 150, 3, ,			23, 9, 0,		30000, 200, 20, 13, 20, 0, 0,				17, 5, 7, 8, 12, 6, 10, 6, 41, 5,
-151, Weapon - Gravitic Torpedo, 151, 3, torpedo_large.wav,		60, 12, 0,		500, 800, 64, 1000, 4, 3500, 0,			3, 3, 7, 3, 15, 3, 12, 8,
+151, Weapon - Gravitic Torpedo, 151, 3, torpedo_large.wav,		60, 12, 0,		225, 800, 64, 1000, 4, 3500, 0,			3, 3, 7, 3, 15, 3, 12, 8,
 152, Weapon - Compact Sub-Space Ion Cannon, 152, 5, ion_bolt.wav,	51, 8, 0,		50, 360, 560, 230, 5, 3300, 0,			13, 6, 14, 4, 5, 5, 12, 2, 43, 5,
 153, Defense - Ion Beam Disruptor, 153, 0, ,				52, 2, 0,		60, 0, 0, 0, 0, 0, 0,					15, 5, 9, 6, 3, 4, 43, 6,
-154, Weapon - Caslon Missile, 154, 7, missile_launch_massive.wav,	54, 10, 0,		45, 600, 100, 150, 0, 10000, 1,		11, 4, 17, 2, 6, 7, 41, 5,
+154, Weapon - Caslon Missile, 154, 7, missile_launch_massive.wav,	54, 10, 0,		45, 600, 100, 150, 0, 8000, 1,		11, 4, 17, 2, 6, 7, 41, 5,
 155, Weapon - Anti-matter Missile, 155, 7, missile_launch_massive.wav,	54, 10, 0,		100, 700, 150, 250, 0, 10000, 4,	11, 4, 17, 2, 6, 7, 41, 5, 8, 5,
 156, Weapon - Neutron Missile, 156, 7, missile_launch_massive.wav,	54, 10, 0,		135, 700, 180, 300, 0, 10000, 6,	11, 4, 17, 2, 6, 7, 41, 5, 42, 3,
 157, Colonization - Huge Module, 157, 0, ,				4, 540, 7,		750000000, 0, 0, 0, 0, 0, 0,			8, 520, 10, 230, 16, 130, 42, 20,
@@ -324,7 +324,7 @@
 159, Weapon - Tachyon Beam, 159, 13, tachyon1.wav,			55, 7, 0,		27, 300, 60, 1200, -2, 4000, 0,			1, 2, 4, 4, 14, 3, 42, 3,
 160, Defense - Reflective Armor, 160, 0, ,				1, 1, 0,		30, 50, 0, 0, 0, 0, 0,					17, 1, 11, 4, 12, 3, 43, 5,
 161, Weapon - Tachyon Devastator, 159, 14, tachyon2.wav,		55, 7, 0,		46, 600, 70, 1200, -10, 4000, 0,			1, 2, 4, 4, 14, 3, 42, 3, 43, 5,
-162, Weapon - Tachyon Torpedo, 162, 3, torpedo_large.wav,		60, 12, 0,		200, 800, 64, 500, -25, 2000, 0,			3, 3, 7, 3, 15, 3, 12, 8, 43, 7,
+162, Weapon - Tachyon Torpedo, 162, 3, torpedo_large.wav,		60, 12, 0,		140, 800, 64, 500, -25, 2000, 0,			3, 3, 7, 3, 15, 3, 12, 8, 43, 7,
 163, Defense - Talassos Mk II Shields, 163, 0, ,			40, 10, 0,		300, 40, 0, 0, 0, 0, 0,					5, 3, 14, 5, 13, 7, 43, 5,
 164, Defense - Deucalios Mk II Shields, 164, 0, ,			40, 10, 0,		500, 7, 0, 0, 0, 0, 0,					6, 4, 14, 4, 13, 8, 43, 5,
 'Moved conflicting block of components from 129..138 here...

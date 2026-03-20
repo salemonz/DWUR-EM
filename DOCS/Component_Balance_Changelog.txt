@@ -1,0 +1,455 @@
+Distant Worlds Universe Refreshed — Component Balance Changelog
+================================================================
+
+This update addresses weapon balance across the component and research 
+files. The goals are: smooth tech tier progression within each weapon 
+family, distinct identities between weapon types, and closing the gap 
+where endgame torpedoes outperformed dedicated super weapons on a 
+per-size basis.
+
+
+==========================================================
+ENDGAME TORPEDO REBALANCING
+==========================================================
+
+The three endgame torpedoes — Sub-Space, Gravitic, and Tachyon — were 
+dramatically overpowered relative to every other weapon system in the 
+game. The Gravitic Torpedo delivered 142.9 DPS at size 12 (11.90 
+DPS/Size), exceeding the Death Ray super weapon (2.52 DPS/Size) by 
+nearly five times on a per-size basis. The Tachyon Torpedo's negative 
+damage loss produced 400 effective damage at max range from a base of 
+200. These weapons rendered all other conventional weapon systems 
+irrelevant once researched.
+
+All three remain the strongest conventional torpedoes in the game 
+and are still clearly superior to the X-variant line, but they no 
+longer eclipse super weapons in space efficiency.
+
+
+GRAVITIC TORPEDO (Component 151)
+--------------------------------
+The most extreme outlier. At TL10 with a research cost over 64 
+million, raw power is expected — but 142.9 DPS in a size-12 slot 
+was beyond what any non-super weapon should deliver.
+
+  - Damage: 500 → 225
+  - DPS: 142.9 → 64.3
+  - DPS/Size: 11.90 → 5.36
+  - Effective Damage at Max Range: 468 → 153
+
+Still the single hardest-hitting conventional torpedo per shot, 
+and still rewards the enormous TL10 research investment.
+
+
+TACHYON TORPEDO (Component 162)
+-------------------------------
+The negative damage loss mechanic (-25 per 100 range) is a unique 
+and interesting design that rewards long-range engagement. The damage 
+reduction preserves this identity while bringing the numbers into 
+line with other endgame weapons.
+
+  - Damage: 200 → 140
+  - DPS: 100.0 → 70.0
+  - DPS/Size: 8.33 → 5.83
+  - Effective Damage at Max Range: 400 → 280
+
+Retains the "gains damage over distance" identity. Still the best 
+torpedo for long-range engagements by a wide margin.
+
+
+SUB-SPACE TORPEDO (Component 148)
+----------------------------------
+The TL9 Sub-Space Torpedo previously jumped from the best X-variant 
+(17.1 DPS) to 50.0 DPS — a 190% spike in a single tech step. This 
+smooths the transition while keeping it a clear upgrade over the 
+X-variants.
+
+  - Damage: 100 → 75
+  - DPS: 50.0 → 37.5
+  - DPS/Size: 4.17 → 3.12
+
+The progression now reads: X-Shockwave (17.1) → Sub-Space (37.5) → 
+Gravitic (64.3) / Tachyon (70.0), with each step roughly doubling 
+rather than the previous 3x-8x leaps.
+
+
+==========================================================
+LIGHT RAIL GUN — ENERGY EFFICIENCY
+==========================================================
+
+LIGHT RAIL GUN (Component 107)
+-------------------------------
+The Light Rail Gun and Light Mass Driver compete for the same role 
+(rapid-fire, low-damage-per-shot rail weapon) at the same size of 
+12. The Light Mass Driver was strictly superior in every stat once 
+researched, leaving the Light Rail Gun with no reason to exist past 
+mid-game.
+
+Reducing the Light Rail Gun's energy cost gives it a niche as the 
+energy-efficient suppression option: cheaper to fire, better suited 
+for smaller ships with limited reactor capacity, while the Mass 
+Driver remains the higher-DPS choice for ships that can afford the 
+energy budget.
+
+  - Energy Per Fire: 10 → 6 (base and all research improvements)
+  - Damage Per Energy: 0.50 → 0.83 (base), making it the most 
+    energy-efficient rail gun in the family
+
+Research improvements updated:
+  - Improved Light Rail Guns (TL3): Energy 10 → 6
+  - Advanced Light Rail Guns (TL4): Energy 10 → 6
+
+
+==========================================================
+TYPE I MISSILE — EARLY GAME VIABILITY
+==========================================================
+
+TYPE I MISSILE (Component 128, Research Project 48)
+---------------------------------------------------
+The Type I Missile's TL1 research improvement brought it to only 
+2.4 DPS — worse than every other weapon available at the same tech 
+level, including the Pulse Blaster (4.0 DPS at half the size). Its 
+only advantage was 1000 range, but at 2.4 DPS that range was 
+meaningless in practice.
+
+The TL1 improvement now brings it to 3.2 DPS, matching the base 
+Type II Missile and making the research investment feel worthwhile 
+as a bridge to the TL2 missile upgrades.
+
+  - Enhanced Type I Missiles (TL1) Damage: 6 → 8
+  - DPS at TL1: 2.4 → 3.2
+
+
+==========================================================
+GUARDIAN POINT DEFENSE — DPS CAP
+==========================================================
+
+GUARDIAN APD (Component 190, Research Project 627)
+--------------------------------------------------
+The Human/Khemal/XHuman Guardian APD at TL7 max research reached 
+57.1 DPS at size 3 — the highest DPS/Size ratio of any weapon in 
+the game at 19.05, exceeding even the Gravitic Torpedo and Death 
+Ray on a per-size basis. While point defense weapons have targeting 
+restrictions that limit their offensive utility, the raw numbers 
+were disproportionate to every other weapon system.
+
+The TL7 improvement has been softened. The Guardian APD remains 
+clearly superior to the generic Terminator AutoCannon (31.2 DPS at 
+TL7) and the Annihilator AutoCannon (40.0 DPS at TL8), preserving 
+its value as a race-specific advantage.
+
+  - Guardian PD Mk4 (TL7) Damage: 20 → 18
+  - Guardian PD Mk4 (TL7) Range: 425 → 400
+  - Guardian PD Mk4 (TL7) Speed: 750 → 725
+  - Guardian PD Mk4 (TL7) Fire Rate: 350ms → 400ms
+  - DPS at TL7: 57.1 → 45.0
+  - DPS/Size at TL7: 19.05 → 15.00
+
+Still the best point defense weapon in the game by a comfortable 
+margin. The race-specific identity is preserved without the numbers 
+being absurd.
+
+
+==========================================================
+CASLON MISSILE — FIRE RATE IMPROVEMENT
+==========================================================
+
+CASLON MISSILE (Component 154)
+------------------------------
+The Caslon Missile shared the 10,000ms fire rate of the late-game 
+Anti-matter and Neutron Missiles, but with significantly less damage. 
+At TL3 base, it delivered only 4.5 DPS — worse than the Assault 
+Missile (6.0 DPS) that unlocks two tech levels later. The Caslon 
+is the gateway to the heavy missile archetype, and its alpha-strike 
+identity is preserved, but it should feel viable as a weapon in its 
+own right rather than pure dead weight until Anti-matter.
+
+  - Fire Rate: 10,000ms → 8,000ms (base and all improvements)
+  - Base DPS: 4.5 → 5.6
+  - DPS at TL4 (Enhanced): 5.5 → 6.9
+  - DPS at TL5 (Advanced): 6.5 → 8.1
+
+Research improvements updated:
+  - Enhanced Caslon Missiles (TL4): Fire Rate 10000 → 8000
+  - Advanced Caslon Missiles (TL5): Fire Rate 10000 → 8000
+
+
+==========================================================
+DEFENSE BALANCE CHANGES
+==========================================================
+
+
+MEGATRON Z4 SHIELDS — TL8 CAP (Research Project 386)
+-----------------------------------------------------
+The Megatron Z4's TL8 improvement (Megatron Flux Skin) pushed it 
+to 600 strength / 25 recharge per second — more raw shield HP than 
+the TL9 Sub-Space Shields (500/30) at a full tech level less 
+investment. This made Sub-Space Shields a pointless research 
+target, since the Megatron already exceeded them in strength and 
+nearly matched their recharge.
+
+The TL8 improvement has been brought in line so that Sub-Space 
+Shields remain a meaningful upgrade worth their significant 
+research cost.
+
+  - Megatron Flux Skin (TL8) Strength: 600 → 500
+  - Megatron Flux Skin (TL8) Recharge/s: 25 → 22
+  - Str/Size: 60.0 → 50.0
+  - Full Recharge Time: 24.0s → 22.7s
+
+The Megatron Z4 remains the best TL8 shield for total shield 
+budget — higher strength than Talassos Mk II (300) and faster 
+recharge than Deucalios Mk II (7/s). Sub-Space Shields now offer 
+a clear upgrade with the same 500 strength but 36% faster recharge 
+(30/s vs 22/s).
+
+Shield identity summary at max research:
+  Talassos:       250 str, 30/s  — fast recharge specialist
+  Deucalios:      400 str,  6/s  — raw HP tank
+  Meridian:       400 str, 25/s  — balanced mid-late option
+  Megatron Z4:    500 str, 22/s  — premium balanced (TL8)
+  Talassos Mk II: 300 str, 40/s  — ultra-fast recharge (TL8)
+  Deucalios Mk II:500 str,  7/s  — ultra-tank (TL8)
+  Sub-Space:      500 str, 30/s  — best overall (TL9)
+
+
+S2F4 REPAIRBOT — IDENTITY REWORK (Component 96, Research Project 118)
+----------------------------------------------------------------------
+The S2F4 RepairBot was strictly inferior to the S2F7 in every 
+dimension: larger (size 3 vs 2), lower damage reduction (600% vs 
+750%), and slower repair (3s vs 2s). It also unlocked later (TL5 
+vs TL3). There was no reason to ever build one.
+
+The S2F4 has been reworked into a "damage sponge" — significantly 
+higher damage reduction than the S2F7 at the cost of slower repair 
+times. The two RepairBots now represent a real design choice:
+
+  S2F4: Components take less damage in the first place. Best for 
+  capital ships and stations that absorb sustained fire.
+
+  S2F7: Damaged components get fixed quickly. Best for escorts and 
+  raiders that take spike damage and need fast recovery.
+
+  Base (Component 96):
+    - Damage Reduction: 500% → 700%
+    - Repair Time: 5s → 8s
+
+  Enhanced Robotic Repairs (TL6):
+    - Damage Reduction: 600% → 1000%
+    - Repair Time: 3s → 6s
+
+  Comparison at max research:
+    Damage Control:    400% reduction,  15s repair  (Size 4)
+    S2F4 (new):       1000% reduction,   6s repair  (Size 3)
+    S2F7 (generic):    750% reduction,   2s repair  (Size 2)
+    S2F7 (Ikkuro):     900% reduction,   1s repair  (Size 2)
+
+
+==========================================================
+ENGINE & MOVEMENT BALANCE CHANGES
+==========================================================
+
+
+MULTI-VECTOR JETS — ENDGAME BUFF (Research Projects 149, 150)
+--------------------------------------------------------------
+The Multi-Vector Jets unlocked at TL5 but peaked at 20 thrust 
+(TL7), while the Swift-Vector Jets — available three tech levels 
+earlier at TL2 — peaked at 25 thrust (TL7). There was no reason 
+to invest in the later-unlocking component when the earlier one 
+was strictly superior.
+
+The Multi-Vector's improvements have been buffed so that it 
+rewards the later research investment with best-in-class endgame 
+performance.
+
+  - Advanced Maneuvering (TL6) Thrust: 17 → 22
+  - Ultimate Maneuvering (TL7) Thrust: 20 → 28
+
+Vectoring comparison at max research:
+  Directional Jets:    5 thrust  (TL1)  — starter
+  Maneuver Jets:      11 thrust  (TL4)  — early upgrade
+  Swift-Vector Jets:  25 thrust  (TL7)  — available early, solid
+  Multi-Vector Jets:  28 thrust  (TL7)  — unlocks later, best
+
+
+PHOENIX JUMPDRIVE — INIT TIME FIX (Research Projects 161, 162, 
+397, 398, 401)
+--------------------------------------------------------------
+The Phoenix JumpDrive was the only hyperdrive in the game whose 
+jump initiation time *increased* with research — from 30 seconds 
+at base to 60 seconds at TL9. Every other drive's init time 
+decreases with research, making the Phoenix's behavior 
+counterintuitive and almost certainly a data entry error.
+
+The init times have been corrected to decrease with research, 
+matching the pattern of every other hyperdrive. The Phoenix 
+retains its identity as a high-speed drive with a longer init 
+time than the Kaldos — it starts at 30s vs the Kaldos's 10s — 
+but research now reduces this penalty rather than compounding it.
+
+  - TL5 Enhanced Phoenix:      Init 35s → 25s
+  - TL6 Improved Phoenix:      Init 40s → 20s
+  - TL7 Advanced Phoenix:      Init 45s → 15s
+  - TL8 Optimized Phoenix:     Init 50s → 10s
+  - TL9 Transcendent Phoenix:  Init 60s →  5s
+
+Hyperdrive comparison at TL9 max research:
+  Kaldos:       20000 speed,  1s init, 300 en/s  (fast jump)
+  Calista-Dal:  22500 speed, 10s init,  40 en/s  (fuel efficient)
+  Phoenix:      35000 speed,  5s init, 300 en/s  (fast + powerful)
+  Dhayut:       60000 speed,  1s init, 185 en/s  (best overall)
+
+
+==========================================================
+FIGHTER BALANCE CHANGES
+==========================================================
+
+
+OMEGA STAR-BOMBER (Fighter ID 18) — DPS FIX
+---------------------------------------------
+The TL8 elite torpedo bomber dealt only 10.7 DPS — a 56% DPS 
+drop compared to the TL6 Torpedo Assault Bomber (24.4 DPS). 
+Since the AI auto-selects the highest tech level fighter, 
+researching the Omega was effectively a downgrade to your 
+bomber fleet's damage output.
+
+The Omega's weapon damage has been raised to provide a 
+meaningful upgrade over the generic line while preserving its 
+elite survivability, longer range, and reduced damage loss.
+
+  - Weapon Damage: 29 → 75
+  - DPS: 10.7 → 27.8 (+14% over Torpedo Assault Bomber)
+
+The Omega retains its elite defensive profile (45 shields, 
+91% countermeasures, 2.0 shield recharge, self-repair) and 
+superior range/accuracy (400 range, DLoss 1) as additional 
+advantages over the generic line.
+
+
+"BLACK EDITION" STAR-BOMBER (Fighter ID 19) — DPS FIX
+------------------------------------------------------
+The TL8 elite missile bomber dealt only 10.3 DPS with a slower 
+fire rate (3600ms) — a 16% DPS drop compared to the TL6 Missile 
+Assault Bomber (12.2 DPS). Same auto-select problem as the Omega.
+
+The damage has been raised and the fire rate normalized to the 
+standard 2700ms used by every other bomber in the game.
+
+  - Weapon Damage: 37 → 42
+  - Fire Rate: 3600ms → 2700ms
+  - DPS: 10.3 → 15.6 (+28% over Missile Assault Bomber)
+
+
+TYPO FIXES (Fighter IDs 10, 11)
+---------------------------------
+  - "Topredo Strike Bomber" → "Torpedo Strike Bomber"
+  - "Topredo Assault Bomber" → "Torpedo Assault Bomber"
+
+
+==========================================================
+FACILITY BALANCE CHANGES
+==========================================================
+
+
+MERKIDOR PLANETARY FORTRESS (Facility ID 11)
+----------------------------------------------
+The Merkidor Planetary Fortress colony wonder provided only +20% 
+defense — barely more than the Fortified Bunker standard facility 
+(+10% at TL3 for one-fifth the cost). For a 50000-cost wonder 
+unlocking at TL5, the defensive bonus was not commensurate with 
+the investment. The Dwarf Fortress (TL7, +50%) remained the clear 
+superior option with no meaningful intermediate step.
+
+  - Defense Bonus: 20% → 30%
+
+The Merkidor now provides a worthwhile mid-game defensive wonder, 
+while the Dwarf Fortress at TL7 (+50%) remains the stronger 
+late-game option for dedicated fortress colonies.
+
+
+==========================================================
+RACE RESEARCH ORDER CHANGES
+==========================================================
+
+
+HUMAN — WEAPONS RESEARCH ORDER
+--------------------------------
+The Human weapons research order was missing several key systems 
+that align with their lore as missile-focused, well-rounded empire 
+builders. The Caslon → Anti-matter → Neutron heavy missile line 
+(the strongest missiles in the game) was entirely absent, meaning 
+AI Humans would never research their best weapons. Fighters, 
+bombardment, and proximity rockets were also missing.
+
+10 projects added (50 → 60 total), 0 removed:
+
+  Missiles (heavy line):
+    - Caslon Missiles (TL3) — inserted after Guardian PD Mk2
+    - Enhanced Caslon Missiles (TL4) — after Advanced Type II
+    - Advanced Caslon Missiles (TL5) — after Assault Missiles
+    - Anti-matter Missiles (TL6) — after Improved Assault
+    - Neutron Missiles (TL9) — endgame capstone
+
+  Fighters:
+    - Hangar Bay (TL1) — end of TL1 block, enables fighters
+    - Interceptors (TL2) — basic air superiority
+    - Missile Bombers (TL2) — lore-appropriate bomber type
+
+  Other:
+    - Proximity Defence Rockets (TL2) — close defense option
+    - Planetary Bombardment I (TL3) — lore: "will bombard 
+      enemy colonies when facing especially ruthless opponents"
+
+The AI will now develop both the rapid-fire Assault Missile line 
+AND the high-alpha Caslon/Anti-matter/Neutron line, giving Human 
+empires the full spectrum of missile warfare. Missile bombers 
+complement their fleet doctrine, and basic bombardment allows 
+the lore-described willingness to bombard when provoked.
+
+
+RACE-LOCKED PROJECT REMOVAL (4 races)
+--------------------------------------
+Several races had research projects in their AI priority orders 
+that are race-locked to other species. The AI would waste research 
+time attempting to study these projects and fail. All have been 
+removed.
+
+  Amonkrie (HighTech):
+    - Removed: Basic ShadowGhost (178), Enhanced ShadowGhost 
+      (179), Advanced ShadowGhost (180), Optimized ShadowGhost 
+      (181) — all locked to Kiadian only
+
+  Dessen (HighTech):
+    - Removed: Adaptive Genetics Lab (583) — locked to Zakkal
+
+  Tarapin (Weapons):
+    - Removed: Planetary Destruction (273) — locked to Shakturi, 
+      Boskara, Gizurean, Dhayut, Sluken, Phaerax, Keskudon, Ylta
+
+  Yor (Weapons):
+    - Removed: Planetary Destruction (273) — same race lock
+
+
+HEAVY MISSILE LINE ADDITION (6 missile races)
+-----------------------------------------------
+Six races whose lore identifies missiles as their primary or 
+co-primary weapon type were missing the Caslon → Anti-matter → 
+Neutron heavy missile research line. Their AI would cap out at 
+Assault Missiles (14.4 DPS at TL9) and never access the game's 
+most powerful missile weapons (Neutron at 135 damage per hit).
+
+The full heavy missile progression has been added at appropriate 
+tech level positions in each race's weapons research order:
+  - Caslon Missiles (511, TL3)
+  - Enhanced Caslon Missiles (512, TL4)
+  - Advanced Caslon Missiles (526, TL5)
+  - Anti-matter Missiles (513, TL6)
+  - Neutron Missiles (514, TL9)
+
+Races updated:
+  - Amonkrie (Railguns and Missiles)
+  - Napoar (Missiles and Fighters)
+  - Paratis (Missiles — also has race-specific Hammerhead line)
+  - Riktoh (Missiles)
+  - Teekan (Missiles)
+  - Visareen (Missiles)

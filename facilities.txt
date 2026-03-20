@@ -1,4 +1,4 @@
-﻿'Distant Worlds Facilities - 1.9.5.10 (Research Unleashed by Osito)
+'Distant Worlds Facilities - 1.9.5.10 (Research Unleashed by Osito)
 
 'each line defines a single planetary facility or wonder with comma-separated data, up to a maximum of 50 facilities (0-49)
 ' - ID: numeric ID value of facility
@@ -86,7 +86,7 @@
 9, Terraforming Facility, 7, 0, 9,				 20000.0,  200.0, 200,  750,  51,		Repairs planetary damage to a colony, thus improving the quality and increasing the happiness and income of the colony. Although damage will naturally repair over time, the Terraforming Facility repairs damage much faster
 
 10, Bakuras Highspeed Shipyards, 8, 10, 10,		 50000.0, 1000.0,  20, 100,  0,		A massive array of orbital star-ship construction yards. Construction speed is increased for all ships and bases built at the colony with this wonder
-11, Merkidor Planetary Fortress, 8, 9, 11,		 50000.0, 1000.0,  20,  20,  0,		An impregnable stronghold with heavy defensive weaponry. Defense against invasion is increased for the colony with this wonder
+11, Merkidor Planetary Fortress, 8, 9, 11,		 50000.0, 1000.0,  20,  30,  0,		An impregnable stronghold with heavy defensive weaponry. Defense against invasion is increased for the colony with this wonder
 12, Holographic Network, 8, 8, 12,				 50000.0, 1000.0,  20, 100,  0,		A huge virtual reality system that presents highly immersive recreation. Happiness is increased for the colony with this wonder
 13, Traders Bazaar, 8, 11, 13,					 50000.0, 1000.0,  20,  30,  0,		A colossal marketplace connected by a maze of alleys and bridges. Income is increased for the colony with this wonder
 14, Advanced Medicomplex, 8, 7, 14,				 50000.0, 1000.0,  20, 100,  0,		The finest medical treatment is available at this facility. The population growth rate is increased for the colony with this wonder
