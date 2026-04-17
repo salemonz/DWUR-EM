@@ -6,6 +6,7 @@ Read about all the changes on the wiki: https://github.com/salemonz/DWUR-EM/wiki
 Now that Distant Worlds Universe Refreshed is several years old, I am looking to revisit some of the assets and features. This new version of DWUR leans into the expanded capabilities of DWU from Alvek's Expansion Mod. Enjoy!
 -- Salemonz
 
+v1.0.1 -- 17 April 2026 -- Fixed race government preferences. Nine races didn't have access to the right sets of governments for them, based on lore.
 v1.0.0 -- 24 March 2026 -- New engine exhaust graphics (last time!). New ground-unit icons. New race pics (group shots).
 v0.9.6 -- 19 March 2026 -- Component balance pass incorporated. 14 game files edited. Weapons/fighters changed. Tech research orders altered for 10 races.
 v0.9.5 -- 18 March 2026 -- Refreshed all 194 components. New images (many pulled from my DW2 mods)

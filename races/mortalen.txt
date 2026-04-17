@@ -9,7 +9,7 @@ Aggression	;122
 Caution	;113
 Friendliness	;80
 Loyalty	;85
-DesignsPictureFamilyIndex	;23
+DesignsPictureFamilyIndex	;27
 DesignNamesIndex	;5
 ShipMaintenanceSavings	;10
 TroopMaintenanceSavings	;20
@@ -27,8 +27,8 @@ SpecialComponent	;46
 WeaponsResearchProjectOrder	;67,48,57,51,324,330,344,486,485,553,555,52,318,336,370,328,472,511,63,45,276,60,53,319,371,275,527,320,68,512,64,46,277,54,323,528,69,526,65,47,278,439,55,490,480,281,513,66,279,532,530,70,56,481,523,598,483,498,538,536,473,514
 EnergyResearchProjectOrder	;123,95,105,363,166,465,477,479,115,106,167,501,96,74,133,151,116,107,280,172,160,92,134,152,75,487,108,173,161,93,153,488,109,162,94,103,174,139,397,80,117,110,548,398,140,393,101,401,81,111,549,422
 HighTechResearchProjectOrder	;212,227,364,249,253,188,182,204,219,198,446,258,442,225,262,269,228,189,183,457,205,213,456,229,451,224,406,199,206,214,413,263,405,231,220,236,238,200,191,185,245,460,230,237,454,190,184,390,201
-SpecialGovernment	;-1
-PreferredStartingGovernment	;-1
+SpecialGovernment	;16
+PreferredStartingGovernment	;16
 DisallowedGovernments	;
 CanChangeGovernment	;Y
 Expanding	;Y
