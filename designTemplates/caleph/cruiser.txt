@@ -48,7 +48,7 @@ ScannerJammer	;0
 Shields	;8
 StealthCloak	;0
 TraceScanner	;0
-TroopCompartment	;1
+TroopCompartment	;0
 VectoringEngine	;8
 WeaponArea	;0
 WeaponBeam	;0
@@ -59,7 +59,7 @@ WeaponRailGun	;0
 WeaponsManufacturingPlant	;0
 WeaponsResearchLab	;0
 WeaponSuperBeam	;0
-WeaponTorpedo	;5
+WeaponTorpedo	;7
 WeaponTractorBeam	;0
 WeaponGravitonBeam	;0
 WeaponAreaGravity	;0

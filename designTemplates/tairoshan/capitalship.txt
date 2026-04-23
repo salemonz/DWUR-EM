@@ -45,10 +45,10 @@ Reactor	;2
 RecreationCenter	;0
 ResourceProfileSensor	;0
 ScannerJammer	;0
-Shields	;18
+Shields	;20
 StealthCloak	;0
 TraceScanner	;0
-TroopCompartment	;2
+TroopCompartment	;0
 VectoringEngine	;10
 WeaponArea	;0
 WeaponBeam	;0
@@ -59,7 +59,7 @@ WeaponRailGun	;0
 WeaponsManufacturingPlant	;0
 WeaponsResearchLab	;0
 WeaponSuperBeam	;1
-WeaponTorpedo	;10
+WeaponTorpedo	;12
 WeaponTractorBeam	;0
 WeaponGravitonBeam	;0
 WeaponAreaGravity	;0

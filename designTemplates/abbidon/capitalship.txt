@@ -45,13 +45,13 @@ Reactor	;3
 RecreationCenter	;0
 ResourceProfileSensor	;0
 ScannerJammer	;0
-Shields	;20
+Shields	;22
 StealthCloak	;0
 TraceScanner	;1
-TroopCompartment	;2
+TroopCompartment	;0
 VectoringEngine	;10
 WeaponArea	;1
-WeaponBeam	;30
+WeaponBeam	;32
 WeaponBombard	;0
 WeaponMissile	;5
 WeaponPhaser	;0

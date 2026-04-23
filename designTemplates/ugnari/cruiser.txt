@@ -48,13 +48,13 @@ ScannerJammer	;0
 Shields	;8
 StealthCloak	;0
 TraceScanner	;0
-TroopCompartment	;1
+TroopCompartment	;0
 VectoringEngine	;5
 WeaponArea	;0
 WeaponBeam	;0
 WeaponBombard	;0
 WeaponMissile	;0
-WeaponPhaser	;20
+WeaponPhaser	;22
 WeaponRailGun	;0
 WeaponsManufacturingPlant	;0
 WeaponsResearchLab	;0
