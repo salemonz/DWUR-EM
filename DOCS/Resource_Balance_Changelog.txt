@@ -1,0 +1,107 @@
+Distant Worlds Universe Refreshed — Resource Balance Changelog
+===============================================================
+
+This update addresses resource distribution and availability issues
+that could leave AI empires starved of critical construction materials
+or colony growth inputs, particularly in smaller galaxies or unlucky
+star configurations. The changes focus on three areas: ensuring key
+strategic resources are flagged for pre-warp home system placement,
+adding secondary source locations to eliminate single-point-of-failure
+bottlenecks, and gently increasing the prevalence of the rarest
+late-game minerals so they are scarce but not absent.
+
+
+DILITHIUM CRYSTAL
+-----------------
+Used in 29 components with heavy per-unit demand (1,118 total units
+across the component catalog), yet only spawned on Ocean planets with
+no pre-warp guarantee. Empires without an Ocean world nearby could be
+locked out of major portions of their tech tree.
+
+  - IsImportantPreWarpResource: N → Y
+  - Added secondary source: Barren Rock planets (prevalence 0.10, abundance 0.3–0.8)
+  - Note: Ice was originally considered but conflicts with Tyderios (gas)
+    on the same subtype, which the engine disallows
+
+
+TYDERIOS
+--------
+Feeds 31 components — the 4th most-used construction gas — but was not
+flagged for pre-warp placement. Its overall galaxy supply is healthy
+thanks to Ice planets and Chlorine gas clouds, so only the pre-warp
+flag was missing.
+
+  - IsImportantPreWarpResource: N → Y
+
+
+SILICON
+-------
+A colony growth resource (0.3) used in 28 components, but only spawned
+on Desert planets. A single bad neighborhood could choke both
+construction and development. Added a low-prevalence fallback source.
+
+  - Added secondary source: Barren Rock planets (prevalence 0.10, abundance 0.3–0.8)
+
+
+ACULON
+------
+The 7th most-demanded construction mineral (43 components), yet only
+available on Volcanic worlds with no pre-warp flag. Empires in regions
+without volcanic activity had no path to nearly a quarter of their
+component catalog.
+
+  - IsImportantPreWarpResource: N → Y
+  - Added secondary source: Desert planets (prevalence 0.15, abundance 0.3–0.8)
+
+
+GOLD
+----
+Used in 50 components — the 5th highest demand — with relatively thin
+galaxy-wide supply. Already pre-warp flagged, so the fix is a modest
+prevalence bump at its most common habitable source.
+
+  - Continental planet prevalence: 0.10 → 0.15
+
+
+IRIDIUM
+-------
+The single biggest supply-demand mismatch in the file: 53 components
+and 919 total units of demand against the lowest supply score of any
+high-demand resource, and no pre-warp flag. This was the resource most
+likely to cripple an AI empire's mid-game construction.
+
+  - IsImportantPreWarpResource: N → Y
+  - Continental planet prevalence: 0.05 → 0.10
+
+
+URANIUM
+-------
+A maximum-demand colony growth resource (Growth=1.0) with the lowest
+supply score of any growth input — less than a tenth of Hydrogen's.
+The pre-warp flag ensured starting systems had some, but expansion
+colonies would frequently starve. Supply more than doubled with these
+changes while keeping the resource meaningfully scarce.
+
+  - Barren Rock planet prevalence: 0.07 → 0.13
+  - Metal asteroid prevalence: 0.05 → 0.09
+  - Added tertiary source: Volcanic planets (prevalence 0.06, abundance 0.4–0.8)
+
+
+ADAMANTIUM
+----------
+Intentionally rare late-game mineral used in 7 advanced components.
+At 0.04 prevalence on a single source type, some galaxies could
+generate zero deposits. A small bump preserves the strategic value
+while preventing total absence.
+
+  - Metal asteroid prevalence: 0.04 → 0.07
+
+
+DENEBA CRYSTAL
+--------------
+Rare advanced mineral used in 16 components across two source types.
+Similar to Adamantium, the concern was not scarcity but potential
+absence in smaller galaxies.
+
+  - Barren Rock planet prevalence: 0.04 → 0.06
+  - Volcanic planet prevalence: 0.04 → 0.06

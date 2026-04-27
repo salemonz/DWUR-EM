@@ -4999,17 +4999,20 @@ Increases the interception accuracy of all TROOPTYPE against invaders		;Increase
 Lowers maintenance costs of all troops		;Lowers maintenance costs of all troops
 
 Allow building facility: Military Academy		;Allow building facility: Military Academy
+Allow building facility: Diplomacy Academy ;Allow building facility: Diplomacy Academy
 Allow building facility: Spy Academy		;Allow building facility: Spy Academy
 Allow building facility: Naval Academy		;Allow building facility: Naval Academy
 Allow building facility: Science Academy		;Allow building facility: Science Academy
 Allow building facility: Armored Factory		;Allow building facility: Armored Factory
 Do not build Armored Factory until population reaches		;Do not build Armored Factory until population reaches
 Do not build Science Academy until population reaches		;Do not build Science Academy until population reaches
+Do not build Diplomacy Academy until population reaches ;Do not build Diplomacy Academy until population reaches
 Do not build Spy Academy until population reaches		;Do not build Spy Academy until population reaches
 Do not build Naval Academy until population reaches		;Do not build Naval Academy until population reaches
 Do not build Military Academy until population reaches		;Do not build Military Academy until population reaches
 
 Planetary Facility Explanation Armored Factory		;This planetary facility would allow us to build Armored troop units, specialized at invading and taking over enemy colonies
+Planetary Facility Explanation Diplomacy Academy ;This planetary facility would increase the chance of new Diplomats and Ambassadors appearing in our empire
 Planetary Facility Explanation Spy Academy		;This planetary facility would increase the chance of new Intelligence Agents appearing in our empire
 Planetary Facility Explanation Science Academy		;This planetary facility would increase the chance of new Scientists appearing in our empire
 Planetary Facility Explanation Naval Academy		;This planetary facility would increase the chance of new Fleet Admirals appearing in our empire

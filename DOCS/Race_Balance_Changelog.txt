@@ -909,3 +909,46 @@ unsustainably large fleets. Affected races:
   Keskudon, Lemeresh, Mortalen, Naxxilian, Phaerax, 
   Shakturi, Sluken, XHuman, Yor (Ylta already at 12)
 
+
+=====================================
+DESIGN TEMPLATE PASS: TROOP COMPARTMENT REMOVAL
+=====================================
+
+Removed TroopCompartment from all non-troop-transport 
+ship designs across all 46 races. This includes capital 
+ships, cruisers, and carriers (both regular and pirate 
+variants). 126 design template files modified.
+
+RATIONALE: The DWU AI does not load troops onto warships.
+It exclusively uses dedicated troop transports for 
+invasions. TroopCompartments on capital ships and cruisers 
+sat empty for the entirety of every game, wasting 6-8 size 
+units per bay on dead weight. Every race already has a 
+dedicated troop transport design with 6 compartments.
+
+Troop transports (regular and pirate) are untouched.
+AssaultPods (ship-to-ship boarding) are a separate 
+component type and are also untouched — those remain on 
+the 5 races that use them (Ikkuro, Khemal, Naxxilian, 
+Phaerax, Ugnari).
+
+REALLOCATION STRATEGY:
+  Capital ships: freed space → +2 primary weapon, 
+    +2 shields (or +1/+1 for races that had only 1 bay)
+  Cruisers: freed space → +2 primary weapon
+  Carriers: freed space → +2 shields, +1 point defense
+
+Each race's reallocation follows its existing weapon 
+profile, reinforcing racial identity rather than 
+homogenizing. Summary by primary weapon family:
+
+  Missiles: human, mortalen, napoar, paratis, riktoh, shandar, tarapin, teekan, visareen
+  Beams: abbidon, gizurean, mechanoid, phaerax, sluken, wekkarus, ylta
+  Railguns: Akhemal, amonkrie, atuuk, dessen, dhayut, jintus, ortain, zakkal
+  Torpedoes: ackdarian, boskara, caleph, keskudon, khemal, kiadian, securan, shakturi, tairoshan, zenox
+  Phasers: banoserit, ikkuro, lemeresh, naxxilian, ugnari, yor
+  Graviton Beams: drushocka, enton, haakonish, ketarov, quameno, xhuman
+
+All pirate carriers across all races also had troop 
+compartments removed (+2 shields, +1 point defense).
+
