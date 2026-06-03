@@ -65,6 +65,6 @@ WeaponGravitonBeam	;0
 WeaponAreaGravity	;1
 ImageScaling;Scaled 0.95
 TacticsWeaker; AllWeapons
-TacticsStronger; AllWeapons
+TacticsStronger; Standoff
 TacticsInvasion; InvadeImmediately
 FleeWhen; Never

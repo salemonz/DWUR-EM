@@ -453,3 +453,171 @@ Races updated:
   - Riktoh (Missiles)
   - Teekan (Missiles)
   - Visareen (Missiles)
+
+
+==========================================================
+SUBLIGHT ENGINE SPEED REBALANCE & CARRIER MOVEMENT FIX
+==========================================================
+
+A prior movement pass increased main-thrust engine output to roughly 
+3x vanilla levels while fighter speeds remained near vanilla. At high 
+tech this left carriers travelling at nearly double the speed of the 
+fighters they carry. Because a carrier must recall and dock all of its 
+fighters before it can jump to hyperspace, a carrier that permanently 
+outran its own squadrons could never complete a jump — it crept across 
+the map at sublight speed indefinitely, escorting fighters that could 
+never close the distance to dock. In the game UI the affected carrier 
+displayed a reduced "(slowed)" travel speed: the carrier was throttling 
+down to recover its fighters, but even its reduced speed outpaced them.
+
+This was most visible on the Mechanoid and Shakturi, who spawn at 
+maximum technology and therefore field the fastest possible engines 
+immediately, but it affected every race's carriers at high tech.
+
+
+MAIN-THRUST ENGINES — OUTPUT SCALED TO ~1.5x VANILLA
+(Components 38, 39, 40, 41, 42, 43, 121, 145)
+-----------------------------------------------------
+All main-thrust engine output — both maximum thrust and cruise thrust 
+— has been scaled to roughly 1.5x vanilla, down from roughly 3x. 
+Energy consumption per second is unchanged. Every value was scaled by 
+the same factor, so the redesigned engine hierarchy and the relative 
+gaps between engine types are fully preserved — only the magnitude is 
+reduced. The research improvement curve for each engine was scaled by 
+the same factor, so the rebalance holds at every tech level rather 
+than only at base values.
+
+Base values (max thrust / cruise thrust):
+  - Proton Thruster:      1800 / 1125  ->   666 / 416
+  - Quantum Thruster:     3000 / 1875  ->  1110 / 694
+  - Acceleros Thruster:   4800 / 1875  ->  1776 / 694
+  - Vortex Thruster:      7500 / 3000  ->  2775 / 1110
+  - Turbo Thruster:       3000 / 1800  ->  1110 / 666
+  - StarBurner Thruster:  3750 / 2250  ->  1388 / 833
+  - Ion Thrusters:         900 /  750  ->   333 / 278
+  - Micro HyperJump:     30000 /12000  -> 11100 / 4440
+
+Max-research cruise thrust (the value that governs high-tech speed):
+  - StarBurner (TL7):  7500 -> 2775   (~1.5x vanilla's 1840)
+  - Vortex (TL8):      6000 -> 2220
+  - Acceleros (TL7):   5250 -> 1943
+  - Turbo (TL7):       5250 -> 1943
+  - Quantum (TL7):     4500 -> 1665
+
+With engines at ~1.5x vanilla, a max-tech carrier's travel speed now 
+sits below its fighters' speed. Recalled fighters close the gap, dock, 
+and the carrier jumps normally. The faster-than-vanilla sublight feel 
+of the mod is retained, but carriers no longer strand themselves and 
+their fleets, and no fighter speeds needed to be altered.
+
+
+CARRIER COMBAT POSTURE — STANDOFF (Mechanoid & Shakturi)
+---------------------------------------------------------
+The Mechanoid and Shakturi carrier templates engaged with 
+TacticsStronger set to AllWeapons, causing the carrier hull itself to 
+close to weapons range instead of hanging back and letting its fighters 
+do the fighting — the posture used by every functional carrier race 
+(e.g. Human, Mortalen). This kept squadrons deployed and the carrier 
+committed to the front line, compounding the docking problem.
+
+  - TacticsStronger: AllWeapons -> Standoff   (both races)
+
+TacticsWeaker (AllWeapons), TacticsInvasion (InvadeImmediately), and 
+FleeWhen (Never) are unchanged. FleeWhen; Never is retained 
+deliberately: as ancient guardians, the Mechanoid and Shakturi hold 
+their ground rather than retreat, even as their carriers now correctly 
+stand off and recover fighters.
+
+
+==========================================================
+LOW-TECH SPEED FLOOR FIX — ENGINE THRUST RE-CURVE &
+PROPORTIONAL ENGINE-COUNT SCALING (ALL RACES + PIRATES)
+==========================================================
+
+The earlier sublight rebalance (engines scaled to ~1.5x vanilla) fixed
+high-tech carriers but pushed low-tech ship speeds too low. Early-game
+ships — especially from a pre-warp start — were travelling at single-
+digit speeds, and when out of fuel (which drops a ship to 1/3 speed)
+some were reduced to 2-3 speed, too slow to catch up to orbiting
+planets, moons, and stations to refuel.
+
+Two levers were used together to raise the speed floor while preserving
+the high-tech ceiling that keeps carriers docking correctly.
+
+Speed model (confirmed against in-game ship-designer readouts):
+  cruise speed = 0.9475 * (engine count * engine cruise thrust) / ship size
+Main-thrust engines drive forward speed; vectoring engines (turning)
+were not altered. Engine energy draw is independent of thrust, so
+raising thrust costs no energy; adding engines does (and adds hull size).
+
+
+LEVER 1 — ENGINE THRUST RE-CURVE (components.txt + research.txt)
+----------------------------------------------------------------
+Main-thrust engine output was re-curved with an additive taper: a large
+boost at the low end that tapers to zero at the top tier. This lifts
+early engines substantially while holding the maximum-tech values
+exactly, so the high-tech carrier docking fix is fully preserved.
+
+  Formula: new = old + BOOST * (1 - (old - min) / (max - min))
+  Cruise:  floor +362 at Ion (278->640); held at StarBurner TL7 (2775)
+  Max:     floor +433 at Ion (333->766); held at StarBurner TL7 (5550)
+
+Base value changes (cruise / max thrust):
+  - Ion Thrusters:        278/333  ->  640/766
+  - Proton Thruster:      416/666  ->  758/1071
+  - Quantum Thruster:     694/1110 ->  996/1479
+  - Acceleros Thruster:   694/1776 ->  996/2089
+  - Turbo Thruster:       666/1110 ->  972/1479
+  - StarBurner Thruster:  833/1388 -> 1115/1733
+  - Vortex Thruster:     1110/2775 -> 1351/3005
+
+The research improvement curve for each engine was re-curved by the same
+taper (14 improvement entries), so the lift holds at every tech level
+and the progression remains monotonic. Maximum-tech cruise thrust
+remains 2775 (StarBurner TL7) — unchanged — so carriers still travel
+slower than their fighters at top tech and continue to dock and jump.
+
+
+LEVER 2 — PROPORTIONAL ENGINE-COUNT SCALING (all design templates)
+------------------------------------------------------------------
+Engine counts were scaled up proportionally per ship class to raise the
+floor further and to make each race's distinct hull designs more
+pronounced (proportional scaling widens existing differences rather
+than flattening them toward a single value). Scaling was applied to
+both main and pirate fleets across all 46 races.
+
+Per-class target scale factors:
+  explorationship 1.5   constructionship 1.3   colonyship    1.5
+  escort          1.5   frigate          1.4   destroyer     1.4
+  cruiser         1.5   capitalship      1.4   carrier       1.0 (held)
+  smallfreighter  1.4   mediumfreighter  1.3   largefreighter 1.3
+  miningship      1.45  gasminingship    1.4   passengership 1.3
+  resupplyship    1.0   trooptransport   1.3
+
+REACTOR CLAMP (power safety): each ship's engine count is individually
+capped so that cruise movement energy (engines * energy-per-engine)
+never exceeds 90% of that ship's available reactor output (reactor
+output minus static energy use). A ship whose reactor cannot safely
+power additional engines keeps its original count. This guarantees no
+ship is left energy-starved at cruise, and because the clamp is applied
+per ship, races with stronger reactors scale further — amplifying race
+distinction. 1,248 ship designs were scaled; carriers (docking fix) and
+resupply ships (reactor-limited) were left unchanged.
+
+
+RESULT (pre-warp, verified on edited files)
+-------------------------------------------
+All early-game ship classes now clear a cruise speed of ~15+ (out-of-
+fuel third of ~5+), so ships can catch orbiting bodies to refuel. Fast
+classes (scouts, miners, freighters, escorts) cruise ~28-48. Military
+pursuit speed climbs past 30 as engine tech improves. Race-to-race
+speed variation is preserved and widened (e.g. capital ships now span
+~10-20 cruise across races at pre-warp). The maximum-tech ceiling is
+unchanged, so the carrier fix is intact. Vectoring (turning) engines
+and all non-engine components were not modified.
+
+Note: a few heavy/late hulls (carrier, resupply, and some capitals/
+frigates for low-reactor races) show a theoretical cruise-energy
+deficit only when forced onto a pre-warp Fission Reactor — a tech level
+at which those hulls are never actually built. These are pre-existing
+artifacts of the original designs, not regressions introduced here.

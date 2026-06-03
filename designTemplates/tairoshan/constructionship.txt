@@ -21,7 +21,7 @@ EnergyCollector	;1
 EnergyManufacturingPlant	;1
 EnergyResearchLab	;0
 EnergyToFuelConverter	;0
-Engine	;18
+Engine	;23
 FighterBay	;0
 FleetCountermeasuresSystem	;0
 FleetTargettingSystem	;0
